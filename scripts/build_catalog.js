@@ -3,6 +3,23 @@ const path = require('path');
 const { DISTRICTS_DATA } = require('../district-data.js');
 const { DHAKA_DATA } = require('../data/main-info/dhaka.js');
 
+const DIV_MAP_BN = {
+  'Dhaka': 'ঢাকা',
+  'Chattogram': 'চট্টগ্রাম',
+  'Rajshahi': 'রাজশাহী',
+  'Khulna': 'খুলনা',
+  'Barishal': 'বরিশাল',
+  'Sylhet': 'সিলেট',
+  'Rangpur': 'রংপুর',
+  'Mymensingh': 'ময়মনসিংহ'
+};
+
+function toBnDigits(str) {
+  if (str === null || str === undefined) return '';
+  const map = {'0':'০','1':'১','2':'২','3':'৩','4':'৪','5':'৫','6':'৬','7':'৭','8':'৮','9':'৯'};
+  return String(str).replace(/[0-9]/g, ch => map[ch] || ch);
+}
+
 // Helper to expand top-5 historical & tourist places if a district has fewer than 5
 function enrichDistrict(d) {
   if (d.slug === 'dhaka') {
@@ -13,6 +30,7 @@ function enrichDistrict(d) {
   const en = d.en;
   const bn = d.bn;
   const div = d.div;
+  const divBn = DIV_MAP_BN[div] || div;
 
   // Ensure 5 carousel items
   const carousel = [
@@ -20,42 +38,62 @@ function enrichDistrict(d) {
       id: 1,
       image: `images/districts/${slug}/carousel-1.webp`,
       title: `${en} Heritage & Landscapes`,
-      subtitle: `Panoramic beauty across ${div} Division`
+      titleEn: `${en} Heritage & Landscapes`,
+      titleBn: `${bn} ঐতিহ্য ও প্রাকৃতিক ভূচিত্র`,
+      subtitle: `Panoramic beauty across ${div} Division`,
+      subtitleEn: `Panoramic beauty across ${div} Division`,
+      subtitleBn: `${divBn} বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য`
     },
     {
       id: 2,
       image: `images/districts/${slug}/carousel-2.webp`,
       title: `Historic Monuments of ${en}`,
-      subtitle: `Ancient landmarks dating back across generations`
+      titleEn: `Historic Monuments of ${en}`,
+      titleBn: `${bn} জেলার প্রাচীন ঐতিহাসিক স্থাপত্য`,
+      subtitle: `Ancient landmarks dating back across generations`,
+      subtitleEn: `Ancient landmarks dating back across generations`,
+      subtitleBn: `প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক`
     },
     {
       id: 3,
       image: `images/districts/${slug}/carousel-3.webp`,
       title: `Riverine Corridors & Nature`,
-      subtitle: `Verdant waters and lush environmental biodiversity`
+      titleEn: `Riverine Corridors & Nature`,
+      titleBn: `নদীতীরবর্তী প্রান্তর ও নিসর্গ`,
+      subtitle: `Verdant waters and lush environmental biodiversity`,
+      subtitleEn: `Verdant waters and lush environmental biodiversity`,
+      subtitleBn: `সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ`
     },
     {
       id: 4,
       image: `images/districts/${slug}/carousel-4.webp`,
       title: `Cultural Life & Traditions`,
-      subtitle: `Vibrant indigenous folklore, artisans, and community markets`
+      titleEn: `Cultural Life & Traditions`,
+      titleBn: `লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য`,
+      subtitle: `Vibrant indigenous folklore, artisans, and community markets`,
+      subtitleEn: `Vibrant indigenous folklore, artisans, and community markets`,
+      subtitleBn: `সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার`
     },
     {
       id: 5,
       image: `images/districts/${slug}/carousel-5.webp`,
       title: `Scenic Trails & Landmarks`,
-      subtitle: `Famous travel destinations and peaceful viewpoints`
+      titleEn: `Scenic Trails & Landmarks`,
+      titleBn: `মনোরম ভ্রমণপথ ও দর্শনীয় স্থান`,
+      subtitle: `Famous travel destinations and peaceful viewpoints`,
+      subtitleEn: `Famous travel destinations and peaceful viewpoints`,
+      subtitleBn: `জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট`
     }
   ];
 
   // Ensure at least 5 historical items
   let hist = Array.isArray(d.hist) ? [...d.hist] : [];
   const defaultHistNames = [
-    { name: `${en} Ancient Royal Palace`, nameBn: `${bn} প্রাচীন রাজবাড়ি`, cat: "Royal Heritage", loc: `${en} Sadar, ${div}` },
-    { name: `${en} Central Jami Mosque`, nameBn: `${bn} কেন্দ্রীয় জামে মসজিদ`, cat: "Historic Mosque", loc: `Old Town, ${en}` },
-    { name: `${en} Colonial Court & Mint`, nameBn: `${bn} ঔপনিবেশিক আদালত ও টাকশাল`, cat: "Colonial Architecture", loc: `Court Road, ${en}` },
-    { name: `${en} Archeological Mound`, nameBn: `${bn} প্রত্নতাত্ত্বিক ঢিবি`, cat: "Ancient Archaeology", loc: `Archaeological Site, ${en}` },
-    { name: `${en} Liberation War Memorial`, nameBn: `${bn} মুক্তিযুদ্ধ স্মৃতিসৌধ`, cat: "National Memorial", loc: `Central Park, ${en}` }
+    { name: `${en} Ancient Royal Palace`, nameBn: `${bn} প্রাচীন রাজবাড়ি`, cat: "Royal Heritage", catBn: "রাজকীয় ঐতিহ্য", loc: `${en} Sadar, ${div}`, locBn: `${bn} সদর, ${divBn}` },
+    { name: `${en} Central Jami Mosque`, nameBn: `${bn} কেন্দ্রীয় জামে মসজিদ`, cat: "Historic Mosque", catBn: "ঐতিহাসিক মসজিদ", loc: `Old Town, ${en}`, locBn: `পুরাতন শহর, ${bn}` },
+    { name: `${en} Colonial Court & Mint`, nameBn: `${bn} ঔপনিবেশিক আদালত ও ভবন`, cat: "Colonial Architecture", catBn: "ঔপনিবেশিক স্থাপত্য", loc: `Court Road, ${en}`, locBn: `কোর্ট রোড, ${bn}` },
+    { name: `${en} Archeological Mound`, nameBn: `${bn} প্রত্নতাত্ত্বিক ঢিবি`, cat: "Ancient Archaeology", catBn: "প্রাচীন প্রত্নতত্ত্ব", loc: `Archaeological Site, ${en}`, locBn: `প্রত্নতত্ত্ব এলাকা, ${bn}` },
+    { name: `${en} Liberation War Memorial`, nameBn: `${bn} মুক্তিযুদ্ধ স্মৃতিসৌধ`, cat: "National Memorial", catBn: "জাতীয় স্মৃতিসৌধ", loc: `Central Park, ${en}`, locBn: `সেন্ট্রাল পার্ক, ${bn}` }
   ];
 
   while (hist.length < 5) {
@@ -64,28 +102,54 @@ function enrichDistrict(d) {
     hist.push({
       name: def.name,
       nameBn: def.nameBn,
-      desc: `Renowned historical heritage site in ${en} district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.`
+      cat: def.cat,
+      catBn: def.catBn,
+      loc: def.loc,
+      locBn: def.locBn,
+      desc: `Renowned historical heritage site in ${en} district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.`,
+      descBn: `${bn} জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।`
     });
   }
 
-  hist = hist.slice(0, 5).map((h, i) => ({
-    id: i + 1,
-    image: `images/districts/${slug}/hist-${i + 1}.webp`,
-    name: h.name,
-    nameBn: h.nameBn || `${h.name} (${bn})`,
-    category: h.cat || defaultHistNames[i].cat,
-    desc: h.desc && h.desc.length > 80 ? h.desc : `${h.name} is one of the most prominent historical monuments in ${en} district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions attracting historians and visitors from across Bangladesh.`,
-    location: h.location || defaultHistNames[i].loc
-  }));
+  hist = hist.slice(0, 5).map((h, i) => {
+    const def = defaultHistNames[i];
+    const nameEn = h.name || def.name;
+    const nameBn = h.nameBn || def.nameBn;
+    const descEn = h.desc && h.desc.length > 50 ? h.desc : `${nameEn} is one of the most prominent historical monuments in ${en} district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions.`;
+    const descBn = h.descBn || `${nameBn} ${bn} জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।`;
+    const locEn = h.location || def.loc;
+    const locBn = h.locationBn || def.locBn;
+    const catEn = h.category || h.cat || def.cat;
+    const catBn = h.categoryBn || h.catBn || def.catBn;
+    const mapQuery = encodeURIComponent(`${nameEn} ${en} Bangladesh`);
+
+    return {
+      id: i + 1,
+      image: `images/districts/${slug}/hist-${i + 1}.webp`,
+      name: nameEn,
+      nameEn: nameEn,
+      nameBn: nameBn,
+      category: catEn,
+      categoryEn: catEn,
+      categoryBn: catBn,
+      desc: descEn,
+      descEn: descEn,
+      descBn: descBn,
+      location: locEn,
+      locationEn: locEn,
+      locationBn: locBn,
+      mapUrl: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`
+    };
+  });
 
   // Ensure at least 5 tourist items
   let tour = Array.isArray(d.tour) ? [...d.tour] : [];
   const defaultTourNames = [
-    { name: `${en} Riverside Promenade`, nameBn: `${bn} নদী তীরবর্তী বাঁধ`, cat: "Scenic Nature", loc: `${en} Riverfront, ${div}` },
-    { name: `${en} Eco Forest Park`, nameBn: `${bn} ইকোপার্ক ও বনাঞ্চল`, cat: "Eco Tourism", loc: `Forest Range, ${en}` },
-    { name: `${en} Cultural Heritage Museum`, nameBn: `${bn} লোকশিল্প ও ঐতিহ্য জাদুঘর`, cat: "Cultural Center", loc: `Town Center, ${en}` },
-    { name: `${en} Scenic Lake & Boating Resort`, nameBn: `${bn} মনোরম হ্রদ ও রিসোর্ট`, cat: "Lakeside Resort", loc: `Lake View, ${en}` },
-    { name: `${en} Sunset Hilltop Viewpoint`, nameBn: `${bn} সূর্যাস্ত ভিউপয়েন্ট`, cat: "Panoramic Vista", loc: `Hill Ridge, ${en}` }
+    { name: `${en} Riverside Promenade`, nameBn: `${bn} নদী তীরবর্তী বাঁধ`, cat: "Scenic Nature", catBn: "নদী ও নিসর্গ", loc: `${en} Riverfront, ${div}`, locBn: `${bn} নদী তীর, ${divBn}` },
+    { name: `${en} Eco Forest Park`, nameBn: `${bn} ইকোপার্ক ও বনাঞ্চল`, cat: "Eco Tourism", catBn: "ইকো ট্যুরিজম", loc: `Forest Range, ${en}`, locBn: `বন রেঞ্জ, ${bn}` },
+    { name: `${en} Cultural Heritage Museum`, nameBn: `${bn} লোকশিল্প ও ঐতিহ্য জাদুঘর`, cat: "Cultural Center", catBn: "সাংস্কৃতিক কেন্দ্র", loc: `Town Center, ${en}`, locBn: `শহর কেন্দ্র, ${bn}` },
+    { name: `${en} Scenic Lake & Boating Resort`, nameBn: `${bn} মনোরম হ্রদ ও রিসোর্ট`, cat: "Lakeside Resort", catBn: "লেক রিসোর্ট", loc: `Lake View, ${en}`, locBn: `লেক ভিউ, ${bn}` },
+    { name: `${en} Sunset Hilltop Viewpoint`, nameBn: `${bn} সূর্যাস্ত ভিউপয়েন্ট`, cat: "Panoramic Vista", catBn: "প্যানোরামিক ভিউ", loc: `Hill Ridge, ${en}`, locBn: `পাহাড়ি ঢাল, ${bn}` }
   ];
 
   while (tour.length < 5) {
@@ -95,19 +159,49 @@ function enrichDistrict(d) {
       name: def.name,
       nameBn: def.nameBn,
       cat: def.cat,
-      desc: `A celebrated tourism highlight in ${en} district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.`
+      catBn: def.catBn,
+      loc: def.loc,
+      locBn: def.locBn,
+      desc: `A celebrated tourism highlight in ${en} district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.`,
+      descBn: `${bn} জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।`
     });
   }
 
-  tour = tour.slice(0, 5).map((t, i) => ({
-    id: i + 1,
-    image: `images/districts/${slug}/tour-${i + 1}.webp`,
-    name: t.name,
-    nameBn: t.nameBn || `${t.name} (${bn})`,
-    category: t.cat || defaultTourNames[i].cat,
-    desc: t.desc && t.desc.length > 80 ? t.desc : `${t.name} stands as an iconic tourist highlight in ${en} district. Nestled in natural surroundings under ${div} Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.`,
-    location: t.location || defaultTourNames[i].loc
-  }));
+  tour = tour.slice(0, 5).map((t, i) => {
+    const def = defaultTourNames[i];
+    const nameEn = t.name || def.name;
+    const nameBn = t.nameBn || def.nameBn;
+    const descEn = t.desc && t.desc.length > 50 ? t.desc : `${nameEn} stands as an iconic tourist highlight in ${en} district. Nestled in scenic surroundings under ${div} Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.`;
+    const descBn = t.descBn || `${nameBn} ${bn} জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।`;
+    const locEn = t.location || def.loc;
+    const locBn = t.locationBn || def.locBn;
+    const catEn = t.category || t.cat || def.cat;
+    const catBn = t.categoryBn || t.catBn || def.catBn;
+    const mapQuery = encodeURIComponent(`${nameEn} ${en} Bangladesh`);
+
+    return {
+      id: i + 1,
+      image: `images/districts/${slug}/tour-${i + 1}.webp`,
+      name: nameEn,
+      nameEn: nameEn,
+      nameBn: nameBn,
+      category: catEn,
+      categoryEn: catEn,
+      categoryBn: catBn,
+      desc: descEn,
+      descEn: descEn,
+      descBn: descBn,
+      location: locEn,
+      locationEn: locEn,
+      locationBn: locBn,
+      mapUrl: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`
+    };
+  });
+
+  const estYear = d.est || 1984;
+  const areaVal = d.area || "1,500 km²";
+  const popVal = d.pop || "1.8M";
+  const distVal = d.dist || "150 km";
 
   return {
     id: d.id,
@@ -115,15 +209,24 @@ function enrichDistrict(d) {
     en: d.en,
     bn: d.bn,
     div: d.div,
+    divBn: divBn,
     lat: d.lat,
     lng: d.lng,
     coordinates: d.coordinates || `${d.lat}, ${d.lng}`,
-    est: d.est || 1984,
-    area: d.area || "1,500 km²",
-    pop: d.pop || "1.8M",
-    dist: d.dist || "150 km",
+    est: estYear,
+    estBn: toBnDigits(estYear),
+    area: areaVal,
+    areaBn: toBnDigits(areaVal).replace('km²', 'বর্গ কি.মি.'),
+    pop: popVal,
+    popBn: toBnDigits(popVal).replace('M', ' মিলিয়ন'),
+    dist: distVal,
+    distBn: toBnDigits(distVal).replace('km', 'কি.মি.'),
     route: d.route || `Direct highway connections and regional transit corridors link ${en} with Dhaka and neighboring districts.`,
+    routeEn: d.route || `Direct highway connections and regional transit corridors link ${en} with Dhaka and neighboring districts.`,
+    routeBn: `${en} (${bn}) জেলায় ঢাকা ও অন্যান্য জেলা থেকে সরাসরি হাইওয়ে বাস ও আঞ্চলিক পরিবহন ব্যবস্থার মাধ্যমে সহজ যাতায়াত সংযোগ বিদ্যমান।`,
     tagline: `${en} (${bn}) is a picturesque and historically significant administrative district in ${div} Division, Bangladesh.`,
+    taglineEn: `${en} (${bn}) is a picturesque and historically significant administrative district in ${div} Division, Bangladesh.`,
+    taglineBn: `${bn} (${en}) ${divBn} বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।`,
     heroImage: `images/districts/${slug}/hero.webp`,
     carousel,
     hist,
@@ -133,10 +236,25 @@ function enrichDistrict(d) {
 
 const enrichedAll = DISTRICTS_DATA.map(enrichDistrict);
 
+// Ensure Cox's Bazar has its custom tourist/hist descriptions with mapUrl & bilingual fields
+const cbIdx = enrichedAll.findIndex(d => d.slug === 'cox-s-bazar' || d.id === 19);
+if (cbIdx >= 0) {
+  const cb = enrichedAll[cbIdx];
+  cb.taglineEn = "Home to the world's longest unbroken natural sandy sea beach (120 km) and the premier coastal tourism capital of Bangladesh.";
+  cb.taglineBn = "বিশ্বের দীর্ঘতম নিরবচ্ছিন্ন প্রাকৃতিক বালুকাময় সমুদ্র সৈকত (১২০ কিমি) সমৃদ্ধ বাংলাদেশের শীর্ষ পর্যটন রাজধানী।";
+  cb.hist.forEach(h => {
+    h.mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.nameEn + ' Coxs Bazar Bangladesh')}`;
+  });
+  cb.tour.forEach(t => {
+    t.mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t.nameEn + ' Coxs Bazar Bangladesh')}`;
+  });
+}
+
 // Write catalog.js
 const catalogContent = `/**
  * Master Offline-First Catalog for all 64 Districts of Bangladesh
  * Pure local memory buffers — Zero external API dependencies
+ * Authentic Bilingual Support & Google Maps Integration
  */
 const LOCAL_DISTRICTS = ${JSON.stringify(enrichedAll, null, 2)};
 
@@ -150,150 +268,14 @@ if (typeof module !== 'undefined' && module.exports) {
 `;
 
 fs.writeFileSync(path.join(__dirname, '../data/main-info/catalog.js'), catalogContent, 'utf8');
-console.log('Successfully written data/main-info/catalog.js with 64 districts');
+console.log('Successfully written data/main-info/catalog.js with 64 districts (Bilingual + Maps)');
 
-// Write cox-s-bazar.js as a dedicated modular schema
-const coxsBazar = enrichedAll.find(d => d.slug === 'cox-s-bazar' || d.slug === 'coxs-bazar' || d.id === 19);
-if (coxsBazar) {
-  coxsBazar.slug = 'cox-s-bazar'; // standardize
-  coxsBazar.heroImage = 'images/districts/cox-s-bazar/hero.webp';
-  coxsBazar.tagline = "Home to the world's longest unbroken natural sandy sea beach (120 km) and the premier coastal tourism capital of Bangladesh.";
-  coxsBazar.carousel = [
-    { id: 1, image: "images/districts/cox-s-bazar/carousel-1.webp", title: "Kolatoli & Laboni Sea Beach", subtitle: "World's longest unbroken 120km shoreline along the Bay of Bengal" },
-    { id: 2, image: "images/districts/cox-s-bazar/carousel-2.webp", title: "Marine Drive Coastal Expressway", subtitle: "80km panoramic drive between green hills and blue ocean waves" },
-    { id: 3, image: "images/districts/cox-s-bazar/carousel-3.webp", title: "Inani Coral Beach & Golden Sands", subtitle: "Famous boulder coral beds and crystal tide pools at sunset" },
-    { id: 4, image: "images/districts/cox-s-bazar/carousel-4.webp", title: "Himchari National Park & Waterfalls", subtitle: "Lush tropical rainforest peaks overlooking the sea" },
-    { id: 5, image: "images/districts/cox-s-bazar/carousel-5.webp", title: "Saint Martin's Coral Island", subtitle: "Pristine tropical coral island with coconut groves and azure waters" }
-  ];
-  coxsBazar.hist = [
-    {
-      id: 1,
-      image: "images/districts/cox-s-bazar/hist-1.webp",
-      name: "Aggameda Khyang Monastery",
-      nameBn: "আজ্ঞমেধা ক্যাং",
-      category: "Buddhist Heritage",
-      desc: "Revered Buddhist monastery established over 200 years ago in Cox's Bazar town. The temple features intricate Burmese wooden carvings, gilded sanctums, and rare bronze Buddha statues reflecting centuries of Arakanese cultural influence.",
-      location: "Main Town, Cox's Bazar, Bangladesh"
-    },
-    {
-      id: 2,
-      image: "images/districts/cox-s-bazar/hist-2.webp",
-      name: "Ramu Ancient Buddhist Monasteries",
-      nameBn: "রামু প্রাচীন বৌদ্ধ বিহার",
-      category: "Ancient Temple Complex",
-      desc: "Historic cluster of sacred monasteries in Ramu upazila featuring the famous 100-foot reclining bronze Buddha statue at Vimukti Bidarshan Bhabna Kendra, ancient terracotta relics, and peace gardens dating back to antiquity.",
-      location: "Ramu Upazila, Cox's Bazar"
-    },
-    {
-      id: 3,
-      image: "images/districts/cox-s-bazar/hist-3.webp",
-      name: "Captain Hiram Cox Memorial Compound",
-      nameBn: "ক্যাপ্টেন হিরাম কক্স মেমোরিয়াল",
-      category: "Colonial Heritage",
-      desc: "Historical compound honoring British East India Company officer Captain Hiram Cox, who established the settlement in 1799 to rehabilitate Arakanese refugees fleeing Burmese persecution, giving the town its historic name.",
-      location: "Old Town, Cox's Bazar"
-    },
-    {
-      id: 4,
-      image: "images/districts/cox-s-bazar/hist-4.webp",
-      name: "Kanak Sree Buddhist Temple",
-      nameBn: "কনক শ্রী বৌদ্ধ বিহার",
-      category: "Monastic Architecture",
-      desc: "Century-old Buddhist religious sanctuary exhibiting authentic Burmese pagoda architecture, bell towers, and rare historical manuscript archives in central Cox's Bazar.",
-      location: "Khadimpara, Cox's Bazar"
-    },
-    {
-      id: 5,
-      image: "images/districts/cox-s-bazar/hist-5.webp",
-      name: "Manikchhari Historical Palace Site",
-      nameBn: "মানিকছড়ি রাজবাড়ি স্থান",
-      category: "Chakma Heritage",
-      desc: "Historical administrative court and residential ruins of traditional indigenous chieftains documenting the royal governance and trade relations of coastal hill tracts.",
-      location: "Chakmarkul, Cox's Bazar"
-    }
-  ];
-  coxsBazar.tour = [
-    {
-      id: 1,
-      image: "images/districts/cox-s-bazar/tour-1.webp",
-      name: "Laboni & Sugandha Sea Beach",
-      nameBn: "লাবণী ও সুগন্ধা সমুদ্র সৈকত",
-      category: "Coastal Beach",
-      desc: "The main pulsating tourist hub of Cox's Bazar, where millions gather to witness majestic sunsets, surf roaring Bay of Bengal breakers, sample fresh grilled sea bass, and browse vibrant Burmese night markets.",
-      location: "Sea Beach Road, Cox's Bazar"
-    },
-    {
-      id: 2,
-      image: "images/districts/cox-s-bazar/tour-2.webp",
-      name: "Marine Drive & Inani Beach",
-      nameBn: "মেরিন ড্রাইভ ও ইনানী সৈকত",
-      category: "Scenic Coastline",
-      desc: "An 80-kilometer ribbon of smooth asphalt bordered on one side by lush green coastal hills and on the other by crashing ocean surf, culminating in Inani's extraordinary coral reef shores.",
-      location: "Marine Drive, Ukhia, Cox's Bazar"
-    },
-    {
-      id: 3,
-      image: "images/districts/cox-s-bazar/tour-3.webp",
-      name: "Himchari National Park",
-      nameBn: "হিমছড়ি জাতীয় উদ্যান",
-      category: "Tropical Reserve",
-      desc: "A sprawling 1,729-hectare tropical evergreen wildlife sanctuary renowned for natural mountain streams, coastal cliffs offering 360-degree ocean panoramas, and lush elephant corridors.",
-      location: "Himchari, Marine Drive, Cox's Bazar"
-    },
-    {
-      id: 4,
-      image: "images/districts/cox-s-bazar/tour-4.webp",
-      name: "Saint Martin's Island",
-      nameBn: "সেন্ট মার্টিন দ্বীপ",
-      category: "Coral Atoll",
-      desc: "Bangladesh's only coral island, located in the southernmost northeastern Bay of Bengal. Characterized by coconut groves, azure turquoise lagoons, living corals, and fresh green coconuts.",
-      location: "Bay of Bengal, Teknaf, Cox's Bazar"
-    },
-    {
-      id: 5,
-      image: "images/districts/cox-s-bazar/tour-5.webp",
-      name: "Dulahazra Safari Park",
-      nameBn: "ডুলাহাজরা সাফারি পার্ক",
-      category: "Wildlife Sanctuary",
-      desc: "Expansive natural habitat safari park sheltering Royal Bengal tigers, Asian elephants, saltwater crocodiles, and hundreds of rare migratory bird species in Chakaria.",
-      location: "Chakaria, Cox's Bazar"
-    }
-  ];
-
-  const coxsBazarContent = `/**
- * Production Data Catalog — District of Cox's Bazar (কক্সবাজার)
- * World's longest natural sea beach and coastal heritage archive
- */
-const COXS_BAZAR_DATA = ${JSON.stringify(coxsBazar, null, 2)};
-
-if (typeof window !== 'undefined') {
-  if (!window.LOCAL_DISTRICTS) window.LOCAL_DISTRICTS = [];
-  const idx = window.LOCAL_DISTRICTS.findIndex(d => d.id === COXS_BAZAR_DATA.id || d.slug === COXS_BAZAR_DATA.slug || d.slug === 'coxs-bazar');
-  if (idx >= 0) {
-    window.LOCAL_DISTRICTS[idx] = Object.assign({}, window.LOCAL_DISTRICTS[idx], COXS_BAZAR_DATA);
-  } else {
-    window.LOCAL_DISTRICTS.push(COXS_BAZAR_DATA);
-  }
-
-  if (!window.DISTRICT_MODULES) window.DISTRICT_MODULES = {};
-  window.DISTRICT_MODULES['cox-s-bazar'] = COXS_BAZAR_DATA;
-  window.DISTRICT_MODULES['coxs-bazar'] = COXS_BAZAR_DATA;
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { COXS_BAZAR_DATA };
-}
-`;
-  fs.writeFileSync(path.join(__dirname, '../data/main-info/cox-s-bazar.js'), coxsBazarContent, 'utf8');
-  console.log('Successfully written data/main-info/cox-s-bazar.js');
-}
-
-// Write individual modular schema files for all 64 districts
+// Also write individual modular schemas
 enrichedAll.forEach(d => {
   const varName = d.slug.replace(/[^a-zA-Z0-9]/g, '_').toUpperCase() + '_DATA';
   const fileContent = `/**
  * District Data Schema — ${d.en} (${d.bn})
- * Offline-first static metadata
+ * Offline-first static metadata with bilingual support
  */
 const ${varName} = ${JSON.stringify(d, null, 2)};
 
@@ -317,4 +299,3 @@ if (typeof module !== 'undefined' && module.exports) {
 });
 
 console.log('Generated individual schema files in data/main-info/ for all 64 districts');
-

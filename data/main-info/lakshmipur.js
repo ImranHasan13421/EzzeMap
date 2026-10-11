@@ -1,6 +1,6 @@
 /**
  * District Data Schema — Lakshmipur (লক্ষ্মীপুর)
- * Offline-first static metadata
+ * Offline-first static metadata with bilingual support
  */
 const LAKSHMIPUR_DATA = {
   "id": 22,
@@ -8,46 +8,75 @@ const LAKSHMIPUR_DATA = {
   "en": "Lakshmipur",
   "bn": "লক্ষ্মীপুর",
   "div": "Chattogram",
+  "divBn": "চট্টগ্রাম",
   "lat": 22.9005,
   "lng": 90.8557,
   "coordinates": "22.9005, 90.8557",
   "est": 1984,
+  "estBn": "১৯৮৪",
   "area": "1,455.96 km²",
+  "areaBn": "১,৪৫৫.৯৬ বর্গ কি.মি.",
   "pop": "1.8M",
+  "popBn": "১.৮ মিলিয়ন",
   "dist": "155 km",
+  "distBn": "১৫৫ কি.মি.",
   "route": "Via Padma Bridge expressway through Chandpur, or Dhaka-Chittagong highway branch (3.5 hrs).",
+  "routeEn": "Via Padma Bridge expressway through Chandpur, or Dhaka-Chittagong highway branch (3.5 hrs).",
+  "routeBn": "Lakshmipur (লক্ষ্মীপুর) জেলায় ঢাকা ও অন্যান্য জেলা থেকে সরাসরি হাইওয়ে বাস ও আঞ্চলিক পরিবহন ব্যবস্থার মাধ্যমে সহজ যাতায়াত সংযোগ বিদ্যমান।",
   "tagline": "Lakshmipur (লক্ষ্মীপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
+  "taglineEn": "Lakshmipur (লক্ষ্মীপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
+  "taglineBn": "লক্ষ্মীপুর (Lakshmipur) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
   "heroImage": "images/districts/lakshmipur/hero.webp",
   "carousel": [
     {
       "id": 1,
       "image": "images/districts/lakshmipur/carousel-1.webp",
       "title": "Lakshmipur Heritage & Landscapes",
-      "subtitle": "Panoramic beauty across Chattogram Division"
+      "titleEn": "Lakshmipur Heritage & Landscapes",
+      "titleBn": "লক্ষ্মীপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
+      "subtitle": "Panoramic beauty across Chattogram Division",
+      "subtitleEn": "Panoramic beauty across Chattogram Division",
+      "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
     },
     {
       "id": 2,
       "image": "images/districts/lakshmipur/carousel-2.webp",
       "title": "Historic Monuments of Lakshmipur",
-      "subtitle": "Ancient landmarks dating back across generations"
+      "titleEn": "Historic Monuments of Lakshmipur",
+      "titleBn": "লক্ষ্মীপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
+      "subtitle": "Ancient landmarks dating back across generations",
+      "subtitleEn": "Ancient landmarks dating back across generations",
+      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
     },
     {
       "id": 3,
       "image": "images/districts/lakshmipur/carousel-3.webp",
       "title": "Riverine Corridors & Nature",
-      "subtitle": "Verdant waters and lush environmental biodiversity"
+      "titleEn": "Riverine Corridors & Nature",
+      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
+      "subtitle": "Verdant waters and lush environmental biodiversity",
+      "subtitleEn": "Verdant waters and lush environmental biodiversity",
+      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
     },
     {
       "id": 4,
       "image": "images/districts/lakshmipur/carousel-4.webp",
       "title": "Cultural Life & Traditions",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets"
+      "titleEn": "Cultural Life & Traditions",
+      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
+      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
     },
     {
       "id": 5,
       "image": "images/districts/lakshmipur/carousel-5.webp",
       "title": "Scenic Trails & Landmarks",
-      "subtitle": "Famous travel destinations and peaceful viewpoints"
+      "titleEn": "Scenic Trails & Landmarks",
+      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
+      "subtitle": "Famous travel destinations and peaceful viewpoints",
+      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
+      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
     }
   ],
   "hist": [
@@ -55,46 +84,86 @@ const LAKSHMIPUR_DATA = {
       "id": 1,
       "image": "images/districts/lakshmipur/hist-1.webp",
       "name": "Dalal Bazar Zamindar Bari",
-      "nameBn": "Dalal Bazar Zamindar Bari (লক্ষ্মীপুর)",
+      "nameEn": "Dalal Bazar Zamindar Bari",
+      "nameBn": "লক্ষ্মীপুর প্রাচীন রাজবাড়ি",
       "category": "Royal Heritage",
-      "desc": "Dalal Bazar Zamindar Bari is one of the most prominent historical monuments in Lakshmipur district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions attracting historians and visitors from across Bangladesh.",
-      "location": "Lakshmipur Sadar, Chattogram"
+      "categoryEn": "Royal Heritage",
+      "categoryBn": "রাজকীয় ঐতিহ্য",
+      "desc": "Sprawling 18th-century landlord palace with watchtowers and subterranean vaults.",
+      "descEn": "Sprawling 18th-century landlord palace with watchtowers and subterranean vaults.",
+      "descBn": "লক্ষ্মীপুর প্রাচীন রাজবাড়ি লক্ষ্মীপুর জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Lakshmipur Sadar, Chattogram",
+      "locationEn": "Lakshmipur Sadar, Chattogram",
+      "locationBn": "লক্ষ্মীপুর সদর, চট্টগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dalal%20Bazar%20Zamindar%20Bari%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/lakshmipur/hist-2.webp",
       "name": "Khoa Sagor Dighi",
-      "nameBn": "Khoa Sagor Dighi (লক্ষ্মীপুর)",
+      "nameEn": "Khoa Sagor Dighi",
+      "nameBn": "লক্ষ্মীপুর কেন্দ্রীয় জামে মসজিদ",
       "category": "Historic Mosque",
+      "categoryEn": "Historic Mosque",
+      "categoryBn": "ঐতিহাসিক মসজিদ",
       "desc": "Immense historic water reservoir named after the morning mist that covers the surface.",
-      "location": "Old Town, Lakshmipur"
+      "descEn": "Immense historic water reservoir named after the morning mist that covers the surface.",
+      "descBn": "লক্ষ্মীপুর কেন্দ্রীয় জামে মসজিদ লক্ষ্মীপুর জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Old Town, Lakshmipur",
+      "locationEn": "Old Town, Lakshmipur",
+      "locationBn": "পুরাতন শহর, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Khoa%20Sagor%20Dighi%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/lakshmipur/hist-3.webp",
       "name": "Lakshmipur Colonial Court & Mint",
-      "nameBn": "লক্ষ্মীপুর ঔপনিবেশিক আদালত ও টাকশাল",
+      "nameEn": "Lakshmipur Colonial Court & Mint",
+      "nameBn": "লক্ষ্মীপুর ঔপনিবেশিক আদালত ও ভবন",
       "category": "Colonial Architecture",
+      "categoryEn": "Colonial Architecture",
+      "categoryBn": "ঔপনিবেশিক স্থাপত্য",
       "desc": "Renowned historical heritage site in Lakshmipur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Court Road, Lakshmipur"
+      "descEn": "Renowned historical heritage site in Lakshmipur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "লক্ষ্মীপুর জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Court Road, Lakshmipur",
+      "locationEn": "Court Road, Lakshmipur",
+      "locationBn": "কোর্ট রোড, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lakshmipur%20Colonial%20Court%20%26%20Mint%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/lakshmipur/hist-4.webp",
       "name": "Lakshmipur Archeological Mound",
+      "nameEn": "Lakshmipur Archeological Mound",
       "nameBn": "লক্ষ্মীপুর প্রত্নতাত্ত্বিক ঢিবি",
       "category": "Ancient Archaeology",
+      "categoryEn": "Ancient Archaeology",
+      "categoryBn": "প্রাচীন প্রত্নতত্ত্ব",
       "desc": "Renowned historical heritage site in Lakshmipur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Archaeological Site, Lakshmipur"
+      "descEn": "Renowned historical heritage site in Lakshmipur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "লক্ষ্মীপুর জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Archaeological Site, Lakshmipur",
+      "locationEn": "Archaeological Site, Lakshmipur",
+      "locationBn": "প্রত্নতত্ত্ব এলাকা, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lakshmipur%20Archeological%20Mound%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/lakshmipur/hist-5.webp",
       "name": "Lakshmipur Liberation War Memorial",
+      "nameEn": "Lakshmipur Liberation War Memorial",
       "nameBn": "লক্ষ্মীপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
       "category": "National Memorial",
+      "categoryEn": "National Memorial",
+      "categoryBn": "জাতীয় স্মৃতিসৌধ",
       "desc": "Renowned historical heritage site in Lakshmipur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Central Park, Lakshmipur"
+      "descEn": "Renowned historical heritage site in Lakshmipur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "লক্ষ্মীপুর জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Central Park, Lakshmipur",
+      "locationEn": "Central Park, Lakshmipur",
+      "locationBn": "সেন্ট্রাল পার্ক, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lakshmipur%20Liberation%20War%20Memorial%20Lakshmipur%20Bangladesh"
     }
   ],
   "tour": [
@@ -102,46 +171,86 @@ const LAKSHMIPUR_DATA = {
       "id": 1,
       "image": "images/districts/lakshmipur/tour-1.webp",
       "name": "Meghna River Estuary",
-      "nameBn": "Meghna River Estuary (লক্ষ্মীপুর)",
+      "nameEn": "Meghna River Estuary",
+      "nameBn": "লক্ষ্মীপুর নদী তীরবর্তী বাঁধ",
       "category": "Coastal Waters",
-      "desc": "Meghna River Estuary stands as an iconic tourist highlight in Lakshmipur district. Nestled in natural surroundings under Chattogram Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.",
-      "location": "Lakshmipur Riverfront, Chattogram"
+      "categoryEn": "Coastal Waters",
+      "categoryBn": "নদী ও নিসর্গ",
+      "desc": "Vast tidal delta shoreline where the mighty Meghna sweeps out towards the Bay.",
+      "descEn": "Vast tidal delta shoreline where the mighty Meghna sweeps out towards the Bay.",
+      "descBn": "লক্ষ্মীপুর নদী তীরবর্তী বাঁধ লক্ষ্মীপুর জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Lakshmipur Riverfront, Chattogram",
+      "locationEn": "Lakshmipur Riverfront, Chattogram",
+      "locationBn": "লক্ষ্মীপুর নদী তীর, চট্টগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Meghna%20River%20Estuary%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/lakshmipur/tour-2.webp",
       "name": "Ramgati Coastal Fishing Ports",
-      "nameBn": "Ramgati Coastal Fishing Ports (লক্ষ্মীপুর)",
+      "nameEn": "Ramgati Coastal Fishing Ports",
+      "nameBn": "লক্ষ্মীপুর ইকোপার্ক ও বনাঞ্চল",
       "category": "Maritime Culture",
-      "desc": "Ramgati Coastal Fishing Ports stands as an iconic tourist highlight in Lakshmipur district. Nestled in natural surroundings under Chattogram Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.",
-      "location": "Forest Range, Lakshmipur"
+      "categoryEn": "Maritime Culture",
+      "categoryBn": "ইকো ট্যুরিজম",
+      "desc": "Busy coastal hilsa fishing villages and tranquil coconut palm groves.",
+      "descEn": "Busy coastal hilsa fishing villages and tranquil coconut palm groves.",
+      "descBn": "লক্ষ্মীপুর ইকোপার্ক ও বনাঞ্চল লক্ষ্মীপুর জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Forest Range, Lakshmipur",
+      "locationEn": "Forest Range, Lakshmipur",
+      "locationBn": "বন রেঞ্জ, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ramgati%20Coastal%20Fishing%20Ports%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/lakshmipur/tour-3.webp",
       "name": "Lakshmipur Cultural Heritage Museum",
+      "nameEn": "Lakshmipur Cultural Heritage Museum",
       "nameBn": "লক্ষ্মীপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
       "category": "Cultural Center",
+      "categoryEn": "Cultural Center",
+      "categoryBn": "সাংস্কৃতিক কেন্দ্র",
       "desc": "A celebrated tourism highlight in Lakshmipur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Town Center, Lakshmipur"
+      "descEn": "A celebrated tourism highlight in Lakshmipur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "লক্ষ্মীপুর জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Town Center, Lakshmipur",
+      "locationEn": "Town Center, Lakshmipur",
+      "locationBn": "শহর কেন্দ্র, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lakshmipur%20Cultural%20Heritage%20Museum%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/lakshmipur/tour-4.webp",
       "name": "Lakshmipur Scenic Lake & Boating Resort",
+      "nameEn": "Lakshmipur Scenic Lake & Boating Resort",
       "nameBn": "লক্ষ্মীপুর মনোরম হ্রদ ও রিসোর্ট",
       "category": "Lakeside Resort",
+      "categoryEn": "Lakeside Resort",
+      "categoryBn": "লেক রিসোর্ট",
       "desc": "A celebrated tourism highlight in Lakshmipur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Lake View, Lakshmipur"
+      "descEn": "A celebrated tourism highlight in Lakshmipur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "লক্ষ্মীপুর জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Lake View, Lakshmipur",
+      "locationEn": "Lake View, Lakshmipur",
+      "locationBn": "লেক ভিউ, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lakshmipur%20Scenic%20Lake%20%26%20Boating%20Resort%20Lakshmipur%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/lakshmipur/tour-5.webp",
       "name": "Lakshmipur Sunset Hilltop Viewpoint",
+      "nameEn": "Lakshmipur Sunset Hilltop Viewpoint",
       "nameBn": "লক্ষ্মীপুর সূর্যাস্ত ভিউপয়েন্ট",
       "category": "Panoramic Vista",
+      "categoryEn": "Panoramic Vista",
+      "categoryBn": "প্যানোরামিক ভিউ",
       "desc": "A celebrated tourism highlight in Lakshmipur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Hill Ridge, Lakshmipur"
+      "descEn": "A celebrated tourism highlight in Lakshmipur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "লক্ষ্মীপুর জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Hill Ridge, Lakshmipur",
+      "locationEn": "Hill Ridge, Lakshmipur",
+      "locationBn": "পাহাড়ি ঢাল, লক্ষ্মীপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lakshmipur%20Sunset%20Hilltop%20Viewpoint%20Lakshmipur%20Bangladesh"
     }
   ]
 };

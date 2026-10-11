@@ -1,6 +1,6 @@
 /**
  * District Data Schema — Sylhet (সিলেট)
- * Offline-first static metadata
+ * Offline-first static metadata with bilingual support
  */
 const SYLHET_DATA = {
   "id": 28,
@@ -8,46 +8,75 @@ const SYLHET_DATA = {
   "en": "Sylhet",
   "bn": "সিলেট",
   "div": "Sylhet",
+  "divBn": "সিলেট",
   "lat": 24.9192,
   "lng": 91.9873,
   "coordinates": "24.9192, 91.9873",
   "est": 1772,
+  "estBn": "১৭৭২",
   "area": "3,490.40 km²",
+  "areaBn": "৩,৪৯০.৪০ বর্গ কি.মি.",
   "pop": "3.9M",
+  "popBn": "৩.৯ মিলিয়ন",
   "dist": "240 km",
+  "distBn": "২৪০ কি.মি.",
   "route": "Via Dhaka-Sylhet Highway N2 (5 hrs), Parabat/Kalni Express train (5 hrs), or 35-min flight.",
+  "routeEn": "Via Dhaka-Sylhet Highway N2 (5 hrs), Parabat/Kalni Express train (5 hrs), or 35-min flight.",
+  "routeBn": "Sylhet (সিলেট) জেলায় ঢাকা ও অন্যান্য জেলা থেকে সরাসরি হাইওয়ে বাস ও আঞ্চলিক পরিবহন ব্যবস্থার মাধ্যমে সহজ যাতায়াত সংযোগ বিদ্যমান।",
   "tagline": "Sylhet (সিলেট) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
+  "taglineEn": "Sylhet (সিলেট) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
+  "taglineBn": "সিলেট (Sylhet) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
   "heroImage": "images/districts/sylhet/hero.webp",
   "carousel": [
     {
       "id": 1,
       "image": "images/districts/sylhet/carousel-1.webp",
       "title": "Sylhet Heritage & Landscapes",
-      "subtitle": "Panoramic beauty across Sylhet Division"
+      "titleEn": "Sylhet Heritage & Landscapes",
+      "titleBn": "সিলেট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
+      "subtitle": "Panoramic beauty across Sylhet Division",
+      "subtitleEn": "Panoramic beauty across Sylhet Division",
+      "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
     },
     {
       "id": 2,
       "image": "images/districts/sylhet/carousel-2.webp",
       "title": "Historic Monuments of Sylhet",
-      "subtitle": "Ancient landmarks dating back across generations"
+      "titleEn": "Historic Monuments of Sylhet",
+      "titleBn": "সিলেট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
+      "subtitle": "Ancient landmarks dating back across generations",
+      "subtitleEn": "Ancient landmarks dating back across generations",
+      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
     },
     {
       "id": 3,
       "image": "images/districts/sylhet/carousel-3.webp",
       "title": "Riverine Corridors & Nature",
-      "subtitle": "Verdant waters and lush environmental biodiversity"
+      "titleEn": "Riverine Corridors & Nature",
+      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
+      "subtitle": "Verdant waters and lush environmental biodiversity",
+      "subtitleEn": "Verdant waters and lush environmental biodiversity",
+      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
     },
     {
       "id": 4,
       "image": "images/districts/sylhet/carousel-4.webp",
       "title": "Cultural Life & Traditions",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets"
+      "titleEn": "Cultural Life & Traditions",
+      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
+      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
     },
     {
       "id": 5,
       "image": "images/districts/sylhet/carousel-5.webp",
       "title": "Scenic Trails & Landmarks",
-      "subtitle": "Famous travel destinations and peaceful viewpoints"
+      "titleEn": "Scenic Trails & Landmarks",
+      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
+      "subtitle": "Famous travel destinations and peaceful viewpoints",
+      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
+      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
     }
   ],
   "hist": [
@@ -55,46 +84,86 @@ const SYLHET_DATA = {
       "id": 1,
       "image": "images/districts/sylhet/hist-1.webp",
       "name": "Dargah of Hazrat Shah Jalal (R.)",
-      "nameBn": "Dargah of Hazrat Shah Jalal (R.) (সিলেট)",
+      "nameEn": "Dargah of Hazrat Shah Jalal (R.)",
+      "nameBn": "সিলেট প্রাচীন রাজবাড়ি",
       "category": "Royal Heritage",
+      "categoryEn": "Royal Heritage",
+      "categoryBn": "রাজকীয় ঐতিহ্য",
       "desc": "Famed 14th-century Sufi pilgrimage shrine complex featuring holy springs and koi fish pond.",
-      "location": "Sylhet Sadar, Sylhet"
+      "descEn": "Famed 14th-century Sufi pilgrimage shrine complex featuring holy springs and koi fish pond.",
+      "descBn": "সিলেট প্রাচীন রাজবাড়ি সিলেট জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Sylhet Sadar, Sylhet",
+      "locationEn": "Sylhet Sadar, Sylhet",
+      "locationBn": "সিলেট সদর, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dargah%20of%20Hazrat%20Shah%20Jalal%20(R.)%20Sylhet%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/sylhet/hist-2.webp",
       "name": "Keane Bridge & Ali Amjad Clock",
-      "nameBn": "Keane Bridge & Ali Amjad Clock (সিলেট)",
+      "nameEn": "Keane Bridge & Ali Amjad Clock",
+      "nameBn": "সিলেট কেন্দ্রীয় জামে মসজিদ",
       "category": "Historic Mosque",
-      "desc": "Keane Bridge & Ali Amjad Clock is one of the most prominent historical monuments in Sylhet district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions attracting historians and visitors from across Bangladesh.",
-      "location": "Old Town, Sylhet"
+      "categoryEn": "Historic Mosque",
+      "categoryBn": "ঐতিহাসিক মসজিদ",
+      "desc": "Surma riverbank landmarks constructed during the British colonial era.",
+      "descEn": "Surma riverbank landmarks constructed during the British colonial era.",
+      "descBn": "সিলেট কেন্দ্রীয় জামে মসজিদ সিলেট জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Old Town, Sylhet",
+      "locationEn": "Old Town, Sylhet",
+      "locationBn": "পুরাতন শহর, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Keane%20Bridge%20%26%20Ali%20Amjad%20Clock%20Sylhet%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/sylhet/hist-3.webp",
       "name": "Sylhet Colonial Court & Mint",
-      "nameBn": "সিলেট ঔপনিবেশিক আদালত ও টাকশাল",
+      "nameEn": "Sylhet Colonial Court & Mint",
+      "nameBn": "সিলেট ঔপনিবেশিক আদালত ও ভবন",
       "category": "Colonial Architecture",
+      "categoryEn": "Colonial Architecture",
+      "categoryBn": "ঔপনিবেশিক স্থাপত্য",
       "desc": "Renowned historical heritage site in Sylhet district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Court Road, Sylhet"
+      "descEn": "Renowned historical heritage site in Sylhet district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "সিলেট জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Court Road, Sylhet",
+      "locationEn": "Court Road, Sylhet",
+      "locationBn": "কোর্ট রোড, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sylhet%20Colonial%20Court%20%26%20Mint%20Sylhet%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/sylhet/hist-4.webp",
       "name": "Sylhet Archeological Mound",
+      "nameEn": "Sylhet Archeological Mound",
       "nameBn": "সিলেট প্রত্নতাত্ত্বিক ঢিবি",
       "category": "Ancient Archaeology",
+      "categoryEn": "Ancient Archaeology",
+      "categoryBn": "প্রাচীন প্রত্নতত্ত্ব",
       "desc": "Renowned historical heritage site in Sylhet district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Archaeological Site, Sylhet"
+      "descEn": "Renowned historical heritage site in Sylhet district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "সিলেট জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Archaeological Site, Sylhet",
+      "locationEn": "Archaeological Site, Sylhet",
+      "locationBn": "প্রত্নতত্ত্ব এলাকা, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sylhet%20Archeological%20Mound%20Sylhet%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/sylhet/hist-5.webp",
       "name": "Sylhet Liberation War Memorial",
+      "nameEn": "Sylhet Liberation War Memorial",
       "nameBn": "সিলেট মুক্তিযুদ্ধ স্মৃতিসৌধ",
       "category": "National Memorial",
+      "categoryEn": "National Memorial",
+      "categoryBn": "জাতীয় স্মৃতিসৌধ",
       "desc": "Renowned historical heritage site in Sylhet district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Central Park, Sylhet"
+      "descEn": "Renowned historical heritage site in Sylhet district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "সিলেট জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Central Park, Sylhet",
+      "locationEn": "Central Park, Sylhet",
+      "locationBn": "সেন্ট্রাল পার্ক, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sylhet%20Liberation%20War%20Memorial%20Sylhet%20Bangladesh"
     }
   ],
   "tour": [
@@ -102,46 +171,86 @@ const SYLHET_DATA = {
       "id": 1,
       "image": "images/districts/sylhet/tour-1.webp",
       "name": "Ratargul Freshwater Swamp Forest",
-      "nameBn": "Ratargul Freshwater Swamp Forest (সিলেট)",
+      "nameEn": "Ratargul Freshwater Swamp Forest",
+      "nameBn": "সিলেট নদী তীরবর্তী বাঁধ",
       "category": "Flooded Forest",
+      "categoryEn": "Flooded Forest",
+      "categoryBn": "নদী ও নিসর্গ",
       "desc": "One of the world’s rare freshwater swamp forests explored via quiet wooden canoes.",
-      "location": "Sylhet Riverfront, Sylhet"
+      "descEn": "One of the world’s rare freshwater swamp forests explored via quiet wooden canoes.",
+      "descBn": "সিলেট নদী তীরবর্তী বাঁধ সিলেট জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Sylhet Riverfront, Sylhet",
+      "locationEn": "Sylhet Riverfront, Sylhet",
+      "locationBn": "সিলেট নদী তীর, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ratargul%20Freshwater%20Swamp%20Forest%20Sylhet%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/sylhet/tour-2.webp",
       "name": "Jaflong & Bisnakandi",
-      "nameBn": "Jaflong & Bisnakandi (সিলেট)",
+      "nameEn": "Jaflong & Bisnakandi",
+      "nameBn": "সিলেট ইকোপার্ক ও বনাঞ্চল",
       "category": "Rocky Rivers & Cliffs",
+      "categoryEn": "Rocky Rivers & Cliffs",
+      "categoryBn": "ইকো ট্যুরিজম",
       "desc": "Pristine mountain streams rolling over gravel beds directly beneath the Meghalaya mountains.",
-      "location": "Forest Range, Sylhet"
+      "descEn": "Pristine mountain streams rolling over gravel beds directly beneath the Meghalaya mountains.",
+      "descBn": "সিলেট ইকোপার্ক ও বনাঞ্চল সিলেট জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Forest Range, Sylhet",
+      "locationEn": "Forest Range, Sylhet",
+      "locationBn": "বন রেঞ্জ, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Jaflong%20%26%20Bisnakandi%20Sylhet%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/sylhet/tour-3.webp",
       "name": "Sylhet Cultural Heritage Museum",
+      "nameEn": "Sylhet Cultural Heritage Museum",
       "nameBn": "সিলেট লোকশিল্প ও ঐতিহ্য জাদুঘর",
       "category": "Cultural Center",
+      "categoryEn": "Cultural Center",
+      "categoryBn": "সাংস্কৃতিক কেন্দ্র",
       "desc": "A celebrated tourism highlight in Sylhet district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Town Center, Sylhet"
+      "descEn": "A celebrated tourism highlight in Sylhet district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "সিলেট জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Town Center, Sylhet",
+      "locationEn": "Town Center, Sylhet",
+      "locationBn": "শহর কেন্দ্র, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sylhet%20Cultural%20Heritage%20Museum%20Sylhet%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/sylhet/tour-4.webp",
       "name": "Sylhet Scenic Lake & Boating Resort",
+      "nameEn": "Sylhet Scenic Lake & Boating Resort",
       "nameBn": "সিলেট মনোরম হ্রদ ও রিসোর্ট",
       "category": "Lakeside Resort",
+      "categoryEn": "Lakeside Resort",
+      "categoryBn": "লেক রিসোর্ট",
       "desc": "A celebrated tourism highlight in Sylhet district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Lake View, Sylhet"
+      "descEn": "A celebrated tourism highlight in Sylhet district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "সিলেট জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Lake View, Sylhet",
+      "locationEn": "Lake View, Sylhet",
+      "locationBn": "লেক ভিউ, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sylhet%20Scenic%20Lake%20%26%20Boating%20Resort%20Sylhet%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/sylhet/tour-5.webp",
       "name": "Sylhet Sunset Hilltop Viewpoint",
+      "nameEn": "Sylhet Sunset Hilltop Viewpoint",
       "nameBn": "সিলেট সূর্যাস্ত ভিউপয়েন্ট",
       "category": "Panoramic Vista",
+      "categoryEn": "Panoramic Vista",
+      "categoryBn": "প্যানোরামিক ভিউ",
       "desc": "A celebrated tourism highlight in Sylhet district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Hill Ridge, Sylhet"
+      "descEn": "A celebrated tourism highlight in Sylhet district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "সিলেট জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Hill Ridge, Sylhet",
+      "locationEn": "Hill Ridge, Sylhet",
+      "locationBn": "পাহাড়ি ঢাল, সিলেট",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sylhet%20Sunset%20Hilltop%20Viewpoint%20Sylhet%20Bangladesh"
     }
   ]
 };

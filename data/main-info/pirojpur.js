@@ -1,6 +1,6 @@
 /**
  * District Data Schema — Pirojpur (পিরোজপুর)
- * Offline-first static metadata
+ * Offline-first static metadata with bilingual support
  */
 const PIROJPUR_DATA = {
   "id": 34,
@@ -8,46 +8,75 @@ const PIROJPUR_DATA = {
   "en": "Pirojpur",
   "bn": "পিরোজপুর",
   "div": "Barishal",
+  "divBn": "বরিশাল",
   "lat": 22.5338,
   "lng": 89.9932,
   "coordinates": "22.5338, 89.9932",
   "est": 1984,
+  "estBn": "১৯৮৪",
   "area": "1,307.61 km²",
+  "areaBn": "১,৩০৭.৬১ বর্গ কি.মি.",
   "pop": "1.2M",
+  "popBn": "১.২ মিলিয়ন",
   "dist": "210 km",
+  "distBn": "২১০ কি.মি.",
   "route": "Via Padma Bridge and Bekutia (8th Bangladesh-China Friendship) Bridge (approx. 4.5 hrs).",
+  "routeEn": "Via Padma Bridge and Bekutia (8th Bangladesh-China Friendship) Bridge (approx. 4.5 hrs).",
+  "routeBn": "Pirojpur (পিরোজপুর) জেলায় ঢাকা ও অন্যান্য জেলা থেকে সরাসরি হাইওয়ে বাস ও আঞ্চলিক পরিবহন ব্যবস্থার মাধ্যমে সহজ যাতায়াত সংযোগ বিদ্যমান।",
   "tagline": "Pirojpur (পিরোজপুর) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
+  "taglineEn": "Pirojpur (পিরোজপুর) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
+  "taglineBn": "পিরোজপুর (Pirojpur) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
   "heroImage": "images/districts/pirojpur/hero.webp",
   "carousel": [
     {
       "id": 1,
       "image": "images/districts/pirojpur/carousel-1.webp",
       "title": "Pirojpur Heritage & Landscapes",
-      "subtitle": "Panoramic beauty across Barishal Division"
+      "titleEn": "Pirojpur Heritage & Landscapes",
+      "titleBn": "পিরোজপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
+      "subtitle": "Panoramic beauty across Barishal Division",
+      "subtitleEn": "Panoramic beauty across Barishal Division",
+      "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
     },
     {
       "id": 2,
       "image": "images/districts/pirojpur/carousel-2.webp",
       "title": "Historic Monuments of Pirojpur",
-      "subtitle": "Ancient landmarks dating back across generations"
+      "titleEn": "Historic Monuments of Pirojpur",
+      "titleBn": "পিরোজপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
+      "subtitle": "Ancient landmarks dating back across generations",
+      "subtitleEn": "Ancient landmarks dating back across generations",
+      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
     },
     {
       "id": 3,
       "image": "images/districts/pirojpur/carousel-3.webp",
       "title": "Riverine Corridors & Nature",
-      "subtitle": "Verdant waters and lush environmental biodiversity"
+      "titleEn": "Riverine Corridors & Nature",
+      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
+      "subtitle": "Verdant waters and lush environmental biodiversity",
+      "subtitleEn": "Verdant waters and lush environmental biodiversity",
+      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
     },
     {
       "id": 4,
       "image": "images/districts/pirojpur/carousel-4.webp",
       "title": "Cultural Life & Traditions",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets"
+      "titleEn": "Cultural Life & Traditions",
+      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
+      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
     },
     {
       "id": 5,
       "image": "images/districts/pirojpur/carousel-5.webp",
       "title": "Scenic Trails & Landmarks",
-      "subtitle": "Famous travel destinations and peaceful viewpoints"
+      "titleEn": "Scenic Trails & Landmarks",
+      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
+      "subtitle": "Famous travel destinations and peaceful viewpoints",
+      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
+      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
     }
   ],
   "hist": [
@@ -55,46 +84,86 @@ const PIROJPUR_DATA = {
       "id": 1,
       "image": "images/districts/pirojpur/hist-1.webp",
       "name": "Rayerkathi Zamindar Palace & Temple",
-      "nameBn": "Rayerkathi Zamindar Palace & Temple (পিরোজপুর)",
+      "nameEn": "Rayerkathi Zamindar Palace & Temple",
+      "nameBn": "পিরোজপুর প্রাচীন রাজবাড়ি",
       "category": "Royal Heritage",
+      "categoryEn": "Royal Heritage",
+      "categoryBn": "রাজকীয় ঐতিহ্য",
       "desc": "Centuries-old royal estate founded in 1658 with surviving temples and historical ponds.",
-      "location": "Pirojpur Sadar, Barishal"
+      "descEn": "Centuries-old royal estate founded in 1658 with surviving temples and historical ponds.",
+      "descBn": "পিরোজপুর প্রাচীন রাজবাড়ি পিরোজপুর জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Pirojpur Sadar, Barishal",
+      "locationEn": "Pirojpur Sadar, Barishal",
+      "locationBn": "পিরোজপুর সদর, বরিশাল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rayerkathi%20Zamindar%20Palace%20%26%20Temple%20Pirojpur%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/pirojpur/hist-2.webp",
       "name": "Majlishpur Ancient Mosque",
-      "nameBn": "Majlishpur Ancient Mosque (পিরোজপুর)",
+      "nameEn": "Majlishpur Ancient Mosque",
+      "nameBn": "পিরোজপুর কেন্দ্রীয় জামে মসজিদ",
       "category": "Historic Mosque",
-      "desc": "Majlishpur Ancient Mosque is one of the most prominent historical monuments in Pirojpur district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions attracting historians and visitors from across Bangladesh.",
-      "location": "Old Town, Pirojpur"
+      "categoryEn": "Historic Mosque",
+      "categoryBn": "ঐতিহাসিক মসজিদ",
+      "desc": "Historic brick mosque built in the late Mughal period.",
+      "descEn": "Historic brick mosque built in the late Mughal period.",
+      "descBn": "পিরোজপুর কেন্দ্রীয় জামে মসজিদ পিরোজপুর জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Old Town, Pirojpur",
+      "locationEn": "Old Town, Pirojpur",
+      "locationBn": "পুরাতন শহর, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Majlishpur%20Ancient%20Mosque%20Pirojpur%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/pirojpur/hist-3.webp",
       "name": "Pirojpur Colonial Court & Mint",
-      "nameBn": "পিরোজপুর ঔপনিবেশিক আদালত ও টাকশাল",
+      "nameEn": "Pirojpur Colonial Court & Mint",
+      "nameBn": "পিরোজপুর ঔপনিবেশিক আদালত ও ভবন",
       "category": "Colonial Architecture",
+      "categoryEn": "Colonial Architecture",
+      "categoryBn": "ঔপনিবেশিক স্থাপত্য",
       "desc": "Renowned historical heritage site in Pirojpur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Court Road, Pirojpur"
+      "descEn": "Renowned historical heritage site in Pirojpur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "পিরোজপুর জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Court Road, Pirojpur",
+      "locationEn": "Court Road, Pirojpur",
+      "locationBn": "কোর্ট রোড, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pirojpur%20Colonial%20Court%20%26%20Mint%20Pirojpur%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/pirojpur/hist-4.webp",
       "name": "Pirojpur Archeological Mound",
+      "nameEn": "Pirojpur Archeological Mound",
       "nameBn": "পিরোজপুর প্রত্নতাত্ত্বিক ঢিবি",
       "category": "Ancient Archaeology",
+      "categoryEn": "Ancient Archaeology",
+      "categoryBn": "প্রাচীন প্রত্নতত্ত্ব",
       "desc": "Renowned historical heritage site in Pirojpur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Archaeological Site, Pirojpur"
+      "descEn": "Renowned historical heritage site in Pirojpur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "পিরোজপুর জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Archaeological Site, Pirojpur",
+      "locationEn": "Archaeological Site, Pirojpur",
+      "locationBn": "প্রত্নতত্ত্ব এলাকা, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pirojpur%20Archeological%20Mound%20Pirojpur%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/pirojpur/hist-5.webp",
       "name": "Pirojpur Liberation War Memorial",
+      "nameEn": "Pirojpur Liberation War Memorial",
       "nameBn": "পিরোজপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
       "category": "National Memorial",
+      "categoryEn": "National Memorial",
+      "categoryBn": "জাতীয় স্মৃতিসৌধ",
       "desc": "Renowned historical heritage site in Pirojpur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Central Park, Pirojpur"
+      "descEn": "Renowned historical heritage site in Pirojpur district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "পিরোজপুর জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Central Park, Pirojpur",
+      "locationEn": "Central Park, Pirojpur",
+      "locationBn": "সেন্ট্রাল পার্ক, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pirojpur%20Liberation%20War%20Memorial%20Pirojpur%20Bangladesh"
     }
   ],
   "tour": [
@@ -102,46 +171,86 @@ const PIROJPUR_DATA = {
       "id": 1,
       "image": "images/districts/pirojpur/tour-1.webp",
       "name": "Bekutia Bridge & Sandhya River",
-      "nameBn": "Bekutia Bridge & Sandhya River (পিরোজপুর)",
+      "nameEn": "Bekutia Bridge & Sandhya River",
+      "nameBn": "পিরোজপুর নদী তীরবর্তী বাঁধ",
       "category": "Modern Engineering",
-      "desc": "Bekutia Bridge & Sandhya River stands as an iconic tourist highlight in Pirojpur district. Nestled in natural surroundings under Barishal Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.",
-      "location": "Pirojpur Riverfront, Barishal"
+      "categoryEn": "Modern Engineering",
+      "categoryBn": "নদী ও নিসর্গ",
+      "desc": "Magnificent bridge viewpoint capturing the majestic waters of the Sandhya River.",
+      "descEn": "Magnificent bridge viewpoint capturing the majestic waters of the Sandhya River.",
+      "descBn": "পিরোজপুর নদী তীরবর্তী বাঁধ পিরোজপুর জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Pirojpur Riverfront, Barishal",
+      "locationEn": "Pirojpur Riverfront, Barishal",
+      "locationBn": "পিরোজপুর নদী তীর, বরিশাল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bekutia%20Bridge%20%26%20Sandhya%20River%20Pirojpur%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/pirojpur/tour-2.webp",
       "name": "Kuriana Floating Fruit Orchards",
-      "nameBn": "Kuriana Floating Fruit Orchards (পিরোজপুর)",
+      "nameEn": "Kuriana Floating Fruit Orchards",
+      "nameBn": "পিরোজপুর ইকোপার্ক ও বনাঞ্চল",
       "category": "Horticultural Waterways",
+      "categoryEn": "Horticultural Waterways",
+      "categoryBn": "ইকো ট্যুরিজম",
       "desc": "Lush water canals where local farmers harvest and trade hog plums, guavas, and betel nuts.",
-      "location": "Forest Range, Pirojpur"
+      "descEn": "Lush water canals where local farmers harvest and trade hog plums, guavas, and betel nuts.",
+      "descBn": "পিরোজপুর ইকোপার্ক ও বনাঞ্চল পিরোজপুর জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Forest Range, Pirojpur",
+      "locationEn": "Forest Range, Pirojpur",
+      "locationBn": "বন রেঞ্জ, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kuriana%20Floating%20Fruit%20Orchards%20Pirojpur%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/pirojpur/tour-3.webp",
       "name": "Pirojpur Cultural Heritage Museum",
+      "nameEn": "Pirojpur Cultural Heritage Museum",
       "nameBn": "পিরোজপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
       "category": "Cultural Center",
+      "categoryEn": "Cultural Center",
+      "categoryBn": "সাংস্কৃতিক কেন্দ্র",
       "desc": "A celebrated tourism highlight in Pirojpur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Town Center, Pirojpur"
+      "descEn": "A celebrated tourism highlight in Pirojpur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "পিরোজপুর জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Town Center, Pirojpur",
+      "locationEn": "Town Center, Pirojpur",
+      "locationBn": "শহর কেন্দ্র, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pirojpur%20Cultural%20Heritage%20Museum%20Pirojpur%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/pirojpur/tour-4.webp",
       "name": "Pirojpur Scenic Lake & Boating Resort",
+      "nameEn": "Pirojpur Scenic Lake & Boating Resort",
       "nameBn": "পিরোজপুর মনোরম হ্রদ ও রিসোর্ট",
       "category": "Lakeside Resort",
+      "categoryEn": "Lakeside Resort",
+      "categoryBn": "লেক রিসোর্ট",
       "desc": "A celebrated tourism highlight in Pirojpur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Lake View, Pirojpur"
+      "descEn": "A celebrated tourism highlight in Pirojpur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "পিরোজপুর জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Lake View, Pirojpur",
+      "locationEn": "Lake View, Pirojpur",
+      "locationBn": "লেক ভিউ, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pirojpur%20Scenic%20Lake%20%26%20Boating%20Resort%20Pirojpur%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/pirojpur/tour-5.webp",
       "name": "Pirojpur Sunset Hilltop Viewpoint",
+      "nameEn": "Pirojpur Sunset Hilltop Viewpoint",
       "nameBn": "পিরোজপুর সূর্যাস্ত ভিউপয়েন্ট",
       "category": "Panoramic Vista",
+      "categoryEn": "Panoramic Vista",
+      "categoryBn": "প্যানোরামিক ভিউ",
       "desc": "A celebrated tourism highlight in Pirojpur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Hill Ridge, Pirojpur"
+      "descEn": "A celebrated tourism highlight in Pirojpur district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "পিরোজপুর জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Hill Ridge, Pirojpur",
+      "locationEn": "Hill Ridge, Pirojpur",
+      "locationBn": "পাহাড়ি ঢাল, পিরোজপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pirojpur%20Sunset%20Hilltop%20Viewpoint%20Pirojpur%20Bangladesh"
     }
   ]
 };

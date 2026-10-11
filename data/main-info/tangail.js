@@ -1,6 +1,6 @@
 /**
  * District Data Schema — Tangail (টাঙ্গাইল)
- * Offline-first static metadata
+ * Offline-first static metadata with bilingual support
  */
 const TANGAIL_DATA = {
   "id": 13,
@@ -8,46 +8,75 @@ const TANGAIL_DATA = {
   "en": "Tangail",
   "bn": "টাঙ্গাইল",
   "div": "Dhaka",
+  "divBn": "ঢাকা",
   "lat": 24.3563,
   "lng": 89.9986,
   "coordinates": "24.3563, 89.9986",
   "est": 1969,
+  "estBn": "১৯৬৯",
   "area": "3,414.39 km²",
+  "areaBn": "৩,৪১৪.৩৯ বর্গ কি.মি.",
   "pop": "3.8M",
+  "popBn": "৩.৮ মিলিয়ন",
   "dist": "95 km",
+  "distBn": "৯৫ কি.মি.",
   "route": "Via Dhaka-Tangail 4-lane Highway N4 or Jamuna Bridge train routes (approx. 2 hours).",
+  "routeEn": "Via Dhaka-Tangail 4-lane Highway N4 or Jamuna Bridge train routes (approx. 2 hours).",
+  "routeBn": "Tangail (টাঙ্গাইল) জেলায় ঢাকা ও অন্যান্য জেলা থেকে সরাসরি হাইওয়ে বাস ও আঞ্চলিক পরিবহন ব্যবস্থার মাধ্যমে সহজ যাতায়াত সংযোগ বিদ্যমান।",
   "tagline": "Tangail (টাঙ্গাইল) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
+  "taglineEn": "Tangail (টাঙ্গাইল) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
+  "taglineBn": "টাঙ্গাইল (Tangail) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
   "heroImage": "images/districts/tangail/hero.webp",
   "carousel": [
     {
       "id": 1,
       "image": "images/districts/tangail/carousel-1.webp",
       "title": "Tangail Heritage & Landscapes",
-      "subtitle": "Panoramic beauty across Dhaka Division"
+      "titleEn": "Tangail Heritage & Landscapes",
+      "titleBn": "টাঙ্গাইল ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
+      "subtitle": "Panoramic beauty across Dhaka Division",
+      "subtitleEn": "Panoramic beauty across Dhaka Division",
+      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
     },
     {
       "id": 2,
       "image": "images/districts/tangail/carousel-2.webp",
       "title": "Historic Monuments of Tangail",
-      "subtitle": "Ancient landmarks dating back across generations"
+      "titleEn": "Historic Monuments of Tangail",
+      "titleBn": "টাঙ্গাইল জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
+      "subtitle": "Ancient landmarks dating back across generations",
+      "subtitleEn": "Ancient landmarks dating back across generations",
+      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
     },
     {
       "id": 3,
       "image": "images/districts/tangail/carousel-3.webp",
       "title": "Riverine Corridors & Nature",
-      "subtitle": "Verdant waters and lush environmental biodiversity"
+      "titleEn": "Riverine Corridors & Nature",
+      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
+      "subtitle": "Verdant waters and lush environmental biodiversity",
+      "subtitleEn": "Verdant waters and lush environmental biodiversity",
+      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
     },
     {
       "id": 4,
       "image": "images/districts/tangail/carousel-4.webp",
       "title": "Cultural Life & Traditions",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets"
+      "titleEn": "Cultural Life & Traditions",
+      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
+      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
     },
     {
       "id": 5,
       "image": "images/districts/tangail/carousel-5.webp",
       "title": "Scenic Trails & Landmarks",
-      "subtitle": "Famous travel destinations and peaceful viewpoints"
+      "titleEn": "Scenic Trails & Landmarks",
+      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
+      "subtitle": "Famous travel destinations and peaceful viewpoints",
+      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
+      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
     }
   ],
   "hist": [
@@ -55,46 +84,86 @@ const TANGAIL_DATA = {
       "id": 1,
       "image": "images/districts/tangail/hist-1.webp",
       "name": "Atiya Mosque",
-      "nameBn": "Atiya Mosque (টাঙ্গাইল)",
+      "nameEn": "Atiya Mosque",
+      "nameBn": "টাঙ্গাইল প্রাচীন রাজবাড়ি",
       "category": "Royal Heritage",
+      "categoryEn": "Royal Heritage",
+      "categoryBn": "রাজকীয় ঐতিহ্য",
       "desc": "1609 iconic Sultanate-Mughal mosque immortalized on the historic 10-Taka currency note.",
-      "location": "Tangail Sadar, Dhaka"
+      "descEn": "1609 iconic Sultanate-Mughal mosque immortalized on the historic 10-Taka currency note.",
+      "descBn": "টাঙ্গাইল প্রাচীন রাজবাড়ি টাঙ্গাইল জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Tangail Sadar, Dhaka",
+      "locationEn": "Tangail Sadar, Dhaka",
+      "locationBn": "টাঙ্গাইল সদর, ঢাকা",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Atiya%20Mosque%20Tangail%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/tangail/hist-2.webp",
       "name": "Mohera Zamindar Bari",
-      "nameBn": "Mohera Zamindar Bari (টাঙ্গাইল)",
+      "nameEn": "Mohera Zamindar Bari",
+      "nameBn": "টাঙ্গাইল কেন্দ্রীয় জামে মসজিদ",
       "category": "Historic Mosque",
+      "categoryEn": "Historic Mosque",
+      "categoryBn": "ঐতিহাসিক মসজিদ",
       "desc": "Exquisitely conserved European neoclassical estate with lush flower gardens and lodge.",
-      "location": "Old Town, Tangail"
+      "descEn": "Exquisitely conserved European neoclassical estate with lush flower gardens and lodge.",
+      "descBn": "টাঙ্গাইল কেন্দ্রীয় জামে মসজিদ টাঙ্গাইল জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Old Town, Tangail",
+      "locationEn": "Old Town, Tangail",
+      "locationBn": "পুরাতন শহর, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mohera%20Zamindar%20Bari%20Tangail%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/tangail/hist-3.webp",
       "name": "Tangail Colonial Court & Mint",
-      "nameBn": "টাঙ্গাইল ঔপনিবেশিক আদালত ও টাকশাল",
+      "nameEn": "Tangail Colonial Court & Mint",
+      "nameBn": "টাঙ্গাইল ঔপনিবেশিক আদালত ও ভবন",
       "category": "Colonial Architecture",
+      "categoryEn": "Colonial Architecture",
+      "categoryBn": "ঔপনিবেশিক স্থাপত্য",
       "desc": "Renowned historical heritage site in Tangail district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Court Road, Tangail"
+      "descEn": "Renowned historical heritage site in Tangail district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "টাঙ্গাইল জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Court Road, Tangail",
+      "locationEn": "Court Road, Tangail",
+      "locationBn": "কোর্ট রোড, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tangail%20Colonial%20Court%20%26%20Mint%20Tangail%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/tangail/hist-4.webp",
       "name": "Tangail Archeological Mound",
+      "nameEn": "Tangail Archeological Mound",
       "nameBn": "টাঙ্গাইল প্রত্নতাত্ত্বিক ঢিবি",
       "category": "Ancient Archaeology",
+      "categoryEn": "Ancient Archaeology",
+      "categoryBn": "প্রাচীন প্রত্নতত্ত্ব",
       "desc": "Renowned historical heritage site in Tangail district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Archaeological Site, Tangail"
+      "descEn": "Renowned historical heritage site in Tangail district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "টাঙ্গাইল জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Archaeological Site, Tangail",
+      "locationEn": "Archaeological Site, Tangail",
+      "locationBn": "প্রত্নতত্ত্ব এলাকা, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tangail%20Archeological%20Mound%20Tangail%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/tangail/hist-5.webp",
       "name": "Tangail Liberation War Memorial",
+      "nameEn": "Tangail Liberation War Memorial",
       "nameBn": "টাঙ্গাইল মুক্তিযুদ্ধ স্মৃতিসৌধ",
       "category": "National Memorial",
+      "categoryEn": "National Memorial",
+      "categoryBn": "জাতীয় স্মৃতিসৌধ",
       "desc": "Renowned historical heritage site in Tangail district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Central Park, Tangail"
+      "descEn": "Renowned historical heritage site in Tangail district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "টাঙ্গাইল জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Central Park, Tangail",
+      "locationEn": "Central Park, Tangail",
+      "locationBn": "সেন্ট্রাল পার্ক, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tangail%20Liberation%20War%20Memorial%20Tangail%20Bangladesh"
     }
   ],
   "tour": [
@@ -102,46 +171,86 @@ const TANGAIL_DATA = {
       "id": 1,
       "image": "images/districts/tangail/tour-1.webp",
       "name": "Madhupur National Park",
-      "nameBn": "Madhupur National Park (টাঙ্গাইল)",
+      "nameEn": "Madhupur National Park",
+      "nameBn": "টাঙ্গাইল নদী তীরবর্তী বাঁধ",
       "category": "Eco Forest & Pineapples",
+      "categoryEn": "Eco Forest & Pineapples",
+      "categoryBn": "নদী ও নিসর্গ",
       "desc": "Dense deciduous sal forest known for indigenous Garo culture and sweetest pineapples.",
-      "location": "Tangail Riverfront, Dhaka"
+      "descEn": "Dense deciduous sal forest known for indigenous Garo culture and sweetest pineapples.",
+      "descBn": "টাঙ্গাইল নদী তীরবর্তী বাঁধ টাঙ্গাইল জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Tangail Riverfront, Dhaka",
+      "locationEn": "Tangail Riverfront, Dhaka",
+      "locationBn": "টাঙ্গাইল নদী তীর, ঢাকা",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madhupur%20National%20Park%20Tangail%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/tangail/tour-2.webp",
       "name": "Tangail Saree & Sweet Haven",
-      "nameBn": "Tangail Saree & Sweet Haven (টাঙ্গাইল)",
+      "nameEn": "Tangail Saree & Sweet Haven",
+      "nameBn": "টাঙ্গাইল ইকোপার্ক ও বনাঞ্চল",
       "category": "Craft & Gastronomy",
-      "desc": "Tangail Saree & Sweet Haven stands as an iconic tourist highlight in Tangail district. Nestled in natural surroundings under Dhaka Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.",
-      "location": "Forest Range, Tangail"
+      "categoryEn": "Craft & Gastronomy",
+      "categoryBn": "ইকো ট্যুরিজম",
+      "desc": "Home of world-renowned handloom Tangail sarees and famous Porabari Chomchom.",
+      "descEn": "Home of world-renowned handloom Tangail sarees and famous Porabari Chomchom.",
+      "descBn": "টাঙ্গাইল ইকোপার্ক ও বনাঞ্চল টাঙ্গাইল জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Forest Range, Tangail",
+      "locationEn": "Forest Range, Tangail",
+      "locationBn": "বন রেঞ্জ, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tangail%20Saree%20%26%20Sweet%20Haven%20Tangail%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/tangail/tour-3.webp",
       "name": "Tangail Cultural Heritage Museum",
+      "nameEn": "Tangail Cultural Heritage Museum",
       "nameBn": "টাঙ্গাইল লোকশিল্প ও ঐতিহ্য জাদুঘর",
       "category": "Cultural Center",
+      "categoryEn": "Cultural Center",
+      "categoryBn": "সাংস্কৃতিক কেন্দ্র",
       "desc": "A celebrated tourism highlight in Tangail district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Town Center, Tangail"
+      "descEn": "A celebrated tourism highlight in Tangail district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "টাঙ্গাইল জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Town Center, Tangail",
+      "locationEn": "Town Center, Tangail",
+      "locationBn": "শহর কেন্দ্র, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tangail%20Cultural%20Heritage%20Museum%20Tangail%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/tangail/tour-4.webp",
       "name": "Tangail Scenic Lake & Boating Resort",
+      "nameEn": "Tangail Scenic Lake & Boating Resort",
       "nameBn": "টাঙ্গাইল মনোরম হ্রদ ও রিসোর্ট",
       "category": "Lakeside Resort",
+      "categoryEn": "Lakeside Resort",
+      "categoryBn": "লেক রিসোর্ট",
       "desc": "A celebrated tourism highlight in Tangail district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Lake View, Tangail"
+      "descEn": "A celebrated tourism highlight in Tangail district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "টাঙ্গাইল জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Lake View, Tangail",
+      "locationEn": "Lake View, Tangail",
+      "locationBn": "লেক ভিউ, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tangail%20Scenic%20Lake%20%26%20Boating%20Resort%20Tangail%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/tangail/tour-5.webp",
       "name": "Tangail Sunset Hilltop Viewpoint",
+      "nameEn": "Tangail Sunset Hilltop Viewpoint",
       "nameBn": "টাঙ্গাইল সূর্যাস্ত ভিউপয়েন্ট",
       "category": "Panoramic Vista",
+      "categoryEn": "Panoramic Vista",
+      "categoryBn": "প্যানোরামিক ভিউ",
       "desc": "A celebrated tourism highlight in Tangail district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Hill Ridge, Tangail"
+      "descEn": "A celebrated tourism highlight in Tangail district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "টাঙ্গাইল জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Hill Ridge, Tangail",
+      "locationEn": "Hill Ridge, Tangail",
+      "locationBn": "পাহাড়ি ঢাল, টাঙ্গাইল",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tangail%20Sunset%20Hilltop%20Viewpoint%20Tangail%20Bangladesh"
     }
   ]
 };

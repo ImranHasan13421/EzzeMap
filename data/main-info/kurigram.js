@@ -1,6 +1,6 @@
 /**
  * District Data Schema — Kurigram (কুড়িগ্রাম)
- * Offline-first static metadata
+ * Offline-first static metadata with bilingual support
  */
 const KURIGRAM_DATA = {
   "id": 55,
@@ -8,46 +8,75 @@ const KURIGRAM_DATA = {
   "en": "Kurigram",
   "bn": "কুড়িগ্রাম",
   "div": "Rangpur",
+  "divBn": "রংপুর",
   "lat": 25.7907,
   "lng": 89.6953,
   "coordinates": "25.7907, 89.6953",
   "est": 1984,
+  "estBn": "১৯৮৪",
   "area": "2,245.04 km²",
+  "areaBn": "২,২৪৫.০৪ বর্গ কি.মি.",
   "pop": "2.3M",
+  "popBn": "২.৩ মিলিয়ন",
   "dist": "350 km",
+  "distBn": "৩৫০ কি.মি.",
   "route": "Via Jamuna Bridge and Rangpur highway or Kurigram Express direct intercity train (8-9 hrs).",
+  "routeEn": "Via Jamuna Bridge and Rangpur highway or Kurigram Express direct intercity train (8-9 hrs).",
+  "routeBn": "Kurigram (কুড়িগ্রাম) জেলায় ঢাকা ও অন্যান্য জেলা থেকে সরাসরি হাইওয়ে বাস ও আঞ্চলিক পরিবহন ব্যবস্থার মাধ্যমে সহজ যাতায়াত সংযোগ বিদ্যমান।",
   "tagline": "Kurigram (কুড়িগ্রাম) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
+  "taglineEn": "Kurigram (কুড়িগ্রাম) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
+  "taglineBn": "কুড়িগ্রাম (Kurigram) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
   "heroImage": "images/districts/kurigram/hero.webp",
   "carousel": [
     {
       "id": 1,
       "image": "images/districts/kurigram/carousel-1.webp",
       "title": "Kurigram Heritage & Landscapes",
-      "subtitle": "Panoramic beauty across Rangpur Division"
+      "titleEn": "Kurigram Heritage & Landscapes",
+      "titleBn": "কুড়িগ্রাম ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
+      "subtitle": "Panoramic beauty across Rangpur Division",
+      "subtitleEn": "Panoramic beauty across Rangpur Division",
+      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
     },
     {
       "id": 2,
       "image": "images/districts/kurigram/carousel-2.webp",
       "title": "Historic Monuments of Kurigram",
-      "subtitle": "Ancient landmarks dating back across generations"
+      "titleEn": "Historic Monuments of Kurigram",
+      "titleBn": "কুড়িগ্রাম জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
+      "subtitle": "Ancient landmarks dating back across generations",
+      "subtitleEn": "Ancient landmarks dating back across generations",
+      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
     },
     {
       "id": 3,
       "image": "images/districts/kurigram/carousel-3.webp",
       "title": "Riverine Corridors & Nature",
-      "subtitle": "Verdant waters and lush environmental biodiversity"
+      "titleEn": "Riverine Corridors & Nature",
+      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
+      "subtitle": "Verdant waters and lush environmental biodiversity",
+      "subtitleEn": "Verdant waters and lush environmental biodiversity",
+      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
     },
     {
       "id": 4,
       "image": "images/districts/kurigram/carousel-4.webp",
       "title": "Cultural Life & Traditions",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets"
+      "titleEn": "Cultural Life & Traditions",
+      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
+      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
     },
     {
       "id": 5,
       "image": "images/districts/kurigram/carousel-5.webp",
       "title": "Scenic Trails & Landmarks",
-      "subtitle": "Famous travel destinations and peaceful viewpoints"
+      "titleEn": "Scenic Trails & Landmarks",
+      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
+      "subtitle": "Famous travel destinations and peaceful viewpoints",
+      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
+      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
     }
   ],
   "hist": [
@@ -55,46 +84,86 @@ const KURIGRAM_DATA = {
       "id": 1,
       "image": "images/districts/kurigram/hist-1.webp",
       "name": "Shonahat Historic Railway Bridge",
-      "nameBn": "Shonahat Historic Railway Bridge (কুড়িগ্রাম)",
+      "nameEn": "Shonahat Historic Railway Bridge",
+      "nameBn": "কুড়িগ্রাম প্রাচীন রাজবাড়ি",
       "category": "Royal Heritage",
+      "categoryEn": "Royal Heritage",
+      "categoryBn": "রাজকীয় ঐতিহ্য",
       "desc": "British-era 1887 steel bridge across the Dudhkumar River with remarkable engineering.",
-      "location": "Kurigram Sadar, Rangpur"
+      "descEn": "British-era 1887 steel bridge across the Dudhkumar River with remarkable engineering.",
+      "descBn": "কুড়িগ্রাম প্রাচীন রাজবাড়ি কুড়িগ্রাম জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Kurigram Sadar, Rangpur",
+      "locationEn": "Kurigram Sadar, Rangpur",
+      "locationBn": "কুড়িগ্রাম সদর, রংপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Shonahat%20Historic%20Railway%20Bridge%20Kurigram%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/kurigram/hist-2.webp",
       "name": "Chandamari Mosque",
-      "nameBn": "Chandamari Mosque (কুড়িগ্রাম)",
+      "nameEn": "Chandamari Mosque",
+      "nameBn": "কুড়িগ্রাম কেন্দ্রীয় জামে মসজিদ",
       "category": "Historic Mosque",
-      "desc": "Chandamari Mosque is one of the most prominent historical monuments in Kurigram district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions attracting historians and visitors from across Bangladesh.",
-      "location": "Old Town, Kurigram"
+      "categoryEn": "Historic Mosque",
+      "categoryBn": "ঐতিহাসিক মসজিদ",
+      "desc": "Mughal-era five-domed mosque with traditional clay-baked decorative tiles.",
+      "descEn": "Mughal-era five-domed mosque with traditional clay-baked decorative tiles.",
+      "descBn": "কুড়িগ্রাম কেন্দ্রীয় জামে মসজিদ কুড়িগ্রাম জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Old Town, Kurigram",
+      "locationEn": "Old Town, Kurigram",
+      "locationBn": "পুরাতন শহর, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chandamari%20Mosque%20Kurigram%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/kurigram/hist-3.webp",
       "name": "Kurigram Colonial Court & Mint",
-      "nameBn": "কুড়িগ্রাম ঔপনিবেশিক আদালত ও টাকশাল",
+      "nameEn": "Kurigram Colonial Court & Mint",
+      "nameBn": "কুড়িগ্রাম ঔপনিবেশিক আদালত ও ভবন",
       "category": "Colonial Architecture",
+      "categoryEn": "Colonial Architecture",
+      "categoryBn": "ঔপনিবেশিক স্থাপত্য",
       "desc": "Renowned historical heritage site in Kurigram district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Court Road, Kurigram"
+      "descEn": "Renowned historical heritage site in Kurigram district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "কুড়িগ্রাম জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Court Road, Kurigram",
+      "locationEn": "Court Road, Kurigram",
+      "locationBn": "কোর্ট রোড, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kurigram%20Colonial%20Court%20%26%20Mint%20Kurigram%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/kurigram/hist-4.webp",
       "name": "Kurigram Archeological Mound",
+      "nameEn": "Kurigram Archeological Mound",
       "nameBn": "কুড়িগ্রাম প্রত্নতাত্ত্বিক ঢিবি",
       "category": "Ancient Archaeology",
+      "categoryEn": "Ancient Archaeology",
+      "categoryBn": "প্রাচীন প্রত্নতত্ত্ব",
       "desc": "Renowned historical heritage site in Kurigram district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Archaeological Site, Kurigram"
+      "descEn": "Renowned historical heritage site in Kurigram district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "কুড়িগ্রাম জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Archaeological Site, Kurigram",
+      "locationEn": "Archaeological Site, Kurigram",
+      "locationBn": "প্রত্নতত্ত্ব এলাকা, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kurigram%20Archeological%20Mound%20Kurigram%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/kurigram/hist-5.webp",
       "name": "Kurigram Liberation War Memorial",
+      "nameEn": "Kurigram Liberation War Memorial",
       "nameBn": "কুড়িগ্রাম মুক্তিযুদ্ধ স্মৃতিসৌধ",
       "category": "National Memorial",
+      "categoryEn": "National Memorial",
+      "categoryBn": "জাতীয় স্মৃতিসৌধ",
       "desc": "Renowned historical heritage site in Kurigram district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Central Park, Kurigram"
+      "descEn": "Renowned historical heritage site in Kurigram district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "কুড়িগ্রাম জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Central Park, Kurigram",
+      "locationEn": "Central Park, Kurigram",
+      "locationBn": "সেন্ট্রাল পার্ক, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kurigram%20Liberation%20War%20Memorial%20Kurigram%20Bangladesh"
     }
   ],
   "tour": [
@@ -102,46 +171,86 @@ const KURIGRAM_DATA = {
       "id": 1,
       "image": "images/districts/kurigram/tour-1.webp",
       "name": "Chilmari River Port on Brahmaputra",
-      "nameBn": "Chilmari River Port on Brahmaputra (কুড়িগ্রাম)",
+      "nameEn": "Chilmari River Port on Brahmaputra",
+      "nameBn": "কুড়িগ্রাম নদী তীরবর্তী বাঁধ",
       "category": "Historic River Port",
+      "categoryEn": "Historic River Port",
+      "categoryBn": "নদী ও নিসর্গ",
       "desc": "Legendary river port celebrated in Abbasuddin’s timeless folk song \"Oki Gariyal Bhai\".",
-      "location": "Kurigram Riverfront, Rangpur"
+      "descEn": "Legendary river port celebrated in Abbasuddin’s timeless folk song \"Oki Gariyal Bhai\".",
+      "descBn": "কুড়িগ্রাম নদী তীরবর্তী বাঁধ কুড়িগ্রাম জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Kurigram Riverfront, Rangpur",
+      "locationEn": "Kurigram Riverfront, Rangpur",
+      "locationBn": "কুড়িগ্রাম নদী তীর, রংপুর",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chilmari%20River%20Port%20on%20Brahmaputra%20Kurigram%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/kurigram/tour-2.webp",
       "name": "Dharla River Promenade",
-      "nameBn": "Dharla River Promenade (কুড়িগ্রাম)",
+      "nameEn": "Dharla River Promenade",
+      "nameBn": "কুড়িগ্রাম ইকোপার্ক ও বনাঞ্চল",
       "category": "Riverside Vistas",
-      "desc": "Dharla River Promenade stands as an iconic tourist highlight in Kurigram district. Nestled in natural surroundings under Rangpur Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.",
-      "location": "Forest Range, Kurigram"
+      "categoryEn": "Riverside Vistas",
+      "categoryBn": "ইকো ট্যুরিজম",
+      "desc": "Expansive river beaches and peaceful walks along the newly built Dharla Bridge.",
+      "descEn": "Expansive river beaches and peaceful walks along the newly built Dharla Bridge.",
+      "descBn": "কুড়িগ্রাম ইকোপার্ক ও বনাঞ্চল কুড়িগ্রাম জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Forest Range, Kurigram",
+      "locationEn": "Forest Range, Kurigram",
+      "locationBn": "বন রেঞ্জ, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dharla%20River%20Promenade%20Kurigram%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/kurigram/tour-3.webp",
       "name": "Kurigram Cultural Heritage Museum",
+      "nameEn": "Kurigram Cultural Heritage Museum",
       "nameBn": "কুড়িগ্রাম লোকশিল্প ও ঐতিহ্য জাদুঘর",
       "category": "Cultural Center",
+      "categoryEn": "Cultural Center",
+      "categoryBn": "সাংস্কৃতিক কেন্দ্র",
       "desc": "A celebrated tourism highlight in Kurigram district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Town Center, Kurigram"
+      "descEn": "A celebrated tourism highlight in Kurigram district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "কুড়িগ্রাম জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Town Center, Kurigram",
+      "locationEn": "Town Center, Kurigram",
+      "locationBn": "শহর কেন্দ্র, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kurigram%20Cultural%20Heritage%20Museum%20Kurigram%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/kurigram/tour-4.webp",
       "name": "Kurigram Scenic Lake & Boating Resort",
+      "nameEn": "Kurigram Scenic Lake & Boating Resort",
       "nameBn": "কুড়িগ্রাম মনোরম হ্রদ ও রিসোর্ট",
       "category": "Lakeside Resort",
+      "categoryEn": "Lakeside Resort",
+      "categoryBn": "লেক রিসোর্ট",
       "desc": "A celebrated tourism highlight in Kurigram district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Lake View, Kurigram"
+      "descEn": "A celebrated tourism highlight in Kurigram district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "কুড়িগ্রাম জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Lake View, Kurigram",
+      "locationEn": "Lake View, Kurigram",
+      "locationBn": "লেক ভিউ, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kurigram%20Scenic%20Lake%20%26%20Boating%20Resort%20Kurigram%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/kurigram/tour-5.webp",
       "name": "Kurigram Sunset Hilltop Viewpoint",
+      "nameEn": "Kurigram Sunset Hilltop Viewpoint",
       "nameBn": "কুড়িগ্রাম সূর্যাস্ত ভিউপয়েন্ট",
       "category": "Panoramic Vista",
+      "categoryEn": "Panoramic Vista",
+      "categoryBn": "প্যানোরামিক ভিউ",
       "desc": "A celebrated tourism highlight in Kurigram district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Hill Ridge, Kurigram"
+      "descEn": "A celebrated tourism highlight in Kurigram district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "কুড়িগ্রাম জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Hill Ridge, Kurigram",
+      "locationEn": "Hill Ridge, Kurigram",
+      "locationBn": "পাহাড়ি ঢাল, কুড়িগ্রাম",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kurigram%20Sunset%20Hilltop%20Viewpoint%20Kurigram%20Bangladesh"
     }
   ]
 };

@@ -1,6 +1,6 @@
 /**
  * District Data Schema — Chapainawabganj (চাঁপাইনবাবগঞ্জ)
- * Offline-first static metadata
+ * Offline-first static metadata with bilingual support
  */
 const CHAPAINAWABGANJ_DATA = {
   "id": 49,
@@ -8,46 +8,75 @@ const CHAPAINAWABGANJ_DATA = {
   "en": "Chapainawabganj",
   "bn": "চাঁপাইনবাবগঞ্জ",
   "div": "Rajshahi",
+  "divBn": "রাজশাহী",
   "lat": 24.7156,
   "lng": 88.2641,
   "coordinates": "24.7156, 88.2641",
   "est": 1984,
+  "estBn": "১৯৮৪",
   "area": "1,702.56 km²",
+  "areaBn": "১,৭০২.৫৬ বর্গ কি.মি.",
   "pop": "1.8M",
+  "popBn": "১.৮ মিলিয়ন",
   "dist": "310 km",
+  "distBn": "৩১০ কি.মি.",
   "route": "Via Jamuna Bridge through Rajshahi (approx. 6.5 hours by direct express buses or train).",
+  "routeEn": "Via Jamuna Bridge through Rajshahi (approx. 6.5 hours by direct express buses or train).",
+  "routeBn": "Chapainawabganj (চাঁপাইনবাবগঞ্জ) জেলায় ঢাকা ও অন্যান্য জেলা থেকে সরাসরি হাইওয়ে বাস ও আঞ্চলিক পরিবহন ব্যবস্থার মাধ্যমে সহজ যাতায়াত সংযোগ বিদ্যমান।",
   "tagline": "Chapainawabganj (চাঁপাইনবাবগঞ্জ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
+  "taglineEn": "Chapainawabganj (চাঁপাইনবাবগঞ্জ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
+  "taglineBn": "চাঁপাইনবাবগঞ্জ (Chapainawabganj) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
   "heroImage": "images/districts/chapainawabganj/hero.webp",
   "carousel": [
     {
       "id": 1,
       "image": "images/districts/chapainawabganj/carousel-1.webp",
       "title": "Chapainawabganj Heritage & Landscapes",
-      "subtitle": "Panoramic beauty across Rajshahi Division"
+      "titleEn": "Chapainawabganj Heritage & Landscapes",
+      "titleBn": "চাঁপাইনবাবগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
+      "subtitle": "Panoramic beauty across Rajshahi Division",
+      "subtitleEn": "Panoramic beauty across Rajshahi Division",
+      "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
     },
     {
       "id": 2,
       "image": "images/districts/chapainawabganj/carousel-2.webp",
       "title": "Historic Monuments of Chapainawabganj",
-      "subtitle": "Ancient landmarks dating back across generations"
+      "titleEn": "Historic Monuments of Chapainawabganj",
+      "titleBn": "চাঁপাইনবাবগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
+      "subtitle": "Ancient landmarks dating back across generations",
+      "subtitleEn": "Ancient landmarks dating back across generations",
+      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
     },
     {
       "id": 3,
       "image": "images/districts/chapainawabganj/carousel-3.webp",
       "title": "Riverine Corridors & Nature",
-      "subtitle": "Verdant waters and lush environmental biodiversity"
+      "titleEn": "Riverine Corridors & Nature",
+      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
+      "subtitle": "Verdant waters and lush environmental biodiversity",
+      "subtitleEn": "Verdant waters and lush environmental biodiversity",
+      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
     },
     {
       "id": 4,
       "image": "images/districts/chapainawabganj/carousel-4.webp",
       "title": "Cultural Life & Traditions",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets"
+      "titleEn": "Cultural Life & Traditions",
+      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
+      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
+      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
     },
     {
       "id": 5,
       "image": "images/districts/chapainawabganj/carousel-5.webp",
       "title": "Scenic Trails & Landmarks",
-      "subtitle": "Famous travel destinations and peaceful viewpoints"
+      "titleEn": "Scenic Trails & Landmarks",
+      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
+      "subtitle": "Famous travel destinations and peaceful viewpoints",
+      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
+      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
     }
   ],
   "hist": [
@@ -55,46 +84,86 @@ const CHAPAINAWABGANJ_DATA = {
       "id": 1,
       "image": "images/districts/chapainawabganj/hist-1.webp",
       "name": "Choto Sona Mosque (Small Golden Mosque)",
-      "nameBn": "Choto Sona Mosque (Small Golden Mosque) (চাঁপাইনবাবগঞ্জ)",
+      "nameEn": "Choto Sona Mosque (Small Golden Mosque)",
+      "nameBn": "চাঁপাইনবাবগঞ্জ প্রাচীন রাজবাড়ি",
       "category": "Royal Heritage",
-      "desc": "Choto Sona Mosque (Small Golden Mosque) is one of the most prominent historical monuments in Chapainawabganj district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions attracting historians and visitors from across Bangladesh.",
-      "location": "Chapainawabganj Sadar, Rajshahi"
+      "categoryEn": "Royal Heritage",
+      "categoryBn": "রাজকীয় ঐতিহ্য",
+      "desc": "1493 Sultanate stone architectural wonder with 15 gilded domes in ancient Gauda.",
+      "descEn": "1493 Sultanate stone architectural wonder with 15 gilded domes in ancient Gauda.",
+      "descBn": "চাঁপাইনবাবগঞ্জ প্রাচীন রাজবাড়ি চাঁপাইনবাবগঞ্জ জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Chapainawabganj Sadar, Rajshahi",
+      "locationEn": "Chapainawabganj Sadar, Rajshahi",
+      "locationBn": "চাঁপাইনবাবগঞ্জ সদর, রাজশাহী",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Choto%20Sona%20Mosque%20(Small%20Golden%20Mosque)%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/chapainawabganj/hist-2.webp",
       "name": "Darasbari Mosque & Madrasa",
-      "nameBn": "Darasbari Mosque & Madrasa (চাঁপাইনবাবগঞ্জ)",
+      "nameEn": "Darasbari Mosque & Madrasa",
+      "nameBn": "চাঁপাইনবাবগঞ্জ কেন্দ্রীয় জামে মসজিদ",
       "category": "Historic Mosque",
-      "desc": "Darasbari Mosque & Madrasa is one of the most prominent historical monuments in Chapainawabganj district. The site preserves centuries-old heritage, intricate regional brickwork, and rich cultural traditions attracting historians and visitors from across Bangladesh.",
-      "location": "Old Town, Chapainawabganj"
+      "categoryEn": "Historic Mosque",
+      "categoryBn": "ঐতিহাসিক মসজিদ",
+      "desc": "Historical 15th-century terracotta university and prayer complex ruins.",
+      "descEn": "Historical 15th-century terracotta university and prayer complex ruins.",
+      "descBn": "চাঁপাইনবাবগঞ্জ কেন্দ্রীয় জামে মসজিদ চাঁপাইনবাবগঞ্জ জেলার একটি ঐতিহাসিক স্থান যা বাংলার ঐতিহ্য, প্রাচীন স্থাপত্য এবং লোকইতিহাসকে ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।",
+      "location": "Old Town, Chapainawabganj",
+      "locationEn": "Old Town, Chapainawabganj",
+      "locationBn": "পুরাতন শহর, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Darasbari%20Mosque%20%26%20Madrasa%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/chapainawabganj/hist-3.webp",
       "name": "Chapainawabganj Colonial Court & Mint",
-      "nameBn": "চাঁপাইনবাবগঞ্জ ঔপনিবেশিক আদালত ও টাকশাল",
+      "nameEn": "Chapainawabganj Colonial Court & Mint",
+      "nameBn": "চাঁপাইনবাবগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
       "category": "Colonial Architecture",
+      "categoryEn": "Colonial Architecture",
+      "categoryBn": "ঔপনিবেশিক স্থাপত্য",
       "desc": "Renowned historical heritage site in Chapainawabganj district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Court Road, Chapainawabganj"
+      "descEn": "Renowned historical heritage site in Chapainawabganj district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "চাঁপাইনবাবগঞ্জ জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Court Road, Chapainawabganj",
+      "locationEn": "Court Road, Chapainawabganj",
+      "locationBn": "কোর্ট রোড, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chapainawabganj%20Colonial%20Court%20%26%20Mint%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/chapainawabganj/hist-4.webp",
       "name": "Chapainawabganj Archeological Mound",
+      "nameEn": "Chapainawabganj Archeological Mound",
       "nameBn": "চাঁপাইনবাবগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
       "category": "Ancient Archaeology",
+      "categoryEn": "Ancient Archaeology",
+      "categoryBn": "প্রাচীন প্রত্নতত্ত্ব",
       "desc": "Renowned historical heritage site in Chapainawabganj district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Archaeological Site, Chapainawabganj"
+      "descEn": "Renowned historical heritage site in Chapainawabganj district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "চাঁপাইনবাবগঞ্জ জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Archaeological Site, Chapainawabganj",
+      "locationEn": "Archaeological Site, Chapainawabganj",
+      "locationBn": "প্রত্নতত্ত্ব এলাকা, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chapainawabganj%20Archeological%20Mound%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/chapainawabganj/hist-5.webp",
       "name": "Chapainawabganj Liberation War Memorial",
+      "nameEn": "Chapainawabganj Liberation War Memorial",
       "nameBn": "চাঁপাইনবাবগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
       "category": "National Memorial",
+      "categoryEn": "National Memorial",
+      "categoryBn": "জাতীয় স্মৃতিসৌধ",
       "desc": "Renowned historical heritage site in Chapainawabganj district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
-      "location": "Central Park, Chapainawabganj"
+      "descEn": "Renowned historical heritage site in Chapainawabganj district, preserving cultural treasures and significant archaeological architecture from antiquity and the colonial era.",
+      "descBn": "চাঁপাইনবাবগঞ্জ জেলার অন্যতম প্রাচীন ও সংরক্ষিত ঐতিহাসিক নিদর্শন, যা শতাব্দী প্রাচীন ঐতিহ্য, স্থাপত্যকলা ও স্থানীয় ইতিহাস বহন করে চলেছে।",
+      "location": "Central Park, Chapainawabganj",
+      "locationEn": "Central Park, Chapainawabganj",
+      "locationBn": "সেন্ট্রাল পার্ক, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chapainawabganj%20Liberation%20War%20Memorial%20Chapainawabganj%20Bangladesh"
     }
   ],
   "tour": [
@@ -102,46 +171,86 @@ const CHAPAINAWABGANJ_DATA = {
       "id": 1,
       "image": "images/districts/chapainawabganj/tour-1.webp",
       "name": "Mango Capital of Bangladesh",
-      "nameBn": "Mango Capital of Bangladesh (চাঁপাইনবাবগঞ্জ)",
+      "nameEn": "Mango Capital of Bangladesh",
+      "nameBn": "চাঁপাইনবাবগঞ্জ নদী তীরবর্তী বাঁধ",
       "category": "Agri-Tourism",
-      "desc": "Mango Capital of Bangladesh stands as an iconic tourist highlight in Chapainawabganj district. Nestled in natural surroundings under Rajshahi Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.",
-      "location": "Chapainawabganj Riverfront, Rajshahi"
+      "categoryEn": "Agri-Tourism",
+      "categoryBn": "নদী ও নিসর্গ",
+      "desc": "Endless orchards producing premier Fazli, Khirsapat, and Langra mango varieties.",
+      "descEn": "Endless orchards producing premier Fazli, Khirsapat, and Langra mango varieties.",
+      "descBn": "চাঁপাইনবাবগঞ্জ নদী তীরবর্তী বাঁধ চাঁপাইনবাবগঞ্জ জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Chapainawabganj Riverfront, Rajshahi",
+      "locationEn": "Chapainawabganj Riverfront, Rajshahi",
+      "locationBn": "চাঁপাইনবাবগঞ্জ নদী তীর, রাজশাহী",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mango%20Capital%20of%20Bangladesh%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 2,
       "image": "images/districts/chapainawabganj/tour-2.webp",
       "name": "Mahananda River Promenade",
-      "nameBn": "Mahananda River Promenade (চাঁপাইনবাবগঞ্জ)",
+      "nameEn": "Mahananda River Promenade",
+      "nameBn": "চাঁপাইনবাবগঞ্জ ইকোপার্ক ও বনাঞ্চল",
       "category": "Riverside Views",
-      "desc": "Mahananda River Promenade stands as an iconic tourist highlight in Chapainawabganj district. Nestled in natural surroundings under Rajshahi Division, it offers travelers picturesque landscapes, tranquil recreation, and cultural exploration.",
-      "location": "Forest Range, Chapainawabganj"
+      "categoryEn": "Riverside Views",
+      "categoryBn": "ইকো ট্যুরিজম",
+      "desc": "Picturesque riverfront strolls along the clean banks of the Mahananda.",
+      "descEn": "Picturesque riverfront strolls along the clean banks of the Mahananda.",
+      "descBn": "চাঁপাইনবাবগঞ্জ ইকোপার্ক ও বনাঞ্চল চাঁপাইনবাবগঞ্জ জেলার অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য ও বিনোদনের সুযোগ উপহার দেয়।",
+      "location": "Forest Range, Chapainawabganj",
+      "locationEn": "Forest Range, Chapainawabganj",
+      "locationBn": "বন রেঞ্জ, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mahananda%20River%20Promenade%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 3,
       "image": "images/districts/chapainawabganj/tour-3.webp",
       "name": "Chapainawabganj Cultural Heritage Museum",
+      "nameEn": "Chapainawabganj Cultural Heritage Museum",
       "nameBn": "চাঁপাইনবাবগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
       "category": "Cultural Center",
+      "categoryEn": "Cultural Center",
+      "categoryBn": "সাংস্কৃতিক কেন্দ্র",
       "desc": "A celebrated tourism highlight in Chapainawabganj district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Town Center, Chapainawabganj"
+      "descEn": "A celebrated tourism highlight in Chapainawabganj district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "চাঁপাইনবাবগঞ্জ জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Town Center, Chapainawabganj",
+      "locationEn": "Town Center, Chapainawabganj",
+      "locationBn": "শহর কেন্দ্র, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chapainawabganj%20Cultural%20Heritage%20Museum%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 4,
       "image": "images/districts/chapainawabganj/tour-4.webp",
       "name": "Chapainawabganj Scenic Lake & Boating Resort",
+      "nameEn": "Chapainawabganj Scenic Lake & Boating Resort",
       "nameBn": "চাঁপাইনবাবগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
       "category": "Lakeside Resort",
+      "categoryEn": "Lakeside Resort",
+      "categoryBn": "লেক রিসোর্ট",
       "desc": "A celebrated tourism highlight in Chapainawabganj district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Lake View, Chapainawabganj"
+      "descEn": "A celebrated tourism highlight in Chapainawabganj district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "চাঁপাইনবাবগঞ্জ জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Lake View, Chapainawabganj",
+      "locationEn": "Lake View, Chapainawabganj",
+      "locationBn": "লেক ভিউ, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chapainawabganj%20Scenic%20Lake%20%26%20Boating%20Resort%20Chapainawabganj%20Bangladesh"
     },
     {
       "id": 5,
       "image": "images/districts/chapainawabganj/tour-5.webp",
       "name": "Chapainawabganj Sunset Hilltop Viewpoint",
+      "nameEn": "Chapainawabganj Sunset Hilltop Viewpoint",
       "nameBn": "চাঁপাইনবাবগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
       "category": "Panoramic Vista",
+      "categoryEn": "Panoramic Vista",
+      "categoryBn": "প্যানোরামিক ভিউ",
       "desc": "A celebrated tourism highlight in Chapainawabganj district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
-      "location": "Hill Ridge, Chapainawabganj"
+      "descEn": "A celebrated tourism highlight in Chapainawabganj district, offering panoramic vistas, peaceful natural retreats, and scenic photography spots.",
+      "descBn": "চাঁপাইনবাবগঞ্জ জেলার চমৎকার একটি পর্যটন আকর্ষণ, যেখানে নদী-প্রকৃতির মায়াবী দৃশ্য, নির্মল বাতাস এবং মনোরম পরিবেশ উপভোগ করা যায়।",
+      "location": "Hill Ridge, Chapainawabganj",
+      "locationEn": "Hill Ridge, Chapainawabganj",
+      "locationBn": "পাহাড়ি ঢাল, চাঁপাইনবাবগঞ্জ",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chapainawabganj%20Sunset%20Hilltop%20Viewpoint%20Chapainawabganj%20Bangladesh"
     }
   ]
 };

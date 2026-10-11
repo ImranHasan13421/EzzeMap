@@ -4,9 +4,12 @@
  * 
  * Features:
  * - Direct execution out of `window.LOCAL_DISTRICTS` & `window.MAP_PATHS`
+ * - Full Bilingual Engine (English by Default ↔ Proper Bangla with Kalpurush Font & Bengali Digits)
+ * - Clickable Google Maps Location Links & App Redirection for all spots
  * - Full-width Cinematic District Hero Banner with dark gradient fade
  * - Pure CSS Scroll-Snapping 5-Image Carousel Track
- * - Enforced Top-5 Historical & Tourist Location Cards with image frames & map pins
+ * - Enforced Top-5 Historical & Tourist Location Cards with image frames, map pins & Google Maps actions
+ * - Generated real photorealistic spot images for Dhaka District
  * - Sticky desktop dual-column grid (left sidebar sticky, right map locked)
  * - Mobile Segmented View Controller ([ Interactive Map View ] vs [ 64 Districts List ])
  * - SVG vector map hover/touch inspection with strictly bounded tooltip
@@ -14,8 +17,11 @@
  */
 
 // ==========================================
-// 1. REACTIVE STATE MANAGEMENT
+// 1. REACTIVE STATE MANAGEMENT & CONSTANTS
 // ==========================================
+const THEME_KEY = 'localhost_district_theme_v2';
+const LANG_KEY = 'localhost_district_lang_v2';
+
 const AppState = {
   districts: [],             // All 64 district memory buffers
   filteredDistricts: [],     // Filtered and sorted district list
@@ -25,16 +31,208 @@ const AppState = {
   searchQuery: '',           // Current search filter query
   sortBy: 'name-asc',        // Sort criteria: name-asc, dist-asc, area-desc, pop-desc
   currentTheme: 'dark',      // 'dark' | 'light'
+  currentLang: 'en',         // 'en' (Initial Default) | 'bn'
   mobileHomeTab: 'map',      // 'map' | 'list' (on compact mobile screens)
 };
 
-const THEME_KEY = 'localhost_district_theme_v2';
+// Comprehensive Localization Dictionary
+const I18N = {
+  en: {
+    brand_sub: "100% Self-Hosted • Offline-First Bangladesh Explorer",
+    api_ready: "Offline Memory Ready",
+    districts_loaded: "64 Districts Loaded",
+    theme_dark: "Dark",
+    theme_light: "Light",
+    lang_btn: "বাংলা",
+    nav_vector_map: "Vector Map",
+    tab_map_view: "Interactive Map View",
+    tab_list_view: "Districts List (64)",
+    filter_division: "Filter by Division",
+    search_placeholder: "Search district (Dhaka, Cox's Bazar)...",
+    sort_by: "Sort By:",
+    sort_name: "Name (A-Z)",
+    sort_dist: "Distance (Closest to Dhaka)",
+    sort_area: "Area (Largest First)",
+    sort_pop: "Population (Highest First)",
+    districts_count_suffix: "Districts",
+    district_single: "District",
+    no_results_title: "No districts match your search",
+    no_results_sub: "Try searching by English or Bangla name, or select 'All'.",
+    reset_filters: "Reset Filters",
+    map_heading: "Interactive Map of Bangladesh",
+    map_subheading: "Hover or tap any district to inspect • Click to open its complete profile page",
+    map_badge_districts: "64 Districts",
+    map_badge_divs: "8 Divisions",
+    hud_dist_suffix: "from Dhaka",
+    hud_view_details: "View District Details",
+    legend_selected: "Selected District (Flag Red)",
+    legend_hover: "Hover District (Flag Green)",
+    legend_instruction: "Click any district to explore",
+    stat_districts_lbl: "Districts",
+    stat_divisions_lbl: "Divisions",
+    stat_area_lbl: "Square KM",
+    stat_pop_lbl: "Population",
+    popular_destinations: "Popular Destinations:",
+    breadcrumb_home: "Home",
+    breadcrumb_div_suffix: "Division",
+    verified_archive: "Verified Archive",
+    locate_on_map: "Locate on Vector Map",
+    metric_est: "Established Year",
+    metric_est_sub: "Formation year",
+    metric_area: "Total Area",
+    metric_area_sub: "Geographic span",
+    metric_pop: "Total Population",
+    metric_pop_sub: "Census estimate",
+    metric_dist: "Distance from Dhaka",
+    metric_dist_sub: "Road network",
+    route_heading: "Route & Travel Options from Dhaka",
+    route_badge: "Transit",
+    transit_bus: "Highway Bus",
+    transit_train: "Railway Link",
+    transit_car: "Private Vehicle",
+    transit_ship: "Waterway Launch",
+    carousel_heading: "Visual Highlights & Panoramas",
+    carousel_sub: "Friction-free scroll-snap photography stream",
+    carousel_badge: "5 Curated Views",
+    slide_prefix: "Slide",
+    hist_heading: "Historical Places & Heritage",
+    hist_sub: "Top 5 verified architectural monuments & ancient sites",
+    tour_heading: "Tourist Attractions & Highlights",
+    tour_sub: "Top 5 scenic retreats, waterfronts & cultural promenades",
+    top5_badge: "Top 5 Enforced",
+    back_home: "← Back to Home",
+    back_home_page: "← Back to Home Page",
+    btn_prev: "Previous",
+    btn_next: "Next",
+    modal_title: "Interactive Vector Map of Bangladesh",
+    modal_sub: "Click or tap any district path to open its profile",
+    modal_hud_prompt: "Hover or tap any district",
+    modal_hud_action: "Open Profile →",
+    modal_close: "Close Map",
+    modal_legend_active: "Active (Red)",
+    modal_legend_hover: "Hover (Green)",
+    view_on_map: "View on Map",
+    open_maps_app: "Open in Google Maps",
+    toast_theme: "Theme switched to",
+    toast_lang_en: "Language set to English",
+    toast_lang_bn: "ভাষা পরিবর্তন করে বাংলা করা হয়েছে",
+  },
+  bn: {
+    brand_sub: "১০০% সেলফ-হোস্টেড • অফলাইন-ফার্স্ট বাংলাদেশ প্ল্যাটফর্ম",
+    api_ready: "অফলাইন মেমোরি প্রস্তুত",
+    districts_loaded: "৬৪টি জেলা সংরক্ষিত",
+    theme_dark: "ডার্ক",
+    theme_light: "লাইট",
+    lang_btn: "English",
+    nav_vector_map: "ভেক্টর মানচিত্র",
+    tab_map_view: "ইন্টারেক্টিভ মানচিত্র",
+    tab_list_view: "৬৪ জেলার তালিকা",
+    filter_division: "বিভাগ অনুযায়ী ফিল্টার",
+    search_placeholder: "জেলা খুঁজুন (ঢাকা, কক্সবাজার, সিলেট)...",
+    sort_by: "সাজানোর ধরণ:",
+    sort_name: "নাম (অ আ ক খ)",
+    sort_dist: "দূরত্ব (ঢাকা থেকে নিকটতম)",
+    sort_area: "আয়তন (বৃহত্তম আগে)",
+    sort_pop: "জনসংখ্যা (সর্বোচ্চ আগে)",
+    districts_count_suffix: "টি জেলা",
+    district_single: "টি জেলা",
+    no_results_title: "কোনো জেলা খুঁজে পাওয়া যায়নি",
+    no_results_sub: "বাংলা বা ইংরেজিতে জেলার নাম লিখে চেষ্টা করুন অথবা 'সকল' নির্বাচন করুন।",
+    reset_filters: "ফিল্টার রিসেট করুন",
+    map_heading: "বাংলাদেশের ইন্টারেক্টিভ মানচিত্র",
+    map_subheading: "যেকোনো জেলায় হোভার বা স্পর্শ করে দেখুন • বিস্তারিত দেখতে ক্লিক করুন",
+    map_badge_districts: "৬৪টি জেলা",
+    map_badge_divs: "৮টি বিভাগ",
+    hud_dist_suffix: "ঢাকা থেকে",
+    hud_view_details: "বিস্তারিত দেখুন",
+    legend_selected: "নির্বাচিত জেলা (লাল)",
+    legend_hover: "হোভার জেলা (সবুজ)",
+    legend_instruction: "অন্বেষণ করতে যেকোনো জেলায় ক্লিক করুন",
+    stat_districts_lbl: "জেলা",
+    stat_divisions_lbl: "বিভাগ",
+    stat_area_lbl: "বর্গ কি.মি.",
+    stat_pop_lbl: "জনসংখ্যা",
+    popular_destinations: "জনপ্রিয় ভ্রমণ গন্তব্য:",
+    breadcrumb_home: "হোম",
+    breadcrumb_div_suffix: "বিভাগ",
+    verified_archive: "যাচাইকৃত তথ্যভাণ্ডার",
+    locate_on_map: "ভেক্টর মানচিত্রে দেখুন",
+    metric_est: "প্রতিষ্ঠাকাল",
+    metric_est_sub: "জেলা গঠনকাল",
+    metric_area: "মোট আয়তন",
+    metric_area_sub: "ভৌগোলিক এলাকা",
+    metric_pop: "মোট জনসংখ্যা",
+    metric_pop_sub: "জনশুমারি হিসাব",
+    metric_dist: "ঢাকা থেকে দূরত্ব",
+    metric_dist_sub: "সড়ক যোগাযোগ",
+    route_heading: "ঢাকা থেকে যাতায়াত ও ভ্রমণের মাধ্যম",
+    route_badge: "যোগাযোগ",
+    transit_bus: "দূরপাল্লার বাস",
+    transit_train: "রেলওয়ে সংযোগ",
+    transit_car: "ব্যক্তিগত গাড়ি",
+    transit_ship: "নৌপথের লঞ্চ",
+    carousel_heading: "প্রধান দর্শনীয় দৃশ্য ও প্যানোরামা",
+    carousel_sub: "স্ক্রোল-স্ন্যাপ প্যানোরামিক আলোকচিত্র",
+    carousel_badge: "৫টি নির্বাচিত দৃশ্য",
+    slide_prefix: "দৃশ্য",
+    hist_heading: "ঐতিহাসিক স্থান ও ঐতিহ্য",
+    hist_sub: "শীর্ষ ৫টি যাচাইকৃত প্রাচীন স্থাপত্য ও ঐতিহাসিক নিদর্শন",
+    tour_heading: "পর্যটন আকর্ষণ ও দর্শনীয় স্থান",
+    tour_sub: "শীর্ষ ৫টি নয়নাভিরাম স্থান, লেক ও বিনোদন কেন্দ্র",
+    top5_badge: "শীর্ষ ৫টি স্থান",
+    back_home: "← হোমে ফিরে যান",
+    back_home_page: "← মূল পাতায় ফিরে যান",
+    btn_prev: "পূর্ববর্তী",
+    btn_next: "পরবর্তী",
+    modal_title: "বাংলাদেশের ইন্টারেক্টিভ ভেক্টর মানচিত্র",
+    modal_sub: "যেকোনো জেলায় ক্লিক বা স্পর্শ করে প্রোফাইল খুলুন",
+    modal_hud_prompt: "যেকোনো জেলায় হোভার বা স্পর্শ করুন",
+    modal_hud_action: "প্রোফাইল দেখুন →",
+    modal_close: "মানচিত্র বন্ধ করুন",
+    modal_legend_active: "সক্রিয় (লাল)",
+    modal_legend_hover: "হোভার (সবুজ)",
+    view_on_map: "ম্যাপে দেখুন",
+    open_maps_app: "গুগল ম্যাপস অ্যাপে দেখুন",
+    toast_theme: "থিম পরিবর্তিত হয়েছে:",
+    toast_lang_en: "Language set to English",
+    toast_lang_bn: "ভাষা পরিবর্তন করে বাংলা করা হয়েছে",
+  }
+};
+
+const DIVISIONS_MAP = {
+  all: { en: "All (64)", bn: "সকল (৬৪)" },
+  Dhaka: { en: "Dhaka", bn: "ঢাকা" },
+  Chattogram: { en: "Chattogram", bn: "চট্টগ্রাম" },
+  Rajshahi: { en: "Rajshahi", bn: "রাজশাহী" },
+  Khulna: { en: "Khulna", bn: "খুলনা" },
+  Barishal: { en: "Barishal", bn: "বরিশাল" },
+  Sylhet: { en: "Sylhet", bn: "সিলেট" },
+  Rangpur: { en: "Rangpur", bn: "রংপুর" },
+  Mymensingh: { en: "Mymensingh", bn: "ময়মনসিংহ" },
+};
+
+const POPULAR_DESTINATIONS = [
+  { id: 1, en: "Dhaka", bn: "ঢাকা" },
+  { id: 19, en: "Cox's Bazar", bn: "কক্সবাজার" },
+  { id: 28, en: "Sylhet", bn: "সিলেট" },
+  { id: 14, en: "Bandarban", bn: "বান্দরবান" },
+  { id: 35, en: "Bagerhat", bn: "বাগেরহাট" },
+  { id: 45, en: "Bogura", bn: "বগুড়া" }
+];
+
+// Helper: Convert any string or number to authentic Bengali digits
+function toBengaliDigits(input) {
+  if (input === null || input === undefined) return '';
+  const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+  return String(input).replace(/[0-9]/g, ch => bnDigits[Number(ch)]);
+}
 
 // ==========================================
 // 2. LIFECYCLE & INITIALIZATION
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  initLanguage();
   initLucideIcons();
   setupEventListeners();
 
@@ -71,12 +269,12 @@ function applyTheme(theme) {
     html.classList.add('dark');
     if (sunIcon) sunIcon.classList.remove('hidden');
     if (moonIcon) moonIcon.classList.add('hidden');
-    if (themeLabel) themeLabel.textContent = 'Dark';
+    if (themeLabel) themeLabel.textContent = AppState.currentLang === 'bn' ? 'ডার্ক' : 'Dark';
   } else {
     html.classList.remove('dark');
     if (sunIcon) sunIcon.classList.add('hidden');
     if (moonIcon) moonIcon.classList.remove('hidden');
-    if (themeLabel) themeLabel.textContent = 'Light';
+    if (themeLabel) themeLabel.textContent = AppState.currentLang === 'bn' ? 'লাইট' : 'Light';
   }
   AppState.currentTheme = theme;
   localStorage.setItem(THEME_KEY, theme);
@@ -86,11 +284,297 @@ function applyTheme(theme) {
 function toggleTheme() {
   const nextTheme = AppState.currentTheme === 'dark' ? 'light' : 'dark';
   applyTheme(nextTheme);
-  showToast(`Switched to ${nextTheme === 'dark' ? 'Dark' : 'Light'} Mode`);
+  const t = I18N[AppState.currentLang];
+  showToast(`${t.toast_theme} ${nextTheme === 'dark' ? t.theme_dark : t.theme_light}`);
 }
 
 // ==========================================
-// 4. LOCAL MEMORY BUFFER DATA LOADER
+// 4. LANGUAGE CONTROLLER (ENGLISH ↔ BANGLA)
+// ==========================================
+function initLanguage() {
+  const savedLang = localStorage.getItem(LANG_KEY);
+  // Default is 'en' initially as requested
+  AppState.currentLang = (savedLang === 'bn' || savedLang === 'en') ? savedLang : 'en';
+  applyLanguage(AppState.currentLang, false);
+}
+
+function applyLanguage(lang, showNotification = true) {
+  AppState.currentLang = lang;
+  localStorage.setItem(LANG_KEY, lang);
+
+  // Set html document lang
+  document.documentElement.lang = lang;
+
+  // Toggle button text in top header
+  const langLabel = document.getElementById('lang-toggle-label');
+  const langBtn = document.getElementById('lang-toggle-btn');
+  if (langLabel) {
+    langLabel.textContent = lang === 'en' ? 'বাংলা' : 'English';
+  }
+  if (langBtn) {
+    langBtn.setAttribute('title', lang === 'en' ? 'Switch to Bangla' : 'Switch to English');
+  }
+
+  // Update theme label text
+  const themeLabel = document.getElementById('theme-toggle-label');
+  if (themeLabel) {
+    themeLabel.textContent = lang === 'bn' 
+      ? (AppState.currentTheme === 'dark' ? 'ডার্ক' : 'লাইট') 
+      : (AppState.currentTheme === 'dark' ? 'Dark' : 'Light');
+  }
+
+  // Update all static UI elements on the page
+  updateStaticTranslations();
+
+  // Re-render division pills
+  updateDivisionPillsUI(AppState.activeDivision);
+
+  // Re-render popular destination buttons
+  renderPopularDestinations();
+
+  // Re-render sidebar list with localized titles and numbers
+  filterAndRenderDistricts();
+
+  // Update Map Inspector HUD
+  if (AppState.hoveredDistrictId) {
+    const hDist = AppState.districts.find(d => d.id === AppState.hoveredDistrictId);
+    if (hDist) updateMapInspectorHud(hDist, true);
+  } else if (AppState.selectedDistrictId) {
+    const sDist = AppState.districts.find(d => d.id === AppState.selectedDistrictId);
+    if (sDist) updateMapInspectorHud(sDist, false);
+  } else if (AppState.districts.length > 0) {
+    updateMapInspectorHud(AppState.districts[0], false);
+  }
+
+  // If in detail view, re-populate active district in new language
+  if (AppState.selectedDistrictId) {
+    const activeDist = AppState.districts.find(d => d.id === AppState.selectedDistrictId);
+    if (activeDist) {
+      populateDistrictDetails(activeDist);
+    }
+  }
+
+  initLucideIcons();
+
+  if (showNotification) {
+    showToast(lang === 'bn' ? I18N.bn.toast_lang_bn : I18N.en.toast_lang_en);
+  }
+}
+
+function toggleLanguage() {
+  const nextLang = AppState.currentLang === 'en' ? 'bn' : 'en';
+  applyLanguage(nextLang, true);
+}
+
+function updateStaticTranslations() {
+  const t = I18N[AppState.currentLang];
+  const isBn = AppState.currentLang === 'bn';
+
+  // Header
+  const brandSub = document.getElementById('brand-subtitle');
+  if (brandSub) brandSub.textContent = t.brand_sub;
+
+  const apiStatus = document.getElementById('api-status-text');
+  if (apiStatus) apiStatus.textContent = t.api_ready;
+
+  const apiCount = document.getElementById('api-district-count');
+  if (apiCount) {
+    apiCount.textContent = isBn 
+      ? `${toBengaliDigits(AppState.districts.length || 64)}টি জেলা সংরক্ষিত`
+      : `${AppState.districts.length || 64} Districts Loaded`;
+  }
+
+  const viewMapBtnLabel = document.getElementById('view-map-modal-btn-label');
+  if (viewMapBtnLabel) viewMapBtnLabel.textContent = t.nav_vector_map;
+
+  // Mobile Tabs
+  const tabMap = document.getElementById('mobile-tab-map-text');
+  if (tabMap) tabMap.textContent = t.tab_map_view;
+
+  const tabList = document.getElementById('mobile-tab-list-text');
+  if (tabList) tabList.textContent = t.tab_list_view;
+
+  // Search Input
+  const searchInput = document.getElementById('district-search-input');
+  if (searchInput) searchInput.setAttribute('placeholder', t.search_placeholder);
+
+  const filterDivHeading = document.getElementById('filter-division-heading');
+  if (filterDivHeading) filterDivHeading.textContent = t.filter_division;
+
+  const sortByHeading = document.getElementById('sort-by-heading');
+  if (sortByHeading) sortByHeading.textContent = t.sort_by;
+
+  // Sort Options
+  const sortSelect = document.getElementById('district-sort-select');
+  if (sortSelect && sortSelect.options) {
+    sortSelect.options[0].text = t.sort_name;
+    sortSelect.options[1].text = t.sort_dist;
+    sortSelect.options[2].text = t.sort_area;
+    sortSelect.options[3].text = t.sort_pop;
+  }
+
+  // Home Map Section
+  const mapSectionTitle = document.getElementById('map-section-title-text');
+  if (mapSectionTitle) mapSectionTitle.textContent = t.map_heading;
+
+  const mapSectionSub = document.getElementById('map-section-subtitle');
+  if (mapSectionSub) mapSectionSub.textContent = t.map_subheading;
+
+  const mapQuickDist = document.getElementById('map-quick-districts');
+  if (mapQuickDist) mapQuickDist.textContent = t.map_badge_districts;
+
+  const mapQuickDivs = document.getElementById('map-quick-divs');
+  if (mapQuickDivs) mapQuickDivs.textContent = t.map_badge_divs;
+
+  const legSel = document.getElementById('legend-selected-label');
+  if (legSel) legSel.textContent = t.legend_selected;
+
+  const legHov = document.getElementById('legend-hover-label');
+  if (legHov) legHov.textContent = t.legend_hover;
+
+  const legInst = document.getElementById('legend-instruction');
+  if (legInst) legInst.textContent = t.legend_instruction;
+
+  // 4 Quick Facts
+  const statDistVal = document.getElementById('stat-districts-val');
+  if (statDistVal) statDistVal.textContent = isBn ? toBengaliDigits(64) : '64';
+
+  const statDistLbl = document.getElementById('stat-districts-lbl');
+  if (statDistLbl) statDistLbl.textContent = t.stat_districts_lbl;
+
+  const statDivVal = document.getElementById('stat-divisions-val');
+  if (statDivVal) statDivVal.textContent = isBn ? toBengaliDigits(8) : '8';
+
+  const statDivLbl = document.getElementById('stat-divisions-lbl');
+  if (statDivLbl) statDivLbl.textContent = t.stat_divisions_lbl;
+
+  const statAreaVal = document.getElementById('stat-area-val');
+  if (statAreaVal) statAreaVal.textContent = isBn ? '১,৪৭,৫৭০' : '147k';
+
+  const statAreaLbl = document.getElementById('stat-area-lbl');
+  if (statAreaLbl) statAreaLbl.textContent = t.stat_area_lbl;
+
+  const statPopVal = document.getElementById('stat-pop-val');
+  if (statPopVal) statPopVal.textContent = isBn ? '১৭ কোটি+' : '170M+';
+
+  const statPopLbl = document.getElementById('stat-pop-lbl');
+  if (statPopLbl) statPopLbl.textContent = t.stat_pop_lbl;
+
+  const popDestHeading = document.getElementById('popular-dest-heading');
+  if (popDestHeading) popDestHeading.textContent = t.popular_destinations;
+
+  // Detail View Static Labels
+  const backTop = document.getElementById('back-to-home-btn-top-label');
+  if (backTop) backTop.textContent = t.back_home;
+
+  const breadHome = document.getElementById('breadcrumb-home-link');
+  if (breadHome) breadHome.textContent = t.breadcrumb_home;
+
+  const verifiedBadge = document.getElementById('detail-verified-text');
+  if (verifiedBadge) verifiedBadge.textContent = t.verified_archive;
+
+  const locateMapText = document.getElementById('open-map-preview-btn-label');
+  if (locateMapText) locateMapText.textContent = t.locate_on_map;
+
+  const metricEst = document.getElementById('metric-est-label');
+  if (metricEst) metricEst.textContent = t.metric_est;
+  const metricEstSub = document.getElementById('metric-est-sub');
+  if (metricEstSub) metricEstSub.textContent = t.metric_est_sub;
+
+  const metricArea = document.getElementById('metric-area-label');
+  if (metricArea) metricArea.textContent = t.metric_area;
+  const metricAreaSub = document.getElementById('metric-area-sub');
+  if (metricAreaSub) metricAreaSub.textContent = t.metric_area_sub;
+
+  const metricPop = document.getElementById('metric-pop-label');
+  if (metricPop) metricPop.textContent = t.metric_pop;
+  const metricPopSub = document.getElementById('metric-pop-sub');
+  if (metricPopSub) metricPopSub.textContent = t.metric_pop_sub;
+
+  const metricDist = document.getElementById('metric-dist-label');
+  if (metricDist) metricDist.textContent = t.metric_dist;
+  const metricDistSub = document.getElementById('metric-dist-sub');
+  if (metricDistSub) metricDistSub.textContent = t.metric_dist_sub;
+
+  const routeHeading = document.getElementById('route-section-heading-text');
+  if (routeHeading) routeHeading.textContent = t.route_heading;
+  const routeBadge = document.getElementById('route-badge-text');
+  if (routeBadge) routeBadge.textContent = t.route_badge;
+
+  const transitBus = document.getElementById('transit-bus-text');
+  if (transitBus) transitBus.textContent = t.transit_bus;
+  const transitTrain = document.getElementById('transit-train-text');
+  if (transitTrain) transitTrain.textContent = t.transit_train;
+  const transitCar = document.getElementById('transit-car-text');
+  if (transitCar) transitCar.textContent = t.transit_car;
+  const transitShip = document.getElementById('transit-ship-text');
+  if (transitShip) transitShip.textContent = t.transit_ship;
+
+  const carouselHeading = document.getElementById('carousel-section-heading-text');
+  if (carouselHeading) carouselHeading.textContent = t.carousel_heading;
+  const carouselSub = document.getElementById('carousel-section-subtitle');
+  if (carouselSub) carouselSub.textContent = t.carousel_sub;
+  const carouselBadge = document.getElementById('carousel-section-badge');
+  if (carouselBadge) carouselBadge.textContent = t.carousel_badge;
+
+  const histHeading = document.getElementById('historical-section-heading-text');
+  if (histHeading) histHeading.textContent = t.hist_heading;
+  const histSub = document.getElementById('historical-section-subtitle');
+  if (histSub) histSub.textContent = t.hist_sub;
+  const histBadge = document.getElementById('historical-section-badge');
+  if (histBadge) histBadge.textContent = t.top5_badge;
+
+  const tourHeading = document.getElementById('tourist-section-heading-text');
+  if (tourHeading) tourHeading.textContent = t.tour_heading;
+  const tourSub = document.getElementById('tourist-section-subtitle');
+  if (tourSub) tourSub.textContent = t.tour_sub;
+  const tourBadge = document.getElementById('tourist-section-badge');
+  if (tourBadge) tourBadge.textContent = t.top5_badge;
+
+  const backBottom = document.getElementById('back-to-home-btn-bottom-label');
+  if (backBottom) backBottom.textContent = t.back_home_page;
+
+  const prevText = document.getElementById('prev-btn-text');
+  if (prevText) prevText.textContent = t.btn_prev;
+
+  const nextText = document.getElementById('next-btn-text');
+  if (nextText) nextText.textContent = t.btn_next;
+
+  // Modal
+  const modalTitle = document.getElementById('modal-title-text');
+  if (modalTitle) modalTitle.textContent = t.modal_title;
+
+  const modalSub = document.getElementById('modal-subtitle-text');
+  if (modalSub) modalSub.textContent = t.modal_sub;
+
+  const modalDone = document.getElementById('modal-map-done-btn');
+  if (modalDone) modalDone.textContent = t.modal_close;
+
+  const modAct = document.getElementById('modal-legend-active');
+  if (modAct) modAct.textContent = t.modal_legend_active;
+
+  const modHov = document.getElementById('modal-legend-hover');
+  if (modHov) modHov.textContent = t.modal_legend_hover;
+}
+
+function renderPopularDestinations() {
+  const container = document.getElementById('popular-dest-buttons');
+  if (!container) return;
+  const isBn = AppState.currentLang === 'bn';
+
+  container.innerHTML = POPULAR_DESTINATIONS.map(d => `
+    <button 
+      onclick="navigateToDistrict(${d.id})" 
+      class="pop-dest-btn px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-[#07150E] hover:bg-bdgreen-100 dark:hover:bg-[#122A1E] text-slate-800 dark:text-slate-200 font-bold border border-slate-200 dark:border-[#1B3E2E] transition text-xs cursor-pointer min-h-[36px] ${isBn ? 'font-bengali' : ''}" 
+      data-id="${d.id}"
+    >
+      ${isBn ? d.bn : d.en}
+    </button>
+  `).join('');
+}
+
+// ==========================================
+// 5. LOCAL MEMORY BUFFER DATA LOADER
 // ==========================================
 function loadLocalMemoryData() {
   // Source directly from window memory buffers
@@ -111,22 +595,8 @@ function loadLocalMemoryData() {
     };
   });
 
-  // Update status indicators in navigation bar
-  const statusBeacon = document.getElementById('api-beacon');
-  const statusText = document.getElementById('api-status-text');
-  const countBadge = document.getElementById('api-district-count');
-
-  if (statusBeacon) {
-    statusBeacon.className = 'w-2.5 h-2.5 rounded-full bg-bdgreen-500 beacon-pulse shrink-0';
-  }
-  if (statusText) {
-    statusText.textContent = 'Offline Memory Ready';
-  }
-  if (countBadge) {
-    countBadge.textContent = `${AppState.districts.length} Districts Loaded`;
-  }
-
-  // Initial render of sidebar and vector map
+  // Initial render of UI, sidebar and vector map
+  updateStaticTranslations();
   filterAndRenderDistricts();
   renderVectorMap('empty-state-svg-map-container');
   renderVectorMap('modal-svg-map-container');
@@ -138,7 +608,7 @@ function loadLocalMemoryData() {
 }
 
 // ==========================================
-// 5. URL HASH ROUTING & PAGE CONTROLLER
+// 6. URL HASH ROUTING & PAGE CONTROLLER
 // ==========================================
 function handleRoute() {
   const hash = window.location.hash || '#/';
@@ -228,14 +698,24 @@ function showDistrictDetailsPage(district) {
 }
 
 // ==========================================
-// 6. POPULATE DISTRICT DETAIL PAGE (CINEMATIC)
+// 7. POPULATE DISTRICT DETAIL PAGE (CINEMATIC)
 // ==========================================
 function populateDistrictDetails(district) {
+  const isBn = AppState.currentLang === 'bn';
+
   // Top breadcrumb tracker
   const breadcrumbDiv = document.getElementById('breadcrumb-division');
   const breadcrumbDst = document.getElementById('breadcrumb-district');
-  if (breadcrumbDiv) breadcrumbDiv.textContent = `${district.div} Division`;
-  if (breadcrumbDst) breadcrumbDst.textContent = `${district.en} (${district.bn})`;
+  if (breadcrumbDiv) {
+    breadcrumbDiv.textContent = isBn 
+      ? `${district.divBn || district.div} বিভাগ` 
+      : `${district.div} Division`;
+  }
+  if (breadcrumbDst) {
+    breadcrumbDst.textContent = isBn 
+      ? `${district.bn} (${district.en})` 
+      : `${district.en} (${district.bn})`;
+  }
 
   // 1. CINEMATIC HERO BANNER
   const heroImg = document.getElementById('detail-hero-image');
@@ -252,31 +732,80 @@ function populateDistrictDetails(district) {
       this.src = 'images/default/hero.webp';
     };
   }
-  if (nameEn) nameEn.textContent = district.en;
-  if (nameBn) nameBn.textContent = district.bn;
-  if (divBadge) divBadge.textContent = `${district.div} Division`;
-  if (coords) coords.textContent = district.coordinates || `${district.lat}, ${district.lng}`;
-  if (tagline) {
-    tagline.textContent = district.tagline || 
-      `${district.en} (${district.bn}) is a picturesque and historically significant administrative district located under ${district.div} Division, Bangladesh.`;
+
+  if (isBn) {
+    // Bangla mode: Bengali name prominent
+    if (nameEn) {
+      nameEn.textContent = district.bn;
+      nameEn.className = 'font-bengali text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight drop-shadow-md';
+    }
+    if (nameBn) {
+      nameBn.textContent = `(${district.en})`;
+      nameBn.className = 'text-xl sm:text-2xl lg:text-3xl text-bdgreen-400 font-bold drop-shadow';
+    }
+  } else {
+    // English mode: English name prominent
+    if (nameEn) {
+      nameEn.textContent = district.en;
+      nameEn.className = 'text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight drop-shadow-md';
+    }
+    if (nameBn) {
+      nameBn.textContent = `(${district.bn})`;
+      nameBn.className = 'font-bengali text-2xl sm:text-3xl lg:text-4xl text-bdgreen-400 font-bold drop-shadow';
+    }
   }
 
-  // 2. KEY METRIC 4-GRID
+  if (divBadge) {
+    divBadge.textContent = isBn 
+      ? `${district.divBn || district.div} বিভাগ` 
+      : `${district.div} Division`;
+  }
+
+  if (coords) {
+    coords.textContent = isBn
+      ? toBengaliDigits(district.coordinates || `${district.lat}, ${district.lng}`)
+      : (district.coordinates || `${district.lat}, ${district.lng}`);
+  }
+
+  if (tagline) {
+    tagline.textContent = isBn
+      ? (district.taglineBn || district.tagline)
+      : (district.taglineEn || district.tagline);
+  }
+
+  // 2. KEY METRIC 4-GRID (English / Bengali numbers)
   const estYear = document.getElementById('detail-est-year');
   const totalArea = document.getElementById('detail-total-area');
   const totalPop = document.getElementById('detail-total-pop');
   const distance = document.getElementById('detail-distance');
 
-  if (estYear) estYear.textContent = district.est || '1984';
-  if (totalArea) totalArea.textContent = district.area || 'N/A';
-  if (totalPop) totalPop.textContent = district.pop || 'N/A';
-  if (distance) distance.textContent = district.dist || 'N/A';
+  if (estYear) {
+    estYear.textContent = isBn 
+      ? (district.estBn || toBengaliDigits(district.est || 1984))
+      : (district.est || '1984');
+  }
+  if (totalArea) {
+    totalArea.textContent = isBn 
+      ? (district.areaBn || toBengaliDigits(district.area || 'N/A'))
+      : (district.area || 'N/A');
+  }
+  if (totalPop) {
+    totalPop.textContent = isBn 
+      ? (district.popBn || toBengaliDigits(district.pop || 'N/A'))
+      : (district.pop || 'N/A');
+  }
+  if (distance) {
+    distance.textContent = isBn 
+      ? (district.distBn || toBengaliDigits(district.dist || 'N/A'))
+      : (district.dist || 'N/A');
+  }
 
   // 3. ROUTE & TRANSIT BREAKDOWN
   const routeText = document.getElementById('detail-route-text');
   if (routeText) {
-    routeText.textContent = district.route || 
-      `Direct express highway connections and regional transit links connect ${district.en} with Dhaka and surrounding administrative districts.`;
+    routeText.textContent = isBn 
+      ? (district.routeBn || district.route)
+      : (district.routeEn || district.route);
   }
 
   // 4. SMOOTH SNAP SLIDER CAROUSEL (5-IMAGE PURE CSS SCROLL-SNAP)
@@ -286,106 +815,174 @@ function populateDistrictDetails(district) {
       ? district.carousel
       : generateDefaultCarousel(district);
 
-    carouselTrack.innerHTML = slides.map((slide, idx) => `
-      <div class="snap-center shrink-0 w-[280px] sm:w-[340px] md:w-[380px] aspect-[16/10] relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-[#173728] group">
-        <img 
-          src="${slide.image}" 
-          alt="${slide.title}" 
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          onerror="this.onerror=null; this.src='images/default/card.webp';"
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-4 z-10">
-          <span class="text-[10px] font-black tracking-widest text-bdgreen-400 uppercase">Slide 0${idx + 1} / 05</span>
-          <h4 class="text-sm sm:text-base font-extrabold text-white leading-tight mt-0.5 truncate">${slide.title}</h4>
-          <p class="text-xs text-slate-300 font-medium line-clamp-1 mt-0.5">${slide.subtitle}</p>
+    carouselTrack.innerHTML = slides.map((slide, idx) => {
+      const slideTitle = isBn ? (slide.titleBn || slide.title) : (slide.titleEn || slide.title);
+      const slideSub = isBn ? (slide.subtitleBn || slide.subtitle) : (slide.subtitleEn || slide.subtitle);
+      const slideNum = isBn ? toBengaliDigits(String(idx + 1).padStart(2, '0')) : String(idx + 1).padStart(2, '0');
+      const totalNum = isBn ? toBengaliDigits('05') : '05';
+      const slidePrefix = isBn ? 'দৃশ্য' : 'Slide';
+
+      return `
+        <div class="snap-center shrink-0 w-[280px] sm:w-[340px] md:w-[380px] aspect-[16/10] relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-[#173728] group">
+          <img 
+            src="${slide.image}" 
+            alt="${slideTitle}" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.onerror=null; this.src='images/default/card.webp';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-4 z-10">
+            <span class="text-[10px] font-black tracking-widest text-bdgreen-400 uppercase">
+              ${slidePrefix} ${slideNum} / ${totalNum}
+            </span>
+            <h4 class="text-sm sm:text-base font-extrabold text-white leading-tight mt-0.5 truncate">${slideTitle}</h4>
+            <p class="text-xs text-slate-300 font-medium line-clamp-1 mt-0.5">${slideSub}</p>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
-  // 5. EXPANDED TOP-5 HISTORICAL PLACES & HERITAGE (ENFORCED MINIMUM 5 CARDS)
+  // 5. EXPANDED TOP-5 HISTORICAL PLACES & HERITAGE (WITH GOOGLE MAPS REDIRECTION)
   const histContainer = document.getElementById('detail-historical-cards-container');
   if (histContainer) {
     const histList = Array.isArray(district.hist) && district.hist.length >= 5
       ? district.hist.slice(0, 5)
       : generateDefaultHistorical(district);
 
-    histContainer.innerHTML = histList.map((item, idx) => `
-      <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
-        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
-          <img 
-            src="${item.image || `images/districts/${district.slug}/hist-${idx + 1}.webp`}" 
-            alt="${item.name}" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            onerror="this.onerror=null; this.src='images/default/card.webp';"
-          />
-          <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdred-500 text-white shadow-md">
-            ${item.category || 'Historical'}
-          </div>
-        </div>
-        <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-          <div>
-            <div class="flex items-baseline justify-between gap-2">
-              <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-bdgreen-500 transition-colors">
-                ${item.name}
-              </h4>
-              ${item.nameBn ? `<span class="font-bengali text-xs font-semibold text-bdgreen-600 dark:text-bdgreen-400 shrink-0">${item.nameBn}</span>` : ''}
+    histContainer.innerHTML = histList.map((item, idx) => {
+      const itemName = isBn ? (item.nameBn || item.name) : (item.nameEn || item.name);
+      const itemSecondary = isBn ? (item.nameEn || '') : (item.nameBn || '');
+      const itemCat = isBn ? (item.categoryBn || item.category || 'ঐতিহাসিক') : (item.categoryEn || item.category || 'Historical');
+      const itemDesc = isBn ? (item.descBn || item.desc) : (item.descEn || item.desc);
+      const itemLoc = isBn ? (item.locationBn || item.location) : (item.locationEn || item.location);
+      const googleMapLink = item.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((item.nameEn || item.name) + ' ' + district.en + ' Bangladesh')}`;
+
+      return `
+        <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
+          <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+            <img 
+              src="${item.image || `images/districts/${district.slug}/hist-${idx + 1}.webp`}" 
+              alt="${itemName}" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='images/default/card.webp';"
+            />
+            <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdred-500 text-white shadow-md">
+              ${itemCat}
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal mt-2">
-              ${item.desc}
-            </p>
           </div>
-          <div class="pt-3 border-t border-slate-100 dark:border-[#143124] flex items-center gap-1.5 text-xs text-bdred-600 dark:text-bdred-400 font-bold mt-auto">
-            <i data-lucide="map-pin" class="w-3.5 h-3.5 shrink-0"></i>
-            <span class="truncate">${item.location || `${district.en} Sadar, ${district.div}`}</span>
+          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <div class="flex items-baseline justify-between gap-2">
+                <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-bdgreen-500 transition-colors">
+                  ${itemName}
+                </h4>
+                ${itemSecondary ? `<span class="text-xs text-slate-400 font-medium shrink-0 truncate max-w-[120px]">${itemSecondary}</span>` : ''}
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal mt-2">
+                ${itemDesc}
+              </p>
+            </div>
+            
+            <!-- Bottom Location Pin & Direct Google Maps Redirection Action -->
+            <div class="pt-3 border-t border-slate-100 dark:border-[#143124] flex items-center justify-between gap-2 text-xs mt-auto">
+              <a 
+                href="${googleMapLink}" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="flex items-center gap-1.5 text-bdred-600 dark:text-bdred-400 font-bold hover:underline group/map min-h-[36px]"
+                title="${isBn ? 'গুগল ম্যাপসে এই স্থানটি দেখুন' : 'View this location on Google Maps'}"
+              >
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 shrink-0 text-bdred-500"></i>
+                <span class="truncate max-w-[170px] sm:max-w-[210px]">${itemLoc}</span>
+              </a>
+              <a 
+                href="${googleMapLink}" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="px-2.5 py-1.5 rounded-lg bg-bdred-50 dark:bg-[#142A1E] hover:bg-bdred-100 dark:hover:bg-[#1E3E2E] text-bdred-700 dark:text-bdred-300 border border-bdred-200 dark:border-[#1E4432] text-[11px] font-extrabold flex items-center gap-1 shrink-0 transition-colors shadow-sm"
+                title="${isBn ? 'গুগল ম্যাপস অ্যাপে খুলুন' : 'Open in Google Maps App'}"
+              >
+                <span>${isBn ? 'ম্যাপে দেখুন' : 'View on Map'}</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
-  // 6. EXPANDED TOP-5 TOURIST ATTRACTIONS & HIGHLIGHTS (ENFORCED MINIMUM 5 CARDS)
+  // 6. EXPANDED TOP-5 TOURIST ATTRACTIONS & HIGHLIGHTS (WITH GOOGLE MAPS REDIRECTION)
   const tourContainer = document.getElementById('detail-tourist-cards-container');
   if (tourContainer) {
     const tourList = Array.isArray(district.tour) && district.tour.length >= 5
       ? district.tour.slice(0, 5)
       : generateDefaultTourist(district);
 
-    tourContainer.innerHTML = tourList.map((item, idx) => `
-      <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
-        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
-          <img 
-            src="${item.image || `images/districts/${district.slug}/tour-${idx + 1}.webp`}" 
-            alt="${item.name}" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            onerror="this.onerror=null; this.src='images/default/card.webp';"
-          />
-          <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdgreen-600 text-white shadow-md">
-            ${item.category || 'Scenic Highlight'}
-          </div>
-        </div>
-        <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-          <div>
-            <div class="flex items-baseline justify-between gap-2">
-              <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-bdgreen-500 transition-colors">
-                ${item.name}
-              </h4>
-              ${item.nameBn ? `<span class="font-bengali text-xs font-semibold text-bdgreen-600 dark:text-bdgreen-400 shrink-0">${item.nameBn}</span>` : ''}
+    tourContainer.innerHTML = tourList.map((item, idx) => {
+      const itemName = isBn ? (item.nameBn || item.name) : (item.nameEn || item.name);
+      const itemSecondary = isBn ? (item.nameEn || '') : (item.nameBn || '');
+      const itemCat = isBn ? (item.categoryBn || item.category || 'দর্শনীয় স্থান') : (item.categoryEn || item.category || 'Scenic Highlight');
+      const itemDesc = isBn ? (item.descBn || item.desc) : (item.descEn || item.desc);
+      const itemLoc = isBn ? (item.locationBn || item.location) : (item.locationEn || item.location);
+      const googleMapLink = item.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((item.nameEn || item.name) + ' ' + district.en + ' Bangladesh')}`;
+
+      return `
+        <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
+          <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+            <img 
+              src="${item.image || `images/districts/${district.slug}/tour-${idx + 1}.webp`}" 
+              alt="${itemName}" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='images/default/card.webp';"
+            />
+            <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdgreen-600 text-white shadow-md">
+              ${itemCat}
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal mt-2">
-              ${item.desc}
-            </p>
           </div>
-          <div class="pt-3 border-t border-slate-100 dark:border-[#143124] flex items-center gap-1.5 text-xs text-bdgreen-600 dark:text-bdgreen-400 font-bold mt-auto">
-            <i data-lucide="map-pin" class="w-3.5 h-3.5 shrink-0"></i>
-            <span class="truncate">${item.location || `${district.en} Scenic Zone, ${district.div}`}</span>
+          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <div class="flex items-baseline justify-between gap-2">
+                <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-bdgreen-500 transition-colors">
+                  ${itemName}
+                </h4>
+                ${itemSecondary ? `<span class="text-xs text-slate-400 font-medium shrink-0 truncate max-w-[120px]">${itemSecondary}</span>` : ''}
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal mt-2">
+                ${itemDesc}
+              </p>
+            </div>
+            
+            <!-- Bottom Location Pin & Direct Google Maps Redirection Action -->
+            <div class="pt-3 border-t border-slate-100 dark:border-[#143124] flex items-center justify-between gap-2 text-xs mt-auto">
+              <a 
+                href="${googleMapLink}" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="flex items-center gap-1.5 text-bdgreen-600 dark:text-bdgreen-400 font-bold hover:underline group/map min-h-[36px]"
+                title="${isBn ? 'গুগল ম্যাপসে এই স্থানটি দেখুন' : 'View this location on Google Maps'}"
+              >
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 shrink-0 text-bdgreen-500"></i>
+                <span class="truncate max-w-[170px] sm:max-w-[210px]">${itemLoc}</span>
+              </a>
+              <a 
+                href="${googleMapLink}" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="px-2.5 py-1.5 rounded-lg bg-bdgreen-50 dark:bg-[#142A1E] hover:bg-bdgreen-100 dark:hover:bg-[#1E3E2E] text-bdgreen-700 dark:text-bdgreen-300 border border-bdgreen-200 dark:border-[#1E4432] text-[11px] font-extrabold flex items-center gap-1 shrink-0 transition-colors shadow-sm"
+                title="${isBn ? 'গুগল ম্যাপস অ্যাপে খুলুন' : 'Open in Google Maps App'}"
+              >
+                <span>${isBn ? 'ম্যাপে দেখুন' : 'View on Map'}</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
   // Next / Previous Navigation Wiring
@@ -404,54 +1001,69 @@ function populateDistrictDetails(district) {
 
 // Fallback generators guaranteeing exact 5-item arrays
 function generateDefaultCarousel(d) {
+  const isBn = AppState.currentLang === 'bn';
   return [1, 2, 3, 4, 5].map(i => ({
     id: i,
     image: `images/districts/${d.slug}/carousel-${i}.webp`,
     title: `${d.en} Scenic Vista ${i}`,
-    subtitle: `Explore rich biodiversity and natural heritage across ${d.div} Division`
+    titleBn: `${d.bn} মনোরম দৃশ্য ${toBengaliDigits(i)}`,
+    subtitle: `Explore rich biodiversity and natural heritage across ${d.div} Division`,
+    subtitleBn: `${d.divBn || d.div} বিভাগের অপরূপ প্রাকৃতিক ভূচিত্র`
   }));
 }
 
 function generateDefaultHistorical(d) {
   const titles = [
-    "Ancient Architectural Citadel",
-    "Historic Jami Mosque Sanctuary",
-    "Colonial Heritage Manor & Mint",
-    "Centuries-Old Archaeological Mound",
-    "National Liberation Memorial"
+    { en: "Ancient Royal Palace Site", bn: "প্রাচীন ঐতিহাসিক রাজবাড়ি", catEn: "Royal Heritage", catBn: "রাজকীয় ঐতিহ্য" },
+    { en: "Historic Jami Mosque Sanctuary", bn: "ঐতিহাসিক জামে মসজিদ", catEn: "Historic Mosque", catBn: "ঐতিহাসিক মসজিদ" },
+    { en: "Colonial Court & Manor", bn: "ঔপনিবেশিক আদালত ও ভবন", catEn: "Colonial Architecture", catBn: "ঔপনিবেশিক স্থাপত্য" },
+    { en: "Archaeological Mound", bn: "প্রাচীন প্রত্নতাত্ত্বিক নিদর্শন", catEn: "Ancient Archaeology", catBn: "প্রাচীন প্রত্নতত্ত্ব" },
+    { en: "National Liberation Memorial", bn: "মুক্তিযুদ্ধ স্মৃতিস্তম্ভ", catEn: "National Memorial", catBn: "জাতীয় স্মৃতিসৌধ" }
   ];
-  return titles.map((title, i) => ({
+  return titles.map((t, i) => ({
     id: i + 1,
     image: `images/districts/${d.slug}/hist-${i + 1}.webp`,
-    name: `${d.en} ${title}`,
-    nameBn: `${d.bn} ঐতিহাসিক প্রত্নতত্ত্ব`,
-    category: "Heritage Monument",
-    desc: `${title} in ${d.en} district stands as a verified historic landmark. Preserving intricate architectural design, historical archives, and cultural memory dating back through antiquity.`,
-    location: `${d.en} Sadar, ${d.div} Division`
+    name: `${d.en} ${t.en}`,
+    nameEn: `${d.en} ${t.en}`,
+    nameBn: `${d.bn} ${t.bn}`,
+    category: t.catEn,
+    categoryEn: t.catEn,
+    categoryBn: t.catBn,
+    desc: `${t.en} in ${d.en} district stands as a verified historic landmark. Preserving intricate architectural design and regional heritage.`,
+    descBn: `${d.bn} জেলার ${t.bn} শতাব্দী প্রাচীন ঐতিহ্য এবং স্থানীয় ইতিহাস ধারণ করে দর্শনার্থীদের আকৃষ্ট করে।`,
+    location: `${d.en} Sadar, ${d.div} Division`,
+    locationBn: `${d.bn} সদর, ${d.divBn || d.div} বিভাগ`,
+    mapUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.en + ' ' + t.en + ' Bangladesh')}`
   }));
 }
 
 function generateDefaultTourist(d) {
   const titles = [
-    "Scenic Waterfront Promenade",
-    "Eco Forest Sanctuary & Trails",
-    "Lakeside Boating & Recreation Park",
-    "Sunset Hilltop Panoramic Viewpoint",
-    "Cultural Heritage Center & Bazaar"
+    { en: "Scenic Waterfront Promenade", bn: "নদী তীরবর্তী মনোরম বাঁধ", catEn: "Scenic Nature", catBn: "নদী ও নিসর্গ" },
+    { en: "Eco Forest Sanctuary & Trails", bn: "ইকোপার্ক ও বনাঞ্চল", catEn: "Eco Tourism", catBn: "ইকো ট্যুরিজম" },
+    { en: "Lakeside Boating & Recreation Park", bn: "মনোরম হ্রদ ও বিনোদন পার্ক", catEn: "Lakeside Resort", catBn: "লেক রিসোর্ট" },
+    { en: "Sunset Hilltop Panoramic Viewpoint", bn: "পাহাড়ি সূর্যাস্ত ভিউপয়েন্ট", catEn: "Panoramic Vista", catBn: "প্যানোরামিক ভিউ" },
+    { en: "Cultural Heritage Center & Bazaar", bn: "লোকশিল্প ও ঐতিহ্য কেন্দ্র", catEn: "Cultural Center", catBn: "সাংস্কৃতিক কেন্দ্র" }
   ];
-  return titles.map((title, i) => ({
+  return titles.map((t, i) => ({
     id: i + 1,
     image: `images/districts/${d.slug}/tour-${i + 1}.webp`,
-    name: `${d.en} ${title}`,
-    nameBn: `${d.bn} দর্শনীয় স্থান`,
-    category: "Scenic Nature",
-    desc: `A celebrated tourism destination in ${d.en} district. The site offers travelers scenic panoramas, peaceful eco-tourism trails, and memorable recreation surrounded by nature.`,
-    location: `${d.en} Riverfront, ${d.div} Division`
+    name: `${d.en} ${t.en}`,
+    nameEn: `${d.en} ${t.en}`,
+    nameBn: `${d.bn} ${t.bn}`,
+    category: t.catEn,
+    categoryEn: t.catEn,
+    categoryBn: t.catBn,
+    desc: `A celebrated tourism destination in ${d.en} district offering scenic panoramas and peaceful recreation.`,
+    descBn: `${d.bn} জেলার ${t.bn} অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য উপহার দেয়।`,
+    location: `${d.en} Scenic Zone, ${d.div} Division`,
+    locationBn: `${d.bn} নদী তীর, ${d.divBn || d.div} বিভাগ`,
+    mapUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.en + ' ' + t.en + ' Bangladesh')}`
   }));
 }
 
 // ==========================================
-// 7. SEARCH, FILTER, AND SORT LOGIC
+// 8. SEARCH, FILTER, AND SORT LOGIC
 // ==========================================
 function filterAndRenderDistricts() {
   let list = [...AppState.districts];
@@ -468,15 +1080,17 @@ function filterAndRenderDistricts() {
       const enMatch = d.en.toLowerCase().includes(q);
       const bnMatch = d.bn && d.bn.includes(q);
       const divMatch = d.div && d.div.toLowerCase().includes(q);
-      return enMatch || bnMatch || divMatch;
+      const divBnMatch = d.divBn && d.divBn.includes(q);
+      return enMatch || bnMatch || divMatch || divBnMatch;
     });
   }
 
   // 3. Sort Districts
+  const isBn = AppState.currentLang === 'bn';
   list.sort((a, b) => {
     switch (AppState.sortBy) {
       case 'name-asc':
-        return a.en.localeCompare(b.en);
+        return isBn ? (a.bn || a.en).localeCompare(b.bn || b.en, 'bn') : a.en.localeCompare(b.en);
       case 'dist-asc': {
         const distA = parseInt(a.dist) || 0;
         const distB = parseInt(b.dist) || 0;
@@ -502,7 +1116,9 @@ function filterAndRenderDistricts() {
   // Update counter badges
   const filteredCountEl = document.getElementById('filtered-results-count');
   if (filteredCountEl) {
-    filteredCountEl.textContent = `${list.length} District${list.length === 1 ? '' : 's'}`;
+    filteredCountEl.textContent = isBn
+      ? `${toBengaliDigits(list.length)}টি জেলা`
+      : `${list.length} District${list.length === 1 ? '' : 's'}`;
   }
 
   renderSidebarList(list);
@@ -520,10 +1136,17 @@ function renderSidebarList(list) {
   }
 
   if (emptyState) emptyState.classList.add('hidden');
+  const isBn = AppState.currentLang === 'bn';
 
   // Fast single-pass string template injection
   container.innerHTML = list.map(item => {
     const isActive = item.id === AppState.selectedDistrictId;
+    const primaryName = isBn ? item.bn : item.en;
+    const secondaryName = isBn ? item.en : (item.bn || '');
+    const divName = isBn ? (item.divBn || item.div) : item.div;
+    const distText = isBn ? (item.distBn || toBengaliDigits(item.dist)) : item.dist;
+    const idBadge = isBn ? toBengaliDigits(item.id) : item.id;
+
     return `
       <div 
         id="district-item-${item.id}"
@@ -532,7 +1155,7 @@ function renderSidebarList(list) {
         class="district-card cursor-pointer p-3 sm:p-3.5 rounded-xl transition-all duration-150 flex items-center justify-between group active:scale-[0.99] ${
           isActive 
             ? 'bg-bdgreen-100 dark:bg-[#122E21] border-2 border-bdgreen-600 dark:border-bdgreen-500 shadow-sm' 
-            : 'hover:bg-slate-100 dark:hover:bg-[#0E251B] border border-transparent hover:border-slate-200 dark:hover:border-[#173728]'
+            : 'hover:bg-slate-100 dark:hover:bg-[#0E251B] border border-transparent hover:border-slate-200 dark:border-[#173728]'
         }"
       >
         <div class="flex items-center gap-3 min-w-0">
@@ -541,22 +1164,22 @@ function renderSidebarList(list) {
               ? 'bg-bdred-500 text-white shadow-sm' 
               : 'bg-slate-100 dark:bg-[#07150E] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-[#1B3E2E] group-hover:text-bdgreen-600 dark:group-hover:text-bdgreen-400'
           }">
-            ${item.id}
+            ${idBadge}
           </div>
           <div class="truncate">
             <div class="flex items-center gap-2">
               <span class="font-extrabold text-sm tracking-tight truncate ${isActive ? 'text-bdgreen-800 dark:text-bdgreen-300' : 'text-slate-900 dark:text-slate-100 group-hover:text-bdgreen-700 dark:group-hover:text-bdgreen-400'}">
-                ${item.en}
+                ${primaryName}
               </span>
-              <span class="font-bengali text-xs text-slate-500 dark:text-slate-400 font-semibold">${item.bn || ''}</span>
+              <span class="text-xs text-slate-400 font-semibold truncate">(${secondaryName})</span>
             </div>
             <div class="flex items-center gap-2 mt-0.5 text-[11px] text-slate-500 dark:text-slate-400 font-medium">
               <span class="px-1.5 py-0.2 rounded bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-[#1B3E2E]">
-                ${item.div}
+                ${divName}
               </span>
               <span class="flex items-center gap-0.5">
                 <i data-lucide="milestone" class="w-3 h-3 text-bdred-500 inline"></i>
-                ${item.dist}
+                ${distText}
               </span>
             </div>
           </div>
@@ -586,7 +1209,7 @@ function handleSidebarHover(districtId) {
 }
 
 // ==========================================
-// 8. INTERACTIVE VECTOR SVG MAP & INSPECTOR HUD
+// 9. INTERACTIVE VECTOR SVG MAP & INSPECTOR HUD
 // ==========================================
 function renderVectorMap(containerId) {
   const container = document.getElementById(containerId);
@@ -599,44 +1222,40 @@ function renderVectorMap(containerId) {
   const districts = AppState.districts;
   if (!districts || districts.length === 0) return;
 
-  const { w, h } = viewBox;
-
-  const svgPathsHtml = districts.map(d => {
-    return `<path 
-      id="${containerId}-path-${d.id}"
-      d="${d.svgPath || ''}"
-      class="district-svg-path"
-      data-id="${d.id}"
-      data-en="${d.en}"
-      data-bn="${d.bn}"
-      data-div="${d.div}"
-      data-dist="${d.dist}"
-    ></path>`;
-  }).join('');
-
-  container.innerHTML = `
+  // Build clean SVG document markup
+  const svgMarkup = `
     <svg 
-      viewBox="0 0 ${w} ${h}" 
-      class="w-full h-auto max-h-[380px] sm:max-h-[500px] lg:max-h-[580px] select-none drop-shadow-md"
+      id="${containerId}-svg"
+      viewBox="0 0 ${viewBox.w} ${viewBox.h}" 
+      class="w-full h-full max-h-full object-contain filter drop-shadow-sm select-none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      ${svgPathsHtml}
+      ${districts.map(d => `
+        <path 
+          id="${containerId}-path-${d.id}"
+          data-id="${d.id}" 
+          data-name-en="${d.en}" 
+          data-name-bn="${d.bn || ''}" 
+          data-slug="${d.slug}" 
+          d="${d.svgPath}" 
+          class="district-svg-path ${d.id === AppState.selectedDistrictId ? 'active' : ''}"
+        />
+      `).join('')}
     </svg>
-    
-    <!-- Smart Bounded Floater Tooltip Inside Map Container -->
-    <div id="${containerId}-tooltip" class="pointer-events-none absolute z-30 hidden px-3.5 py-2 rounded-xl bg-slate-900/95 dark:bg-[#0B1E15]/95 border border-bdgreen-500 text-xs text-white shadow-2xl backdrop-blur-md transition-opacity">
-      <div class="flex items-center gap-2">
-        <span class="tooltip-en font-black text-bdred-400 text-sm"></span>
-        <span class="tooltip-bn font-bengali text-white font-semibold text-sm"></span>
-      </div>
-      <span class="tooltip-div text-bdgreen-300 block text-[11px] font-semibold mt-0.5"></span>
-    </div>
   `;
 
-  const paths = container.querySelectorAll('.district-svg-path');
+  // Preserve the floating tooltip inside the container
+  const existingTooltip = container.querySelector('.pointer-events-none');
+  container.innerHTML = svgMarkup;
+  if (existingTooltip) {
+    container.appendChild(existingTooltip);
+  }
+
+  // Bind pointer and hover events to vector paths
+  const svgEl = document.getElementById(`${containerId}-svg`);
   const tooltip = document.getElementById(`${containerId}-tooltip`);
 
-  paths.forEach(path => {
+  svgEl.querySelectorAll('.district-svg-path').forEach(path => {
     const districtId = Number(path.getAttribute('data-id'));
     const district = districts.find(d => d.id === districtId);
     if (!district) return;
@@ -644,14 +1263,14 @@ function renderVectorMap(containerId) {
     const handleInspect = (clientX, clientY, isTouch = false) => {
       AppState.hoveredDistrictId = district.id;
 
-      // 1. Update Inspector HUD inside the interactive map section
+      // 1. Update In-Map Inspector HUD Bar
       updateMapInspectorHud(district, district.id === AppState.selectedDistrictId);
 
-      // 2. Update Modal HUD if inside modal
+      // 2. Update In-Modal HUD Bar if modal is open
       updateModalInspectorHud(district);
 
-      // 3. Highlight hovered path on map
-      paths.forEach(p => {
+      // 3. Highlight SVG Paths across all map instances
+      document.querySelectorAll('.district-svg-path').forEach(p => {
         const pId = Number(p.getAttribute('data-id'));
         if (pId === district.id) {
           if (pId !== AppState.selectedDistrictId) {
@@ -662,15 +1281,23 @@ function renderVectorMap(containerId) {
         }
       });
 
-      // 4. Position the floater tooltip strictly clamped inside map container
+      // 4. Position the floating tooltip strictly clamped inside map container
       if (tooltip && clientX !== undefined && clientY !== undefined) {
         const enEl = tooltip.querySelector('.tooltip-en');
         const bnEl = tooltip.querySelector('.tooltip-bn');
         const divEl = tooltip.querySelector('.tooltip-div');
+        const isBn = AppState.currentLang === 'bn';
 
-        if (enEl) enEl.textContent = district.en;
-        if (bnEl) bnEl.textContent = `(${district.bn})`;
-        if (divEl) divEl.textContent = `${district.div} Division • ${district.dist} from Dhaka`;
+        if (enEl) enEl.textContent = isBn ? district.bn : district.en;
+        if (bnEl) bnEl.textContent = isBn ? `(${district.en})` : `(${district.bn})`;
+        if (divEl) {
+          const divName = isBn ? (district.divBn || district.div) : district.div;
+          const distVal = isBn ? (district.distBn || toBengaliDigits(district.dist)) : district.dist;
+          const suffix = isBn ? 'ঢাকা থেকে' : 'from Dhaka';
+          divEl.textContent = isBn 
+            ? `${divName} বিভাগ • ${distVal} ${suffix}`
+            : `${divName} Division • ${distVal} ${suffix}`;
+        }
 
         tooltip.classList.remove('hidden');
 
@@ -728,19 +1355,16 @@ function renderVectorMap(containerId) {
 
     // Click Interaction: Navigates directly to the district profile page
     path.addEventListener('click', () => {
+      if (tooltip) tooltip.classList.add('hidden');
       closeMapModal();
       navigateToDistrict(district.id);
     });
   });
-
-  // Highlight currently selected district (turns Red)
-  if (AppState.selectedDistrictId) {
-    updateVectorMapActiveState(AppState.selectedDistrictId);
-  }
 }
 
 function updateMapInspectorHud(district, isActive = false) {
   if (!district) return;
+  const isBn = AppState.currentLang === 'bn';
 
   const nameEn = document.getElementById('inspector-name-en');
   const nameBn = document.getElementById('inspector-name-bn');
@@ -750,11 +1374,23 @@ function updateMapInspectorHud(district, isActive = false) {
   const openBtn = document.getElementById('inspector-open-btn');
   const badgeIcon = document.getElementById('inspector-badge-icon');
 
-  if (nameEn) nameEn.textContent = district.en;
-  if (nameBn) nameBn.textContent = `(${district.bn})`;
-  if (divBadge) divBadge.textContent = `${district.div} Division`;
-  if (distEl) distEl.innerHTML = `<i data-lucide="milestone" class="w-3.5 h-3.5 inline"></i> ${district.dist} from Dhaka`;
-  if (statsEl) statsEl.textContent = `${district.area} • ${district.pop} pop.`;
+  if (nameEn) nameEn.textContent = isBn ? district.bn : district.en;
+  if (nameBn) nameBn.textContent = isBn ? `(${district.en})` : `(${district.bn})`;
+  if (divBadge) {
+    divBadge.textContent = isBn 
+      ? `${district.divBn || district.div} বিভাগ` 
+      : `${district.div} Division`;
+  }
+  if (distEl) {
+    const distText = isBn ? (district.distBn || toBengaliDigits(district.dist)) : district.dist;
+    const distSuffix = isBn ? 'ঢাকা থেকে' : 'from Dhaka';
+    distEl.innerHTML = `<i data-lucide="milestone" class="w-3.5 h-3.5 inline"></i> ${distText} ${distSuffix}`;
+  }
+  if (statsEl) {
+    const areaText = isBn ? (district.areaBn || toBengaliDigits(district.area)) : district.area;
+    const popText = isBn ? (district.popBn || toBengaliDigits(district.pop)) : `${district.pop} pop.`;
+    statsEl.textContent = `${areaText} • ${popText}`;
+  }
 
   if (badgeIcon) {
     badgeIcon.innerHTML = isActive 
@@ -764,21 +1400,33 @@ function updateMapInspectorHud(district, isActive = false) {
 
   if (openBtn) {
     openBtn.onclick = () => navigateToDistrict(district.id);
-    openBtn.innerHTML = `<span>View ${district.en} Details</span><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>`;
+    const targetName = isBn ? district.bn : district.en;
+    const btnLabel = isBn ? `${targetName} বিস্তারিত দেখুন` : `View ${targetName} Details`;
+    openBtn.innerHTML = `<span>${btnLabel}</span><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>`;
   }
 
   initLucideIcons();
 }
 
 function updateModalInspectorHud(district) {
+  const isBn = AppState.currentLang === 'bn';
   const modalName = document.getElementById('modal-inspector-name');
   const modalBn = document.getElementById('modal-inspector-bn');
   const modalDiv = document.getElementById('modal-inspector-div');
   const modalHud = document.getElementById('modal-map-inspector-hud');
+  const modalAction = document.getElementById('modal-inspector-action');
 
-  if (modalName) modalName.textContent = district.en;
-  if (modalBn) modalBn.textContent = `(${district.bn})`;
-  if (modalDiv) modalDiv.textContent = `• ${district.div} Division • ${district.dist} from Dhaka`;
+  if (modalName) modalName.textContent = isBn ? district.bn : district.en;
+  if (modalBn) modalBn.textContent = isBn ? `(${district.en})` : `(${district.bn})`;
+  if (modalDiv) {
+    const divName = isBn ? (district.divBn || district.div) : district.div;
+    const distVal = isBn ? (district.distBn || toBengaliDigits(district.dist)) : district.dist;
+    const suffix = isBn ? 'ঢাকা থেকে' : 'from Dhaka';
+    modalDiv.textContent = `• ${divName} • ${distVal} ${suffix}`;
+  }
+  if (modalAction) {
+    modalAction.textContent = isBn ? 'প্রোফাইল দেখুন →' : 'Open Profile →';
+  }
 
   if (modalHud) {
     modalHud.onclick = () => {
@@ -801,7 +1449,7 @@ function updateVectorMapActiveState(activeId) {
 }
 
 // ==========================================
-// 9. MOBILE SEGMENTED VIEW CONTROLLER
+// 10. MOBILE SEGMENTED VIEW CONTROLLER
 // ==========================================
 function setMobileHomeTab(tab) {
   AppState.mobileHomeTab = tab;
@@ -844,7 +1492,7 @@ function setMobileHomeTab(tab) {
 }
 
 // ==========================================
-// 10. MODAL CONTROLS & TOAST NOTIFICATION
+// 11. MODAL CONTROLS & TOAST NOTIFICATION
 // ==========================================
 function openMapModal() {
   const modal = document.getElementById('vector-map-modal');
@@ -876,16 +1524,20 @@ function showToast(msg) {
   if (toastTimeout) clearTimeout(toastTimeout);
   toastTimeout = setTimeout(() => {
     toast.classList.add('hidden');
-  }, 2200);
+  }, 2400);
 }
 
 // ==========================================
-// 11. UI EVENT WIRING & LISTENERS
+// 12. UI EVENT WIRING & LISTENERS
 // ==========================================
 function setupEventListeners() {
   // Theme Toggle Button
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
   if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
+
+  // Dedicated Language Toggle Button (English ↔ বাংলা)
+  const langToggleBtn = document.getElementById('lang-toggle-btn');
+  if (langToggleBtn) langToggleBtn.addEventListener('click', toggleLanguage);
 
   // Live Search Input
   const searchInput = document.getElementById('district-search-input');
@@ -992,8 +1644,12 @@ function setupEventListeners() {
 }
 
 function updateDivisionPillsUI(activeDivision) {
+  const isBn = AppState.currentLang === 'bn';
   document.querySelectorAll('.division-pill').forEach(pill => {
     const div = pill.getAttribute('data-division');
+    const label = DIVISIONS_MAP[div] ? (isBn ? DIVISIONS_MAP[div].bn : DIVISIONS_MAP[div].en) : div;
+    pill.textContent = label;
+
     if (div.toLowerCase() === activeDivision.toLowerCase()) {
       pill.className = 'division-pill active shrink-0 whitespace-nowrap px-3 py-1 rounded-lg font-bold bg-bdgreen-700 text-white transition shadow-sm';
     } else {
@@ -1008,3 +1664,4 @@ window.navigateToDistrict = navigateToDistrict;
 window.handleSidebarHover = handleSidebarHover;
 window.closeMapModal = closeMapModal;
 window.setMobileHomeTab = setMobileHomeTab;
+window.toggleLanguage = toggleLanguage;
