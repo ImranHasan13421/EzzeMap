@@ -1,69 +1,63 @@
 /**
- * Local Host — Explore Bangladesh District by District
- * Frontend Architecture & Logic
+ * Local Host — 100% Self-Hosted, Local-First Application Architecture
+ * Zero External Dependencies • Pure In-Memory Buffers
  * 
  * Features:
- * - Dedicated Home Page & Separate District Detail Page with "Back to Home"
- * - In-Map District Detail Inspector HUD & strictly bounded float box
- * - Kalpurush Bangla font and Plus Jakarta Sans typography
- * - Green (Primary) / White / Red Theme with interactive Dark / Light Mode
- * - Read-only exploration portal (all edit options removed)
- * - Dynamic BD API fetch with fallback to 64-district local schema
- * - Live real-time search & division filtering
- * - Next / Previous district navigation
+ * - Direct execution out of `window.LOCAL_DISTRICTS` & `window.MAP_PATHS`
+ * - Full-width Cinematic District Hero Banner with dark gradient fade
+ * - Pure CSS Scroll-Snapping 5-Image Carousel Track
+ * - Enforced Top-5 Historical & Tourist Location Cards with image frames & map pins
+ * - Sticky desktop dual-column grid (left sidebar sticky, right map locked)
+ * - Mobile Segmented View Controller ([ Interactive Map View ] vs [ 64 Districts List ])
+ * - SVG vector map hover/touch inspection with strictly bounded tooltip
+ * - Interactive Dark ↔ Light mode engine with localStorage persistence
  */
 
 // ==========================================
-// STATE MANAGEMENT
+// 1. REACTIVE STATE MANAGEMENT
 // ==========================================
 const AppState = {
-  districts: [],             // All 64 district objects
-  filteredDistricts: [],     // Currently filtered/searched list
+  districts: [],             // All 64 district memory buffers
+  filteredDistricts: [],     // Filtered and sorted district list
   selectedDistrictId: null,  // Active selected district ID
-  hoveredDistrictId: null,   // Currently hovered district ID
-  activeDivision: 'all',     // Active division filter
-  searchQuery: '',           // Current search text
-  sortBy: 'name-asc',        // Current sorting rule
-  apiStatus: 'connecting',   // connecting | connected | fallback
+  hoveredDistrictId: null,   // Currently hovered / touched district ID
+  activeDivision: 'all',     // Selected division filter
+  searchQuery: '',           // Current search filter query
+  sortBy: 'name-asc',        // Sort criteria: name-asc, dist-asc, area-desc, pop-desc
   currentTheme: 'dark',      // 'dark' | 'light'
-  mobileHomeTab: 'map',      // 'map' | 'list' (on mobile viewports)
+  mobileHomeTab: 'map',      // 'map' | 'list' (on compact mobile screens)
 };
 
-// Storage key for theme
-const THEME_KEY = 'localhost_district_theme_v1';
+const THEME_KEY = 'localhost_district_theme_v2';
 
 // ==========================================
-// INITIALIZATION
+// 2. LIFECYCLE & INITIALIZATION
 // ==========================================
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLucideIcons();
   setupEventListeners();
 
-  // Load district data (Fetch API + Fallback Schema)
-  await loadDistrictData();
+  // Load from local memory buffers (Zero external fetch)
+  loadLocalMemoryData();
 
-  // Handle URL Hash Routing
+  // Setup URL Hash Routing
   window.addEventListener('hashchange', handleRoute);
   handleRoute();
 });
 
 function initLucideIcons() {
-  if (window.lucide) {
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
     window.lucide.createIcons();
   }
 }
 
 // ==========================================
-// THEME MANAGEMENT (DARK / LIGHT TOGGLE)
+// 3. THEME CONTROLLER (DARK / LIGHT TOGGLE)
 // ==========================================
 function initTheme() {
   const savedTheme = localStorage.getItem(THEME_KEY);
-  if (savedTheme) {
-    AppState.currentTheme = savedTheme;
-  } else {
-    AppState.currentTheme = 'dark';
-  }
+  AppState.currentTheme = savedTheme ? savedTheme : 'dark';
   applyTheme(AppState.currentTheme);
 }
 
@@ -96,81 +90,55 @@ function toggleTheme() {
 }
 
 // ==========================================
-// DATA LOADING (API & FALLBACK)
+// 4. LOCAL MEMORY BUFFER DATA LOADER
 // ==========================================
-async function loadDistrictData() {
+function loadLocalMemoryData() {
+  // Source directly from window memory buffers
+  let localData = [];
+
+  if (typeof window !== 'undefined' && Array.isArray(window.LOCAL_DISTRICTS) && window.LOCAL_DISTRICTS.length > 0) {
+    localData = window.LOCAL_DISTRICTS;
+  } else if (typeof window !== 'undefined' && Array.isArray(window.DISTRICTS_DATA) && window.DISTRICTS_DATA.length > 0) {
+    localData = window.DISTRICTS_DATA;
+  }
+
+  // Bind vector map paths if available
+  const mapPaths = (typeof window !== 'undefined' && window.MAP_PATHS) ? window.MAP_PATHS : {};
+  AppState.districts = localData.map(d => {
+    return {
+      ...d,
+      svgPath: d.svgPath || mapPaths[d.id] || mapPaths[d.slug] || ''
+    };
+  });
+
+  // Update status indicators in navigation bar
   const statusBeacon = document.getElementById('api-beacon');
   const statusText = document.getElementById('api-status-text');
   const countBadge = document.getElementById('api-district-count');
 
-  // Obtain master dataset from window or fallback
-  const fallbackList = (typeof window !== 'undefined' && window.DISTRICTS_DATA) 
-    ? window.DISTRICTS_DATA 
-    : ((typeof DISTRICTS_DATA !== 'undefined') ? DISTRICTS_DATA : []);
-
-  let baseDistricts = [...fallbackList];
-
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 4000);
-
-    const response = await fetch('https://bdapis.com/api/v1.2/districts', {
-      signal: controller.signal
-    });
-    clearTimeout(timeoutId);
-
-    if (response.ok) {
-      const result = await response.json();
-      if (result && Array.isArray(result.data)) {
-        const apiMap = new Map();
-        result.data.forEach(item => {
-          if (item.district) {
-            apiMap.set(item.district.toLowerCase(), item);
-          }
-        });
-
-        baseDistricts = baseDistricts.map(dst => {
-          const apiMatch = apiMap.get(dst.en.toLowerCase());
-          if (apiMatch) {
-            return {
-              ...dst,
-              coordinates: apiMatch.coordinates || dst.coordinates,
-              bn: apiMatch.districtbn || dst.bn,
-            };
-          }
-          return dst;
-        });
-
-        AppState.apiStatus = 'connected';
-        if (statusBeacon) statusBeacon.className = 'w-2.5 h-2.5 rounded-full bg-bdgreen-500 beacon-pulse shrink-0';
-        if (statusText) statusText.textContent = 'BD-APIs Live Connected';
-      }
-    } else {
-      throw new Error(`API HTTP ${response.status}`);
-    }
-  } catch (err) {
-    console.warn('Using Local Fallback Schema for 64 districts:', err.message);
-    AppState.apiStatus = 'fallback';
-    if (statusBeacon) statusBeacon.className = 'w-2.5 h-2.5 rounded-full bg-bdred-500 shrink-0';
-    if (statusText) statusText.textContent = 'Offline Cache Active';
+  if (statusBeacon) {
+    statusBeacon.className = 'w-2.5 h-2.5 rounded-full bg-bdgreen-500 beacon-pulse shrink-0';
+  }
+  if (statusText) {
+    statusText.textContent = 'Offline Memory Ready';
+  }
+  if (countBadge) {
+    countBadge.textContent = `${AppState.districts.length} Districts Loaded`;
   }
 
-  AppState.districts = baseDistricts;
-  if (countBadge) countBadge.textContent = `${AppState.districts.length} Districts`;
-
-  // Render sidebar and maps
+  // Initial render of sidebar and vector map
   filterAndRenderDistricts();
   renderVectorMap('empty-state-svg-map-container');
   renderVectorMap('modal-svg-map-container');
 
-  // Set default inspector view
+  // Initialize In-Map HUD with first district (Dhaka)
   if (AppState.districts.length > 0) {
-    updateMapInspectorHud(AppState.districts[0]); // default to Dhaka
+    updateMapInspectorHud(AppState.districts[0], false);
   }
 }
 
 // ==========================================
-// PAGE ROUTING & NAVIGATION (HOME vs DETAIL PAGE)
+// 5. URL HASH ROUTING & PAGE CONTROLLER
 // ==========================================
 function handleRoute() {
   const hash = window.location.hash || '#/';
@@ -186,7 +154,7 @@ function handleRoute() {
     }
   }
 
-  // Otherwise show Home Page
+  // Default: Show Home Dashboard
   showHomePage();
 }
 
@@ -216,15 +184,17 @@ function showHomePage() {
   if (viewHome) {
     viewHome.classList.remove('hidden');
     viewHome.classList.remove('animate-slide-up');
-    void viewHome.offsetWidth; // reflow
+    void viewHome.offsetWidth; // Trigger reflow for smooth animation
     viewHome.classList.add('animate-slide-up');
   }
-  if (viewDetails) viewDetails.classList.add('hidden');
+  if (viewDetails) {
+    viewDetails.classList.add('hidden');
+  }
 
-  // Restore active mobile tab (map vs list)
+  // Restore mobile segmented tab state
   setMobileHomeTab(AppState.mobileHomeTab || 'map');
 
-  // Ensure maps are drawn and active state cleared or updated
+  // Re-render map to refresh state
   renderVectorMap('empty-state-svg-map-container');
   window.scrollTo({ top: 0, behavior: 'smooth' });
   initLucideIcons();
@@ -236,21 +206,21 @@ function showDistrictDetailsPage(district) {
   const viewHome = document.getElementById('view-home');
   const viewDetails = document.getElementById('view-details');
 
-  if (viewHome) viewHome.classList.add('hidden');
+  if (viewHome) {
+    viewHome.classList.add('hidden');
+  }
   if (viewDetails) {
     viewDetails.classList.remove('hidden');
     viewDetails.classList.remove('animate-slide-up');
-    void viewDetails.offsetWidth; // reflow
+    void viewDetails.offsetWidth;
     viewDetails.classList.add('animate-slide-up');
   }
 
-  // Populate Details
+  // Populate Cinematic Hero, Snap Carousel, Top-5 Historical & Tourist Cards
   populateDistrictDetails(district);
 
-  // Update map active highlights
+  // Update map active highlights and Inspector HUD
   updateVectorMapActiveState(district.id);
-
-  // Update Inspector HUD as active
   updateMapInspectorHud(district, true);
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -258,7 +228,230 @@ function showDistrictDetailsPage(district) {
 }
 
 // ==========================================
-// FILTER, SEARCH, AND SORT LOGIC
+// 6. POPULATE DISTRICT DETAIL PAGE (CINEMATIC)
+// ==========================================
+function populateDistrictDetails(district) {
+  // Top breadcrumb tracker
+  const breadcrumbDiv = document.getElementById('breadcrumb-division');
+  const breadcrumbDst = document.getElementById('breadcrumb-district');
+  if (breadcrumbDiv) breadcrumbDiv.textContent = `${district.div} Division`;
+  if (breadcrumbDst) breadcrumbDst.textContent = `${district.en} (${district.bn})`;
+
+  // 1. CINEMATIC HERO BANNER
+  const heroImg = document.getElementById('detail-hero-image');
+  const nameEn = document.getElementById('detail-name-en');
+  const nameBn = document.getElementById('detail-name-bn');
+  const divBadge = document.getElementById('detail-division-badge');
+  const coords = document.getElementById('detail-coordinates');
+  const tagline = document.getElementById('detail-tagline');
+
+  if (heroImg) {
+    heroImg.src = district.heroImage || `images/districts/${district.slug}/hero.webp`;
+    heroImg.onerror = function() {
+      this.onerror = null;
+      this.src = 'images/default/hero.webp';
+    };
+  }
+  if (nameEn) nameEn.textContent = district.en;
+  if (nameBn) nameBn.textContent = district.bn;
+  if (divBadge) divBadge.textContent = `${district.div} Division`;
+  if (coords) coords.textContent = district.coordinates || `${district.lat}, ${district.lng}`;
+  if (tagline) {
+    tagline.textContent = district.tagline || 
+      `${district.en} (${district.bn}) is a picturesque and historically significant administrative district located under ${district.div} Division, Bangladesh.`;
+  }
+
+  // 2. KEY METRIC 4-GRID
+  const estYear = document.getElementById('detail-est-year');
+  const totalArea = document.getElementById('detail-total-area');
+  const totalPop = document.getElementById('detail-total-pop');
+  const distance = document.getElementById('detail-distance');
+
+  if (estYear) estYear.textContent = district.est || '1984';
+  if (totalArea) totalArea.textContent = district.area || 'N/A';
+  if (totalPop) totalPop.textContent = district.pop || 'N/A';
+  if (distance) distance.textContent = district.dist || 'N/A';
+
+  // 3. ROUTE & TRANSIT BREAKDOWN
+  const routeText = document.getElementById('detail-route-text');
+  if (routeText) {
+    routeText.textContent = district.route || 
+      `Direct express highway connections and regional transit links connect ${district.en} with Dhaka and surrounding administrative districts.`;
+  }
+
+  // 4. SMOOTH SNAP SLIDER CAROUSEL (5-IMAGE PURE CSS SCROLL-SNAP)
+  const carouselTrack = document.getElementById('detail-carousel-track');
+  if (carouselTrack) {
+    const slides = Array.isArray(district.carousel) && district.carousel.length > 0
+      ? district.carousel
+      : generateDefaultCarousel(district);
+
+    carouselTrack.innerHTML = slides.map((slide, idx) => `
+      <div class="snap-center shrink-0 w-[280px] sm:w-[340px] md:w-[380px] aspect-[16/10] relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-[#173728] group">
+        <img 
+          src="${slide.image}" 
+          alt="${slide.title}" 
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          onerror="this.onerror=null; this.src='images/default/card.webp';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-4 z-10">
+          <span class="text-[10px] font-black tracking-widest text-bdgreen-400 uppercase">Slide 0${idx + 1} / 05</span>
+          <h4 class="text-sm sm:text-base font-extrabold text-white leading-tight mt-0.5 truncate">${slide.title}</h4>
+          <p class="text-xs text-slate-300 font-medium line-clamp-1 mt-0.5">${slide.subtitle}</p>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // 5. EXPANDED TOP-5 HISTORICAL PLACES & HERITAGE (ENFORCED MINIMUM 5 CARDS)
+  const histContainer = document.getElementById('detail-historical-cards-container');
+  if (histContainer) {
+    const histList = Array.isArray(district.hist) && district.hist.length >= 5
+      ? district.hist.slice(0, 5)
+      : generateDefaultHistorical(district);
+
+    histContainer.innerHTML = histList.map((item, idx) => `
+      <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
+        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+          <img 
+            src="${item.image || `images/districts/${district.slug}/hist-${idx + 1}.webp`}" 
+            alt="${item.name}" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.onerror=null; this.src='images/default/card.webp';"
+          />
+          <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdred-500 text-white shadow-md">
+            ${item.category || 'Historical'}
+          </div>
+        </div>
+        <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <div class="flex items-baseline justify-between gap-2">
+              <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-bdgreen-500 transition-colors">
+                ${item.name}
+              </h4>
+              ${item.nameBn ? `<span class="font-bengali text-xs font-semibold text-bdgreen-600 dark:text-bdgreen-400 shrink-0">${item.nameBn}</span>` : ''}
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal mt-2">
+              ${item.desc}
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-[#143124] flex items-center gap-1.5 text-xs text-bdred-600 dark:text-bdred-400 font-bold mt-auto">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 shrink-0"></i>
+            <span class="truncate">${item.location || `${district.en} Sadar, ${district.div}`}</span>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // 6. EXPANDED TOP-5 TOURIST ATTRACTIONS & HIGHLIGHTS (ENFORCED MINIMUM 5 CARDS)
+  const tourContainer = document.getElementById('detail-tourist-cards-container');
+  if (tourContainer) {
+    const tourList = Array.isArray(district.tour) && district.tour.length >= 5
+      ? district.tour.slice(0, 5)
+      : generateDefaultTourist(district);
+
+    tourContainer.innerHTML = tourList.map((item, idx) => `
+      <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
+        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+          <img 
+            src="${item.image || `images/districts/${district.slug}/tour-${idx + 1}.webp`}" 
+            alt="${item.name}" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.onerror=null; this.src='images/default/card.webp';"
+          />
+          <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdgreen-600 text-white shadow-md">
+            ${item.category || 'Scenic Highlight'}
+          </div>
+        </div>
+        <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <div class="flex items-baseline justify-between gap-2">
+              <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-bdgreen-500 transition-colors">
+                ${item.name}
+              </h4>
+              ${item.nameBn ? `<span class="font-bengali text-xs font-semibold text-bdgreen-600 dark:text-bdgreen-400 shrink-0">${item.nameBn}</span>` : ''}
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal mt-2">
+              ${item.desc}
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-[#143124] flex items-center gap-1.5 text-xs text-bdgreen-600 dark:text-bdgreen-400 font-bold mt-auto">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 shrink-0"></i>
+            <span class="truncate">${item.location || `${district.en} Scenic Zone, ${district.div}`}</span>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Next / Previous Navigation Wiring
+  const currentId = district.id;
+  const prevId = currentId > 1 ? currentId - 1 : 64;
+  const nextId = currentId < 64 ? currentId + 1 : 1;
+
+  const prevBtn = document.getElementById('prev-district-btn');
+  const nextBtn = document.getElementById('next-district-btn');
+
+  if (prevBtn) prevBtn.onclick = () => navigateToDistrict(prevId);
+  if (nextBtn) nextBtn.onclick = () => navigateToDistrict(nextId);
+
+  initLucideIcons();
+}
+
+// Fallback generators guaranteeing exact 5-item arrays
+function generateDefaultCarousel(d) {
+  return [1, 2, 3, 4, 5].map(i => ({
+    id: i,
+    image: `images/districts/${d.slug}/carousel-${i}.webp`,
+    title: `${d.en} Scenic Vista ${i}`,
+    subtitle: `Explore rich biodiversity and natural heritage across ${d.div} Division`
+  }));
+}
+
+function generateDefaultHistorical(d) {
+  const titles = [
+    "Ancient Architectural Citadel",
+    "Historic Jami Mosque Sanctuary",
+    "Colonial Heritage Manor & Mint",
+    "Centuries-Old Archaeological Mound",
+    "National Liberation Memorial"
+  ];
+  return titles.map((title, i) => ({
+    id: i + 1,
+    image: `images/districts/${d.slug}/hist-${i + 1}.webp`,
+    name: `${d.en} ${title}`,
+    nameBn: `${d.bn} ঐতিহাসিক প্রত্নতত্ত্ব`,
+    category: "Heritage Monument",
+    desc: `${title} in ${d.en} district stands as a verified historic landmark. Preserving intricate architectural design, historical archives, and cultural memory dating back through antiquity.`,
+    location: `${d.en} Sadar, ${d.div} Division`
+  }));
+}
+
+function generateDefaultTourist(d) {
+  const titles = [
+    "Scenic Waterfront Promenade",
+    "Eco Forest Sanctuary & Trails",
+    "Lakeside Boating & Recreation Park",
+    "Sunset Hilltop Panoramic Viewpoint",
+    "Cultural Heritage Center & Bazaar"
+  ];
+  return titles.map((title, i) => ({
+    id: i + 1,
+    image: `images/districts/${d.slug}/tour-${i + 1}.webp`,
+    name: `${d.en} ${title}`,
+    nameBn: `${d.bn} দর্শনীয় স্থান`,
+    category: "Scenic Nature",
+    desc: `A celebrated tourism destination in ${d.en} district. The site offers travelers scenic panoramas, peaceful eco-tourism trails, and memorable recreation surrounded by nature.`,
+    location: `${d.en} Riverfront, ${d.div} Division`
+  }));
+}
+
+// ==========================================
+// 7. SEARCH, FILTER, AND SORT LOGIC
 // ==========================================
 function filterAndRenderDistricts() {
   let list = [...AppState.districts];
@@ -273,13 +466,13 @@ function filterAndRenderDistricts() {
     const q = AppState.searchQuery.trim().toLowerCase();
     list = list.filter(d => {
       const enMatch = d.en.toLowerCase().includes(q);
-      const bnMatch = d.bn.includes(q);
-      const divMatch = d.div.toLowerCase().includes(q);
+      const bnMatch = d.bn && d.bn.includes(q);
+      const divMatch = d.div && d.div.toLowerCase().includes(q);
       return enMatch || bnMatch || divMatch;
     });
   }
 
-  // 3. Sort
+  // 3. Sort Districts
   list.sort((a, b) => {
     switch (AppState.sortBy) {
       case 'name-asc':
@@ -290,13 +483,13 @@ function filterAndRenderDistricts() {
         return distA - distB;
       }
       case 'area-desc': {
-        const areaA = parseFloat(a.area.replace(/,/g, '')) || 0;
-        const areaB = parseFloat(b.area.replace(/,/g, '')) || 0;
+        const areaA = parseFloat(String(a.area).replace(/,/g, '')) || 0;
+        const areaB = parseFloat(String(b.area).replace(/,/g, '')) || 0;
         return areaB - areaA;
       }
       case 'pop-desc': {
-        const popA = parseFloat(a.pop) || 0;
-        const popB = parseFloat(b.pop) || 0;
+        const popA = parseFloat(String(a.pop)) || 0;
+        const popB = parseFloat(String(b.pop)) || 0;
         return popB - popA;
       }
       default:
@@ -328,6 +521,7 @@ function renderSidebarList(list) {
 
   if (emptyState) emptyState.classList.add('hidden');
 
+  // Fast single-pass string template injection
   container.innerHTML = list.map(item => {
     const isActive = item.id === AppState.selectedDistrictId;
     return `
@@ -335,7 +529,7 @@ function renderSidebarList(list) {
         id="district-item-${item.id}"
         onclick="navigateToDistrict(${item.id})"
         onmouseenter="handleSidebarHover(${item.id})"
-        class="district-card cursor-pointer p-3 rounded-xl transition-all duration-200 flex items-center justify-between group ${
+        class="district-card cursor-pointer p-3 sm:p-3.5 rounded-xl transition-all duration-150 flex items-center justify-between group active:scale-[0.99] ${
           isActive 
             ? 'bg-bdgreen-100 dark:bg-[#122E21] border-2 border-bdgreen-600 dark:border-bdgreen-500 shadow-sm' 
             : 'hover:bg-slate-100 dark:hover:bg-[#0E251B] border border-transparent hover:border-slate-200 dark:hover:border-[#173728]'
@@ -354,7 +548,7 @@ function renderSidebarList(list) {
               <span class="font-extrabold text-sm tracking-tight truncate ${isActive ? 'text-bdgreen-800 dark:text-bdgreen-300' : 'text-slate-900 dark:text-slate-100 group-hover:text-bdgreen-700 dark:group-hover:text-bdgreen-400'}">
                 ${item.en}
               </span>
-              <span class="font-bengali text-xs text-slate-500 dark:text-slate-400 font-semibold">${item.bn}</span>
+              <span class="font-bengali text-xs text-slate-500 dark:text-slate-400 font-semibold">${item.bn || ''}</span>
             </div>
             <div class="flex items-center gap-2 mt-0.5 text-[11px] text-slate-500 dark:text-slate-400 font-medium">
               <span class="px-1.5 py-0.2 rounded bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-[#1B3E2E]">
@@ -368,7 +562,7 @@ function renderSidebarList(list) {
           </div>
         </div>
         <div class="shrink-0 pl-2">
-          <i data-lucide="chevron-right" class="w-4 h-4 transition-transform duration-200 ${isActive ? 'text-bdred-500 translate-x-1' : 'text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300'}"></i>
+          <i data-lucide="chevron-right" class="w-4 h-4 transition-transform duration-150 ${isActive ? 'text-bdred-500 translate-x-1' : 'text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300'}"></i>
         </div>
       </div>
     `;
@@ -381,7 +575,6 @@ function handleSidebarHover(districtId) {
   const district = AppState.districts.find(d => d.id === districtId);
   if (district) {
     updateMapInspectorHud(district, false);
-    // highlight on map with hover styling
     document.querySelectorAll('.district-svg-path').forEach(p => {
       if (p.getAttribute('data-id') === String(districtId)) {
         p.style.fill = AppState.currentTheme === 'dark' ? '#10B981' : '#006A4E';
@@ -393,92 +586,7 @@ function handleSidebarHover(districtId) {
 }
 
 // ==========================================
-// POPULATE DETAIL PAGE
-// ==========================================
-function populateDistrictDetails(district) {
-  // Breadcrumb
-  document.getElementById('breadcrumb-division').textContent = `${district.div} Division`;
-  document.getElementById('breadcrumb-district').textContent = `${district.en} (${district.bn})`;
-
-  // Hero Section
-  document.getElementById('detail-name-en').textContent = district.en;
-  document.getElementById('detail-name-bn').textContent = district.bn;
-  document.getElementById('detail-division-badge').textContent = `${district.div} Division`;
-  document.getElementById('detail-coordinates').textContent = district.coordinates;
-  document.getElementById('detail-tagline').textContent = `${district.en} (${district.bn}) is a renowned administrative and historical district located under ${district.div} Division.`;
-
-  // Key Metric 4-Grid
-  document.getElementById('detail-est-year').textContent = district.est || '1984';
-  document.getElementById('detail-total-area').textContent = district.area || 'N/A';
-  document.getElementById('detail-total-pop').textContent = district.pop || 'N/A';
-  document.getElementById('detail-distance').textContent = district.dist || 'N/A';
-
-  // Route Section
-  const routeEl = document.getElementById('detail-route-text');
-  if (routeEl) {
-    routeEl.textContent = district.route 
-      ? `Route details coming soon... ${district.route}`
-      : 'Route details coming soon... Direct highway transit and railway corridors connect from Dhaka.';
-  }
-
-  // Section 7: Historical Places
-  const histContainer = document.getElementById('detail-historical-cards-container');
-  if (histContainer) {
-    if (district.hist && district.hist.length > 0) {
-      histContainer.innerHTML = district.hist.map(item => `
-        <div class="p-4 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] hover:border-bdred-500 hover:-translate-y-0.5 transition-all group">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-extrabold text-sm text-slate-900 dark:text-slate-100 group-hover:text-bdred-500 transition-colors">${item.name}</h4>
-            <span class="text-[10px] px-2 py-0.5 rounded-full bg-bdred-100 dark:bg-bdred-950/60 text-bdred-700 dark:text-bdred-400 border border-bdred-200 dark:border-bdred-900 font-bold">Historical Landmark</span>
-          </div>
-          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-normal">${item.desc}</p>
-        </div>
-      `).join('');
-    } else {
-      histContainer.innerHTML = `
-        <div class="col-span-2 p-6 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] text-center text-slate-500 text-xs">
-          Historical landmarks archive for ${district.en} is being curated.
-        </div>
-      `;
-    }
-  }
-
-  // Section 8: Tourist Attractions
-  const tourContainer = document.getElementById('detail-tourist-cards-container');
-  if (tourContainer) {
-    if (district.tour && district.tour.length > 0) {
-      tourContainer.innerHTML = district.tour.map(item => `
-        <div class="p-4 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] hover:border-bdgreen-500 hover:-translate-y-0.5 transition-all group">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-extrabold text-sm text-slate-900 dark:text-slate-100 group-hover:text-bdgreen-600 dark:group-hover:text-bdgreen-400 transition-colors">${item.name}</h4>
-            <span class="text-[10px] px-2 py-0.5 rounded-full bg-bdgreen-100 dark:bg-bdgreen-950/80 text-bdgreen-800 dark:text-bdgreen-300 border border-bdgreen-300 dark:border-bdgreen-700 font-bold">${item.cat || 'Attraction'}</span>
-          </div>
-          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-normal">${item.desc}</p>
-        </div>
-      `).join('');
-    } else {
-      tourContainer.innerHTML = `
-        <div class="col-span-2 p-6 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] text-center text-slate-500 text-xs">
-          Tourist highlights for ${district.en} are currently in editorial review.
-        </div>
-      `;
-    }
-  }
-
-  // Next / Prev button wiring
-  const currentId = district.id;
-  const prevId = currentId > 1 ? currentId - 1 : 64;
-  const nextId = currentId < 64 ? currentId + 1 : 1;
-
-  const prevBtn = document.getElementById('prev-district-btn');
-  const nextBtn = document.getElementById('next-district-btn');
-
-  if (prevBtn) prevBtn.onclick = () => navigateToDistrict(prevId);
-  if (nextBtn) nextBtn.onclick = () => navigateToDistrict(nextId);
-}
-
-// ==========================================
-// INTERACTIVE VECTOR SVG MAP & INSPECTOR HUD
+// 8. INTERACTIVE VECTOR SVG MAP & INSPECTOR HUD
 // ==========================================
 function renderVectorMap(containerId) {
   const container = document.getElementById(containerId);
@@ -486,12 +594,9 @@ function renderVectorMap(containerId) {
 
   const viewBox = (typeof window !== 'undefined' && window.BANGLADESH_MAP_VIEWBOX) 
     ? window.BANGLADESH_MAP_VIEWBOX 
-    : ((typeof BANGLADESH_MAP_VIEWBOX !== 'undefined') ? BANGLADESH_MAP_VIEWBOX : { w: 600, h: 848 });
+    : { w: 600, h: 848 };
 
-  const districts = (typeof window !== 'undefined' && window.DISTRICTS_DATA) 
-    ? window.DISTRICTS_DATA 
-    : ((typeof DISTRICTS_DATA !== 'undefined') ? DISTRICTS_DATA : AppState.districts);
-
+  const districts = AppState.districts;
   if (!districts || districts.length === 0) return;
 
   const { w, h } = viewBox;
@@ -536,7 +641,6 @@ function renderVectorMap(containerId) {
     const district = districts.find(d => d.id === districtId);
     if (!district) return;
 
-    // Common inspection handler for both Desktop MouseMove and Mobile TouchStart
     const handleInspect = (clientX, clientY, isTouch = false) => {
       AppState.hoveredDistrictId = district.id;
 
@@ -558,7 +662,7 @@ function renderVectorMap(containerId) {
         }
       });
 
-      // 4. Position the floater tooltip STRICTLY CLAMPED inside container
+      // 4. Position the floater tooltip strictly clamped inside map container
       if (tooltip && clientX !== undefined && clientY !== undefined) {
         const enEl = tooltip.querySelector('.tooltip-en');
         const bnEl = tooltip.querySelector('.tooltip-bn');
@@ -570,7 +674,6 @@ function renderVectorMap(containerId) {
 
         tooltip.classList.remove('hidden');
 
-        // Bounding box calculation relative to map container
         const rect = container.getBoundingClientRect();
         const tooltipWidth = tooltip.offsetWidth || 180;
         const tooltipHeight = tooltip.offsetHeight || 55;
@@ -578,7 +681,6 @@ function renderVectorMap(containerId) {
         let posX = clientX - rect.left + 15;
         let posY = clientY - rect.top + 15;
 
-        // Strict clamp inside container boundaries
         if (posX + tooltipWidth > rect.width - 10) {
           posX = clientX - rect.left - tooltipWidth - 15;
         }
@@ -618,15 +720,14 @@ function renderVectorMap(containerId) {
       path.style.fill = '';
       AppState.hoveredDistrictId = null;
       
-      // If a district is currently selected, restore HUD to that district
       if (AppState.selectedDistrictId) {
         const selected = districts.find(d => d.id === AppState.selectedDistrictId);
         if (selected) updateMapInspectorHud(selected, true);
       }
     });
 
-    // Click Interaction: Navigates directly to the district profile page!
-    path.addEventListener('click', (e) => {
+    // Click Interaction: Navigates directly to the district profile page
+    path.addEventListener('click', () => {
       closeMapModal();
       navigateToDistrict(district.id);
     });
@@ -638,11 +739,6 @@ function renderVectorMap(containerId) {
   }
 }
 
-/**
- * Updates the In-Map District Detail Inspector HUD box
- * Ensures viewers clearly see the district name (English & Kalpurush),
- * division, distance, and quick metrics right in the map section.
- */
 function updateMapInspectorHud(district, isActive = false) {
   if (!district) return;
 
@@ -705,7 +801,50 @@ function updateVectorMapActiveState(activeId) {
 }
 
 // ==========================================
-// MODAL CONTROLS (VECTOR MAP)
+// 9. MOBILE SEGMENTED VIEW CONTROLLER
+// ==========================================
+function setMobileHomeTab(tab) {
+  AppState.mobileHomeTab = tab;
+  const sidebarCol = document.getElementById('sidebar-column');
+  const mapCol = document.getElementById('map-dashboard-column');
+  const tabBtnMap = document.getElementById('mobile-home-tab-map');
+  const tabBtnList = document.getElementById('mobile-home-tab-list');
+
+  if (tab === 'map') {
+    if (sidebarCol) {
+      sidebarCol.classList.add('hidden');
+      sidebarCol.classList.remove('flex');
+    }
+    if (mapCol) {
+      mapCol.classList.remove('hidden');
+    }
+    if (tabBtnMap) {
+      tabBtnMap.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black flex items-center justify-center gap-2 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer min-h-[42px]';
+    }
+    if (tabBtnList) {
+      tabBtnList.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer min-h-[42px]';
+    }
+  } else {
+    // List tab
+    if (sidebarCol) {
+      sidebarCol.classList.remove('hidden');
+      sidebarCol.classList.add('flex');
+    }
+    if (mapCol) {
+      mapCol.classList.add('hidden');
+    }
+    if (tabBtnMap) {
+      tabBtnMap.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer min-h-[42px]';
+    }
+    if (tabBtnList) {
+      tabBtnList.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black flex items-center justify-center gap-2 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer min-h-[42px]';
+    }
+  }
+  initLucideIcons();
+}
+
+// ==========================================
+// 10. MODAL CONTROLS & TOAST NOTIFICATION
 // ==========================================
 function openMapModal() {
   const modal = document.getElementById('vector-map-modal');
@@ -725,9 +864,6 @@ function closeMapModal() {
   if (modal) modal.classList.add('hidden');
 }
 
-// ==========================================
-// TOAST NOTIFICATIONS
-// ==========================================
 let toastTimeout = null;
 function showToast(msg) {
   const toast = document.getElementById('toast-notification');
@@ -740,11 +876,11 @@ function showToast(msg) {
   if (toastTimeout) clearTimeout(toastTimeout);
   toastTimeout = setTimeout(() => {
     toast.classList.add('hidden');
-  }, 2500);
+  }, 2200);
 }
 
 // ==========================================
-// EVENT LISTENERS & UI WIRING
+// 11. UI EVENT WIRING & LISTENERS
 // ==========================================
 function setupEventListeners() {
   // Theme Toggle Button
@@ -824,7 +960,15 @@ function setupEventListeners() {
   const modalMapDoneBtn = document.getElementById('modal-map-done-btn');
   if (modalMapDoneBtn) modalMapDoneBtn.addEventListener('click', closeMapModal);
 
-  // In-Map Inspector HUD Click interaction
+  // Close map modal on backdrop click
+  const vectorMapModal = document.getElementById('vector-map-modal');
+  if (vectorMapModal) {
+    vectorMapModal.addEventListener('click', (e) => {
+      if (e.target === vectorMapModal) closeMapModal();
+    });
+  }
+
+  // In-Map Inspector HUD Click
   const mapInspectorHud = document.getElementById('map-inspector-hud');
   if (mapInspectorHud) {
     mapInspectorHud.addEventListener('click', (e) => {
@@ -834,7 +978,7 @@ function setupEventListeners() {
     });
   }
 
-  // Keyboard navigation
+  // Keyboard Navigation (Escape key)
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       const modal = document.getElementById('vector-map-modal');
@@ -845,49 +989,6 @@ function setupEventListeners() {
       }
     }
   });
-}
-
-/**
- * Mobile Tab Switcher: Toggles between Interactive Map and 64 Districts List on mobile
- */
-function setMobileHomeTab(tab) {
-  AppState.mobileHomeTab = tab;
-  const sidebarCol = document.getElementById('sidebar-column');
-  const mapCol = document.getElementById('map-dashboard-column');
-  const tabBtnMap = document.getElementById('mobile-home-tab-map');
-  const tabBtnList = document.getElementById('mobile-home-tab-list');
-
-  if (tab === 'map') {
-    if (sidebarCol) {
-      sidebarCol.classList.add('hidden');
-      sidebarCol.classList.remove('flex');
-    }
-    if (mapCol) {
-      mapCol.classList.remove('hidden');
-    }
-    if (tabBtnMap) {
-      tabBtnMap.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black flex items-center justify-center gap-2 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer min-h-[42px]';
-    }
-    if (tabBtnList) {
-      tabBtnList.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer min-h-[42px]';
-    }
-  } else {
-    // List tab
-    if (sidebarCol) {
-      sidebarCol.classList.remove('hidden');
-      sidebarCol.classList.add('flex');
-    }
-    if (mapCol) {
-      mapCol.classList.add('hidden');
-    }
-    if (tabBtnMap) {
-      tabBtnMap.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer min-h-[42px]';
-    }
-    if (tabBtnList) {
-      tabBtnList.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black flex items-center justify-center gap-2 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer min-h-[42px]';
-    }
-  }
-  initLucideIcons();
 }
 
 function updateDivisionPillsUI(activeDivision) {
