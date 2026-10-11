@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Local Host — Explore Bangladesh District by District</title>
+  <meta name="description" content="Explore all 64 districts of Bangladesh through an interactive vector map and profile portal with authentic demographic, historical, and transit archives.">
+  
+  <!-- Kalpurush Bangla Font (@font-face) & Plus Jakarta Sans for English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Local Kalpurush Bengali Font */
+    @font-face {
+      font-family: 'Kalpurush';
+      src: url('fonts/kalpurush.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Global Typography Stack */
+    body, button, input, select, textarea {
+      font-family: 'Plus Jakarta Sans', 'Kalpurush', sans-serif;
+    }
+    .font-bengali, [lang="bn"] {
+      font-family: 'Kalpurush', sans-serif !important;
+    }
+  </style>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Kalpurush', 'sans-serif'],
+            bengali: ['Kalpurush', 'sans-serif'],
+          },
+          colors: {
+            // Bangladesh Flag Green Palette
+            bdgreen: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#006a4e', // Bangladesh Flag Forest Green
+              950: '#042f22',
+            },
+            // Bangladesh Flag Crimson Red Palette
+            bdred: {
+              50: '#fef2f2',
+              100: '#fee2e2',
+              200: '#fecaca',
+              300: '#fca5a5',
+              400: '#f87171',
+              500: '#f42a41', // Bangladesh Flag Sun Red
+              600: '#dc2626',
+              700: '#b91c1c',
+              800: '#991b1b',
+              900: '#7f1d1d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Smooth theme transitions */
+    *, *::before, *::after {
+      transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+      transition-duration: 200ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Custom sleek scrollbar */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #081610;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #1B382B;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 9999px;
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #10B981;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #006A4E;
+    }
+
+    /* No scrollbar utility */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Mobile touch ergonomics */
+    button, a, input, select {
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    /* SVG Map Styling - Dark & Light Modes */
+    .district-svg-path {
+      cursor: pointer;
+      stroke-width: 1;
+      touch-action: manipulation;
+      transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s, filter 0.2s;
+    }
+    
+    /* Dark Mode Map Paths */
+    .dark .district-svg-path {
+      fill: #142F23;
+      stroke: #071710;
+    }
+    .dark .district-svg-path:hover {
+      fill: #10B981;
+      stroke: #6EE7B7;
+      stroke-width: 1.6;
+      filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.75));
+    }
+    .dark .district-svg-path.active {
+      fill: #F42A41 !important; /* Flag Red for active district */
+      stroke: #FFFFFF !important;
+      stroke-width: 2.2 !important;
+      filter: drop-shadow(0 0 12px rgba(244, 42, 65, 0.95)) !important;
+    }
+
+    /* Light Mode Map Paths */
+    html:not(.dark) .district-svg-path {
+      fill: #E2ECE6;
+      stroke: #CBD5E1;
+    }
+    html:not(.dark) .district-svg-path:hover {
+      fill: #006A4E;
+      stroke: #047857;
+      stroke-width: 1.6;
+      filter: drop-shadow(0 0 7px rgba(0, 106, 78, 0.5));
+    }
+    html:not(.dark) .district-svg-path.active {
+      fill: #F42A41 !important; /* Flag Red for active district */
+      stroke: #006A4E !important;
+      stroke-width: 2.2 !important;
+      filter: drop-shadow(0 0 10px rgba(244, 42, 65, 0.85)) !important;
+    }
+
+    /* Pulse animation for live API beacon (Flag Red Core + Green Ring) */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+    .beacon-pulse {
+      animation: pulse-ring 2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    }
+
+    /* Smooth entrance animation */
+    @keyframes slideUpFade {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-slide-up {
+      animation: slideUpFade 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Image Coming Soon pattern background */
+    .dark .coming-soon-pattern {
+      background-color: #0E2218;
+      background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1px, transparent 1px), radial-gradient(rgba(244, 42, 65, 0.08) 1px, #0E2218 1px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+    }
+    html:not(.dark) .coming-soon-pattern {
+      background-color: #F8FAF9;
+      background-image: radial-gradient(rgba(0, 106, 78, 0.08) 1px, transparent 1px), radial-gradient(rgba(244, 42, 65, 0.06) 1px, #F8FAF9 1px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAF9] dark:bg-[#07150E] text-slate-800 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-bdgreen-600 selection:text-white transition-colors duration-300">
+
+  <!-- ==================== TOP NAVIGATION ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#07150E]/95 backdrop-blur-md border-b border-slate-200 dark:border-[#143124] shadow-sm">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2 sm:gap-4">
+      
+      <!-- Brand Logo & Title with Bangladesh Flag Theme -->
+      <a href="#/" class="flex items-center gap-2.5 sm:gap-3 group focus:outline-none shrink-0" title="Go to Home Page">
+        <div class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-bdgreen-900 dark:bg-bdgreen-700 flex items-center justify-center shadow-md shadow-bdgreen-900/20 text-white font-black overflow-hidden group-hover:scale-105 transition-transform duration-300">
+          <!-- The Red Sun of Bangladesh -->
+          <div class="absolute w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-bdred-500 shadow-sm animate-pulse"></div>
+          <i data-lucide="map-pin" class="w-4 h-4 sm:w-5 sm:h-5 text-white relative z-10 drop-shadow"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5 sm:gap-2">
+            <h1 class="text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-1">
+              <span>Local Host</span>
+              <span class="text-[10px] sm:text-xs font-bold px-1.5 py-0.2 rounded-full bg-bdgreen-100 dark:bg-bdgreen-900/60 text-bdgreen-700 dark:text-bdgreen-300 border border-bdgreen-300 dark:border-bdgreen-700">BD 64</span>
+            </h1>
+          </div>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 hidden md:block font-medium">Explore Bangladesh District by District</p>
+        </div>
+      </a>
+
+      <!-- Quick Metrics, Interactive Theme Toggle & Full Map Button -->
+      <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+        
+        <!-- Live API Status Indicator -->
+        <div id="api-status-badge" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-slate-50 dark:bg-[#0D2117] border border-slate-200 dark:border-[#1B3E2E] text-xs text-slate-700 dark:text-slate-200 shadow-sm">
+          <span id="api-beacon" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-bdgreen-500 beacon-pulse shrink-0"></span>
+          <span id="api-status-text" class="font-semibold hidden lg:inline">BD-APIs Connected</span>
+          <span class="text-slate-300 dark:text-slate-600 hidden lg:inline">|</span>
+          <span class="text-bdred-600 dark:text-bdred-400 font-bold" id="api-district-count">64 Districts</span>
+        </div>
+
+        <!-- Interactive Dark / Light Mode Toggle Button -->
+        <button 
+          id="theme-toggle-btn" 
+          class="px-2.5 sm:px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-700 dark:text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm active:scale-95 cursor-pointer" 
+          title="Toggle Light / Dark Mode"
+        >
+          <span id="theme-icon-container" class="w-4 h-4 flex items-center justify-center text-amber-500 dark:text-bdgreen-400">
+            <i data-lucide="sun" id="theme-icon-sun" class="w-4 h-4 hidden"></i>
+            <i data-lucide="moon" id="theme-icon-moon" class="w-4 h-4"></i>
+          </span>
+          <span id="theme-toggle-label" class="hidden md:inline">Theme</span>
+        </button>
+
+        <!-- View Full Map Button -->
+        <button 
+          id="view-map-modal-btn" 
+          title="Open Full Interactive Vector Map" 
+          class="px-2.5 sm:px-3 py-1.5 text-xs font-bold rounded-xl bg-bdgreen-700 hover:bg-bdgreen-800 text-white flex items-center gap-1.5 transition-all shadow-sm shadow-bdgreen-700/20 active:scale-95 cursor-pointer"
+        >
+          <i data-lucide="map" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">Vector Map</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ROUTING WRAPPER ==================== -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6">
+
+    <!-- =================================================================== -->
+    <!-- VIEW A: HOME PAGE (Searchable Sidebar + Interactive Map Section)    -->
+    <!-- =================================================================== -->
+    <div id="view-home" class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start animate-slide-up">
+
+      <!-- MOBILE SEGMENTED VIEW CONTROLLER (Visible only on < lg mobile screens) -->
+      <div class="lg:hidden col-span-1 flex items-center p-1 bg-slate-100 dark:bg-[#07150E] rounded-xl border border-slate-200 dark:border-[#173728] shadow-sm mb-1">
+        <button id="mobile-home-tab-map" onclick="setMobileHomeTab('map')" class="flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black flex items-center justify-center gap-2 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer min-h-[42px]">
+          <i data-lucide="map" class="w-4 h-4"></i>
+          <span>Interactive Map</span>
+        </button>
+        <button id="mobile-home-tab-list" onclick="setMobileHomeTab('list')" class="flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer min-h-[42px]">
+          <i data-lucide="list" class="w-4 h-4"></i>
+          <span>Districts List (64)</span>
+        </button>
+      </div>
+
+      <!-- LEFT COLUMN: SEARCHABLE SIDEBAR (~35% -> lg:col-span-5/4) -->
+      <section id="sidebar-column" class="hidden lg:flex lg:col-span-5 xl:col-span-4 bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-3.5 sm:p-4 shadow-xl flex-col h-[calc(100dvh-7.5rem)] lg:h-[calc(100vh-6.5rem)] sticky top-20">
+        
+        <!-- Search & Filter Controls Header -->
+        <div class="space-y-2.5 pb-3 border-b border-slate-200 dark:border-[#173728]">
+          
+          <!-- Live Search Input Box -->
+          <div class="relative">
+            <i data-lucide="search" class="w-4 h-4 text-bdgreen-600 dark:text-bdgreen-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+            <input 
+              type="text" 
+              id="district-search-input" 
+              placeholder="Search district (Dhaka, ঢাকা, Cox's Bazar)..." 
+              class="w-full bg-slate-50 dark:bg-[#07150E] text-xs sm:text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 pl-9 pr-8 py-2 sm:py-2.5 rounded-xl border border-slate-200 dark:border-[#1B3E2E] focus:border-bdgreen-600 dark:focus:border-bdgreen-500 focus:outline-none focus:ring-2 focus:ring-bdgreen-500/20 transition font-medium"
+              autocomplete="off"
+            >
+            <button 
+              id="search-clear-btn" 
+              class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-bdred-500 p-0.5 rounded transition"
+              title="Clear search"
+            >
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Division Filter Pills -->
+          <div>
+            <div class="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 mb-1 font-medium">
+              <span>Filter by Division</span>
+              <span id="filtered-results-count" class="text-bdred-600 dark:text-bdred-400 font-bold">64 Districts</span>
+            </div>
+            <div id="division-pills-container" class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
+              <button data-division="all" class="division-pill active shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-bold bg-bdgreen-700 text-white transition shadow-sm">All (64)</button>
+              <button data-division="Dhaka" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Dhaka</button>
+              <button data-division="Chattogram" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Chattogram</button>
+              <button data-division="Rajshahi" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Rajshahi</button>
+              <button data-division="Khulna" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Khulna</button>
+              <button data-division="Barishal" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Barishal</button>
+              <button data-division="Sylhet" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Sylhet</button>
+              <button data-division="Rangpur" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Rangpur</button>
+              <button data-division="Mymensingh" class="division-pill shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg font-semibold bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 hover:bg-bdgreen-50 dark:hover:bg-[#122A1E] border border-slate-200 dark:border-[#1B3E2E] transition">Mymensingh</button>
+            </div>
+          </div>
+
+          <!-- Sorting Options -->
+          <div class="flex items-center justify-between text-[11px] pt-0.5 font-medium">
+            <span class="text-slate-500 dark:text-slate-400">Sort By:</span>
+            <div class="flex items-center gap-1">
+              <select id="district-sort-select" class="bg-slate-50 dark:bg-[#07150E] text-slate-700 dark:text-slate-200 text-xs py-1 px-2 rounded-lg border border-slate-200 dark:border-[#1B3E2E] focus:outline-none focus:border-bdgreen-600 cursor-pointer font-bold">
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="dist-asc">Distance (Closest to Dhaka)</option>
+                <option value="area-desc">Area (Largest First)</option>
+                <option value="pop-desc">Population (Highest First)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrollable District List -->
+        <div id="district-list" class="flex-1 overflow-y-auto divide-y divide-slate-100 dark:divide-[#143124]/60 pr-1 mt-1.5 space-y-1">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+
+        <!-- Empty search state -->
+        <div id="empty-search-state" class="hidden flex-1 flex flex-col items-center justify-center text-center p-4 text-slate-400">
+          <div class="w-10 h-10 rounded-full bg-bdred-100 dark:bg-bdred-950/60 text-bdred-500 flex items-center justify-center mb-2">
+            <i data-lucide="compass" class="w-5 h-5"></i>
+          </div>
+          <p class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200">No districts match your search</p>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Try searching by English or Kalpurush Bengali name, or select "All".</p>
+          <button id="reset-search-btn" class="mt-2.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-bdgreen-700 text-white hover:bg-bdgreen-800 transition shadow-sm">Reset Filters</button>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN: INTERACTIVE MAP DASHBOARD (~65% -> lg:col-span-7/8) -->
+      <section id="map-dashboard-column" class="col-span-1 lg:block lg:col-span-7 xl:col-span-8 bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 lg:p-8 shadow-xl space-y-4 sm:space-y-6">
+        
+        <!-- Header in Map Section -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 pb-3 border-b border-slate-200 dark:border-[#173728]">
+          <div>
+            <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-bdred-500 shadow-sm animate-pulse shrink-0"></span>
+              Interactive Map of Bangladesh
+            </h2>
+            <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">
+              Hover or tap any district to inspect • Click to open its complete profile page
+            </p>
+          </div>
+
+          <!-- Quick division indicator -->
+          <div class="flex items-center gap-2 self-start sm:self-auto shrink-0">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#1B3E2E]">
+              64 Districts
+            </span>
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded-lg bg-bdgreen-100 dark:bg-bdgreen-950/80 text-bdgreen-800 dark:text-bdgreen-300 border border-bdgreen-300 dark:border-bdgreen-700">
+              8 Divisions
+            </span>
+          </div>
+        </div>
+
+        <!-- THE INTERACTIVE MAP SECTION BOX WITH FLOATING INSPECTOR CARD -->
+        <div id="map-section-wrapper" class="relative bg-slate-50 dark:bg-[#07150E] rounded-2xl border border-slate-200 dark:border-[#173728] p-3 sm:p-5 shadow-inner overflow-hidden">
+          
+          <!-- =============================================================== -->
+          <!-- DEDICATED IN-MAP DISTRICT DETAIL FLOAT / INSPECTOR BOX          -->
+          <!-- Positioned cleanly inside the map section for superior view    -->
+          <!-- =============================================================== -->
+          <div id="map-inspector-hud" class="w-full mb-3 p-3 sm:p-3.5 rounded-xl bg-white/95 dark:bg-[#0B1E15]/95 border-2 border-bdgreen-600/40 dark:border-bdgreen-500/40 shadow-md backdrop-blur-md transition-all duration-200 cursor-pointer">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              
+              <!-- District Info -->
+              <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                <div id="inspector-badge-icon" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-bdgreen-100 dark:bg-[#143124] text-bdgreen-700 dark:text-bdgreen-300 font-black text-sm flex items-center justify-center shrink-0 border border-bdgreen-300 dark:border-bdgreen-700 shadow-sm">
+                  <i data-lucide="map-pin" class="w-4 h-4 text-bdred-500"></i>
+                </div>
+                <div class="min-w-0 truncate">
+                  <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                    <span id="inspector-name-en" class="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white truncate">
+                      Explore Any District
+                    </span>
+                    <span id="inspector-name-bn" class="font-bengali text-sm sm:text-base font-semibold text-bdgreen-700 dark:text-bdgreen-400">
+                      (জেলা বেছে নিন)
+                    </span>
+                    <span id="inspector-division" class="text-[10px] sm:text-[11px] font-bold px-1.5 py-0.2 rounded-full bg-slate-100 dark:bg-[#07150E] text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#1B3E2E]">
+                      Bangladesh
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-2 sm:gap-3 text-[11px] text-slate-500 dark:text-slate-400 font-medium mt-0.5 truncate">
+                    <span id="inspector-distance" class="flex items-center gap-1 text-bdred-600 dark:text-bdred-400 font-bold shrink-0">
+                      <i data-lucide="milestone" class="w-3 h-3 inline"></i>
+                      Hover over a district
+                    </span>
+                    <span class="text-slate-300 dark:text-slate-600">•</span>
+                    <span id="inspector-stats" class="truncate">64 Districts available</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Prompt / Button -->
+              <div class="shrink-0 w-full sm:w-auto">
+                <button 
+                  id="inspector-open-btn" 
+                  class="w-full sm:w-auto px-4 py-2 rounded-xl text-xs font-bold bg-bdgreen-700 hover:bg-bdgreen-800 text-white flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-95 cursor-pointer"
+                >
+                  <span>View District Details</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SVG Vector Map Rendering Container -->
+          <div id="empty-state-svg-map-container" class="w-full flex items-center justify-center min-h-[320px] sm:min-h-[420px] lg:min-h-[480px] max-h-[440px] sm:max-h-[560px] lg:max-h-[640px] relative">
+            <!-- Inline SVG rendered via JS -->
+
+            <!-- Smart Floater Tooltip Strictly Confined to Map Container -->
+            <div id="empty-state-svg-map-container-tooltip" class="pointer-events-none absolute z-30 hidden px-3 py-1.5 rounded-xl bg-slate-900/95 dark:bg-[#0B1E15]/95 border border-bdgreen-500 text-xs text-white shadow-2xl backdrop-blur-md transition-opacity">
+              <div class="flex items-center gap-1.5">
+                <span class="tooltip-en font-black text-bdred-400 text-xs sm:text-sm"></span>
+                <span class="tooltip-bn font-bengali text-white font-semibold text-xs sm:text-sm"></span>
+              </div>
+              <span class="tooltip-div text-bdgreen-300 block text-[10px] font-semibold mt-0.5"></span>
+            </div>
+          </div>
+
+          <!-- Bottom Legend for Green Flag (Hover) / Red Flag (Active) -->
+          <div class="pt-2.5 sm:pt-3 border-t border-slate-200 dark:border-[#173728] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1.5 text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
+            <div class="flex items-center gap-3">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-sm bg-bdred-500 inline-block shadow-sm"></span>
+                Selected District (Flag Red)
+              </span>
+              <span class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-sm bg-bdgreen-600 inline-block shadow-sm"></span>
+                Hover District (Flag Green)
+              </span>
+            </div>
+            <span class="text-[10px] text-slate-400">Click any district to explore</span>
+          </div>
+        </div>
+
+        <!-- 4 Quick Facts Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-1">
+          <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728]">
+            <div class="text-xl sm:text-2xl font-black text-bdgreen-700 dark:text-bdgreen-400">64</div>
+            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-bold">Districts</div>
+          </div>
+          <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728]">
+            <div class="text-xl sm:text-2xl font-black text-bdred-600 dark:text-bdred-400">8</div>
+            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-bold">Divisions</div>
+          </div>
+          <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728]">
+            <div class="text-xl sm:text-2xl font-black text-bdgreen-600 dark:text-bdgreen-300">147k</div>
+            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-bold">Square KM</div>
+          </div>
+          <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728]">
+            <div class="text-xl sm:text-2xl font-black text-bdred-500">170M+</div>
+            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-bold">Population</div>
+          </div>
+        </div>
+
+        <!-- Popular Destination Buttons -->
+        <div class="pt-1 text-xs text-slate-500 dark:text-slate-400 font-medium">
+          <span class="mr-2 font-bold block sm:inline mb-1.5 sm:mb-0">Popular Destinations:</span>
+          <div class="inline-flex flex-wrap gap-1.5 justify-start sm:justify-center">
+            <button onclick="navigateToDistrict(1)" class="px-2.5 sm:px-3 py-1 rounded-lg bg-slate-100 dark:bg-[#07150E] hover:bg-bdgreen-100 dark:hover:bg-[#122A1E] text-slate-800 dark:text-slate-200 font-bold border border-slate-200 dark:border-[#1B3E2E] transition text-xs cursor-pointer">Dhaka (ঢাকা)</button>
+            <button onclick="navigateToDistrict(19)" class="px-2.5 sm:px-3 py-1 rounded-lg bg-slate-100 dark:bg-[#07150E] hover:bg-bdred-100 dark:hover:bg-bdred-950/40 text-slate-800 dark:text-slate-200 font-bold border border-slate-200 dark:border-[#1B3E2E] transition text-xs cursor-pointer">Cox's Bazar (কক্সবাজার)</button>
+            <button onclick="navigateToDistrict(28)" class="px-2.5 sm:px-3 py-1 rounded-lg bg-slate-100 dark:bg-[#07150E] hover:bg-bdgreen-100 dark:hover:bg-[#122A1E] text-slate-800 dark:text-slate-200 font-bold border border-slate-200 dark:border-[#1B3E2E] transition text-xs cursor-pointer">Sylhet (সিলেট)</button>
+            <button onclick="navigateToDistrict(14)" class="px-2.5 sm:px-3 py-1 rounded-lg bg-slate-100 dark:bg-[#07150E] hover:bg-bdgreen-100 dark:hover:bg-[#122A1E] text-slate-800 dark:text-slate-200 font-bold border border-slate-200 dark:border-[#1B3E2E] transition text-xs cursor-pointer">Bandarban (বান্দরবান)</button>
+            <button onclick="navigateToDistrict(35)" class="px-2.5 sm:px-3 py-1 rounded-lg bg-slate-100 dark:bg-[#07150E] hover:bg-bdgreen-100 dark:hover:bg-[#122A1E] text-slate-800 dark:text-slate-200 font-bold border border-slate-200 dark:border-[#1B3E2E] transition text-xs cursor-pointer">Bagerhat (বাগেরহাট)</button>
+            <button onclick="navigateToDistrict(45)" class="px-2.5 sm:px-3 py-1 rounded-lg bg-slate-100 dark:bg-[#07150E] hover:bg-bdgreen-100 dark:hover:bg-[#122A1E] text-slate-800 dark:text-slate-200 font-bold border border-slate-200 dark:border-[#1B3E2E] transition text-xs cursor-pointer">Bogura (বগুড়া)</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- VIEW B: DISTRICT DETAIL FULL PAGE VIEW (Opened on another page view) -->
+    <!-- With prominent "Back to Home" button at top and bottom              -->
+    <!-- =================================================================== -->
+    <article id="view-details" class="hidden max-w-5xl mx-auto space-y-4 sm:space-y-6 animate-slide-up">
+      
+      <!-- Top Action Bar with Prominent "Back to Home" Button -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-3 border-b border-slate-200 dark:border-[#173728]">
+        
+        <!-- PROMINENT BACK TO HOME BUTTON -->
+        <button 
+          id="back-to-home-btn-top" 
+          onclick="navigateToHome()" 
+          class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-bdgreen-700 hover:bg-bdgreen-800 text-white shadow-md shadow-bdgreen-700/20 transition-all duration-200 active:scale-95 group cursor-pointer w-full sm:w-auto"
+        >
+          <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
+          <span>← Back to Home</span>
+        </button>
+
+        <!-- Breadcrumb Tracker -->
+        <nav class="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold text-slate-500 dark:text-slate-400 self-start sm:self-auto">
+          <a href="#/" class="hover:text-bdgreen-600 transition">Home</a>
+          <span>/</span>
+          <span id="breadcrumb-division" class="text-slate-400">Division</span>
+          <span>/</span>
+          <span id="breadcrumb-district" class="text-bdred-500 font-bold">District</span>
+        </nav>
+      </div>
+
+      <!-- District Hero Banner Section -->
+      <div class="bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 lg:p-8 shadow-xl relative overflow-hidden">
+        <!-- Ambient flag glow effects -->
+        <div class="absolute -right-16 -top-16 w-64 h-64 bg-bdgreen-500/10 dark:bg-bdgreen-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-16 -bottom-16 w-48 h-48 bg-bdred-500/5 dark:bg-bdred-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 relative z-10">
+          <div>
+            <div class="flex items-center gap-2 flex-wrap mb-1.5 sm:mb-2">
+              <span id="detail-division-badge" class="px-2.5 sm:px-3 py-0.5 rounded-full text-[11px] sm:text-xs font-extrabold bg-bdgreen-100 dark:bg-bdgreen-950/80 text-bdgreen-800 dark:text-bdgreen-300 border border-bdgreen-300 dark:border-bdgreen-700">
+                Division
+              </span>
+              <span id="detail-geo-badge" class="px-2 sm:px-2.5 py-0.5 rounded-full text-[11px] sm:text-xs font-mono bg-slate-100 dark:bg-[#07150E] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-[#1B3E2E] flex items-center gap-1 font-bold">
+                <i data-lucide="crosshair" class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-bdred-500"></i>
+                <span id="detail-coordinates">23.8103, 90.4125</span>
+              </span>
+            </div>
+            
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 dark:text-white tracking-tight flex items-baseline gap-2 sm:gap-3 flex-wrap">
+              <span id="detail-name-en">District Name</span>
+              <span id="detail-name-bn" class="font-bengali text-xl sm:text-2xl lg:text-3xl text-bdgreen-700 dark:text-bdgreen-400 font-bold">জেলা</span>
+            </h1>
+            
+            <p id="detail-tagline" class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 font-medium leading-relaxed">
+              Administrative district of Bangladesh
+            </p>
+          </div>
+
+          <!-- View on Map Modal Button -->
+          <div class="shrink-0 self-start sm:self-auto w-full sm:w-auto">
+            <button 
+              id="open-map-preview-btn" 
+              class="w-full sm:w-auto px-4 py-2.5 rounded-xl text-xs font-extrabold bg-bdgreen-700 hover:bg-bdgreen-800 text-white transition-all flex items-center justify-center gap-1.5 shadow-md shadow-bdgreen-700/20 active:scale-95 cursor-pointer"
+              title="Inspect on Vector Map"
+            >
+              <i data-lucide="map" class="w-4 h-4"></i>
+              <span>Locate on Vector Map</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Metric 4-Grid (Read-Only Viewer Experience) -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
+        
+        <!-- 1. Established Year -->
+        <div class="bg-white dark:bg-[#0B1E15] rounded-xl sm:rounded-2xl border border-slate-200 dark:border-[#173728] p-3 sm:p-4 shadow-sm hover:border-bdgreen-500 hover:-translate-y-1 transition-all group">
+          <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-1">
+            <span class="text-[11px] sm:text-xs font-bold">Established Year</span>
+            <i data-lucide="calendar" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-bdgreen-600 dark:text-bdgreen-400 group-hover:scale-110 transition"></i>
+          </div>
+          <div id="detail-est-year" class="text-lg sm:text-xl lg:text-2xl font-black text-slate-900 dark:text-white">1984</div>
+          <div class="text-[10px] sm:text-[11px] text-slate-400 font-medium mt-0.5">
+            Formation year
+          </div>
+        </div>
+
+        <!-- 2. Total Area -->
+        <div class="bg-white dark:bg-[#0B1E15] rounded-xl sm:rounded-2xl border border-slate-200 dark:border-[#173728] p-3 sm:p-4 shadow-sm hover:border-bdgreen-500 hover:-translate-y-1 transition-all group">
+          <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-1">
+            <span class="text-[11px] sm:text-xs font-bold">Total Area</span>
+            <i data-lucide="maximize" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-bdred-500 group-hover:scale-110 transition"></i>
+          </div>
+          <div id="detail-total-area" class="text-lg sm:text-xl lg:text-2xl font-black text-slate-900 dark:text-white">1,463 km²</div>
+          <div class="text-[10px] sm:text-[11px] text-slate-400 font-medium mt-0.5">
+            Geographic span
+          </div>
+        </div>
+
+        <!-- 3. Total Population -->
+        <div class="bg-white dark:bg-[#0B1E15] rounded-xl sm:rounded-2xl border border-slate-200 dark:border-[#173728] p-3 sm:p-4 shadow-sm hover:border-bdgreen-500 hover:-translate-y-1 transition-all group">
+          <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-1">
+            <span class="text-[11px] sm:text-xs font-bold">Total Population</span>
+            <i data-lucide="users" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-bdgreen-600 dark:text-bdgreen-400 group-hover:scale-110 transition"></i>
+          </div>
+          <div id="detail-total-pop" class="text-lg sm:text-xl lg:text-2xl font-black text-slate-900 dark:text-white">2.5M</div>
+          <div class="text-[10px] sm:text-[11px] text-slate-400 font-medium mt-0.5">
+            Census estimate
+          </div>
+        </div>
+
+        <!-- 4. Distance from Dhaka -->
+        <div class="bg-white dark:bg-[#0B1E15] rounded-xl sm:rounded-2xl border border-slate-200 dark:border-[#173728] p-3 sm:p-4 shadow-sm hover:border-bdgreen-500 hover:-translate-y-1 transition-all group">
+          <div class="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-1">
+            <span class="text-[11px] sm:text-xs font-bold">Distance from Dhaka</span>
+            <i data-lucide="milestone" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-bdred-500 group-hover:scale-110 transition"></i>
+          </div>
+          <div id="detail-distance" class="text-lg sm:text-xl lg:text-2xl font-black text-slate-900 dark:text-white">150 km</div>
+          <div class="text-[10px] sm:text-[11px] text-slate-400 font-medium mt-0.5">
+            Road network
+          </div>
+        </div>
+      </div>
+
+      <!-- Route & Visit from Dhaka Section -->
+      <div class="bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 shadow-sm space-y-3">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-[#173728]">
+          <h3 class="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white flex items-center gap-1.5 sm:gap-2">
+            <i data-lucide="navigation" class="w-4 h-4 text-bdgreen-600 dark:text-bdgreen-400"></i>
+            Route & Travel Options from Dhaka
+          </h3>
+          <span class="text-[10px] sm:text-[11px] px-2 sm:px-2.5 py-0.5 rounded-full bg-bdgreen-50 dark:bg-[#07150E] text-bdgreen-800 dark:text-bdgreen-300 border border-bdgreen-200 dark:border-[#1B3E2E] font-bold">Transit</span>
+        </div>
+
+        <div class="bg-slate-50 dark:bg-[#07150E] rounded-xl p-3.5 sm:p-4 border border-slate-200 dark:border-[#173728]">
+          <p id="detail-route-text" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-normal">
+            Route details coming soon...
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 text-xs font-bold">
+          <div class="p-2 sm:p-2.5 rounded-lg bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center gap-2 text-slate-700 dark:text-slate-300">
+            <i data-lucide="bus" class="w-4 h-4 text-bdgreen-600 dark:text-bdgreen-400 shrink-0"></i>
+            <span class="truncate">Highway Bus</span>
+          </div>
+          <div class="p-2 sm:p-2.5 rounded-lg bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center gap-2 text-slate-700 dark:text-slate-300">
+            <i data-lucide="train" class="w-4 h-4 text-bdred-500 shrink-0"></i>
+            <span class="truncate">Railway Link</span>
+          </div>
+          <div class="p-2 sm:p-2.5 rounded-lg bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center gap-2 text-slate-700 dark:text-slate-300">
+            <i data-lucide="car" class="w-4 h-4 text-bdgreen-600 dark:text-bdgreen-400 shrink-0"></i>
+            <span class="truncate">Private Vehicle</span>
+          </div>
+          <div class="p-2 sm:p-2.5 rounded-lg bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center gap-2 text-slate-700 dark:text-slate-300">
+            <i data-lucide="ship" class="w-4 h-4 text-bdred-500 shrink-0"></i>
+            <span class="truncate">Waterway Launch</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISUAL GALLERY (4 DISTINCT "IMAGE COMING SOON" BOXES - 16:9 FIXED ASPECT RATIO) -->
+      <div class="bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 shadow-sm space-y-3.5 sm:space-y-4">
+        
+        <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-[#173728]">
+          <div>
+            <h3 class="text-sm sm:text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
+              <i data-lucide="image" class="w-4 h-4 text-bdred-500"></i>
+              Visual Gallery
+            </h3>
+            <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Curated photographic records and archives</p>
+          </div>
+          <span class="text-[10px] sm:text-[11px] font-extrabold px-2 sm:px-2.5 py-0.5 rounded-full bg-bdgreen-100 dark:bg-bdgreen-950 text-bdgreen-800 dark:text-bdgreen-300 border border-bdgreen-300 dark:border-bdgreen-700 shrink-0">
+            4 Displays
+          </span>
+        </div>
+
+        <!-- The 4 Distinct Image Display Boxes (Fixed 16:9 Aspect Ratio) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          
+          <!-- Box 1: District Overview Photo -->
+          <div class="group relative rounded-xl border border-slate-200 dark:border-[#173728] overflow-hidden coming-soon-pattern transition-all duration-300 hover:border-bdgreen-500 hover:shadow-lg hover:-translate-y-0.5">
+            <div class="aspect-video w-full flex flex-col items-center justify-center p-4 sm:p-6 text-center relative z-10">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center justify-center text-bdgreen-600 dark:text-bdgreen-400 mb-2 group-hover:scale-110 group-hover:border-bdgreen-500 transition duration-300 shadow-sm">
+                <i data-lucide="camera" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+              </div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-slate-800 dark:text-slate-200">District Overview Photo</h4>
+              <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-medium">Aerial landscape & skyline</p>
+              
+              <!-- Prominent Styled Coming Soon Badge -->
+              <div class="mt-2.5 sm:mt-3 px-3 py-0.5 sm:py-1 rounded-full bg-white/90 dark:bg-[#07150E]/90 backdrop-blur-md border border-bdgreen-500/40 text-[10px] sm:text-xs font-bold text-bdgreen-700 dark:text-bdgreen-300 shadow-sm">
+                <span>🖼️ Image Coming Soon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 2: Old / Archive Photo (Historical) -->
+          <div class="group relative rounded-xl border border-slate-200 dark:border-[#173728] overflow-hidden coming-soon-pattern transition-all duration-300 hover:border-bdred-500 hover:shadow-lg hover:-translate-y-0.5">
+            <div class="aspect-video w-full flex flex-col items-center justify-center p-4 sm:p-6 text-center relative z-10">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center justify-center text-bdred-500 mb-2 group-hover:scale-110 group-hover:border-bdred-500 transition duration-300 shadow-sm">
+                <i data-lucide="history" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+              </div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-slate-800 dark:text-slate-200">Old / Archive Photo (Historical)</h4>
+              <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-medium">Rare archival prints & heritage</p>
+              
+              <!-- Prominent Styled Coming Soon Badge -->
+              <div class="mt-2.5 sm:mt-3 px-3 py-0.5 sm:py-1 rounded-full bg-white/90 dark:bg-[#07150E]/90 backdrop-blur-md border border-bdred-500/40 text-[10px] sm:text-xs font-bold text-bdred-600 dark:text-bdred-400 shadow-sm">
+                <span>🖼️ Image Coming Soon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 3: Historical Places Photo -->
+          <div class="group relative rounded-xl border border-slate-200 dark:border-[#173728] overflow-hidden coming-soon-pattern transition-all duration-300 hover:border-bdgreen-500 hover:shadow-lg hover:-translate-y-0.5">
+            <div class="aspect-video w-full flex flex-col items-center justify-center p-4 sm:p-6 text-center relative z-10">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center justify-center text-bdgreen-600 dark:text-bdgreen-400 mb-2 group-hover:scale-110 group-hover:border-bdgreen-500 transition duration-300 shadow-sm">
+                <i data-lucide="landmark" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+              </div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-slate-800 dark:text-slate-200">Historical Places Photo</h4>
+              <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-medium">Palaces, forts & ancient mosques</p>
+              
+              <!-- Prominent Styled Coming Soon Badge -->
+              <div class="mt-2.5 sm:mt-3 px-3 py-0.5 sm:py-1 rounded-full bg-white/90 dark:bg-[#07150E]/90 backdrop-blur-md border border-bdgreen-500/40 text-[10px] sm:text-xs font-bold text-bdgreen-700 dark:text-bdgreen-300 shadow-sm">
+                <span>🖼️ Image Coming Soon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 4: Tourist Attractions Photo -->
+          <div class="group relative rounded-xl border border-slate-200 dark:border-[#173728] overflow-hidden coming-soon-pattern transition-all duration-300 hover:border-bdred-500 hover:shadow-lg hover:-translate-y-0.5">
+            <div class="aspect-video w-full flex flex-col items-center justify-center p-4 sm:p-6 text-center relative z-10">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center justify-center text-bdred-500 mb-2 group-hover:scale-110 group-hover:border-bdred-500 transition duration-300 shadow-sm">
+                <i data-lucide="mountain" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+              </div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-slate-800 dark:text-slate-200">Tourist Attractions Photo</h4>
+              <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-medium">Natural scenery, beaches & hills</p>
+              
+              <!-- Prominent Styled Coming Soon Badge -->
+              <div class="mt-2.5 sm:mt-3 px-3 py-0.5 sm:py-1 rounded-full bg-white/90 dark:bg-[#07150E]/90 backdrop-blur-md border border-bdred-500/40 text-[10px] sm:text-xs font-bold text-bdred-600 dark:text-bdred-400 shadow-sm">
+                <span>🖼️ Image Coming Soon</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Historical Places (Cards) -->
+      <div class="bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 shadow-sm space-y-3.5 sm:space-y-4">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-[#173728]">
+          <h3 class="text-sm sm:text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="castle" class="w-4 h-4 text-bdred-500"></i>
+            Historical Places & Heritage
+          </h3>
+          <span class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-semibold">Landmarks</span>
+        </div>
+
+        <div id="detail-historical-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- Tourist Attractions (Cards) -->
+      <div class="bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 shadow-sm space-y-3.5 sm:space-y-4">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-[#173728]">
+          <h3 class="text-sm sm:text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="compass" class="w-4 h-4 text-bdgreen-600 dark:text-bdgreen-400"></i>
+            Tourist Attractions & Highlights
+          </h3>
+          <span class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-semibold">Destinations</span>
+        </div>
+
+        <div id="detail-tourist-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- Bottom Action Bar with "Back to Home" Button & Next/Prev Navigation -->
+      <div class="pt-4 pb-8 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-200 dark:border-[#173728]">
+        <button 
+          id="back-to-home-btn-bottom" 
+          onclick="navigateToHome()" 
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-bdgreen-700 hover:bg-bdgreen-800 text-white shadow-md shadow-bdgreen-700/20 transition-all duration-200 active:scale-95 group cursor-pointer"
+        >
+          <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
+          <span>← Back to Home Page</span>
+        </button>
+
+        <div class="flex items-center gap-2 text-xs font-bold text-slate-500 dark:text-slate-400 w-full sm:w-auto justify-between sm:justify-end">
+          <button id="prev-district-btn" class="flex-1 sm:flex-none px-3 py-2 rounded-lg bg-slate-100 dark:bg-[#0B1E15] hover:bg-slate-200 dark:hover:bg-[#143124] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-[#173728] transition flex items-center justify-center gap-1 cursor-pointer">
+            <i data-lucide="chevron-left" class="w-3.5 h-3.5"></i>
+            Previous
+          </button>
+          <button id="next-district-btn" class="flex-1 sm:flex-none px-3 py-2 rounded-lg bg-slate-100 dark:bg-[#0B1E15] hover:bg-slate-200 dark:hover:bg-[#143124] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-[#173728] transition flex items-center justify-center gap-1 cursor-pointer">
+            Next
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- ==================== FULL VECTOR MAP MODAL ==================== -->
+  <div id="vector-map-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md">
+    <div class="bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] rounded-2xl max-w-4xl w-full p-4 sm:p-6 shadow-2xl flex flex-col h-[92vh] sm:h-[88vh] animate-slide-up">
+      
+      <div class="flex items-center justify-between pb-2.5 sm:pb-3 border-b border-slate-200 dark:border-[#173728]">
+        <div>
+          <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
+            <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-bdred-500 shadow-sm animate-pulse"></div>
+            Interactive Vector Map of Bangladesh
+          </h3>
+          <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-semibold">Click or tap any district path to open its profile</p>
+        </div>
+        <button id="close-map-modal-btn" onclick="closeMapModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-[#122A1E] transition cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- IN-MODAL DISTRICT INSPECTOR HUD BAR -->
+      <div id="modal-map-inspector-hud" class="my-2 p-2.5 sm:p-3 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] flex items-center justify-between text-xs font-semibold cursor-pointer">
+        <div class="flex items-center gap-2 truncate">
+          <span class="w-2.5 h-2.5 rounded-full bg-bdred-500 shrink-0"></span>
+          <span id="modal-inspector-name" class="font-extrabold text-slate-900 dark:text-white text-xs sm:text-sm truncate">Hover or tap any district</span>
+          <span id="modal-inspector-bn" class="font-bengali text-bdgreen-700 dark:text-bdgreen-400 text-xs sm:text-sm shrink-0"></span>
+          <span id="modal-inspector-div" class="text-slate-500 dark:text-slate-400 font-medium hidden sm:inline truncate"></span>
+        </div>
+        <span class="text-bdred-600 dark:text-bdred-400 font-bold shrink-0 text-[11px] sm:text-xs">Open Profile →</span>
+      </div>
+
+      <!-- Map Render Zone -->
+      <div id="modal-svg-map-container" class="flex-1 flex items-center justify-center p-2 overflow-hidden relative">
+        <!-- SVG will be placed here -->
+      </div>
+
+      <div class="pt-2.5 sm:pt-3 border-t border-slate-200 dark:border-[#173728] flex items-center justify-between text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-semibold">
+        <div class="flex items-center gap-3">
+          <span class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-sm bg-bdred-500 inline-block shadow-sm"></span>
+            Active (Red)
+          </span>
+          <span class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-sm bg-bdgreen-600 inline-block shadow-sm"></span>
+            Hover (Green)
+          </span>
+        </div>
+        <button id="modal-map-done-btn" onclick="closeMapModal()" class="px-4 sm:px-5 py-1.5 sm:py-2 rounded-xl bg-bdgreen-700 hover:bg-bdgreen-800 text-white font-bold transition shadow-sm cursor-pointer">Close Map</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div id="toast-notification" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 hidden px-4 py-2.5 rounded-xl bg-white dark:bg-[#0B1E15] border border-bdgreen-500 text-slate-800 dark:text-slate-100 text-xs font-bold shadow-2xl flex items-center gap-2 transition-all">
+    <i data-lucide="check-circle" class="w-4 h-4 text-bdgreen-600 dark:text-bdgreen-400"></i>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="district-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
