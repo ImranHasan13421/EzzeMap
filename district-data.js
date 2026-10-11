@@ -2436,7 +2436,7 @@ const DISTRICTS_DATA = [
     "svgPath": "M280.8,245.2l5.2,-0.1l1.3,-5.5l-1.7,-2.7l3.3,-0.2l-1.9,-3l-2.2,-0.6l1.9,-5.1l-0.5,-6.3l2.5,-1.7l0.9,1.9l2.1,-0.6l0.6,-3.2l2.6,-0.1l-0.9,-1.6l-1.6,1.2l-2.9,-2.3l0.2,-13.7l-11.9,-3.8l-6.9,0l-8.1,-5.3l-9.5,-2.8l-1.8,-3.2l-1.6,0.4l-2.9,2.1l-0.1,3.6l-3.4,-0.5l-2.5,10.8l3.3,2.1l-2,8.2l3.9,7.1l-2.6,4.1l-3,-0.2l1.4,6.5l1.5,0.4l-0.1,3.9l4.4,-0.2l1.3,4.2l4.3,1.8l1.9,-0.9l4.1,2l1.3,-1.4l-0.7,1.3l12.8,1.5l2.8,-0.9l0.6,1.7Z"
   }
 ];
-const BANGLADESH_MAP_VIEWBOX = { w: 600, h: 848 };
+const BANGLADESH_MAP_VIEWBOX = { x: -40, y: -35, w: 680, h: 918 };
 
 // Explicitly attach to window for browser global scope
 if (typeof window !== 'undefined') {

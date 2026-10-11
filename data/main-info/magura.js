@@ -17,7 +17,7 @@ const MAGURA_DATA = {
   "area": "1,048.61 km²",
   "areaBn": "১,০৪৮.৬১ বর্গ কি.মি.",
   "pop": "1.0M",
-  "popBn": "১.০ মিলিয়ন",
+  "popBn": "০.১ কোটি",
   "dist": "165 km",
   "distBn": "১৬৫ কি.মি.",
   "route": "Via Padma Bridge expressway through Faridpur (approx. 3 hours by direct bus or car).",
@@ -26,63 +26,12 @@ const MAGURA_DATA = {
   "tagline": "Magura (মাগুরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Magura (মাগুরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "মাগুরা (Magura) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/magura/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/magura/carousel-1.webp",
-      "title": "Magura Heritage & Landscapes",
-      "titleEn": "Magura Heritage & Landscapes",
-      "titleBn": "মাগুরা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/magura/carousel-2.webp",
-      "title": "Historic Monuments of Magura",
-      "titleEn": "Historic Monuments of Magura",
-      "titleBn": "মাগুরা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/magura/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/magura/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/magura/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/magura/hist-1.webp",
+      "image": null,
       "name": "Sreepur Zamindar Bari",
       "nameEn": "Sreepur Zamindar Bari",
       "nameBn": "মাগুরা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/magura/hist-2.webp",
+      "image": null,
       "name": "Mohammadpur Ancient Mosque & Fort",
       "nameEn": "Mohammadpur Ancient Mosque & Fort",
       "nameBn": "মাগুরা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/magura/hist-3.webp",
+      "image": null,
       "name": "Magura Colonial Court & Mint",
       "nameEn": "Magura Colonial Court & Mint",
       "nameBn": "মাগুরা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/magura/hist-4.webp",
+      "image": null,
       "name": "Magura Archeological Mound",
       "nameEn": "Magura Archeological Mound",
       "nameBn": "মাগুরা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/magura/hist-5.webp",
+      "image": null,
       "name": "Magura Liberation War Memorial",
       "nameEn": "Magura Liberation War Memorial",
       "nameBn": "মাগুরা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const MAGURA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/magura/tour-1.webp",
+      "image": null,
       "name": "Siddheswari Kali Temple",
       "nameEn": "Siddheswari Kali Temple",
       "nameBn": "মাগুরা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/magura/tour-2.webp",
+      "image": null,
       "name": "Gorai River Sands",
       "nameEn": "Gorai River Sands",
       "nameBn": "মাগুরা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/magura/tour-3.webp",
+      "image": null,
       "name": "Magura Cultural Heritage Museum",
       "nameEn": "Magura Cultural Heritage Museum",
       "nameBn": "মাগুরা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/magura/tour-4.webp",
+      "image": null,
       "name": "Magura Scenic Lake & Boating Resort",
       "nameEn": "Magura Scenic Lake & Boating Resort",
       "nameBn": "মাগুরা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const MAGURA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/magura/tour-5.webp",
+      "image": null,
       "name": "Magura Sunset Hilltop Viewpoint",
       "nameEn": "Magura Sunset Hilltop Viewpoint",
       "nameBn": "মাগুরা সূর্যাস্ত ভিউপয়েন্ট",

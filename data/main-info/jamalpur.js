@@ -17,7 +17,7 @@ const JAMALPUR_DATA = {
   "area": "2,031.98 km²",
   "areaBn": "২,০৩১.৯৮ বর্গ কি.মি.",
   "pop": "2.5M",
-  "popBn": "২.৫ মিলিয়ন",
+  "popBn": "০.২৫ কোটি",
   "dist": "145 km",
   "distBn": "১৪৫ কি.মি.",
   "route": "Via Dhaka-Tangail-Jamalpur Highway or Brahmaputra/Jamuna Express train from Dhaka (3.5 - 4 hrs).",
@@ -26,63 +26,12 @@ const JAMALPUR_DATA = {
   "tagline": "Jamalpur (জামালপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
   "taglineEn": "Jamalpur (জামালপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
   "taglineBn": "জামালপুর (Jamalpur) ময়মনসিংহ বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/jamalpur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/jamalpur/carousel-1.webp",
-      "title": "Jamalpur Heritage & Landscapes",
-      "titleEn": "Jamalpur Heritage & Landscapes",
-      "titleBn": "জামালপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Mymensingh Division",
-      "subtitleEn": "Panoramic beauty across Mymensingh Division",
-      "subtitleBn": "ময়মনসিংহ বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/jamalpur/carousel-2.webp",
-      "title": "Historic Monuments of Jamalpur",
-      "titleEn": "Historic Monuments of Jamalpur",
-      "titleBn": "জামালপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/jamalpur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/jamalpur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/jamalpur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/jamalpur/hist-1.webp",
+      "image": null,
       "name": "Gandhi Ashram (Jigatala)",
       "nameEn": "Gandhi Ashram (Jigatala)",
       "nameBn": "জামালপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/jamalpur/hist-2.webp",
+      "image": null,
       "name": "Lojpoti Zamindar Palace",
       "nameEn": "Lojpoti Zamindar Palace",
       "nameBn": "জামালপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/jamalpur/hist-3.webp",
+      "image": null,
       "name": "Jamalpur Colonial Court & Mint",
       "nameEn": "Jamalpur Colonial Court & Mint",
       "nameBn": "জামালপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/jamalpur/hist-4.webp",
+      "image": null,
       "name": "Jamalpur Archeological Mound",
       "nameEn": "Jamalpur Archeological Mound",
       "nameBn": "জামালপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/jamalpur/hist-5.webp",
+      "image": null,
       "name": "Jamalpur Liberation War Memorial",
       "nameEn": "Jamalpur Liberation War Memorial",
       "nameBn": "জামালপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const JAMALPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/jamalpur/tour-1.webp",
+      "image": null,
       "name": "Old Brahmaputra Riverside Promenade",
       "nameEn": "Old Brahmaputra Riverside Promenade",
       "nameBn": "জামালপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/jamalpur/tour-2.webp",
+      "image": null,
       "name": "Nakshi Kantha Artisan Villages",
       "nameEn": "Nakshi Kantha Artisan Villages",
       "nameBn": "জামালপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/jamalpur/tour-3.webp",
+      "image": null,
       "name": "Jamalpur Cultural Heritage Museum",
       "nameEn": "Jamalpur Cultural Heritage Museum",
       "nameBn": "জামালপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/jamalpur/tour-4.webp",
+      "image": null,
       "name": "Jamalpur Scenic Lake & Boating Resort",
       "nameEn": "Jamalpur Scenic Lake & Boating Resort",
       "nameBn": "জামালপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const JAMALPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/jamalpur/tour-5.webp",
+      "image": null,
       "name": "Jamalpur Sunset Hilltop Viewpoint",
       "nameEn": "Jamalpur Sunset Hilltop Viewpoint",
       "nameBn": "জামালপুর সূর্যাস্ত ভিউপয়েন্ট",

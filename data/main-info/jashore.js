@@ -17,7 +17,7 @@ const JASHORE_DATA = {
   "area": "2,566.98 km²",
   "areaBn": "২,৫৬৬.৯৮ বর্গ কি.মি.",
   "pop": "2.8M",
-  "popBn": "২.৮ মিলিয়ন",
+  "popBn": "০.২৮ কোটি",
   "dist": "190 km",
   "distBn": "১৯০ কি.মি.",
   "route": "Via Padma Bridge expressway (approx. 3.5 hrs), Benapole Express train, or 35-min flight.",
@@ -26,63 +26,12 @@ const JASHORE_DATA = {
   "tagline": "Jashore (যশোর) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Jashore (যশোর) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "যশোর (Jashore) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/jashore/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/jashore/carousel-1.webp",
-      "title": "Jashore Heritage & Landscapes",
-      "titleEn": "Jashore Heritage & Landscapes",
-      "titleBn": "যশোর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/jashore/carousel-2.webp",
-      "title": "Historic Monuments of Jashore",
-      "titleEn": "Historic Monuments of Jashore",
-      "titleBn": "যশোর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/jashore/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/jashore/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/jashore/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/jashore/hist-1.webp",
+      "image": null,
       "name": "Mirzanagar Hammamkhana",
       "nameEn": "Mirzanagar Hammamkhana",
       "nameBn": "যশোর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/jashore/hist-2.webp",
+      "image": null,
       "name": "Chanchra Rajbari & Shiva Temple",
       "nameEn": "Chanchra Rajbari & Shiva Temple",
       "nameBn": "যশোর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/jashore/hist-3.webp",
+      "image": null,
       "name": "Jashore Colonial Court & Mint",
       "nameEn": "Jashore Colonial Court & Mint",
       "nameBn": "যশোর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/jashore/hist-4.webp",
+      "image": null,
       "name": "Jashore Archeological Mound",
       "nameEn": "Jashore Archeological Mound",
       "nameBn": "যশোর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/jashore/hist-5.webp",
+      "image": null,
       "name": "Jashore Liberation War Memorial",
       "nameEn": "Jashore Liberation War Memorial",
       "nameBn": "যশোর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const JASHORE_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/jashore/tour-1.webp",
+      "image": null,
       "name": "Gadkhali Flower Capital",
       "nameEn": "Gadkhali Flower Capital",
       "nameBn": "যশোর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/jashore/tour-2.webp",
+      "image": null,
       "name": "Sagardari (Michael Madhusudan Memorial)",
       "nameEn": "Sagardari (Michael Madhusudan Memorial)",
       "nameBn": "যশোর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/jashore/tour-3.webp",
+      "image": null,
       "name": "Jashore Cultural Heritage Museum",
       "nameEn": "Jashore Cultural Heritage Museum",
       "nameBn": "যশোর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/jashore/tour-4.webp",
+      "image": null,
       "name": "Jashore Scenic Lake & Boating Resort",
       "nameEn": "Jashore Scenic Lake & Boating Resort",
       "nameBn": "যশোর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const JASHORE_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/jashore/tour-5.webp",
+      "image": null,
       "name": "Jashore Sunset Hilltop Viewpoint",
       "nameEn": "Jashore Sunset Hilltop Viewpoint",
       "nameBn": "যশোর সূর্যাস্ত ভিউপয়েন্ট",

@@ -17,7 +17,7 @@ const JHENAIDAH_DATA = {
   "area": "1,964.77 km²",
   "areaBn": "১,৯৬৪.৭৭ বর্গ কি.মি.",
   "pop": "1.8M",
-  "popBn": "১.৮ মিলিয়ন",
+  "popBn": "০.১৮ কোটি",
   "dist": "215 km",
   "distBn": "২১৫ কি.মি.",
   "route": "Via Padma Bridge expressway through Magura (approx. 4 hours by highway bus/car).",
@@ -26,63 +26,12 @@ const JHENAIDAH_DATA = {
   "tagline": "Jhenaidah (ঝিনাইদহ) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Jhenaidah (ঝিনাইদহ) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "ঝিনাইদহ (Jhenaidah) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/jhenaidah/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/jhenaidah/carousel-1.webp",
-      "title": "Jhenaidah Heritage & Landscapes",
-      "titleEn": "Jhenaidah Heritage & Landscapes",
-      "titleBn": "ঝিনাইদহ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/jhenaidah/carousel-2.webp",
-      "title": "Historic Monuments of Jhenaidah",
-      "titleEn": "Historic Monuments of Jhenaidah",
-      "titleBn": "ঝিনাইদহ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/jhenaidah/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/jhenaidah/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/jhenaidah/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/jhenaidah/hist-1.webp",
+      "image": null,
       "name": "Naldanga Temple Complex",
       "nameEn": "Naldanga Temple Complex",
       "nameBn": "ঝিনাইদহ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/jhenaidah/hist-2.webp",
+      "image": null,
       "name": "Shailkupa Shahi Mosque",
       "nameEn": "Shailkupa Shahi Mosque",
       "nameBn": "ঝিনাইদহ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/jhenaidah/hist-3.webp",
+      "image": null,
       "name": "Jhenaidah Colonial Court & Mint",
       "nameEn": "Jhenaidah Colonial Court & Mint",
       "nameBn": "ঝিনাইদহ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/jhenaidah/hist-4.webp",
+      "image": null,
       "name": "Jhenaidah Archeological Mound",
       "nameEn": "Jhenaidah Archeological Mound",
       "nameBn": "ঝিনাইদহ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/jhenaidah/hist-5.webp",
+      "image": null,
       "name": "Jhenaidah Liberation War Memorial",
       "nameEn": "Jhenaidah Liberation War Memorial",
       "nameBn": "ঝিনাইদহ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const JHENAIDAH_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/jhenaidah/tour-1.webp",
+      "image": null,
       "name": "Dhol Samudra Dighi",
       "nameEn": "Dhol Samudra Dighi",
       "nameBn": "ঝিনাইদহ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/jhenaidah/tour-2.webp",
+      "image": null,
       "name": "Johurul Haque Baor",
       "nameEn": "Johurul Haque Baor",
       "nameBn": "ঝিনাইদহ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/jhenaidah/tour-3.webp",
+      "image": null,
       "name": "Jhenaidah Cultural Heritage Museum",
       "nameEn": "Jhenaidah Cultural Heritage Museum",
       "nameBn": "ঝিনাইদহ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/jhenaidah/tour-4.webp",
+      "image": null,
       "name": "Jhenaidah Scenic Lake & Boating Resort",
       "nameEn": "Jhenaidah Scenic Lake & Boating Resort",
       "nameBn": "ঝিনাইদহ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const JHENAIDAH_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/jhenaidah/tour-5.webp",
+      "image": null,
       "name": "Jhenaidah Sunset Hilltop Viewpoint",
       "nameEn": "Jhenaidah Sunset Hilltop Viewpoint",
       "nameBn": "ঝিনাইদহ সূর্যাস্ত ভিউপয়েন্ট",

@@ -17,7 +17,7 @@ const PIROJPUR_DATA = {
   "area": "1,307.61 km²",
   "areaBn": "১,৩০৭.৬১ বর্গ কি.মি.",
   "pop": "1.2M",
-  "popBn": "১.২ মিলিয়ন",
+  "popBn": "০.১২ কোটি",
   "dist": "210 km",
   "distBn": "২১০ কি.মি.",
   "route": "Via Padma Bridge and Bekutia (8th Bangladesh-China Friendship) Bridge (approx. 4.5 hrs).",
@@ -26,63 +26,12 @@ const PIROJPUR_DATA = {
   "tagline": "Pirojpur (পিরোজপুর) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineEn": "Pirojpur (পিরোজপুর) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineBn": "পিরোজপুর (Pirojpur) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/pirojpur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/pirojpur/carousel-1.webp",
-      "title": "Pirojpur Heritage & Landscapes",
-      "titleEn": "Pirojpur Heritage & Landscapes",
-      "titleBn": "পিরোজপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Barishal Division",
-      "subtitleEn": "Panoramic beauty across Barishal Division",
-      "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/pirojpur/carousel-2.webp",
-      "title": "Historic Monuments of Pirojpur",
-      "titleEn": "Historic Monuments of Pirojpur",
-      "titleBn": "পিরোজপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/pirojpur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/pirojpur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/pirojpur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/pirojpur/hist-1.webp",
+      "image": null,
       "name": "Rayerkathi Zamindar Palace & Temple",
       "nameEn": "Rayerkathi Zamindar Palace & Temple",
       "nameBn": "পিরোজপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/pirojpur/hist-2.webp",
+      "image": null,
       "name": "Majlishpur Ancient Mosque",
       "nameEn": "Majlishpur Ancient Mosque",
       "nameBn": "পিরোজপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/pirojpur/hist-3.webp",
+      "image": null,
       "name": "Pirojpur Colonial Court & Mint",
       "nameEn": "Pirojpur Colonial Court & Mint",
       "nameBn": "পিরোজপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/pirojpur/hist-4.webp",
+      "image": null,
       "name": "Pirojpur Archeological Mound",
       "nameEn": "Pirojpur Archeological Mound",
       "nameBn": "পিরোজপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/pirojpur/hist-5.webp",
+      "image": null,
       "name": "Pirojpur Liberation War Memorial",
       "nameEn": "Pirojpur Liberation War Memorial",
       "nameBn": "পিরোজপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const PIROJPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/pirojpur/tour-1.webp",
+      "image": null,
       "name": "Bekutia Bridge & Sandhya River",
       "nameEn": "Bekutia Bridge & Sandhya River",
       "nameBn": "পিরোজপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/pirojpur/tour-2.webp",
+      "image": null,
       "name": "Kuriana Floating Fruit Orchards",
       "nameEn": "Kuriana Floating Fruit Orchards",
       "nameBn": "পিরোজপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/pirojpur/tour-3.webp",
+      "image": null,
       "name": "Pirojpur Cultural Heritage Museum",
       "nameEn": "Pirojpur Cultural Heritage Museum",
       "nameBn": "পিরোজপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/pirojpur/tour-4.webp",
+      "image": null,
       "name": "Pirojpur Scenic Lake & Boating Resort",
       "nameEn": "Pirojpur Scenic Lake & Boating Resort",
       "nameBn": "পিরোজপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const PIROJPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/pirojpur/tour-5.webp",
+      "image": null,
       "name": "Pirojpur Sunset Hilltop Viewpoint",
       "nameEn": "Pirojpur Sunset Hilltop Viewpoint",
       "nameBn": "পিরোজপুর সূর্যাস্ত ভিউপয়েন্ট",

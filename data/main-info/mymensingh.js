@@ -17,7 +17,7 @@ const MYMENSINGH_DATA = {
   "area": "4,363.48 km²",
   "areaBn": "৪,৩৬৩.৪৮ বর্গ কি.মি.",
   "pop": "5.3M",
-  "popBn": "৫.৩ মিলিয়ন",
+  "popBn": "০.৫৩ কোটি",
   "dist": "120 km",
   "distBn": "১২০ কি.মি.",
   "route": "Via Dhaka-Mymensingh 4-lane Highway N3 (approx. 2.5 - 3 hours) or commuter trains.",
@@ -26,63 +26,12 @@ const MYMENSINGH_DATA = {
   "tagline": "Mymensingh (ময়মনসিংহ) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
   "taglineEn": "Mymensingh (ময়মনসিংহ) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
   "taglineBn": "ময়মনসিংহ (Mymensingh) ময়মনসিংহ বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/mymensingh/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/mymensingh/carousel-1.webp",
-      "title": "Mymensingh Heritage & Landscapes",
-      "titleEn": "Mymensingh Heritage & Landscapes",
-      "titleBn": "ময়মনসিংহ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Mymensingh Division",
-      "subtitleEn": "Panoramic beauty across Mymensingh Division",
-      "subtitleBn": "ময়মনসিংহ বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/mymensingh/carousel-2.webp",
-      "title": "Historic Monuments of Mymensingh",
-      "titleEn": "Historic Monuments of Mymensingh",
-      "titleBn": "ময়মনসিংহ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/mymensingh/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/mymensingh/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/mymensingh/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/mymensingh/hist-1.webp",
+      "image": null,
       "name": "Shashi Lodge (Mymensingh Rajbari)",
       "nameEn": "Shashi Lodge (Mymensingh Rajbari)",
       "nameBn": "ময়মনসিংহ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/mymensingh/hist-2.webp",
+      "image": null,
       "name": "Alexander Castle (Lohar Kuthi)",
       "nameEn": "Alexander Castle (Lohar Kuthi)",
       "nameBn": "ময়মনসিংহ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/mymensingh/hist-3.webp",
+      "image": null,
       "name": "Mymensingh Colonial Court & Mint",
       "nameEn": "Mymensingh Colonial Court & Mint",
       "nameBn": "ময়মনসিংহ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/mymensingh/hist-4.webp",
+      "image": null,
       "name": "Mymensingh Archeological Mound",
       "nameEn": "Mymensingh Archeological Mound",
       "nameBn": "ময়মনসিংহ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/mymensingh/hist-5.webp",
+      "image": null,
       "name": "Mymensingh Liberation War Memorial",
       "nameEn": "Mymensingh Liberation War Memorial",
       "nameBn": "ময়মনসিংহ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const MYMENSINGH_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/mymensingh/tour-1.webp",
+      "image": null,
       "name": "Brahmaputra Riverfront & Park",
       "nameEn": "Brahmaputra Riverfront & Park",
       "nameBn": "ময়মনসিংহ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/mymensingh/tour-2.webp",
+      "image": null,
       "name": "Zainul Abedin Art Gallery & BAU Campus",
       "nameEn": "Zainul Abedin Art Gallery & BAU Campus",
       "nameBn": "ময়মনসিংহ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/mymensingh/tour-3.webp",
+      "image": null,
       "name": "Mymensingh Cultural Heritage Museum",
       "nameEn": "Mymensingh Cultural Heritage Museum",
       "nameBn": "ময়মনসিংহ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/mymensingh/tour-4.webp",
+      "image": null,
       "name": "Mymensingh Scenic Lake & Boating Resort",
       "nameEn": "Mymensingh Scenic Lake & Boating Resort",
       "nameBn": "ময়মনসিংহ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const MYMENSINGH_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/mymensingh/tour-5.webp",
+      "image": null,
       "name": "Mymensingh Sunset Hilltop Viewpoint",
       "nameEn": "Mymensingh Sunset Hilltop Viewpoint",
       "nameBn": "ময়মনসিংহ সূর্যাস্ত ভিউপয়েন্ট",

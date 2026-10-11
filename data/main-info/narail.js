@@ -17,7 +17,7 @@ const NARAIL_DATA = {
   "area": "990.23 km²",
   "areaBn": "৯৯০.২৩ বর্গ কি.মি.",
   "pop": "0.8M",
-  "popBn": "০.৮ মিলিয়ন",
+  "popBn": "০.০৮ কোটি",
   "dist": "170 km",
   "distBn": "১৭০ কি.মি.",
   "route": "Via Padma Bridge and Kalna (Madhumati) Bridge expressway (approx. 2.5 - 3 hours).",
@@ -26,63 +26,12 @@ const NARAIL_DATA = {
   "tagline": "Narail (নড়াইল) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Narail (নড়াইল) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "নড়াইল (Narail) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/narail/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/narail/carousel-1.webp",
-      "title": "Narail Heritage & Landscapes",
-      "titleEn": "Narail Heritage & Landscapes",
-      "titleBn": "নড়াইল ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/narail/carousel-2.webp",
-      "title": "Historic Monuments of Narail",
-      "titleEn": "Historic Monuments of Narail",
-      "titleBn": "নড়াইল জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/narail/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/narail/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/narail/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/narail/hist-1.webp",
+      "image": null,
       "name": "SM Sultan Memorial & Art Gallery",
       "nameEn": "SM Sultan Memorial & Art Gallery",
       "nameBn": "নড়াইল প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/narail/hist-2.webp",
+      "image": null,
       "name": "Victoria Collegiate School Historic Building",
       "nameEn": "Victoria Collegiate School Historic Building",
       "nameBn": "নড়াইল কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/narail/hist-3.webp",
+      "image": null,
       "name": "Narail Colonial Court & Mint",
       "nameEn": "Narail Colonial Court & Mint",
       "nameBn": "নড়াইল ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/narail/hist-4.webp",
+      "image": null,
       "name": "Narail Archeological Mound",
       "nameEn": "Narail Archeological Mound",
       "nameBn": "নড়াইল প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/narail/hist-5.webp",
+      "image": null,
       "name": "Narail Liberation War Memorial",
       "nameEn": "Narail Liberation War Memorial",
       "nameBn": "নড়াইল মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const NARAIL_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/narail/tour-1.webp",
+      "image": null,
       "name": "Chitra River & Otter Fishing Hub",
       "nameEn": "Chitra River & Otter Fishing Hub",
       "nameBn": "নড়াইল নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/narail/tour-2.webp",
+      "image": null,
       "name": "Madhumati Bridge Plaza",
       "nameEn": "Madhumati Bridge Plaza",
       "nameBn": "নড়াইল ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/narail/tour-3.webp",
+      "image": null,
       "name": "Narail Cultural Heritage Museum",
       "nameEn": "Narail Cultural Heritage Museum",
       "nameBn": "নড়াইল লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/narail/tour-4.webp",
+      "image": null,
       "name": "Narail Scenic Lake & Boating Resort",
       "nameEn": "Narail Scenic Lake & Boating Resort",
       "nameBn": "নড়াইল মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const NARAIL_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/narail/tour-5.webp",
+      "image": null,
       "name": "Narail Sunset Hilltop Viewpoint",
       "nameEn": "Narail Sunset Hilltop Viewpoint",
       "nameBn": "নড়াইল সূর্যাস্ত ভিউপয়েন্ট",

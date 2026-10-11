@@ -17,7 +17,7 @@ const BOGURA_DATA = {
   "area": "2,898.68 km²",
   "areaBn": "২,৮৯৮.৬৮ বর্গ কি.মি.",
   "pop": "3.7M",
-  "popBn": "৩.৭ মিলিয়ন",
+  "popBn": "০.৩৭ কোটি",
   "dist": "200 km",
   "distBn": "২০০ কি.মি.",
   "route": "Via Jamuna Bridge and Dhaka-Bogura 4-lane Highway N5 (approx. 4.5 hours by bus/train).",
@@ -26,63 +26,12 @@ const BOGURA_DATA = {
   "tagline": "Bogura (বগুড়া) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineEn": "Bogura (বগুড়া) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineBn": "বগুড়া (Bogura) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/bogura/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/bogura/carousel-1.webp",
-      "title": "Bogura Heritage & Landscapes",
-      "titleEn": "Bogura Heritage & Landscapes",
-      "titleBn": "বগুড়া ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rajshahi Division",
-      "subtitleEn": "Panoramic beauty across Rajshahi Division",
-      "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/bogura/carousel-2.webp",
-      "title": "Historic Monuments of Bogura",
-      "titleEn": "Historic Monuments of Bogura",
-      "titleBn": "বগুড়া জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/bogura/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/bogura/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/bogura/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/bogura/hist-1.webp",
+      "image": null,
       "name": "Mahasthangarh (Ancient Pundranagara)",
       "nameEn": "Mahasthangarh (Ancient Pundranagara)",
       "nameBn": "বগুড়া প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/bogura/hist-2.webp",
+      "image": null,
       "name": "Gokul Medh (Behula’s Basor Ghar)",
       "nameEn": "Gokul Medh (Behula’s Basor Ghar)",
       "nameBn": "বগুড়া কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/bogura/hist-3.webp",
+      "image": null,
       "name": "Bogura Colonial Court & Mint",
       "nameEn": "Bogura Colonial Court & Mint",
       "nameBn": "বগুড়া ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/bogura/hist-4.webp",
+      "image": null,
       "name": "Bogura Archeological Mound",
       "nameEn": "Bogura Archeological Mound",
       "nameBn": "বগুড়া প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/bogura/hist-5.webp",
+      "image": null,
       "name": "Bogura Liberation War Memorial",
       "nameEn": "Bogura Liberation War Memorial",
       "nameBn": "বগুড়া মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const BOGURA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/bogura/tour-1.webp",
+      "image": null,
       "name": "Vasu Vihara & Museum",
       "nameEn": "Vasu Vihara & Museum",
       "nameBn": "বগুড়া নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/bogura/tour-2.webp",
+      "image": null,
       "name": "Bogura Sweet Culture",
       "nameEn": "Bogura Sweet Culture",
       "nameBn": "বগুড়া ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/bogura/tour-3.webp",
+      "image": null,
       "name": "Bogura Cultural Heritage Museum",
       "nameEn": "Bogura Cultural Heritage Museum",
       "nameBn": "বগুড়া লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/bogura/tour-4.webp",
+      "image": null,
       "name": "Bogura Scenic Lake & Boating Resort",
       "nameEn": "Bogura Scenic Lake & Boating Resort",
       "nameBn": "বগুড়া মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const BOGURA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/bogura/tour-5.webp",
+      "image": null,
       "name": "Bogura Sunset Hilltop Viewpoint",
       "nameEn": "Bogura Sunset Hilltop Viewpoint",
       "nameBn": "বগুড়া সূর্যাস্ত ভিউপয়েন্ট",

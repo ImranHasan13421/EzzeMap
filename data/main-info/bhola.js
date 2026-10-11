@@ -17,7 +17,7 @@ const BHOLA_DATA = {
   "area": "3,403.48 km²",
   "areaBn": "৩,৪০৩.৪৮ বর্গ কি.মি.",
   "pop": "1.8M",
-  "popBn": "১.৮ মিলিয়ন",
+  "popBn": "০.১৮ কোটি",
   "dist": "250 km",
   "distBn": "২৫০ কি.মি.",
   "route": "Via luxury overnight river launch directly from Sadarghat, or bus to Barishal followed by ferry.",
@@ -26,63 +26,12 @@ const BHOLA_DATA = {
   "tagline": "Bhola (ভোলা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineEn": "Bhola (ভোলা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineBn": "ভোলা (Bhola) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/bhola/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/bhola/carousel-1.webp",
-      "title": "Bhola Heritage & Landscapes",
-      "titleEn": "Bhola Heritage & Landscapes",
-      "titleBn": "ভোলা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Barishal Division",
-      "subtitleEn": "Panoramic beauty across Barishal Division",
-      "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/bhola/carousel-2.webp",
-      "title": "Historic Monuments of Bhola",
-      "titleEn": "Historic Monuments of Bhola",
-      "titleBn": "ভোলা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/bhola/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/bhola/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/bhola/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/bhola/hist-1.webp",
+      "image": null,
       "name": "Miah Bari Mosque",
       "nameEn": "Miah Bari Mosque",
       "nameBn": "ভোলা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/bhola/hist-2.webp",
+      "image": null,
       "name": "Bir Sreshtho Mostafa Kamal Memorial",
       "nameEn": "Bir Sreshtho Mostafa Kamal Memorial",
       "nameBn": "ভোলা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/bhola/hist-3.webp",
+      "image": null,
       "name": "Bhola Colonial Court & Mint",
       "nameEn": "Bhola Colonial Court & Mint",
       "nameBn": "ভোলা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/bhola/hist-4.webp",
+      "image": null,
       "name": "Bhola Archeological Mound",
       "nameEn": "Bhola Archeological Mound",
       "nameBn": "ভোলা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/bhola/hist-5.webp",
+      "image": null,
       "name": "Bhola Liberation War Memorial",
       "nameEn": "Bhola Liberation War Memorial",
       "nameBn": "ভোলা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const BHOLA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/bhola/tour-1.webp",
+      "image": null,
       "name": "Monpura Island",
       "nameEn": "Monpura Island",
       "nameBn": "ভোলা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/bhola/tour-2.webp",
+      "image": null,
       "name": "Jacob Watch Tower (Char Fasson)",
       "nameEn": "Jacob Watch Tower (Char Fasson)",
       "nameBn": "ভোলা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/bhola/tour-3.webp",
+      "image": null,
       "name": "Bhola Cultural Heritage Museum",
       "nameEn": "Bhola Cultural Heritage Museum",
       "nameBn": "ভোলা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/bhola/tour-4.webp",
+      "image": null,
       "name": "Bhola Scenic Lake & Boating Resort",
       "nameEn": "Bhola Scenic Lake & Boating Resort",
       "nameBn": "ভোলা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const BHOLA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/bhola/tour-5.webp",
+      "image": null,
       "name": "Bhola Sunset Hilltop Viewpoint",
       "nameEn": "Bhola Sunset Hilltop Viewpoint",
       "nameBn": "ভোলা সূর্যাস্ত ভিউপয়েন্ট",

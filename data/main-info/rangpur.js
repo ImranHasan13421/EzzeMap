@@ -17,7 +17,7 @@ const RANGPUR_DATA = {
   "area": "2,370.45 km²",
   "areaBn": "২,৩৭০.৪৫ বর্গ কি.মি.",
   "pop": "3.1M",
-  "popBn": "৩.১ মিলিয়ন",
+  "popBn": "০.৩১ কোটি",
   "dist": "300 km",
   "distBn": "৩০০ কি.মি.",
   "route": "Via Jamuna Bridge 4-lane Highway N5 (approx. 6 hrs), Rangpur Express train, or 45-min flight to Saidpur.",
@@ -26,63 +26,12 @@ const RANGPUR_DATA = {
   "tagline": "Rangpur (রংপুর) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineEn": "Rangpur (রংপুর) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineBn": "রংপুর (Rangpur) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/rangpur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/rangpur/carousel-1.webp",
-      "title": "Rangpur Heritage & Landscapes",
-      "titleEn": "Rangpur Heritage & Landscapes",
-      "titleBn": "রংপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rangpur Division",
-      "subtitleEn": "Panoramic beauty across Rangpur Division",
-      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/rangpur/carousel-2.webp",
-      "title": "Historic Monuments of Rangpur",
-      "titleEn": "Historic Monuments of Rangpur",
-      "titleBn": "রংপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/rangpur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/rangpur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/rangpur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/rangpur/hist-1.webp",
+      "image": null,
       "name": "Tajhat Palace",
       "nameEn": "Tajhat Palace",
       "nameBn": "রংপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/rangpur/hist-2.webp",
+      "image": null,
       "name": "Carmichael College Historic Campus",
       "nameEn": "Carmichael College Historic Campus",
       "nameBn": "রংপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/rangpur/hist-3.webp",
+      "image": null,
       "name": "Rangpur Colonial Court & Mint",
       "nameEn": "Rangpur Colonial Court & Mint",
       "nameBn": "রংপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/rangpur/hist-4.webp",
+      "image": null,
       "name": "Rangpur Archeological Mound",
       "nameEn": "Rangpur Archeological Mound",
       "nameBn": "রংপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/rangpur/hist-5.webp",
+      "image": null,
       "name": "Rangpur Liberation War Memorial",
       "nameEn": "Rangpur Liberation War Memorial",
       "nameBn": "রংপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const RANGPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/rangpur/tour-1.webp",
+      "image": null,
       "name": "Chikli Beel Water Leisure",
       "nameEn": "Chikli Beel Water Leisure",
       "nameBn": "রংপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/rangpur/tour-2.webp",
+      "image": null,
       "name": "Vinnya Jagat Eco Amusement Park",
       "nameEn": "Vinnya Jagat Eco Amusement Park",
       "nameBn": "রংপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/rangpur/tour-3.webp",
+      "image": null,
       "name": "Rangpur Cultural Heritage Museum",
       "nameEn": "Rangpur Cultural Heritage Museum",
       "nameBn": "রংপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/rangpur/tour-4.webp",
+      "image": null,
       "name": "Rangpur Scenic Lake & Boating Resort",
       "nameEn": "Rangpur Scenic Lake & Boating Resort",
       "nameBn": "রংপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const RANGPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/rangpur/tour-5.webp",
+      "image": null,
       "name": "Rangpur Sunset Hilltop Viewpoint",
       "nameEn": "Rangpur Sunset Hilltop Viewpoint",
       "nameBn": "রংপুর সূর্যাস্ত ভিউপয়েন্ট",

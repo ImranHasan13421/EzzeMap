@@ -18,7 +18,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,463.60 km²",
     "areaBn": "১,৪৬৩.৬০ বর্গ কি.মি.",
     "pop": "14.7M",
-    "popBn": "১৪.৭ মিলিয়ন",
+    "popBn": "১.৪৭ কোটি",
     "dist": "0 km",
     "distBn": "০ কি.মি.",
     "route": "Central confluence of national transportation. Seamlessly connected to all 8 divisions via prime national expressways (N1, N2, N3, N5), Padma Bridge corridor, high-frequency railway networks from Kamalapur, inland passenger launches at Sadarghat terminal, and direct aviation routes via Hazrat Shahjalal International Airport.",
@@ -270,7 +270,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,072.72 km²",
     "areaBn": "২,০৭২.৭২ বর্গ কি.মি.",
     "pop": "1.9M",
-    "popBn": "১.৯ মিলিয়ন",
+    "popBn": "০.১৯ কোটি",
     "dist": "138 km",
     "distBn": "১৩৮ কি.মি.",
     "route": "Via Dhaka-Mawa Expressway and Padma Bridge (approx. 2.5 hours by car/bus).",
@@ -279,63 +279,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Faridpur (ফরিদপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Faridpur (ফরিদপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "ফরিদপুর (Faridpur) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/faridpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/faridpur/carousel-1.webp",
-        "title": "Faridpur Heritage & Landscapes",
-        "titleEn": "Faridpur Heritage & Landscapes",
-        "titleBn": "ফরিদপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/faridpur/carousel-2.webp",
-        "title": "Historic Monuments of Faridpur",
-        "titleEn": "Historic Monuments of Faridpur",
-        "titleBn": "ফরিদপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/faridpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/faridpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/faridpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/faridpur/hist-1.webp",
+        "image": null,
         "name": "Bhatpara Nilkuthi",
         "nameEn": "Bhatpara Nilkuthi",
         "nameBn": "ফরিদপুর প্রাচীন রাজবাড়ি",
@@ -352,7 +301,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/faridpur/hist-2.webp",
+        "image": null,
         "name": "Kanaipur Zamindar Bari",
         "nameEn": "Kanaipur Zamindar Bari",
         "nameBn": "ফরিদপুর কেন্দ্রীয় জামে মসজিদ",
@@ -369,7 +318,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/faridpur/hist-3.webp",
+        "image": null,
         "name": "Faridpur Colonial Court & Mint",
         "nameEn": "Faridpur Colonial Court & Mint",
         "nameBn": "ফরিদপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -386,7 +335,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/faridpur/hist-4.webp",
+        "image": null,
         "name": "Faridpur Archeological Mound",
         "nameEn": "Faridpur Archeological Mound",
         "nameBn": "ফরিদপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -403,7 +352,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/faridpur/hist-5.webp",
+        "image": null,
         "name": "Faridpur Liberation War Memorial",
         "nameEn": "Faridpur Liberation War Memorial",
         "nameBn": "ফরিদপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -422,7 +371,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/faridpur/tour-1.webp",
+        "image": null,
         "name": "Padma River Embankment",
         "nameEn": "Padma River Embankment",
         "nameBn": "ফরিদপুর নদী তীরবর্তী বাঁধ",
@@ -439,7 +388,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/faridpur/tour-2.webp",
+        "image": null,
         "name": "Palli Kabi Jasimuddin Homestead",
         "nameEn": "Palli Kabi Jasimuddin Homestead",
         "nameBn": "ফরিদপুর ইকোপার্ক ও বনাঞ্চল",
@@ -456,7 +405,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/faridpur/tour-3.webp",
+        "image": null,
         "name": "Faridpur Cultural Heritage Museum",
         "nameEn": "Faridpur Cultural Heritage Museum",
         "nameBn": "ফরিদপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -473,7 +422,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/faridpur/tour-4.webp",
+        "image": null,
         "name": "Faridpur Scenic Lake & Boating Resort",
         "nameEn": "Faridpur Scenic Lake & Boating Resort",
         "nameBn": "ফরিদপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -490,7 +439,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/faridpur/tour-5.webp",
+        "image": null,
         "name": "Faridpur Sunset Hilltop Viewpoint",
         "nameEn": "Faridpur Sunset Hilltop Viewpoint",
         "nameBn": "ফরিদপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -522,7 +471,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,741.53 km²",
     "areaBn": "১,৭৪১.৫৩ বর্গ কি.মি.",
     "pop": "3.8M",
-    "popBn": "৩.৮ মিলিয়ন",
+    "popBn": "০.৩৮ কোটি",
     "dist": "35 km",
     "distBn": "৩৫ কি.মি.",
     "route": "Via Dhaka-Mymensingh Highway N3 or commuter trains from Kamalapur (approx. 1 hour).",
@@ -531,63 +480,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Gazipur (গাজীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Gazipur (গাজীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "গাজীপুর (Gazipur) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/gazipur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/gazipur/carousel-1.webp",
-        "title": "Gazipur Heritage & Landscapes",
-        "titleEn": "Gazipur Heritage & Landscapes",
-        "titleBn": "গাজীপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/gazipur/carousel-2.webp",
-        "title": "Historic Monuments of Gazipur",
-        "titleEn": "Historic Monuments of Gazipur",
-        "titleBn": "গাজীপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/gazipur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/gazipur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/gazipur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/gazipur/hist-1.webp",
+        "image": null,
         "name": "Bhawal Rajbari",
         "nameEn": "Bhawal Rajbari",
         "nameBn": "গাজীপুর প্রাচীন রাজবাড়ি",
@@ -604,7 +502,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/gazipur/hist-2.webp",
+        "image": null,
         "name": "Tongi Mir Jumla Bridge",
         "nameEn": "Tongi Mir Jumla Bridge",
         "nameBn": "গাজীপুর কেন্দ্রীয় জামে মসজিদ",
@@ -621,7 +519,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/gazipur/hist-3.webp",
+        "image": null,
         "name": "Gazipur Colonial Court & Mint",
         "nameEn": "Gazipur Colonial Court & Mint",
         "nameBn": "গাজীপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -638,7 +536,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/gazipur/hist-4.webp",
+        "image": null,
         "name": "Gazipur Archeological Mound",
         "nameEn": "Gazipur Archeological Mound",
         "nameBn": "গাজীপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -655,7 +553,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/gazipur/hist-5.webp",
+        "image": null,
         "name": "Gazipur Liberation War Memorial",
         "nameEn": "Gazipur Liberation War Memorial",
         "nameBn": "গাজীপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -674,7 +572,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/gazipur/tour-1.webp",
+        "image": null,
         "name": "Bhawal National Park",
         "nameEn": "Bhawal National Park",
         "nameBn": "গাজীপুর নদী তীরবর্তী বাঁধ",
@@ -691,7 +589,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/gazipur/tour-2.webp",
+        "image": null,
         "name": "Bangabandhu Safari Park",
         "nameEn": "Bangabandhu Safari Park",
         "nameBn": "গাজীপুর ইকোপার্ক ও বনাঞ্চল",
@@ -708,7 +606,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/gazipur/tour-3.webp",
+        "image": null,
         "name": "Gazipur Cultural Heritage Museum",
         "nameEn": "Gazipur Cultural Heritage Museum",
         "nameBn": "গাজীপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -725,7 +623,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/gazipur/tour-4.webp",
+        "image": null,
         "name": "Gazipur Scenic Lake & Boating Resort",
         "nameEn": "Gazipur Scenic Lake & Boating Resort",
         "nameBn": "গাজীপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -742,7 +640,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/gazipur/tour-5.webp",
+        "image": null,
         "name": "Gazipur Sunset Hilltop Viewpoint",
         "nameEn": "Gazipur Sunset Hilltop Viewpoint",
         "nameBn": "গাজীপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -774,7 +672,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,489.92 km²",
     "areaBn": "১,৪৮৯.৯২ বর্গ কি.মি.",
     "pop": "1.2M",
-    "popBn": "১.২ মিলিয়ন",
+    "popBn": "০.১২ কোটি",
     "dist": "160 km",
     "distBn": "১৬০ কি.মি.",
     "route": "Via Padma Bridge and Dhaka-Khulna Highway N805 (approx. 2.5 to 3 hours).",
@@ -783,63 +681,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Gopalganj (গোপালগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Gopalganj (গোপালগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "গোপালগঞ্জ (Gopalganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/gopalganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/gopalganj/carousel-1.webp",
-        "title": "Gopalganj Heritage & Landscapes",
-        "titleEn": "Gopalganj Heritage & Landscapes",
-        "titleBn": "গোপালগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/gopalganj/carousel-2.webp",
-        "title": "Historic Monuments of Gopalganj",
-        "titleEn": "Historic Monuments of Gopalganj",
-        "titleBn": "গোপালগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/gopalganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/gopalganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/gopalganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/gopalganj/hist-1.webp",
+        "image": null,
         "name": "Tungipara National Mausoleum",
         "nameEn": "Tungipara National Mausoleum",
         "nameBn": "গোপালগঞ্জ প্রাচীন রাজবাড়ি",
@@ -856,7 +703,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/gopalganj/hist-2.webp",
+        "image": null,
         "name": "Ulpur Zamindar Bari",
         "nameEn": "Ulpur Zamindar Bari",
         "nameBn": "গোপালগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -873,7 +720,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/gopalganj/hist-3.webp",
+        "image": null,
         "name": "Gopalganj Colonial Court & Mint",
         "nameEn": "Gopalganj Colonial Court & Mint",
         "nameBn": "গোপালগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -890,7 +737,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/gopalganj/hist-4.webp",
+        "image": null,
         "name": "Gopalganj Archeological Mound",
         "nameEn": "Gopalganj Archeological Mound",
         "nameBn": "গোপালগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -907,7 +754,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/gopalganj/hist-5.webp",
+        "image": null,
         "name": "Gopalganj Liberation War Memorial",
         "nameEn": "Gopalganj Liberation War Memorial",
         "nameBn": "গোপালগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -926,7 +773,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/gopalganj/tour-1.webp",
+        "image": null,
         "name": "Madhupati Wetland",
         "nameEn": "Madhupati Wetland",
         "nameBn": "গোপালগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -943,7 +790,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/gopalganj/tour-2.webp",
+        "image": null,
         "name": "Barnal Baor",
         "nameEn": "Barnal Baor",
         "nameBn": "গোপালগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -960,7 +807,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/gopalganj/tour-3.webp",
+        "image": null,
         "name": "Gopalganj Cultural Heritage Museum",
         "nameEn": "Gopalganj Cultural Heritage Museum",
         "nameBn": "গোপালগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -977,7 +824,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/gopalganj/tour-4.webp",
+        "image": null,
         "name": "Gopalganj Scenic Lake & Boating Resort",
         "nameEn": "Gopalganj Scenic Lake & Boating Resort",
         "nameBn": "গোপালগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -994,7 +841,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/gopalganj/tour-5.webp",
+        "image": null,
         "name": "Gopalganj Sunset Hilltop Viewpoint",
         "nameEn": "Gopalganj Sunset Hilltop Viewpoint",
         "nameBn": "গোপালগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -1026,7 +873,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,688.86 km²",
     "areaBn": "২,৬৮৮.৮৬ বর্গ কি.মি.",
     "pop": "3.1M",
-    "popBn": "৩.১ মিলিয়ন",
+    "popBn": "০.৩১ কোটি",
     "dist": "135 km",
     "distBn": "১৩৫ কি.মি.",
     "route": "Via Dhaka-Sylhet Highway N2 or Kishoreganj Express train from Kamalapur (3-4 hrs).",
@@ -1035,63 +882,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Kishoreganj (কিশোরগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Kishoreganj (কিশোরগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "কিশোরগঞ্জ (Kishoreganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/kishoreganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/kishoreganj/carousel-1.webp",
-        "title": "Kishoreganj Heritage & Landscapes",
-        "titleEn": "Kishoreganj Heritage & Landscapes",
-        "titleBn": "কিশোরগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/kishoreganj/carousel-2.webp",
-        "title": "Historic Monuments of Kishoreganj",
-        "titleEn": "Historic Monuments of Kishoreganj",
-        "titleBn": "কিশোরগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/kishoreganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/kishoreganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/kishoreganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/kishoreganj/hist-1.webp",
+        "image": null,
         "name": "Shah Mahmud Mosque (Egarasindhur)",
         "nameEn": "Shah Mahmud Mosque (Egarasindhur)",
         "nameBn": "কিশোরগঞ্জ প্রাচীন রাজবাড়ি",
@@ -1108,7 +904,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/kishoreganj/hist-2.webp",
+        "image": null,
         "name": "Jangalbari Fort",
         "nameEn": "Jangalbari Fort",
         "nameBn": "কিশোরগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -1125,7 +921,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/kishoreganj/hist-3.webp",
+        "image": null,
         "name": "Kishoreganj Colonial Court & Mint",
         "nameEn": "Kishoreganj Colonial Court & Mint",
         "nameBn": "কিশোরগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -1142,7 +938,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/kishoreganj/hist-4.webp",
+        "image": null,
         "name": "Kishoreganj Archeological Mound",
         "nameEn": "Kishoreganj Archeological Mound",
         "nameBn": "কিশোরগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -1159,7 +955,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/kishoreganj/hist-5.webp",
+        "image": null,
         "name": "Kishoreganj Liberation War Memorial",
         "nameEn": "Kishoreganj Liberation War Memorial",
         "nameBn": "কিশোরগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -1178,7 +974,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/kishoreganj/tour-1.webp",
+        "image": null,
         "name": "Nikli & Mithamoin Haor",
         "nameEn": "Nikli & Mithamoin Haor",
         "nameBn": "কিশোরগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -1195,7 +991,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/kishoreganj/tour-2.webp",
+        "image": null,
         "name": "Chandrabati Shiva Temple",
         "nameEn": "Chandrabati Shiva Temple",
         "nameBn": "কিশোরগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -1212,7 +1008,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/kishoreganj/tour-3.webp",
+        "image": null,
         "name": "Kishoreganj Cultural Heritage Museum",
         "nameEn": "Kishoreganj Cultural Heritage Museum",
         "nameBn": "কিশোরগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -1229,7 +1025,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/kishoreganj/tour-4.webp",
+        "image": null,
         "name": "Kishoreganj Scenic Lake & Boating Resort",
         "nameEn": "Kishoreganj Scenic Lake & Boating Resort",
         "nameBn": "কিশোরগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -1246,7 +1042,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/kishoreganj/tour-5.webp",
+        "image": null,
         "name": "Kishoreganj Sunset Hilltop Viewpoint",
         "nameEn": "Kishoreganj Sunset Hilltop Viewpoint",
         "nameBn": "কিশোরগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -1278,7 +1074,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,144.96 km²",
     "areaBn": "১,১৪৪.৯৬ বর্গ কি.মি.",
     "pop": "1.3M",
-    "popBn": "১.৩ মিলিয়ন",
+    "popBn": "০.১৩ কোটি",
     "dist": "90 km",
     "distBn": "৯০ কি.মি.",
     "route": "Directly accessible via Dhaka-Mawa Expressway across Padma Bridge (1.5 - 2 hours).",
@@ -1287,63 +1083,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Madaripur (মাদারীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Madaripur (মাদারীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "মাদারীপুর (Madaripur) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/madaripur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/madaripur/carousel-1.webp",
-        "title": "Madaripur Heritage & Landscapes",
-        "titleEn": "Madaripur Heritage & Landscapes",
-        "titleBn": "মাদারীপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/madaripur/carousel-2.webp",
-        "title": "Historic Monuments of Madaripur",
-        "titleEn": "Historic Monuments of Madaripur",
-        "titleBn": "মাদারীপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/madaripur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/madaripur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/madaripur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/madaripur/hist-1.webp",
+        "image": null,
         "name": "Raja Ram Temple",
         "nameEn": "Raja Ram Temple",
         "nameBn": "মাদারীপুর প্রাচীন রাজবাড়ি",
@@ -1360,7 +1105,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/madaripur/hist-2.webp",
+        "image": null,
         "name": "Mithapur Zamindar Bari",
         "nameEn": "Mithapur Zamindar Bari",
         "nameBn": "মাদারীপুর কেন্দ্রীয় জামে মসজিদ",
@@ -1377,7 +1122,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/madaripur/hist-3.webp",
+        "image": null,
         "name": "Madaripur Colonial Court & Mint",
         "nameEn": "Madaripur Colonial Court & Mint",
         "nameBn": "মাদারীপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -1394,7 +1139,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/madaripur/hist-4.webp",
+        "image": null,
         "name": "Madaripur Archeological Mound",
         "nameEn": "Madaripur Archeological Mound",
         "nameBn": "মাদারীপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -1411,7 +1156,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/madaripur/hist-5.webp",
+        "image": null,
         "name": "Madaripur Liberation War Memorial",
         "nameEn": "Madaripur Liberation War Memorial",
         "nameBn": "মাদারীপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -1430,7 +1175,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/madaripur/tour-1.webp",
+        "image": null,
         "name": "Shakuni Lake & Eco Walkway",
         "nameEn": "Shakuni Lake & Eco Walkway",
         "nameBn": "মাদারীপুর নদী তীরবর্তী বাঁধ",
@@ -1447,7 +1192,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/madaripur/tour-2.webp",
+        "image": null,
         "name": "Arial Khan Riverside",
         "nameEn": "Arial Khan Riverside",
         "nameBn": "মাদারীপুর ইকোপার্ক ও বনাঞ্চল",
@@ -1464,7 +1209,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/madaripur/tour-3.webp",
+        "image": null,
         "name": "Madaripur Cultural Heritage Museum",
         "nameEn": "Madaripur Cultural Heritage Museum",
         "nameBn": "মাদারীপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -1481,7 +1226,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/madaripur/tour-4.webp",
+        "image": null,
         "name": "Madaripur Scenic Lake & Boating Resort",
         "nameEn": "Madaripur Scenic Lake & Boating Resort",
         "nameBn": "মাদারীপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -1498,7 +1243,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/madaripur/tour-5.webp",
+        "image": null,
         "name": "Madaripur Sunset Hilltop Viewpoint",
         "nameEn": "Madaripur Sunset Hilltop Viewpoint",
         "nameBn": "মাদারীপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -1530,7 +1275,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,379.00 km²",
     "areaBn": "১,৩৭৯.০০ বর্গ কি.মি.",
     "pop": "1.4M",
-    "popBn": "১.৪ মিলিয়ন",
+    "popBn": "০.১৪ কোটি",
     "dist": "65 km",
     "distBn": "৬৫ কি.মি.",
     "route": "Via Dhaka-Aricha Highway N5 (approx. 1.5 hours by direct bus or car).",
@@ -1539,63 +1284,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Manikganj (মানিকগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Manikganj (মানিকগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "মানিকগঞ্জ (Manikganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/manikganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/manikganj/carousel-1.webp",
-        "title": "Manikganj Heritage & Landscapes",
-        "titleEn": "Manikganj Heritage & Landscapes",
-        "titleBn": "মানিকগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/manikganj/carousel-2.webp",
-        "title": "Historic Monuments of Manikganj",
-        "titleEn": "Historic Monuments of Manikganj",
-        "titleBn": "মানিকগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/manikganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/manikganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/manikganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/manikganj/hist-1.webp",
+        "image": null,
         "name": "Baliati Palace",
         "nameEn": "Baliati Palace",
         "nameBn": "মানিকগঞ্জ প্রাচীন রাজবাড়ি",
@@ -1612,7 +1306,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/manikganj/hist-2.webp",
+        "image": null,
         "name": "Teota Zamindar Palace",
         "nameEn": "Teota Zamindar Palace",
         "nameBn": "মানিকগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -1629,7 +1323,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/manikganj/hist-3.webp",
+        "image": null,
         "name": "Manikganj Colonial Court & Mint",
         "nameEn": "Manikganj Colonial Court & Mint",
         "nameBn": "মানিকগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -1646,7 +1340,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/manikganj/hist-4.webp",
+        "image": null,
         "name": "Manikganj Archeological Mound",
         "nameEn": "Manikganj Archeological Mound",
         "nameBn": "মানিকগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -1663,7 +1357,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/manikganj/hist-5.webp",
+        "image": null,
         "name": "Manikganj Liberation War Memorial",
         "nameEn": "Manikganj Liberation War Memorial",
         "nameBn": "মানিকগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -1682,7 +1376,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/manikganj/tour-1.webp",
+        "image": null,
         "name": "Aricha Ghat",
         "nameEn": "Aricha Ghat",
         "nameBn": "মানিকগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -1699,7 +1393,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/manikganj/tour-2.webp",
+        "image": null,
         "name": "Dhaleshwari Waterfront",
         "nameEn": "Dhaleshwari Waterfront",
         "nameBn": "মানিকগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -1716,7 +1410,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/manikganj/tour-3.webp",
+        "image": null,
         "name": "Manikganj Cultural Heritage Museum",
         "nameEn": "Manikganj Cultural Heritage Museum",
         "nameBn": "মানিকগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -1733,7 +1427,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/manikganj/tour-4.webp",
+        "image": null,
         "name": "Manikganj Scenic Lake & Boating Resort",
         "nameEn": "Manikganj Scenic Lake & Boating Resort",
         "nameBn": "মানিকগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -1750,7 +1444,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/manikganj/tour-5.webp",
+        "image": null,
         "name": "Manikganj Sunset Hilltop Viewpoint",
         "nameEn": "Manikganj Sunset Hilltop Viewpoint",
         "nameBn": "মানিকগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -1782,7 +1476,7 @@ const LOCAL_DISTRICTS = [
     "area": "954.96 km²",
     "areaBn": "৯৫৪.৯৬ বর্গ কি.মি.",
     "pop": "1.5M",
-    "popBn": "১.৫ মিলিয়ন",
+    "popBn": "০.১৫ কোটি",
     "dist": "30 km",
     "distBn": "৩০ কি.মি.",
     "route": "Via Dhaka-Mawa Expressway N8 or Muktarpur Bridge (approx. 45 - 60 minutes).",
@@ -1791,63 +1485,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Munshiganj (মুন্সীগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Munshiganj (মুন্সীগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "মুন্সীগঞ্জ (Munshiganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/munshiganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/munshiganj/carousel-1.webp",
-        "title": "Munshiganj Heritage & Landscapes",
-        "titleEn": "Munshiganj Heritage & Landscapes",
-        "titleBn": "মুন্সীগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/munshiganj/carousel-2.webp",
-        "title": "Historic Monuments of Munshiganj",
-        "titleEn": "Historic Monuments of Munshiganj",
-        "titleBn": "মুন্সীগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/munshiganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/munshiganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/munshiganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/munshiganj/hist-1.webp",
+        "image": null,
         "name": "Idrakpur Fort",
         "nameEn": "Idrakpur Fort",
         "nameBn": "মুন্সীগঞ্জ প্রাচীন রাজবাড়ি",
@@ -1864,7 +1507,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/munshiganj/hist-2.webp",
+        "image": null,
         "name": "Baba Adam Mosque",
         "nameEn": "Baba Adam Mosque",
         "nameBn": "মুন্সীগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -1881,7 +1524,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/munshiganj/hist-3.webp",
+        "image": null,
         "name": "Munshiganj Colonial Court & Mint",
         "nameEn": "Munshiganj Colonial Court & Mint",
         "nameBn": "মুন্সীগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -1898,7 +1541,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/munshiganj/hist-4.webp",
+        "image": null,
         "name": "Munshiganj Archeological Mound",
         "nameEn": "Munshiganj Archeological Mound",
         "nameBn": "মুন্সীগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -1915,7 +1558,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/munshiganj/hist-5.webp",
+        "image": null,
         "name": "Munshiganj Liberation War Memorial",
         "nameEn": "Munshiganj Liberation War Memorial",
         "nameBn": "মুন্সীগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -1934,7 +1577,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/munshiganj/tour-1.webp",
+        "image": null,
         "name": "Padma Bridge North Bank",
         "nameEn": "Padma Bridge North Bank",
         "nameBn": "মুন্সীগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -1951,7 +1594,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/munshiganj/tour-2.webp",
+        "image": null,
         "name": "Mawa Ferry Fish Market",
         "nameEn": "Mawa Ferry Fish Market",
         "nameBn": "মুন্সীগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -1968,7 +1611,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/munshiganj/tour-3.webp",
+        "image": null,
         "name": "Munshiganj Cultural Heritage Museum",
         "nameEn": "Munshiganj Cultural Heritage Museum",
         "nameBn": "মুন্সীগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -1985,7 +1628,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/munshiganj/tour-4.webp",
+        "image": null,
         "name": "Munshiganj Scenic Lake & Boating Resort",
         "nameEn": "Munshiganj Scenic Lake & Boating Resort",
         "nameBn": "মুন্সীগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -2002,7 +1645,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/munshiganj/tour-5.webp",
+        "image": null,
         "name": "Munshiganj Sunset Hilltop Viewpoint",
         "nameEn": "Munshiganj Sunset Hilltop Viewpoint",
         "nameBn": "মুন্সীগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -2034,7 +1677,7 @@ const LOCAL_DISTRICTS = [
     "area": "759.57 km²",
     "areaBn": "৭৫৯.৫৭ বর্গ কি.মি.",
     "pop": "3.9M",
-    "popBn": "৩.৯ মিলিয়ন",
+    "popBn": "০.৩৯ কোটি",
     "dist": "20 km",
     "distBn": "২০ কি.মি.",
     "route": "Via Dhaka-Chittagong Highway N1 or Dhaka-Narayanganj commuter train (30 minutes).",
@@ -2043,63 +1686,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Narayanganj (নারায়ণগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Narayanganj (নারায়ণগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "নারায়ণগঞ্জ (Narayanganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/narayanganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/narayanganj/carousel-1.webp",
-        "title": "Narayanganj Heritage & Landscapes",
-        "titleEn": "Narayanganj Heritage & Landscapes",
-        "titleBn": "নারায়ণগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/narayanganj/carousel-2.webp",
-        "title": "Historic Monuments of Narayanganj",
-        "titleEn": "Historic Monuments of Narayanganj",
-        "titleBn": "নারায়ণগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/narayanganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/narayanganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/narayanganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/narayanganj/hist-1.webp",
+        "image": null,
         "name": "Sonargaon Panam City",
         "nameEn": "Sonargaon Panam City",
         "nameBn": "নারায়ণগঞ্জ প্রাচীন রাজবাড়ি",
@@ -2116,7 +1708,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/narayanganj/hist-2.webp",
+        "image": null,
         "name": "Hajiganj & Sonakanda Forts",
         "nameEn": "Hajiganj & Sonakanda Forts",
         "nameBn": "নারায়ণগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -2133,7 +1725,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/narayanganj/hist-3.webp",
+        "image": null,
         "name": "Narayanganj Colonial Court & Mint",
         "nameEn": "Narayanganj Colonial Court & Mint",
         "nameBn": "নারায়ণগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -2150,7 +1742,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/narayanganj/hist-4.webp",
+        "image": null,
         "name": "Narayanganj Archeological Mound",
         "nameEn": "Narayanganj Archeological Mound",
         "nameBn": "নারায়ণগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -2167,7 +1759,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/narayanganj/hist-5.webp",
+        "image": null,
         "name": "Narayanganj Liberation War Memorial",
         "nameEn": "Narayanganj Liberation War Memorial",
         "nameBn": "নারায়ণগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -2186,7 +1778,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/narayanganj/tour-1.webp",
+        "image": null,
         "name": "Folk Art & Craft Museum",
         "nameEn": "Folk Art & Craft Museum",
         "nameBn": "নারায়ণগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -2203,7 +1795,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/narayanganj/tour-2.webp",
+        "image": null,
         "name": "Murapara Rajbari",
         "nameEn": "Murapara Rajbari",
         "nameBn": "নারায়ণগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -2220,7 +1812,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/narayanganj/tour-3.webp",
+        "image": null,
         "name": "Narayanganj Cultural Heritage Museum",
         "nameEn": "Narayanganj Cultural Heritage Museum",
         "nameBn": "নারায়ণগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -2237,7 +1829,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/narayanganj/tour-4.webp",
+        "image": null,
         "name": "Narayanganj Scenic Lake & Boating Resort",
         "nameEn": "Narayanganj Scenic Lake & Boating Resort",
         "nameBn": "নারায়ণগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -2254,7 +1846,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/narayanganj/tour-5.webp",
+        "image": null,
         "name": "Narayanganj Sunset Hilltop Viewpoint",
         "nameEn": "Narayanganj Sunset Hilltop Viewpoint",
         "nameBn": "নারায়ণগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -2286,7 +1878,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,140.76 km²",
     "areaBn": "১,১৪০.৭৬ বর্গ কি.মি.",
     "pop": "2.5M",
-    "popBn": "২.৫ মিলিয়ন",
+    "popBn": "০.২৫ কোটি",
     "dist": "50 km",
     "distBn": "৫০ কি.মি.",
     "route": "Via Dhaka-Sylhet Highway N2 or intercity trains heading to Kishoreganj/Sylhet (1-1.5 hrs).",
@@ -2295,63 +1887,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Narsingdi (নরসিংদী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Narsingdi (নরসিংদী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "নরসিংদী (Narsingdi) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/narsingdi/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/narsingdi/carousel-1.webp",
-        "title": "Narsingdi Heritage & Landscapes",
-        "titleEn": "Narsingdi Heritage & Landscapes",
-        "titleBn": "নরসিংদী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/narsingdi/carousel-2.webp",
-        "title": "Historic Monuments of Narsingdi",
-        "titleEn": "Historic Monuments of Narsingdi",
-        "titleBn": "নরসিংদী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/narsingdi/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/narsingdi/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/narsingdi/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/narsingdi/hist-1.webp",
+        "image": null,
         "name": "Wari-Bateshwar Ancient City",
         "nameEn": "Wari-Bateshwar Ancient City",
         "nameBn": "নরসিংদী প্রাচীন রাজবাড়ি",
@@ -2368,7 +1909,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/narsingdi/hist-2.webp",
+        "image": null,
         "name": "Parulia Shahi Mosque",
         "nameEn": "Parulia Shahi Mosque",
         "nameBn": "নরসিংদী কেন্দ্রীয় জামে মসজিদ",
@@ -2385,7 +1926,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/narsingdi/hist-3.webp",
+        "image": null,
         "name": "Narsingdi Colonial Court & Mint",
         "nameEn": "Narsingdi Colonial Court & Mint",
         "nameBn": "নরসিংদী ঔপনিবেশিক আদালত ও ভবন",
@@ -2402,7 +1943,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/narsingdi/hist-4.webp",
+        "image": null,
         "name": "Narsingdi Archeological Mound",
         "nameEn": "Narsingdi Archeological Mound",
         "nameBn": "নরসিংদী প্রত্নতাত্ত্বিক ঢিবি",
@@ -2419,7 +1960,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/narsingdi/hist-5.webp",
+        "image": null,
         "name": "Narsingdi Liberation War Memorial",
         "nameEn": "Narsingdi Liberation War Memorial",
         "nameBn": "নরসিংদী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -2438,7 +1979,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/narsingdi/tour-1.webp",
+        "image": null,
         "name": "Dream Holiday Park",
         "nameEn": "Dream Holiday Park",
         "nameBn": "নরসিংদী নদী তীরবর্তী বাঁধ",
@@ -2455,7 +1996,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/narsingdi/tour-2.webp",
+        "image": null,
         "name": "Shitalakshya River Cruise",
         "nameEn": "Shitalakshya River Cruise",
         "nameBn": "নরসিংদী ইকোপার্ক ও বনাঞ্চল",
@@ -2472,7 +2013,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/narsingdi/tour-3.webp",
+        "image": null,
         "name": "Narsingdi Cultural Heritage Museum",
         "nameEn": "Narsingdi Cultural Heritage Museum",
         "nameBn": "নরসিংদী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -2489,7 +2030,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/narsingdi/tour-4.webp",
+        "image": null,
         "name": "Narsingdi Scenic Lake & Boating Resort",
         "nameEn": "Narsingdi Scenic Lake & Boating Resort",
         "nameBn": "নরসিংদী মনোরম হ্রদ ও রিসোর্ট",
@@ -2506,7 +2047,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/narsingdi/tour-5.webp",
+        "image": null,
         "name": "Narsingdi Sunset Hilltop Viewpoint",
         "nameEn": "Narsingdi Sunset Hilltop Viewpoint",
         "nameBn": "নরসিংদী সূর্যাস্ত ভিউপয়েন্ট",
@@ -2538,7 +2079,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,118.80 km²",
     "areaBn": "১,১১৮.৮০ বর্গ কি.মি.",
     "pop": "1.1M",
-    "popBn": "১.১ মিলিয়ন",
+    "popBn": "০.১১ কোটি",
     "dist": "115 km",
     "distBn": "১১৫ কি.মি.",
     "route": "Via Padma Bridge or Paturia-Daulatdia ferry crossing (approx. 2.5 hours).",
@@ -2547,63 +2088,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Rajbari (রাজবাড়ী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Rajbari (রাজবাড়ী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "রাজবাড়ী (Rajbari) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/rajbari/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/rajbari/carousel-1.webp",
-        "title": "Rajbari Heritage & Landscapes",
-        "titleEn": "Rajbari Heritage & Landscapes",
-        "titleBn": "রাজবাড়ী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/rajbari/carousel-2.webp",
-        "title": "Historic Monuments of Rajbari",
-        "titleEn": "Historic Monuments of Rajbari",
-        "titleBn": "রাজবাড়ী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/rajbari/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/rajbari/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/rajbari/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/rajbari/hist-1.webp",
+        "image": null,
         "name": "Kalyan Dighi & Temple",
         "nameEn": "Kalyan Dighi & Temple",
         "nameBn": "রাজবাড়ী প্রাচীন রাজবাড়ি",
@@ -2620,7 +2110,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rajbari/hist-2.webp",
+        "image": null,
         "name": "Nawapara Shahi Mosque",
         "nameEn": "Nawapara Shahi Mosque",
         "nameBn": "রাজবাড়ী কেন্দ্রীয় জামে মসজিদ",
@@ -2637,7 +2127,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rajbari/hist-3.webp",
+        "image": null,
         "name": "Rajbari Colonial Court & Mint",
         "nameEn": "Rajbari Colonial Court & Mint",
         "nameBn": "রাজবাড়ী ঔপনিবেশিক আদালত ও ভবন",
@@ -2654,7 +2144,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rajbari/hist-4.webp",
+        "image": null,
         "name": "Rajbari Archeological Mound",
         "nameEn": "Rajbari Archeological Mound",
         "nameBn": "রাজবাড়ী প্রত্নতাত্ত্বিক ঢিবি",
@@ -2671,7 +2161,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rajbari/hist-5.webp",
+        "image": null,
         "name": "Rajbari Liberation War Memorial",
         "nameEn": "Rajbari Liberation War Memorial",
         "nameBn": "রাজবাড়ী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -2690,7 +2180,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/rajbari/tour-1.webp",
+        "image": null,
         "name": "Goalanda River Junction",
         "nameEn": "Goalanda River Junction",
         "nameBn": "রাজবাড়ী নদী তীরবর্তী বাঁধ",
@@ -2707,7 +2197,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rajbari/tour-2.webp",
+        "image": null,
         "name": "Padma Sandbars (Char)",
         "nameEn": "Padma Sandbars (Char)",
         "nameBn": "রাজবাড়ী ইকোপার্ক ও বনাঞ্চল",
@@ -2724,7 +2214,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rajbari/tour-3.webp",
+        "image": null,
         "name": "Rajbari Cultural Heritage Museum",
         "nameEn": "Rajbari Cultural Heritage Museum",
         "nameBn": "রাজবাড়ী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -2741,7 +2231,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rajbari/tour-4.webp",
+        "image": null,
         "name": "Rajbari Scenic Lake & Boating Resort",
         "nameEn": "Rajbari Scenic Lake & Boating Resort",
         "nameBn": "রাজবাড়ী মনোরম হ্রদ ও রিসোর্ট",
@@ -2758,7 +2248,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rajbari/tour-5.webp",
+        "image": null,
         "name": "Rajbari Sunset Hilltop Viewpoint",
         "nameEn": "Rajbari Sunset Hilltop Viewpoint",
         "nameBn": "রাজবাড়ী সূর্যাস্ত ভিউপয়েন্ট",
@@ -2790,7 +2280,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,181.53 km²",
     "areaBn": "১,১৮১.৫৩ বর্গ কি.মি.",
     "pop": "1.2M",
-    "popBn": "১.২ মিলিয়ন",
+    "popBn": "০.১২ কোটি",
     "dist": "80 km",
     "distBn": "৮০ কি.মি.",
     "route": "Via Dhaka-Mawa Expressway crossing directly into Jajira over Padma Bridge (1.5 - 2 hrs).",
@@ -2799,63 +2289,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Shariatpur (শরীয়তপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Shariatpur (শরীয়তপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "শরীয়তপুর (Shariatpur) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/shariatpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/shariatpur/carousel-1.webp",
-        "title": "Shariatpur Heritage & Landscapes",
-        "titleEn": "Shariatpur Heritage & Landscapes",
-        "titleBn": "শরীয়তপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/shariatpur/carousel-2.webp",
-        "title": "Historic Monuments of Shariatpur",
-        "titleEn": "Historic Monuments of Shariatpur",
-        "titleBn": "শরীয়তপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/shariatpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/shariatpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/shariatpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/shariatpur/hist-1.webp",
+        "image": null,
         "name": "Fatehjangpur Fort",
         "nameEn": "Fatehjangpur Fort",
         "nameBn": "শরীয়তপুর প্রাচীন রাজবাড়ি",
@@ -2872,7 +2311,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/shariatpur/hist-2.webp",
+        "image": null,
         "name": "Ramsiddhi Mosque",
         "nameEn": "Ramsiddhi Mosque",
         "nameBn": "শরীয়তপুর কেন্দ্রীয় জামে মসজিদ",
@@ -2889,7 +2328,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/shariatpur/hist-3.webp",
+        "image": null,
         "name": "Shariatpur Colonial Court & Mint",
         "nameEn": "Shariatpur Colonial Court & Mint",
         "nameBn": "শরীয়তপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -2906,7 +2345,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/shariatpur/hist-4.webp",
+        "image": null,
         "name": "Shariatpur Archeological Mound",
         "nameEn": "Shariatpur Archeological Mound",
         "nameBn": "শরীয়তপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -2923,7 +2362,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/shariatpur/hist-5.webp",
+        "image": null,
         "name": "Shariatpur Liberation War Memorial",
         "nameEn": "Shariatpur Liberation War Memorial",
         "nameBn": "শরীয়তপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -2942,7 +2381,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/shariatpur/tour-1.webp",
+        "image": null,
         "name": "Padma South Bridge Plaza",
         "nameEn": "Padma South Bridge Plaza",
         "nameBn": "শরীয়তপুর নদী তীরবর্তী বাঁধ",
@@ -2959,7 +2398,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/shariatpur/tour-2.webp",
+        "image": null,
         "name": "Naria Waterfront",
         "nameEn": "Naria Waterfront",
         "nameBn": "শরীয়তপুর ইকোপার্ক ও বনাঞ্চল",
@@ -2976,7 +2415,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/shariatpur/tour-3.webp",
+        "image": null,
         "name": "Shariatpur Cultural Heritage Museum",
         "nameEn": "Shariatpur Cultural Heritage Museum",
         "nameBn": "শরীয়তপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -2993,7 +2432,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/shariatpur/tour-4.webp",
+        "image": null,
         "name": "Shariatpur Scenic Lake & Boating Resort",
         "nameEn": "Shariatpur Scenic Lake & Boating Resort",
         "nameBn": "শরীয়তপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -3010,7 +2449,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/shariatpur/tour-5.webp",
+        "image": null,
         "name": "Shariatpur Sunset Hilltop Viewpoint",
         "nameEn": "Shariatpur Sunset Hilltop Viewpoint",
         "nameBn": "শরীয়তপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -3042,7 +2481,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,414.39 km²",
     "areaBn": "৩,৪১৪.৩৯ বর্গ কি.মি.",
     "pop": "3.8M",
-    "popBn": "৩.৮ মিলিয়ন",
+    "popBn": "০.৩৮ কোটি",
     "dist": "95 km",
     "distBn": "৯৫ কি.মি.",
     "route": "Via Dhaka-Tangail 4-lane Highway N4 or Jamuna Bridge train routes (approx. 2 hours).",
@@ -3051,63 +2490,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Tangail (টাঙ্গাইল) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineEn": "Tangail (টাঙ্গাইল) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
     "taglineBn": "টাঙ্গাইল (Tangail) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/tangail/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/tangail/carousel-1.webp",
-        "title": "Tangail Heritage & Landscapes",
-        "titleEn": "Tangail Heritage & Landscapes",
-        "titleBn": "টাঙ্গাইল ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Dhaka Division",
-        "subtitleEn": "Panoramic beauty across Dhaka Division",
-        "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/tangail/carousel-2.webp",
-        "title": "Historic Monuments of Tangail",
-        "titleEn": "Historic Monuments of Tangail",
-        "titleBn": "টাঙ্গাইল জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/tangail/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/tangail/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/tangail/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/tangail/hist-1.webp",
+        "image": null,
         "name": "Atiya Mosque",
         "nameEn": "Atiya Mosque",
         "nameBn": "টাঙ্গাইল প্রাচীন রাজবাড়ি",
@@ -3124,7 +2512,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/tangail/hist-2.webp",
+        "image": null,
         "name": "Mohera Zamindar Bari",
         "nameEn": "Mohera Zamindar Bari",
         "nameBn": "টাঙ্গাইল কেন্দ্রীয় জামে মসজিদ",
@@ -3141,7 +2529,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/tangail/hist-3.webp",
+        "image": null,
         "name": "Tangail Colonial Court & Mint",
         "nameEn": "Tangail Colonial Court & Mint",
         "nameBn": "টাঙ্গাইল ঔপনিবেশিক আদালত ও ভবন",
@@ -3158,7 +2546,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/tangail/hist-4.webp",
+        "image": null,
         "name": "Tangail Archeological Mound",
         "nameEn": "Tangail Archeological Mound",
         "nameBn": "টাঙ্গাইল প্রত্নতাত্ত্বিক ঢিবি",
@@ -3175,7 +2563,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/tangail/hist-5.webp",
+        "image": null,
         "name": "Tangail Liberation War Memorial",
         "nameEn": "Tangail Liberation War Memorial",
         "nameBn": "টাঙ্গাইল মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -3194,7 +2582,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/tangail/tour-1.webp",
+        "image": null,
         "name": "Madhupur National Park",
         "nameEn": "Madhupur National Park",
         "nameBn": "টাঙ্গাইল নদী তীরবর্তী বাঁধ",
@@ -3211,7 +2599,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/tangail/tour-2.webp",
+        "image": null,
         "name": "Tangail Saree & Sweet Haven",
         "nameEn": "Tangail Saree & Sweet Haven",
         "nameBn": "টাঙ্গাইল ইকোপার্ক ও বনাঞ্চল",
@@ -3228,7 +2616,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/tangail/tour-3.webp",
+        "image": null,
         "name": "Tangail Cultural Heritage Museum",
         "nameEn": "Tangail Cultural Heritage Museum",
         "nameBn": "টাঙ্গাইল লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -3245,7 +2633,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/tangail/tour-4.webp",
+        "image": null,
         "name": "Tangail Scenic Lake & Boating Resort",
         "nameEn": "Tangail Scenic Lake & Boating Resort",
         "nameBn": "টাঙ্গাইল মনোরম হ্রদ ও রিসোর্ট",
@@ -3262,7 +2650,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/tangail/tour-5.webp",
+        "image": null,
         "name": "Tangail Sunset Hilltop Viewpoint",
         "nameEn": "Tangail Sunset Hilltop Viewpoint",
         "nameBn": "টাঙ্গাইল সূর্যাস্ত ভিউপয়েন্ট",
@@ -3294,7 +2682,7 @@ const LOCAL_DISTRICTS = [
     "area": "4,479.03 km²",
     "areaBn": "৪,৪৭৯.০৩ বর্গ কি.মি.",
     "pop": "0.45M",
-    "popBn": "০.৪৫ মিলিয়ন",
+    "popBn": "০.০৪ কোটি",
     "dist": "320 km",
     "distBn": "৩২০ কি.মি.",
     "route": "Direct AC/Non-AC overnight highway buses (8-9 hrs), or fly to Chattogram and drive 2.5 hrs.",
@@ -3303,63 +2691,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Bandarban (বান্দরবান) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Bandarban (বান্দরবান) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "বান্দরবান (Bandarban) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/bandarban/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/bandarban/carousel-1.webp",
-        "title": "Bandarban Heritage & Landscapes",
-        "titleEn": "Bandarban Heritage & Landscapes",
-        "titleBn": "বান্দরবান ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/bandarban/carousel-2.webp",
-        "title": "Historic Monuments of Bandarban",
-        "titleEn": "Historic Monuments of Bandarban",
-        "titleBn": "বান্দরবান জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/bandarban/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/bandarban/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/bandarban/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/bandarban/hist-1.webp",
+        "image": null,
         "name": "Bohmong King Palace",
         "nameEn": "Bohmong King Palace",
         "nameBn": "বান্দরবান প্রাচীন রাজবাড়ি",
@@ -3376,7 +2713,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bandarban/hist-2.webp",
+        "image": null,
         "name": "Buddha Dhatu Jadi (Golden Temple)",
         "nameEn": "Buddha Dhatu Jadi (Golden Temple)",
         "nameBn": "বান্দরবান কেন্দ্রীয় জামে মসজিদ",
@@ -3393,7 +2730,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bandarban/hist-3.webp",
+        "image": null,
         "name": "Bandarban Colonial Court & Mint",
         "nameEn": "Bandarban Colonial Court & Mint",
         "nameBn": "বান্দরবান ঔপনিবেশিক আদালত ও ভবন",
@@ -3410,7 +2747,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bandarban/hist-4.webp",
+        "image": null,
         "name": "Bandarban Archeological Mound",
         "nameEn": "Bandarban Archeological Mound",
         "nameBn": "বান্দরবান প্রত্নতাত্ত্বিক ঢিবি",
@@ -3427,7 +2764,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bandarban/hist-5.webp",
+        "image": null,
         "name": "Bandarban Liberation War Memorial",
         "nameEn": "Bandarban Liberation War Memorial",
         "nameBn": "বান্দরবান মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -3446,7 +2783,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/bandarban/tour-1.webp",
+        "image": null,
         "name": "Nilgiri & Thanchi",
         "nameEn": "Nilgiri & Thanchi",
         "nameBn": "বান্দরবান নদী তীরবর্তী বাঁধ",
@@ -3463,7 +2800,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bandarban/tour-2.webp",
+        "image": null,
         "name": "Boga Lake & Keokradong",
         "nameEn": "Boga Lake & Keokradong",
         "nameBn": "বান্দরবান ইকোপার্ক ও বনাঞ্চল",
@@ -3480,7 +2817,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bandarban/tour-3.webp",
+        "image": null,
         "name": "Bandarban Cultural Heritage Museum",
         "nameEn": "Bandarban Cultural Heritage Museum",
         "nameBn": "বান্দরবান লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -3497,7 +2834,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bandarban/tour-4.webp",
+        "image": null,
         "name": "Bandarban Scenic Lake & Boating Resort",
         "nameEn": "Bandarban Scenic Lake & Boating Resort",
         "nameBn": "বান্দরবান মনোরম হ্রদ ও রিসোর্ট",
@@ -3514,7 +2851,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bandarban/tour-5.webp",
+        "image": null,
         "name": "Bandarban Sunset Hilltop Viewpoint",
         "nameEn": "Bandarban Sunset Hilltop Viewpoint",
         "nameBn": "বান্দরবান সূর্যাস্ত ভিউপয়েন্ট",
@@ -3546,7 +2883,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,927.11 km²",
     "areaBn": "১,৯২৭.১১ বর্গ কি.মি.",
     "pop": "3.0M",
-    "popBn": "৩.০ মিলিয়ন",
+    "popBn": "০.৩ কোটি",
     "dist": "110 km",
     "distBn": "১১০ কি.মি.",
     "route": "Via Dhaka-Sylhet Highway N2 or Upakul/Kalni Express trains from Dhaka (2 - 2.5 hrs).",
@@ -3555,63 +2892,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Brahmanbaria (ব্রাহ্মণবাড়িয়া) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Brahmanbaria (ব্রাহ্মণবাড়িয়া) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "ব্রাহ্মণবাড়িয়া (Brahmanbaria) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/brahmanbaria/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/brahmanbaria/carousel-1.webp",
-        "title": "Brahmanbaria Heritage & Landscapes",
-        "titleEn": "Brahmanbaria Heritage & Landscapes",
-        "titleBn": "ব্রাহ্মণবাড়িয়া ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/brahmanbaria/carousel-2.webp",
-        "title": "Historic Monuments of Brahmanbaria",
-        "titleEn": "Historic Monuments of Brahmanbaria",
-        "titleBn": "ব্রাহ্মণবাড়িয়া জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/brahmanbaria/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/brahmanbaria/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/brahmanbaria/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/brahmanbaria/hist-1.webp",
+        "image": null,
         "name": "Arifil Mosque",
         "nameEn": "Arifil Mosque",
         "nameBn": "ব্রাহ্মণবাড়িয়া প্রাচীন রাজবাড়ি",
@@ -3628,7 +2914,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/brahmanbaria/hist-2.webp",
+        "image": null,
         "name": "Ulchapara Mosque & Kalidaha Pond",
         "nameEn": "Ulchapara Mosque & Kalidaha Pond",
         "nameBn": "ব্রাহ্মণবাড়িয়া কেন্দ্রীয় জামে মসজিদ",
@@ -3645,7 +2931,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/brahmanbaria/hist-3.webp",
+        "image": null,
         "name": "Brahmanbaria Colonial Court & Mint",
         "nameEn": "Brahmanbaria Colonial Court & Mint",
         "nameBn": "ব্রাহ্মণবাড়িয়া ঔপনিবেশিক আদালত ও ভবন",
@@ -3662,7 +2948,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/brahmanbaria/hist-4.webp",
+        "image": null,
         "name": "Brahmanbaria Archeological Mound",
         "nameEn": "Brahmanbaria Archeological Mound",
         "nameBn": "ব্রাহ্মণবাড়িয়া প্রত্নতাত্ত্বিক ঢিবি",
@@ -3679,7 +2965,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/brahmanbaria/hist-5.webp",
+        "image": null,
         "name": "Brahmanbaria Liberation War Memorial",
         "nameEn": "Brahmanbaria Liberation War Memorial",
         "nameBn": "ব্রাহ্মণবাড়িয়া মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -3698,7 +2984,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/brahmanbaria/tour-1.webp",
+        "image": null,
         "name": "Titas River Waterfront",
         "nameEn": "Titas River Waterfront",
         "nameBn": "ব্রাহ্মণবাড়িয়া নদী তীরবর্তী বাঁধ",
@@ -3715,7 +3001,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/brahmanbaria/tour-2.webp",
+        "image": null,
         "name": "Sarail Hound Heritage & Chanamukhi",
         "nameEn": "Sarail Hound Heritage & Chanamukhi",
         "nameBn": "ব্রাহ্মণবাড়িয়া ইকোপার্ক ও বনাঞ্চল",
@@ -3732,7 +3018,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/brahmanbaria/tour-3.webp",
+        "image": null,
         "name": "Brahmanbaria Cultural Heritage Museum",
         "nameEn": "Brahmanbaria Cultural Heritage Museum",
         "nameBn": "ব্রাহ্মণবাড়িয়া লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -3749,7 +3035,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/brahmanbaria/tour-4.webp",
+        "image": null,
         "name": "Brahmanbaria Scenic Lake & Boating Resort",
         "nameEn": "Brahmanbaria Scenic Lake & Boating Resort",
         "nameBn": "ব্রাহ্মণবাড়িয়া মনোরম হ্রদ ও রিসোর্ট",
@@ -3766,7 +3052,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/brahmanbaria/tour-5.webp",
+        "image": null,
         "name": "Brahmanbaria Sunset Hilltop Viewpoint",
         "nameEn": "Brahmanbaria Sunset Hilltop Viewpoint",
         "nameBn": "ব্রাহ্মণবাড়িয়া সূর্যাস্ত ভিউপয়েন্ট",
@@ -3798,7 +3084,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,704.06 km²",
     "areaBn": "১,৭০৪.০৬ বর্গ কি.মি.",
     "pop": "2.5M",
-    "popBn": "২.৫ মিলিয়ন",
+    "popBn": "০.২৫ কোটি",
     "dist": "115 km",
     "distBn": "১১৫ কি.মি.",
     "route": "Scenic luxury river launch from Dhaka Sadarghat (3 hours) or Dhaka-Chittagong Highway N1.",
@@ -3807,63 +3093,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Chandpur (চাঁদপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Chandpur (চাঁদপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "চাঁদপুর (Chandpur) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/chandpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/chandpur/carousel-1.webp",
-        "title": "Chandpur Heritage & Landscapes",
-        "titleEn": "Chandpur Heritage & Landscapes",
-        "titleBn": "চাঁদপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/chandpur/carousel-2.webp",
-        "title": "Historic Monuments of Chandpur",
-        "titleEn": "Historic Monuments of Chandpur",
-        "titleBn": "চাঁদপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/chandpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/chandpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/chandpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/chandpur/hist-1.webp",
+        "image": null,
         "name": "Rupsha Zamindar Bari",
         "nameEn": "Rupsha Zamindar Bari",
         "nameBn": "চাঁদপুর প্রাচীন রাজবাড়ি",
@@ -3880,7 +3115,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chandpur/hist-2.webp",
+        "image": null,
         "name": "Haji Begum Mosque",
         "nameEn": "Haji Begum Mosque",
         "nameBn": "চাঁদপুর কেন্দ্রীয় জামে মসজিদ",
@@ -3897,7 +3132,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chandpur/hist-3.webp",
+        "image": null,
         "name": "Chandpur Colonial Court & Mint",
         "nameEn": "Chandpur Colonial Court & Mint",
         "nameBn": "চাঁদপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -3914,7 +3149,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chandpur/hist-4.webp",
+        "image": null,
         "name": "Chandpur Archeological Mound",
         "nameEn": "Chandpur Archeological Mound",
         "nameBn": "চাঁদপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -3931,7 +3166,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chandpur/hist-5.webp",
+        "image": null,
         "name": "Chandpur Liberation War Memorial",
         "nameEn": "Chandpur Liberation War Memorial",
         "nameBn": "চাঁদপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -3950,7 +3185,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/chandpur/tour-1.webp",
+        "image": null,
         "name": "Chandpur Mohona (Triveni Sangam)",
         "nameEn": "Chandpur Mohona (Triveni Sangam)",
         "nameBn": "চাঁদপুর নদী তীরবর্তী বাঁধ",
@@ -3967,7 +3202,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chandpur/tour-2.webp",
+        "image": null,
         "name": "Hilsa Fish Hub",
         "nameEn": "Hilsa Fish Hub",
         "nameBn": "চাঁদপুর ইকোপার্ক ও বনাঞ্চল",
@@ -3984,7 +3219,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chandpur/tour-3.webp",
+        "image": null,
         "name": "Chandpur Cultural Heritage Museum",
         "nameEn": "Chandpur Cultural Heritage Museum",
         "nameBn": "চাঁদপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -4001,7 +3236,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chandpur/tour-4.webp",
+        "image": null,
         "name": "Chandpur Scenic Lake & Boating Resort",
         "nameEn": "Chandpur Scenic Lake & Boating Resort",
         "nameBn": "চাঁদপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -4018,7 +3253,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chandpur/tour-5.webp",
+        "image": null,
         "name": "Chandpur Sunset Hilltop Viewpoint",
         "nameEn": "Chandpur Sunset Hilltop Viewpoint",
         "nameBn": "চাঁদপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -4050,7 +3285,7 @@ const LOCAL_DISTRICTS = [
     "area": "5,282.98 km²",
     "areaBn": "৫,২৮২.৯৮ বর্গ কি.মি.",
     "pop": "9.2M",
-    "popBn": "৯.২ মিলিয়ন",
+    "popBn": "০.৯২ কোটি",
     "dist": "240 km",
     "distBn": "২৪০ কি.মি.",
     "route": "Dhaka-Chattogram Highway N1 (4.5 hrs), Suborno/Sonar Bangla Express train (4.5 hrs), or 40-min flight.",
@@ -4059,63 +3294,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Chattogram (চট্টগ্রাম) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Chattogram (চট্টগ্রাম) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "চট্টগ্রাম (Chattogram) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/chattogram/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/chattogram/carousel-1.webp",
-        "title": "Chattogram Heritage & Landscapes",
-        "titleEn": "Chattogram Heritage & Landscapes",
-        "titleBn": "চট্টগ্রাম ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/chattogram/carousel-2.webp",
-        "title": "Historic Monuments of Chattogram",
-        "titleEn": "Historic Monuments of Chattogram",
-        "titleBn": "চট্টগ্রাম জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/chattogram/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/chattogram/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/chattogram/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/chattogram/hist-1.webp",
+        "image": null,
         "name": "Anderkilla Shahi Jame Mosque",
         "nameEn": "Anderkilla Shahi Jame Mosque",
         "nameBn": "চট্টগ্রাম প্রাচীন রাজবাড়ি",
@@ -4132,7 +3316,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chattogram/hist-2.webp",
+        "image": null,
         "name": "Commonwealth War Cemetery",
         "nameEn": "Commonwealth War Cemetery",
         "nameBn": "চট্টগ্রাম কেন্দ্রীয় জামে মসজিদ",
@@ -4149,7 +3333,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chattogram/hist-3.webp",
+        "image": null,
         "name": "Chattogram Colonial Court & Mint",
         "nameEn": "Chattogram Colonial Court & Mint",
         "nameBn": "চট্টগ্রাম ঔপনিবেশিক আদালত ও ভবন",
@@ -4166,7 +3350,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chattogram/hist-4.webp",
+        "image": null,
         "name": "Chattogram Archeological Mound",
         "nameEn": "Chattogram Archeological Mound",
         "nameBn": "চট্টগ্রাম প্রত্নতাত্ত্বিক ঢিবি",
@@ -4183,7 +3367,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chattogram/hist-5.webp",
+        "image": null,
         "name": "Chattogram Liberation War Memorial",
         "nameEn": "Chattogram Liberation War Memorial",
         "nameBn": "চট্টগ্রাম মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -4202,7 +3386,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/chattogram/tour-1.webp",
+        "image": null,
         "name": "Patenga Sea Beach & Naval Point",
         "nameEn": "Patenga Sea Beach & Naval Point",
         "nameBn": "চট্টগ্রাম নদী তীরবর্তী বাঁধ",
@@ -4219,7 +3403,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chattogram/tour-2.webp",
+        "image": null,
         "name": "Foy’s Lake & Amusement World",
         "nameEn": "Foy’s Lake & Amusement World",
         "nameBn": "চট্টগ্রাম ইকোপার্ক ও বনাঞ্চল",
@@ -4236,7 +3420,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chattogram/tour-3.webp",
+        "image": null,
         "name": "Chattogram Cultural Heritage Museum",
         "nameEn": "Chattogram Cultural Heritage Museum",
         "nameBn": "চট্টগ্রাম লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -4253,7 +3437,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chattogram/tour-4.webp",
+        "image": null,
         "name": "Chattogram Scenic Lake & Boating Resort",
         "nameEn": "Chattogram Scenic Lake & Boating Resort",
         "nameBn": "চট্টগ্রাম মনোরম হ্রদ ও রিসোর্ট",
@@ -4270,7 +3454,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chattogram/tour-5.webp",
+        "image": null,
         "name": "Chattogram Sunset Hilltop Viewpoint",
         "nameEn": "Chattogram Sunset Hilltop Viewpoint",
         "nameBn": "চট্টগ্রাম সূর্যাস্ত ভিউপয়েন্ট",
@@ -4302,7 +3486,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,087.33 km²",
     "areaBn": "৩,০৮৭.৩৩ বর্গ কি.মি.",
     "pop": "5.9M",
-    "popBn": "৫.৯ মিলিয়ন",
+    "popBn": "০.৫৯ কোটি",
     "dist": "100 km",
     "distBn": "১০০ কি.মি.",
     "route": "Via Dhaka-Chittagong Highway N1 (approx. 2 hours) or Dhaka-Chattogram railway link.",
@@ -4311,63 +3495,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Cumilla (কুমিল্লা) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Cumilla (কুমিল্লা) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "কুমিল্লা (Cumilla) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/cumilla/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/cumilla/carousel-1.webp",
-        "title": "Cumilla Heritage & Landscapes",
-        "titleEn": "Cumilla Heritage & Landscapes",
-        "titleBn": "কুমিল্লা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/cumilla/carousel-2.webp",
-        "title": "Historic Monuments of Cumilla",
-        "titleEn": "Historic Monuments of Cumilla",
-        "titleBn": "কুমিল্লা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/cumilla/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/cumilla/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/cumilla/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/cumilla/hist-1.webp",
+        "image": null,
         "name": "Shalban Vihara & Mainamati",
         "nameEn": "Shalban Vihara & Mainamati",
         "nameBn": "কুমিল্লা প্রাচীন রাজবাড়ি",
@@ -4384,7 +3517,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/cumilla/hist-2.webp",
+        "image": null,
         "name": "Shah Suja Mosque",
         "nameEn": "Shah Suja Mosque",
         "nameBn": "কুমিল্লা কেন্দ্রীয় জামে মসজিদ",
@@ -4401,7 +3534,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/cumilla/hist-3.webp",
+        "image": null,
         "name": "Cumilla Colonial Court & Mint",
         "nameEn": "Cumilla Colonial Court & Mint",
         "nameBn": "কুমিল্লা ঔপনিবেশিক আদালত ও ভবন",
@@ -4418,7 +3551,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/cumilla/hist-4.webp",
+        "image": null,
         "name": "Cumilla Archeological Mound",
         "nameEn": "Cumilla Archeological Mound",
         "nameBn": "কুমিল্লা প্রত্নতাত্ত্বিক ঢিবি",
@@ -4435,7 +3568,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/cumilla/hist-5.webp",
+        "image": null,
         "name": "Cumilla Liberation War Memorial",
         "nameEn": "Cumilla Liberation War Memorial",
         "nameBn": "কুমিল্লা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -4454,7 +3587,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/cumilla/tour-1.webp",
+        "image": null,
         "name": "Dharmasagar Dighi",
         "nameEn": "Dharmasagar Dighi",
         "nameBn": "কুমিল্লা নদী তীরবর্তী বাঁধ",
@@ -4471,7 +3604,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/cumilla/tour-2.webp",
+        "image": null,
         "name": "Matri Bhander & Lalmai Hills",
         "nameEn": "Matri Bhander & Lalmai Hills",
         "nameBn": "কুমিল্লা ইকোপার্ক ও বনাঞ্চল",
@@ -4488,7 +3621,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/cumilla/tour-3.webp",
+        "image": null,
         "name": "Cumilla Cultural Heritage Museum",
         "nameEn": "Cumilla Cultural Heritage Museum",
         "nameBn": "কুমিল্লা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -4505,7 +3638,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/cumilla/tour-4.webp",
+        "image": null,
         "name": "Cumilla Scenic Lake & Boating Resort",
         "nameEn": "Cumilla Scenic Lake & Boating Resort",
         "nameBn": "কুমিল্লা মনোরম হ্রদ ও রিসোর্ট",
@@ -4522,7 +3655,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/cumilla/tour-5.webp",
+        "image": null,
         "name": "Cumilla Sunset Hilltop Viewpoint",
         "nameEn": "Cumilla Sunset Hilltop Viewpoint",
         "nameBn": "কুমিল্লা সূর্যাস্ত ভিউপয়েন্ট",
@@ -4554,7 +3687,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,491.86 km²",
     "areaBn": "২,৪৯১.৮৬ বর্গ কি.মি.",
     "pop": "2.8M",
-    "popBn": "২.৮ মিলিয়ন",
+    "popBn": "০.২৮ কোটি",
     "dist": "395 km",
     "distBn": "৩৯৫ কি.মি.",
     "route": "Direct train via Cox's Bazar Express (8 hrs), overnight highway buses, or 50-minute commercial flight.",
@@ -4563,63 +3696,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Cox's Bazar (কক্সবাজার) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Home to the world's longest unbroken natural sandy sea beach (120 km) and the premier coastal tourism capital of Bangladesh.",
     "taglineBn": "বিশ্বের দীর্ঘতম নিরবচ্ছিন্ন প্রাকৃতিক বালুকাময় সমুদ্র সৈকত (১২০ কিমি) সমৃদ্ধ বাংলাদেশের শীর্ষ পর্যটন রাজধানী।",
-    "heroImage": "images/districts/coxs-bazar/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/coxs-bazar/carousel-1.webp",
-        "title": "Cox's Bazar Heritage & Landscapes",
-        "titleEn": "Cox's Bazar Heritage & Landscapes",
-        "titleBn": "কক্সবাজার ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/coxs-bazar/carousel-2.webp",
-        "title": "Historic Monuments of Cox's Bazar",
-        "titleEn": "Historic Monuments of Cox's Bazar",
-        "titleBn": "কক্সবাজার জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/coxs-bazar/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/coxs-bazar/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/coxs-bazar/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/coxs-bazar/hist-1.webp",
+        "image": null,
         "name": "Aggamedha Khyang",
         "nameEn": "Aggamedha Khyang",
         "nameBn": "কক্সবাজার প্রাচীন রাজবাড়ি",
@@ -4636,7 +3718,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/coxs-bazar/hist-2.webp",
+        "image": null,
         "name": "Ramu 100-Foot Reclining Buddha",
         "nameEn": "Ramu 100-Foot Reclining Buddha",
         "nameBn": "কক্সবাজার কেন্দ্রীয় জামে মসজিদ",
@@ -4653,7 +3735,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/coxs-bazar/hist-3.webp",
+        "image": null,
         "name": "Cox's Bazar Colonial Court & Mint",
         "nameEn": "Cox's Bazar Colonial Court & Mint",
         "nameBn": "কক্সবাজার ঔপনিবেশিক আদালত ও ভবন",
@@ -4670,7 +3752,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/coxs-bazar/hist-4.webp",
+        "image": null,
         "name": "Cox's Bazar Archeological Mound",
         "nameEn": "Cox's Bazar Archeological Mound",
         "nameBn": "কক্সবাজার প্রত্নতাত্ত্বিক ঢিবি",
@@ -4687,7 +3769,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/coxs-bazar/hist-5.webp",
+        "image": null,
         "name": "Cox's Bazar Liberation War Memorial",
         "nameEn": "Cox's Bazar Liberation War Memorial",
         "nameBn": "কক্সবাজার মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -4706,7 +3788,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/coxs-bazar/tour-1.webp",
+        "image": null,
         "name": "World's Longest Natural Sea Beach",
         "nameEn": "World's Longest Natural Sea Beach",
         "nameBn": "কক্সবাজার নদী তীরবর্তী বাঁধ",
@@ -4723,7 +3805,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/coxs-bazar/tour-2.webp",
+        "image": null,
         "name": "Marine Drive & Himchari",
         "nameEn": "Marine Drive & Himchari",
         "nameBn": "কক্সবাজার ইকোপার্ক ও বনাঞ্চল",
@@ -4740,7 +3822,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/coxs-bazar/tour-3.webp",
+        "image": null,
         "name": "Cox's Bazar Cultural Heritage Museum",
         "nameEn": "Cox's Bazar Cultural Heritage Museum",
         "nameBn": "কক্সবাজার লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -4757,7 +3839,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/coxs-bazar/tour-4.webp",
+        "image": null,
         "name": "Cox's Bazar Scenic Lake & Boating Resort",
         "nameEn": "Cox's Bazar Scenic Lake & Boating Resort",
         "nameBn": "কক্সবাজার মনোরম হ্রদ ও রিসোর্ট",
@@ -4774,7 +3856,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/coxs-bazar/tour-5.webp",
+        "image": null,
         "name": "Cox's Bazar Sunset Hilltop Viewpoint",
         "nameEn": "Cox's Bazar Sunset Hilltop Viewpoint",
         "nameBn": "কক্সবাজার সূর্যাস্ত ভিউপয়েন্ট",
@@ -4806,7 +3888,7 @@ const LOCAL_DISTRICTS = [
     "area": "928.34 km²",
     "areaBn": "৯২৮.৩৪ বর্গ কি.মি.",
     "pop": "1.5M",
-    "popBn": "১.৫ মিলিয়ন",
+    "popBn": "০.১৫ কোটি",
     "dist": "150 km",
     "distBn": "১৫০ কি.মি.",
     "route": "Via Dhaka-Chittagong Highway N1 (approx. 2.5 - 3 hours by express bus or intercity train).",
@@ -4815,63 +3897,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Feni (ফেনী) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Feni (ফেনী) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "ফেনী (Feni) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/feni/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/feni/carousel-1.webp",
-        "title": "Feni Heritage & Landscapes",
-        "titleEn": "Feni Heritage & Landscapes",
-        "titleBn": "ফেনী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/feni/carousel-2.webp",
-        "title": "Historic Monuments of Feni",
-        "titleEn": "Historic Monuments of Feni",
-        "titleBn": "ফেনী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/feni/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/feni/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/feni/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/feni/hist-1.webp",
+        "image": null,
         "name": "Bijoy Singh Dighi",
         "nameEn": "Bijoy Singh Dighi",
         "nameBn": "ফেনী প্রাচীন রাজবাড়ি",
@@ -4888,7 +3919,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/feni/hist-2.webp",
+        "image": null,
         "name": "Shamsher Gazi Fort",
         "nameEn": "Shamsher Gazi Fort",
         "nameBn": "ফেনী কেন্দ্রীয় জামে মসজিদ",
@@ -4905,7 +3936,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/feni/hist-3.webp",
+        "image": null,
         "name": "Feni Colonial Court & Mint",
         "nameEn": "Feni Colonial Court & Mint",
         "nameBn": "ফেনী ঔপনিবেশিক আদালত ও ভবন",
@@ -4922,7 +3953,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/feni/hist-4.webp",
+        "image": null,
         "name": "Feni Archeological Mound",
         "nameEn": "Feni Archeological Mound",
         "nameBn": "ফেনী প্রত্নতাত্ত্বিক ঢিবি",
@@ -4939,7 +3970,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/feni/hist-5.webp",
+        "image": null,
         "name": "Feni Liberation War Memorial",
         "nameEn": "Feni Liberation War Memorial",
         "nameBn": "ফেনী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -4958,7 +3989,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/feni/tour-1.webp",
+        "image": null,
         "name": "Muhuri Irrigation Project & Dam",
         "nameEn": "Muhuri Irrigation Project & Dam",
         "nameBn": "ফেনী নদী তীরবর্তী বাঁধ",
@@ -4975,7 +4006,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/feni/tour-2.webp",
+        "image": null,
         "name": "Chandgazi Mosque",
         "nameEn": "Chandgazi Mosque",
         "nameBn": "ফেনী ইকোপার্ক ও বনাঞ্চল",
@@ -4992,7 +4023,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/feni/tour-3.webp",
+        "image": null,
         "name": "Feni Cultural Heritage Museum",
         "nameEn": "Feni Cultural Heritage Museum",
         "nameBn": "ফেনী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -5009,7 +4040,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/feni/tour-4.webp",
+        "image": null,
         "name": "Feni Scenic Lake & Boating Resort",
         "nameEn": "Feni Scenic Lake & Boating Resort",
         "nameBn": "ফেনী মনোরম হ্রদ ও রিসোর্ট",
@@ -5026,7 +4057,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/feni/tour-5.webp",
+        "image": null,
         "name": "Feni Sunset Hilltop Viewpoint",
         "nameEn": "Feni Sunset Hilltop Viewpoint",
         "nameBn": "ফেনী সূর্যাস্ত ভিউপয়েন্ট",
@@ -5058,7 +4089,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,699.55 km²",
     "areaBn": "২,৬৯৯.৫৫ বর্গ কি.মি.",
     "pop": "0.65M",
-    "popBn": "০.৬৫ মিলিয়ন",
+    "popBn": "০.০৭ কোটি",
     "dist": "270 km",
     "distBn": "২৭০ কি.মি.",
     "route": "Direct AC/Non-AC buses from Dhaka via Feni-Mirsharai hill route (approx. 7 hours).",
@@ -5067,63 +4098,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Khagrachhari (খাগড়াছড়ি) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Khagrachhari (খাগড়াছড়ি) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "খাগড়াছড়ি (Khagrachhari) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/khagrachhari/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/khagrachhari/carousel-1.webp",
-        "title": "Khagrachhari Heritage & Landscapes",
-        "titleEn": "Khagrachhari Heritage & Landscapes",
-        "titleBn": "খাগড়াছড়ি ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/khagrachhari/carousel-2.webp",
-        "title": "Historic Monuments of Khagrachhari",
-        "titleEn": "Historic Monuments of Khagrachhari",
-        "titleBn": "খাগড়াছড়ি জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/khagrachhari/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/khagrachhari/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/khagrachhari/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/khagrachhari/hist-1.webp",
+        "image": null,
         "name": "Alutila Mysterious Cave",
         "nameEn": "Alutila Mysterious Cave",
         "nameBn": "খাগড়াছড়ি প্রাচীন রাজবাড়ি",
@@ -5140,7 +4120,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/khagrachhari/hist-2.webp",
+        "image": null,
         "name": "Manikchhari Mong Rajbari",
         "nameEn": "Manikchhari Mong Rajbari",
         "nameBn": "খাগড়াছড়ি কেন্দ্রীয় জামে মসজিদ",
@@ -5157,7 +4137,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/khagrachhari/hist-3.webp",
+        "image": null,
         "name": "Khagrachhari Colonial Court & Mint",
         "nameEn": "Khagrachhari Colonial Court & Mint",
         "nameBn": "খাগড়াছড়ি ঔপনিবেশিক আদালত ও ভবন",
@@ -5174,7 +4154,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/khagrachhari/hist-4.webp",
+        "image": null,
         "name": "Khagrachhari Archeological Mound",
         "nameEn": "Khagrachhari Archeological Mound",
         "nameBn": "খাগড়াছড়ি প্রত্নতাত্ত্বিক ঢিবি",
@@ -5191,7 +4171,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/khagrachhari/hist-5.webp",
+        "image": null,
         "name": "Khagrachhari Liberation War Memorial",
         "nameEn": "Khagrachhari Liberation War Memorial",
         "nameBn": "খাগড়াছড়ি মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -5210,7 +4190,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/khagrachhari/tour-1.webp",
+        "image": null,
         "name": "Sajek Valley & Ruilui Para",
         "nameEn": "Sajek Valley & Ruilui Para",
         "nameBn": "খাগড়াছড়ি নদী তীরবর্তী বাঁধ",
@@ -5227,7 +4207,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/khagrachhari/tour-2.webp",
+        "image": null,
         "name": "Risang Waterfall",
         "nameEn": "Risang Waterfall",
         "nameBn": "খাগড়াছড়ি ইকোপার্ক ও বনাঞ্চল",
@@ -5244,7 +4224,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/khagrachhari/tour-3.webp",
+        "image": null,
         "name": "Khagrachhari Cultural Heritage Museum",
         "nameEn": "Khagrachhari Cultural Heritage Museum",
         "nameBn": "খাগড়াছড়ি লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -5261,7 +4241,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/khagrachhari/tour-4.webp",
+        "image": null,
         "name": "Khagrachhari Scenic Lake & Boating Resort",
         "nameEn": "Khagrachhari Scenic Lake & Boating Resort",
         "nameBn": "খাগড়াছড়ি মনোরম হ্রদ ও রিসোর্ট",
@@ -5278,7 +4258,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/khagrachhari/tour-5.webp",
+        "image": null,
         "name": "Khagrachhari Sunset Hilltop Viewpoint",
         "nameEn": "Khagrachhari Sunset Hilltop Viewpoint",
         "nameBn": "খাগড়াছড়ি সূর্যাস্ত ভিউপয়েন্ট",
@@ -5310,7 +4290,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,455.96 km²",
     "areaBn": "১,৪৫৫.৯৬ বর্গ কি.মি.",
     "pop": "1.8M",
-    "popBn": "১.৮ মিলিয়ন",
+    "popBn": "০.১৮ কোটি",
     "dist": "155 km",
     "distBn": "১৫৫ কি.মি.",
     "route": "Via Padma Bridge expressway through Chandpur, or Dhaka-Chittagong highway branch (3.5 hrs).",
@@ -5319,63 +4299,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Lakshmipur (লক্ষ্মীপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Lakshmipur (লক্ষ্মীপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "লক্ষ্মীপুর (Lakshmipur) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/lakshmipur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/lakshmipur/carousel-1.webp",
-        "title": "Lakshmipur Heritage & Landscapes",
-        "titleEn": "Lakshmipur Heritage & Landscapes",
-        "titleBn": "লক্ষ্মীপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/lakshmipur/carousel-2.webp",
-        "title": "Historic Monuments of Lakshmipur",
-        "titleEn": "Historic Monuments of Lakshmipur",
-        "titleBn": "লক্ষ্মীপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/lakshmipur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/lakshmipur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/lakshmipur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/lakshmipur/hist-1.webp",
+        "image": null,
         "name": "Dalal Bazar Zamindar Bari",
         "nameEn": "Dalal Bazar Zamindar Bari",
         "nameBn": "লক্ষ্মীপুর প্রাচীন রাজবাড়ি",
@@ -5392,7 +4321,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/lakshmipur/hist-2.webp",
+        "image": null,
         "name": "Khoa Sagor Dighi",
         "nameEn": "Khoa Sagor Dighi",
         "nameBn": "লক্ষ্মীপুর কেন্দ্রীয় জামে মসজিদ",
@@ -5409,7 +4338,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/lakshmipur/hist-3.webp",
+        "image": null,
         "name": "Lakshmipur Colonial Court & Mint",
         "nameEn": "Lakshmipur Colonial Court & Mint",
         "nameBn": "লক্ষ্মীপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -5426,7 +4355,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/lakshmipur/hist-4.webp",
+        "image": null,
         "name": "Lakshmipur Archeological Mound",
         "nameEn": "Lakshmipur Archeological Mound",
         "nameBn": "লক্ষ্মীপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -5443,7 +4372,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/lakshmipur/hist-5.webp",
+        "image": null,
         "name": "Lakshmipur Liberation War Memorial",
         "nameEn": "Lakshmipur Liberation War Memorial",
         "nameBn": "লক্ষ্মীপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -5462,7 +4391,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/lakshmipur/tour-1.webp",
+        "image": null,
         "name": "Meghna River Estuary",
         "nameEn": "Meghna River Estuary",
         "nameBn": "লক্ষ্মীপুর নদী তীরবর্তী বাঁধ",
@@ -5479,7 +4408,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/lakshmipur/tour-2.webp",
+        "image": null,
         "name": "Ramgati Coastal Fishing Ports",
         "nameEn": "Ramgati Coastal Fishing Ports",
         "nameBn": "লক্ষ্মীপুর ইকোপার্ক ও বনাঞ্চল",
@@ -5496,7 +4425,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/lakshmipur/tour-3.webp",
+        "image": null,
         "name": "Lakshmipur Cultural Heritage Museum",
         "nameEn": "Lakshmipur Cultural Heritage Museum",
         "nameBn": "লক্ষ্মীপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -5513,7 +4442,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/lakshmipur/tour-4.webp",
+        "image": null,
         "name": "Lakshmipur Scenic Lake & Boating Resort",
         "nameEn": "Lakshmipur Scenic Lake & Boating Resort",
         "nameBn": "লক্ষ্মীপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -5530,7 +4459,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/lakshmipur/tour-5.webp",
+        "image": null,
         "name": "Lakshmipur Sunset Hilltop Viewpoint",
         "nameEn": "Lakshmipur Sunset Hilltop Viewpoint",
         "nameBn": "লক্ষ্মীপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -5562,7 +4491,7 @@ const LOCAL_DISTRICTS = [
     "area": "4,202.70 km²",
     "areaBn": "৪,২০২.৭০ বর্গ কি.মি.",
     "pop": "3.2M",
-    "popBn": "৩.২ মিলিয়ন",
+    "popBn": "০.৩২ কোটি",
     "dist": "165 km",
     "distBn": "১৬৫ কি.মি.",
     "route": "Via Dhaka-Chittagong Highway branching at Comilla (approx. 3.5 - 4 hours by bus/train).",
@@ -5571,63 +4500,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Noakhali (নোয়াখালী) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Noakhali (নোয়াখালী) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "নোয়াখালী (Noakhali) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/noakhali/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/noakhali/carousel-1.webp",
-        "title": "Noakhali Heritage & Landscapes",
-        "titleEn": "Noakhali Heritage & Landscapes",
-        "titleBn": "নোয়াখালী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/noakhali/carousel-2.webp",
-        "title": "Historic Monuments of Noakhali",
-        "titleEn": "Historic Monuments of Noakhali",
-        "titleBn": "নোয়াখালী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/noakhali/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/noakhali/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/noakhali/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/noakhali/hist-1.webp",
+        "image": null,
         "name": "Gandhi Ashram Trust (Jayag)",
         "nameEn": "Gandhi Ashram Trust (Jayag)",
         "nameBn": "নোয়াখালী প্রাচীন রাজবাড়ি",
@@ -5644,7 +4522,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/noakhali/hist-2.webp",
+        "image": null,
         "name": "Bajra Shahi Mosque",
         "nameEn": "Bajra Shahi Mosque",
         "nameBn": "নোয়াখালী কেন্দ্রীয় জামে মসজিদ",
@@ -5661,7 +4539,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/noakhali/hist-3.webp",
+        "image": null,
         "name": "Noakhali Colonial Court & Mint",
         "nameEn": "Noakhali Colonial Court & Mint",
         "nameBn": "নোয়াখালী ঔপনিবেশিক আদালত ও ভবন",
@@ -5678,7 +4556,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/noakhali/hist-4.webp",
+        "image": null,
         "name": "Noakhali Archeological Mound",
         "nameEn": "Noakhali Archeological Mound",
         "nameBn": "নোয়াখালী প্রত্নতাত্ত্বিক ঢিবি",
@@ -5695,7 +4573,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/noakhali/hist-5.webp",
+        "image": null,
         "name": "Noakhali Liberation War Memorial",
         "nameEn": "Noakhali Liberation War Memorial",
         "nameBn": "নোয়াখালী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -5714,7 +4592,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/noakhali/tour-1.webp",
+        "image": null,
         "name": "Nijhum Dwip (Silent Island)",
         "nameEn": "Nijhum Dwip (Silent Island)",
         "nameBn": "নোয়াখালী নদী তীরবর্তী বাঁধ",
@@ -5731,7 +4609,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/noakhali/tour-2.webp",
+        "image": null,
         "name": "Swarnadwip & Coastal Polders",
         "nameEn": "Swarnadwip & Coastal Polders",
         "nameBn": "নোয়াখালী ইকোপার্ক ও বনাঞ্চল",
@@ -5748,7 +4626,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/noakhali/tour-3.webp",
+        "image": null,
         "name": "Noakhali Cultural Heritage Museum",
         "nameEn": "Noakhali Cultural Heritage Museum",
         "nameBn": "নোয়াখালী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -5765,7 +4643,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/noakhali/tour-4.webp",
+        "image": null,
         "name": "Noakhali Scenic Lake & Boating Resort",
         "nameEn": "Noakhali Scenic Lake & Boating Resort",
         "nameBn": "নোয়াখালী মনোরম হ্রদ ও রিসোর্ট",
@@ -5782,7 +4660,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/noakhali/tour-5.webp",
+        "image": null,
         "name": "Noakhali Sunset Hilltop Viewpoint",
         "nameEn": "Noakhali Sunset Hilltop Viewpoint",
         "nameBn": "নোয়াখালী সূর্যাস্ত ভিউপয়েন্ট",
@@ -5814,7 +4692,7 @@ const LOCAL_DISTRICTS = [
     "area": "6,116.13 km²",
     "areaBn": "৬,১১৬.১৩ বর্গ কি.মি.",
     "pop": "0.62M",
-    "popBn": "০.৬২ মিলিয়ন",
+    "popBn": "০.০৬ কোটি",
     "dist": "305 km",
     "distBn": "৩০৫ কি.মি.",
     "route": "Direct highway buses from Dhaka (8 hrs), or fly to Chattogram and drive 2 hours.",
@@ -5823,63 +4701,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Rangamati (রাঙ্গামাটি) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineEn": "Rangamati (রাঙ্গামাটি) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
     "taglineBn": "রাঙ্গামাটি (Rangamati) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/rangamati/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/rangamati/carousel-1.webp",
-        "title": "Rangamati Heritage & Landscapes",
-        "titleEn": "Rangamati Heritage & Landscapes",
-        "titleBn": "রাঙ্গামাটি ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Chattogram Division",
-        "subtitleEn": "Panoramic beauty across Chattogram Division",
-        "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/rangamati/carousel-2.webp",
-        "title": "Historic Monuments of Rangamati",
-        "titleEn": "Historic Monuments of Rangamati",
-        "titleBn": "রাঙ্গামাটি জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/rangamati/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/rangamati/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/rangamati/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/rangamati/hist-1.webp",
+        "image": null,
         "name": "Chakma Royal Palace",
         "nameEn": "Chakma Royal Palace",
         "nameBn": "রাঙ্গামাটি প্রাচীন রাজবাড়ি",
@@ -5896,7 +4723,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rangamati/hist-2.webp",
+        "image": null,
         "name": "Rajban Vihara",
         "nameEn": "Rajban Vihara",
         "nameBn": "রাঙ্গামাটি কেন্দ্রীয় জামে মসজিদ",
@@ -5913,7 +4740,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rangamati/hist-3.webp",
+        "image": null,
         "name": "Rangamati Colonial Court & Mint",
         "nameEn": "Rangamati Colonial Court & Mint",
         "nameBn": "রাঙ্গামাটি ঔপনিবেশিক আদালত ও ভবন",
@@ -5930,7 +4757,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rangamati/hist-4.webp",
+        "image": null,
         "name": "Rangamati Archeological Mound",
         "nameEn": "Rangamati Archeological Mound",
         "nameBn": "রাঙ্গামাটি প্রত্নতাত্ত্বিক ঢিবি",
@@ -5947,7 +4774,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rangamati/hist-5.webp",
+        "image": null,
         "name": "Rangamati Liberation War Memorial",
         "nameEn": "Rangamati Liberation War Memorial",
         "nameBn": "রাঙ্গামাটি মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -5966,7 +4793,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/rangamati/tour-1.webp",
+        "image": null,
         "name": "Kaptai Lake & Hanging Bridge",
         "nameEn": "Kaptai Lake & Hanging Bridge",
         "nameBn": "রাঙ্গামাটি নদী তীরবর্তী বাঁধ",
@@ -5983,7 +4810,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rangamati/tour-2.webp",
+        "image": null,
         "name": "Shuvolong Waterfalls",
         "nameEn": "Shuvolong Waterfalls",
         "nameBn": "রাঙ্গামাটি ইকোপার্ক ও বনাঞ্চল",
@@ -6000,7 +4827,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rangamati/tour-3.webp",
+        "image": null,
         "name": "Rangamati Cultural Heritage Museum",
         "nameEn": "Rangamati Cultural Heritage Museum",
         "nameBn": "রাঙ্গামাটি লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -6017,7 +4844,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rangamati/tour-4.webp",
+        "image": null,
         "name": "Rangamati Scenic Lake & Boating Resort",
         "nameEn": "Rangamati Scenic Lake & Boating Resort",
         "nameBn": "রাঙ্গামাটি মনোরম হ্রদ ও রিসোর্ট",
@@ -6034,7 +4861,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rangamati/tour-5.webp",
+        "image": null,
         "name": "Rangamati Sunset Hilltop Viewpoint",
         "nameEn": "Rangamati Sunset Hilltop Viewpoint",
         "nameBn": "রাঙ্গামাটি সূর্যাস্ত ভিউপয়েন্ট",
@@ -6066,7 +4893,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,636.58 km²",
     "areaBn": "২,৬৩৬.৫৮ বর্গ কি.মি.",
     "pop": "2.1M",
-    "popBn": "২.১ মিলিয়ন",
+    "popBn": "০.২১ কোটি",
     "dist": "160 km",
     "distBn": "১৬০ কি.মি.",
     "route": "Via Dhaka-Sylhet Highway N2 or Upaban/Parabat Express intercity trains (approx. 3 hours).",
@@ -6075,63 +4902,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Habiganj (হবিগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineEn": "Habiganj (হবিগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineBn": "হবিগঞ্জ (Habiganj) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/habiganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/habiganj/carousel-1.webp",
-        "title": "Habiganj Heritage & Landscapes",
-        "titleEn": "Habiganj Heritage & Landscapes",
-        "titleBn": "হবিগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Sylhet Division",
-        "subtitleEn": "Panoramic beauty across Sylhet Division",
-        "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/habiganj/carousel-2.webp",
-        "title": "Historic Monuments of Habiganj",
-        "titleEn": "Historic Monuments of Habiganj",
-        "titleBn": "হবিগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/habiganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/habiganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/habiganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/habiganj/hist-1.webp",
+        "image": null,
         "name": "Bithangal Akhra",
         "nameEn": "Bithangal Akhra",
         "nameBn": "হবিগঞ্জ প্রাচীন রাজবাড়ি",
@@ -6148,7 +4924,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/habiganj/hist-2.webp",
+        "image": null,
         "name": "Uchail Shankerpasha Mosque",
         "nameEn": "Uchail Shankerpasha Mosque",
         "nameBn": "হবিগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -6165,7 +4941,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/habiganj/hist-3.webp",
+        "image": null,
         "name": "Habiganj Colonial Court & Mint",
         "nameEn": "Habiganj Colonial Court & Mint",
         "nameBn": "হবিগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -6182,7 +4958,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/habiganj/hist-4.webp",
+        "image": null,
         "name": "Habiganj Archeological Mound",
         "nameEn": "Habiganj Archeological Mound",
         "nameBn": "হবিগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -6199,7 +4975,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/habiganj/hist-5.webp",
+        "image": null,
         "name": "Habiganj Liberation War Memorial",
         "nameEn": "Habiganj Liberation War Memorial",
         "nameBn": "হবিগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -6218,7 +4994,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/habiganj/tour-1.webp",
+        "image": null,
         "name": "Satchari National Park",
         "nameEn": "Satchari National Park",
         "nameBn": "হবিগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -6235,7 +5011,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/habiganj/tour-2.webp",
+        "image": null,
         "name": "Rolling Tea Gardens of Bahubal",
         "nameEn": "Rolling Tea Gardens of Bahubal",
         "nameBn": "হবিগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -6252,7 +5028,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/habiganj/tour-3.webp",
+        "image": null,
         "name": "Habiganj Cultural Heritage Museum",
         "nameEn": "Habiganj Cultural Heritage Museum",
         "nameBn": "হবিগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -6269,7 +5045,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/habiganj/tour-4.webp",
+        "image": null,
         "name": "Habiganj Scenic Lake & Boating Resort",
         "nameEn": "Habiganj Scenic Lake & Boating Resort",
         "nameBn": "হবিগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -6286,7 +5062,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/habiganj/tour-5.webp",
+        "image": null,
         "name": "Habiganj Sunset Hilltop Viewpoint",
         "nameEn": "Habiganj Sunset Hilltop Viewpoint",
         "nameBn": "হবিগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -6318,7 +5094,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,799.38 km²",
     "areaBn": "২,৭৯৯.৩৮ বর্গ কি.মি.",
     "pop": "2.2M",
-    "popBn": "২.২ মিলিয়ন",
+    "popBn": "০.২২ কোটি",
     "dist": "200 km",
     "distBn": "২০০ কি.মি.",
     "route": "Via Dhaka-Sylhet Highway N2 or intercity trains stopping at Sreemangal station (3.5 - 4 hrs).",
@@ -6327,63 +5103,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Moulvibazar (মৌলভীবাজার) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineEn": "Moulvibazar (মৌলভীবাজার) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineBn": "মৌলভীবাজার (Moulvibazar) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/moulvibazar/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/moulvibazar/carousel-1.webp",
-        "title": "Moulvibazar Heritage & Landscapes",
-        "titleEn": "Moulvibazar Heritage & Landscapes",
-        "titleBn": "মৌলভীবাজার ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Sylhet Division",
-        "subtitleEn": "Panoramic beauty across Sylhet Division",
-        "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/moulvibazar/carousel-2.webp",
-        "title": "Historic Monuments of Moulvibazar",
-        "titleEn": "Historic Monuments of Moulvibazar",
-        "titleBn": "মৌলভীবাজার জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/moulvibazar/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/moulvibazar/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/moulvibazar/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/moulvibazar/hist-1.webp",
+        "image": null,
         "name": "Prithimpassa Nawab Estate",
         "nameEn": "Prithimpassa Nawab Estate",
         "nameBn": "মৌলভীবাজার প্রাচীন রাজবাড়ি",
@@ -6400,7 +5125,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/moulvibazar/hist-2.webp",
+        "image": null,
         "name": "Khoja Mosque",
         "nameEn": "Khoja Mosque",
         "nameBn": "মৌলভীবাজার কেন্দ্রীয় জামে মসজিদ",
@@ -6417,7 +5142,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/moulvibazar/hist-3.webp",
+        "image": null,
         "name": "Moulvibazar Colonial Court & Mint",
         "nameEn": "Moulvibazar Colonial Court & Mint",
         "nameBn": "মৌলভীবাজার ঔপনিবেশিক আদালত ও ভবন",
@@ -6434,7 +5159,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/moulvibazar/hist-4.webp",
+        "image": null,
         "name": "Moulvibazar Archeological Mound",
         "nameEn": "Moulvibazar Archeological Mound",
         "nameBn": "মৌলভীবাজার প্রত্নতাত্ত্বিক ঢিবি",
@@ -6451,7 +5176,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/moulvibazar/hist-5.webp",
+        "image": null,
         "name": "Moulvibazar Liberation War Memorial",
         "nameEn": "Moulvibazar Liberation War Memorial",
         "nameBn": "মৌলভীবাজার মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -6470,7 +5195,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/moulvibazar/tour-1.webp",
+        "image": null,
         "name": "Sreemangal Tea Country",
         "nameEn": "Sreemangal Tea Country",
         "nameBn": "মৌলভীবাজার নদী তীরবর্তী বাঁধ",
@@ -6487,7 +5212,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/moulvibazar/tour-2.webp",
+        "image": null,
         "name": "Lawachara Rain Forest & Madhabkunda",
         "nameEn": "Lawachara Rain Forest & Madhabkunda",
         "nameBn": "মৌলভীবাজার ইকোপার্ক ও বনাঞ্চল",
@@ -6504,7 +5229,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/moulvibazar/tour-3.webp",
+        "image": null,
         "name": "Moulvibazar Cultural Heritage Museum",
         "nameEn": "Moulvibazar Cultural Heritage Museum",
         "nameBn": "মৌলভীবাজার লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -6521,7 +5246,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/moulvibazar/tour-4.webp",
+        "image": null,
         "name": "Moulvibazar Scenic Lake & Boating Resort",
         "nameEn": "Moulvibazar Scenic Lake & Boating Resort",
         "nameBn": "মৌলভীবাজার মনোরম হ্রদ ও রিসোর্ট",
@@ -6538,7 +5263,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/moulvibazar/tour-5.webp",
+        "image": null,
         "name": "Moulvibazar Sunset Hilltop Viewpoint",
         "nameEn": "Moulvibazar Sunset Hilltop Viewpoint",
         "nameBn": "মৌলভীবাজার সূর্যাস্ত ভিউপয়েন্ট",
@@ -6570,7 +5295,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,747.18 km²",
     "areaBn": "৩,৭৪৭.১৮ বর্গ কি.মি.",
     "pop": "2.6M",
-    "popBn": "২.৬ মিলিয়ন",
+    "popBn": "০.২৬ কোটি",
     "dist": "280 km",
     "distBn": "২৮০ কি.মি.",
     "route": "Via Dhaka-Sylhet Highway branching to Sunamganj or direct express buses (5.5 - 6 hours).",
@@ -6579,63 +5304,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Sunamganj (সুনামগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineEn": "Sunamganj (সুনামগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineBn": "সুনামগঞ্জ (Sunamganj) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/sunamganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/sunamganj/carousel-1.webp",
-        "title": "Sunamganj Heritage & Landscapes",
-        "titleEn": "Sunamganj Heritage & Landscapes",
-        "titleBn": "সুনামগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Sylhet Division",
-        "subtitleEn": "Panoramic beauty across Sylhet Division",
-        "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/sunamganj/carousel-2.webp",
-        "title": "Historic Monuments of Sunamganj",
-        "titleEn": "Historic Monuments of Sunamganj",
-        "titleBn": "সুনামগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/sunamganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/sunamganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/sunamganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/sunamganj/hist-1.webp",
+        "image": null,
         "name": "Hason Raja Museum & Palace",
         "nameEn": "Hason Raja Museum & Palace",
         "nameBn": "সুনামগঞ্জ প্রাচীন রাজবাড়ি",
@@ -6652,7 +5326,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sunamganj/hist-2.webp",
+        "image": null,
         "name": "Pagla Jame Mosque",
         "nameEn": "Pagla Jame Mosque",
         "nameBn": "সুনামগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -6669,7 +5343,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sunamganj/hist-3.webp",
+        "image": null,
         "name": "Sunamganj Colonial Court & Mint",
         "nameEn": "Sunamganj Colonial Court & Mint",
         "nameBn": "সুনামগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -6686,7 +5360,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sunamganj/hist-4.webp",
+        "image": null,
         "name": "Sunamganj Archeological Mound",
         "nameEn": "Sunamganj Archeological Mound",
         "nameBn": "সুনামগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -6703,7 +5377,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sunamganj/hist-5.webp",
+        "image": null,
         "name": "Sunamganj Liberation War Memorial",
         "nameEn": "Sunamganj Liberation War Memorial",
         "nameBn": "সুনামগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -6722,7 +5396,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/sunamganj/tour-1.webp",
+        "image": null,
         "name": "Tanguar Haor Ramsar Site",
         "nameEn": "Tanguar Haor Ramsar Site",
         "nameBn": "সুনামগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -6739,7 +5413,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sunamganj/tour-2.webp",
+        "image": null,
         "name": "Shimul Bagan & Jadukata River",
         "nameEn": "Shimul Bagan & Jadukata River",
         "nameBn": "সুনামগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -6756,7 +5430,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sunamganj/tour-3.webp",
+        "image": null,
         "name": "Sunamganj Cultural Heritage Museum",
         "nameEn": "Sunamganj Cultural Heritage Museum",
         "nameBn": "সুনামগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -6773,7 +5447,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sunamganj/tour-4.webp",
+        "image": null,
         "name": "Sunamganj Scenic Lake & Boating Resort",
         "nameEn": "Sunamganj Scenic Lake & Boating Resort",
         "nameBn": "সুনামগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -6790,7 +5464,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sunamganj/tour-5.webp",
+        "image": null,
         "name": "Sunamganj Sunset Hilltop Viewpoint",
         "nameEn": "Sunamganj Sunset Hilltop Viewpoint",
         "nameBn": "সুনামগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -6822,7 +5496,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,490.40 km²",
     "areaBn": "৩,৪৯০.৪০ বর্গ কি.মি.",
     "pop": "3.9M",
-    "popBn": "৩.৯ মিলিয়ন",
+    "popBn": "০.৩৯ কোটি",
     "dist": "240 km",
     "distBn": "২৪০ কি.মি.",
     "route": "Via Dhaka-Sylhet Highway N2 (5 hrs), Parabat/Kalni Express train (5 hrs), or 35-min flight.",
@@ -6831,63 +5505,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Sylhet (সিলেট) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineEn": "Sylhet (সিলেট) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
     "taglineBn": "সিলেট (Sylhet) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/sylhet/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/sylhet/carousel-1.webp",
-        "title": "Sylhet Heritage & Landscapes",
-        "titleEn": "Sylhet Heritage & Landscapes",
-        "titleBn": "সিলেট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Sylhet Division",
-        "subtitleEn": "Panoramic beauty across Sylhet Division",
-        "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/sylhet/carousel-2.webp",
-        "title": "Historic Monuments of Sylhet",
-        "titleEn": "Historic Monuments of Sylhet",
-        "titleBn": "সিলেট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/sylhet/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/sylhet/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/sylhet/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/sylhet/hist-1.webp",
+        "image": null,
         "name": "Dargah of Hazrat Shah Jalal (R.)",
         "nameEn": "Dargah of Hazrat Shah Jalal (R.)",
         "nameBn": "সিলেট প্রাচীন রাজবাড়ি",
@@ -6904,7 +5527,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sylhet/hist-2.webp",
+        "image": null,
         "name": "Keane Bridge & Ali Amjad Clock",
         "nameEn": "Keane Bridge & Ali Amjad Clock",
         "nameBn": "সিলেট কেন্দ্রীয় জামে মসজিদ",
@@ -6921,7 +5544,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sylhet/hist-3.webp",
+        "image": null,
         "name": "Sylhet Colonial Court & Mint",
         "nameEn": "Sylhet Colonial Court & Mint",
         "nameBn": "সিলেট ঔপনিবেশিক আদালত ও ভবন",
@@ -6938,7 +5561,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sylhet/hist-4.webp",
+        "image": null,
         "name": "Sylhet Archeological Mound",
         "nameEn": "Sylhet Archeological Mound",
         "nameBn": "সিলেট প্রত্নতাত্ত্বিক ঢিবি",
@@ -6955,7 +5578,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sylhet/hist-5.webp",
+        "image": null,
         "name": "Sylhet Liberation War Memorial",
         "nameEn": "Sylhet Liberation War Memorial",
         "nameBn": "সিলেট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -6974,7 +5597,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/sylhet/tour-1.webp",
+        "image": null,
         "name": "Ratargul Freshwater Swamp Forest",
         "nameEn": "Ratargul Freshwater Swamp Forest",
         "nameBn": "সিলেট নদী তীরবর্তী বাঁধ",
@@ -6991,7 +5614,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sylhet/tour-2.webp",
+        "image": null,
         "name": "Jaflong & Bisnakandi",
         "nameEn": "Jaflong & Bisnakandi",
         "nameBn": "সিলেট ইকোপার্ক ও বনাঞ্চল",
@@ -7008,7 +5631,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sylhet/tour-3.webp",
+        "image": null,
         "name": "Sylhet Cultural Heritage Museum",
         "nameEn": "Sylhet Cultural Heritage Museum",
         "nameBn": "সিলেট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -7025,7 +5648,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sylhet/tour-4.webp",
+        "image": null,
         "name": "Sylhet Scenic Lake & Boating Resort",
         "nameEn": "Sylhet Scenic Lake & Boating Resort",
         "nameBn": "সিলেট মনোরম হ্রদ ও রিসোর্ট",
@@ -7042,7 +5665,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sylhet/tour-5.webp",
+        "image": null,
         "name": "Sylhet Sunset Hilltop Viewpoint",
         "nameEn": "Sylhet Sunset Hilltop Viewpoint",
         "nameBn": "সিলেট সূর্যাস্ত ভিউপয়েন্ট",
@@ -7074,7 +5697,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,831.31 km²",
     "areaBn": "১,৮৩১.৩১ বর্গ কি.মি.",
     "pop": "0.9M",
-    "popBn": "০.৯ মিলিয়ন",
+    "popBn": "০.০৯ কোটি",
     "dist": "320 km",
     "distBn": "৩২০ কি.মি.",
     "route": "Via Padma Bridge expressway through Barishal (6-7 hrs) or luxury overnight launch from Sadarghat.",
@@ -7083,63 +5706,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Barguna (বরগুনা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineEn": "Barguna (বরগুনা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineBn": "বরগুনা (Barguna) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/barguna/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/barguna/carousel-1.webp",
-        "title": "Barguna Heritage & Landscapes",
-        "titleEn": "Barguna Heritage & Landscapes",
-        "titleBn": "বরগুনা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Barishal Division",
-        "subtitleEn": "Panoramic beauty across Barishal Division",
-        "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/barguna/carousel-2.webp",
-        "title": "Historic Monuments of Barguna",
-        "titleEn": "Historic Monuments of Barguna",
-        "titleBn": "বরগুনা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/barguna/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/barguna/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/barguna/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/barguna/hist-1.webp",
+        "image": null,
         "name": "Bibi Chini Shahi Mosque",
         "nameEn": "Bibi Chini Shahi Mosque",
         "nameBn": "বরগুনা প্রাচীন রাজবাড়ি",
@@ -7156,7 +5728,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/barguna/hist-2.webp",
+        "image": null,
         "name": "Kankradon Historical Zamindar Estate",
         "nameEn": "Kankradon Historical Zamindar Estate",
         "nameBn": "বরগুনা কেন্দ্রীয় জামে মসজিদ",
@@ -7173,7 +5745,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/barguna/hist-3.webp",
+        "image": null,
         "name": "Barguna Colonial Court & Mint",
         "nameEn": "Barguna Colonial Court & Mint",
         "nameBn": "বরগুনা ঔপনিবেশিক আদালত ও ভবন",
@@ -7190,7 +5762,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/barguna/hist-4.webp",
+        "image": null,
         "name": "Barguna Archeological Mound",
         "nameEn": "Barguna Archeological Mound",
         "nameBn": "বরগুনা প্রত্নতাত্ত্বিক ঢিবি",
@@ -7207,7 +5779,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/barguna/hist-5.webp",
+        "image": null,
         "name": "Barguna Liberation War Memorial",
         "nameEn": "Barguna Liberation War Memorial",
         "nameBn": "বরগুনা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -7226,7 +5798,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/barguna/tour-1.webp",
+        "image": null,
         "name": "Shuvo Sandhya Sea Beach",
         "nameEn": "Shuvo Sandhya Sea Beach",
         "nameBn": "বরগুনা নদী তীরবর্তী বাঁধ",
@@ -7243,7 +5815,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/barguna/tour-2.webp",
+        "image": null,
         "name": "Tengragiri Wildlife Sanctuary",
         "nameEn": "Tengragiri Wildlife Sanctuary",
         "nameBn": "বরগুনা ইকোপার্ক ও বনাঞ্চল",
@@ -7260,7 +5832,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/barguna/tour-3.webp",
+        "image": null,
         "name": "Barguna Cultural Heritage Museum",
         "nameEn": "Barguna Cultural Heritage Museum",
         "nameBn": "বরগুনা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -7277,7 +5849,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/barguna/tour-4.webp",
+        "image": null,
         "name": "Barguna Scenic Lake & Boating Resort",
         "nameEn": "Barguna Scenic Lake & Boating Resort",
         "nameBn": "বরগুনা মনোরম হ্রদ ও রিসোর্ট",
@@ -7294,7 +5866,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/barguna/tour-5.webp",
+        "image": null,
         "name": "Barguna Sunset Hilltop Viewpoint",
         "nameEn": "Barguna Sunset Hilltop Viewpoint",
         "nameBn": "বরগুনা সূর্যাস্ত ভিউপয়েন্ট",
@@ -7326,7 +5898,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,784.52 km²",
     "areaBn": "২,৭৮৪.৫২ বর্গ কি.মি.",
     "pop": "2.4M",
-    "popBn": "২.৪ মিলিয়ন",
+    "popBn": "০.২৪ কোটি",
     "dist": "185 km",
     "distBn": "১৮৫ কি.মি.",
     "route": "Via Padma Bridge & Dhaka-Barishal Highway N8 (approx. 3.5 - 4 hrs) or overnight luxury launch.",
@@ -7335,63 +5907,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Barishal (বরিশাল) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineEn": "Barishal (বরিশাল) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineBn": "বরিশাল (Barishal) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/barishal/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/barishal/carousel-1.webp",
-        "title": "Barishal Heritage & Landscapes",
-        "titleEn": "Barishal Heritage & Landscapes",
-        "titleBn": "বরিশাল ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Barishal Division",
-        "subtitleEn": "Panoramic beauty across Barishal Division",
-        "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/barishal/carousel-2.webp",
-        "title": "Historic Monuments of Barishal",
-        "titleEn": "Historic Monuments of Barishal",
-        "titleBn": "বরিশাল জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/barishal/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/barishal/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/barishal/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/barishal/hist-1.webp",
+        "image": null,
         "name": "Oxford Mission Epiphany Church",
         "nameEn": "Oxford Mission Epiphany Church",
         "nameBn": "বরিশাল প্রাচীন রাজবাড়ি",
@@ -7408,7 +5929,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/barishal/hist-2.webp",
+        "image": null,
         "name": "Durga Sagar Dighi",
         "nameEn": "Durga Sagar Dighi",
         "nameBn": "বরিশাল কেন্দ্রীয় জামে মসজিদ",
@@ -7425,7 +5946,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/barishal/hist-3.webp",
+        "image": null,
         "name": "Barishal Colonial Court & Mint",
         "nameEn": "Barishal Colonial Court & Mint",
         "nameBn": "বরিশাল ঔপনিবেশিক আদালত ও ভবন",
@@ -7442,7 +5963,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/barishal/hist-4.webp",
+        "image": null,
         "name": "Barishal Archeological Mound",
         "nameEn": "Barishal Archeological Mound",
         "nameBn": "বরিশাল প্রত্নতাত্ত্বিক ঢিবি",
@@ -7459,7 +5980,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/barishal/hist-5.webp",
+        "image": null,
         "name": "Barishal Liberation War Memorial",
         "nameEn": "Barishal Liberation War Memorial",
         "nameBn": "বরিশাল মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -7478,7 +5999,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/barishal/tour-1.webp",
+        "image": null,
         "name": "Bhimruli Floating Guava Market",
         "nameEn": "Bhimruli Floating Guava Market",
         "nameBn": "বরিশাল নদী তীরবর্তী বাঁধ",
@@ -7495,7 +6016,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/barishal/tour-2.webp",
+        "image": null,
         "name": "Bells Park (Bangabandhu Udyan)",
         "nameEn": "Bells Park (Bangabandhu Udyan)",
         "nameBn": "বরিশাল ইকোপার্ক ও বনাঞ্চল",
@@ -7512,7 +6033,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/barishal/tour-3.webp",
+        "image": null,
         "name": "Barishal Cultural Heritage Museum",
         "nameEn": "Barishal Cultural Heritage Museum",
         "nameBn": "বরিশাল লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -7529,7 +6050,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/barishal/tour-4.webp",
+        "image": null,
         "name": "Barishal Scenic Lake & Boating Resort",
         "nameEn": "Barishal Scenic Lake & Boating Resort",
         "nameBn": "বরিশাল মনোরম হ্রদ ও রিসোর্ট",
@@ -7546,7 +6067,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/barishal/tour-5.webp",
+        "image": null,
         "name": "Barishal Sunset Hilltop Viewpoint",
         "nameEn": "Barishal Sunset Hilltop Viewpoint",
         "nameBn": "বরিশাল সূর্যাস্ত ভিউপয়েন্ট",
@@ -7578,7 +6099,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,403.48 km²",
     "areaBn": "৩,৪০৩.৪৮ বর্গ কি.মি.",
     "pop": "1.8M",
-    "popBn": "১.৮ মিলিয়ন",
+    "popBn": "০.১৮ কোটি",
     "dist": "250 km",
     "distBn": "২৫০ কি.মি.",
     "route": "Via luxury overnight river launch directly from Sadarghat, or bus to Barishal followed by ferry.",
@@ -7587,63 +6108,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Bhola (ভোলা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineEn": "Bhola (ভোলা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineBn": "ভোলা (Bhola) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/bhola/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/bhola/carousel-1.webp",
-        "title": "Bhola Heritage & Landscapes",
-        "titleEn": "Bhola Heritage & Landscapes",
-        "titleBn": "ভোলা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Barishal Division",
-        "subtitleEn": "Panoramic beauty across Barishal Division",
-        "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/bhola/carousel-2.webp",
-        "title": "Historic Monuments of Bhola",
-        "titleEn": "Historic Monuments of Bhola",
-        "titleBn": "ভোলা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/bhola/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/bhola/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/bhola/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/bhola/hist-1.webp",
+        "image": null,
         "name": "Miah Bari Mosque",
         "nameEn": "Miah Bari Mosque",
         "nameBn": "ভোলা প্রাচীন রাজবাড়ি",
@@ -7660,7 +6130,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bhola/hist-2.webp",
+        "image": null,
         "name": "Bir Sreshtho Mostafa Kamal Memorial",
         "nameEn": "Bir Sreshtho Mostafa Kamal Memorial",
         "nameBn": "ভোলা কেন্দ্রীয় জামে মসজিদ",
@@ -7677,7 +6147,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bhola/hist-3.webp",
+        "image": null,
         "name": "Bhola Colonial Court & Mint",
         "nameEn": "Bhola Colonial Court & Mint",
         "nameBn": "ভোলা ঔপনিবেশিক আদালত ও ভবন",
@@ -7694,7 +6164,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bhola/hist-4.webp",
+        "image": null,
         "name": "Bhola Archeological Mound",
         "nameEn": "Bhola Archeological Mound",
         "nameBn": "ভোলা প্রত্নতাত্ত্বিক ঢিবি",
@@ -7711,7 +6181,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bhola/hist-5.webp",
+        "image": null,
         "name": "Bhola Liberation War Memorial",
         "nameEn": "Bhola Liberation War Memorial",
         "nameBn": "ভোলা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -7730,7 +6200,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/bhola/tour-1.webp",
+        "image": null,
         "name": "Monpura Island",
         "nameEn": "Monpura Island",
         "nameBn": "ভোলা নদী তীরবর্তী বাঁধ",
@@ -7747,7 +6217,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bhola/tour-2.webp",
+        "image": null,
         "name": "Jacob Watch Tower (Char Fasson)",
         "nameEn": "Jacob Watch Tower (Char Fasson)",
         "nameBn": "ভোলা ইকোপার্ক ও বনাঞ্চল",
@@ -7764,7 +6234,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bhola/tour-3.webp",
+        "image": null,
         "name": "Bhola Cultural Heritage Museum",
         "nameEn": "Bhola Cultural Heritage Museum",
         "nameBn": "ভোলা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -7781,7 +6251,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bhola/tour-4.webp",
+        "image": null,
         "name": "Bhola Scenic Lake & Boating Resort",
         "nameEn": "Bhola Scenic Lake & Boating Resort",
         "nameBn": "ভোলা মনোরম হ্রদ ও রিসোর্ট",
@@ -7798,7 +6268,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bhola/tour-5.webp",
+        "image": null,
         "name": "Bhola Sunset Hilltop Viewpoint",
         "nameEn": "Bhola Sunset Hilltop Viewpoint",
         "nameBn": "ভোলা সূর্যাস্ত ভিউপয়েন্ট",
@@ -7830,7 +6300,7 @@ const LOCAL_DISTRICTS = [
     "area": "749.33 km²",
     "areaBn": "৭৪৯.৩৩ বর্গ কি.মি.",
     "pop": "0.7M",
-    "popBn": "০.৭ মিলিয়ন",
+    "popBn": "০.০৭ কোটি",
     "dist": "195 km",
     "distBn": "১৯৫ কি.মি.",
     "route": "Via Padma Bridge and Barishal highway (approx. 4 hours) or river route from Dhaka.",
@@ -7839,63 +6309,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Jhalokathi (ঝালকাঠি) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineEn": "Jhalokathi (ঝালকাঠি) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineBn": "ঝালকাঠি (Jhalokathi) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/jhalokathi/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/jhalokathi/carousel-1.webp",
-        "title": "Jhalokathi Heritage & Landscapes",
-        "titleEn": "Jhalokathi Heritage & Landscapes",
-        "titleBn": "ঝালকাঠি ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Barishal Division",
-        "subtitleEn": "Panoramic beauty across Barishal Division",
-        "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/jhalokathi/carousel-2.webp",
-        "title": "Historic Monuments of Jhalokathi",
-        "titleEn": "Historic Monuments of Jhalokathi",
-        "titleBn": "ঝালকাঠি জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/jhalokathi/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/jhalokathi/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/jhalokathi/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/jhalokathi/hist-1.webp",
+        "image": null,
         "name": "Sujabad Mughal Fort",
         "nameEn": "Sujabad Mughal Fort",
         "nameBn": "ঝালকাঠি প্রাচীন রাজবাড়ি",
@@ -7912,7 +6331,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jhalokathi/hist-2.webp",
+        "image": null,
         "name": "Kirtipasha Zamindar Bari",
         "nameEn": "Kirtipasha Zamindar Bari",
         "nameBn": "ঝালকাঠি কেন্দ্রীয় জামে মসজিদ",
@@ -7929,7 +6348,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jhalokathi/hist-3.webp",
+        "image": null,
         "name": "Jhalokathi Colonial Court & Mint",
         "nameEn": "Jhalokathi Colonial Court & Mint",
         "nameBn": "ঝালকাঠি ঔপনিবেশিক আদালত ও ভবন",
@@ -7946,7 +6365,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jhalokathi/hist-4.webp",
+        "image": null,
         "name": "Jhalokathi Archeological Mound",
         "nameEn": "Jhalokathi Archeological Mound",
         "nameBn": "ঝালকাঠি প্রত্নতাত্ত্বিক ঢিবি",
@@ -7963,7 +6382,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jhalokathi/hist-5.webp",
+        "image": null,
         "name": "Jhalokathi Liberation War Memorial",
         "nameEn": "Jhalokathi Liberation War Memorial",
         "nameBn": "ঝালকাঠি মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -7982,7 +6401,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/jhalokathi/tour-1.webp",
+        "image": null,
         "name": "Bhimruli Canal & Guava Orchards",
         "nameEn": "Bhimruli Canal & Guava Orchards",
         "nameBn": "ঝালকাঠি নদী তীরবর্তী বাঁধ",
@@ -7999,7 +6418,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jhalokathi/tour-2.webp",
+        "image": null,
         "name": "Gaba Shahi Mosque",
         "nameEn": "Gaba Shahi Mosque",
         "nameBn": "ঝালকাঠি ইকোপার্ক ও বনাঞ্চল",
@@ -8016,7 +6435,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jhalokathi/tour-3.webp",
+        "image": null,
         "name": "Jhalokathi Cultural Heritage Museum",
         "nameEn": "Jhalokathi Cultural Heritage Museum",
         "nameBn": "ঝালকাঠি লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -8033,7 +6452,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jhalokathi/tour-4.webp",
+        "image": null,
         "name": "Jhalokathi Scenic Lake & Boating Resort",
         "nameEn": "Jhalokathi Scenic Lake & Boating Resort",
         "nameBn": "ঝালকাঠি মনোরম হ্রদ ও রিসোর্ট",
@@ -8050,7 +6469,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jhalokathi/tour-5.webp",
+        "image": null,
         "name": "Jhalokathi Sunset Hilltop Viewpoint",
         "nameEn": "Jhalokathi Sunset Hilltop Viewpoint",
         "nameBn": "ঝালকাঠি সূর্যাস্ত ভিউপয়েন্ট",
@@ -8082,7 +6501,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,221.31 km²",
     "areaBn": "৩,২২১.৩১ বর্গ কি.মি.",
     "pop": "1.6M",
-    "popBn": "১.৬ মিলিয়ন",
+    "popBn": "০.১৬ কোটি",
     "dist": "260 km",
     "distBn": "২৬০ কি.মি.",
     "route": "Directly via Padma Bridge and Payra Bridge expressway (approx. 5 hrs) or overnight launch.",
@@ -8091,63 +6510,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Patuakhali (পটুয়াখালী) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineEn": "Patuakhali (পটুয়াখালী) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineBn": "পটুয়াখালী (Patuakhali) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/patuakhali/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/patuakhali/carousel-1.webp",
-        "title": "Patuakhali Heritage & Landscapes",
-        "titleEn": "Patuakhali Heritage & Landscapes",
-        "titleBn": "পটুয়াখালী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Barishal Division",
-        "subtitleEn": "Panoramic beauty across Barishal Division",
-        "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/patuakhali/carousel-2.webp",
-        "title": "Historic Monuments of Patuakhali",
-        "titleEn": "Historic Monuments of Patuakhali",
-        "titleBn": "পটুয়াখালী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/patuakhali/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/patuakhali/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/patuakhali/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/patuakhali/hist-1.webp",
+        "image": null,
         "name": "Kuakata Ancient Buddhist Wells",
         "nameEn": "Kuakata Ancient Buddhist Wells",
         "nameBn": "পটুয়াখালী প্রাচীন রাজবাড়ি",
@@ -8164,7 +6532,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/patuakhali/hist-2.webp",
+        "image": null,
         "name": "Shreerampur Shahi Mosque",
         "nameEn": "Shreerampur Shahi Mosque",
         "nameBn": "পটুয়াখালী কেন্দ্রীয় জামে মসজিদ",
@@ -8181,7 +6549,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/patuakhali/hist-3.webp",
+        "image": null,
         "name": "Patuakhali Colonial Court & Mint",
         "nameEn": "Patuakhali Colonial Court & Mint",
         "nameBn": "পটুয়াখালী ঔপনিবেশিক আদালত ও ভবন",
@@ -8198,7 +6566,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/patuakhali/hist-4.webp",
+        "image": null,
         "name": "Patuakhali Archeological Mound",
         "nameEn": "Patuakhali Archeological Mound",
         "nameBn": "পটুয়াখালী প্রত্নতাত্ত্বিক ঢিবি",
@@ -8215,7 +6583,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/patuakhali/hist-5.webp",
+        "image": null,
         "name": "Patuakhali Liberation War Memorial",
         "nameEn": "Patuakhali Liberation War Memorial",
         "nameBn": "পটুয়াখালী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -8234,7 +6602,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/patuakhali/tour-1.webp",
+        "image": null,
         "name": "Kuakata \"Daughter of the Sea\" Beach",
         "nameEn": "Kuakata \"Daughter of the Sea\" Beach",
         "nameBn": "পটুয়াখালী নদী তীরবর্তী বাঁধ",
@@ -8251,7 +6619,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/patuakhali/tour-2.webp",
+        "image": null,
         "name": "Fatrar Char & Mangrove Forest",
         "nameEn": "Fatrar Char & Mangrove Forest",
         "nameBn": "পটুয়াখালী ইকোপার্ক ও বনাঞ্চল",
@@ -8268,7 +6636,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/patuakhali/tour-3.webp",
+        "image": null,
         "name": "Patuakhali Cultural Heritage Museum",
         "nameEn": "Patuakhali Cultural Heritage Museum",
         "nameBn": "পটুয়াখালী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -8285,7 +6653,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/patuakhali/tour-4.webp",
+        "image": null,
         "name": "Patuakhali Scenic Lake & Boating Resort",
         "nameEn": "Patuakhali Scenic Lake & Boating Resort",
         "nameBn": "পটুয়াখালী মনোরম হ্রদ ও রিসোর্ট",
@@ -8302,7 +6670,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/patuakhali/tour-5.webp",
+        "image": null,
         "name": "Patuakhali Sunset Hilltop Viewpoint",
         "nameEn": "Patuakhali Sunset Hilltop Viewpoint",
         "nameBn": "পটুয়াখালী সূর্যাস্ত ভিউপয়েন্ট",
@@ -8334,7 +6702,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,307.61 km²",
     "areaBn": "১,৩০৭.৬১ বর্গ কি.মি.",
     "pop": "1.2M",
-    "popBn": "১.২ মিলিয়ন",
+    "popBn": "০.১২ কোটি",
     "dist": "210 km",
     "distBn": "২১০ কি.মি.",
     "route": "Via Padma Bridge and Bekutia (8th Bangladesh-China Friendship) Bridge (approx. 4.5 hrs).",
@@ -8343,63 +6711,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Pirojpur (পিরোজপুর) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineEn": "Pirojpur (পিরোজপুর) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
     "taglineBn": "পিরোজপুর (Pirojpur) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/pirojpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/pirojpur/carousel-1.webp",
-        "title": "Pirojpur Heritage & Landscapes",
-        "titleEn": "Pirojpur Heritage & Landscapes",
-        "titleBn": "পিরোজপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Barishal Division",
-        "subtitleEn": "Panoramic beauty across Barishal Division",
-        "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/pirojpur/carousel-2.webp",
-        "title": "Historic Monuments of Pirojpur",
-        "titleEn": "Historic Monuments of Pirojpur",
-        "titleBn": "পিরোজপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/pirojpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/pirojpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/pirojpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/pirojpur/hist-1.webp",
+        "image": null,
         "name": "Rayerkathi Zamindar Palace & Temple",
         "nameEn": "Rayerkathi Zamindar Palace & Temple",
         "nameBn": "পিরোজপুর প্রাচীন রাজবাড়ি",
@@ -8416,7 +6733,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/pirojpur/hist-2.webp",
+        "image": null,
         "name": "Majlishpur Ancient Mosque",
         "nameEn": "Majlishpur Ancient Mosque",
         "nameBn": "পিরোজপুর কেন্দ্রীয় জামে মসজিদ",
@@ -8433,7 +6750,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/pirojpur/hist-3.webp",
+        "image": null,
         "name": "Pirojpur Colonial Court & Mint",
         "nameEn": "Pirojpur Colonial Court & Mint",
         "nameBn": "পিরোজপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -8450,7 +6767,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/pirojpur/hist-4.webp",
+        "image": null,
         "name": "Pirojpur Archeological Mound",
         "nameEn": "Pirojpur Archeological Mound",
         "nameBn": "পিরোজপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -8467,7 +6784,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/pirojpur/hist-5.webp",
+        "image": null,
         "name": "Pirojpur Liberation War Memorial",
         "nameEn": "Pirojpur Liberation War Memorial",
         "nameBn": "পিরোজপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -8486,7 +6803,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/pirojpur/tour-1.webp",
+        "image": null,
         "name": "Bekutia Bridge & Sandhya River",
         "nameEn": "Bekutia Bridge & Sandhya River",
         "nameBn": "পিরোজপুর নদী তীরবর্তী বাঁধ",
@@ -8503,7 +6820,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/pirojpur/tour-2.webp",
+        "image": null,
         "name": "Kuriana Floating Fruit Orchards",
         "nameEn": "Kuriana Floating Fruit Orchards",
         "nameBn": "পিরোজপুর ইকোপার্ক ও বনাঞ্চল",
@@ -8520,7 +6837,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/pirojpur/tour-3.webp",
+        "image": null,
         "name": "Pirojpur Cultural Heritage Museum",
         "nameEn": "Pirojpur Cultural Heritage Museum",
         "nameBn": "পিরোজপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -8537,7 +6854,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/pirojpur/tour-4.webp",
+        "image": null,
         "name": "Pirojpur Scenic Lake & Boating Resort",
         "nameEn": "Pirojpur Scenic Lake & Boating Resort",
         "nameBn": "পিরোজপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -8554,7 +6871,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/pirojpur/tour-5.webp",
+        "image": null,
         "name": "Pirojpur Sunset Hilltop Viewpoint",
         "nameEn": "Pirojpur Sunset Hilltop Viewpoint",
         "nameBn": "পিরোজপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -8586,7 +6903,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,959.11 km²",
     "areaBn": "৩,৯৫৯.১১ বর্গ কি.মি.",
     "pop": "1.5M",
-    "popBn": "১.৫ মিলিয়ন",
+    "popBn": "০.১৫ কোটি",
     "dist": "200 km",
     "distBn": "২০০ কি.মি.",
     "route": "Via Padma Bridge and Dhaka-Khulna Highway N8 (approx. 3.5 - 4 hours by bus/car).",
@@ -8595,63 +6912,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Bagerhat (বাগেরহাট) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Bagerhat (বাগেরহাট) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "বাগেরহাট (Bagerhat) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/bagerhat/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/bagerhat/carousel-1.webp",
-        "title": "Bagerhat Heritage & Landscapes",
-        "titleEn": "Bagerhat Heritage & Landscapes",
-        "titleBn": "বাগেরহাট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/bagerhat/carousel-2.webp",
-        "title": "Historic Monuments of Bagerhat",
-        "titleEn": "Historic Monuments of Bagerhat",
-        "titleBn": "বাগেরহাট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/bagerhat/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/bagerhat/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/bagerhat/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/bagerhat/hist-1.webp",
+        "image": null,
         "name": "Sixty Dome Mosque (Shat Gombuj)",
         "nameEn": "Sixty Dome Mosque (Shat Gombuj)",
         "nameBn": "বাগেরহাট প্রাচীন রাজবাড়ি",
@@ -8668,7 +6934,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bagerhat/hist-2.webp",
+        "image": null,
         "name": "Mausoleum of Khan Jahan Ali",
         "nameEn": "Mausoleum of Khan Jahan Ali",
         "nameBn": "বাগেরহাট কেন্দ্রীয় জামে মসজিদ",
@@ -8685,7 +6951,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bagerhat/hist-3.webp",
+        "image": null,
         "name": "Bagerhat Colonial Court & Mint",
         "nameEn": "Bagerhat Colonial Court & Mint",
         "nameBn": "বাগেরহাট ঔপনিবেশিক আদালত ও ভবন",
@@ -8702,7 +6968,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bagerhat/hist-4.webp",
+        "image": null,
         "name": "Bagerhat Archeological Mound",
         "nameEn": "Bagerhat Archeological Mound",
         "nameBn": "বাগেরহাট প্রত্নতাত্ত্বিক ঢিবি",
@@ -8719,7 +6985,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bagerhat/hist-5.webp",
+        "image": null,
         "name": "Bagerhat Liberation War Memorial",
         "nameEn": "Bagerhat Liberation War Memorial",
         "nameBn": "বাগেরহাট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -8738,7 +7004,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/bagerhat/tour-1.webp",
+        "image": null,
         "name": "Sundarbans East Eco-Sanctuary",
         "nameEn": "Sundarbans East Eco-Sanctuary",
         "nameBn": "বাগেরহাট নদী তীরবর্তী বাঁধ",
@@ -8755,7 +7021,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bagerhat/tour-2.webp",
+        "image": null,
         "name": "Chunakhola Mosque",
         "nameEn": "Chunakhola Mosque",
         "nameBn": "বাগেরহাট ইকোপার্ক ও বনাঞ্চল",
@@ -8772,7 +7038,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bagerhat/tour-3.webp",
+        "image": null,
         "name": "Bagerhat Cultural Heritage Museum",
         "nameEn": "Bagerhat Cultural Heritage Museum",
         "nameBn": "বাগেরহাট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -8789,7 +7055,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bagerhat/tour-4.webp",
+        "image": null,
         "name": "Bagerhat Scenic Lake & Boating Resort",
         "nameEn": "Bagerhat Scenic Lake & Boating Resort",
         "nameBn": "বাগেরহাট মনোরম হ্রদ ও রিসোর্ট",
@@ -8806,7 +7072,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bagerhat/tour-5.webp",
+        "image": null,
         "name": "Bagerhat Sunset Hilltop Viewpoint",
         "nameEn": "Bagerhat Sunset Hilltop Viewpoint",
         "nameBn": "বাগেরহাট সূর্যাস্ত ভিউপয়েন্ট",
@@ -8838,7 +7104,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,170.87 km²",
     "areaBn": "১,১৭০.৮৭ বর্গ কি.মি.",
     "pop": "1.2M",
-    "popBn": "১.২ মিলিয়ন",
+    "popBn": "০.১২ কোটি",
     "dist": "230 km",
     "distBn": "২৩০ কি.মি.",
     "route": "Via Padma Bridge and Jhenaidah-Chuadanga highway or Chitra Express train (approx. 5 hrs).",
@@ -8847,63 +7113,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Chuadanga (চুয়াডাঙ্গা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Chuadanga (চুয়াডাঙ্গা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "চুয়াডাঙ্গা (Chuadanga) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/chuadanga/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/chuadanga/carousel-1.webp",
-        "title": "Chuadanga Heritage & Landscapes",
-        "titleEn": "Chuadanga Heritage & Landscapes",
-        "titleBn": "চুয়াডাঙ্গা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/chuadanga/carousel-2.webp",
-        "title": "Historic Monuments of Chuadanga",
-        "titleEn": "Historic Monuments of Chuadanga",
-        "titleBn": "চুয়াডাঙ্গা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/chuadanga/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/chuadanga/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/chuadanga/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/chuadanga/hist-1.webp",
+        "image": null,
         "name": "Gholdari Shahi Mosque",
         "nameEn": "Gholdari Shahi Mosque",
         "nameBn": "চুয়াডাঙ্গা প্রাচীন রাজবাড়ি",
@@ -8920,7 +7135,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chuadanga/hist-2.webp",
+        "image": null,
         "name": "Carew & Co. Historic Distillery",
         "nameEn": "Carew & Co. Historic Distillery",
         "nameBn": "চুয়াডাঙ্গা কেন্দ্রীয় জামে মসজিদ",
@@ -8937,7 +7152,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chuadanga/hist-3.webp",
+        "image": null,
         "name": "Chuadanga Colonial Court & Mint",
         "nameEn": "Chuadanga Colonial Court & Mint",
         "nameBn": "চুয়াডাঙ্গা ঔপনিবেশিক আদালত ও ভবন",
@@ -8954,7 +7169,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chuadanga/hist-4.webp",
+        "image": null,
         "name": "Chuadanga Archeological Mound",
         "nameEn": "Chuadanga Archeological Mound",
         "nameBn": "চুয়াডাঙ্গা প্রত্নতাত্ত্বিক ঢিবি",
@@ -8971,7 +7186,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chuadanga/hist-5.webp",
+        "image": null,
         "name": "Chuadanga Liberation War Memorial",
         "nameEn": "Chuadanga Liberation War Memorial",
         "nameBn": "চুয়াডাঙ্গা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -8990,7 +7205,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/chuadanga/tour-1.webp",
+        "image": null,
         "name": "Karpasdanga Christian Church & Memorial",
         "nameEn": "Karpasdanga Christian Church & Memorial",
         "nameBn": "চুয়াডাঙ্গা নদী তীরবর্তী বাঁধ",
@@ -9007,7 +7222,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chuadanga/tour-2.webp",
+        "image": null,
         "name": "Mathabhanga River Bank",
         "nameEn": "Mathabhanga River Bank",
         "nameBn": "চুয়াডাঙ্গা ইকোপার্ক ও বনাঞ্চল",
@@ -9024,7 +7239,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chuadanga/tour-3.webp",
+        "image": null,
         "name": "Chuadanga Cultural Heritage Museum",
         "nameEn": "Chuadanga Cultural Heritage Museum",
         "nameBn": "চুয়াডাঙ্গা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -9041,7 +7256,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chuadanga/tour-4.webp",
+        "image": null,
         "name": "Chuadanga Scenic Lake & Boating Resort",
         "nameEn": "Chuadanga Scenic Lake & Boating Resort",
         "nameBn": "চুয়াডাঙ্গা মনোরম হ্রদ ও রিসোর্ট",
@@ -9058,7 +7273,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chuadanga/tour-5.webp",
+        "image": null,
         "name": "Chuadanga Sunset Hilltop Viewpoint",
         "nameEn": "Chuadanga Sunset Hilltop Viewpoint",
         "nameBn": "চুয়াডাঙ্গা সূর্যাস্ত ভিউপয়েন্ট",
@@ -9090,7 +7305,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,566.98 km²",
     "areaBn": "২,৫৬৬.৯৮ বর্গ কি.মি.",
     "pop": "2.8M",
-    "popBn": "২.৮ মিলিয়ন",
+    "popBn": "০.২৮ কোটি",
     "dist": "190 km",
     "distBn": "১৯০ কি.মি.",
     "route": "Via Padma Bridge expressway (approx. 3.5 hrs), Benapole Express train, or 35-min flight.",
@@ -9099,63 +7314,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Jashore (যশোর) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Jashore (যশোর) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "যশোর (Jashore) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/jashore/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/jashore/carousel-1.webp",
-        "title": "Jashore Heritage & Landscapes",
-        "titleEn": "Jashore Heritage & Landscapes",
-        "titleBn": "যশোর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/jashore/carousel-2.webp",
-        "title": "Historic Monuments of Jashore",
-        "titleEn": "Historic Monuments of Jashore",
-        "titleBn": "যশোর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/jashore/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/jashore/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/jashore/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/jashore/hist-1.webp",
+        "image": null,
         "name": "Mirzanagar Hammamkhana",
         "nameEn": "Mirzanagar Hammamkhana",
         "nameBn": "যশোর প্রাচীন রাজবাড়ি",
@@ -9172,7 +7336,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jashore/hist-2.webp",
+        "image": null,
         "name": "Chanchra Rajbari & Shiva Temple",
         "nameEn": "Chanchra Rajbari & Shiva Temple",
         "nameBn": "যশোর কেন্দ্রীয় জামে মসজিদ",
@@ -9189,7 +7353,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jashore/hist-3.webp",
+        "image": null,
         "name": "Jashore Colonial Court & Mint",
         "nameEn": "Jashore Colonial Court & Mint",
         "nameBn": "যশোর ঔপনিবেশিক আদালত ও ভবন",
@@ -9206,7 +7370,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jashore/hist-4.webp",
+        "image": null,
         "name": "Jashore Archeological Mound",
         "nameEn": "Jashore Archeological Mound",
         "nameBn": "যশোর প্রত্নতাত্ত্বিক ঢিবি",
@@ -9223,7 +7387,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jashore/hist-5.webp",
+        "image": null,
         "name": "Jashore Liberation War Memorial",
         "nameEn": "Jashore Liberation War Memorial",
         "nameBn": "যশোর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -9242,7 +7406,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/jashore/tour-1.webp",
+        "image": null,
         "name": "Gadkhali Flower Capital",
         "nameEn": "Gadkhali Flower Capital",
         "nameBn": "যশোর নদী তীরবর্তী বাঁধ",
@@ -9259,7 +7423,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jashore/tour-2.webp",
+        "image": null,
         "name": "Sagardari (Michael Madhusudan Memorial)",
         "nameEn": "Sagardari (Michael Madhusudan Memorial)",
         "nameBn": "যশোর ইকোপার্ক ও বনাঞ্চল",
@@ -9276,7 +7440,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jashore/tour-3.webp",
+        "image": null,
         "name": "Jashore Cultural Heritage Museum",
         "nameEn": "Jashore Cultural Heritage Museum",
         "nameBn": "যশোর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -9293,7 +7457,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jashore/tour-4.webp",
+        "image": null,
         "name": "Jashore Scenic Lake & Boating Resort",
         "nameEn": "Jashore Scenic Lake & Boating Resort",
         "nameBn": "যশোর মনোরম হ্রদ ও রিসোর্ট",
@@ -9310,7 +7474,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jashore/tour-5.webp",
+        "image": null,
         "name": "Jashore Sunset Hilltop Viewpoint",
         "nameEn": "Jashore Sunset Hilltop Viewpoint",
         "nameBn": "যশোর সূর্যাস্ত ভিউপয়েন্ট",
@@ -9342,7 +7506,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,964.77 km²",
     "areaBn": "১,৯৬৪.৭৭ বর্গ কি.মি.",
     "pop": "1.8M",
-    "popBn": "১.৮ মিলিয়ন",
+    "popBn": "০.১৮ কোটি",
     "dist": "215 km",
     "distBn": "২১৫ কি.মি.",
     "route": "Via Padma Bridge expressway through Magura (approx. 4 hours by highway bus/car).",
@@ -9351,63 +7515,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Jhenaidah (ঝিনাইদহ) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Jhenaidah (ঝিনাইদহ) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "ঝিনাইদহ (Jhenaidah) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/jhenaidah/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/jhenaidah/carousel-1.webp",
-        "title": "Jhenaidah Heritage & Landscapes",
-        "titleEn": "Jhenaidah Heritage & Landscapes",
-        "titleBn": "ঝিনাইদহ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/jhenaidah/carousel-2.webp",
-        "title": "Historic Monuments of Jhenaidah",
-        "titleEn": "Historic Monuments of Jhenaidah",
-        "titleBn": "ঝিনাইদহ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/jhenaidah/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/jhenaidah/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/jhenaidah/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/jhenaidah/hist-1.webp",
+        "image": null,
         "name": "Naldanga Temple Complex",
         "nameEn": "Naldanga Temple Complex",
         "nameBn": "ঝিনাইদহ প্রাচীন রাজবাড়ি",
@@ -9424,7 +7537,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jhenaidah/hist-2.webp",
+        "image": null,
         "name": "Shailkupa Shahi Mosque",
         "nameEn": "Shailkupa Shahi Mosque",
         "nameBn": "ঝিনাইদহ কেন্দ্রীয় জামে মসজিদ",
@@ -9441,7 +7554,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jhenaidah/hist-3.webp",
+        "image": null,
         "name": "Jhenaidah Colonial Court & Mint",
         "nameEn": "Jhenaidah Colonial Court & Mint",
         "nameBn": "ঝিনাইদহ ঔপনিবেশিক আদালত ও ভবন",
@@ -9458,7 +7571,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jhenaidah/hist-4.webp",
+        "image": null,
         "name": "Jhenaidah Archeological Mound",
         "nameEn": "Jhenaidah Archeological Mound",
         "nameBn": "ঝিনাইদহ প্রত্নতাত্ত্বিক ঢিবি",
@@ -9475,7 +7588,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jhenaidah/hist-5.webp",
+        "image": null,
         "name": "Jhenaidah Liberation War Memorial",
         "nameEn": "Jhenaidah Liberation War Memorial",
         "nameBn": "ঝিনাইদহ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -9494,7 +7607,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/jhenaidah/tour-1.webp",
+        "image": null,
         "name": "Dhol Samudra Dighi",
         "nameEn": "Dhol Samudra Dighi",
         "nameBn": "ঝিনাইদহ নদী তীরবর্তী বাঁধ",
@@ -9511,7 +7624,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jhenaidah/tour-2.webp",
+        "image": null,
         "name": "Johurul Haque Baor",
         "nameEn": "Johurul Haque Baor",
         "nameBn": "ঝিনাইদহ ইকোপার্ক ও বনাঞ্চল",
@@ -9528,7 +7641,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jhenaidah/tour-3.webp",
+        "image": null,
         "name": "Jhenaidah Cultural Heritage Museum",
         "nameEn": "Jhenaidah Cultural Heritage Museum",
         "nameBn": "ঝিনাইদহ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -9545,7 +7658,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jhenaidah/tour-4.webp",
+        "image": null,
         "name": "Jhenaidah Scenic Lake & Boating Resort",
         "nameEn": "Jhenaidah Scenic Lake & Boating Resort",
         "nameBn": "ঝিনাইদহ মনোরম হ্রদ ও রিসোর্ট",
@@ -9562,7 +7675,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jhenaidah/tour-5.webp",
+        "image": null,
         "name": "Jhenaidah Sunset Hilltop Viewpoint",
         "nameEn": "Jhenaidah Sunset Hilltop Viewpoint",
         "nameBn": "ঝিনাইদহ সূর্যাস্ত ভিউপয়েন্ট",
@@ -9594,7 +7707,7 @@ const LOCAL_DISTRICTS = [
     "area": "4,394.46 km²",
     "areaBn": "৪,৩৯৪.৪৬ বর্গ কি.মি.",
     "pop": "2.4M",
-    "popBn": "২.৪ মিলিয়ন",
+    "popBn": "০.২৪ কোটি",
     "dist": "220 km",
     "distBn": "২২০ কি.মি.",
     "route": "Via Padma Bridge and Dhaka-Khulna Highway N8 (approx. 3.5 - 4 hrs), Sundarban Express train, or flight.",
@@ -9603,63 +7716,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Khulna (খুলনা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Khulna (খুলনা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "খুলনা (Khulna) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/khulna/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/khulna/carousel-1.webp",
-        "title": "Khulna Heritage & Landscapes",
-        "titleEn": "Khulna Heritage & Landscapes",
-        "titleBn": "খুলনা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/khulna/carousel-2.webp",
-        "title": "Historic Monuments of Khulna",
-        "titleEn": "Historic Monuments of Khulna",
-        "titleBn": "খুলনা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/khulna/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/khulna/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/khulna/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/khulna/hist-1.webp",
+        "image": null,
         "name": "Saint Joseph's Cathedral",
         "nameEn": "Saint Joseph's Cathedral",
         "nameBn": "খুলনা প্রাচীন রাজবাড়ি",
@@ -9676,7 +7738,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/khulna/hist-2.webp",
+        "image": null,
         "name": "Shiromoni Historical War Memorial",
         "nameEn": "Shiromoni Historical War Memorial",
         "nameBn": "খুলনা কেন্দ্রীয় জামে মসজিদ",
@@ -9693,7 +7755,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/khulna/hist-3.webp",
+        "image": null,
         "name": "Khulna Colonial Court & Mint",
         "nameEn": "Khulna Colonial Court & Mint",
         "nameBn": "খুলনা ঔপনিবেশিক আদালত ও ভবন",
@@ -9710,7 +7772,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/khulna/hist-4.webp",
+        "image": null,
         "name": "Khulna Archeological Mound",
         "nameEn": "Khulna Archeological Mound",
         "nameBn": "খুলনা প্রত্নতাত্ত্বিক ঢিবি",
@@ -9727,7 +7789,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/khulna/hist-5.webp",
+        "image": null,
         "name": "Khulna Liberation War Memorial",
         "nameEn": "Khulna Liberation War Memorial",
         "nameBn": "খুলনা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -9746,7 +7808,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/khulna/tour-1.webp",
+        "image": null,
         "name": "Sundarbans National Forest Gateway",
         "nameEn": "Sundarbans National Forest Gateway",
         "nameBn": "খুলনা নদী তীরবর্তী বাঁধ",
@@ -9763,7 +7825,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/khulna/tour-2.webp",
+        "image": null,
         "name": "Khan Jahan Ali (Rupsha) Bridge",
         "nameEn": "Khan Jahan Ali (Rupsha) Bridge",
         "nameBn": "খুলনা ইকোপার্ক ও বনাঞ্চল",
@@ -9780,7 +7842,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/khulna/tour-3.webp",
+        "image": null,
         "name": "Khulna Cultural Heritage Museum",
         "nameEn": "Khulna Cultural Heritage Museum",
         "nameBn": "খুলনা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -9797,7 +7859,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/khulna/tour-4.webp",
+        "image": null,
         "name": "Khulna Scenic Lake & Boating Resort",
         "nameEn": "Khulna Scenic Lake & Boating Resort",
         "nameBn": "খুলনা মনোরম হ্রদ ও রিসোর্ট",
@@ -9814,7 +7876,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/khulna/tour-5.webp",
+        "image": null,
         "name": "Khulna Sunset Hilltop Viewpoint",
         "nameEn": "Khulna Sunset Hilltop Viewpoint",
         "nameBn": "খুলনা সূর্যাস্ত ভিউপয়েন্ট",
@@ -9846,7 +7908,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,608.80 km²",
     "areaBn": "১,৬০৮.৮০ বর্গ কি.মি.",
     "pop": "2.0M",
-    "popBn": "২.০ মিলিয়ন",
+    "popBn": "০.২ কোটি",
     "dist": "210 km",
     "distBn": "২১০ কি.মি.",
     "route": "Via Padma Bridge or Jamuna Bridge highway routes, or direct trains via Poradaha junction (4.5 hrs).",
@@ -9855,63 +7917,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Kushtia (কুষ্টিয়া) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Kushtia (কুষ্টিয়া) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "কুষ্টিয়া (Kushtia) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/kushtia/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/kushtia/carousel-1.webp",
-        "title": "Kushtia Heritage & Landscapes",
-        "titleEn": "Kushtia Heritage & Landscapes",
-        "titleBn": "কুষ্টিয়া ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/kushtia/carousel-2.webp",
-        "title": "Historic Monuments of Kushtia",
-        "titleEn": "Historic Monuments of Kushtia",
-        "titleBn": "কুষ্টিয়া জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/kushtia/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/kushtia/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/kushtia/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/kushtia/hist-1.webp",
+        "image": null,
         "name": "Lalon Shah Shrine (Chheuriya)",
         "nameEn": "Lalon Shah Shrine (Chheuriya)",
         "nameBn": "কুষ্টিয়া প্রাচীন রাজবাড়ি",
@@ -9928,7 +7939,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/kushtia/hist-2.webp",
+        "image": null,
         "name": "Tagore Lodge & Kuthibari (Shilaidaha)",
         "nameEn": "Tagore Lodge & Kuthibari (Shilaidaha)",
         "nameBn": "কুষ্টিয়া কেন্দ্রীয় জামে মসজিদ",
@@ -9945,7 +7956,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/kushtia/hist-3.webp",
+        "image": null,
         "name": "Kushtia Colonial Court & Mint",
         "nameEn": "Kushtia Colonial Court & Mint",
         "nameBn": "কুষ্টিয়া ঔপনিবেশিক আদালত ও ভবন",
@@ -9962,7 +7973,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/kushtia/hist-4.webp",
+        "image": null,
         "name": "Kushtia Archeological Mound",
         "nameEn": "Kushtia Archeological Mound",
         "nameBn": "কুষ্টিয়া প্রত্নতাত্ত্বিক ঢিবি",
@@ -9979,7 +7990,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/kushtia/hist-5.webp",
+        "image": null,
         "name": "Kushtia Liberation War Memorial",
         "nameEn": "Kushtia Liberation War Memorial",
         "nameBn": "কুষ্টিয়া মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -9998,7 +8009,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/kushtia/tour-1.webp",
+        "image": null,
         "name": "Hardinge Bridge & Lalon Shah Bridge",
         "nameEn": "Hardinge Bridge & Lalon Shah Bridge",
         "nameBn": "কুষ্টিয়া নদী তীরবর্তী বাঁধ",
@@ -10015,7 +8026,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/kushtia/tour-2.webp",
+        "image": null,
         "name": "Ghashi Lake & Gorai River Banks",
         "nameEn": "Ghashi Lake & Gorai River Banks",
         "nameBn": "কুষ্টিয়া ইকোপার্ক ও বনাঞ্চল",
@@ -10032,7 +8043,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/kushtia/tour-3.webp",
+        "image": null,
         "name": "Kushtia Cultural Heritage Museum",
         "nameEn": "Kushtia Cultural Heritage Museum",
         "nameBn": "কুষ্টিয়া লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -10049,7 +8060,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/kushtia/tour-4.webp",
+        "image": null,
         "name": "Kushtia Scenic Lake & Boating Resort",
         "nameEn": "Kushtia Scenic Lake & Boating Resort",
         "nameBn": "কুষ্টিয়া মনোরম হ্রদ ও রিসোর্ট",
@@ -10066,7 +8077,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/kushtia/tour-5.webp",
+        "image": null,
         "name": "Kushtia Sunset Hilltop Viewpoint",
         "nameEn": "Kushtia Sunset Hilltop Viewpoint",
         "nameBn": "কুষ্টিয়া সূর্যাস্ত ভিউপয়েন্ট",
@@ -10098,7 +8109,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,048.61 km²",
     "areaBn": "১,০৪৮.৬১ বর্গ কি.মি.",
     "pop": "1.0M",
-    "popBn": "১.০ মিলিয়ন",
+    "popBn": "০.১ কোটি",
     "dist": "165 km",
     "distBn": "১৬৫ কি.মি.",
     "route": "Via Padma Bridge expressway through Faridpur (approx. 3 hours by direct bus or car).",
@@ -10107,63 +8118,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Magura (মাগুরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Magura (মাগুরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "মাগুরা (Magura) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/magura/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/magura/carousel-1.webp",
-        "title": "Magura Heritage & Landscapes",
-        "titleEn": "Magura Heritage & Landscapes",
-        "titleBn": "মাগুরা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/magura/carousel-2.webp",
-        "title": "Historic Monuments of Magura",
-        "titleEn": "Historic Monuments of Magura",
-        "titleBn": "মাগুরা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/magura/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/magura/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/magura/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/magura/hist-1.webp",
+        "image": null,
         "name": "Sreepur Zamindar Bari",
         "nameEn": "Sreepur Zamindar Bari",
         "nameBn": "মাগুরা প্রাচীন রাজবাড়ি",
@@ -10180,7 +8140,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/magura/hist-2.webp",
+        "image": null,
         "name": "Mohammadpur Ancient Mosque & Fort",
         "nameEn": "Mohammadpur Ancient Mosque & Fort",
         "nameBn": "মাগুরা কেন্দ্রীয় জামে মসজিদ",
@@ -10197,7 +8157,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/magura/hist-3.webp",
+        "image": null,
         "name": "Magura Colonial Court & Mint",
         "nameEn": "Magura Colonial Court & Mint",
         "nameBn": "মাগুরা ঔপনিবেশিক আদালত ও ভবন",
@@ -10214,7 +8174,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/magura/hist-4.webp",
+        "image": null,
         "name": "Magura Archeological Mound",
         "nameEn": "Magura Archeological Mound",
         "nameBn": "মাগুরা প্রত্নতাত্ত্বিক ঢিবি",
@@ -10231,7 +8191,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/magura/hist-5.webp",
+        "image": null,
         "name": "Magura Liberation War Memorial",
         "nameEn": "Magura Liberation War Memorial",
         "nameBn": "মাগুরা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -10250,7 +8210,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/magura/tour-1.webp",
+        "image": null,
         "name": "Siddheswari Kali Temple",
         "nameEn": "Siddheswari Kali Temple",
         "nameBn": "মাগুরা নদী তীরবর্তী বাঁধ",
@@ -10267,7 +8227,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/magura/tour-2.webp",
+        "image": null,
         "name": "Gorai River Sands",
         "nameEn": "Gorai River Sands",
         "nameBn": "মাগুরা ইকোপার্ক ও বনাঞ্চল",
@@ -10284,7 +8244,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/magura/tour-3.webp",
+        "image": null,
         "name": "Magura Cultural Heritage Museum",
         "nameEn": "Magura Cultural Heritage Museum",
         "nameBn": "মাগুরা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -10301,7 +8261,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/magura/tour-4.webp",
+        "image": null,
         "name": "Magura Scenic Lake & Boating Resort",
         "nameEn": "Magura Scenic Lake & Boating Resort",
         "nameBn": "মাগুরা মনোরম হ্রদ ও রিসোর্ট",
@@ -10318,7 +8278,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/magura/tour-5.webp",
+        "image": null,
         "name": "Magura Sunset Hilltop Viewpoint",
         "nameEn": "Magura Sunset Hilltop Viewpoint",
         "nameBn": "মাগুরা সূর্যাস্ত ভিউপয়েন্ট",
@@ -10350,7 +8310,7 @@ const LOCAL_DISTRICTS = [
     "area": "751.62 km²",
     "areaBn": "৭৫১.৬২ বর্গ কি.মি.",
     "pop": "0.7M",
-    "popBn": "০.৭ মিলিয়ন",
+    "popBn": "০.০৭ কোটি",
     "dist": "250 km",
     "distBn": "২৫০ কি.মি.",
     "route": "Via Padma Bridge through Kushtia or Chuadanga (approx. 5 - 5.5 hours by highway bus).",
@@ -10359,63 +8319,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Meherpur (মেহেরপুর) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Meherpur (মেহেরপুর) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "মেহেরপুর (Meherpur) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/meherpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/meherpur/carousel-1.webp",
-        "title": "Meherpur Heritage & Landscapes",
-        "titleEn": "Meherpur Heritage & Landscapes",
-        "titleBn": "মেহেরপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/meherpur/carousel-2.webp",
-        "title": "Historic Monuments of Meherpur",
-        "titleEn": "Historic Monuments of Meherpur",
-        "titleBn": "মেহেরপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/meherpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/meherpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/meherpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/meherpur/hist-1.webp",
+        "image": null,
         "name": "Mujibnagar National Memorial Complex",
         "nameEn": "Mujibnagar National Memorial Complex",
         "nameBn": "মেহেরপুর প্রাচীন রাজবাড়ি",
@@ -10432,7 +8341,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/meherpur/hist-2.webp",
+        "image": null,
         "name": "Amjhupi Nilkuthi",
         "nameEn": "Amjhupi Nilkuthi",
         "nameBn": "মেহেরপুর কেন্দ্রীয় জামে মসজিদ",
@@ -10449,7 +8358,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/meherpur/hist-3.webp",
+        "image": null,
         "name": "Meherpur Colonial Court & Mint",
         "nameEn": "Meherpur Colonial Court & Mint",
         "nameBn": "মেহেরপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -10466,7 +8375,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/meherpur/hist-4.webp",
+        "image": null,
         "name": "Meherpur Archeological Mound",
         "nameEn": "Meherpur Archeological Mound",
         "nameBn": "মেহেরপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -10483,7 +8392,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/meherpur/hist-5.webp",
+        "image": null,
         "name": "Meherpur Liberation War Memorial",
         "nameEn": "Meherpur Liberation War Memorial",
         "nameBn": "মেহেরপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -10502,7 +8411,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/meherpur/tour-1.webp",
+        "image": null,
         "name": "Bhabapara Heritage Church",
         "nameEn": "Bhabapara Heritage Church",
         "nameBn": "মেহেরপুর নদী তীরবর্তী বাঁধ",
@@ -10519,7 +8428,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/meherpur/tour-2.webp",
+        "image": null,
         "name": "Bhairab Riverfront",
         "nameEn": "Bhairab Riverfront",
         "nameBn": "মেহেরপুর ইকোপার্ক ও বনাঞ্চল",
@@ -10536,7 +8445,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/meherpur/tour-3.webp",
+        "image": null,
         "name": "Meherpur Cultural Heritage Museum",
         "nameEn": "Meherpur Cultural Heritage Museum",
         "nameBn": "মেহেরপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -10553,7 +8462,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/meherpur/tour-4.webp",
+        "image": null,
         "name": "Meherpur Scenic Lake & Boating Resort",
         "nameEn": "Meherpur Scenic Lake & Boating Resort",
         "nameBn": "মেহেরপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -10570,7 +8479,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/meherpur/tour-5.webp",
+        "image": null,
         "name": "Meherpur Sunset Hilltop Viewpoint",
         "nameEn": "Meherpur Sunset Hilltop Viewpoint",
         "nameBn": "মেহেরপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -10602,7 +8511,7 @@ const LOCAL_DISTRICTS = [
     "area": "990.23 km²",
     "areaBn": "৯৯০.২৩ বর্গ কি.মি.",
     "pop": "0.8M",
-    "popBn": "০.৮ মিলিয়ন",
+    "popBn": "০.০৮ কোটি",
     "dist": "170 km",
     "distBn": "১৭০ কি.মি.",
     "route": "Via Padma Bridge and Kalna (Madhumati) Bridge expressway (approx. 2.5 - 3 hours).",
@@ -10611,63 +8520,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Narail (নড়াইল) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Narail (নড়াইল) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "নড়াইল (Narail) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/narail/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/narail/carousel-1.webp",
-        "title": "Narail Heritage & Landscapes",
-        "titleEn": "Narail Heritage & Landscapes",
-        "titleBn": "নড়াইল ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/narail/carousel-2.webp",
-        "title": "Historic Monuments of Narail",
-        "titleEn": "Historic Monuments of Narail",
-        "titleBn": "নড়াইল জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/narail/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/narail/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/narail/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/narail/hist-1.webp",
+        "image": null,
         "name": "SM Sultan Memorial & Art Gallery",
         "nameEn": "SM Sultan Memorial & Art Gallery",
         "nameBn": "নড়াইল প্রাচীন রাজবাড়ি",
@@ -10684,7 +8542,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/narail/hist-2.webp",
+        "image": null,
         "name": "Victoria Collegiate School Historic Building",
         "nameEn": "Victoria Collegiate School Historic Building",
         "nameBn": "নড়াইল কেন্দ্রীয় জামে মসজিদ",
@@ -10701,7 +8559,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/narail/hist-3.webp",
+        "image": null,
         "name": "Narail Colonial Court & Mint",
         "nameEn": "Narail Colonial Court & Mint",
         "nameBn": "নড়াইল ঔপনিবেশিক আদালত ও ভবন",
@@ -10718,7 +8576,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/narail/hist-4.webp",
+        "image": null,
         "name": "Narail Archeological Mound",
         "nameEn": "Narail Archeological Mound",
         "nameBn": "নড়াইল প্রত্নতাত্ত্বিক ঢিবি",
@@ -10735,7 +8593,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/narail/hist-5.webp",
+        "image": null,
         "name": "Narail Liberation War Memorial",
         "nameEn": "Narail Liberation War Memorial",
         "nameBn": "নড়াইল মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -10754,7 +8612,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/narail/tour-1.webp",
+        "image": null,
         "name": "Chitra River & Otter Fishing Hub",
         "nameEn": "Chitra River & Otter Fishing Hub",
         "nameBn": "নড়াইল নদী তীরবর্তী বাঁধ",
@@ -10771,7 +8629,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/narail/tour-2.webp",
+        "image": null,
         "name": "Madhumati Bridge Plaza",
         "nameEn": "Madhumati Bridge Plaza",
         "nameBn": "নড়াইল ইকোপার্ক ও বনাঞ্চল",
@@ -10788,7 +8646,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/narail/tour-3.webp",
+        "image": null,
         "name": "Narail Cultural Heritage Museum",
         "nameEn": "Narail Cultural Heritage Museum",
         "nameBn": "নড়াইল লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -10805,7 +8663,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/narail/tour-4.webp",
+        "image": null,
         "name": "Narail Scenic Lake & Boating Resort",
         "nameEn": "Narail Scenic Lake & Boating Resort",
         "nameBn": "নড়াইল মনোরম হ্রদ ও রিসোর্ট",
@@ -10822,7 +8680,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/narail/tour-5.webp",
+        "image": null,
         "name": "Narail Sunset Hilltop Viewpoint",
         "nameEn": "Narail Sunset Hilltop Viewpoint",
         "nameBn": "নড়াইল সূর্যাস্ত ভিউপয়েন্ট",
@@ -10854,7 +8712,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,817.29 km²",
     "areaBn": "৩,৮১৭.২৯ বর্গ কি.মি.",
     "pop": "2.1M",
-    "popBn": "২.১ মিলিয়ন",
+    "popBn": "০.২১ কোটি",
     "dist": "265 km",
     "distBn": "২৬৫ কি.মি.",
     "route": "Via Padma Bridge through Khulna (approx. 5 hours) or direct highway coaches.",
@@ -10863,63 +8721,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Satkhira (সাতক্ষীরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineEn": "Satkhira (সাতক্ষীরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
     "taglineBn": "সাতক্ষীরা (Satkhira) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/satkhira/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/satkhira/carousel-1.webp",
-        "title": "Satkhira Heritage & Landscapes",
-        "titleEn": "Satkhira Heritage & Landscapes",
-        "titleBn": "সাতক্ষীরা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Khulna Division",
-        "subtitleEn": "Panoramic beauty across Khulna Division",
-        "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/satkhira/carousel-2.webp",
-        "title": "Historic Monuments of Satkhira",
-        "titleEn": "Historic Monuments of Satkhira",
-        "titleBn": "সাতক্ষীরা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/satkhira/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/satkhira/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/satkhira/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/satkhira/hist-1.webp",
+        "image": null,
         "name": "Ishwaripur Chanda Bhairab & Hamamkhana",
         "nameEn": "Ishwaripur Chanda Bhairab & Hamamkhana",
         "nameBn": "সাতক্ষীরা প্রাচীন রাজবাড়ি",
@@ -10936,7 +8743,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/satkhira/hist-2.webp",
+        "image": null,
         "name": "Five-Dome Mosque of Jessoreshwari",
         "nameEn": "Five-Dome Mosque of Jessoreshwari",
         "nameBn": "সাতক্ষীরা কেন্দ্রীয় জামে মসজিদ",
@@ -10953,7 +8760,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/satkhira/hist-3.webp",
+        "image": null,
         "name": "Satkhira Colonial Court & Mint",
         "nameEn": "Satkhira Colonial Court & Mint",
         "nameBn": "সাতক্ষীরা ঔপনিবেশিক আদালত ও ভবন",
@@ -10970,7 +8777,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/satkhira/hist-4.webp",
+        "image": null,
         "name": "Satkhira Archeological Mound",
         "nameEn": "Satkhira Archeological Mound",
         "nameBn": "সাতক্ষীরা প্রত্নতাত্ত্বিক ঢিবি",
@@ -10987,7 +8794,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/satkhira/hist-5.webp",
+        "image": null,
         "name": "Satkhira Liberation War Memorial",
         "nameEn": "Satkhira Liberation War Memorial",
         "nameBn": "সাতক্ষীরা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -11006,7 +8813,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/satkhira/tour-1.webp",
+        "image": null,
         "name": "Sundarbans Kolagachia & Burigoalini",
         "nameEn": "Sundarbans Kolagachia & Burigoalini",
         "nameBn": "সাতক্ষীরা নদী তীরবর্তী বাঁধ",
@@ -11023,7 +8830,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/satkhira/tour-2.webp",
+        "image": null,
         "name": "Mandarbari Coastal Sea Beach",
         "nameEn": "Mandarbari Coastal Sea Beach",
         "nameBn": "সাতক্ষীরা ইকোপার্ক ও বনাঞ্চল",
@@ -11040,7 +8847,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/satkhira/tour-3.webp",
+        "image": null,
         "name": "Satkhira Cultural Heritage Museum",
         "nameEn": "Satkhira Cultural Heritage Museum",
         "nameBn": "সাতক্ষীরা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -11057,7 +8864,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/satkhira/tour-4.webp",
+        "image": null,
         "name": "Satkhira Scenic Lake & Boating Resort",
         "nameEn": "Satkhira Scenic Lake & Boating Resort",
         "nameBn": "সাতক্ষীরা মনোরম হ্রদ ও রিসোর্ট",
@@ -11074,7 +8881,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/satkhira/tour-5.webp",
+        "image": null,
         "name": "Satkhira Sunset Hilltop Viewpoint",
         "nameEn": "Satkhira Sunset Hilltop Viewpoint",
         "nameBn": "সাতক্ষীরা সূর্যাস্ত ভিউপয়েন্ট",
@@ -11106,7 +8913,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,898.68 km²",
     "areaBn": "২,৮৯৮.৬৮ বর্গ কি.মি.",
     "pop": "3.7M",
-    "popBn": "৩.৭ মিলিয়ন",
+    "popBn": "০.৩৭ কোটি",
     "dist": "200 km",
     "distBn": "২০০ কি.মি.",
     "route": "Via Jamuna Bridge and Dhaka-Bogura 4-lane Highway N5 (approx. 4.5 hours by bus/train).",
@@ -11115,63 +8922,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Bogura (বগুড়া) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Bogura (বগুড়া) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "বগুড়া (Bogura) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/bogura/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/bogura/carousel-1.webp",
-        "title": "Bogura Heritage & Landscapes",
-        "titleEn": "Bogura Heritage & Landscapes",
-        "titleBn": "বগুড়া ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/bogura/carousel-2.webp",
-        "title": "Historic Monuments of Bogura",
-        "titleEn": "Historic Monuments of Bogura",
-        "titleBn": "বগুড়া জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/bogura/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/bogura/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/bogura/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/bogura/hist-1.webp",
+        "image": null,
         "name": "Mahasthangarh (Ancient Pundranagara)",
         "nameEn": "Mahasthangarh (Ancient Pundranagara)",
         "nameBn": "বগুড়া প্রাচীন রাজবাড়ি",
@@ -11188,7 +8944,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bogura/hist-2.webp",
+        "image": null,
         "name": "Gokul Medh (Behula’s Basor Ghar)",
         "nameEn": "Gokul Medh (Behula’s Basor Ghar)",
         "nameBn": "বগুড়া কেন্দ্রীয় জামে মসজিদ",
@@ -11205,7 +8961,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bogura/hist-3.webp",
+        "image": null,
         "name": "Bogura Colonial Court & Mint",
         "nameEn": "Bogura Colonial Court & Mint",
         "nameBn": "বগুড়া ঔপনিবেশিক আদালত ও ভবন",
@@ -11222,7 +8978,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bogura/hist-4.webp",
+        "image": null,
         "name": "Bogura Archeological Mound",
         "nameEn": "Bogura Archeological Mound",
         "nameBn": "বগুড়া প্রত্নতাত্ত্বিক ঢিবি",
@@ -11239,7 +8995,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bogura/hist-5.webp",
+        "image": null,
         "name": "Bogura Liberation War Memorial",
         "nameEn": "Bogura Liberation War Memorial",
         "nameBn": "বগুড়া মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -11258,7 +9014,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/bogura/tour-1.webp",
+        "image": null,
         "name": "Vasu Vihara & Museum",
         "nameEn": "Vasu Vihara & Museum",
         "nameBn": "বগুড়া নদী তীরবর্তী বাঁধ",
@@ -11275,7 +9031,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/bogura/tour-2.webp",
+        "image": null,
         "name": "Bogura Sweet Culture",
         "nameEn": "Bogura Sweet Culture",
         "nameBn": "বগুড়া ইকোপার্ক ও বনাঞ্চল",
@@ -11292,7 +9048,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/bogura/tour-3.webp",
+        "image": null,
         "name": "Bogura Cultural Heritage Museum",
         "nameEn": "Bogura Cultural Heritage Museum",
         "nameBn": "বগুড়া লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -11309,7 +9065,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/bogura/tour-4.webp",
+        "image": null,
         "name": "Bogura Scenic Lake & Boating Resort",
         "nameEn": "Bogura Scenic Lake & Boating Resort",
         "nameBn": "বগুড়া মনোরম হ্রদ ও রিসোর্ট",
@@ -11326,7 +9082,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/bogura/tour-5.webp",
+        "image": null,
         "name": "Bogura Sunset Hilltop Viewpoint",
         "nameEn": "Bogura Sunset Hilltop Viewpoint",
         "nameBn": "বগুড়া সূর্যাস্ত ভিউপয়েন্ট",
@@ -11358,7 +9114,7 @@ const LOCAL_DISTRICTS = [
     "area": "965.88 km²",
     "areaBn": "৯৬৫.৮৮ বর্গ কি.মি.",
     "pop": "1.0M",
-    "popBn": "১.০ মিলিয়ন",
+    "popBn": "০.১ কোটি",
     "dist": "270 km",
     "distBn": "২৭০ কি.মি.",
     "route": "Via Jamuna Bridge through Bogura (approx. 6 hrs) or direct intercity trains from Kamalapur.",
@@ -11367,63 +9123,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Joypurhat (জয়পুরহাট) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Joypurhat (জয়পুরহাট) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "জয়পুরহাট (Joypurhat) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/joypurhat/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/joypurhat/carousel-1.webp",
-        "title": "Joypurhat Heritage & Landscapes",
-        "titleEn": "Joypurhat Heritage & Landscapes",
-        "titleBn": "জয়পুরহাট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/joypurhat/carousel-2.webp",
-        "title": "Historic Monuments of Joypurhat",
-        "titleEn": "Historic Monuments of Joypurhat",
-        "titleBn": "জয়পুরহাট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/joypurhat/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/joypurhat/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/joypurhat/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/joypurhat/hist-1.webp",
+        "image": null,
         "name": "Lockma Rajbari",
         "nameEn": "Lockma Rajbari",
         "nameBn": "জয়পুরহাট প্রাচীন রাজবাড়ি",
@@ -11440,7 +9145,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/joypurhat/hist-2.webp",
+        "image": null,
         "name": "Asranga Dighi",
         "nameEn": "Asranga Dighi",
         "nameBn": "জয়পুরহাট কেন্দ্রীয় জামে মসজিদ",
@@ -11457,7 +9162,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/joypurhat/hist-3.webp",
+        "image": null,
         "name": "Joypurhat Colonial Court & Mint",
         "nameEn": "Joypurhat Colonial Court & Mint",
         "nameBn": "জয়পুরহাট ঔপনিবেশিক আদালত ও ভবন",
@@ -11474,7 +9179,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/joypurhat/hist-4.webp",
+        "image": null,
         "name": "Joypurhat Archeological Mound",
         "nameEn": "Joypurhat Archeological Mound",
         "nameBn": "জয়পুরহাট প্রত্নতাত্ত্বিক ঢিবি",
@@ -11491,7 +9196,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/joypurhat/hist-5.webp",
+        "image": null,
         "name": "Joypurhat Liberation War Memorial",
         "nameEn": "Joypurhat Liberation War Memorial",
         "nameBn": "জয়পুরহাট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -11510,7 +9215,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/joypurhat/tour-1.webp",
+        "image": null,
         "name": "Hili Land Port Border Point",
         "nameEn": "Hili Land Port Border Point",
         "nameBn": "জয়পুরহাট নদী তীরবর্তী বাঁধ",
@@ -11527,7 +9232,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/joypurhat/tour-2.webp",
+        "image": null,
         "name": "Nandail Dighi",
         "nameEn": "Nandail Dighi",
         "nameBn": "জয়পুরহাট ইকোপার্ক ও বনাঞ্চল",
@@ -11544,7 +9249,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/joypurhat/tour-3.webp",
+        "image": null,
         "name": "Joypurhat Cultural Heritage Museum",
         "nameEn": "Joypurhat Cultural Heritage Museum",
         "nameBn": "জয়পুরহাট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -11561,7 +9266,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/joypurhat/tour-4.webp",
+        "image": null,
         "name": "Joypurhat Scenic Lake & Boating Resort",
         "nameEn": "Joypurhat Scenic Lake & Boating Resort",
         "nameBn": "জয়পুরহাট মনোরম হ্রদ ও রিসোর্ট",
@@ -11578,7 +9283,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/joypurhat/tour-5.webp",
+        "image": null,
         "name": "Joypurhat Sunset Hilltop Viewpoint",
         "nameEn": "Joypurhat Sunset Hilltop Viewpoint",
         "nameBn": "জয়পুরহাট সূর্যাস্ত ভিউপয়েন্ট",
@@ -11610,7 +9315,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,435.67 km²",
     "areaBn": "৩,৪৩৫.৬৭ বর্গ কি.মি.",
     "pop": "2.7M",
-    "popBn": "২.৭ মিলিয়ন",
+    "popBn": "০.২৭ কোটি",
     "dist": "260 km",
     "distBn": "২৬০ কি.মি.",
     "route": "Via Jamuna Bridge highway or intercity trains stopping at Santahar junction (5-6 hrs).",
@@ -11619,63 +9324,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Naogaon (নওগাঁ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Naogaon (নওগাঁ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "নওগাঁ (Naogaon) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/naogaon/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/naogaon/carousel-1.webp",
-        "title": "Naogaon Heritage & Landscapes",
-        "titleEn": "Naogaon Heritage & Landscapes",
-        "titleBn": "নওগাঁ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/naogaon/carousel-2.webp",
-        "title": "Historic Monuments of Naogaon",
-        "titleEn": "Historic Monuments of Naogaon",
-        "titleBn": "নওগাঁ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/naogaon/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/naogaon/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/naogaon/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/naogaon/hist-1.webp",
+        "image": null,
         "name": "Somapura Mahavihara (Paharpur)",
         "nameEn": "Somapura Mahavihara (Paharpur)",
         "nameBn": "নওগাঁ প্রাচীন রাজবাড়ি",
@@ -11692,7 +9346,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/naogaon/hist-2.webp",
+        "image": null,
         "name": "Kusumba Mosque",
         "nameEn": "Kusumba Mosque",
         "nameBn": "নওগাঁ কেন্দ্রীয় জামে মসজিদ",
@@ -11709,7 +9363,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/naogaon/hist-3.webp",
+        "image": null,
         "name": "Naogaon Colonial Court & Mint",
         "nameEn": "Naogaon Colonial Court & Mint",
         "nameBn": "নওগাঁ ঔপনিবেশিক আদালত ও ভবন",
@@ -11726,7 +9380,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/naogaon/hist-4.webp",
+        "image": null,
         "name": "Naogaon Archeological Mound",
         "nameEn": "Naogaon Archeological Mound",
         "nameBn": "নওগাঁ প্রত্নতাত্ত্বিক ঢিবি",
@@ -11743,7 +9397,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/naogaon/hist-5.webp",
+        "image": null,
         "name": "Naogaon Liberation War Memorial",
         "nameEn": "Naogaon Liberation War Memorial",
         "nameBn": "নওগাঁ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -11762,7 +9416,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/naogaon/tour-1.webp",
+        "image": null,
         "name": "Dubalhati Rajbari",
         "nameEn": "Dubalhati Rajbari",
         "nameBn": "নওগাঁ নদী তীরবর্তী বাঁধ",
@@ -11779,7 +9433,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/naogaon/tour-2.webp",
+        "image": null,
         "name": "Alta Dighi National Park",
         "nameEn": "Alta Dighi National Park",
         "nameBn": "নওগাঁ ইকোপার্ক ও বনাঞ্চল",
@@ -11796,7 +9450,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/naogaon/tour-3.webp",
+        "image": null,
         "name": "Naogaon Cultural Heritage Museum",
         "nameEn": "Naogaon Cultural Heritage Museum",
         "nameBn": "নওগাঁ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -11813,7 +9467,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/naogaon/tour-4.webp",
+        "image": null,
         "name": "Naogaon Scenic Lake & Boating Resort",
         "nameEn": "Naogaon Scenic Lake & Boating Resort",
         "nameBn": "নওগাঁ মনোরম হ্রদ ও রিসোর্ট",
@@ -11830,7 +9484,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/naogaon/tour-5.webp",
+        "image": null,
         "name": "Naogaon Sunset Hilltop Viewpoint",
         "nameEn": "Naogaon Sunset Hilltop Viewpoint",
         "nameBn": "নওগাঁ সূর্যাস্ত ভিউপয়েন্ট",
@@ -11862,7 +9516,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,900.20 km²",
     "areaBn": "১,৯০০.২০ বর্গ কি.মি.",
     "pop": "1.8M",
-    "popBn": "১.৮ মিলিয়ন",
+    "popBn": "০.১৮ কোটি",
     "dist": "200 km",
     "distBn": "২০০ কি.মি.",
     "route": "Via Jamuna Bridge and Sirajganj-Natore highway or direct intercity trains (approx. 4.5 hrs).",
@@ -11871,63 +9525,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Natore (নাটোর) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Natore (নাটোর) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "নাটোর (Natore) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/natore/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/natore/carousel-1.webp",
-        "title": "Natore Heritage & Landscapes",
-        "titleEn": "Natore Heritage & Landscapes",
-        "titleBn": "নাটোর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/natore/carousel-2.webp",
-        "title": "Historic Monuments of Natore",
-        "titleEn": "Historic Monuments of Natore",
-        "titleBn": "নাটোর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/natore/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/natore/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/natore/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/natore/hist-1.webp",
+        "image": null,
         "name": "Uttara Gonobhaban (Dighapatia Palace)",
         "nameEn": "Uttara Gonobhaban (Dighapatia Palace)",
         "nameBn": "নাটোর প্রাচীন রাজবাড়ি",
@@ -11944,7 +9547,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/natore/hist-2.webp",
+        "image": null,
         "name": "Natore Rajbari (Rani Bhabani Palace)",
         "nameEn": "Natore Rajbari (Rani Bhabani Palace)",
         "nameBn": "নাটোর কেন্দ্রীয় জামে মসজিদ",
@@ -11961,7 +9564,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/natore/hist-3.webp",
+        "image": null,
         "name": "Natore Colonial Court & Mint",
         "nameEn": "Natore Colonial Court & Mint",
         "nameBn": "নাটোর ঔপনিবেশিক আদালত ও ভবন",
@@ -11978,7 +9581,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/natore/hist-4.webp",
+        "image": null,
         "name": "Natore Archeological Mound",
         "nameEn": "Natore Archeological Mound",
         "nameBn": "নাটোর প্রত্নতাত্ত্বিক ঢিবি",
@@ -11995,7 +9598,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/natore/hist-5.webp",
+        "image": null,
         "name": "Natore Liberation War Memorial",
         "nameEn": "Natore Liberation War Memorial",
         "nameBn": "নাটোর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -12014,7 +9617,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/natore/tour-1.webp",
+        "image": null,
         "name": "Chalan Beel Aquatic Expanse",
         "nameEn": "Chalan Beel Aquatic Expanse",
         "nameBn": "নাটোর নদী তীরবর্তী বাঁধ",
@@ -12031,7 +9634,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/natore/tour-2.webp",
+        "image": null,
         "name": "Kachagolla Sweet Heritage",
         "nameEn": "Kachagolla Sweet Heritage",
         "nameBn": "নাটোর ইকোপার্ক ও বনাঞ্চল",
@@ -12048,7 +9651,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/natore/tour-3.webp",
+        "image": null,
         "name": "Natore Cultural Heritage Museum",
         "nameEn": "Natore Cultural Heritage Museum",
         "nameBn": "নাটোর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -12065,7 +9668,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/natore/tour-4.webp",
+        "image": null,
         "name": "Natore Scenic Lake & Boating Resort",
         "nameEn": "Natore Scenic Lake & Boating Resort",
         "nameBn": "নাটোর মনোরম হ্রদ ও রিসোর্ট",
@@ -12082,7 +9685,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/natore/tour-5.webp",
+        "image": null,
         "name": "Natore Sunset Hilltop Viewpoint",
         "nameEn": "Natore Sunset Hilltop Viewpoint",
         "nameBn": "নাটোর সূর্যাস্ত ভিউপয়েন্ট",
@@ -12114,7 +9717,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,702.56 km²",
     "areaBn": "১,৭০২.৫৬ বর্গ কি.মি.",
     "pop": "1.8M",
-    "popBn": "১.৮ মিলিয়ন",
+    "popBn": "০.১৮ কোটি",
     "dist": "310 km",
     "distBn": "৩১০ কি.মি.",
     "route": "Via Jamuna Bridge through Rajshahi (approx. 6.5 hours by direct express buses or train).",
@@ -12123,63 +9726,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Chapainawabganj (চাঁপাইনবাবগঞ্জ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Chapainawabganj (চাঁপাইনবাবগঞ্জ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "চাঁপাইনবাবগঞ্জ (Chapainawabganj) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/chapainawabganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/chapainawabganj/carousel-1.webp",
-        "title": "Chapainawabganj Heritage & Landscapes",
-        "titleEn": "Chapainawabganj Heritage & Landscapes",
-        "titleBn": "চাঁপাইনবাবগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/chapainawabganj/carousel-2.webp",
-        "title": "Historic Monuments of Chapainawabganj",
-        "titleEn": "Historic Monuments of Chapainawabganj",
-        "titleBn": "চাঁপাইনবাবগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/chapainawabganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/chapainawabganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/chapainawabganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/chapainawabganj/hist-1.webp",
+        "image": null,
         "name": "Choto Sona Mosque (Small Golden Mosque)",
         "nameEn": "Choto Sona Mosque (Small Golden Mosque)",
         "nameBn": "চাঁপাইনবাবগঞ্জ প্রাচীন রাজবাড়ি",
@@ -12196,7 +9748,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chapainawabganj/hist-2.webp",
+        "image": null,
         "name": "Darasbari Mosque & Madrasa",
         "nameEn": "Darasbari Mosque & Madrasa",
         "nameBn": "চাঁপাইনবাবগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -12213,7 +9765,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chapainawabganj/hist-3.webp",
+        "image": null,
         "name": "Chapainawabganj Colonial Court & Mint",
         "nameEn": "Chapainawabganj Colonial Court & Mint",
         "nameBn": "চাঁপাইনবাবগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -12230,7 +9782,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chapainawabganj/hist-4.webp",
+        "image": null,
         "name": "Chapainawabganj Archeological Mound",
         "nameEn": "Chapainawabganj Archeological Mound",
         "nameBn": "চাঁপাইনবাবগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -12247,7 +9799,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chapainawabganj/hist-5.webp",
+        "image": null,
         "name": "Chapainawabganj Liberation War Memorial",
         "nameEn": "Chapainawabganj Liberation War Memorial",
         "nameBn": "চাঁপাইনবাবগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -12266,7 +9818,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/chapainawabganj/tour-1.webp",
+        "image": null,
         "name": "Mango Capital of Bangladesh",
         "nameEn": "Mango Capital of Bangladesh",
         "nameBn": "চাঁপাইনবাবগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -12283,7 +9835,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/chapainawabganj/tour-2.webp",
+        "image": null,
         "name": "Mahananda River Promenade",
         "nameEn": "Mahananda River Promenade",
         "nameBn": "চাঁপাইনবাবগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -12300,7 +9852,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/chapainawabganj/tour-3.webp",
+        "image": null,
         "name": "Chapainawabganj Cultural Heritage Museum",
         "nameEn": "Chapainawabganj Cultural Heritage Museum",
         "nameBn": "চাঁপাইনবাবগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -12317,7 +9869,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/chapainawabganj/tour-4.webp",
+        "image": null,
         "name": "Chapainawabganj Scenic Lake & Boating Resort",
         "nameEn": "Chapainawabganj Scenic Lake & Boating Resort",
         "nameBn": "চাঁপাইনবাবগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -12334,7 +9886,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/chapainawabganj/tour-5.webp",
+        "image": null,
         "name": "Chapainawabganj Sunset Hilltop Viewpoint",
         "nameEn": "Chapainawabganj Sunset Hilltop Viewpoint",
         "nameBn": "চাঁপাইনবাবগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -12366,7 +9918,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,371.50 km²",
     "areaBn": "২,৩৭১.৫০ বর্গ কি.মি.",
     "pop": "2.7M",
-    "popBn": "২.৭ মিলিয়ন",
+    "popBn": "০.২৭ কোটি",
     "dist": "160 km",
     "distBn": "১৬০ কি.মি.",
     "route": "Via Jamuna Bridge or Paturia-Daulatdia ferry highway link (approx. 3.5 - 4 hours).",
@@ -12375,63 +9927,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Pabna (পাবনা) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Pabna (পাবনা) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "পাবনা (Pabna) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/pabna/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/pabna/carousel-1.webp",
-        "title": "Pabna Heritage & Landscapes",
-        "titleEn": "Pabna Heritage & Landscapes",
-        "titleBn": "পাবনা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/pabna/carousel-2.webp",
-        "title": "Historic Monuments of Pabna",
-        "titleEn": "Historic Monuments of Pabna",
-        "titleBn": "পাবনা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/pabna/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/pabna/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/pabna/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/pabna/hist-1.webp",
+        "image": null,
         "name": "Tarash Rajbari",
         "nameEn": "Tarash Rajbari",
         "nameBn": "পাবনা প্রাচীন রাজবাড়ি",
@@ -12448,7 +9949,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/pabna/hist-2.webp",
+        "image": null,
         "name": "Anukulchandra Satsang Ashram (Himaitpur)",
         "nameEn": "Anukulchandra Satsang Ashram (Himaitpur)",
         "nameBn": "পাবনা কেন্দ্রীয় জামে মসজিদ",
@@ -12465,7 +9966,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/pabna/hist-3.webp",
+        "image": null,
         "name": "Pabna Colonial Court & Mint",
         "nameEn": "Pabna Colonial Court & Mint",
         "nameBn": "পাবনা ঔপনিবেশিক আদালত ও ভবন",
@@ -12482,7 +9983,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/pabna/hist-4.webp",
+        "image": null,
         "name": "Pabna Archeological Mound",
         "nameEn": "Pabna Archeological Mound",
         "nameBn": "পাবনা প্রত্নতাত্ত্বিক ঢিবি",
@@ -12499,7 +10000,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/pabna/hist-5.webp",
+        "image": null,
         "name": "Pabna Liberation War Memorial",
         "nameEn": "Pabna Liberation War Memorial",
         "nameBn": "পাবনা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -12518,7 +10019,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/pabna/tour-1.webp",
+        "image": null,
         "name": "Hardinge Bridge & Paksey Resort",
         "nameEn": "Hardinge Bridge & Paksey Resort",
         "nameBn": "পাবনা নদী তীরবর্তী বাঁধ",
@@ -12535,7 +10036,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/pabna/tour-2.webp",
+        "image": null,
         "name": "Rupkatha Cinema & Town Heritage",
         "nameEn": "Rupkatha Cinema & Town Heritage",
         "nameBn": "পাবনা ইকোপার্ক ও বনাঞ্চল",
@@ -12552,7 +10053,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/pabna/tour-3.webp",
+        "image": null,
         "name": "Pabna Cultural Heritage Museum",
         "nameEn": "Pabna Cultural Heritage Museum",
         "nameBn": "পাবনা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -12569,7 +10070,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/pabna/tour-4.webp",
+        "image": null,
         "name": "Pabna Scenic Lake & Boating Resort",
         "nameEn": "Pabna Scenic Lake & Boating Resort",
         "nameBn": "পাবনা মনোরম হ্রদ ও রিসোর্ট",
@@ -12586,7 +10087,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/pabna/tour-5.webp",
+        "image": null,
         "name": "Pabna Sunset Hilltop Viewpoint",
         "nameEn": "Pabna Sunset Hilltop Viewpoint",
         "nameBn": "পাবনা সূর্যাস্ত ভিউপয়েন্ট",
@@ -12618,7 +10119,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,425.37 km²",
     "areaBn": "২,৪২৫.৩৭ বর্গ কি.মি.",
     "pop": "2.9M",
-    "popBn": "২.৯ মিলিয়ন",
+    "popBn": "০.২৯ কোটি",
     "dist": "250 km",
     "distBn": "২৫০ কি.মি.",
     "route": "Via Jamuna Bridge 4-lane Highway N502 (approx. 5 hrs), Padma Express train (5.5 hrs), or 40-min flight.",
@@ -12627,63 +10128,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Rajshahi (রাজশাহী) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Rajshahi (রাজশাহী) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "রাজশাহী (Rajshahi) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/rajshahi/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/rajshahi/carousel-1.webp",
-        "title": "Rajshahi Heritage & Landscapes",
-        "titleEn": "Rajshahi Heritage & Landscapes",
-        "titleBn": "রাজশাহী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/rajshahi/carousel-2.webp",
-        "title": "Historic Monuments of Rajshahi",
-        "titleEn": "Historic Monuments of Rajshahi",
-        "titleBn": "রাজশাহী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/rajshahi/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/rajshahi/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/rajshahi/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/rajshahi/hist-1.webp",
+        "image": null,
         "name": "Bagha Mosque",
         "nameEn": "Bagha Mosque",
         "nameBn": "রাজশাহী প্রাচীন রাজবাড়ি",
@@ -12700,7 +10150,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rajshahi/hist-2.webp",
+        "image": null,
         "name": "Varendra Research Museum",
         "nameEn": "Varendra Research Museum",
         "nameBn": "রাজশাহী কেন্দ্রীয় জামে মসজিদ",
@@ -12717,7 +10167,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rajshahi/hist-3.webp",
+        "image": null,
         "name": "Rajshahi Colonial Court & Mint",
         "nameEn": "Rajshahi Colonial Court & Mint",
         "nameBn": "রাজশাহী ঔপনিবেশিক আদালত ও ভবন",
@@ -12734,7 +10184,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rajshahi/hist-4.webp",
+        "image": null,
         "name": "Rajshahi Archeological Mound",
         "nameEn": "Rajshahi Archeological Mound",
         "nameBn": "রাজশাহী প্রত্নতাত্ত্বিক ঢিবি",
@@ -12751,7 +10201,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rajshahi/hist-5.webp",
+        "image": null,
         "name": "Rajshahi Liberation War Memorial",
         "nameEn": "Rajshahi Liberation War Memorial",
         "nameBn": "রাজশাহী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -12770,7 +10220,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/rajshahi/tour-1.webp",
+        "image": null,
         "name": "Padma River Embankment (T-Groin)",
         "nameEn": "Padma River Embankment (T-Groin)",
         "nameBn": "রাজশাহী নদী তীরবর্তী বাঁধ",
@@ -12787,7 +10237,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rajshahi/tour-2.webp",
+        "image": null,
         "name": "Silk City Mills & Mango Gardens",
         "nameEn": "Silk City Mills & Mango Gardens",
         "nameBn": "রাজশাহী ইকোপার্ক ও বনাঞ্চল",
@@ -12804,7 +10254,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rajshahi/tour-3.webp",
+        "image": null,
         "name": "Rajshahi Cultural Heritage Museum",
         "nameEn": "Rajshahi Cultural Heritage Museum",
         "nameBn": "রাজশাহী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -12821,7 +10271,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rajshahi/tour-4.webp",
+        "image": null,
         "name": "Rajshahi Scenic Lake & Boating Resort",
         "nameEn": "Rajshahi Scenic Lake & Boating Resort",
         "nameBn": "রাজশাহী মনোরম হ্রদ ও রিসোর্ট",
@@ -12838,7 +10288,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rajshahi/tour-5.webp",
+        "image": null,
         "name": "Rajshahi Sunset Hilltop Viewpoint",
         "nameEn": "Rajshahi Sunset Hilltop Viewpoint",
         "nameBn": "রাজশাহী সূর্যাস্ত ভিউপয়েন্ট",
@@ -12870,7 +10320,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,497.92 km²",
     "areaBn": "২,৪৯৭.৯২ বর্গ কি.মি.",
     "pop": "3.3M",
-    "popBn": "৩.৩ মিলিয়ন",
+    "popBn": "০.৩৩ কোটি",
     "dist": "135 km",
     "distBn": "১৩৫ কি.মি.",
     "route": "Via Dhaka-Tangail Highway crossing Bangabandhu Jamuna Bridge (approx. 2.5 - 3 hours).",
@@ -12879,63 +10329,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Sirajganj (সিরাজগঞ্জ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineEn": "Sirajganj (সিরাজগঞ্জ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
     "taglineBn": "সিরাজগঞ্জ (Sirajganj) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/sirajganj/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/sirajganj/carousel-1.webp",
-        "title": "Sirajganj Heritage & Landscapes",
-        "titleEn": "Sirajganj Heritage & Landscapes",
-        "titleBn": "সিরাজগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rajshahi Division",
-        "subtitleEn": "Panoramic beauty across Rajshahi Division",
-        "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/sirajganj/carousel-2.webp",
-        "title": "Historic Monuments of Sirajganj",
-        "titleEn": "Historic Monuments of Sirajganj",
-        "titleBn": "সিরাজগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/sirajganj/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/sirajganj/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/sirajganj/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/sirajganj/hist-1.webp",
+        "image": null,
         "name": "Navaratna Temple (Hatikumrul)",
         "nameEn": "Navaratna Temple (Hatikumrul)",
         "nameBn": "সিরাজগঞ্জ প্রাচীন রাজবাড়ি",
@@ -12952,7 +10351,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sirajganj/hist-2.webp",
+        "image": null,
         "name": "Rabindra Memorial Museum (Shahjadpur)",
         "nameEn": "Rabindra Memorial Museum (Shahjadpur)",
         "nameBn": "সিরাজগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -12969,7 +10368,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sirajganj/hist-3.webp",
+        "image": null,
         "name": "Sirajganj Colonial Court & Mint",
         "nameEn": "Sirajganj Colonial Court & Mint",
         "nameBn": "সিরাজগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -12986,7 +10385,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sirajganj/hist-4.webp",
+        "image": null,
         "name": "Sirajganj Archeological Mound",
         "nameEn": "Sirajganj Archeological Mound",
         "nameBn": "সিরাজগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -13003,7 +10402,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sirajganj/hist-5.webp",
+        "image": null,
         "name": "Sirajganj Liberation War Memorial",
         "nameEn": "Sirajganj Liberation War Memorial",
         "nameBn": "সিরাজগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -13022,7 +10421,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/sirajganj/tour-1.webp",
+        "image": null,
         "name": "Bangabandhu Jamuna Bridge Plaza",
         "nameEn": "Bangabandhu Jamuna Bridge Plaza",
         "nameBn": "সিরাজগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -13039,7 +10438,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sirajganj/tour-2.webp",
+        "image": null,
         "name": "Jamuna Riverside Eco Park",
         "nameEn": "Jamuna Riverside Eco Park",
         "nameBn": "সিরাজগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -13056,7 +10455,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sirajganj/tour-3.webp",
+        "image": null,
         "name": "Sirajganj Cultural Heritage Museum",
         "nameEn": "Sirajganj Cultural Heritage Museum",
         "nameBn": "সিরাজগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -13073,7 +10472,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sirajganj/tour-4.webp",
+        "image": null,
         "name": "Sirajganj Scenic Lake & Boating Resort",
         "nameEn": "Sirajganj Scenic Lake & Boating Resort",
         "nameBn": "সিরাজগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -13090,7 +10489,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sirajganj/tour-5.webp",
+        "image": null,
         "name": "Sirajganj Sunset Hilltop Viewpoint",
         "nameEn": "Sirajganj Sunset Hilltop Viewpoint",
         "nameBn": "সিরাজগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
@@ -13122,7 +10521,7 @@ const LOCAL_DISTRICTS = [
     "area": "3,444.30 km²",
     "areaBn": "৩,৪৪৪.৩০ বর্গ কি.মি.",
     "pop": "3.2M",
-    "popBn": "৩.২ মিলিয়ন",
+    "popBn": "০.৩২ কোটি",
     "dist": "340 km",
     "distBn": "৩৪০ কি.মি.",
     "route": "Via Jamuna Bridge Highway N5 (approx. 7 hours) or Drutojan/Ekota Express trains (8 hrs).",
@@ -13131,63 +10530,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Dinajpur (দিনাজপুর) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Dinajpur (দিনাজপুর) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "দিনাজপুর (Dinajpur) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/dinajpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/dinajpur/carousel-1.webp",
-        "title": "Dinajpur Heritage & Landscapes",
-        "titleEn": "Dinajpur Heritage & Landscapes",
-        "titleBn": "দিনাজপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/dinajpur/carousel-2.webp",
-        "title": "Historic Monuments of Dinajpur",
-        "titleEn": "Historic Monuments of Dinajpur",
-        "titleBn": "দিনাজপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/dinajpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/dinajpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/dinajpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/dinajpur/hist-1.webp",
+        "image": null,
         "name": "Kantajew Temple (Kantanagar)",
         "nameEn": "Kantajew Temple (Kantanagar)",
         "nameBn": "দিনাজপুর প্রাচীন রাজবাড়ি",
@@ -13204,7 +10552,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/dinajpur/hist-2.webp",
+        "image": null,
         "name": "Nayabad Mosque",
         "nameEn": "Nayabad Mosque",
         "nameBn": "দিনাজপুর কেন্দ্রীয় জামে মসজিদ",
@@ -13221,7 +10569,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/dinajpur/hist-3.webp",
+        "image": null,
         "name": "Dinajpur Colonial Court & Mint",
         "nameEn": "Dinajpur Colonial Court & Mint",
         "nameBn": "দিনাজপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -13238,7 +10586,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/dinajpur/hist-4.webp",
+        "image": null,
         "name": "Dinajpur Archeological Mound",
         "nameEn": "Dinajpur Archeological Mound",
         "nameBn": "দিনাজপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -13255,7 +10603,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/dinajpur/hist-5.webp",
+        "image": null,
         "name": "Dinajpur Liberation War Memorial",
         "nameEn": "Dinajpur Liberation War Memorial",
         "nameBn": "দিনাজপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -13274,7 +10622,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/dinajpur/tour-1.webp",
+        "image": null,
         "name": "Ramsagar National Park",
         "nameEn": "Ramsagar National Park",
         "nameBn": "দিনাজপুর নদী তীরবর্তী বাঁধ",
@@ -13291,7 +10639,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/dinajpur/tour-2.webp",
+        "image": null,
         "name": "Dinajpur Rajbari",
         "nameEn": "Dinajpur Rajbari",
         "nameBn": "দিনাজপুর ইকোপার্ক ও বনাঞ্চল",
@@ -13308,7 +10656,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/dinajpur/tour-3.webp",
+        "image": null,
         "name": "Dinajpur Cultural Heritage Museum",
         "nameEn": "Dinajpur Cultural Heritage Museum",
         "nameBn": "দিনাজপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -13325,7 +10673,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/dinajpur/tour-4.webp",
+        "image": null,
         "name": "Dinajpur Scenic Lake & Boating Resort",
         "nameEn": "Dinajpur Scenic Lake & Boating Resort",
         "nameBn": "দিনাজপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -13342,7 +10690,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/dinajpur/tour-5.webp",
+        "image": null,
         "name": "Dinajpur Sunset Hilltop Viewpoint",
         "nameEn": "Dinajpur Sunset Hilltop Viewpoint",
         "nameBn": "দিনাজপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -13374,7 +10722,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,179.27 km²",
     "areaBn": "২,১৭৯.২৭ বর্গ কি.মি.",
     "pop": "2.5M",
-    "popBn": "২.৫ মিলিয়ন",
+    "popBn": "০.২৫ কোটি",
     "dist": "280 km",
     "distBn": "২৮০ কি.মি.",
     "route": "Via Jamuna Bridge and Bogura highway or direct intercity trains (approx. 6 hours).",
@@ -13383,63 +10731,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Gaibandha (গাইবান্ধা) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Gaibandha (গাইবান্ধা) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "গাইবান্ধা (Gaibandha) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/gaibandha/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/gaibandha/carousel-1.webp",
-        "title": "Gaibandha Heritage & Landscapes",
-        "titleEn": "Gaibandha Heritage & Landscapes",
-        "titleBn": "গাইবান্ধা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/gaibandha/carousel-2.webp",
-        "title": "Historic Monuments of Gaibandha",
-        "titleEn": "Historic Monuments of Gaibandha",
-        "titleBn": "গাইবান্ধা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/gaibandha/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/gaibandha/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/gaibandha/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/gaibandha/hist-1.webp",
+        "image": null,
         "name": "Bardhankuti Ancient Palace",
         "nameEn": "Bardhankuti Ancient Palace",
         "nameBn": "গাইবান্ধা প্রাচীন রাজবাড়ি",
@@ -13456,7 +10753,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/gaibandha/hist-2.webp",
+        "image": null,
         "name": "Mirerbagh Shahi Mosque",
         "nameEn": "Mirerbagh Shahi Mosque",
         "nameBn": "গাইবান্ধা কেন্দ্রীয় জামে মসজিদ",
@@ -13473,7 +10770,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/gaibandha/hist-3.webp",
+        "image": null,
         "name": "Gaibandha Colonial Court & Mint",
         "nameEn": "Gaibandha Colonial Court & Mint",
         "nameBn": "গাইবান্ধা ঔপনিবেশিক আদালত ও ভবন",
@@ -13490,7 +10787,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/gaibandha/hist-4.webp",
+        "image": null,
         "name": "Gaibandha Archeological Mound",
         "nameEn": "Gaibandha Archeological Mound",
         "nameBn": "গাইবান্ধা প্রত্নতাত্ত্বিক ঢিবি",
@@ -13507,7 +10804,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/gaibandha/hist-5.webp",
+        "image": null,
         "name": "Gaibandha Liberation War Memorial",
         "nameEn": "Gaibandha Liberation War Memorial",
         "nameBn": "গাইবান্ধা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -13526,7 +10823,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/gaibandha/tour-1.webp",
+        "image": null,
         "name": "Balasi Ghat on the Brahmaputra",
         "nameEn": "Balasi Ghat on the Brahmaputra",
         "nameBn": "গাইবান্ধা নদী তীরবর্তী বাঁধ",
@@ -13543,7 +10840,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/gaibandha/tour-2.webp",
+        "image": null,
         "name": "Gai Bandha Eco Park",
         "nameEn": "Gai Bandha Eco Park",
         "nameBn": "গাইবান্ধা ইকোপার্ক ও বনাঞ্চল",
@@ -13560,7 +10857,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/gaibandha/tour-3.webp",
+        "image": null,
         "name": "Gaibandha Cultural Heritage Museum",
         "nameEn": "Gaibandha Cultural Heritage Museum",
         "nameBn": "গাইবান্ধা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -13577,7 +10874,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/gaibandha/tour-4.webp",
+        "image": null,
         "name": "Gaibandha Scenic Lake & Boating Resort",
         "nameEn": "Gaibandha Scenic Lake & Boating Resort",
         "nameBn": "গাইবান্ধা মনোরম হ্রদ ও রিসোর্ট",
@@ -13594,7 +10891,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/gaibandha/tour-5.webp",
+        "image": null,
         "name": "Gaibandha Sunset Hilltop Viewpoint",
         "nameEn": "Gaibandha Sunset Hilltop Viewpoint",
         "nameBn": "গাইবান্ধা সূর্যাস্ত ভিউপয়েন্ট",
@@ -13626,7 +10923,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,245.04 km²",
     "areaBn": "২,২৪৫.০৪ বর্গ কি.মি.",
     "pop": "2.3M",
-    "popBn": "২.৩ মিলিয়ন",
+    "popBn": "০.২৩ কোটি",
     "dist": "350 km",
     "distBn": "৩৫০ কি.মি.",
     "route": "Via Jamuna Bridge and Rangpur highway or Kurigram Express direct intercity train (8-9 hrs).",
@@ -13635,63 +10932,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Kurigram (কুড়িগ্রাম) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Kurigram (কুড়িগ্রাম) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "কুড়িগ্রাম (Kurigram) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/kurigram/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/kurigram/carousel-1.webp",
-        "title": "Kurigram Heritage & Landscapes",
-        "titleEn": "Kurigram Heritage & Landscapes",
-        "titleBn": "কুড়িগ্রাম ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/kurigram/carousel-2.webp",
-        "title": "Historic Monuments of Kurigram",
-        "titleEn": "Historic Monuments of Kurigram",
-        "titleBn": "কুড়িগ্রাম জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/kurigram/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/kurigram/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/kurigram/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/kurigram/hist-1.webp",
+        "image": null,
         "name": "Shonahat Historic Railway Bridge",
         "nameEn": "Shonahat Historic Railway Bridge",
         "nameBn": "কুড়িগ্রাম প্রাচীন রাজবাড়ি",
@@ -13708,7 +10954,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/kurigram/hist-2.webp",
+        "image": null,
         "name": "Chandamari Mosque",
         "nameEn": "Chandamari Mosque",
         "nameBn": "কুড়িগ্রাম কেন্দ্রীয় জামে মসজিদ",
@@ -13725,7 +10971,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/kurigram/hist-3.webp",
+        "image": null,
         "name": "Kurigram Colonial Court & Mint",
         "nameEn": "Kurigram Colonial Court & Mint",
         "nameBn": "কুড়িগ্রাম ঔপনিবেশিক আদালত ও ভবন",
@@ -13742,7 +10988,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/kurigram/hist-4.webp",
+        "image": null,
         "name": "Kurigram Archeological Mound",
         "nameEn": "Kurigram Archeological Mound",
         "nameBn": "কুড়িগ্রাম প্রত্নতাত্ত্বিক ঢিবি",
@@ -13759,7 +11005,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/kurigram/hist-5.webp",
+        "image": null,
         "name": "Kurigram Liberation War Memorial",
         "nameEn": "Kurigram Liberation War Memorial",
         "nameBn": "কুড়িগ্রাম মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -13778,7 +11024,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/kurigram/tour-1.webp",
+        "image": null,
         "name": "Chilmari River Port on Brahmaputra",
         "nameEn": "Chilmari River Port on Brahmaputra",
         "nameBn": "কুড়িগ্রাম নদী তীরবর্তী বাঁধ",
@@ -13795,7 +11041,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/kurigram/tour-2.webp",
+        "image": null,
         "name": "Dharla River Promenade",
         "nameEn": "Dharla River Promenade",
         "nameBn": "কুড়িগ্রাম ইকোপার্ক ও বনাঞ্চল",
@@ -13812,7 +11058,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/kurigram/tour-3.webp",
+        "image": null,
         "name": "Kurigram Cultural Heritage Museum",
         "nameEn": "Kurigram Cultural Heritage Museum",
         "nameBn": "কুড়িগ্রাম লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -13829,7 +11075,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/kurigram/tour-4.webp",
+        "image": null,
         "name": "Kurigram Scenic Lake & Boating Resort",
         "nameEn": "Kurigram Scenic Lake & Boating Resort",
         "nameBn": "কুড়িগ্রাম মনোরম হ্রদ ও রিসোর্ট",
@@ -13846,7 +11092,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/kurigram/tour-5.webp",
+        "image": null,
         "name": "Kurigram Sunset Hilltop Viewpoint",
         "nameEn": "Kurigram Sunset Hilltop Viewpoint",
         "nameBn": "কুড়িগ্রাম সূর্যাস্ত ভিউপয়েন্ট",
@@ -13878,7 +11124,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,241.46 km²",
     "areaBn": "১,২৪১.৪৬ বর্গ কি.মি.",
     "pop": "1.4M",
-    "popBn": "১.৪ মিলিয়ন",
+    "popBn": "০.১৪ কোটি",
     "dist": "360 km",
     "distBn": "৩৬০ কি.মি.",
     "route": "Via Jamuna Bridge through Rangpur or Lalmoni Express direct intercity train (approx. 8 hrs).",
@@ -13887,63 +11133,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Lalmonirhat (লালমনিরহাট) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Lalmonirhat (লালমনিরহাট) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "লালমনিরহাট (Lalmonirhat) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/lalmonirhat/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/lalmonirhat/carousel-1.webp",
-        "title": "Lalmonirhat Heritage & Landscapes",
-        "titleEn": "Lalmonirhat Heritage & Landscapes",
-        "titleBn": "লালমনিরহাট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/lalmonirhat/carousel-2.webp",
-        "title": "Historic Monuments of Lalmonirhat",
-        "titleEn": "Historic Monuments of Lalmonirhat",
-        "titleBn": "লালমনিরহাট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/lalmonirhat/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/lalmonirhat/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/lalmonirhat/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/lalmonirhat/hist-1.webp",
+        "image": null,
         "name": "Harano Masjid (Lost Mosque of 69 AH)",
         "nameEn": "Harano Masjid (Lost Mosque of 69 AH)",
         "nameBn": "লালমনিরহাট প্রাচীন রাজবাড়ি",
@@ -13960,7 +11155,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/lalmonirhat/hist-2.webp",
+        "image": null,
         "name": "Mogholhat Historic Border Railway",
         "nameEn": "Mogholhat Historic Border Railway",
         "nameBn": "লালমনিরহাট কেন্দ্রীয় জামে মসজিদ",
@@ -13977,7 +11172,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/lalmonirhat/hist-3.webp",
+        "image": null,
         "name": "Lalmonirhat Colonial Court & Mint",
         "nameEn": "Lalmonirhat Colonial Court & Mint",
         "nameBn": "লালমনিরহাট ঔপনিবেশিক আদালত ও ভবন",
@@ -13994,7 +11189,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/lalmonirhat/hist-4.webp",
+        "image": null,
         "name": "Lalmonirhat Archeological Mound",
         "nameEn": "Lalmonirhat Archeological Mound",
         "nameBn": "লালমনিরহাট প্রত্নতাত্ত্বিক ঢিবি",
@@ -14011,7 +11206,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/lalmonirhat/hist-5.webp",
+        "image": null,
         "name": "Lalmonirhat Liberation War Memorial",
         "nameEn": "Lalmonirhat Liberation War Memorial",
         "nameBn": "লালমনিরহাট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -14030,7 +11225,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/lalmonirhat/tour-1.webp",
+        "image": null,
         "name": "Tin Bigha Corridor & Dahagram",
         "nameEn": "Tin Bigha Corridor & Dahagram",
         "nameBn": "লালমনিরহাট নদী তীরবর্তী বাঁধ",
@@ -14047,7 +11242,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/lalmonirhat/tour-2.webp",
+        "image": null,
         "name": "Teesta River Sandbanks",
         "nameEn": "Teesta River Sandbanks",
         "nameBn": "লালমনিরহাট ইকোপার্ক ও বনাঞ্চল",
@@ -14064,7 +11259,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/lalmonirhat/tour-3.webp",
+        "image": null,
         "name": "Lalmonirhat Cultural Heritage Museum",
         "nameEn": "Lalmonirhat Cultural Heritage Museum",
         "nameBn": "লালমনিরহাট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -14081,7 +11276,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/lalmonirhat/tour-4.webp",
+        "image": null,
         "name": "Lalmonirhat Scenic Lake & Boating Resort",
         "nameEn": "Lalmonirhat Scenic Lake & Boating Resort",
         "nameBn": "লালমনিরহাট মনোরম হ্রদ ও রিসোর্ট",
@@ -14098,7 +11293,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/lalmonirhat/tour-5.webp",
+        "image": null,
         "name": "Lalmonirhat Sunset Hilltop Viewpoint",
         "nameEn": "Lalmonirhat Sunset Hilltop Viewpoint",
         "nameBn": "লালমনিরহাট সূর্যাস্ত ভিউপয়েন্ট",
@@ -14130,7 +11325,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,580.85 km²",
     "areaBn": "১,৫৮০.৮৫ বর্গ কি.মি.",
     "pop": "1.9M",
-    "popBn": "১.৯ মিলিয়ন",
+    "popBn": "০.১৯ কোটি",
     "dist": "370 km",
     "distBn": "৩৭০ কি.মি.",
     "route": "Via Jamuna Bridge through Rangpur, or direct Nilsagar Express train from Dhaka (approx. 8 hrs).",
@@ -14139,63 +11334,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Nilphamari (নীলফামারী) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Nilphamari (নীলফামারী) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "নীলফামারী (Nilphamari) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/nilphamari/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/nilphamari/carousel-1.webp",
-        "title": "Nilphamari Heritage & Landscapes",
-        "titleEn": "Nilphamari Heritage & Landscapes",
-        "titleBn": "নীলফামারী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/nilphamari/carousel-2.webp",
-        "title": "Historic Monuments of Nilphamari",
-        "titleEn": "Historic Monuments of Nilphamari",
-        "titleBn": "নীলফামারী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/nilphamari/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/nilphamari/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/nilphamari/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/nilphamari/hist-1.webp",
+        "image": null,
         "name": "Chini Mosque (Saidpur Porcelain Mosque)",
         "nameEn": "Chini Mosque (Saidpur Porcelain Mosque)",
         "nameBn": "নীলফামারী প্রাচীন রাজবাড়ি",
@@ -14212,7 +11356,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/nilphamari/hist-2.webp",
+        "image": null,
         "name": "Dharmapal Garh",
         "nameEn": "Dharmapal Garh",
         "nameBn": "নীলফামারী কেন্দ্রীয় জামে মসজিদ",
@@ -14229,7 +11373,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/nilphamari/hist-3.webp",
+        "image": null,
         "name": "Nilphamari Colonial Court & Mint",
         "nameEn": "Nilphamari Colonial Court & Mint",
         "nameBn": "নীলফামারী ঔপনিবেশিক আদালত ও ভবন",
@@ -14246,7 +11390,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/nilphamari/hist-4.webp",
+        "image": null,
         "name": "Nilphamari Archeological Mound",
         "nameEn": "Nilphamari Archeological Mound",
         "nameBn": "নীলফামারী প্রত্নতাত্ত্বিক ঢিবি",
@@ -14263,7 +11407,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/nilphamari/hist-5.webp",
+        "image": null,
         "name": "Nilphamari Liberation War Memorial",
         "nameEn": "Nilphamari Liberation War Memorial",
         "nameBn": "নীলফামারী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -14282,7 +11426,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/nilphamari/tour-1.webp",
+        "image": null,
         "name": "Teesta Barrage (Dalia)",
         "nameEn": "Teesta Barrage (Dalia)",
         "nameBn": "নীলফামারী নদী তীরবর্তী বাঁধ",
@@ -14299,7 +11443,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/nilphamari/tour-2.webp",
+        "image": null,
         "name": "Nilsagar Historic Dighi",
         "nameEn": "Nilsagar Historic Dighi",
         "nameBn": "নীলফামারী ইকোপার্ক ও বনাঞ্চল",
@@ -14316,7 +11460,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/nilphamari/tour-3.webp",
+        "image": null,
         "name": "Nilphamari Cultural Heritage Museum",
         "nameEn": "Nilphamari Cultural Heritage Museum",
         "nameBn": "নীলফামারী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -14333,7 +11477,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/nilphamari/tour-4.webp",
+        "image": null,
         "name": "Nilphamari Scenic Lake & Boating Resort",
         "nameEn": "Nilphamari Scenic Lake & Boating Resort",
         "nameBn": "নীলফামারী মনোরম হ্রদ ও রিসোর্ট",
@@ -14350,7 +11494,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/nilphamari/tour-5.webp",
+        "image": null,
         "name": "Nilphamari Sunset Hilltop Viewpoint",
         "nameEn": "Nilphamari Sunset Hilltop Viewpoint",
         "nameBn": "নীলফামারী সূর্যাস্ত ভিউপয়েন্ট",
@@ -14382,7 +11526,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,404.63 km²",
     "areaBn": "১,৪০৪.৬৩ বর্গ কি.মি.",
     "pop": "1.1M",
-    "popBn": "১.১ মিলিয়ন",
+    "popBn": "০.১১ কোটি",
     "dist": "440 km",
     "distBn": "৪৪০ কি.মি.",
     "route": "Via Panchagarh Express direct intercity train (approx. 9.5 hrs) or highway express coaches.",
@@ -14391,63 +11535,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Panchagarh (পঞ্চগড়) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Panchagarh (পঞ্চগড়) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "পঞ্চগড় (Panchagarh) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/panchagarh/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/panchagarh/carousel-1.webp",
-        "title": "Panchagarh Heritage & Landscapes",
-        "titleEn": "Panchagarh Heritage & Landscapes",
-        "titleBn": "পঞ্চগড় ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/panchagarh/carousel-2.webp",
-        "title": "Historic Monuments of Panchagarh",
-        "titleEn": "Historic Monuments of Panchagarh",
-        "titleBn": "পঞ্চগড় জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/panchagarh/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/panchagarh/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/panchagarh/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/panchagarh/hist-1.webp",
+        "image": null,
         "name": "Mirzapur Shahi Mosque",
         "nameEn": "Mirzapur Shahi Mosque",
         "nameBn": "পঞ্চগড় প্রাচীন রাজবাড়ি",
@@ -14464,7 +11557,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/panchagarh/hist-2.webp",
+        "image": null,
         "name": "Bhitargarh Ancient Fortified City",
         "nameEn": "Bhitargarh Ancient Fortified City",
         "nameBn": "পঞ্চগড় কেন্দ্রীয় জামে মসজিদ",
@@ -14481,7 +11574,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/panchagarh/hist-3.webp",
+        "image": null,
         "name": "Panchagarh Colonial Court & Mint",
         "nameEn": "Panchagarh Colonial Court & Mint",
         "nameBn": "পঞ্চগড় ঔপনিবেশিক আদালত ও ভবন",
@@ -14498,7 +11591,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/panchagarh/hist-4.webp",
+        "image": null,
         "name": "Panchagarh Archeological Mound",
         "nameEn": "Panchagarh Archeological Mound",
         "nameBn": "পঞ্চগড় প্রত্নতাত্ত্বিক ঢিবি",
@@ -14515,7 +11608,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/panchagarh/hist-5.webp",
+        "image": null,
         "name": "Panchagarh Liberation War Memorial",
         "nameEn": "Panchagarh Liberation War Memorial",
         "nameBn": "পঞ্চগড় মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -14534,7 +11627,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/panchagarh/tour-1.webp",
+        "image": null,
         "name": "Tetulia & Kanchenjunga Peak View",
         "nameEn": "Tetulia & Kanchenjunga Peak View",
         "nameBn": "পঞ্চগড় নদী তীরবর্তী বাঁধ",
@@ -14551,7 +11644,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/panchagarh/tour-2.webp",
+        "image": null,
         "name": "Banglabandha Zero Point & Plains Tea",
         "nameEn": "Banglabandha Zero Point & Plains Tea",
         "nameBn": "পঞ্চগড় ইকোপার্ক ও বনাঞ্চল",
@@ -14568,7 +11661,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/panchagarh/tour-3.webp",
+        "image": null,
         "name": "Panchagarh Cultural Heritage Museum",
         "nameEn": "Panchagarh Cultural Heritage Museum",
         "nameBn": "পঞ্চগড় লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -14585,7 +11678,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/panchagarh/tour-4.webp",
+        "image": null,
         "name": "Panchagarh Scenic Lake & Boating Resort",
         "nameEn": "Panchagarh Scenic Lake & Boating Resort",
         "nameBn": "পঞ্চগড় মনোরম হ্রদ ও রিসোর্ট",
@@ -14602,7 +11695,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/panchagarh/tour-5.webp",
+        "image": null,
         "name": "Panchagarh Sunset Hilltop Viewpoint",
         "nameEn": "Panchagarh Sunset Hilltop Viewpoint",
         "nameBn": "পঞ্চগড় সূর্যাস্ত ভিউপয়েন্ট",
@@ -14634,7 +11727,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,370.45 km²",
     "areaBn": "২,৩৭০.৪৫ বর্গ কি.মি.",
     "pop": "3.1M",
-    "popBn": "৩.১ মিলিয়ন",
+    "popBn": "০.৩১ কোটি",
     "dist": "300 km",
     "distBn": "৩০০ কি.মি.",
     "route": "Via Jamuna Bridge 4-lane Highway N5 (approx. 6 hrs), Rangpur Express train, or 45-min flight to Saidpur.",
@@ -14643,63 +11736,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Rangpur (রংপুর) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Rangpur (রংপুর) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "রংপুর (Rangpur) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/rangpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/rangpur/carousel-1.webp",
-        "title": "Rangpur Heritage & Landscapes",
-        "titleEn": "Rangpur Heritage & Landscapes",
-        "titleBn": "রংপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/rangpur/carousel-2.webp",
-        "title": "Historic Monuments of Rangpur",
-        "titleEn": "Historic Monuments of Rangpur",
-        "titleBn": "রংপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/rangpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/rangpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/rangpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/rangpur/hist-1.webp",
+        "image": null,
         "name": "Tajhat Palace",
         "nameEn": "Tajhat Palace",
         "nameBn": "রংপুর প্রাচীন রাজবাড়ি",
@@ -14716,7 +11758,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rangpur/hist-2.webp",
+        "image": null,
         "name": "Carmichael College Historic Campus",
         "nameEn": "Carmichael College Historic Campus",
         "nameBn": "রংপুর কেন্দ্রীয় জামে মসজিদ",
@@ -14733,7 +11775,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rangpur/hist-3.webp",
+        "image": null,
         "name": "Rangpur Colonial Court & Mint",
         "nameEn": "Rangpur Colonial Court & Mint",
         "nameBn": "রংপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -14750,7 +11792,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rangpur/hist-4.webp",
+        "image": null,
         "name": "Rangpur Archeological Mound",
         "nameEn": "Rangpur Archeological Mound",
         "nameBn": "রংপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -14767,7 +11809,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rangpur/hist-5.webp",
+        "image": null,
         "name": "Rangpur Liberation War Memorial",
         "nameEn": "Rangpur Liberation War Memorial",
         "nameBn": "রংপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -14786,7 +11828,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/rangpur/tour-1.webp",
+        "image": null,
         "name": "Chikli Beel Water Leisure",
         "nameEn": "Chikli Beel Water Leisure",
         "nameBn": "রংপুর নদী তীরবর্তী বাঁধ",
@@ -14803,7 +11845,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/rangpur/tour-2.webp",
+        "image": null,
         "name": "Vinnya Jagat Eco Amusement Park",
         "nameEn": "Vinnya Jagat Eco Amusement Park",
         "nameBn": "রংপুর ইকোপার্ক ও বনাঞ্চল",
@@ -14820,7 +11862,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/rangpur/tour-3.webp",
+        "image": null,
         "name": "Rangpur Cultural Heritage Museum",
         "nameEn": "Rangpur Cultural Heritage Museum",
         "nameBn": "রংপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -14837,7 +11879,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/rangpur/tour-4.webp",
+        "image": null,
         "name": "Rangpur Scenic Lake & Boating Resort",
         "nameEn": "Rangpur Scenic Lake & Boating Resort",
         "nameBn": "রংপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -14854,7 +11896,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/rangpur/tour-5.webp",
+        "image": null,
         "name": "Rangpur Sunset Hilltop Viewpoint",
         "nameEn": "Rangpur Sunset Hilltop Viewpoint",
         "nameBn": "রংপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -14886,7 +11928,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,809.52 km²",
     "areaBn": "১,৮০৯.৫২ বর্গ কি.মি.",
     "pop": "1.5M",
-    "popBn": "১.৫ মিলিয়ন",
+    "popBn": "০.১৫ কোটি",
     "dist": "400 km",
     "distBn": "৪০০ কি.মি.",
     "route": "Via Jamuna Bridge through Dinajpur or direct intercity trains from Kamalapur (approx. 9 hrs).",
@@ -14895,63 +11937,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Thakurgaon (ঠাকুরগাঁও) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineEn": "Thakurgaon (ঠাকুরগাঁও) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
     "taglineBn": "ঠাকুরগাঁও (Thakurgaon) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/thakurgaon/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/thakurgaon/carousel-1.webp",
-        "title": "Thakurgaon Heritage & Landscapes",
-        "titleEn": "Thakurgaon Heritage & Landscapes",
-        "titleBn": "ঠাকুরগাঁও ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Rangpur Division",
-        "subtitleEn": "Panoramic beauty across Rangpur Division",
-        "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/thakurgaon/carousel-2.webp",
-        "title": "Historic Monuments of Thakurgaon",
-        "titleEn": "Historic Monuments of Thakurgaon",
-        "titleBn": "ঠাকুরগাঁও জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/thakurgaon/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/thakurgaon/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/thakurgaon/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/thakurgaon/hist-1.webp",
+        "image": null,
         "name": "Jamalpur Shahi Mosque",
         "nameEn": "Jamalpur Shahi Mosque",
         "nameBn": "ঠাকুরগাঁও প্রাচীন রাজবাড়ি",
@@ -14968,7 +11959,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/thakurgaon/hist-2.webp",
+        "image": null,
         "name": "Ranishankail King’s Palace",
         "nameEn": "Ranishankail King’s Palace",
         "nameBn": "ঠাকুরগাঁও কেন্দ্রীয় জামে মসজিদ",
@@ -14985,7 +11976,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/thakurgaon/hist-3.webp",
+        "image": null,
         "name": "Thakurgaon Colonial Court & Mint",
         "nameEn": "Thakurgaon Colonial Court & Mint",
         "nameBn": "ঠাকুরগাঁও ঔপনিবেশিক আদালত ও ভবন",
@@ -15002,7 +11993,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/thakurgaon/hist-4.webp",
+        "image": null,
         "name": "Thakurgaon Archeological Mound",
         "nameEn": "Thakurgaon Archeological Mound",
         "nameBn": "ঠাকুরগাঁও প্রত্নতাত্ত্বিক ঢিবি",
@@ -15019,7 +12010,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/thakurgaon/hist-5.webp",
+        "image": null,
         "name": "Thakurgaon Liberation War Memorial",
         "nameEn": "Thakurgaon Liberation War Memorial",
         "nameBn": "ঠাকুরগাঁও মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -15038,7 +12029,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/thakurgaon/tour-1.webp",
+        "image": null,
         "name": "Baliadangi 200-Year Surya Puri Mango Tree",
         "nameEn": "Baliadangi 200-Year Surya Puri Mango Tree",
         "nameBn": "ঠাকুরগাঁও নদী তীরবর্তী বাঁধ",
@@ -15055,7 +12046,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/thakurgaon/tour-2.webp",
+        "image": null,
         "name": "Fun City Eco Park",
         "nameEn": "Fun City Eco Park",
         "nameBn": "ঠাকুরগাঁও ইকোপার্ক ও বনাঞ্চল",
@@ -15072,7 +12063,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/thakurgaon/tour-3.webp",
+        "image": null,
         "name": "Thakurgaon Cultural Heritage Museum",
         "nameEn": "Thakurgaon Cultural Heritage Museum",
         "nameBn": "ঠাকুরগাঁও লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -15089,7 +12080,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/thakurgaon/tour-4.webp",
+        "image": null,
         "name": "Thakurgaon Scenic Lake & Boating Resort",
         "nameEn": "Thakurgaon Scenic Lake & Boating Resort",
         "nameBn": "ঠাকুরগাঁও মনোরম হ্রদ ও রিসোর্ট",
@@ -15106,7 +12097,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/thakurgaon/tour-5.webp",
+        "image": null,
         "name": "Thakurgaon Sunset Hilltop Viewpoint",
         "nameEn": "Thakurgaon Sunset Hilltop Viewpoint",
         "nameBn": "ঠাকুরগাঁও সূর্যাস্ত ভিউপয়েন্ট",
@@ -15138,7 +12129,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,031.98 km²",
     "areaBn": "২,০৩১.৯৮ বর্গ কি.মি.",
     "pop": "2.5M",
-    "popBn": "২.৫ মিলিয়ন",
+    "popBn": "০.২৫ কোটি",
     "dist": "145 km",
     "distBn": "১৪৫ কি.মি.",
     "route": "Via Dhaka-Tangail-Jamalpur Highway or Brahmaputra/Jamuna Express train from Dhaka (3.5 - 4 hrs).",
@@ -15147,63 +12138,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Jamalpur (জামালপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineEn": "Jamalpur (জামালপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineBn": "জামালপুর (Jamalpur) ময়মনসিংহ বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/jamalpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/jamalpur/carousel-1.webp",
-        "title": "Jamalpur Heritage & Landscapes",
-        "titleEn": "Jamalpur Heritage & Landscapes",
-        "titleBn": "জামালপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Mymensingh Division",
-        "subtitleEn": "Panoramic beauty across Mymensingh Division",
-        "subtitleBn": "ময়মনসিংহ বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/jamalpur/carousel-2.webp",
-        "title": "Historic Monuments of Jamalpur",
-        "titleEn": "Historic Monuments of Jamalpur",
-        "titleBn": "জামালপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/jamalpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/jamalpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/jamalpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/jamalpur/hist-1.webp",
+        "image": null,
         "name": "Gandhi Ashram (Jigatala)",
         "nameEn": "Gandhi Ashram (Jigatala)",
         "nameBn": "জামালপুর প্রাচীন রাজবাড়ি",
@@ -15220,7 +12160,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jamalpur/hist-2.webp",
+        "image": null,
         "name": "Lojpoti Zamindar Palace",
         "nameEn": "Lojpoti Zamindar Palace",
         "nameBn": "জামালপুর কেন্দ্রীয় জামে মসজিদ",
@@ -15237,7 +12177,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jamalpur/hist-3.webp",
+        "image": null,
         "name": "Jamalpur Colonial Court & Mint",
         "nameEn": "Jamalpur Colonial Court & Mint",
         "nameBn": "জামালপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -15254,7 +12194,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jamalpur/hist-4.webp",
+        "image": null,
         "name": "Jamalpur Archeological Mound",
         "nameEn": "Jamalpur Archeological Mound",
         "nameBn": "জামালপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -15271,7 +12211,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jamalpur/hist-5.webp",
+        "image": null,
         "name": "Jamalpur Liberation War Memorial",
         "nameEn": "Jamalpur Liberation War Memorial",
         "nameBn": "জামালপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -15290,7 +12230,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/jamalpur/tour-1.webp",
+        "image": null,
         "name": "Old Brahmaputra Riverside Promenade",
         "nameEn": "Old Brahmaputra Riverside Promenade",
         "nameBn": "জামালপুর নদী তীরবর্তী বাঁধ",
@@ -15307,7 +12247,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/jamalpur/tour-2.webp",
+        "image": null,
         "name": "Nakshi Kantha Artisan Villages",
         "nameEn": "Nakshi Kantha Artisan Villages",
         "nameBn": "জামালপুর ইকোপার্ক ও বনাঞ্চল",
@@ -15324,7 +12264,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/jamalpur/tour-3.webp",
+        "image": null,
         "name": "Jamalpur Cultural Heritage Museum",
         "nameEn": "Jamalpur Cultural Heritage Museum",
         "nameBn": "জামালপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -15341,7 +12281,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/jamalpur/tour-4.webp",
+        "image": null,
         "name": "Jamalpur Scenic Lake & Boating Resort",
         "nameEn": "Jamalpur Scenic Lake & Boating Resort",
         "nameBn": "জামালপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -15358,7 +12298,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/jamalpur/tour-5.webp",
+        "image": null,
         "name": "Jamalpur Sunset Hilltop Viewpoint",
         "nameEn": "Jamalpur Sunset Hilltop Viewpoint",
         "nameBn": "জামালপুর সূর্যাস্ত ভিউপয়েন্ট",
@@ -15390,7 +12330,7 @@ const LOCAL_DISTRICTS = [
     "area": "4,363.48 km²",
     "areaBn": "৪,৩৬৩.৪৮ বর্গ কি.মি.",
     "pop": "5.3M",
-    "popBn": "৫.৩ মিলিয়ন",
+    "popBn": "০.৫৩ কোটি",
     "dist": "120 km",
     "distBn": "১২০ কি.মি.",
     "route": "Via Dhaka-Mymensingh 4-lane Highway N3 (approx. 2.5 - 3 hours) or commuter trains.",
@@ -15399,63 +12339,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Mymensingh (ময়মনসিংহ) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineEn": "Mymensingh (ময়মনসিংহ) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineBn": "ময়মনসিংহ (Mymensingh) ময়মনসিংহ বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/mymensingh/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/mymensingh/carousel-1.webp",
-        "title": "Mymensingh Heritage & Landscapes",
-        "titleEn": "Mymensingh Heritage & Landscapes",
-        "titleBn": "ময়মনসিংহ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Mymensingh Division",
-        "subtitleEn": "Panoramic beauty across Mymensingh Division",
-        "subtitleBn": "ময়মনসিংহ বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/mymensingh/carousel-2.webp",
-        "title": "Historic Monuments of Mymensingh",
-        "titleEn": "Historic Monuments of Mymensingh",
-        "titleBn": "ময়মনসিংহ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/mymensingh/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/mymensingh/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/mymensingh/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/mymensingh/hist-1.webp",
+        "image": null,
         "name": "Shashi Lodge (Mymensingh Rajbari)",
         "nameEn": "Shashi Lodge (Mymensingh Rajbari)",
         "nameBn": "ময়মনসিংহ প্রাচীন রাজবাড়ি",
@@ -15472,7 +12361,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/mymensingh/hist-2.webp",
+        "image": null,
         "name": "Alexander Castle (Lohar Kuthi)",
         "nameEn": "Alexander Castle (Lohar Kuthi)",
         "nameBn": "ময়মনসিংহ কেন্দ্রীয় জামে মসজিদ",
@@ -15489,7 +12378,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/mymensingh/hist-3.webp",
+        "image": null,
         "name": "Mymensingh Colonial Court & Mint",
         "nameEn": "Mymensingh Colonial Court & Mint",
         "nameBn": "ময়মনসিংহ ঔপনিবেশিক আদালত ও ভবন",
@@ -15506,7 +12395,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/mymensingh/hist-4.webp",
+        "image": null,
         "name": "Mymensingh Archeological Mound",
         "nameEn": "Mymensingh Archeological Mound",
         "nameBn": "ময়মনসিংহ প্রত্নতাত্ত্বিক ঢিবি",
@@ -15523,7 +12412,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/mymensingh/hist-5.webp",
+        "image": null,
         "name": "Mymensingh Liberation War Memorial",
         "nameEn": "Mymensingh Liberation War Memorial",
         "nameBn": "ময়মনসিংহ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -15542,7 +12431,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/mymensingh/tour-1.webp",
+        "image": null,
         "name": "Brahmaputra Riverfront & Park",
         "nameEn": "Brahmaputra Riverfront & Park",
         "nameBn": "ময়মনসিংহ নদী তীরবর্তী বাঁধ",
@@ -15559,7 +12448,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/mymensingh/tour-2.webp",
+        "image": null,
         "name": "Zainul Abedin Art Gallery & BAU Campus",
         "nameEn": "Zainul Abedin Art Gallery & BAU Campus",
         "nameBn": "ময়মনসিংহ ইকোপার্ক ও বনাঞ্চল",
@@ -15576,7 +12465,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/mymensingh/tour-3.webp",
+        "image": null,
         "name": "Mymensingh Cultural Heritage Museum",
         "nameEn": "Mymensingh Cultural Heritage Museum",
         "nameBn": "ময়মনসিংহ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -15593,7 +12482,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/mymensingh/tour-4.webp",
+        "image": null,
         "name": "Mymensingh Scenic Lake & Boating Resort",
         "nameEn": "Mymensingh Scenic Lake & Boating Resort",
         "nameBn": "ময়মনসিংহ মনোরম হ্রদ ও রিসোর্ট",
@@ -15610,7 +12499,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/mymensingh/tour-5.webp",
+        "image": null,
         "name": "Mymensingh Sunset Hilltop Viewpoint",
         "nameEn": "Mymensingh Sunset Hilltop Viewpoint",
         "nameBn": "ময়মনসিংহ সূর্যাস্ত ভিউপয়েন্ট",
@@ -15642,7 +12531,7 @@ const LOCAL_DISTRICTS = [
     "area": "2,744.28 km²",
     "areaBn": "২,৭৪৪.২৮ বর্গ কি.মি.",
     "pop": "2.3M",
-    "popBn": "২.৩ মিলিয়ন",
+    "popBn": "০.২৩ কোটি",
     "dist": "160 km",
     "distBn": "১৬০ কি.মি.",
     "route": "Via Mymensingh highway or Haor Express intercity train from Dhaka (approx. 4 - 4.5 hours).",
@@ -15651,63 +12540,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Netrokona (নেত্রকোনা) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineEn": "Netrokona (নেত্রকোনা) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineBn": "নেত্রকোনা (Netrokona) ময়মনসিংহ বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/netrokona/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/netrokona/carousel-1.webp",
-        "title": "Netrokona Heritage & Landscapes",
-        "titleEn": "Netrokona Heritage & Landscapes",
-        "titleBn": "নেত্রকোনা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Mymensingh Division",
-        "subtitleEn": "Panoramic beauty across Mymensingh Division",
-        "subtitleBn": "ময়মনসিংহ বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/netrokona/carousel-2.webp",
-        "title": "Historic Monuments of Netrokona",
-        "titleEn": "Historic Monuments of Netrokona",
-        "titleBn": "নেত্রকোনা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/netrokona/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/netrokona/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/netrokona/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/netrokona/hist-1.webp",
+        "image": null,
         "name": "Roail Bari Ancient Fort",
         "nameEn": "Roail Bari Ancient Fort",
         "nameBn": "নেত্রকোনা প্রাচীন রাজবাড়ি",
@@ -15724,7 +12562,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/netrokona/hist-2.webp",
+        "image": null,
         "name": "Ranikhong Catholic Church",
         "nameEn": "Ranikhong Catholic Church",
         "nameBn": "নেত্রকোনা কেন্দ্রীয় জামে মসজিদ",
@@ -15741,7 +12579,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/netrokona/hist-3.webp",
+        "image": null,
         "name": "Netrokona Colonial Court & Mint",
         "nameEn": "Netrokona Colonial Court & Mint",
         "nameBn": "নেত্রকোনা ঔপনিবেশিক আদালত ও ভবন",
@@ -15758,7 +12596,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/netrokona/hist-4.webp",
+        "image": null,
         "name": "Netrokona Archeological Mound",
         "nameEn": "Netrokona Archeological Mound",
         "nameBn": "নেত্রকোনা প্রত্নতাত্ত্বিক ঢিবি",
@@ -15775,7 +12613,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/netrokona/hist-5.webp",
+        "image": null,
         "name": "Netrokona Liberation War Memorial",
         "nameEn": "Netrokona Liberation War Memorial",
         "nameBn": "নেত্রকোনা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -15794,7 +12632,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/netrokona/tour-1.webp",
+        "image": null,
         "name": "Birishiri Ceramic Hills & Turquoise Lake",
         "nameEn": "Birishiri Ceramic Hills & Turquoise Lake",
         "nameBn": "নেত্রকোনা নদী তীরবর্তী বাঁধ",
@@ -15811,7 +12649,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/netrokona/tour-2.webp",
+        "image": null,
         "name": "Someshwari River & Garo Hills",
         "nameEn": "Someshwari River & Garo Hills",
         "nameBn": "নেত্রকোনা ইকোপার্ক ও বনাঞ্চল",
@@ -15828,7 +12666,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/netrokona/tour-3.webp",
+        "image": null,
         "name": "Netrokona Cultural Heritage Museum",
         "nameEn": "Netrokona Cultural Heritage Museum",
         "nameBn": "নেত্রকোনা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -15845,7 +12683,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/netrokona/tour-4.webp",
+        "image": null,
         "name": "Netrokona Scenic Lake & Boating Resort",
         "nameEn": "Netrokona Scenic Lake & Boating Resort",
         "nameBn": "নেত্রকোনা মনোরম হ্রদ ও রিসোর্ট",
@@ -15862,7 +12700,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/netrokona/tour-5.webp",
+        "image": null,
         "name": "Netrokona Sunset Hilltop Viewpoint",
         "nameEn": "Netrokona Sunset Hilltop Viewpoint",
         "nameBn": "নেত্রকোনা সূর্যাস্ত ভিউপয়েন্ট",
@@ -15894,7 +12732,7 @@ const LOCAL_DISTRICTS = [
     "area": "1,359.87 km²",
     "areaBn": "১,৩৫৯.৮৭ বর্গ কি.মি.",
     "pop": "1.5M",
-    "popBn": "১.৫ মিলিয়ন",
+    "popBn": "০.১৫ কোটি",
     "dist": "180 km",
     "distBn": "১৮০ কি.মি.",
     "route": "Via Dhaka-Mymensingh Highway extending north to Sherpur town (approx. 4 hours by highway bus).",
@@ -15903,63 +12741,12 @@ const LOCAL_DISTRICTS = [
     "tagline": "Sherpur (শেরপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineEn": "Sherpur (শেরপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
     "taglineBn": "শেরপুর (Sherpur) ময়মনসিংহ বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-    "heroImage": "images/districts/sherpur/hero.webp",
-    "carousel": [
-      {
-        "id": 1,
-        "image": "images/districts/sherpur/carousel-1.webp",
-        "title": "Sherpur Heritage & Landscapes",
-        "titleEn": "Sherpur Heritage & Landscapes",
-        "titleBn": "শেরপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-        "subtitle": "Panoramic beauty across Mymensingh Division",
-        "subtitleEn": "Panoramic beauty across Mymensingh Division",
-        "subtitleBn": "ময়মনসিংহ বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-      },
-      {
-        "id": 2,
-        "image": "images/districts/sherpur/carousel-2.webp",
-        "title": "Historic Monuments of Sherpur",
-        "titleEn": "Historic Monuments of Sherpur",
-        "titleBn": "শেরপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-        "subtitle": "Ancient landmarks dating back across generations",
-        "subtitleEn": "Ancient landmarks dating back across generations",
-        "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-      },
-      {
-        "id": 3,
-        "image": "images/districts/sherpur/carousel-3.webp",
-        "title": "Riverine Corridors & Nature",
-        "titleEn": "Riverine Corridors & Nature",
-        "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-        "subtitle": "Verdant waters and lush environmental biodiversity",
-        "subtitleEn": "Verdant waters and lush environmental biodiversity",
-        "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-      },
-      {
-        "id": 4,
-        "image": "images/districts/sherpur/carousel-4.webp",
-        "title": "Cultural Life & Traditions",
-        "titleEn": "Cultural Life & Traditions",
-        "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-        "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-        "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-      },
-      {
-        "id": 5,
-        "image": "images/districts/sherpur/carousel-5.webp",
-        "title": "Scenic Trails & Landmarks",
-        "titleEn": "Scenic Trails & Landmarks",
-        "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-        "subtitle": "Famous travel destinations and peaceful viewpoints",
-        "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-        "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-      }
-    ],
+    "heroImage": null,
+    "carousel": [],
     "hist": [
       {
         "id": 1,
-        "image": "images/districts/sherpur/hist-1.webp",
+        "image": null,
         "name": "Mysore Rajbari Ruins",
         "nameEn": "Mysore Rajbari Ruins",
         "nameBn": "শেরপুর প্রাচীন রাজবাড়ি",
@@ -15976,7 +12763,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sherpur/hist-2.webp",
+        "image": null,
         "name": "Nalitabari Ancient Mosque",
         "nameEn": "Nalitabari Ancient Mosque",
         "nameBn": "শেরপুর কেন্দ্রীয় জামে মসজিদ",
@@ -15993,7 +12780,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sherpur/hist-3.webp",
+        "image": null,
         "name": "Sherpur Colonial Court & Mint",
         "nameEn": "Sherpur Colonial Court & Mint",
         "nameBn": "শেরপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -16010,7 +12797,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sherpur/hist-4.webp",
+        "image": null,
         "name": "Sherpur Archeological Mound",
         "nameEn": "Sherpur Archeological Mound",
         "nameBn": "শেরপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -16027,7 +12814,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sherpur/hist-5.webp",
+        "image": null,
         "name": "Sherpur Liberation War Memorial",
         "nameEn": "Sherpur Liberation War Memorial",
         "nameBn": "শেরপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -16046,7 +12833,7 @@ const LOCAL_DISTRICTS = [
     "tour": [
       {
         "id": 1,
-        "image": "images/districts/sherpur/tour-1.webp",
+        "image": null,
         "name": "Gajni Vacation Center (Garo Hills)",
         "nameEn": "Gajni Vacation Center (Garo Hills)",
         "nameBn": "শেরপুর নদী তীরবর্তী বাঁধ",
@@ -16063,7 +12850,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 2,
-        "image": "images/districts/sherpur/tour-2.webp",
+        "image": null,
         "name": "Madhutila Eco Park",
         "nameEn": "Madhutila Eco Park",
         "nameBn": "শেরপুর ইকোপার্ক ও বনাঞ্চল",
@@ -16080,7 +12867,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 3,
-        "image": "images/districts/sherpur/tour-3.webp",
+        "image": null,
         "name": "Sherpur Cultural Heritage Museum",
         "nameEn": "Sherpur Cultural Heritage Museum",
         "nameBn": "শেরপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -16097,7 +12884,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 4,
-        "image": "images/districts/sherpur/tour-4.webp",
+        "image": null,
         "name": "Sherpur Scenic Lake & Boating Resort",
         "nameEn": "Sherpur Scenic Lake & Boating Resort",
         "nameBn": "শেরপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -16114,7 +12901,7 @@ const LOCAL_DISTRICTS = [
       },
       {
         "id": 5,
-        "image": "images/districts/sherpur/tour-5.webp",
+        "image": null,
         "name": "Sherpur Sunset Hilltop Viewpoint",
         "nameEn": "Sherpur Sunset Hilltop Viewpoint",
         "nameBn": "শেরপুর সূর্যাস্ত ভিউপয়েন্ট",

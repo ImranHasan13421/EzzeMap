@@ -17,7 +17,7 @@ const JOYPURHAT_DATA = {
   "area": "965.88 km²",
   "areaBn": "৯৬৫.৮৮ বর্গ কি.মি.",
   "pop": "1.0M",
-  "popBn": "১.০ মিলিয়ন",
+  "popBn": "০.১ কোটি",
   "dist": "270 km",
   "distBn": "২৭০ কি.মি.",
   "route": "Via Jamuna Bridge through Bogura (approx. 6 hrs) or direct intercity trains from Kamalapur.",
@@ -26,63 +26,12 @@ const JOYPURHAT_DATA = {
   "tagline": "Joypurhat (জয়পুরহাট) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineEn": "Joypurhat (জয়পুরহাট) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineBn": "জয়পুরহাট (Joypurhat) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/joypurhat/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/joypurhat/carousel-1.webp",
-      "title": "Joypurhat Heritage & Landscapes",
-      "titleEn": "Joypurhat Heritage & Landscapes",
-      "titleBn": "জয়পুরহাট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rajshahi Division",
-      "subtitleEn": "Panoramic beauty across Rajshahi Division",
-      "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/joypurhat/carousel-2.webp",
-      "title": "Historic Monuments of Joypurhat",
-      "titleEn": "Historic Monuments of Joypurhat",
-      "titleBn": "জয়পুরহাট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/joypurhat/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/joypurhat/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/joypurhat/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/joypurhat/hist-1.webp",
+      "image": null,
       "name": "Lockma Rajbari",
       "nameEn": "Lockma Rajbari",
       "nameBn": "জয়পুরহাট প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/joypurhat/hist-2.webp",
+      "image": null,
       "name": "Asranga Dighi",
       "nameEn": "Asranga Dighi",
       "nameBn": "জয়পুরহাট কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/joypurhat/hist-3.webp",
+      "image": null,
       "name": "Joypurhat Colonial Court & Mint",
       "nameEn": "Joypurhat Colonial Court & Mint",
       "nameBn": "জয়পুরহাট ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/joypurhat/hist-4.webp",
+      "image": null,
       "name": "Joypurhat Archeological Mound",
       "nameEn": "Joypurhat Archeological Mound",
       "nameBn": "জয়পুরহাট প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/joypurhat/hist-5.webp",
+      "image": null,
       "name": "Joypurhat Liberation War Memorial",
       "nameEn": "Joypurhat Liberation War Memorial",
       "nameBn": "জয়পুরহাট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const JOYPURHAT_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/joypurhat/tour-1.webp",
+      "image": null,
       "name": "Hili Land Port Border Point",
       "nameEn": "Hili Land Port Border Point",
       "nameBn": "জয়পুরহাট নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/joypurhat/tour-2.webp",
+      "image": null,
       "name": "Nandail Dighi",
       "nameEn": "Nandail Dighi",
       "nameBn": "জয়পুরহাট ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/joypurhat/tour-3.webp",
+      "image": null,
       "name": "Joypurhat Cultural Heritage Museum",
       "nameEn": "Joypurhat Cultural Heritage Museum",
       "nameBn": "জয়পুরহাট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/joypurhat/tour-4.webp",
+      "image": null,
       "name": "Joypurhat Scenic Lake & Boating Resort",
       "nameEn": "Joypurhat Scenic Lake & Boating Resort",
       "nameBn": "জয়পুরহাট মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const JOYPURHAT_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/joypurhat/tour-5.webp",
+      "image": null,
       "name": "Joypurhat Sunset Hilltop Viewpoint",
       "nameEn": "Joypurhat Sunset Hilltop Viewpoint",
       "nameBn": "জয়পুরহাট সূর্যাস্ত ভিউপয়েন্ট",

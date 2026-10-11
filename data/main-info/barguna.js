@@ -17,7 +17,7 @@ const BARGUNA_DATA = {
   "area": "1,831.31 km²",
   "areaBn": "১,৮৩১.৩১ বর্গ কি.মি.",
   "pop": "0.9M",
-  "popBn": "০.৯ মিলিয়ন",
+  "popBn": "০.০৯ কোটি",
   "dist": "320 km",
   "distBn": "৩২০ কি.মি.",
   "route": "Via Padma Bridge expressway through Barishal (6-7 hrs) or luxury overnight launch from Sadarghat.",
@@ -26,63 +26,12 @@ const BARGUNA_DATA = {
   "tagline": "Barguna (বরগুনা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineEn": "Barguna (বরগুনা) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineBn": "বরগুনা (Barguna) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/barguna/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/barguna/carousel-1.webp",
-      "title": "Barguna Heritage & Landscapes",
-      "titleEn": "Barguna Heritage & Landscapes",
-      "titleBn": "বরগুনা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Barishal Division",
-      "subtitleEn": "Panoramic beauty across Barishal Division",
-      "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/barguna/carousel-2.webp",
-      "title": "Historic Monuments of Barguna",
-      "titleEn": "Historic Monuments of Barguna",
-      "titleBn": "বরগুনা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/barguna/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/barguna/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/barguna/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/barguna/hist-1.webp",
+      "image": null,
       "name": "Bibi Chini Shahi Mosque",
       "nameEn": "Bibi Chini Shahi Mosque",
       "nameBn": "বরগুনা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/barguna/hist-2.webp",
+      "image": null,
       "name": "Kankradon Historical Zamindar Estate",
       "nameEn": "Kankradon Historical Zamindar Estate",
       "nameBn": "বরগুনা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/barguna/hist-3.webp",
+      "image": null,
       "name": "Barguna Colonial Court & Mint",
       "nameEn": "Barguna Colonial Court & Mint",
       "nameBn": "বরগুনা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/barguna/hist-4.webp",
+      "image": null,
       "name": "Barguna Archeological Mound",
       "nameEn": "Barguna Archeological Mound",
       "nameBn": "বরগুনা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/barguna/hist-5.webp",
+      "image": null,
       "name": "Barguna Liberation War Memorial",
       "nameEn": "Barguna Liberation War Memorial",
       "nameBn": "বরগুনা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const BARGUNA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/barguna/tour-1.webp",
+      "image": null,
       "name": "Shuvo Sandhya Sea Beach",
       "nameEn": "Shuvo Sandhya Sea Beach",
       "nameBn": "বরগুনা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/barguna/tour-2.webp",
+      "image": null,
       "name": "Tengragiri Wildlife Sanctuary",
       "nameEn": "Tengragiri Wildlife Sanctuary",
       "nameBn": "বরগুনা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/barguna/tour-3.webp",
+      "image": null,
       "name": "Barguna Cultural Heritage Museum",
       "nameEn": "Barguna Cultural Heritage Museum",
       "nameBn": "বরগুনা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/barguna/tour-4.webp",
+      "image": null,
       "name": "Barguna Scenic Lake & Boating Resort",
       "nameEn": "Barguna Scenic Lake & Boating Resort",
       "nameBn": "বরগুনা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const BARGUNA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/barguna/tour-5.webp",
+      "image": null,
       "name": "Barguna Sunset Hilltop Viewpoint",
       "nameEn": "Barguna Sunset Hilltop Viewpoint",
       "nameBn": "বরগুনা সূর্যাস্ত ভিউপয়েন্ট",

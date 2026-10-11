@@ -17,7 +17,7 @@ const MADARIPUR_DATA = {
   "area": "1,144.96 km²",
   "areaBn": "১,১৪৪.৯৬ বর্গ কি.মি.",
   "pop": "1.3M",
-  "popBn": "১.৩ মিলিয়ন",
+  "popBn": "০.১৩ কোটি",
   "dist": "90 km",
   "distBn": "৯০ কি.মি.",
   "route": "Directly accessible via Dhaka-Mawa Expressway across Padma Bridge (1.5 - 2 hours).",
@@ -26,63 +26,12 @@ const MADARIPUR_DATA = {
   "tagline": "Madaripur (মাদারীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Madaripur (মাদারীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "মাদারীপুর (Madaripur) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/madaripur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/madaripur/carousel-1.webp",
-      "title": "Madaripur Heritage & Landscapes",
-      "titleEn": "Madaripur Heritage & Landscapes",
-      "titleBn": "মাদারীপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/madaripur/carousel-2.webp",
-      "title": "Historic Monuments of Madaripur",
-      "titleEn": "Historic Monuments of Madaripur",
-      "titleBn": "মাদারীপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/madaripur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/madaripur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/madaripur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/madaripur/hist-1.webp",
+      "image": null,
       "name": "Raja Ram Temple",
       "nameEn": "Raja Ram Temple",
       "nameBn": "মাদারীপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/madaripur/hist-2.webp",
+      "image": null,
       "name": "Mithapur Zamindar Bari",
       "nameEn": "Mithapur Zamindar Bari",
       "nameBn": "মাদারীপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/madaripur/hist-3.webp",
+      "image": null,
       "name": "Madaripur Colonial Court & Mint",
       "nameEn": "Madaripur Colonial Court & Mint",
       "nameBn": "মাদারীপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/madaripur/hist-4.webp",
+      "image": null,
       "name": "Madaripur Archeological Mound",
       "nameEn": "Madaripur Archeological Mound",
       "nameBn": "মাদারীপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/madaripur/hist-5.webp",
+      "image": null,
       "name": "Madaripur Liberation War Memorial",
       "nameEn": "Madaripur Liberation War Memorial",
       "nameBn": "মাদারীপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const MADARIPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/madaripur/tour-1.webp",
+      "image": null,
       "name": "Shakuni Lake & Eco Walkway",
       "nameEn": "Shakuni Lake & Eco Walkway",
       "nameBn": "মাদারীপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/madaripur/tour-2.webp",
+      "image": null,
       "name": "Arial Khan Riverside",
       "nameEn": "Arial Khan Riverside",
       "nameBn": "মাদারীপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/madaripur/tour-3.webp",
+      "image": null,
       "name": "Madaripur Cultural Heritage Museum",
       "nameEn": "Madaripur Cultural Heritage Museum",
       "nameBn": "মাদারীপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/madaripur/tour-4.webp",
+      "image": null,
       "name": "Madaripur Scenic Lake & Boating Resort",
       "nameEn": "Madaripur Scenic Lake & Boating Resort",
       "nameBn": "মাদারীপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const MADARIPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/madaripur/tour-5.webp",
+      "image": null,
       "name": "Madaripur Sunset Hilltop Viewpoint",
       "nameEn": "Madaripur Sunset Hilltop Viewpoint",
       "nameBn": "মাদারীপুর সূর্যাস্ত ভিউপয়েন্ট",

@@ -220,11 +220,58 @@ const POPULAR_DESTINATIONS = [
   { id: 45, en: "Bogura", bn: "বগুড়া" }
 ];
 
+// Helper: Convert Bengali digits to English digits
+function toEnglishDigits(input) {
+  if (input === null || input === undefined) return '';
+  const bnToEn = { '০': '0', '১': '1', '২': '2', '৩': '3', '৪': '4', '৫': '5', '৬': '6', '৭': '7', '৮': '8', '৯': '9' };
+  return String(input).replace(/[০-৯]/g, ch => bnToEn[ch] || ch);
+}
+
 // Helper: Convert any string or number to authentic Bengali digits
 function toBengaliDigits(input) {
   if (input === null || input === undefined) return '';
   const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
   return String(input).replace(/[0-9]/g, ch => bnDigits[Number(ch)]);
+}
+
+// Helper: Format population into authentic 'কোটি' metric in Bangla
+function formatBanglaPopulation(pop) {
+  if (!pop) return '০ কোটি';
+  const rawStr = String(pop).trim();
+
+  // If it already explicitly mentions 'কোটি', ensure digits are Bengali and return
+  if (rawStr.includes('কোটি')) {
+    return toBengaliDigits(rawStr);
+  }
+
+  // Normalize any Bengali digits to English digits first for accurate numerical parsing
+  const engStr = toEnglishDigits(rawStr);
+  const match = engStr.match(/([0-9]+(?:\.[0-9]+)?)/);
+  if (!match) {
+    return toBengaliDigits(rawStr);
+  }
+
+  const val = parseFloat(match[1]);
+  if (isNaN(val)) {
+    return toBengaliDigits(rawStr);
+  }
+
+  let crore;
+  if (val > 100000) {
+    // Raw headcount, e.g. 14700000 => 1.47 crore
+    crore = val / 10000000;
+  } else if (engStr.toUpperCase().includes('M') || rawStr.includes('মিলিয়ন') || rawStr.includes('million')) {
+    // Millions, e.g. 14.7M or 3.9 মিলিয়ন => 14.7/10 = 1.47 crore, 3.9/10 = 0.39 crore
+    crore = val / 10;
+  } else {
+    // Default assumption for million-level values
+    crore = val / 10;
+  }
+
+  // Format to clean decimal places
+  const formatted = parseFloat(crore.toFixed(2));
+  const hasPlus = rawStr.includes('+');
+  return `${toBengaliDigits(formatted)} কোটি${hasPlus ? '+' : ''}`;
 }
 
 // ==========================================
@@ -726,11 +773,19 @@ function populateDistrictDetails(district) {
   const tagline = document.getElementById('detail-tagline');
 
   if (heroImg) {
-    heroImg.src = district.heroImage || `images/districts/${district.slug}/hero.webp`;
-    heroImg.onerror = function() {
-      this.onerror = null;
-      this.src = 'images/default/hero.webp';
-    };
+    if (district.slug === 'dhaka' && district.heroImage) {
+      heroImg.classList.remove('hidden');
+      heroImg.style.display = 'block';
+      heroImg.src = district.heroImage;
+      heroImg.onerror = function() {
+        this.onerror = null;
+        this.src = 'images/default/hero.webp';
+      };
+    } else {
+      heroImg.classList.add('hidden');
+      heroImg.style.display = 'none';
+      heroImg.src = '';
+    }
   }
 
   if (isBn) {
@@ -773,7 +828,7 @@ function populateDistrictDetails(district) {
       : (district.taglineEn || district.tagline);
   }
 
-  // 2. KEY METRIC 4-GRID (English / Bengali numbers)
+  // 2. KEY METRIC 4-GRID (English / Bengali numbers with কোটি metric)
   const estYear = document.getElementById('detail-est-year');
   const totalArea = document.getElementById('detail-total-area');
   const totalPop = document.getElementById('detail-total-pop');
@@ -791,7 +846,7 @@ function populateDistrictDetails(district) {
   }
   if (totalPop) {
     totalPop.textContent = isBn 
-      ? (district.popBn || toBengaliDigits(district.pop || 'N/A'))
+      ? formatBanglaPopulation(district.popBn || district.pop)
       : (district.pop || 'N/A');
   }
   if (distance) {
@@ -808,39 +863,53 @@ function populateDistrictDetails(district) {
       : (district.routeEn || district.route);
   }
 
-  // 4. SMOOTH SNAP SLIDER CAROUSEL (5-IMAGE PURE CSS SCROLL-SNAP)
+  // 4. SMOOTH SNAP SLIDER CAROUSEL (Visible only for Dhaka for now)
+  const carouselSection = document.getElementById('detail-carousel-section');
   const carouselTrack = document.getElementById('detail-carousel-track');
+  const hasCarousel = district.slug === 'dhaka' && Array.isArray(district.carousel) && district.carousel.length > 0;
+
+  if (carouselSection) {
+    if (hasCarousel) {
+      carouselSection.classList.remove('hidden');
+      carouselSection.style.display = 'block';
+    } else {
+      carouselSection.classList.add('hidden');
+      carouselSection.style.display = 'none';
+    }
+  }
+
   if (carouselTrack) {
-    const slides = Array.isArray(district.carousel) && district.carousel.length > 0
-      ? district.carousel
-      : generateDefaultCarousel(district);
+    if (hasCarousel) {
+      const slides = district.carousel;
+      carouselTrack.innerHTML = slides.map((slide, idx) => {
+        const slideTitle = isBn ? (slide.titleBn || slide.title) : (slide.titleEn || slide.title);
+        const slideSub = isBn ? (slide.subtitleBn || slide.subtitle) : (slide.subtitleEn || slide.subtitle);
+        const slideNum = isBn ? toBengaliDigits(String(idx + 1).padStart(2, '0')) : String(idx + 1).padStart(2, '0');
+        const totalNum = isBn ? toBengaliDigits('05') : '05';
+        const slidePrefix = isBn ? 'দৃশ্য' : 'Slide';
 
-    carouselTrack.innerHTML = slides.map((slide, idx) => {
-      const slideTitle = isBn ? (slide.titleBn || slide.title) : (slide.titleEn || slide.title);
-      const slideSub = isBn ? (slide.subtitleBn || slide.subtitle) : (slide.subtitleEn || slide.subtitle);
-      const slideNum = isBn ? toBengaliDigits(String(idx + 1).padStart(2, '0')) : String(idx + 1).padStart(2, '0');
-      const totalNum = isBn ? toBengaliDigits('05') : '05';
-      const slidePrefix = isBn ? 'দৃশ্য' : 'Slide';
-
-      return `
-        <div class="snap-center shrink-0 w-[280px] sm:w-[340px] md:w-[380px] aspect-[16/10] relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-[#173728] group">
-          <img 
-            src="${slide.image}" 
-            alt="${slideTitle}" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            onerror="this.onerror=null; this.src='images/default/card.webp';"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-4 z-10">
-            <span class="text-[10px] font-black tracking-widest text-bdgreen-400 uppercase">
-              ${slidePrefix} ${slideNum} / ${totalNum}
-            </span>
-            <h4 class="text-sm sm:text-base font-extrabold text-white leading-tight mt-0.5 truncate">${slideTitle}</h4>
-            <p class="text-xs text-slate-300 font-medium line-clamp-1 mt-0.5">${slideSub}</p>
+        return `
+          <div class="snap-center shrink-0 w-[280px] sm:w-[340px] md:w-[380px] aspect-[16/10] relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-[#173728] group">
+            <img 
+              src="${slide.image}" 
+              alt="${slideTitle}" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='images/default/card.webp';"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-4 z-10">
+              <span class="text-[10px] font-black tracking-widest text-bdgreen-400 uppercase">
+                ${slidePrefix} ${slideNum} / ${totalNum}
+              </span>
+              <h4 class="text-sm sm:text-base font-extrabold text-white leading-tight mt-0.5 truncate">${slideTitle}</h4>
+              <p class="text-xs text-slate-300 font-medium line-clamp-1 mt-0.5">${slideSub}</p>
+            </div>
           </div>
-        </div>
-      `;
-    }).join('');
+        `;
+      }).join('');
+    } else {
+      carouselTrack.innerHTML = '';
+    }
   }
 
   // 5. EXPANDED TOP-5 HISTORICAL PLACES & HERITAGE (WITH GOOGLE MAPS REDIRECTION)
@@ -850,6 +919,7 @@ function populateDistrictDetails(district) {
       ? district.hist.slice(0, 5)
       : generateDefaultHistorical(district);
 
+    const isDhaka = district.slug === 'dhaka';
     histContainer.innerHTML = histList.map((item, idx) => {
       const itemName = isBn ? (item.nameBn || item.name) : (item.nameEn || item.name);
       const itemSecondary = isBn ? (item.nameEn || '') : (item.nameBn || '');
@@ -857,21 +927,32 @@ function populateDistrictDetails(district) {
       const itemDesc = isBn ? (item.descBn || item.desc) : (item.descEn || item.desc);
       const itemLoc = isBn ? (item.locationBn || item.location) : (item.locationEn || item.location);
       const googleMapLink = item.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((item.nameEn || item.name) + ' ' + district.en + ' Bangladesh')}`;
+      const hasImage = isDhaka && Boolean(item.image);
 
       return `
         <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
-          <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
-            <img 
-              src="${item.image || `images/districts/${district.slug}/hist-${idx + 1}.webp`}" 
-              alt="${itemName}" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-              onerror="this.onerror=null; this.src='images/default/card.webp';"
-            />
-            <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdred-500 text-white shadow-md">
-              ${itemCat}
+          ${hasImage ? `
+            <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+              <img 
+                src="${item.image}" 
+                alt="${itemName}" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.onerror=null; this.src='images/default/card.webp';"
+              />
+              <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdred-500 text-white shadow-md">
+                ${itemCat}
+              </div>
             </div>
-          </div>
+          ` : `
+            <div class="p-4 pb-0 flex items-center justify-between gap-2 border-b border-slate-100 dark:border-[#143124]/60">
+              <div class="w-8 h-8 rounded-lg bg-bdred-100 dark:bg-bdred-950/80 text-bdred-600 dark:text-bdred-400 flex items-center justify-center shrink-0 border border-bdred-200 dark:border-bdred-800">
+                <i data-lucide="castle" class="w-4 h-4"></i>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdred-500 text-white shadow-sm">
+                ${itemCat}
+              </span>
+            </div>
+          `}
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
               <div class="flex items-baseline justify-between gap-2">
@@ -921,6 +1002,7 @@ function populateDistrictDetails(district) {
       ? district.tour.slice(0, 5)
       : generateDefaultTourist(district);
 
+    const isDhaka = district.slug === 'dhaka';
     tourContainer.innerHTML = tourList.map((item, idx) => {
       const itemName = isBn ? (item.nameBn || item.name) : (item.nameEn || item.name);
       const itemSecondary = isBn ? (item.nameEn || '') : (item.nameBn || '');
@@ -928,21 +1010,32 @@ function populateDistrictDetails(district) {
       const itemDesc = isBn ? (item.descBn || item.desc) : (item.descEn || item.desc);
       const itemLoc = isBn ? (item.locationBn || item.location) : (item.locationEn || item.location);
       const googleMapLink = item.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((item.nameEn || item.name) + ' ' + district.en + ' Bangladesh')}`;
+      const hasImage = isDhaka && Boolean(item.image);
 
       return `
         <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
-          <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
-            <img 
-              src="${item.image || `images/districts/${district.slug}/tour-${idx + 1}.webp`}" 
-              alt="${itemName}" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-              onerror="this.onerror=null; this.src='images/default/card.webp';"
-            />
-            <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdgreen-600 text-white shadow-md">
-              ${itemCat}
+          ${hasImage ? `
+            <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+              <img 
+                src="${item.image}" 
+                alt="${itemName}" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.onerror=null; this.src='images/default/card.webp';"
+              />
+              <div class="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdgreen-600 text-white shadow-md">
+                ${itemCat}
+              </div>
             </div>
-          </div>
+          ` : `
+            <div class="p-4 pb-0 flex items-center justify-between gap-2 border-b border-slate-100 dark:border-[#143124]/60">
+              <div class="w-8 h-8 rounded-lg bg-bdgreen-100 dark:bg-bdgreen-950/80 text-bdgreen-700 dark:text-bdgreen-300 flex items-center justify-center shrink-0 border border-bdgreen-200 dark:border-bdgreen-800">
+                <i data-lucide="compass" class="w-4 h-4"></i>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-bdgreen-600 text-white shadow-sm">
+                ${itemCat}
+              </span>
+            </div>
+          `}
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
               <div class="flex items-baseline justify-between gap-2">
@@ -999,9 +1092,9 @@ function populateDistrictDetails(district) {
   initLucideIcons();
 }
 
-// Fallback generators guaranteeing exact 5-item arrays
+// Fallback generators guaranteeing exact 5-item arrays (only Dhaka has photos for now)
 function generateDefaultCarousel(d) {
-  const isBn = AppState.currentLang === 'bn';
+  if (d.slug !== 'dhaka') return [];
   return [1, 2, 3, 4, 5].map(i => ({
     id: i,
     image: `images/districts/${d.slug}/carousel-${i}.webp`,
@@ -1022,7 +1115,7 @@ function generateDefaultHistorical(d) {
   ];
   return titles.map((t, i) => ({
     id: i + 1,
-    image: `images/districts/${d.slug}/hist-${i + 1}.webp`,
+    image: d.slug === 'dhaka' ? `images/districts/${d.slug}/hist-${i + 1}.webp` : null,
     name: `${d.en} ${t.en}`,
     nameEn: `${d.en} ${t.en}`,
     nameBn: `${d.bn} ${t.bn}`,
@@ -1047,17 +1140,17 @@ function generateDefaultTourist(d) {
   ];
   return titles.map((t, i) => ({
     id: i + 1,
-    image: `images/districts/${d.slug}/tour-${i + 1}.webp`,
+    image: d.slug === 'dhaka' ? `images/districts/${d.slug}/tour-${i + 1}.webp` : null,
     name: `${d.en} ${t.en}`,
     nameEn: `${d.en} ${t.en}`,
     nameBn: `${d.bn} ${t.bn}`,
     category: t.catEn,
     categoryEn: t.catEn,
     categoryBn: t.catBn,
-    desc: `A celebrated tourism destination in ${d.en} district offering scenic panoramas and peaceful recreation.`,
+    desc: `${t.en} stands as an iconic tourist highlight in ${d.en} district. Offering scenic trails and picturesque natural surroundings.`,
     descBn: `${d.bn} জেলার ${t.bn} অন্যতম জনপ্রিয় পর্যটন স্থান, যা ভ্রমণপিপাসুদের অপরূপ নৈসর্গিক সৌন্দর্য উপহার দেয়।`,
-    location: `${d.en} Scenic Zone, ${d.div} Division`,
-    locationBn: `${d.bn} নদী তীর, ${d.divBn || d.div} বিভাগ`,
+    location: `${d.en} Scenic Point, ${d.div} Division`,
+    locationBn: `${d.bn} দর্শনীয় স্থান, ${d.divBn || d.div} বিভাগ`,
     mapUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.en + ' ' + t.en + ' Bangladesh')}`
   }));
 }
@@ -1217,17 +1310,23 @@ function renderVectorMap(containerId) {
 
   const viewBox = (typeof window !== 'undefined' && window.BANGLADESH_MAP_VIEWBOX) 
     ? window.BANGLADESH_MAP_VIEWBOX 
-    : { w: 600, h: 848 };
+    : { x: -40, y: -35, w: 680, h: 918 };
+
+  const vbX = viewBox.x !== undefined ? viewBox.x : -40;
+  const vbY = viewBox.y !== undefined ? viewBox.y : -35;
+  const vbW = viewBox.w || 680;
+  const vbH = viewBox.h || 918;
 
   const districts = AppState.districts;
   if (!districts || districts.length === 0) return;
 
-  // Build clean SVG document markup
+  // Build clean SVG document markup with boundary padding & preserveAspectRatio
   const svgMarkup = `
     <svg 
       id="${containerId}-svg"
-      viewBox="0 0 ${viewBox.w} ${viewBox.h}" 
-      class="w-full h-full max-h-full object-contain filter drop-shadow-sm select-none"
+      viewBox="${vbX} ${vbY} ${vbW} ${vbH}" 
+      preserveAspectRatio="xMidYMid meet"
+      class="w-full h-full max-h-[460px] sm:max-h-[500px] lg:max-h-[540px] object-contain filter drop-shadow-sm select-none block mx-auto"
       xmlns="http://www.w3.org/2000/svg"
     >
       ${districts.map(d => `
@@ -1293,10 +1392,11 @@ function renderVectorMap(containerId) {
         if (divEl) {
           const divName = isBn ? (district.divBn || district.div) : district.div;
           const distVal = isBn ? (district.distBn || toBengaliDigits(district.dist)) : district.dist;
+          const popVal = isBn ? formatBanglaPopulation(district.popBn || district.pop) : `${district.pop} pop.`;
           const suffix = isBn ? 'ঢাকা থেকে' : 'from Dhaka';
           divEl.textContent = isBn 
-            ? `${divName} বিভাগ • ${distVal} ${suffix}`
-            : `${divName} Division • ${distVal} ${suffix}`;
+            ? `${divName} বিভাগ • ${distVal} ${suffix} • ${popVal}`
+            : `${divName} Division • ${distVal} ${suffix} • ${popVal}`;
         }
 
         tooltip.classList.remove('hidden');
@@ -1388,7 +1488,7 @@ function updateMapInspectorHud(district, isActive = false) {
   }
   if (statsEl) {
     const areaText = isBn ? (district.areaBn || toBengaliDigits(district.area)) : district.area;
-    const popText = isBn ? (district.popBn || toBengaliDigits(district.pop)) : `${district.pop} pop.`;
+    const popText = isBn ? formatBanglaPopulation(district.popBn || district.pop) : `${district.pop} pop.`;
     statsEl.textContent = `${areaText} • ${popText}`;
   }
 
@@ -1421,8 +1521,9 @@ function updateModalInspectorHud(district) {
   if (modalDiv) {
     const divName = isBn ? (district.divBn || district.div) : district.div;
     const distVal = isBn ? (district.distBn || toBengaliDigits(district.dist)) : district.dist;
+    const popVal = isBn ? formatBanglaPopulation(district.popBn || district.pop) : `${district.pop} pop.`;
     const suffix = isBn ? 'ঢাকা থেকে' : 'from Dhaka';
-    modalDiv.textContent = `• ${divName} • ${distVal} ${suffix}`;
+    modalDiv.textContent = `• ${divName} • ${distVal} ${suffix} • ${popVal}`;
   }
   if (modalAction) {
     modalAction.textContent = isBn ? 'প্রোফাইল দেখুন →' : 'Open Profile →';

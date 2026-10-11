@@ -17,7 +17,7 @@ const FARIDPUR_DATA = {
   "area": "2,072.72 km²",
   "areaBn": "২,০৭২.৭২ বর্গ কি.মি.",
   "pop": "1.9M",
-  "popBn": "১.৯ মিলিয়ন",
+  "popBn": "০.১৯ কোটি",
   "dist": "138 km",
   "distBn": "১৩৮ কি.মি.",
   "route": "Via Dhaka-Mawa Expressway and Padma Bridge (approx. 2.5 hours by car/bus).",
@@ -26,63 +26,12 @@ const FARIDPUR_DATA = {
   "tagline": "Faridpur (ফরিদপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Faridpur (ফরিদপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "ফরিদপুর (Faridpur) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/faridpur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/faridpur/carousel-1.webp",
-      "title": "Faridpur Heritage & Landscapes",
-      "titleEn": "Faridpur Heritage & Landscapes",
-      "titleBn": "ফরিদপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/faridpur/carousel-2.webp",
-      "title": "Historic Monuments of Faridpur",
-      "titleEn": "Historic Monuments of Faridpur",
-      "titleBn": "ফরিদপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/faridpur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/faridpur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/faridpur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/faridpur/hist-1.webp",
+      "image": null,
       "name": "Bhatpara Nilkuthi",
       "nameEn": "Bhatpara Nilkuthi",
       "nameBn": "ফরিদপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/faridpur/hist-2.webp",
+      "image": null,
       "name": "Kanaipur Zamindar Bari",
       "nameEn": "Kanaipur Zamindar Bari",
       "nameBn": "ফরিদপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/faridpur/hist-3.webp",
+      "image": null,
       "name": "Faridpur Colonial Court & Mint",
       "nameEn": "Faridpur Colonial Court & Mint",
       "nameBn": "ফরিদপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/faridpur/hist-4.webp",
+      "image": null,
       "name": "Faridpur Archeological Mound",
       "nameEn": "Faridpur Archeological Mound",
       "nameBn": "ফরিদপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/faridpur/hist-5.webp",
+      "image": null,
       "name": "Faridpur Liberation War Memorial",
       "nameEn": "Faridpur Liberation War Memorial",
       "nameBn": "ফরিদপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const FARIDPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/faridpur/tour-1.webp",
+      "image": null,
       "name": "Padma River Embankment",
       "nameEn": "Padma River Embankment",
       "nameBn": "ফরিদপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/faridpur/tour-2.webp",
+      "image": null,
       "name": "Palli Kabi Jasimuddin Homestead",
       "nameEn": "Palli Kabi Jasimuddin Homestead",
       "nameBn": "ফরিদপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/faridpur/tour-3.webp",
+      "image": null,
       "name": "Faridpur Cultural Heritage Museum",
       "nameEn": "Faridpur Cultural Heritage Museum",
       "nameBn": "ফরিদপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/faridpur/tour-4.webp",
+      "image": null,
       "name": "Faridpur Scenic Lake & Boating Resort",
       "nameEn": "Faridpur Scenic Lake & Boating Resort",
       "nameBn": "ফরিদপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const FARIDPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/faridpur/tour-5.webp",
+      "image": null,
       "name": "Faridpur Sunset Hilltop Viewpoint",
       "nameEn": "Faridpur Sunset Hilltop Viewpoint",
       "nameBn": "ফরিদপুর সূর্যাস্ত ভিউপয়েন্ট",

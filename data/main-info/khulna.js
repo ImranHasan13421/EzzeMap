@@ -17,7 +17,7 @@ const KHULNA_DATA = {
   "area": "4,394.46 km²",
   "areaBn": "৪,৩৯৪.৪৬ বর্গ কি.মি.",
   "pop": "2.4M",
-  "popBn": "২.৪ মিলিয়ন",
+  "popBn": "০.২৪ কোটি",
   "dist": "220 km",
   "distBn": "২২০ কি.মি.",
   "route": "Via Padma Bridge and Dhaka-Khulna Highway N8 (approx. 3.5 - 4 hrs), Sundarban Express train, or flight.",
@@ -26,63 +26,12 @@ const KHULNA_DATA = {
   "tagline": "Khulna (খুলনা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Khulna (খুলনা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "খুলনা (Khulna) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/khulna/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/khulna/carousel-1.webp",
-      "title": "Khulna Heritage & Landscapes",
-      "titleEn": "Khulna Heritage & Landscapes",
-      "titleBn": "খুলনা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/khulna/carousel-2.webp",
-      "title": "Historic Monuments of Khulna",
-      "titleEn": "Historic Monuments of Khulna",
-      "titleBn": "খুলনা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/khulna/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/khulna/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/khulna/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/khulna/hist-1.webp",
+      "image": null,
       "name": "Saint Joseph's Cathedral",
       "nameEn": "Saint Joseph's Cathedral",
       "nameBn": "খুলনা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/khulna/hist-2.webp",
+      "image": null,
       "name": "Shiromoni Historical War Memorial",
       "nameEn": "Shiromoni Historical War Memorial",
       "nameBn": "খুলনা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/khulna/hist-3.webp",
+      "image": null,
       "name": "Khulna Colonial Court & Mint",
       "nameEn": "Khulna Colonial Court & Mint",
       "nameBn": "খুলনা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/khulna/hist-4.webp",
+      "image": null,
       "name": "Khulna Archeological Mound",
       "nameEn": "Khulna Archeological Mound",
       "nameBn": "খুলনা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/khulna/hist-5.webp",
+      "image": null,
       "name": "Khulna Liberation War Memorial",
       "nameEn": "Khulna Liberation War Memorial",
       "nameBn": "খুলনা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const KHULNA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/khulna/tour-1.webp",
+      "image": null,
       "name": "Sundarbans National Forest Gateway",
       "nameEn": "Sundarbans National Forest Gateway",
       "nameBn": "খুলনা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/khulna/tour-2.webp",
+      "image": null,
       "name": "Khan Jahan Ali (Rupsha) Bridge",
       "nameEn": "Khan Jahan Ali (Rupsha) Bridge",
       "nameBn": "খুলনা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/khulna/tour-3.webp",
+      "image": null,
       "name": "Khulna Cultural Heritage Museum",
       "nameEn": "Khulna Cultural Heritage Museum",
       "nameBn": "খুলনা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/khulna/tour-4.webp",
+      "image": null,
       "name": "Khulna Scenic Lake & Boating Resort",
       "nameEn": "Khulna Scenic Lake & Boating Resort",
       "nameBn": "খুলনা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const KHULNA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/khulna/tour-5.webp",
+      "image": null,
       "name": "Khulna Sunset Hilltop Viewpoint",
       "nameEn": "Khulna Sunset Hilltop Viewpoint",
       "nameBn": "খুলনা সূর্যাস্ত ভিউপয়েন্ট",

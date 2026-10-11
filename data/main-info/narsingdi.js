@@ -17,7 +17,7 @@ const NARSINGDI_DATA = {
   "area": "1,140.76 km²",
   "areaBn": "১,১৪০.৭৬ বর্গ কি.মি.",
   "pop": "2.5M",
-  "popBn": "২.৫ মিলিয়ন",
+  "popBn": "০.২৫ কোটি",
   "dist": "50 km",
   "distBn": "৫০ কি.মি.",
   "route": "Via Dhaka-Sylhet Highway N2 or intercity trains heading to Kishoreganj/Sylhet (1-1.5 hrs).",
@@ -26,63 +26,12 @@ const NARSINGDI_DATA = {
   "tagline": "Narsingdi (নরসিংদী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Narsingdi (নরসিংদী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "নরসিংদী (Narsingdi) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/narsingdi/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/narsingdi/carousel-1.webp",
-      "title": "Narsingdi Heritage & Landscapes",
-      "titleEn": "Narsingdi Heritage & Landscapes",
-      "titleBn": "নরসিংদী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/narsingdi/carousel-2.webp",
-      "title": "Historic Monuments of Narsingdi",
-      "titleEn": "Historic Monuments of Narsingdi",
-      "titleBn": "নরসিংদী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/narsingdi/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/narsingdi/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/narsingdi/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/narsingdi/hist-1.webp",
+      "image": null,
       "name": "Wari-Bateshwar Ancient City",
       "nameEn": "Wari-Bateshwar Ancient City",
       "nameBn": "নরসিংদী প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/narsingdi/hist-2.webp",
+      "image": null,
       "name": "Parulia Shahi Mosque",
       "nameEn": "Parulia Shahi Mosque",
       "nameBn": "নরসিংদী কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/narsingdi/hist-3.webp",
+      "image": null,
       "name": "Narsingdi Colonial Court & Mint",
       "nameEn": "Narsingdi Colonial Court & Mint",
       "nameBn": "নরসিংদী ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/narsingdi/hist-4.webp",
+      "image": null,
       "name": "Narsingdi Archeological Mound",
       "nameEn": "Narsingdi Archeological Mound",
       "nameBn": "নরসিংদী প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/narsingdi/hist-5.webp",
+      "image": null,
       "name": "Narsingdi Liberation War Memorial",
       "nameEn": "Narsingdi Liberation War Memorial",
       "nameBn": "নরসিংদী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const NARSINGDI_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/narsingdi/tour-1.webp",
+      "image": null,
       "name": "Dream Holiday Park",
       "nameEn": "Dream Holiday Park",
       "nameBn": "নরসিংদী নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/narsingdi/tour-2.webp",
+      "image": null,
       "name": "Shitalakshya River Cruise",
       "nameEn": "Shitalakshya River Cruise",
       "nameBn": "নরসিংদী ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/narsingdi/tour-3.webp",
+      "image": null,
       "name": "Narsingdi Cultural Heritage Museum",
       "nameEn": "Narsingdi Cultural Heritage Museum",
       "nameBn": "নরসিংদী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/narsingdi/tour-4.webp",
+      "image": null,
       "name": "Narsingdi Scenic Lake & Boating Resort",
       "nameEn": "Narsingdi Scenic Lake & Boating Resort",
       "nameBn": "নরসিংদী মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const NARSINGDI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/narsingdi/tour-5.webp",
+      "image": null,
       "name": "Narsingdi Sunset Hilltop Viewpoint",
       "nameEn": "Narsingdi Sunset Hilltop Viewpoint",
       "nameBn": "নরসিংদী সূর্যাস্ত ভিউপয়েন্ট",

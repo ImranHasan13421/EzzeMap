@@ -17,7 +17,7 @@ const SATKHIRA_DATA = {
   "area": "3,817.29 km²",
   "areaBn": "৩,৮১৭.২৯ বর্গ কি.মি.",
   "pop": "2.1M",
-  "popBn": "২.১ মিলিয়ন",
+  "popBn": "০.২১ কোটি",
   "dist": "265 km",
   "distBn": "২৬৫ কি.মি.",
   "route": "Via Padma Bridge through Khulna (approx. 5 hours) or direct highway coaches.",
@@ -26,63 +26,12 @@ const SATKHIRA_DATA = {
   "tagline": "Satkhira (সাতক্ষীরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Satkhira (সাতক্ষীরা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "সাতক্ষীরা (Satkhira) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/satkhira/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/satkhira/carousel-1.webp",
-      "title": "Satkhira Heritage & Landscapes",
-      "titleEn": "Satkhira Heritage & Landscapes",
-      "titleBn": "সাতক্ষীরা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/satkhira/carousel-2.webp",
-      "title": "Historic Monuments of Satkhira",
-      "titleEn": "Historic Monuments of Satkhira",
-      "titleBn": "সাতক্ষীরা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/satkhira/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/satkhira/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/satkhira/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/satkhira/hist-1.webp",
+      "image": null,
       "name": "Ishwaripur Chanda Bhairab & Hamamkhana",
       "nameEn": "Ishwaripur Chanda Bhairab & Hamamkhana",
       "nameBn": "সাতক্ষীরা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/satkhira/hist-2.webp",
+      "image": null,
       "name": "Five-Dome Mosque of Jessoreshwari",
       "nameEn": "Five-Dome Mosque of Jessoreshwari",
       "nameBn": "সাতক্ষীরা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/satkhira/hist-3.webp",
+      "image": null,
       "name": "Satkhira Colonial Court & Mint",
       "nameEn": "Satkhira Colonial Court & Mint",
       "nameBn": "সাতক্ষীরা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/satkhira/hist-4.webp",
+      "image": null,
       "name": "Satkhira Archeological Mound",
       "nameEn": "Satkhira Archeological Mound",
       "nameBn": "সাতক্ষীরা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/satkhira/hist-5.webp",
+      "image": null,
       "name": "Satkhira Liberation War Memorial",
       "nameEn": "Satkhira Liberation War Memorial",
       "nameBn": "সাতক্ষীরা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const SATKHIRA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/satkhira/tour-1.webp",
+      "image": null,
       "name": "Sundarbans Kolagachia & Burigoalini",
       "nameEn": "Sundarbans Kolagachia & Burigoalini",
       "nameBn": "সাতক্ষীরা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/satkhira/tour-2.webp",
+      "image": null,
       "name": "Mandarbari Coastal Sea Beach",
       "nameEn": "Mandarbari Coastal Sea Beach",
       "nameBn": "সাতক্ষীরা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/satkhira/tour-3.webp",
+      "image": null,
       "name": "Satkhira Cultural Heritage Museum",
       "nameEn": "Satkhira Cultural Heritage Museum",
       "nameBn": "সাতক্ষীরা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/satkhira/tour-4.webp",
+      "image": null,
       "name": "Satkhira Scenic Lake & Boating Resort",
       "nameEn": "Satkhira Scenic Lake & Boating Resort",
       "nameBn": "সাতক্ষীরা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const SATKHIRA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/satkhira/tour-5.webp",
+      "image": null,
       "name": "Satkhira Sunset Hilltop Viewpoint",
       "nameEn": "Satkhira Sunset Hilltop Viewpoint",
       "nameBn": "সাতক্ষীরা সূর্যাস্ত ভিউপয়েন্ট",

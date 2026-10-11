@@ -17,7 +17,7 @@ const NOAKHALI_DATA = {
   "area": "4,202.70 km²",
   "areaBn": "৪,২০২.৭০ বর্গ কি.মি.",
   "pop": "3.2M",
-  "popBn": "৩.২ মিলিয়ন",
+  "popBn": "০.৩২ কোটি",
   "dist": "165 km",
   "distBn": "১৬৫ কি.মি.",
   "route": "Via Dhaka-Chittagong Highway branching at Comilla (approx. 3.5 - 4 hours by bus/train).",
@@ -26,63 +26,12 @@ const NOAKHALI_DATA = {
   "tagline": "Noakhali (নোয়াখালী) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineEn": "Noakhali (নোয়াখালী) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineBn": "নোয়াখালী (Noakhali) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/noakhali/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/noakhali/carousel-1.webp",
-      "title": "Noakhali Heritage & Landscapes",
-      "titleEn": "Noakhali Heritage & Landscapes",
-      "titleBn": "নোয়াখালী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Chattogram Division",
-      "subtitleEn": "Panoramic beauty across Chattogram Division",
-      "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/noakhali/carousel-2.webp",
-      "title": "Historic Monuments of Noakhali",
-      "titleEn": "Historic Monuments of Noakhali",
-      "titleBn": "নোয়াখালী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/noakhali/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/noakhali/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/noakhali/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/noakhali/hist-1.webp",
+      "image": null,
       "name": "Gandhi Ashram Trust (Jayag)",
       "nameEn": "Gandhi Ashram Trust (Jayag)",
       "nameBn": "নোয়াখালী প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/noakhali/hist-2.webp",
+      "image": null,
       "name": "Bajra Shahi Mosque",
       "nameEn": "Bajra Shahi Mosque",
       "nameBn": "নোয়াখালী কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/noakhali/hist-3.webp",
+      "image": null,
       "name": "Noakhali Colonial Court & Mint",
       "nameEn": "Noakhali Colonial Court & Mint",
       "nameBn": "নোয়াখালী ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/noakhali/hist-4.webp",
+      "image": null,
       "name": "Noakhali Archeological Mound",
       "nameEn": "Noakhali Archeological Mound",
       "nameBn": "নোয়াখালী প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/noakhali/hist-5.webp",
+      "image": null,
       "name": "Noakhali Liberation War Memorial",
       "nameEn": "Noakhali Liberation War Memorial",
       "nameBn": "নোয়াখালী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const NOAKHALI_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/noakhali/tour-1.webp",
+      "image": null,
       "name": "Nijhum Dwip (Silent Island)",
       "nameEn": "Nijhum Dwip (Silent Island)",
       "nameBn": "নোয়াখালী নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/noakhali/tour-2.webp",
+      "image": null,
       "name": "Swarnadwip & Coastal Polders",
       "nameEn": "Swarnadwip & Coastal Polders",
       "nameBn": "নোয়াখালী ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/noakhali/tour-3.webp",
+      "image": null,
       "name": "Noakhali Cultural Heritage Museum",
       "nameEn": "Noakhali Cultural Heritage Museum",
       "nameBn": "নোয়াখালী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/noakhali/tour-4.webp",
+      "image": null,
       "name": "Noakhali Scenic Lake & Boating Resort",
       "nameEn": "Noakhali Scenic Lake & Boating Resort",
       "nameBn": "নোয়াখালী মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const NOAKHALI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/noakhali/tour-5.webp",
+      "image": null,
       "name": "Noakhali Sunset Hilltop Viewpoint",
       "nameEn": "Noakhali Sunset Hilltop Viewpoint",
       "nameBn": "নোয়াখালী সূর্যাস্ত ভিউপয়েন্ট",

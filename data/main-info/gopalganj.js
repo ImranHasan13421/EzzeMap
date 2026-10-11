@@ -17,7 +17,7 @@ const GOPALGANJ_DATA = {
   "area": "1,489.92 km²",
   "areaBn": "১,৪৮৯.৯২ বর্গ কি.মি.",
   "pop": "1.2M",
-  "popBn": "১.২ মিলিয়ন",
+  "popBn": "০.১২ কোটি",
   "dist": "160 km",
   "distBn": "১৬০ কি.মি.",
   "route": "Via Padma Bridge and Dhaka-Khulna Highway N805 (approx. 2.5 to 3 hours).",
@@ -26,63 +26,12 @@ const GOPALGANJ_DATA = {
   "tagline": "Gopalganj (গোপালগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Gopalganj (গোপালগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "গোপালগঞ্জ (Gopalganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/gopalganj/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/gopalganj/carousel-1.webp",
-      "title": "Gopalganj Heritage & Landscapes",
-      "titleEn": "Gopalganj Heritage & Landscapes",
-      "titleBn": "গোপালগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/gopalganj/carousel-2.webp",
-      "title": "Historic Monuments of Gopalganj",
-      "titleEn": "Historic Monuments of Gopalganj",
-      "titleBn": "গোপালগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/gopalganj/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/gopalganj/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/gopalganj/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/gopalganj/hist-1.webp",
+      "image": null,
       "name": "Tungipara National Mausoleum",
       "nameEn": "Tungipara National Mausoleum",
       "nameBn": "গোপালগঞ্জ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/gopalganj/hist-2.webp",
+      "image": null,
       "name": "Ulpur Zamindar Bari",
       "nameEn": "Ulpur Zamindar Bari",
       "nameBn": "গোপালগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/gopalganj/hist-3.webp",
+      "image": null,
       "name": "Gopalganj Colonial Court & Mint",
       "nameEn": "Gopalganj Colonial Court & Mint",
       "nameBn": "গোপালগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/gopalganj/hist-4.webp",
+      "image": null,
       "name": "Gopalganj Archeological Mound",
       "nameEn": "Gopalganj Archeological Mound",
       "nameBn": "গোপালগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/gopalganj/hist-5.webp",
+      "image": null,
       "name": "Gopalganj Liberation War Memorial",
       "nameEn": "Gopalganj Liberation War Memorial",
       "nameBn": "গোপালগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const GOPALGANJ_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/gopalganj/tour-1.webp",
+      "image": null,
       "name": "Madhupati Wetland",
       "nameEn": "Madhupati Wetland",
       "nameBn": "গোপালগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/gopalganj/tour-2.webp",
+      "image": null,
       "name": "Barnal Baor",
       "nameEn": "Barnal Baor",
       "nameBn": "গোপালগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/gopalganj/tour-3.webp",
+      "image": null,
       "name": "Gopalganj Cultural Heritage Museum",
       "nameEn": "Gopalganj Cultural Heritage Museum",
       "nameBn": "গোপালগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/gopalganj/tour-4.webp",
+      "image": null,
       "name": "Gopalganj Scenic Lake & Boating Resort",
       "nameEn": "Gopalganj Scenic Lake & Boating Resort",
       "nameBn": "গোপালগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const GOPALGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/gopalganj/tour-5.webp",
+      "image": null,
       "name": "Gopalganj Sunset Hilltop Viewpoint",
       "nameEn": "Gopalganj Sunset Hilltop Viewpoint",
       "nameBn": "গোপালগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",

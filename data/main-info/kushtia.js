@@ -17,7 +17,7 @@ const KUSHTIA_DATA = {
   "area": "1,608.80 km²",
   "areaBn": "১,৬০৮.৮০ বর্গ কি.মি.",
   "pop": "2.0M",
-  "popBn": "২.০ মিলিয়ন",
+  "popBn": "০.২ কোটি",
   "dist": "210 km",
   "distBn": "২১০ কি.মি.",
   "route": "Via Padma Bridge or Jamuna Bridge highway routes, or direct trains via Poradaha junction (4.5 hrs).",
@@ -26,63 +26,12 @@ const KUSHTIA_DATA = {
   "tagline": "Kushtia (কুষ্টিয়া) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Kushtia (কুষ্টিয়া) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "কুষ্টিয়া (Kushtia) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/kushtia/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/kushtia/carousel-1.webp",
-      "title": "Kushtia Heritage & Landscapes",
-      "titleEn": "Kushtia Heritage & Landscapes",
-      "titleBn": "কুষ্টিয়া ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/kushtia/carousel-2.webp",
-      "title": "Historic Monuments of Kushtia",
-      "titleEn": "Historic Monuments of Kushtia",
-      "titleBn": "কুষ্টিয়া জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/kushtia/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/kushtia/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/kushtia/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/kushtia/hist-1.webp",
+      "image": null,
       "name": "Lalon Shah Shrine (Chheuriya)",
       "nameEn": "Lalon Shah Shrine (Chheuriya)",
       "nameBn": "কুষ্টিয়া প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/kushtia/hist-2.webp",
+      "image": null,
       "name": "Tagore Lodge & Kuthibari (Shilaidaha)",
       "nameEn": "Tagore Lodge & Kuthibari (Shilaidaha)",
       "nameBn": "কুষ্টিয়া কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/kushtia/hist-3.webp",
+      "image": null,
       "name": "Kushtia Colonial Court & Mint",
       "nameEn": "Kushtia Colonial Court & Mint",
       "nameBn": "কুষ্টিয়া ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/kushtia/hist-4.webp",
+      "image": null,
       "name": "Kushtia Archeological Mound",
       "nameEn": "Kushtia Archeological Mound",
       "nameBn": "কুষ্টিয়া প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/kushtia/hist-5.webp",
+      "image": null,
       "name": "Kushtia Liberation War Memorial",
       "nameEn": "Kushtia Liberation War Memorial",
       "nameBn": "কুষ্টিয়া মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const KUSHTIA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/kushtia/tour-1.webp",
+      "image": null,
       "name": "Hardinge Bridge & Lalon Shah Bridge",
       "nameEn": "Hardinge Bridge & Lalon Shah Bridge",
       "nameBn": "কুষ্টিয়া নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/kushtia/tour-2.webp",
+      "image": null,
       "name": "Ghashi Lake & Gorai River Banks",
       "nameEn": "Ghashi Lake & Gorai River Banks",
       "nameBn": "কুষ্টিয়া ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/kushtia/tour-3.webp",
+      "image": null,
       "name": "Kushtia Cultural Heritage Museum",
       "nameEn": "Kushtia Cultural Heritage Museum",
       "nameBn": "কুষ্টিয়া লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/kushtia/tour-4.webp",
+      "image": null,
       "name": "Kushtia Scenic Lake & Boating Resort",
       "nameEn": "Kushtia Scenic Lake & Boating Resort",
       "nameBn": "কুষ্টিয়া মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const KUSHTIA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/kushtia/tour-5.webp",
+      "image": null,
       "name": "Kushtia Sunset Hilltop Viewpoint",
       "nameEn": "Kushtia Sunset Hilltop Viewpoint",
       "nameBn": "কুষ্টিয়া সূর্যাস্ত ভিউপয়েন্ট",

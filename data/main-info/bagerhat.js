@@ -17,7 +17,7 @@ const BAGERHAT_DATA = {
   "area": "3,959.11 km²",
   "areaBn": "৩,৯৫৯.১১ বর্গ কি.মি.",
   "pop": "1.5M",
-  "popBn": "১.৫ মিলিয়ন",
+  "popBn": "০.১৫ কোটি",
   "dist": "200 km",
   "distBn": "২০০ কি.মি.",
   "route": "Via Padma Bridge and Dhaka-Khulna Highway N8 (approx. 3.5 - 4 hours by bus/car).",
@@ -26,63 +26,12 @@ const BAGERHAT_DATA = {
   "tagline": "Bagerhat (বাগেরহাট) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Bagerhat (বাগেরহাট) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "বাগেরহাট (Bagerhat) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/bagerhat/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/bagerhat/carousel-1.webp",
-      "title": "Bagerhat Heritage & Landscapes",
-      "titleEn": "Bagerhat Heritage & Landscapes",
-      "titleBn": "বাগেরহাট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/bagerhat/carousel-2.webp",
-      "title": "Historic Monuments of Bagerhat",
-      "titleEn": "Historic Monuments of Bagerhat",
-      "titleBn": "বাগেরহাট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/bagerhat/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/bagerhat/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/bagerhat/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/bagerhat/hist-1.webp",
+      "image": null,
       "name": "Sixty Dome Mosque (Shat Gombuj)",
       "nameEn": "Sixty Dome Mosque (Shat Gombuj)",
       "nameBn": "বাগেরহাট প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/bagerhat/hist-2.webp",
+      "image": null,
       "name": "Mausoleum of Khan Jahan Ali",
       "nameEn": "Mausoleum of Khan Jahan Ali",
       "nameBn": "বাগেরহাট কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/bagerhat/hist-3.webp",
+      "image": null,
       "name": "Bagerhat Colonial Court & Mint",
       "nameEn": "Bagerhat Colonial Court & Mint",
       "nameBn": "বাগেরহাট ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/bagerhat/hist-4.webp",
+      "image": null,
       "name": "Bagerhat Archeological Mound",
       "nameEn": "Bagerhat Archeological Mound",
       "nameBn": "বাগেরহাট প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/bagerhat/hist-5.webp",
+      "image": null,
       "name": "Bagerhat Liberation War Memorial",
       "nameEn": "Bagerhat Liberation War Memorial",
       "nameBn": "বাগেরহাট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const BAGERHAT_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/bagerhat/tour-1.webp",
+      "image": null,
       "name": "Sundarbans East Eco-Sanctuary",
       "nameEn": "Sundarbans East Eco-Sanctuary",
       "nameBn": "বাগেরহাট নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/bagerhat/tour-2.webp",
+      "image": null,
       "name": "Chunakhola Mosque",
       "nameEn": "Chunakhola Mosque",
       "nameBn": "বাগেরহাট ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/bagerhat/tour-3.webp",
+      "image": null,
       "name": "Bagerhat Cultural Heritage Museum",
       "nameEn": "Bagerhat Cultural Heritage Museum",
       "nameBn": "বাগেরহাট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/bagerhat/tour-4.webp",
+      "image": null,
       "name": "Bagerhat Scenic Lake & Boating Resort",
       "nameEn": "Bagerhat Scenic Lake & Boating Resort",
       "nameBn": "বাগেরহাট মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const BAGERHAT_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/bagerhat/tour-5.webp",
+      "image": null,
       "name": "Bagerhat Sunset Hilltop Viewpoint",
       "nameEn": "Bagerhat Sunset Hilltop Viewpoint",
       "nameBn": "বাগেরহাট সূর্যাস্ত ভিউপয়েন্ট",

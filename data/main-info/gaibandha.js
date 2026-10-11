@@ -17,7 +17,7 @@ const GAIBANDHA_DATA = {
   "area": "2,179.27 km²",
   "areaBn": "২,১৭৯.২৭ বর্গ কি.মি.",
   "pop": "2.5M",
-  "popBn": "২.৫ মিলিয়ন",
+  "popBn": "০.২৫ কোটি",
   "dist": "280 km",
   "distBn": "২৮০ কি.মি.",
   "route": "Via Jamuna Bridge and Bogura highway or direct intercity trains (approx. 6 hours).",
@@ -26,63 +26,12 @@ const GAIBANDHA_DATA = {
   "tagline": "Gaibandha (গাইবান্ধা) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineEn": "Gaibandha (গাইবান্ধা) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineBn": "গাইবান্ধা (Gaibandha) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/gaibandha/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/gaibandha/carousel-1.webp",
-      "title": "Gaibandha Heritage & Landscapes",
-      "titleEn": "Gaibandha Heritage & Landscapes",
-      "titleBn": "গাইবান্ধা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rangpur Division",
-      "subtitleEn": "Panoramic beauty across Rangpur Division",
-      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/gaibandha/carousel-2.webp",
-      "title": "Historic Monuments of Gaibandha",
-      "titleEn": "Historic Monuments of Gaibandha",
-      "titleBn": "গাইবান্ধা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/gaibandha/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/gaibandha/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/gaibandha/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/gaibandha/hist-1.webp",
+      "image": null,
       "name": "Bardhankuti Ancient Palace",
       "nameEn": "Bardhankuti Ancient Palace",
       "nameBn": "গাইবান্ধা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/gaibandha/hist-2.webp",
+      "image": null,
       "name": "Mirerbagh Shahi Mosque",
       "nameEn": "Mirerbagh Shahi Mosque",
       "nameBn": "গাইবান্ধা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/gaibandha/hist-3.webp",
+      "image": null,
       "name": "Gaibandha Colonial Court & Mint",
       "nameEn": "Gaibandha Colonial Court & Mint",
       "nameBn": "গাইবান্ধা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/gaibandha/hist-4.webp",
+      "image": null,
       "name": "Gaibandha Archeological Mound",
       "nameEn": "Gaibandha Archeological Mound",
       "nameBn": "গাইবান্ধা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/gaibandha/hist-5.webp",
+      "image": null,
       "name": "Gaibandha Liberation War Memorial",
       "nameEn": "Gaibandha Liberation War Memorial",
       "nameBn": "গাইবান্ধা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const GAIBANDHA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/gaibandha/tour-1.webp",
+      "image": null,
       "name": "Balasi Ghat on the Brahmaputra",
       "nameEn": "Balasi Ghat on the Brahmaputra",
       "nameBn": "গাইবান্ধা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/gaibandha/tour-2.webp",
+      "image": null,
       "name": "Gai Bandha Eco Park",
       "nameEn": "Gai Bandha Eco Park",
       "nameBn": "গাইবান্ধা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/gaibandha/tour-3.webp",
+      "image": null,
       "name": "Gaibandha Cultural Heritage Museum",
       "nameEn": "Gaibandha Cultural Heritage Museum",
       "nameBn": "গাইবান্ধা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/gaibandha/tour-4.webp",
+      "image": null,
       "name": "Gaibandha Scenic Lake & Boating Resort",
       "nameEn": "Gaibandha Scenic Lake & Boating Resort",
       "nameBn": "গাইবান্ধা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const GAIBANDHA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/gaibandha/tour-5.webp",
+      "image": null,
       "name": "Gaibandha Sunset Hilltop Viewpoint",
       "nameEn": "Gaibandha Sunset Hilltop Viewpoint",
       "nameBn": "গাইবান্ধা সূর্যাস্ত ভিউপয়েন্ট",

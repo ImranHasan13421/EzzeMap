@@ -20,6 +20,26 @@ function toBnDigits(str) {
   return String(str).replace(/[0-9]/g, ch => map[ch] || ch);
 }
 
+function formatPopToCroreBn(popStr) {
+  if (!popStr) return '০ কোটি';
+  const str = String(popStr).trim();
+  const numMatch = str.match(/([0-9.]+)/);
+  if (!numMatch) return toBnDigits(str);
+  const val = parseFloat(numMatch[1]);
+  if (isNaN(val)) return toBnDigits(str);
+  
+  let crore;
+  if (str.toUpperCase().includes('M')) {
+    crore = val / 10;
+  } else if (val > 100000) {
+    crore = val / 10000000;
+  } else {
+    crore = val / 10;
+  }
+  const formatted = parseFloat(crore.toFixed(2));
+  return `${toBnDigits(formatted)} কোটি`;
+}
+
 // Helper to expand top-5 historical & tourist places if a district has fewer than 5
 function enrichDistrict(d) {
   if (d.slug === 'dhaka') {
@@ -32,59 +52,8 @@ function enrichDistrict(d) {
   const div = d.div;
   const divBn = DIV_MAP_BN[div] || div;
 
-  // Ensure 5 carousel items
-  const carousel = [
-    {
-      id: 1,
-      image: `images/districts/${slug}/carousel-1.webp`,
-      title: `${en} Heritage & Landscapes`,
-      titleEn: `${en} Heritage & Landscapes`,
-      titleBn: `${bn} ঐতিহ্য ও প্রাকৃতিক ভূচিত্র`,
-      subtitle: `Panoramic beauty across ${div} Division`,
-      subtitleEn: `Panoramic beauty across ${div} Division`,
-      subtitleBn: `${divBn} বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য`
-    },
-    {
-      id: 2,
-      image: `images/districts/${slug}/carousel-2.webp`,
-      title: `Historic Monuments of ${en}`,
-      titleEn: `Historic Monuments of ${en}`,
-      titleBn: `${bn} জেলার প্রাচীন ঐতিহাসিক স্থাপত্য`,
-      subtitle: `Ancient landmarks dating back across generations`,
-      subtitleEn: `Ancient landmarks dating back across generations`,
-      subtitleBn: `প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক`
-    },
-    {
-      id: 3,
-      image: `images/districts/${slug}/carousel-3.webp`,
-      title: `Riverine Corridors & Nature`,
-      titleEn: `Riverine Corridors & Nature`,
-      titleBn: `নদীতীরবর্তী প্রান্তর ও নিসর্গ`,
-      subtitle: `Verdant waters and lush environmental biodiversity`,
-      subtitleEn: `Verdant waters and lush environmental biodiversity`,
-      subtitleBn: `সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ`
-    },
-    {
-      id: 4,
-      image: `images/districts/${slug}/carousel-4.webp`,
-      title: `Cultural Life & Traditions`,
-      titleEn: `Cultural Life & Traditions`,
-      titleBn: `লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য`,
-      subtitle: `Vibrant indigenous folklore, artisans, and community markets`,
-      subtitleEn: `Vibrant indigenous folklore, artisans, and community markets`,
-      subtitleBn: `সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার`
-    },
-    {
-      id: 5,
-      image: `images/districts/${slug}/carousel-5.webp`,
-      title: `Scenic Trails & Landmarks`,
-      titleEn: `Scenic Trails & Landmarks`,
-      titleBn: `মনোরম ভ্রমণপথ ও দর্শনীয় স্থান`,
-      subtitle: `Famous travel destinations and peaceful viewpoints`,
-      subtitleEn: `Famous travel destinations and peaceful viewpoints`,
-      subtitleBn: `জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট`
-    }
-  ];
+  // Non-Dhaka districts have no images for now (user requested to add later)
+  const carousel = [];
 
   // Ensure at least 5 historical items
   let hist = Array.isArray(d.hist) ? [...d.hist] : [];
@@ -125,7 +94,7 @@ function enrichDistrict(d) {
 
     return {
       id: i + 1,
-      image: `images/districts/${slug}/hist-${i + 1}.webp`,
+      image: null,
       name: nameEn,
       nameEn: nameEn,
       nameBn: nameBn,
@@ -181,7 +150,7 @@ function enrichDistrict(d) {
 
     return {
       id: i + 1,
-      image: `images/districts/${slug}/tour-${i + 1}.webp`,
+      image: null,
       name: nameEn,
       nameEn: nameEn,
       nameBn: nameBn,
@@ -218,7 +187,7 @@ function enrichDistrict(d) {
     area: areaVal,
     areaBn: toBnDigits(areaVal).replace('km²', 'বর্গ কি.মি.'),
     pop: popVal,
-    popBn: toBnDigits(popVal).replace('M', ' মিলিয়ন'),
+    popBn: formatPopToCroreBn(popVal),
     dist: distVal,
     distBn: toBnDigits(distVal).replace('km', 'কি.মি.'),
     route: d.route || `Direct highway connections and regional transit corridors link ${en} with Dhaka and neighboring districts.`,
@@ -227,7 +196,7 @@ function enrichDistrict(d) {
     tagline: `${en} (${bn}) is a picturesque and historically significant administrative district in ${div} Division, Bangladesh.`,
     taglineEn: `${en} (${bn}) is a picturesque and historically significant administrative district in ${div} Division, Bangladesh.`,
     taglineBn: `${bn} (${en}) ${divBn} বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।`,
-    heroImage: `images/districts/${slug}/hero.webp`,
+    heroImage: null,
     carousel,
     hist,
     tour

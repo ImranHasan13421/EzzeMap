@@ -16,7 +16,7 @@ const DHAKA_DATA = {
   "area": "1,463.60 km²",
   "areaBn": "১,৪৬৩.৬০ বর্গ কি.মি.",
   "pop": "14.7M",
-  "popBn": "১৪.৭ মিলিয়ন",
+  "popBn": "১.৪৭ কোটি",
   "dist": "0 km",
   "distBn": "০ কি.মি.",
   "route": "Central confluence of national transportation. Seamlessly connected to all 8 divisions via prime national expressways (N1, N2, N3, N5), Padma Bridge corridor, high-frequency railway networks from Kamalapur, inland passenger launches at Sadarghat terminal, and direct aviation routes via Hazrat Shahjalal International Airport.",

@@ -17,7 +17,7 @@ const SYLHET_DATA = {
   "area": "3,490.40 km²",
   "areaBn": "৩,৪৯০.৪০ বর্গ কি.মি.",
   "pop": "3.9M",
-  "popBn": "৩.৯ মিলিয়ন",
+  "popBn": "০.৩৯ কোটি",
   "dist": "240 km",
   "distBn": "২৪০ কি.মি.",
   "route": "Via Dhaka-Sylhet Highway N2 (5 hrs), Parabat/Kalni Express train (5 hrs), or 35-min flight.",
@@ -26,63 +26,12 @@ const SYLHET_DATA = {
   "tagline": "Sylhet (সিলেট) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineEn": "Sylhet (সিলেট) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineBn": "সিলেট (Sylhet) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/sylhet/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/sylhet/carousel-1.webp",
-      "title": "Sylhet Heritage & Landscapes",
-      "titleEn": "Sylhet Heritage & Landscapes",
-      "titleBn": "সিলেট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Sylhet Division",
-      "subtitleEn": "Panoramic beauty across Sylhet Division",
-      "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/sylhet/carousel-2.webp",
-      "title": "Historic Monuments of Sylhet",
-      "titleEn": "Historic Monuments of Sylhet",
-      "titleBn": "সিলেট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/sylhet/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/sylhet/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/sylhet/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/sylhet/hist-1.webp",
+      "image": null,
       "name": "Dargah of Hazrat Shah Jalal (R.)",
       "nameEn": "Dargah of Hazrat Shah Jalal (R.)",
       "nameBn": "সিলেট প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/sylhet/hist-2.webp",
+      "image": null,
       "name": "Keane Bridge & Ali Amjad Clock",
       "nameEn": "Keane Bridge & Ali Amjad Clock",
       "nameBn": "সিলেট কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/sylhet/hist-3.webp",
+      "image": null,
       "name": "Sylhet Colonial Court & Mint",
       "nameEn": "Sylhet Colonial Court & Mint",
       "nameBn": "সিলেট ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/sylhet/hist-4.webp",
+      "image": null,
       "name": "Sylhet Archeological Mound",
       "nameEn": "Sylhet Archeological Mound",
       "nameBn": "সিলেট প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/sylhet/hist-5.webp",
+      "image": null,
       "name": "Sylhet Liberation War Memorial",
       "nameEn": "Sylhet Liberation War Memorial",
       "nameBn": "সিলেট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const SYLHET_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/sylhet/tour-1.webp",
+      "image": null,
       "name": "Ratargul Freshwater Swamp Forest",
       "nameEn": "Ratargul Freshwater Swamp Forest",
       "nameBn": "সিলেট নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/sylhet/tour-2.webp",
+      "image": null,
       "name": "Jaflong & Bisnakandi",
       "nameEn": "Jaflong & Bisnakandi",
       "nameBn": "সিলেট ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/sylhet/tour-3.webp",
+      "image": null,
       "name": "Sylhet Cultural Heritage Museum",
       "nameEn": "Sylhet Cultural Heritage Museum",
       "nameBn": "সিলেট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/sylhet/tour-4.webp",
+      "image": null,
       "name": "Sylhet Scenic Lake & Boating Resort",
       "nameEn": "Sylhet Scenic Lake & Boating Resort",
       "nameBn": "সিলেট মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const SYLHET_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/sylhet/tour-5.webp",
+      "image": null,
       "name": "Sylhet Sunset Hilltop Viewpoint",
       "nameEn": "Sylhet Sunset Hilltop Viewpoint",
       "nameBn": "সিলেট সূর্যাস্ত ভিউপয়েন্ট",

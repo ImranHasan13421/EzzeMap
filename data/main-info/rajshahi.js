@@ -17,7 +17,7 @@ const RAJSHAHI_DATA = {
   "area": "2,425.37 km²",
   "areaBn": "২,৪২৫.৩৭ বর্গ কি.মি.",
   "pop": "2.9M",
-  "popBn": "২.৯ মিলিয়ন",
+  "popBn": "০.২৯ কোটি",
   "dist": "250 km",
   "distBn": "২৫০ কি.মি.",
   "route": "Via Jamuna Bridge 4-lane Highway N502 (approx. 5 hrs), Padma Express train (5.5 hrs), or 40-min flight.",
@@ -26,63 +26,12 @@ const RAJSHAHI_DATA = {
   "tagline": "Rajshahi (রাজশাহী) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineEn": "Rajshahi (রাজশাহী) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineBn": "রাজশাহী (Rajshahi) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/rajshahi/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/rajshahi/carousel-1.webp",
-      "title": "Rajshahi Heritage & Landscapes",
-      "titleEn": "Rajshahi Heritage & Landscapes",
-      "titleBn": "রাজশাহী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rajshahi Division",
-      "subtitleEn": "Panoramic beauty across Rajshahi Division",
-      "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/rajshahi/carousel-2.webp",
-      "title": "Historic Monuments of Rajshahi",
-      "titleEn": "Historic Monuments of Rajshahi",
-      "titleBn": "রাজশাহী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/rajshahi/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/rajshahi/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/rajshahi/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/rajshahi/hist-1.webp",
+      "image": null,
       "name": "Bagha Mosque",
       "nameEn": "Bagha Mosque",
       "nameBn": "রাজশাহী প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/rajshahi/hist-2.webp",
+      "image": null,
       "name": "Varendra Research Museum",
       "nameEn": "Varendra Research Museum",
       "nameBn": "রাজশাহী কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/rajshahi/hist-3.webp",
+      "image": null,
       "name": "Rajshahi Colonial Court & Mint",
       "nameEn": "Rajshahi Colonial Court & Mint",
       "nameBn": "রাজশাহী ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/rajshahi/hist-4.webp",
+      "image": null,
       "name": "Rajshahi Archeological Mound",
       "nameEn": "Rajshahi Archeological Mound",
       "nameBn": "রাজশাহী প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/rajshahi/hist-5.webp",
+      "image": null,
       "name": "Rajshahi Liberation War Memorial",
       "nameEn": "Rajshahi Liberation War Memorial",
       "nameBn": "রাজশাহী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const RAJSHAHI_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/rajshahi/tour-1.webp",
+      "image": null,
       "name": "Padma River Embankment (T-Groin)",
       "nameEn": "Padma River Embankment (T-Groin)",
       "nameBn": "রাজশাহী নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/rajshahi/tour-2.webp",
+      "image": null,
       "name": "Silk City Mills & Mango Gardens",
       "nameEn": "Silk City Mills & Mango Gardens",
       "nameBn": "রাজশাহী ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/rajshahi/tour-3.webp",
+      "image": null,
       "name": "Rajshahi Cultural Heritage Museum",
       "nameEn": "Rajshahi Cultural Heritage Museum",
       "nameBn": "রাজশাহী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/rajshahi/tour-4.webp",
+      "image": null,
       "name": "Rajshahi Scenic Lake & Boating Resort",
       "nameEn": "Rajshahi Scenic Lake & Boating Resort",
       "nameBn": "রাজশাহী মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const RAJSHAHI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/rajshahi/tour-5.webp",
+      "image": null,
       "name": "Rajshahi Sunset Hilltop Viewpoint",
       "nameEn": "Rajshahi Sunset Hilltop Viewpoint",
       "nameBn": "রাজশাহী সূর্যাস্ত ভিউপয়েন্ট",

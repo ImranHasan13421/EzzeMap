@@ -17,7 +17,7 @@ const SHERPUR_DATA = {
   "area": "1,359.87 km²",
   "areaBn": "১,৩৫৯.৮৭ বর্গ কি.মি.",
   "pop": "1.5M",
-  "popBn": "১.৫ মিলিয়ন",
+  "popBn": "০.১৫ কোটি",
   "dist": "180 km",
   "distBn": "১৮০ কি.মি.",
   "route": "Via Dhaka-Mymensingh Highway extending north to Sherpur town (approx. 4 hours by highway bus).",
@@ -26,63 +26,12 @@ const SHERPUR_DATA = {
   "tagline": "Sherpur (শেরপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
   "taglineEn": "Sherpur (শেরপুর) is a picturesque and historically significant administrative district in Mymensingh Division, Bangladesh.",
   "taglineBn": "শেরপুর (Sherpur) ময়মনসিংহ বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/sherpur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/sherpur/carousel-1.webp",
-      "title": "Sherpur Heritage & Landscapes",
-      "titleEn": "Sherpur Heritage & Landscapes",
-      "titleBn": "শেরপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Mymensingh Division",
-      "subtitleEn": "Panoramic beauty across Mymensingh Division",
-      "subtitleBn": "ময়মনসিংহ বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/sherpur/carousel-2.webp",
-      "title": "Historic Monuments of Sherpur",
-      "titleEn": "Historic Monuments of Sherpur",
-      "titleBn": "শেরপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/sherpur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/sherpur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/sherpur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/sherpur/hist-1.webp",
+      "image": null,
       "name": "Mysore Rajbari Ruins",
       "nameEn": "Mysore Rajbari Ruins",
       "nameBn": "শেরপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/sherpur/hist-2.webp",
+      "image": null,
       "name": "Nalitabari Ancient Mosque",
       "nameEn": "Nalitabari Ancient Mosque",
       "nameBn": "শেরপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/sherpur/hist-3.webp",
+      "image": null,
       "name": "Sherpur Colonial Court & Mint",
       "nameEn": "Sherpur Colonial Court & Mint",
       "nameBn": "শেরপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/sherpur/hist-4.webp",
+      "image": null,
       "name": "Sherpur Archeological Mound",
       "nameEn": "Sherpur Archeological Mound",
       "nameBn": "শেরপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/sherpur/hist-5.webp",
+      "image": null,
       "name": "Sherpur Liberation War Memorial",
       "nameEn": "Sherpur Liberation War Memorial",
       "nameBn": "শেরপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const SHERPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/sherpur/tour-1.webp",
+      "image": null,
       "name": "Gajni Vacation Center (Garo Hills)",
       "nameEn": "Gajni Vacation Center (Garo Hills)",
       "nameBn": "শেরপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/sherpur/tour-2.webp",
+      "image": null,
       "name": "Madhutila Eco Park",
       "nameEn": "Madhutila Eco Park",
       "nameBn": "শেরপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/sherpur/tour-3.webp",
+      "image": null,
       "name": "Sherpur Cultural Heritage Museum",
       "nameEn": "Sherpur Cultural Heritage Museum",
       "nameBn": "শেরপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/sherpur/tour-4.webp",
+      "image": null,
       "name": "Sherpur Scenic Lake & Boating Resort",
       "nameEn": "Sherpur Scenic Lake & Boating Resort",
       "nameBn": "শেরপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const SHERPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/sherpur/tour-5.webp",
+      "image": null,
       "name": "Sherpur Sunset Hilltop Viewpoint",
       "nameEn": "Sherpur Sunset Hilltop Viewpoint",
       "nameBn": "শেরপুর সূর্যাস্ত ভিউপয়েন্ট",

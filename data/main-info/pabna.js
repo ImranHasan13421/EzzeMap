@@ -17,7 +17,7 @@ const PABNA_DATA = {
   "area": "2,371.50 km²",
   "areaBn": "২,৩৭১.৫০ বর্গ কি.মি.",
   "pop": "2.7M",
-  "popBn": "২.৭ মিলিয়ন",
+  "popBn": "০.২৭ কোটি",
   "dist": "160 km",
   "distBn": "১৬০ কি.মি.",
   "route": "Via Jamuna Bridge or Paturia-Daulatdia ferry highway link (approx. 3.5 - 4 hours).",
@@ -26,63 +26,12 @@ const PABNA_DATA = {
   "tagline": "Pabna (পাবনা) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineEn": "Pabna (পাবনা) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineBn": "পাবনা (Pabna) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/pabna/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/pabna/carousel-1.webp",
-      "title": "Pabna Heritage & Landscapes",
-      "titleEn": "Pabna Heritage & Landscapes",
-      "titleBn": "পাবনা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rajshahi Division",
-      "subtitleEn": "Panoramic beauty across Rajshahi Division",
-      "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/pabna/carousel-2.webp",
-      "title": "Historic Monuments of Pabna",
-      "titleEn": "Historic Monuments of Pabna",
-      "titleBn": "পাবনা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/pabna/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/pabna/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/pabna/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/pabna/hist-1.webp",
+      "image": null,
       "name": "Tarash Rajbari",
       "nameEn": "Tarash Rajbari",
       "nameBn": "পাবনা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const PABNA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/pabna/hist-2.webp",
+      "image": null,
       "name": "Anukulchandra Satsang Ashram (Himaitpur)",
       "nameEn": "Anukulchandra Satsang Ashram (Himaitpur)",
       "nameBn": "পাবনা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const PABNA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/pabna/hist-3.webp",
+      "image": null,
       "name": "Pabna Colonial Court & Mint",
       "nameEn": "Pabna Colonial Court & Mint",
       "nameBn": "পাবনা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const PABNA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/pabna/hist-4.webp",
+      "image": null,
       "name": "Pabna Archeological Mound",
       "nameEn": "Pabna Archeological Mound",
       "nameBn": "পাবনা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const PABNA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/pabna/hist-5.webp",
+      "image": null,
       "name": "Pabna Liberation War Memorial",
       "nameEn": "Pabna Liberation War Memorial",
       "nameBn": "পাবনা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const PABNA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/pabna/tour-1.webp",
+      "image": null,
       "name": "Hardinge Bridge & Paksey Resort",
       "nameEn": "Hardinge Bridge & Paksey Resort",
       "nameBn": "পাবনা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const PABNA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/pabna/tour-2.webp",
+      "image": null,
       "name": "Rupkatha Cinema & Town Heritage",
       "nameEn": "Rupkatha Cinema & Town Heritage",
       "nameBn": "পাবনা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const PABNA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/pabna/tour-3.webp",
+      "image": null,
       "name": "Pabna Cultural Heritage Museum",
       "nameEn": "Pabna Cultural Heritage Museum",
       "nameBn": "পাবনা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const PABNA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/pabna/tour-4.webp",
+      "image": null,
       "name": "Pabna Scenic Lake & Boating Resort",
       "nameEn": "Pabna Scenic Lake & Boating Resort",
       "nameBn": "পাবনা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const PABNA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/pabna/tour-5.webp",
+      "image": null,
       "name": "Pabna Sunset Hilltop Viewpoint",
       "nameEn": "Pabna Sunset Hilltop Viewpoint",
       "nameBn": "পাবনা সূর্যাস্ত ভিউপয়েন্ট",

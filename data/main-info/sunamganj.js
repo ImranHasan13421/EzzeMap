@@ -17,7 +17,7 @@ const SUNAMGANJ_DATA = {
   "area": "3,747.18 km²",
   "areaBn": "৩,৭৪৭.১৮ বর্গ কি.মি.",
   "pop": "2.6M",
-  "popBn": "২.৬ মিলিয়ন",
+  "popBn": "০.২৬ কোটি",
   "dist": "280 km",
   "distBn": "২৮০ কি.মি.",
   "route": "Via Dhaka-Sylhet Highway branching to Sunamganj or direct express buses (5.5 - 6 hours).",
@@ -26,63 +26,12 @@ const SUNAMGANJ_DATA = {
   "tagline": "Sunamganj (সুনামগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineEn": "Sunamganj (সুনামগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineBn": "সুনামগঞ্জ (Sunamganj) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/sunamganj/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/sunamganj/carousel-1.webp",
-      "title": "Sunamganj Heritage & Landscapes",
-      "titleEn": "Sunamganj Heritage & Landscapes",
-      "titleBn": "সুনামগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Sylhet Division",
-      "subtitleEn": "Panoramic beauty across Sylhet Division",
-      "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/sunamganj/carousel-2.webp",
-      "title": "Historic Monuments of Sunamganj",
-      "titleEn": "Historic Monuments of Sunamganj",
-      "titleBn": "সুনামগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/sunamganj/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/sunamganj/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/sunamganj/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/sunamganj/hist-1.webp",
+      "image": null,
       "name": "Hason Raja Museum & Palace",
       "nameEn": "Hason Raja Museum & Palace",
       "nameBn": "সুনামগঞ্জ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/sunamganj/hist-2.webp",
+      "image": null,
       "name": "Pagla Jame Mosque",
       "nameEn": "Pagla Jame Mosque",
       "nameBn": "সুনামগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/sunamganj/hist-3.webp",
+      "image": null,
       "name": "Sunamganj Colonial Court & Mint",
       "nameEn": "Sunamganj Colonial Court & Mint",
       "nameBn": "সুনামগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/sunamganj/hist-4.webp",
+      "image": null,
       "name": "Sunamganj Archeological Mound",
       "nameEn": "Sunamganj Archeological Mound",
       "nameBn": "সুনামগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/sunamganj/hist-5.webp",
+      "image": null,
       "name": "Sunamganj Liberation War Memorial",
       "nameEn": "Sunamganj Liberation War Memorial",
       "nameBn": "সুনামগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const SUNAMGANJ_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/sunamganj/tour-1.webp",
+      "image": null,
       "name": "Tanguar Haor Ramsar Site",
       "nameEn": "Tanguar Haor Ramsar Site",
       "nameBn": "সুনামগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/sunamganj/tour-2.webp",
+      "image": null,
       "name": "Shimul Bagan & Jadukata River",
       "nameEn": "Shimul Bagan & Jadukata River",
       "nameBn": "সুনামগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/sunamganj/tour-3.webp",
+      "image": null,
       "name": "Sunamganj Cultural Heritage Museum",
       "nameEn": "Sunamganj Cultural Heritage Museum",
       "nameBn": "সুনামগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/sunamganj/tour-4.webp",
+      "image": null,
       "name": "Sunamganj Scenic Lake & Boating Resort",
       "nameEn": "Sunamganj Scenic Lake & Boating Resort",
       "nameBn": "সুনামগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const SUNAMGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/sunamganj/tour-5.webp",
+      "image": null,
       "name": "Sunamganj Sunset Hilltop Viewpoint",
       "nameEn": "Sunamganj Sunset Hilltop Viewpoint",
       "nameBn": "সুনামগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",

@@ -17,7 +17,7 @@ const MOULVIBAZAR_DATA = {
   "area": "2,799.38 km²",
   "areaBn": "২,৭৯৯.৩৮ বর্গ কি.মি.",
   "pop": "2.2M",
-  "popBn": "২.২ মিলিয়ন",
+  "popBn": "০.২২ কোটি",
   "dist": "200 km",
   "distBn": "২০০ কি.মি.",
   "route": "Via Dhaka-Sylhet Highway N2 or intercity trains stopping at Sreemangal station (3.5 - 4 hrs).",
@@ -26,63 +26,12 @@ const MOULVIBAZAR_DATA = {
   "tagline": "Moulvibazar (মৌলভীবাজার) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineEn": "Moulvibazar (মৌলভীবাজার) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineBn": "মৌলভীবাজার (Moulvibazar) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/moulvibazar/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/moulvibazar/carousel-1.webp",
-      "title": "Moulvibazar Heritage & Landscapes",
-      "titleEn": "Moulvibazar Heritage & Landscapes",
-      "titleBn": "মৌলভীবাজার ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Sylhet Division",
-      "subtitleEn": "Panoramic beauty across Sylhet Division",
-      "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/moulvibazar/carousel-2.webp",
-      "title": "Historic Monuments of Moulvibazar",
-      "titleEn": "Historic Monuments of Moulvibazar",
-      "titleBn": "মৌলভীবাজার জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/moulvibazar/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/moulvibazar/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/moulvibazar/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/moulvibazar/hist-1.webp",
+      "image": null,
       "name": "Prithimpassa Nawab Estate",
       "nameEn": "Prithimpassa Nawab Estate",
       "nameBn": "মৌলভীবাজার প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/moulvibazar/hist-2.webp",
+      "image": null,
       "name": "Khoja Mosque",
       "nameEn": "Khoja Mosque",
       "nameBn": "মৌলভীবাজার কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/moulvibazar/hist-3.webp",
+      "image": null,
       "name": "Moulvibazar Colonial Court & Mint",
       "nameEn": "Moulvibazar Colonial Court & Mint",
       "nameBn": "মৌলভীবাজার ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/moulvibazar/hist-4.webp",
+      "image": null,
       "name": "Moulvibazar Archeological Mound",
       "nameEn": "Moulvibazar Archeological Mound",
       "nameBn": "মৌলভীবাজার প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/moulvibazar/hist-5.webp",
+      "image": null,
       "name": "Moulvibazar Liberation War Memorial",
       "nameEn": "Moulvibazar Liberation War Memorial",
       "nameBn": "মৌলভীবাজার মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const MOULVIBAZAR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/moulvibazar/tour-1.webp",
+      "image": null,
       "name": "Sreemangal Tea Country",
       "nameEn": "Sreemangal Tea Country",
       "nameBn": "মৌলভীবাজার নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/moulvibazar/tour-2.webp",
+      "image": null,
       "name": "Lawachara Rain Forest & Madhabkunda",
       "nameEn": "Lawachara Rain Forest & Madhabkunda",
       "nameBn": "মৌলভীবাজার ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/moulvibazar/tour-3.webp",
+      "image": null,
       "name": "Moulvibazar Cultural Heritage Museum",
       "nameEn": "Moulvibazar Cultural Heritage Museum",
       "nameBn": "মৌলভীবাজার লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/moulvibazar/tour-4.webp",
+      "image": null,
       "name": "Moulvibazar Scenic Lake & Boating Resort",
       "nameEn": "Moulvibazar Scenic Lake & Boating Resort",
       "nameBn": "মৌলভীবাজার মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const MOULVIBAZAR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/moulvibazar/tour-5.webp",
+      "image": null,
       "name": "Moulvibazar Sunset Hilltop Viewpoint",
       "nameEn": "Moulvibazar Sunset Hilltop Viewpoint",
       "nameBn": "মৌলভীবাজার সূর্যাস্ত ভিউপয়েন্ট",

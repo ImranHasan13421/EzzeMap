@@ -17,7 +17,7 @@ const THAKURGAON_DATA = {
   "area": "1,809.52 km²",
   "areaBn": "১,৮০৯.৫২ বর্গ কি.মি.",
   "pop": "1.5M",
-  "popBn": "১.৫ মিলিয়ন",
+  "popBn": "০.১৫ কোটি",
   "dist": "400 km",
   "distBn": "৪০০ কি.মি.",
   "route": "Via Jamuna Bridge through Dinajpur or direct intercity trains from Kamalapur (approx. 9 hrs).",
@@ -26,63 +26,12 @@ const THAKURGAON_DATA = {
   "tagline": "Thakurgaon (ঠাকুরগাঁও) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineEn": "Thakurgaon (ঠাকুরগাঁও) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineBn": "ঠাকুরগাঁও (Thakurgaon) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/thakurgaon/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/thakurgaon/carousel-1.webp",
-      "title": "Thakurgaon Heritage & Landscapes",
-      "titleEn": "Thakurgaon Heritage & Landscapes",
-      "titleBn": "ঠাকুরগাঁও ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rangpur Division",
-      "subtitleEn": "Panoramic beauty across Rangpur Division",
-      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/thakurgaon/carousel-2.webp",
-      "title": "Historic Monuments of Thakurgaon",
-      "titleEn": "Historic Monuments of Thakurgaon",
-      "titleBn": "ঠাকুরগাঁও জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/thakurgaon/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/thakurgaon/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/thakurgaon/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/thakurgaon/hist-1.webp",
+      "image": null,
       "name": "Jamalpur Shahi Mosque",
       "nameEn": "Jamalpur Shahi Mosque",
       "nameBn": "ঠাকুরগাঁও প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/thakurgaon/hist-2.webp",
+      "image": null,
       "name": "Ranishankail King’s Palace",
       "nameEn": "Ranishankail King’s Palace",
       "nameBn": "ঠাকুরগাঁও কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/thakurgaon/hist-3.webp",
+      "image": null,
       "name": "Thakurgaon Colonial Court & Mint",
       "nameEn": "Thakurgaon Colonial Court & Mint",
       "nameBn": "ঠাকুরগাঁও ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/thakurgaon/hist-4.webp",
+      "image": null,
       "name": "Thakurgaon Archeological Mound",
       "nameEn": "Thakurgaon Archeological Mound",
       "nameBn": "ঠাকুরগাঁও প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/thakurgaon/hist-5.webp",
+      "image": null,
       "name": "Thakurgaon Liberation War Memorial",
       "nameEn": "Thakurgaon Liberation War Memorial",
       "nameBn": "ঠাকুরগাঁও মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const THAKURGAON_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/thakurgaon/tour-1.webp",
+      "image": null,
       "name": "Baliadangi 200-Year Surya Puri Mango Tree",
       "nameEn": "Baliadangi 200-Year Surya Puri Mango Tree",
       "nameBn": "ঠাকুরগাঁও নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/thakurgaon/tour-2.webp",
+      "image": null,
       "name": "Fun City Eco Park",
       "nameEn": "Fun City Eco Park",
       "nameBn": "ঠাকুরগাঁও ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/thakurgaon/tour-3.webp",
+      "image": null,
       "name": "Thakurgaon Cultural Heritage Museum",
       "nameEn": "Thakurgaon Cultural Heritage Museum",
       "nameBn": "ঠাকুরগাঁও লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/thakurgaon/tour-4.webp",
+      "image": null,
       "name": "Thakurgaon Scenic Lake & Boating Resort",
       "nameEn": "Thakurgaon Scenic Lake & Boating Resort",
       "nameBn": "ঠাকুরগাঁও মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const THAKURGAON_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/thakurgaon/tour-5.webp",
+      "image": null,
       "name": "Thakurgaon Sunset Hilltop Viewpoint",
       "nameEn": "Thakurgaon Sunset Hilltop Viewpoint",
       "nameBn": "ঠাকুরগাঁও সূর্যাস্ত ভিউপয়েন্ট",

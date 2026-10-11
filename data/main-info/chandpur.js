@@ -17,7 +17,7 @@ const CHANDPUR_DATA = {
   "area": "1,704.06 km²",
   "areaBn": "১,৭০৪.০৬ বর্গ কি.মি.",
   "pop": "2.5M",
-  "popBn": "২.৫ মিলিয়ন",
+  "popBn": "০.২৫ কোটি",
   "dist": "115 km",
   "distBn": "১১৫ কি.মি.",
   "route": "Scenic luxury river launch from Dhaka Sadarghat (3 hours) or Dhaka-Chittagong Highway N1.",
@@ -26,63 +26,12 @@ const CHANDPUR_DATA = {
   "tagline": "Chandpur (চাঁদপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineEn": "Chandpur (চাঁদপুর) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineBn": "চাঁদপুর (Chandpur) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/chandpur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/chandpur/carousel-1.webp",
-      "title": "Chandpur Heritage & Landscapes",
-      "titleEn": "Chandpur Heritage & Landscapes",
-      "titleBn": "চাঁদপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Chattogram Division",
-      "subtitleEn": "Panoramic beauty across Chattogram Division",
-      "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/chandpur/carousel-2.webp",
-      "title": "Historic Monuments of Chandpur",
-      "titleEn": "Historic Monuments of Chandpur",
-      "titleBn": "চাঁদপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/chandpur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/chandpur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/chandpur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/chandpur/hist-1.webp",
+      "image": null,
       "name": "Rupsha Zamindar Bari",
       "nameEn": "Rupsha Zamindar Bari",
       "nameBn": "চাঁদপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/chandpur/hist-2.webp",
+      "image": null,
       "name": "Haji Begum Mosque",
       "nameEn": "Haji Begum Mosque",
       "nameBn": "চাঁদপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/chandpur/hist-3.webp",
+      "image": null,
       "name": "Chandpur Colonial Court & Mint",
       "nameEn": "Chandpur Colonial Court & Mint",
       "nameBn": "চাঁদপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/chandpur/hist-4.webp",
+      "image": null,
       "name": "Chandpur Archeological Mound",
       "nameEn": "Chandpur Archeological Mound",
       "nameBn": "চাঁদপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/chandpur/hist-5.webp",
+      "image": null,
       "name": "Chandpur Liberation War Memorial",
       "nameEn": "Chandpur Liberation War Memorial",
       "nameBn": "চাঁদপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const CHANDPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/chandpur/tour-1.webp",
+      "image": null,
       "name": "Chandpur Mohona (Triveni Sangam)",
       "nameEn": "Chandpur Mohona (Triveni Sangam)",
       "nameBn": "চাঁদপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/chandpur/tour-2.webp",
+      "image": null,
       "name": "Hilsa Fish Hub",
       "nameEn": "Hilsa Fish Hub",
       "nameBn": "চাঁদপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/chandpur/tour-3.webp",
+      "image": null,
       "name": "Chandpur Cultural Heritage Museum",
       "nameEn": "Chandpur Cultural Heritage Museum",
       "nameBn": "চাঁদপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/chandpur/tour-4.webp",
+      "image": null,
       "name": "Chandpur Scenic Lake & Boating Resort",
       "nameEn": "Chandpur Scenic Lake & Boating Resort",
       "nameBn": "চাঁদপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const CHANDPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/chandpur/tour-5.webp",
+      "image": null,
       "name": "Chandpur Sunset Hilltop Viewpoint",
       "nameEn": "Chandpur Sunset Hilltop Viewpoint",
       "nameBn": "চাঁদপুর সূর্যাস্ত ভিউপয়েন্ট",

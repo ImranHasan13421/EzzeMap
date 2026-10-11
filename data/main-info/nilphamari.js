@@ -17,7 +17,7 @@ const NILPHAMARI_DATA = {
   "area": "1,580.85 km²",
   "areaBn": "১,৫৮০.৮৫ বর্গ কি.মি.",
   "pop": "1.9M",
-  "popBn": "১.৯ মিলিয়ন",
+  "popBn": "০.১৯ কোটি",
   "dist": "370 km",
   "distBn": "৩৭০ কি.মি.",
   "route": "Via Jamuna Bridge through Rangpur, or direct Nilsagar Express train from Dhaka (approx. 8 hrs).",
@@ -26,63 +26,12 @@ const NILPHAMARI_DATA = {
   "tagline": "Nilphamari (নীলফামারী) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineEn": "Nilphamari (নীলফামারী) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineBn": "নীলফামারী (Nilphamari) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/nilphamari/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/nilphamari/carousel-1.webp",
-      "title": "Nilphamari Heritage & Landscapes",
-      "titleEn": "Nilphamari Heritage & Landscapes",
-      "titleBn": "নীলফামারী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rangpur Division",
-      "subtitleEn": "Panoramic beauty across Rangpur Division",
-      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/nilphamari/carousel-2.webp",
-      "title": "Historic Monuments of Nilphamari",
-      "titleEn": "Historic Monuments of Nilphamari",
-      "titleBn": "নীলফামারী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/nilphamari/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/nilphamari/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/nilphamari/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/nilphamari/hist-1.webp",
+      "image": null,
       "name": "Chini Mosque (Saidpur Porcelain Mosque)",
       "nameEn": "Chini Mosque (Saidpur Porcelain Mosque)",
       "nameBn": "নীলফামারী প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/nilphamari/hist-2.webp",
+      "image": null,
       "name": "Dharmapal Garh",
       "nameEn": "Dharmapal Garh",
       "nameBn": "নীলফামারী কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/nilphamari/hist-3.webp",
+      "image": null,
       "name": "Nilphamari Colonial Court & Mint",
       "nameEn": "Nilphamari Colonial Court & Mint",
       "nameBn": "নীলফামারী ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/nilphamari/hist-4.webp",
+      "image": null,
       "name": "Nilphamari Archeological Mound",
       "nameEn": "Nilphamari Archeological Mound",
       "nameBn": "নীলফামারী প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/nilphamari/hist-5.webp",
+      "image": null,
       "name": "Nilphamari Liberation War Memorial",
       "nameEn": "Nilphamari Liberation War Memorial",
       "nameBn": "নীলফামারী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const NILPHAMARI_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/nilphamari/tour-1.webp",
+      "image": null,
       "name": "Teesta Barrage (Dalia)",
       "nameEn": "Teesta Barrage (Dalia)",
       "nameBn": "নীলফামারী নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/nilphamari/tour-2.webp",
+      "image": null,
       "name": "Nilsagar Historic Dighi",
       "nameEn": "Nilsagar Historic Dighi",
       "nameBn": "নীলফামারী ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/nilphamari/tour-3.webp",
+      "image": null,
       "name": "Nilphamari Cultural Heritage Museum",
       "nameEn": "Nilphamari Cultural Heritage Museum",
       "nameBn": "নীলফামারী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/nilphamari/tour-4.webp",
+      "image": null,
       "name": "Nilphamari Scenic Lake & Boating Resort",
       "nameEn": "Nilphamari Scenic Lake & Boating Resort",
       "nameBn": "নীলফামারী মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const NILPHAMARI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/nilphamari/tour-5.webp",
+      "image": null,
       "name": "Nilphamari Sunset Hilltop Viewpoint",
       "nameEn": "Nilphamari Sunset Hilltop Viewpoint",
       "nameBn": "নীলফামারী সূর্যাস্ত ভিউপয়েন্ট",

@@ -17,7 +17,7 @@ const MANIKGANJ_DATA = {
   "area": "1,379.00 km²",
   "areaBn": "১,৩৭৯.০০ বর্গ কি.মি.",
   "pop": "1.4M",
-  "popBn": "১.৪ মিলিয়ন",
+  "popBn": "০.১৪ কোটি",
   "dist": "65 km",
   "distBn": "৬৫ কি.মি.",
   "route": "Via Dhaka-Aricha Highway N5 (approx. 1.5 hours by direct bus or car).",
@@ -26,63 +26,12 @@ const MANIKGANJ_DATA = {
   "tagline": "Manikganj (মানিকগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Manikganj (মানিকগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "মানিকগঞ্জ (Manikganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/manikganj/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/manikganj/carousel-1.webp",
-      "title": "Manikganj Heritage & Landscapes",
-      "titleEn": "Manikganj Heritage & Landscapes",
-      "titleBn": "মানিকগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/manikganj/carousel-2.webp",
-      "title": "Historic Monuments of Manikganj",
-      "titleEn": "Historic Monuments of Manikganj",
-      "titleBn": "মানিকগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/manikganj/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/manikganj/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/manikganj/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/manikganj/hist-1.webp",
+      "image": null,
       "name": "Baliati Palace",
       "nameEn": "Baliati Palace",
       "nameBn": "মানিকগঞ্জ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/manikganj/hist-2.webp",
+      "image": null,
       "name": "Teota Zamindar Palace",
       "nameEn": "Teota Zamindar Palace",
       "nameBn": "মানিকগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/manikganj/hist-3.webp",
+      "image": null,
       "name": "Manikganj Colonial Court & Mint",
       "nameEn": "Manikganj Colonial Court & Mint",
       "nameBn": "মানিকগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/manikganj/hist-4.webp",
+      "image": null,
       "name": "Manikganj Archeological Mound",
       "nameEn": "Manikganj Archeological Mound",
       "nameBn": "মানিকগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/manikganj/hist-5.webp",
+      "image": null,
       "name": "Manikganj Liberation War Memorial",
       "nameEn": "Manikganj Liberation War Memorial",
       "nameBn": "মানিকগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const MANIKGANJ_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/manikganj/tour-1.webp",
+      "image": null,
       "name": "Aricha Ghat",
       "nameEn": "Aricha Ghat",
       "nameBn": "মানিকগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/manikganj/tour-2.webp",
+      "image": null,
       "name": "Dhaleshwari Waterfront",
       "nameEn": "Dhaleshwari Waterfront",
       "nameBn": "মানিকগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/manikganj/tour-3.webp",
+      "image": null,
       "name": "Manikganj Cultural Heritage Museum",
       "nameEn": "Manikganj Cultural Heritage Museum",
       "nameBn": "মানিকগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/manikganj/tour-4.webp",
+      "image": null,
       "name": "Manikganj Scenic Lake & Boating Resort",
       "nameEn": "Manikganj Scenic Lake & Boating Resort",
       "nameBn": "মানিকগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const MANIKGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/manikganj/tour-5.webp",
+      "image": null,
       "name": "Manikganj Sunset Hilltop Viewpoint",
       "nameEn": "Manikganj Sunset Hilltop Viewpoint",
       "nameBn": "মানিকগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",

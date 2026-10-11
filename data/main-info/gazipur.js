@@ -17,7 +17,7 @@ const GAZIPUR_DATA = {
   "area": "1,741.53 km²",
   "areaBn": "১,৭৪১.৫৩ বর্গ কি.মি.",
   "pop": "3.8M",
-  "popBn": "৩.৮ মিলিয়ন",
+  "popBn": "০.৩৮ কোটি",
   "dist": "35 km",
   "distBn": "৩৫ কি.মি.",
   "route": "Via Dhaka-Mymensingh Highway N3 or commuter trains from Kamalapur (approx. 1 hour).",
@@ -26,63 +26,12 @@ const GAZIPUR_DATA = {
   "tagline": "Gazipur (গাজীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Gazipur (গাজীপুর) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "গাজীপুর (Gazipur) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/gazipur/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/gazipur/carousel-1.webp",
-      "title": "Gazipur Heritage & Landscapes",
-      "titleEn": "Gazipur Heritage & Landscapes",
-      "titleBn": "গাজীপুর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/gazipur/carousel-2.webp",
-      "title": "Historic Monuments of Gazipur",
-      "titleEn": "Historic Monuments of Gazipur",
-      "titleBn": "গাজীপুর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/gazipur/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/gazipur/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/gazipur/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/gazipur/hist-1.webp",
+      "image": null,
       "name": "Bhawal Rajbari",
       "nameEn": "Bhawal Rajbari",
       "nameBn": "গাজীপুর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/gazipur/hist-2.webp",
+      "image": null,
       "name": "Tongi Mir Jumla Bridge",
       "nameEn": "Tongi Mir Jumla Bridge",
       "nameBn": "গাজীপুর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/gazipur/hist-3.webp",
+      "image": null,
       "name": "Gazipur Colonial Court & Mint",
       "nameEn": "Gazipur Colonial Court & Mint",
       "nameBn": "গাজীপুর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/gazipur/hist-4.webp",
+      "image": null,
       "name": "Gazipur Archeological Mound",
       "nameEn": "Gazipur Archeological Mound",
       "nameBn": "গাজীপুর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/gazipur/hist-5.webp",
+      "image": null,
       "name": "Gazipur Liberation War Memorial",
       "nameEn": "Gazipur Liberation War Memorial",
       "nameBn": "গাজীপুর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const GAZIPUR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/gazipur/tour-1.webp",
+      "image": null,
       "name": "Bhawal National Park",
       "nameEn": "Bhawal National Park",
       "nameBn": "গাজীপুর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/gazipur/tour-2.webp",
+      "image": null,
       "name": "Bangabandhu Safari Park",
       "nameEn": "Bangabandhu Safari Park",
       "nameBn": "গাজীপুর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/gazipur/tour-3.webp",
+      "image": null,
       "name": "Gazipur Cultural Heritage Museum",
       "nameEn": "Gazipur Cultural Heritage Museum",
       "nameBn": "গাজীপুর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/gazipur/tour-4.webp",
+      "image": null,
       "name": "Gazipur Scenic Lake & Boating Resort",
       "nameEn": "Gazipur Scenic Lake & Boating Resort",
       "nameBn": "গাজীপুর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const GAZIPUR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/gazipur/tour-5.webp",
+      "image": null,
       "name": "Gazipur Sunset Hilltop Viewpoint",
       "nameEn": "Gazipur Sunset Hilltop Viewpoint",
       "nameBn": "গাজীপুর সূর্যাস্ত ভিউপয়েন্ট",

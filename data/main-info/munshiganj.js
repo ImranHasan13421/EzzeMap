@@ -17,7 +17,7 @@ const MUNSHIGANJ_DATA = {
   "area": "954.96 km²",
   "areaBn": "৯৫৪.৯৬ বর্গ কি.মি.",
   "pop": "1.5M",
-  "popBn": "১.৫ মিলিয়ন",
+  "popBn": "০.১৫ কোটি",
   "dist": "30 km",
   "distBn": "৩০ কি.মি.",
   "route": "Via Dhaka-Mawa Expressway N8 or Muktarpur Bridge (approx. 45 - 60 minutes).",
@@ -26,63 +26,12 @@ const MUNSHIGANJ_DATA = {
   "tagline": "Munshiganj (মুন্সীগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Munshiganj (মুন্সীগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "মুন্সীগঞ্জ (Munshiganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/munshiganj/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/munshiganj/carousel-1.webp",
-      "title": "Munshiganj Heritage & Landscapes",
-      "titleEn": "Munshiganj Heritage & Landscapes",
-      "titleBn": "মুন্সীগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/munshiganj/carousel-2.webp",
-      "title": "Historic Monuments of Munshiganj",
-      "titleEn": "Historic Monuments of Munshiganj",
-      "titleBn": "মুন্সীগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/munshiganj/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/munshiganj/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/munshiganj/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/munshiganj/hist-1.webp",
+      "image": null,
       "name": "Idrakpur Fort",
       "nameEn": "Idrakpur Fort",
       "nameBn": "মুন্সীগঞ্জ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/munshiganj/hist-2.webp",
+      "image": null,
       "name": "Baba Adam Mosque",
       "nameEn": "Baba Adam Mosque",
       "nameBn": "মুন্সীগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/munshiganj/hist-3.webp",
+      "image": null,
       "name": "Munshiganj Colonial Court & Mint",
       "nameEn": "Munshiganj Colonial Court & Mint",
       "nameBn": "মুন্সীগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/munshiganj/hist-4.webp",
+      "image": null,
       "name": "Munshiganj Archeological Mound",
       "nameEn": "Munshiganj Archeological Mound",
       "nameBn": "মুন্সীগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/munshiganj/hist-5.webp",
+      "image": null,
       "name": "Munshiganj Liberation War Memorial",
       "nameEn": "Munshiganj Liberation War Memorial",
       "nameBn": "মুন্সীগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const MUNSHIGANJ_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/munshiganj/tour-1.webp",
+      "image": null,
       "name": "Padma Bridge North Bank",
       "nameEn": "Padma Bridge North Bank",
       "nameBn": "মুন্সীগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/munshiganj/tour-2.webp",
+      "image": null,
       "name": "Mawa Ferry Fish Market",
       "nameEn": "Mawa Ferry Fish Market",
       "nameBn": "মুন্সীগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/munshiganj/tour-3.webp",
+      "image": null,
       "name": "Munshiganj Cultural Heritage Museum",
       "nameEn": "Munshiganj Cultural Heritage Museum",
       "nameBn": "মুন্সীগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/munshiganj/tour-4.webp",
+      "image": null,
       "name": "Munshiganj Scenic Lake & Boating Resort",
       "nameEn": "Munshiganj Scenic Lake & Boating Resort",
       "nameBn": "মুন্সীগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const MUNSHIGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/munshiganj/tour-5.webp",
+      "image": null,
       "name": "Munshiganj Sunset Hilltop Viewpoint",
       "nameEn": "Munshiganj Sunset Hilltop Viewpoint",
       "nameBn": "মুন্সীগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",

@@ -17,7 +17,7 @@ const CUMILLA_DATA = {
   "area": "3,087.33 km²",
   "areaBn": "৩,০৮৭.৩৩ বর্গ কি.মি.",
   "pop": "5.9M",
-  "popBn": "৫.৯ মিলিয়ন",
+  "popBn": "০.৫৯ কোটি",
   "dist": "100 km",
   "distBn": "১০০ কি.মি.",
   "route": "Via Dhaka-Chittagong Highway N1 (approx. 2 hours) or Dhaka-Chattogram railway link.",
@@ -26,63 +26,12 @@ const CUMILLA_DATA = {
   "tagline": "Cumilla (কুমিল্লা) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineEn": "Cumilla (কুমিল্লা) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineBn": "কুমিল্লা (Cumilla) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/cumilla/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/cumilla/carousel-1.webp",
-      "title": "Cumilla Heritage & Landscapes",
-      "titleEn": "Cumilla Heritage & Landscapes",
-      "titleBn": "কুমিল্লা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Chattogram Division",
-      "subtitleEn": "Panoramic beauty across Chattogram Division",
-      "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/cumilla/carousel-2.webp",
-      "title": "Historic Monuments of Cumilla",
-      "titleEn": "Historic Monuments of Cumilla",
-      "titleBn": "কুমিল্লা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/cumilla/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/cumilla/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/cumilla/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/cumilla/hist-1.webp",
+      "image": null,
       "name": "Shalban Vihara & Mainamati",
       "nameEn": "Shalban Vihara & Mainamati",
       "nameBn": "কুমিল্লা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/cumilla/hist-2.webp",
+      "image": null,
       "name": "Shah Suja Mosque",
       "nameEn": "Shah Suja Mosque",
       "nameBn": "কুমিল্লা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/cumilla/hist-3.webp",
+      "image": null,
       "name": "Cumilla Colonial Court & Mint",
       "nameEn": "Cumilla Colonial Court & Mint",
       "nameBn": "কুমিল্লা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/cumilla/hist-4.webp",
+      "image": null,
       "name": "Cumilla Archeological Mound",
       "nameEn": "Cumilla Archeological Mound",
       "nameBn": "কুমিল্লা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/cumilla/hist-5.webp",
+      "image": null,
       "name": "Cumilla Liberation War Memorial",
       "nameEn": "Cumilla Liberation War Memorial",
       "nameBn": "কুমিল্লা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const CUMILLA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/cumilla/tour-1.webp",
+      "image": null,
       "name": "Dharmasagar Dighi",
       "nameEn": "Dharmasagar Dighi",
       "nameBn": "কুমিল্লা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/cumilla/tour-2.webp",
+      "image": null,
       "name": "Matri Bhander & Lalmai Hills",
       "nameEn": "Matri Bhander & Lalmai Hills",
       "nameBn": "কুমিল্লা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/cumilla/tour-3.webp",
+      "image": null,
       "name": "Cumilla Cultural Heritage Museum",
       "nameEn": "Cumilla Cultural Heritage Museum",
       "nameBn": "কুমিল্লা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/cumilla/tour-4.webp",
+      "image": null,
       "name": "Cumilla Scenic Lake & Boating Resort",
       "nameEn": "Cumilla Scenic Lake & Boating Resort",
       "nameBn": "কুমিল্লা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const CUMILLA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/cumilla/tour-5.webp",
+      "image": null,
       "name": "Cumilla Sunset Hilltop Viewpoint",
       "nameEn": "Cumilla Sunset Hilltop Viewpoint",
       "nameBn": "কুমিল্লা সূর্যাস্ত ভিউপয়েন্ট",

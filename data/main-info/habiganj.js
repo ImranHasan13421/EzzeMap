@@ -17,7 +17,7 @@ const HABIGANJ_DATA = {
   "area": "2,636.58 km²",
   "areaBn": "২,৬৩৬.৫৮ বর্গ কি.মি.",
   "pop": "2.1M",
-  "popBn": "২.১ মিলিয়ন",
+  "popBn": "০.২১ কোটি",
   "dist": "160 km",
   "distBn": "১৬০ কি.মি.",
   "route": "Via Dhaka-Sylhet Highway N2 or Upaban/Parabat Express intercity trains (approx. 3 hours).",
@@ -26,63 +26,12 @@ const HABIGANJ_DATA = {
   "tagline": "Habiganj (হবিগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineEn": "Habiganj (হবিগঞ্জ) is a picturesque and historically significant administrative district in Sylhet Division, Bangladesh.",
   "taglineBn": "হবিগঞ্জ (Habiganj) সিলেট বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/habiganj/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/habiganj/carousel-1.webp",
-      "title": "Habiganj Heritage & Landscapes",
-      "titleEn": "Habiganj Heritage & Landscapes",
-      "titleBn": "হবিগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Sylhet Division",
-      "subtitleEn": "Panoramic beauty across Sylhet Division",
-      "subtitleBn": "সিলেট বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/habiganj/carousel-2.webp",
-      "title": "Historic Monuments of Habiganj",
-      "titleEn": "Historic Monuments of Habiganj",
-      "titleBn": "হবিগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/habiganj/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/habiganj/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/habiganj/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/habiganj/hist-1.webp",
+      "image": null,
       "name": "Bithangal Akhra",
       "nameEn": "Bithangal Akhra",
       "nameBn": "হবিগঞ্জ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/habiganj/hist-2.webp",
+      "image": null,
       "name": "Uchail Shankerpasha Mosque",
       "nameEn": "Uchail Shankerpasha Mosque",
       "nameBn": "হবিগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/habiganj/hist-3.webp",
+      "image": null,
       "name": "Habiganj Colonial Court & Mint",
       "nameEn": "Habiganj Colonial Court & Mint",
       "nameBn": "হবিগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/habiganj/hist-4.webp",
+      "image": null,
       "name": "Habiganj Archeological Mound",
       "nameEn": "Habiganj Archeological Mound",
       "nameBn": "হবিগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/habiganj/hist-5.webp",
+      "image": null,
       "name": "Habiganj Liberation War Memorial",
       "nameEn": "Habiganj Liberation War Memorial",
       "nameBn": "হবিগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const HABIGANJ_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/habiganj/tour-1.webp",
+      "image": null,
       "name": "Satchari National Park",
       "nameEn": "Satchari National Park",
       "nameBn": "হবিগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/habiganj/tour-2.webp",
+      "image": null,
       "name": "Rolling Tea Gardens of Bahubal",
       "nameEn": "Rolling Tea Gardens of Bahubal",
       "nameBn": "হবিগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/habiganj/tour-3.webp",
+      "image": null,
       "name": "Habiganj Cultural Heritage Museum",
       "nameEn": "Habiganj Cultural Heritage Museum",
       "nameBn": "হবিগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/habiganj/tour-4.webp",
+      "image": null,
       "name": "Habiganj Scenic Lake & Boating Resort",
       "nameEn": "Habiganj Scenic Lake & Boating Resort",
       "nameBn": "হবিগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const HABIGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/habiganj/tour-5.webp",
+      "image": null,
       "name": "Habiganj Sunset Hilltop Viewpoint",
       "nameEn": "Habiganj Sunset Hilltop Viewpoint",
       "nameBn": "হবিগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",

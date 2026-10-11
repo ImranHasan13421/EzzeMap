@@ -17,7 +17,7 @@ const PANCHAGARH_DATA = {
   "area": "1,404.63 km²",
   "areaBn": "১,৪০৪.৬৩ বর্গ কি.মি.",
   "pop": "1.1M",
-  "popBn": "১.১ মিলিয়ন",
+  "popBn": "০.১১ কোটি",
   "dist": "440 km",
   "distBn": "৪৪০ কি.মি.",
   "route": "Via Panchagarh Express direct intercity train (approx. 9.5 hrs) or highway express coaches.",
@@ -26,63 +26,12 @@ const PANCHAGARH_DATA = {
   "tagline": "Panchagarh (পঞ্চগড়) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineEn": "Panchagarh (পঞ্চগড়) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineBn": "পঞ্চগড় (Panchagarh) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/panchagarh/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/panchagarh/carousel-1.webp",
-      "title": "Panchagarh Heritage & Landscapes",
-      "titleEn": "Panchagarh Heritage & Landscapes",
-      "titleBn": "পঞ্চগড় ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rangpur Division",
-      "subtitleEn": "Panoramic beauty across Rangpur Division",
-      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/panchagarh/carousel-2.webp",
-      "title": "Historic Monuments of Panchagarh",
-      "titleEn": "Historic Monuments of Panchagarh",
-      "titleBn": "পঞ্চগড় জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/panchagarh/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/panchagarh/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/panchagarh/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/panchagarh/hist-1.webp",
+      "image": null,
       "name": "Mirzapur Shahi Mosque",
       "nameEn": "Mirzapur Shahi Mosque",
       "nameBn": "পঞ্চগড় প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/panchagarh/hist-2.webp",
+      "image": null,
       "name": "Bhitargarh Ancient Fortified City",
       "nameEn": "Bhitargarh Ancient Fortified City",
       "nameBn": "পঞ্চগড় কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/panchagarh/hist-3.webp",
+      "image": null,
       "name": "Panchagarh Colonial Court & Mint",
       "nameEn": "Panchagarh Colonial Court & Mint",
       "nameBn": "পঞ্চগড় ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/panchagarh/hist-4.webp",
+      "image": null,
       "name": "Panchagarh Archeological Mound",
       "nameEn": "Panchagarh Archeological Mound",
       "nameBn": "পঞ্চগড় প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/panchagarh/hist-5.webp",
+      "image": null,
       "name": "Panchagarh Liberation War Memorial",
       "nameEn": "Panchagarh Liberation War Memorial",
       "nameBn": "পঞ্চগড় মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const PANCHAGARH_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/panchagarh/tour-1.webp",
+      "image": null,
       "name": "Tetulia & Kanchenjunga Peak View",
       "nameEn": "Tetulia & Kanchenjunga Peak View",
       "nameBn": "পঞ্চগড় নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/panchagarh/tour-2.webp",
+      "image": null,
       "name": "Banglabandha Zero Point & Plains Tea",
       "nameEn": "Banglabandha Zero Point & Plains Tea",
       "nameBn": "পঞ্চগড় ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/panchagarh/tour-3.webp",
+      "image": null,
       "name": "Panchagarh Cultural Heritage Museum",
       "nameEn": "Panchagarh Cultural Heritage Museum",
       "nameBn": "পঞ্চগড় লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/panchagarh/tour-4.webp",
+      "image": null,
       "name": "Panchagarh Scenic Lake & Boating Resort",
       "nameEn": "Panchagarh Scenic Lake & Boating Resort",
       "nameBn": "পঞ্চগড় মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const PANCHAGARH_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/panchagarh/tour-5.webp",
+      "image": null,
       "name": "Panchagarh Sunset Hilltop Viewpoint",
       "nameEn": "Panchagarh Sunset Hilltop Viewpoint",
       "nameBn": "পঞ্চগড় সূর্যাস্ত ভিউপয়েন্ট",

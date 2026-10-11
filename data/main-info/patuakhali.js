@@ -17,7 +17,7 @@ const PATUAKHALI_DATA = {
   "area": "3,221.31 km²",
   "areaBn": "৩,২২১.৩১ বর্গ কি.মি.",
   "pop": "1.6M",
-  "popBn": "১.৬ মিলিয়ন",
+  "popBn": "০.১৬ কোটি",
   "dist": "260 km",
   "distBn": "২৬০ কি.মি.",
   "route": "Directly via Padma Bridge and Payra Bridge expressway (approx. 5 hrs) or overnight launch.",
@@ -26,63 +26,12 @@ const PATUAKHALI_DATA = {
   "tagline": "Patuakhali (পটুয়াখালী) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineEn": "Patuakhali (পটুয়াখালী) is a picturesque and historically significant administrative district in Barishal Division, Bangladesh.",
   "taglineBn": "পটুয়াখালী (Patuakhali) বরিশাল বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/patuakhali/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/patuakhali/carousel-1.webp",
-      "title": "Patuakhali Heritage & Landscapes",
-      "titleEn": "Patuakhali Heritage & Landscapes",
-      "titleBn": "পটুয়াখালী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Barishal Division",
-      "subtitleEn": "Panoramic beauty across Barishal Division",
-      "subtitleBn": "বরিশাল বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/patuakhali/carousel-2.webp",
-      "title": "Historic Monuments of Patuakhali",
-      "titleEn": "Historic Monuments of Patuakhali",
-      "titleBn": "পটুয়াখালী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/patuakhali/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/patuakhali/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/patuakhali/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/patuakhali/hist-1.webp",
+      "image": null,
       "name": "Kuakata Ancient Buddhist Wells",
       "nameEn": "Kuakata Ancient Buddhist Wells",
       "nameBn": "পটুয়াখালী প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/patuakhali/hist-2.webp",
+      "image": null,
       "name": "Shreerampur Shahi Mosque",
       "nameEn": "Shreerampur Shahi Mosque",
       "nameBn": "পটুয়াখালী কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/patuakhali/hist-3.webp",
+      "image": null,
       "name": "Patuakhali Colonial Court & Mint",
       "nameEn": "Patuakhali Colonial Court & Mint",
       "nameBn": "পটুয়াখালী ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/patuakhali/hist-4.webp",
+      "image": null,
       "name": "Patuakhali Archeological Mound",
       "nameEn": "Patuakhali Archeological Mound",
       "nameBn": "পটুয়াখালী প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/patuakhali/hist-5.webp",
+      "image": null,
       "name": "Patuakhali Liberation War Memorial",
       "nameEn": "Patuakhali Liberation War Memorial",
       "nameBn": "পটুয়াখালী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const PATUAKHALI_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/patuakhali/tour-1.webp",
+      "image": null,
       "name": "Kuakata \"Daughter of the Sea\" Beach",
       "nameEn": "Kuakata \"Daughter of the Sea\" Beach",
       "nameBn": "পটুয়াখালী নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/patuakhali/tour-2.webp",
+      "image": null,
       "name": "Fatrar Char & Mangrove Forest",
       "nameEn": "Fatrar Char & Mangrove Forest",
       "nameBn": "পটুয়াখালী ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/patuakhali/tour-3.webp",
+      "image": null,
       "name": "Patuakhali Cultural Heritage Museum",
       "nameEn": "Patuakhali Cultural Heritage Museum",
       "nameBn": "পটুয়াখালী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/patuakhali/tour-4.webp",
+      "image": null,
       "name": "Patuakhali Scenic Lake & Boating Resort",
       "nameEn": "Patuakhali Scenic Lake & Boating Resort",
       "nameBn": "পটুয়াখালী মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const PATUAKHALI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/patuakhali/tour-5.webp",
+      "image": null,
       "name": "Patuakhali Sunset Hilltop Viewpoint",
       "nameEn": "Patuakhali Sunset Hilltop Viewpoint",
       "nameBn": "পটুয়াখালী সূর্যাস্ত ভিউপয়েন্ট",

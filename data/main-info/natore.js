@@ -17,7 +17,7 @@ const NATORE_DATA = {
   "area": "1,900.20 km²",
   "areaBn": "১,৯০০.২০ বর্গ কি.মি.",
   "pop": "1.8M",
-  "popBn": "১.৮ মিলিয়ন",
+  "popBn": "০.১৮ কোটি",
   "dist": "200 km",
   "distBn": "২০০ কি.মি.",
   "route": "Via Jamuna Bridge and Sirajganj-Natore highway or direct intercity trains (approx. 4.5 hrs).",
@@ -26,63 +26,12 @@ const NATORE_DATA = {
   "tagline": "Natore (নাটোর) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineEn": "Natore (নাটোর) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineBn": "নাটোর (Natore) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/natore/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/natore/carousel-1.webp",
-      "title": "Natore Heritage & Landscapes",
-      "titleEn": "Natore Heritage & Landscapes",
-      "titleBn": "নাটোর ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rajshahi Division",
-      "subtitleEn": "Panoramic beauty across Rajshahi Division",
-      "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/natore/carousel-2.webp",
-      "title": "Historic Monuments of Natore",
-      "titleEn": "Historic Monuments of Natore",
-      "titleBn": "নাটোর জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/natore/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/natore/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/natore/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/natore/hist-1.webp",
+      "image": null,
       "name": "Uttara Gonobhaban (Dighapatia Palace)",
       "nameEn": "Uttara Gonobhaban (Dighapatia Palace)",
       "nameBn": "নাটোর প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const NATORE_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/natore/hist-2.webp",
+      "image": null,
       "name": "Natore Rajbari (Rani Bhabani Palace)",
       "nameEn": "Natore Rajbari (Rani Bhabani Palace)",
       "nameBn": "নাটোর কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const NATORE_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/natore/hist-3.webp",
+      "image": null,
       "name": "Natore Colonial Court & Mint",
       "nameEn": "Natore Colonial Court & Mint",
       "nameBn": "নাটোর ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const NATORE_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/natore/hist-4.webp",
+      "image": null,
       "name": "Natore Archeological Mound",
       "nameEn": "Natore Archeological Mound",
       "nameBn": "নাটোর প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const NATORE_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/natore/hist-5.webp",
+      "image": null,
       "name": "Natore Liberation War Memorial",
       "nameEn": "Natore Liberation War Memorial",
       "nameBn": "নাটোর মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const NATORE_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/natore/tour-1.webp",
+      "image": null,
       "name": "Chalan Beel Aquatic Expanse",
       "nameEn": "Chalan Beel Aquatic Expanse",
       "nameBn": "নাটোর নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const NATORE_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/natore/tour-2.webp",
+      "image": null,
       "name": "Kachagolla Sweet Heritage",
       "nameEn": "Kachagolla Sweet Heritage",
       "nameBn": "নাটোর ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const NATORE_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/natore/tour-3.webp",
+      "image": null,
       "name": "Natore Cultural Heritage Museum",
       "nameEn": "Natore Cultural Heritage Museum",
       "nameBn": "নাটোর লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const NATORE_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/natore/tour-4.webp",
+      "image": null,
       "name": "Natore Scenic Lake & Boating Resort",
       "nameEn": "Natore Scenic Lake & Boating Resort",
       "nameBn": "নাটোর মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const NATORE_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/natore/tour-5.webp",
+      "image": null,
       "name": "Natore Sunset Hilltop Viewpoint",
       "nameEn": "Natore Sunset Hilltop Viewpoint",
       "nameBn": "নাটোর সূর্যাস্ত ভিউপয়েন্ট",

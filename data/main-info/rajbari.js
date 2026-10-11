@@ -17,7 +17,7 @@ const RAJBARI_DATA = {
   "area": "1,118.80 km²",
   "areaBn": "১,১১৮.৮০ বর্গ কি.মি.",
   "pop": "1.1M",
-  "popBn": "১.১ মিলিয়ন",
+  "popBn": "০.১১ কোটি",
   "dist": "115 km",
   "distBn": "১১৫ কি.মি.",
   "route": "Via Padma Bridge or Paturia-Daulatdia ferry crossing (approx. 2.5 hours).",
@@ -26,63 +26,12 @@ const RAJBARI_DATA = {
   "tagline": "Rajbari (রাজবাড়ী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Rajbari (রাজবাড়ী) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "রাজবাড়ী (Rajbari) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/rajbari/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/rajbari/carousel-1.webp",
-      "title": "Rajbari Heritage & Landscapes",
-      "titleEn": "Rajbari Heritage & Landscapes",
-      "titleBn": "রাজবাড়ী ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/rajbari/carousel-2.webp",
-      "title": "Historic Monuments of Rajbari",
-      "titleEn": "Historic Monuments of Rajbari",
-      "titleBn": "রাজবাড়ী জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/rajbari/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/rajbari/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/rajbari/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/rajbari/hist-1.webp",
+      "image": null,
       "name": "Kalyan Dighi & Temple",
       "nameEn": "Kalyan Dighi & Temple",
       "nameBn": "রাজবাড়ী প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/rajbari/hist-2.webp",
+      "image": null,
       "name": "Nawapara Shahi Mosque",
       "nameEn": "Nawapara Shahi Mosque",
       "nameBn": "রাজবাড়ী কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/rajbari/hist-3.webp",
+      "image": null,
       "name": "Rajbari Colonial Court & Mint",
       "nameEn": "Rajbari Colonial Court & Mint",
       "nameBn": "রাজবাড়ী ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/rajbari/hist-4.webp",
+      "image": null,
       "name": "Rajbari Archeological Mound",
       "nameEn": "Rajbari Archeological Mound",
       "nameBn": "রাজবাড়ী প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/rajbari/hist-5.webp",
+      "image": null,
       "name": "Rajbari Liberation War Memorial",
       "nameEn": "Rajbari Liberation War Memorial",
       "nameBn": "রাজবাড়ী মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const RAJBARI_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/rajbari/tour-1.webp",
+      "image": null,
       "name": "Goalanda River Junction",
       "nameEn": "Goalanda River Junction",
       "nameBn": "রাজবাড়ী নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/rajbari/tour-2.webp",
+      "image": null,
       "name": "Padma Sandbars (Char)",
       "nameEn": "Padma Sandbars (Char)",
       "nameBn": "রাজবাড়ী ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/rajbari/tour-3.webp",
+      "image": null,
       "name": "Rajbari Cultural Heritage Museum",
       "nameEn": "Rajbari Cultural Heritage Museum",
       "nameBn": "রাজবাড়ী লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/rajbari/tour-4.webp",
+      "image": null,
       "name": "Rajbari Scenic Lake & Boating Resort",
       "nameEn": "Rajbari Scenic Lake & Boating Resort",
       "nameBn": "রাজবাড়ী মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const RAJBARI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/rajbari/tour-5.webp",
+      "image": null,
       "name": "Rajbari Sunset Hilltop Viewpoint",
       "nameEn": "Rajbari Sunset Hilltop Viewpoint",
       "nameBn": "রাজবাড়ী সূর্যাস্ত ভিউপয়েন্ট",

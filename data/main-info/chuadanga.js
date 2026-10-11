@@ -17,7 +17,7 @@ const CHUADANGA_DATA = {
   "area": "1,170.87 km²",
   "areaBn": "১,১৭০.৮৭ বর্গ কি.মি.",
   "pop": "1.2M",
-  "popBn": "১.২ মিলিয়ন",
+  "popBn": "০.১২ কোটি",
   "dist": "230 km",
   "distBn": "২৩০ কি.মি.",
   "route": "Via Padma Bridge and Jhenaidah-Chuadanga highway or Chitra Express train (approx. 5 hrs).",
@@ -26,63 +26,12 @@ const CHUADANGA_DATA = {
   "tagline": "Chuadanga (চুয়াডাঙ্গা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineEn": "Chuadanga (চুয়াডাঙ্গা) is a picturesque and historically significant administrative district in Khulna Division, Bangladesh.",
   "taglineBn": "চুয়াডাঙ্গা (Chuadanga) খুলনা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/chuadanga/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/chuadanga/carousel-1.webp",
-      "title": "Chuadanga Heritage & Landscapes",
-      "titleEn": "Chuadanga Heritage & Landscapes",
-      "titleBn": "চুয়াডাঙ্গা ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Khulna Division",
-      "subtitleEn": "Panoramic beauty across Khulna Division",
-      "subtitleBn": "খুলনা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/chuadanga/carousel-2.webp",
-      "title": "Historic Monuments of Chuadanga",
-      "titleEn": "Historic Monuments of Chuadanga",
-      "titleBn": "চুয়াডাঙ্গা জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/chuadanga/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/chuadanga/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/chuadanga/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/chuadanga/hist-1.webp",
+      "image": null,
       "name": "Gholdari Shahi Mosque",
       "nameEn": "Gholdari Shahi Mosque",
       "nameBn": "চুয়াডাঙ্গা প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/chuadanga/hist-2.webp",
+      "image": null,
       "name": "Carew & Co. Historic Distillery",
       "nameEn": "Carew & Co. Historic Distillery",
       "nameBn": "চুয়াডাঙ্গা কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/chuadanga/hist-3.webp",
+      "image": null,
       "name": "Chuadanga Colonial Court & Mint",
       "nameEn": "Chuadanga Colonial Court & Mint",
       "nameBn": "চুয়াডাঙ্গা ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/chuadanga/hist-4.webp",
+      "image": null,
       "name": "Chuadanga Archeological Mound",
       "nameEn": "Chuadanga Archeological Mound",
       "nameBn": "চুয়াডাঙ্গা প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/chuadanga/hist-5.webp",
+      "image": null,
       "name": "Chuadanga Liberation War Memorial",
       "nameEn": "Chuadanga Liberation War Memorial",
       "nameBn": "চুয়াডাঙ্গা মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const CHUADANGA_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/chuadanga/tour-1.webp",
+      "image": null,
       "name": "Karpasdanga Christian Church & Memorial",
       "nameEn": "Karpasdanga Christian Church & Memorial",
       "nameBn": "চুয়াডাঙ্গা নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/chuadanga/tour-2.webp",
+      "image": null,
       "name": "Mathabhanga River Bank",
       "nameEn": "Mathabhanga River Bank",
       "nameBn": "চুয়াডাঙ্গা ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/chuadanga/tour-3.webp",
+      "image": null,
       "name": "Chuadanga Cultural Heritage Museum",
       "nameEn": "Chuadanga Cultural Heritage Museum",
       "nameBn": "চুয়াডাঙ্গা লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/chuadanga/tour-4.webp",
+      "image": null,
       "name": "Chuadanga Scenic Lake & Boating Resort",
       "nameEn": "Chuadanga Scenic Lake & Boating Resort",
       "nameBn": "চুয়াডাঙ্গা মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const CHUADANGA_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/chuadanga/tour-5.webp",
+      "image": null,
       "name": "Chuadanga Sunset Hilltop Viewpoint",
       "nameEn": "Chuadanga Sunset Hilltop Viewpoint",
       "nameBn": "চুয়াডাঙ্গা সূর্যাস্ত ভিউপয়েন্ট",

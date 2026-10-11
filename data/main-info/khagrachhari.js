@@ -17,7 +17,7 @@ const KHAGRACHHARI_DATA = {
   "area": "2,699.55 km²",
   "areaBn": "২,৬৯৯.৫৫ বর্গ কি.মি.",
   "pop": "0.65M",
-  "popBn": "০.৬৫ মিলিয়ন",
+  "popBn": "০.০৭ কোটি",
   "dist": "270 km",
   "distBn": "২৭০ কি.মি.",
   "route": "Direct AC/Non-AC buses from Dhaka via Feni-Mirsharai hill route (approx. 7 hours).",
@@ -26,63 +26,12 @@ const KHAGRACHHARI_DATA = {
   "tagline": "Khagrachhari (খাগড়াছড়ি) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineEn": "Khagrachhari (খাগড়াছড়ি) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineBn": "খাগড়াছড়ি (Khagrachhari) চট্টগ্রাম বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/khagrachhari/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/khagrachhari/carousel-1.webp",
-      "title": "Khagrachhari Heritage & Landscapes",
-      "titleEn": "Khagrachhari Heritage & Landscapes",
-      "titleBn": "খাগড়াছড়ি ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Chattogram Division",
-      "subtitleEn": "Panoramic beauty across Chattogram Division",
-      "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/khagrachhari/carousel-2.webp",
-      "title": "Historic Monuments of Khagrachhari",
-      "titleEn": "Historic Monuments of Khagrachhari",
-      "titleBn": "খাগড়াছড়ি জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/khagrachhari/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/khagrachhari/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/khagrachhari/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/khagrachhari/hist-1.webp",
+      "image": null,
       "name": "Alutila Mysterious Cave",
       "nameEn": "Alutila Mysterious Cave",
       "nameBn": "খাগড়াছড়ি প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/khagrachhari/hist-2.webp",
+      "image": null,
       "name": "Manikchhari Mong Rajbari",
       "nameEn": "Manikchhari Mong Rajbari",
       "nameBn": "খাগড়াছড়ি কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/khagrachhari/hist-3.webp",
+      "image": null,
       "name": "Khagrachhari Colonial Court & Mint",
       "nameEn": "Khagrachhari Colonial Court & Mint",
       "nameBn": "খাগড়াছড়ি ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/khagrachhari/hist-4.webp",
+      "image": null,
       "name": "Khagrachhari Archeological Mound",
       "nameEn": "Khagrachhari Archeological Mound",
       "nameBn": "খাগড়াছড়ি প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/khagrachhari/hist-5.webp",
+      "image": null,
       "name": "Khagrachhari Liberation War Memorial",
       "nameEn": "Khagrachhari Liberation War Memorial",
       "nameBn": "খাগড়াছড়ি মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const KHAGRACHHARI_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/khagrachhari/tour-1.webp",
+      "image": null,
       "name": "Sajek Valley & Ruilui Para",
       "nameEn": "Sajek Valley & Ruilui Para",
       "nameBn": "খাগড়াছড়ি নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/khagrachhari/tour-2.webp",
+      "image": null,
       "name": "Risang Waterfall",
       "nameEn": "Risang Waterfall",
       "nameBn": "খাগড়াছড়ি ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/khagrachhari/tour-3.webp",
+      "image": null,
       "name": "Khagrachhari Cultural Heritage Museum",
       "nameEn": "Khagrachhari Cultural Heritage Museum",
       "nameBn": "খাগড়াছড়ি লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/khagrachhari/tour-4.webp",
+      "image": null,
       "name": "Khagrachhari Scenic Lake & Boating Resort",
       "nameEn": "Khagrachhari Scenic Lake & Boating Resort",
       "nameBn": "খাগড়াছড়ি মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const KHAGRACHHARI_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/khagrachhari/tour-5.webp",
+      "image": null,
       "name": "Khagrachhari Sunset Hilltop Viewpoint",
       "nameEn": "Khagrachhari Sunset Hilltop Viewpoint",
       "nameBn": "খাগড়াছড়ি সূর্যাস্ত ভিউপয়েন্ট",

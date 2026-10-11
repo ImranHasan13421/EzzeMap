@@ -441,7 +441,7 @@
           </div>
 
           <!-- SVG Vector Map Rendering Container -->
-          <div id="empty-state-svg-map-container" class="w-full flex items-center justify-center min-h-[320px] sm:min-h-[420px] lg:min-h-[480px] max-h-[440px] sm:max-h-[560px] lg:max-h-[640px] relative">
+          <div id="empty-state-svg-map-container" class="w-full flex items-center justify-center h-[340px] sm:h-[420px] lg:h-[480px] max-h-[520px] relative overflow-hidden py-1">
             <!-- Inline SVG rendered via JS -->
 
             <!-- Smart Floater Tooltip Strictly Confined to Map Container -->
@@ -537,15 +537,13 @@
       <!-- =============================================================== -->
       <!-- 1. CINEMATIC HERO BANNER (Full-width, high-impact gradient fade) -->
       <!-- =============================================================== -->
-      <div class="relative w-full h-80 sm:h-96 lg:h-[440px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl group border border-slate-200 dark:border-[#173728]">
+      <div id="detail-hero-banner" class="relative w-full h-80 sm:h-96 lg:h-[440px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl group border border-slate-200 dark:border-[#173728] bg-gradient-to-br from-[#061C13] via-[#0D3826] to-[#04140D]">
         
-        <!-- Hero Background Image -->
+        <!-- Hero Background Image (Populated dynamically only for Dhaka) -->
         <img 
           id="detail-hero-image" 
-          src="images/districts/dhaka/hero.webp" 
           alt="District Panoramic Hero" 
-          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
-          onerror="this.onerror=null; this.src='images/default/hero.webp';"
+          class="hidden w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
         />
 
         <!-- Dark Gradient Fade Overlay (from-slate-950 via-slate-950/40 to-transparent) -->
@@ -681,7 +679,7 @@
       <!-- =============================================================== -->
       <!-- 2. SMOOTH SNAP SLIDER CAROUSEL (5-IMAGE PURE CSS SCROLL-SNAP)   -->
       <!-- =============================================================== -->
-      <section class="bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 shadow-sm space-y-3.5 sm:space-y-4">
+      <section id="detail-carousel-section" class="hidden bg-white dark:bg-[#0B1E15] rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-6 shadow-sm space-y-3.5 sm:space-y-4" style="display: none;">
         
         <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-[#173728]">
           <div>
@@ -831,7 +829,6 @@
   <script src="data/map-paths.js"></script>
   <script src="data/main-info/catalog.js"></script>
   <script src="data/main-info/dhaka.js"></script>
-  <script src="data/main-info/cox-s-bazar.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ const KURIGRAM_DATA = {
   "area": "2,245.04 km²",
   "areaBn": "২,২৪৫.০৪ বর্গ কি.মি.",
   "pop": "2.3M",
-  "popBn": "২.৩ মিলিয়ন",
+  "popBn": "০.২৩ কোটি",
   "dist": "350 km",
   "distBn": "৩৫০ কি.মি.",
   "route": "Via Jamuna Bridge and Rangpur highway or Kurigram Express direct intercity train (8-9 hrs).",
@@ -26,63 +26,12 @@ const KURIGRAM_DATA = {
   "tagline": "Kurigram (কুড়িগ্রাম) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineEn": "Kurigram (কুড়িগ্রাম) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineBn": "কুড়িগ্রাম (Kurigram) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/kurigram/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/kurigram/carousel-1.webp",
-      "title": "Kurigram Heritage & Landscapes",
-      "titleEn": "Kurigram Heritage & Landscapes",
-      "titleBn": "কুড়িগ্রাম ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rangpur Division",
-      "subtitleEn": "Panoramic beauty across Rangpur Division",
-      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/kurigram/carousel-2.webp",
-      "title": "Historic Monuments of Kurigram",
-      "titleEn": "Historic Monuments of Kurigram",
-      "titleBn": "কুড়িগ্রাম জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/kurigram/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/kurigram/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/kurigram/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/kurigram/hist-1.webp",
+      "image": null,
       "name": "Shonahat Historic Railway Bridge",
       "nameEn": "Shonahat Historic Railway Bridge",
       "nameBn": "কুড়িগ্রাম প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/kurigram/hist-2.webp",
+      "image": null,
       "name": "Chandamari Mosque",
       "nameEn": "Chandamari Mosque",
       "nameBn": "কুড়িগ্রাম কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/kurigram/hist-3.webp",
+      "image": null,
       "name": "Kurigram Colonial Court & Mint",
       "nameEn": "Kurigram Colonial Court & Mint",
       "nameBn": "কুড়িগ্রাম ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/kurigram/hist-4.webp",
+      "image": null,
       "name": "Kurigram Archeological Mound",
       "nameEn": "Kurigram Archeological Mound",
       "nameBn": "কুড়িগ্রাম প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/kurigram/hist-5.webp",
+      "image": null,
       "name": "Kurigram Liberation War Memorial",
       "nameEn": "Kurigram Liberation War Memorial",
       "nameBn": "কুড়িগ্রাম মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const KURIGRAM_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/kurigram/tour-1.webp",
+      "image": null,
       "name": "Chilmari River Port on Brahmaputra",
       "nameEn": "Chilmari River Port on Brahmaputra",
       "nameBn": "কুড়িগ্রাম নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/kurigram/tour-2.webp",
+      "image": null,
       "name": "Dharla River Promenade",
       "nameEn": "Dharla River Promenade",
       "nameBn": "কুড়িগ্রাম ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/kurigram/tour-3.webp",
+      "image": null,
       "name": "Kurigram Cultural Heritage Museum",
       "nameEn": "Kurigram Cultural Heritage Museum",
       "nameBn": "কুড়িগ্রাম লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/kurigram/tour-4.webp",
+      "image": null,
       "name": "Kurigram Scenic Lake & Boating Resort",
       "nameEn": "Kurigram Scenic Lake & Boating Resort",
       "nameBn": "কুড়িগ্রাম মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const KURIGRAM_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/kurigram/tour-5.webp",
+      "image": null,
       "name": "Kurigram Sunset Hilltop Viewpoint",
       "nameEn": "Kurigram Sunset Hilltop Viewpoint",
       "nameBn": "কুড়িগ্রাম সূর্যাস্ত ভিউপয়েন্ট",

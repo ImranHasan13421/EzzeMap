@@ -17,7 +17,7 @@ const NAOGAON_DATA = {
   "area": "3,435.67 km²",
   "areaBn": "৩,৪৩৫.৬৭ বর্গ কি.মি.",
   "pop": "2.7M",
-  "popBn": "২.৭ মিলিয়ন",
+  "popBn": "০.২৭ কোটি",
   "dist": "260 km",
   "distBn": "২৬০ কি.মি.",
   "route": "Via Jamuna Bridge highway or intercity trains stopping at Santahar junction (5-6 hrs).",
@@ -26,63 +26,12 @@ const NAOGAON_DATA = {
   "tagline": "Naogaon (নওগাঁ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineEn": "Naogaon (নওগাঁ) is a picturesque and historically significant administrative district in Rajshahi Division, Bangladesh.",
   "taglineBn": "নওগাঁ (Naogaon) রাজশাহী বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/naogaon/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/naogaon/carousel-1.webp",
-      "title": "Naogaon Heritage & Landscapes",
-      "titleEn": "Naogaon Heritage & Landscapes",
-      "titleBn": "নওগাঁ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rajshahi Division",
-      "subtitleEn": "Panoramic beauty across Rajshahi Division",
-      "subtitleBn": "রাজশাহী বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/naogaon/carousel-2.webp",
-      "title": "Historic Monuments of Naogaon",
-      "titleEn": "Historic Monuments of Naogaon",
-      "titleBn": "নওগাঁ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/naogaon/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/naogaon/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/naogaon/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/naogaon/hist-1.webp",
+      "image": null,
       "name": "Somapura Mahavihara (Paharpur)",
       "nameEn": "Somapura Mahavihara (Paharpur)",
       "nameBn": "নওগাঁ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/naogaon/hist-2.webp",
+      "image": null,
       "name": "Kusumba Mosque",
       "nameEn": "Kusumba Mosque",
       "nameBn": "নওগাঁ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/naogaon/hist-3.webp",
+      "image": null,
       "name": "Naogaon Colonial Court & Mint",
       "nameEn": "Naogaon Colonial Court & Mint",
       "nameBn": "নওগাঁ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/naogaon/hist-4.webp",
+      "image": null,
       "name": "Naogaon Archeological Mound",
       "nameEn": "Naogaon Archeological Mound",
       "nameBn": "নওগাঁ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/naogaon/hist-5.webp",
+      "image": null,
       "name": "Naogaon Liberation War Memorial",
       "nameEn": "Naogaon Liberation War Memorial",
       "nameBn": "নওগাঁ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const NAOGAON_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/naogaon/tour-1.webp",
+      "image": null,
       "name": "Dubalhati Rajbari",
       "nameEn": "Dubalhati Rajbari",
       "nameBn": "নওগাঁ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/naogaon/tour-2.webp",
+      "image": null,
       "name": "Alta Dighi National Park",
       "nameEn": "Alta Dighi National Park",
       "nameBn": "নওগাঁ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/naogaon/tour-3.webp",
+      "image": null,
       "name": "Naogaon Cultural Heritage Museum",
       "nameEn": "Naogaon Cultural Heritage Museum",
       "nameBn": "নওগাঁ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/naogaon/tour-4.webp",
+      "image": null,
       "name": "Naogaon Scenic Lake & Boating Resort",
       "nameEn": "Naogaon Scenic Lake & Boating Resort",
       "nameBn": "নওগাঁ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const NAOGAON_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/naogaon/tour-5.webp",
+      "image": null,
       "name": "Naogaon Sunset Hilltop Viewpoint",
       "nameEn": "Naogaon Sunset Hilltop Viewpoint",
       "nameBn": "নওগাঁ সূর্যাস্ত ভিউপয়েন্ট",

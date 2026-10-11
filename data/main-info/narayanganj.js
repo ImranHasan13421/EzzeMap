@@ -17,7 +17,7 @@ const NARAYANGANJ_DATA = {
   "area": "759.57 km²",
   "areaBn": "৭৫৯.৫৭ বর্গ কি.মি.",
   "pop": "3.9M",
-  "popBn": "৩.৯ মিলিয়ন",
+  "popBn": "০.৩৯ কোটি",
   "dist": "20 km",
   "distBn": "২০ কি.মি.",
   "route": "Via Dhaka-Chittagong Highway N1 or Dhaka-Narayanganj commuter train (30 minutes).",
@@ -26,63 +26,12 @@ const NARAYANGANJ_DATA = {
   "tagline": "Narayanganj (নারায়ণগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Narayanganj (নারায়ণগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "নারায়ণগঞ্জ (Narayanganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/narayanganj/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/narayanganj/carousel-1.webp",
-      "title": "Narayanganj Heritage & Landscapes",
-      "titleEn": "Narayanganj Heritage & Landscapes",
-      "titleBn": "নারায়ণগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/narayanganj/carousel-2.webp",
-      "title": "Historic Monuments of Narayanganj",
-      "titleEn": "Historic Monuments of Narayanganj",
-      "titleBn": "নারায়ণগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/narayanganj/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/narayanganj/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/narayanganj/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/narayanganj/hist-1.webp",
+      "image": null,
       "name": "Sonargaon Panam City",
       "nameEn": "Sonargaon Panam City",
       "nameBn": "নারায়ণগঞ্জ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/narayanganj/hist-2.webp",
+      "image": null,
       "name": "Hajiganj & Sonakanda Forts",
       "nameEn": "Hajiganj & Sonakanda Forts",
       "nameBn": "নারায়ণগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/narayanganj/hist-3.webp",
+      "image": null,
       "name": "Narayanganj Colonial Court & Mint",
       "nameEn": "Narayanganj Colonial Court & Mint",
       "nameBn": "নারায়ণগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/narayanganj/hist-4.webp",
+      "image": null,
       "name": "Narayanganj Archeological Mound",
       "nameEn": "Narayanganj Archeological Mound",
       "nameBn": "নারায়ণগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/narayanganj/hist-5.webp",
+      "image": null,
       "name": "Narayanganj Liberation War Memorial",
       "nameEn": "Narayanganj Liberation War Memorial",
       "nameBn": "নারায়ণগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const NARAYANGANJ_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/narayanganj/tour-1.webp",
+      "image": null,
       "name": "Folk Art & Craft Museum",
       "nameEn": "Folk Art & Craft Museum",
       "nameBn": "নারায়ণগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/narayanganj/tour-2.webp",
+      "image": null,
       "name": "Murapara Rajbari",
       "nameEn": "Murapara Rajbari",
       "nameBn": "নারায়ণগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/narayanganj/tour-3.webp",
+      "image": null,
       "name": "Narayanganj Cultural Heritage Museum",
       "nameEn": "Narayanganj Cultural Heritage Museum",
       "nameBn": "নারায়ণগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/narayanganj/tour-4.webp",
+      "image": null,
       "name": "Narayanganj Scenic Lake & Boating Resort",
       "nameEn": "Narayanganj Scenic Lake & Boating Resort",
       "nameBn": "নারায়ণগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const NARAYANGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/narayanganj/tour-5.webp",
+      "image": null,
       "name": "Narayanganj Sunset Hilltop Viewpoint",
       "nameEn": "Narayanganj Sunset Hilltop Viewpoint",
       "nameBn": "নারায়ণগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",

@@ -17,7 +17,7 @@ const COXS_BAZAR_DATA = {
   "area": "2,491.86 km²",
   "areaBn": "২,৪৯১.৮৬ বর্গ কি.মি.",
   "pop": "2.8M",
-  "popBn": "২.৮ মিলিয়ন",
+  "popBn": "০.২৮ কোটি",
   "dist": "395 km",
   "distBn": "৩৯৫ কি.মি.",
   "route": "Direct train via Cox's Bazar Express (8 hrs), overnight highway buses, or 50-minute commercial flight.",
@@ -26,63 +26,12 @@ const COXS_BAZAR_DATA = {
   "tagline": "Cox's Bazar (কক্সবাজার) is a picturesque and historically significant administrative district in Chattogram Division, Bangladesh.",
   "taglineEn": "Home to the world's longest unbroken natural sandy sea beach (120 km) and the premier coastal tourism capital of Bangladesh.",
   "taglineBn": "বিশ্বের দীর্ঘতম নিরবচ্ছিন্ন প্রাকৃতিক বালুকাময় সমুদ্র সৈকত (১২০ কিমি) সমৃদ্ধ বাংলাদেশের শীর্ষ পর্যটন রাজধানী।",
-  "heroImage": "images/districts/coxs-bazar/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/coxs-bazar/carousel-1.webp",
-      "title": "Cox's Bazar Heritage & Landscapes",
-      "titleEn": "Cox's Bazar Heritage & Landscapes",
-      "titleBn": "কক্সবাজার ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Chattogram Division",
-      "subtitleEn": "Panoramic beauty across Chattogram Division",
-      "subtitleBn": "চট্টগ্রাম বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/coxs-bazar/carousel-2.webp",
-      "title": "Historic Monuments of Cox's Bazar",
-      "titleEn": "Historic Monuments of Cox's Bazar",
-      "titleBn": "কক্সবাজার জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/coxs-bazar/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/coxs-bazar/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/coxs-bazar/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/coxs-bazar/hist-1.webp",
+      "image": null,
       "name": "Aggamedha Khyang",
       "nameEn": "Aggamedha Khyang",
       "nameBn": "কক্সবাজার প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/coxs-bazar/hist-2.webp",
+      "image": null,
       "name": "Ramu 100-Foot Reclining Buddha",
       "nameEn": "Ramu 100-Foot Reclining Buddha",
       "nameBn": "কক্সবাজার কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/coxs-bazar/hist-3.webp",
+      "image": null,
       "name": "Cox's Bazar Colonial Court & Mint",
       "nameEn": "Cox's Bazar Colonial Court & Mint",
       "nameBn": "কক্সবাজার ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/coxs-bazar/hist-4.webp",
+      "image": null,
       "name": "Cox's Bazar Archeological Mound",
       "nameEn": "Cox's Bazar Archeological Mound",
       "nameBn": "কক্সবাজার প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/coxs-bazar/hist-5.webp",
+      "image": null,
       "name": "Cox's Bazar Liberation War Memorial",
       "nameEn": "Cox's Bazar Liberation War Memorial",
       "nameBn": "কক্সবাজার মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const COXS_BAZAR_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/coxs-bazar/tour-1.webp",
+      "image": null,
       "name": "World's Longest Natural Sea Beach",
       "nameEn": "World's Longest Natural Sea Beach",
       "nameBn": "কক্সবাজার নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/coxs-bazar/tour-2.webp",
+      "image": null,
       "name": "Marine Drive & Himchari",
       "nameEn": "Marine Drive & Himchari",
       "nameBn": "কক্সবাজার ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/coxs-bazar/tour-3.webp",
+      "image": null,
       "name": "Cox's Bazar Cultural Heritage Museum",
       "nameEn": "Cox's Bazar Cultural Heritage Museum",
       "nameBn": "কক্সবাজার লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/coxs-bazar/tour-4.webp",
+      "image": null,
       "name": "Cox's Bazar Scenic Lake & Boating Resort",
       "nameEn": "Cox's Bazar Scenic Lake & Boating Resort",
       "nameBn": "কক্সবাজার মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const COXS_BAZAR_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/coxs-bazar/tour-5.webp",
+      "image": null,
       "name": "Cox's Bazar Sunset Hilltop Viewpoint",
       "nameEn": "Cox's Bazar Sunset Hilltop Viewpoint",
       "nameBn": "কক্সবাজার সূর্যাস্ত ভিউপয়েন্ট",

@@ -17,7 +17,7 @@ const LALMONIRHAT_DATA = {
   "area": "1,241.46 km²",
   "areaBn": "১,২৪১.৪৬ বর্গ কি.মি.",
   "pop": "1.4M",
-  "popBn": "১.৪ মিলিয়ন",
+  "popBn": "০.১৪ কোটি",
   "dist": "360 km",
   "distBn": "৩৬০ কি.মি.",
   "route": "Via Jamuna Bridge through Rangpur or Lalmoni Express direct intercity train (approx. 8 hrs).",
@@ -26,63 +26,12 @@ const LALMONIRHAT_DATA = {
   "tagline": "Lalmonirhat (লালমনিরহাট) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineEn": "Lalmonirhat (লালমনিরহাট) is a picturesque and historically significant administrative district in Rangpur Division, Bangladesh.",
   "taglineBn": "লালমনিরহাট (Lalmonirhat) রংপুর বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/lalmonirhat/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/lalmonirhat/carousel-1.webp",
-      "title": "Lalmonirhat Heritage & Landscapes",
-      "titleEn": "Lalmonirhat Heritage & Landscapes",
-      "titleBn": "লালমনিরহাট ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Rangpur Division",
-      "subtitleEn": "Panoramic beauty across Rangpur Division",
-      "subtitleBn": "রংপুর বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/lalmonirhat/carousel-2.webp",
-      "title": "Historic Monuments of Lalmonirhat",
-      "titleEn": "Historic Monuments of Lalmonirhat",
-      "titleBn": "লালমনিরহাট জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/lalmonirhat/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/lalmonirhat/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/lalmonirhat/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/lalmonirhat/hist-1.webp",
+      "image": null,
       "name": "Harano Masjid (Lost Mosque of 69 AH)",
       "nameEn": "Harano Masjid (Lost Mosque of 69 AH)",
       "nameBn": "লালমনিরহাট প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/lalmonirhat/hist-2.webp",
+      "image": null,
       "name": "Mogholhat Historic Border Railway",
       "nameEn": "Mogholhat Historic Border Railway",
       "nameBn": "লালমনিরহাট কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/lalmonirhat/hist-3.webp",
+      "image": null,
       "name": "Lalmonirhat Colonial Court & Mint",
       "nameEn": "Lalmonirhat Colonial Court & Mint",
       "nameBn": "লালমনিরহাট ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/lalmonirhat/hist-4.webp",
+      "image": null,
       "name": "Lalmonirhat Archeological Mound",
       "nameEn": "Lalmonirhat Archeological Mound",
       "nameBn": "লালমনিরহাট প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/lalmonirhat/hist-5.webp",
+      "image": null,
       "name": "Lalmonirhat Liberation War Memorial",
       "nameEn": "Lalmonirhat Liberation War Memorial",
       "nameBn": "লালমনিরহাট মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const LALMONIRHAT_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/lalmonirhat/tour-1.webp",
+      "image": null,
       "name": "Tin Bigha Corridor & Dahagram",
       "nameEn": "Tin Bigha Corridor & Dahagram",
       "nameBn": "লালমনিরহাট নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/lalmonirhat/tour-2.webp",
+      "image": null,
       "name": "Teesta River Sandbanks",
       "nameEn": "Teesta River Sandbanks",
       "nameBn": "লালমনিরহাট ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/lalmonirhat/tour-3.webp",
+      "image": null,
       "name": "Lalmonirhat Cultural Heritage Museum",
       "nameEn": "Lalmonirhat Cultural Heritage Museum",
       "nameBn": "লালমনিরহাট লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/lalmonirhat/tour-4.webp",
+      "image": null,
       "name": "Lalmonirhat Scenic Lake & Boating Resort",
       "nameEn": "Lalmonirhat Scenic Lake & Boating Resort",
       "nameBn": "লালমনিরহাট মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const LALMONIRHAT_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/lalmonirhat/tour-5.webp",
+      "image": null,
       "name": "Lalmonirhat Sunset Hilltop Viewpoint",
       "nameEn": "Lalmonirhat Sunset Hilltop Viewpoint",
       "nameBn": "লালমনিরহাট সূর্যাস্ত ভিউপয়েন্ট",

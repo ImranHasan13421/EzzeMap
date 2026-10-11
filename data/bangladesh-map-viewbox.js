@@ -3,8 +3,10 @@
  * Absolute boundary definitions for geographic SVG polygon mapping
  */
 const BANGLADESH_MAP_VIEWBOX = {
-  w: 600,
-  h: 848
+  x: -40,
+  y: -35,
+  w: 680,
+  h: 918
 };
 
 // Global memory registry

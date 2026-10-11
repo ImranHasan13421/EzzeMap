@@ -17,7 +17,7 @@ const KISHOREGANJ_DATA = {
   "area": "2,688.86 km²",
   "areaBn": "২,৬৮৮.৮৬ বর্গ কি.মি.",
   "pop": "3.1M",
-  "popBn": "৩.১ মিলিয়ন",
+  "popBn": "০.৩১ কোটি",
   "dist": "135 km",
   "distBn": "১৩৫ কি.মি.",
   "route": "Via Dhaka-Sylhet Highway N2 or Kishoreganj Express train from Kamalapur (3-4 hrs).",
@@ -26,63 +26,12 @@ const KISHOREGANJ_DATA = {
   "tagline": "Kishoreganj (কিশোরগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineEn": "Kishoreganj (কিশোরগঞ্জ) is a picturesque and historically significant administrative district in Dhaka Division, Bangladesh.",
   "taglineBn": "কিশোরগঞ্জ (Kishoreganj) ঢাকা বিভাগের অন্তর্গত একটি মনোরম, সমৃদ্ধ ও ঐতিহ্যবাহী প্রশাসনিক জেলা।",
-  "heroImage": "images/districts/kishoreganj/hero.webp",
-  "carousel": [
-    {
-      "id": 1,
-      "image": "images/districts/kishoreganj/carousel-1.webp",
-      "title": "Kishoreganj Heritage & Landscapes",
-      "titleEn": "Kishoreganj Heritage & Landscapes",
-      "titleBn": "কিশোরগঞ্জ ঐতিহ্য ও প্রাকৃতিক ভূচিত্র",
-      "subtitle": "Panoramic beauty across Dhaka Division",
-      "subtitleEn": "Panoramic beauty across Dhaka Division",
-      "subtitleBn": "ঢাকা বিভাগের মনোরম ও নয়নাভিরাম সৌন্দর্য"
-    },
-    {
-      "id": 2,
-      "image": "images/districts/kishoreganj/carousel-2.webp",
-      "title": "Historic Monuments of Kishoreganj",
-      "titleEn": "Historic Monuments of Kishoreganj",
-      "titleBn": "কিশোরগঞ্জ জেলার প্রাচীন ঐতিহাসিক স্থাপত্য",
-      "subtitle": "Ancient landmarks dating back across generations",
-      "subtitleEn": "Ancient landmarks dating back across generations",
-      "subtitleBn": "প্রাচীন স্থাপত্য ও শতাব্দীর ঐতিহ্যবাহী স্মারক"
-    },
-    {
-      "id": 3,
-      "image": "images/districts/kishoreganj/carousel-3.webp",
-      "title": "Riverine Corridors & Nature",
-      "titleEn": "Riverine Corridors & Nature",
-      "titleBn": "নদীতীরবর্তী প্রান্তর ও নিসর্গ",
-      "subtitle": "Verdant waters and lush environmental biodiversity",
-      "subtitleEn": "Verdant waters and lush environmental biodiversity",
-      "subtitleBn": "সবুজ শ্যামল প্রকৃতি ও শান্ত নদীবিধৌত জনপদ"
-    },
-    {
-      "id": 4,
-      "image": "images/districts/kishoreganj/carousel-4.webp",
-      "title": "Cultural Life & Traditions",
-      "titleEn": "Cultural Life & Traditions",
-      "titleBn": "লোকসংস্কৃতি ও গ্রামীণ ঐতিহ্য",
-      "subtitle": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleEn": "Vibrant indigenous folklore, artisans, and community markets",
-      "subtitleBn": "সমৃদ্ধ লোকশিল্প, কারুশিল্পী ও প্রাচীন হাটবাজার"
-    },
-    {
-      "id": 5,
-      "image": "images/districts/kishoreganj/carousel-5.webp",
-      "title": "Scenic Trails & Landmarks",
-      "titleEn": "Scenic Trails & Landmarks",
-      "titleBn": "মনোরম ভ্রমণপথ ও দর্শনীয় স্থান",
-      "subtitle": "Famous travel destinations and peaceful viewpoints",
-      "subtitleEn": "Famous travel destinations and peaceful viewpoints",
-      "subtitleBn": "জনপ্রিয় ভ্রমণ গন্তব্য ও মনোরম সূর্যাস্ত পয়েন্ট"
-    }
-  ],
+  "heroImage": null,
+  "carousel": [],
   "hist": [
     {
       "id": 1,
-      "image": "images/districts/kishoreganj/hist-1.webp",
+      "image": null,
       "name": "Shah Mahmud Mosque (Egarasindhur)",
       "nameEn": "Shah Mahmud Mosque (Egarasindhur)",
       "nameBn": "কিশোরগঞ্জ প্রাচীন রাজবাড়ি",
@@ -99,7 +48,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/kishoreganj/hist-2.webp",
+      "image": null,
       "name": "Jangalbari Fort",
       "nameEn": "Jangalbari Fort",
       "nameBn": "কিশোরগঞ্জ কেন্দ্রীয় জামে মসজিদ",
@@ -116,7 +65,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/kishoreganj/hist-3.webp",
+      "image": null,
       "name": "Kishoreganj Colonial Court & Mint",
       "nameEn": "Kishoreganj Colonial Court & Mint",
       "nameBn": "কিশোরগঞ্জ ঔপনিবেশিক আদালত ও ভবন",
@@ -133,7 +82,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/kishoreganj/hist-4.webp",
+      "image": null,
       "name": "Kishoreganj Archeological Mound",
       "nameEn": "Kishoreganj Archeological Mound",
       "nameBn": "কিশোরগঞ্জ প্রত্নতাত্ত্বিক ঢিবি",
@@ -150,7 +99,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/kishoreganj/hist-5.webp",
+      "image": null,
       "name": "Kishoreganj Liberation War Memorial",
       "nameEn": "Kishoreganj Liberation War Memorial",
       "nameBn": "কিশোরগঞ্জ মুক্তিযুদ্ধ স্মৃতিসৌধ",
@@ -169,7 +118,7 @@ const KISHOREGANJ_DATA = {
   "tour": [
     {
       "id": 1,
-      "image": "images/districts/kishoreganj/tour-1.webp",
+      "image": null,
       "name": "Nikli & Mithamoin Haor",
       "nameEn": "Nikli & Mithamoin Haor",
       "nameBn": "কিশোরগঞ্জ নদী তীরবর্তী বাঁধ",
@@ -186,7 +135,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 2,
-      "image": "images/districts/kishoreganj/tour-2.webp",
+      "image": null,
       "name": "Chandrabati Shiva Temple",
       "nameEn": "Chandrabati Shiva Temple",
       "nameBn": "কিশোরগঞ্জ ইকোপার্ক ও বনাঞ্চল",
@@ -203,7 +152,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 3,
-      "image": "images/districts/kishoreganj/tour-3.webp",
+      "image": null,
       "name": "Kishoreganj Cultural Heritage Museum",
       "nameEn": "Kishoreganj Cultural Heritage Museum",
       "nameBn": "কিশোরগঞ্জ লোকশিল্প ও ঐতিহ্য জাদুঘর",
@@ -220,7 +169,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 4,
-      "image": "images/districts/kishoreganj/tour-4.webp",
+      "image": null,
       "name": "Kishoreganj Scenic Lake & Boating Resort",
       "nameEn": "Kishoreganj Scenic Lake & Boating Resort",
       "nameBn": "কিশোরগঞ্জ মনোরম হ্রদ ও রিসোর্ট",
@@ -237,7 +186,7 @@ const KISHOREGANJ_DATA = {
     },
     {
       "id": 5,
-      "image": "images/districts/kishoreganj/tour-5.webp",
+      "image": null,
       "name": "Kishoreganj Sunset Hilltop Viewpoint",
       "nameEn": "Kishoreganj Sunset Hilltop Viewpoint",
       "nameBn": "কিশোরগঞ্জ সূর্যাস্ত ভিউপয়েন্ট",
