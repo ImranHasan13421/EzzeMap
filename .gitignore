@@ -22,3 +22,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.temp
+
+# Documents and temporary uploads
+*.pdf
