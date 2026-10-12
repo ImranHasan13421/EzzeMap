@@ -1,0 +1,1333 @@
+[
+  {
+    "district": "Narayanganj",
+    "slug": "narayanganj",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Panam Nagar",
+          "Historic merchant town with rows of old buildings.",
+          "Panam, Sonargaon Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Panam+Nagar+Sonargaon+Narayanganj%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Bangladesh Folk Art and",
+          "Crafts Foundation",
+          "Museum and cultural complex preserving Bengali folk art and crafts.",
+          "Sonargaon, Narayanganj"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bangladesh+Folk+Art+and+Crafts+Foundation+Sonargaon%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Goaldi Mosque",
+          "Historic Sultanate-period mosque dating to the early 16th century.",
+          "Goaldi village, Sonargaon"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Goaldi+Mosque+Sonargaon%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Hajiganj Fort",
+          "Mughal-era river-defence fortification.",
+          "Godenail area, Narayanganj city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Hajiganj+Fort+Narayanganj%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Sonakanda Fort",
+          "Historic fort associated with defence of river routes.",
+          "Bandar, near the Shitalakshya",
+          "River"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Sonakanda+Fort+Bandar+Narayanganj%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Murapara Rajbari",
+          "Former zamindar palace with historic architecture.",
+          "Murapara, Rupganj Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Murapara+Rajbari+Rupganj%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Zinda Park",
+          "Landscaped park with gardens, ponds and walking areas.",
+          "Zinda, Rupganj Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Zinda+Park+Rupganj%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Langalbandh",
+          "Riverside pilgrimage site known for religious bathing.",
+          "Langalbandh, Bandar Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Langalbandh+Narayanganj%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Mary Anderson Floating",
+          "Restaurant",
+          "Riverboat dining attraction; confirm current operation before",
+          "visiting.",
+          "Pagla, Fatullah area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Mary+Anderson+Floating+Restaurant+Narayanganj%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "DC Theme Park",
+          "Family recreation park; confirm opening status and exact entrance.",
+          "Narayanganj district"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=DC+Theme+Park+Narayanganj%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Feni",
+    "slug": "feni",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Bijoy Singh Dighi",
+          "Large historic pond and local heritage landmark.",
+          "Mohipal area, Feni Sadar"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bijoy+Singh+Dighi+Feni%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Rajajhir Dighi",
+          "Prominent historic waterbody and town landmark.",
+          "Feni town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Rajajhir+Dighi+Feni%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Shamsher Gazi's Dighi",
+          "Waterbody associated with regional ruler Shamsher Gazi and local",
+          "history.",
+          "Chhagalnaiya area, Feni"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Shamsher+Gazi+Dighi+Feni%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Feni Government College",
+          "Long-established educational institution and civic landmark.",
+          "College Road, Feni town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Feni+Government+College%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Trunk Road town centre",
+          "Traditional commercial corridor reflecting the town's urban",
+          "development; not a protected monument.",
+          "Trunk Road, Feni town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Trunk+Road+Feni+Bangladesh%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Muhuri Project",
+          "Water-control and irrigation project with open landscapes.",
+          "Fulgazi–Sonagazi region"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Muhuri+Project+Feni%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Feni River",
+          "River corridor with rural and riverside scenery.",
+          "Feni River corridor"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Feni+River+Feni+Bangladesh%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Sonagazi coastal area",
+          "Coastal scenery and waterways; exact access points vary.",
+          "Sonagazi Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Sonagazi+coastal+area+Feni%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Feni Children's Park",
+          "Urban recreation area; confirm current operating status.",
+          "Feni town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Feni+Children%27s+Park%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Chhagalnaiya countryside",
+          "Rural landscapes around the border region; not a single formal",
+          "attraction.",
+          "Chhagalnaiya Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Chhagalnaiya+Feni+Bangladesh%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Cumilla",
+    "slug": "cumilla",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Shalban Vihara",
+          "Major archaeological Buddhist monastery from the early medieval",
+          "period.",
+          "Mainamati, Kotbari"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Shalban+Vihara+Mainamati+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Mainamati Museum",
+          "Museum displaying archaeological finds from the Mainamati–Lalmai",
+          "area.",
+          "Kotbari, Cumilla"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Mainamati+Museum+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Itakhola Mura",
+          "Archaeological mound containing remains of Buddhist structures.",
+          "Mainamati archaeological zone"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Itakhola+Mura+Mainamati%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Rupban Mura",
+          "Archaeological site associated with Buddhist religious architecture.",
+          "Mainamati, Kotbari"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Rupban+Mura+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Ananda Vihara",
+          "Ancient Buddhist monastery and archaeological complex.",
+          "Mainamati archaeological area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ananda+Vihara+Mainamati+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Dharmasagar",
+          "Large historic pond popular for walking and relaxing by the water.",
+          "Cumilla city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dharmasagar+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Lalmai Hills",
+          "Low hill range with greenery and countryside views.",
+          "Lalmai, Cumilla"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Lalmai+Hills+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Magic Paradise Park",
+          "Amusement and recreation park.",
+          "Kotbari, Cumilla"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Magic+Paradise+Park+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Bangladesh Academy for",
+          "Rural Development (BARD)",
+          "Green institutional campus associated with rural-development",
+          "research; visitor access may be restricted.",
+          "Kotbari, Cumilla"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=BARD+Kotbari+Cumilla%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Cumilla City Park",
+          "Urban leisure area; verify exact venue and opening status locally.",
+          "Cumilla city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Cumilla+City+Park%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Bhola",
+    "slug": "bhola",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Char Fasson town centre",
+          "Local administrative and trading centre reflecting southern Bhola's",
+          "settlement history; not a designated monument.",
+          "Char Fasson Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Char+Fasson+Bhola%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Bhola Government High",
+          "School",
+          "Long-established educational institution and civic landmark.",
+          "Bhola town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bhola+Government+High+School%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Bhola Government College",
+          "Educational institution and local civic landmark.",
+          "Bhola town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bhola+Government+College%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Tazumuddin settlement area",
+          "Traditional settlement area reflecting the district's riverine history;",
+          "not a single monument.",
+          "Tazumuddin Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Tazumuddin+Bhola%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Daulatkhan river-port area",
+          "Traditional river-facing trading and settlement area; not a",
+          "designated monument.",
+          "Daulatkhan Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Daulatkhan+Bhola%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Char Kukri Mukri Wildlife",
+          "Sanctuary",
+          "Coastal forest and wildlife habitat with mangrove scenery.",
+          "Char Kukri Mukri, Char Fasson"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Char+Kukri+Mukri+Wildlife+Sanctuary%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Monpura Island",
+          "Remote island known for open horizons, river channels and coastal",
+          "scenery.",
+          "Monpura Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Monpura+Island+Bhola%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Dhal Char",
+          "Island and coastal landscape suited to nature-focused trips.",
+          "Char Fasson area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dhal+Char+Bhola%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Tarua Beach",
+          "Quiet coastal beach with natural scenery.",
+          "Char Fasson, Bhola"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Tarua+Beach+Bhola%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Tulatuli riverbank",
+          "Riverside scenery; check locally for the precise public access point.",
+          "Bhola Sadar area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Tulatuli+River+Bhola%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Barishal",
+    "slug": "barishal",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Oxford Mission Church",
+          "Distinctive red-brick Anglican church known for its architecture.",
+          "Bogura Road area, Barishal city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Oxford+Mission+Church+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Lakutia Zamindar Bari",
+          "Historic estate associated with the region's zamindari heritage.",
+          "Lakutia, Barishal Sadar"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Lakutia+Zamindar+Bari+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Kasba Mosque",
+          "Historic mosque and heritage structure.",
+          "Kasba, Gournadi Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Kasba+Mosque+Gournadi+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Satyendra Smriti Gandhi",
+          "Ashram",
+          "Memorial site associated with Gandhian social work; verify the exact",
+          "local site name before publication.",
+          "Bakerganj area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Satyendra+Smriti+Gandhi+Ashram+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Mukunda Das Kali Temple",
+          "Religious and cultural heritage site associated with poet and",
+          "performer Mukunda Das.",
+          "Kashipur area, Barishal"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Mukunda+Das+Kali+Temple+Kashipur+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Baitul Aman Jame Masjid",
+          "Complex (Guthia Mosque)",
+          "Large mosque complex with landscaped grounds and water features.",
+          "Guthia, Wazirpur Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Baitul+Aman+Jame+Masjid+Guthia+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Durga Sagar Dighi",
+          "Large pond surrounded by greenery and popular for outings.",
+          "Madhabpasha, Babuganj Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Durga+Sagar+Dighi+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Bell's Park",
+          "Central urban park for walking and relaxing.",
+          "Barishal city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bells+Park+Barishal%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Barishal Muktijoddha Park",
+          "Public riverside park and gathering place.",
+          "Band Road, Barishal city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Barishal+Muktijoddha+Park%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Kirtankhola riverfront",
+          "Riverside views and boat activity along a major regional river.",
+          "Band Road and riverfront, Barishal",
+          "city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Kirtankhola+Riverfront+Barishal%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Chattogram",
+    "slug": "chattogram",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Anderkilla Shahi Jame Mosque",
+          "Historic mosque associated with Mughal-era Chattogram.",
+          "Anderkilla, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Anderkilla+Shahi+Jame+Mosque+Chattogram%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Chandanpura Mosque",
+          "Historic mosque noted for colourful domes and architectural details.",
+          "Chandanpura, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Chandanpura+Mosque+Chattogram%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Chattogram War Cemetery",
+          "Commonwealth war cemetery commemorating soldiers who died",
+          "during World War II.",
+          "Dampara, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Chattogram+War+Cemetery%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Chattogram Court Building",
+          "Colonial-era administrative building on Court Hill.",
+          "Court Hill, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Chattogram+Court+Building%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Ethnological Museum",
+          "Museum documenting cultures and ethnic communities of",
+          "Bangladesh.",
+          "Agrabad, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ethnological+Museum+Chattogram%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Patenga Sea Beach",
+          "Popular beach near the mouth of the Karnaphuli River.",
+          "Patenga, southern Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Patenga+Sea+Beach+Chattogram%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Foy's Lake",
+          "Scenic lake and recreation complex surrounded by hills.",
+          "Pahartali, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Foys+Lake+Chattogram%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Batali Hill",
+          "Elevated viewpoint with city views.",
+          "Tigerpass area, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Batali+Hill+Chattogram%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Bhatiari Lake",
+          "Scenic lake and outing spot; some surrounding land may be",
+          "privately controlled.",
+          "Bhatiari, Sitakunda Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bhatiari+Lake+Chattogram%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "CRB (Central Railway",
+          "Building) area",
+          "Green, tree-lined area with colonial railway heritage and walking",
+          "grounds.",
+          "CRB, Chattogram city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=CRB+Chattogram%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Sylhet",
+    "slug": "sylhet",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Hazrat Shah Jalal Mazar Sharif",
+          "Major Sufi shrine central to Sylhet's religious history.",
+          "Dargah Mahalla, Sylhet city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Hazrat+Shah+Jalal+Mazar+Sharif+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Hazrat Shah Paran Mazar",
+          "Sharif",
+          "Shrine associated with Sufi saint Shah Paran.",
+          "Khadimnagar area, Sylhet Sadar"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Hazrat+Shah+Paran+Mazar+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Ali Amjad's Clock",
+          "Historic clock tower and riverfront landmark.",
+          "Surma riverfront, Sylhet city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ali+Amjad+Clock+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Keane Bridge",
+          "Historic steel bridge crossing the Surma River.",
+          "Surma River, Sylhet city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Keane+Bridge+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Shahi Eidgah",
+          "Historic open-air prayer ground dating to the Mughal period.",
+          "Shahi Eidgah area, Sylhet city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Shahi+Eidgah+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Ratargul Swamp Forest",
+          "Freshwater swamp forest with boat trips when water levels permit.",
+          "Fatehpur Union, Gowainghat",
+          "Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ratargul+Swamp+Forest+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Jaflong",
+          "Scenic destination with hills, river views and stone landscapes.",
+          "Gowainghat Upazila, near India",
+          "border"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Jaflong+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Bichanakandi",
+          "River-and-hill landscape with streams and rocks.",
+          "Rustampur Union, Gowainghat",
+          "Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bichanakandi+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Lalakhal",
+          "River destination known for striking water colours and greenery.",
+          "Sarighat, Jaintiapur Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Lalakhal+Sylhet%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Malnicherra Tea Estate",
+          "Historic tea estate with rolling green tea gardens.",
+          "Airport Road area, Sylhet outskirts"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Malnicherra+Tea+Estate+Sylhet%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Noakhali",
+    "slug": "noakhali",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Bajra Shahi Mosque",
+          "Historic Mughal-style mosque known for domes and decorative",
+          "architecture.",
+          "Bajra, Sonaimuri Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bajra+Shahi+Mosque+Noakhali%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Gandhi Ashram Trust",
+          "Memorial and institution preserving the legacy of Mahatma Gandhi's",
+          "work in the region.",
+          "Jayag, Sonaimuri Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Gandhi+Ashram+Trust+Jayag+Noakhali%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Noakhali Zilla School",
+          "Long-established educational institution and civic landmark.",
+          "Maijdee, Noakhali"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Noakhali+Zilla+School%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Noakhali Government College",
+          "Educational institution in the district headquarters.",
+          "Maijdee, Noakhali"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Noakhali+Government+College%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Noakhali District Collectorate",
+          "Administrative landmark associated with the district's civic history.",
+          "Maijdee, Noakhali"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Noakhali+District+Collectorate%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Nijhum Dweep National Park",
+          "Island ecosystem known for mangroves, deer and migratory birds.",
+          "Hatiya Upazila, Noakhali"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Nijhum+Dweep+National+Park+Noakhali%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Musapur Sea Beach",
+          "Coastal destination with open shoreline and estuary scenery.",
+          "Musapur, Companiganj Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Musapur+Sea+Beach+Noakhali%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Chairman Ghat",
+          "Riverside landing and gateway for boat journeys toward nearby",
+          "islands.",
+          "Noakhali coastal route"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Chairman+Ghat+Noakhali%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Noakhali Science and",
+          "Technology University campus",
+          "Modern campus with open grounds; visitor access may be limited.",
+          "Sonapur, Noakhali"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Noakhali+Science+and+Technology+University%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Noakhali Khal (canal) area",
+          "Waterway and landscape reflecting the district's canal network; not",
+          "a formal attraction site.",
+          "Maijdee area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Noakhali+Khal+Maijdee%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Rajshahi",
+    "slug": "rajshahi",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Bagha Mosque",
+          "Historic brick mosque dating to the 16th century, with terracotta",
+          "ornamentation.",
+          "Bagha Upazila, Rajshahi"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Bagha+Mosque+Rajshahi%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Varendra Research Museum",
+          "Museum of archaeology, sculpture, inscriptions and regional history.",
+          "Hetem Khan, Rajshahi city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Varendra+Research+Museum+Rajshahi%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Puthia Rajbari",
+          "Historic palace associated with the Puthia zamindar family.",
+          "Puthia Upazila, Rajshahi"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Puthia+Rajbari+Rajshahi%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Puthia Bara Ahnik Mandir",
+          "Historic Hindu temple noted for its architecture and terracotta",
+          "details.",
+          "Puthia temple complex, Rajshahi"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Puthia+Bara+Ahnik+Mandir%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Puthia Shiva Temple",
+          "Prominent historic Hindu temple near Shiva Sagar pond.",
+          "Puthia, Rajshahi"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Puthia+Shiva+Temple+Rajshahi%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Padma Garden",
+          "Landscaped riverside recreation area.",
+          "Padma riverfront, Rajshahi city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Padma+Garden+Rajshahi%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "T-Badh",
+          "Riverside embankment and walking area with Padma River views.",
+          "Srirampur, Rajshahi city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=T+Badh+Rajshahi%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Shah Makhdum Ruposh Mazar",
+          "Sharif",
+          "Shrine associated with the spread of Islam in the region.",
+          "Dargapara, Rajshahi city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Shah+Makhdum+Mazar+Rajshahi%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Rajshahi Central Park and Zoo",
+          "Public park and zoo for family visits.",
+          "Rajshahi city"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Rajshahi+Central+Park+and+Zoo%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Padma Riverfront",
+          "Scenic riverbank for sunset views and observing river life.",
+          "Rajshahi city riverfront"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Padma+Riverfront+Rajshahi%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Cox's Bazar",
+    "slug": "coxs-bazar",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Aggmeda Khyang",
+          "Important Buddhist monastery and religious heritage complex.",
+          "Cox's Bazar town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Aggmeda+Khyang+Coxs+Bazar%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Ramu Central Seema Bihar",
+          "Buddhist temple complex with religious statues and distinctive",
+          "architecture.",
+          "Ramu Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ramu+Central+Seema+Bihar%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Adinath Temple",
+          "Hindu temple dedicated to Shiva on a hill overlooking the sea.",
+          "Mainak Hill, Maheshkhali Island"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Adinath+Temple+Maheshkhali%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Ramu Buddhist Temple",
+          "Buddhist religious and cultural site representing the area's Buddhist",
+          "heritage.",
+          "Ramu, Cox's Bazar"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ramu+Buddhist+Temple+Coxs+Bazar%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Dulahazara Buddhist temple",
+          "area",
+          "Local Buddhist religious landmark; confirm the precise official site",
+          "name before formal publication.",
+          "Dulahazara, Chakaria Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dulahazara+Buddhist+Temple+Coxs+Bazar%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Laboni Point Sea Beach",
+          "One of the best-known access points to Cox's Bazar's sandy beach.",
+          "Laboni Beach Road, Cox's Bazar",
+          "town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Laboni+Point+Sea+Beach%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Inani Beach",
+          "Rocky shoreline and scenic coastal views.",
+          "Ukhiya Upazila, south of Cox's",
+          "Bazar town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Inani+Beach+Coxs+Bazar%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Himchari National Park",
+          "Coastal hills, forest trails and sea viewpoints.",
+          "Himchari, south of Cox's Bazar",
+          "town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Himchari+National+Park%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Marine Drive Road",
+          "Scenic coastal road linking beach and hill landscapes.",
+          "Cox's Bazar–Teknaf coastal route"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Coxs+Bazar+Marine+Drive%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Sonadia Island",
+          "Island destination with coastal habitats and natural scenery; access",
+          "restrictions can apply.",
+          "Maheshkhali Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Sonadia+Island+Coxs+Bazar%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Kurigram",
+    "slug": "kurigram",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Chilmari River Port",
+          "Long-standing river trading and transport centre on the",
+          "Brahmaputra.",
+          "Chilmari Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Chilmari+River+Port+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Ulipur Munshi Bari",
+          "Traditional heritage house associated with local settlement history;",
+          "verify site name and public access.",
+          "Ulipur Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Munshi+Bari+Ulipur+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Balarhat Mosque",
+          "Local religious heritage site; confirm exact official name and map pin",
+          "locally.",
+          "Balarhat area, Nageshwari Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Balarhat+Mosque+Nageshwari+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Dharla Bridge",
+          "Major bridge and regional transport landmark across the Dharla",
+          "River.",
+          "Kurigram Sadar area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dharla+Bridge+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Sona Hat Bridge",
+          "Regional crossing and infrastructure landmark near the border area.",
+          "Bhurungamari Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Sona+Hat+Bridge+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Dharla Riverbank",
+          "Scenic river landscape, especially during suitable weather and water",
+          "levels.",
+          "Kurigram Sadar"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dharla+Riverbank+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Brahmaputra Riverbank,",
+          "Chilmari",
+          "Riverside views and traditional boat and fishing activity.",
+          "Chilmari Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Brahmaputra+Riverbank+Chilmari%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Dudhkumar River",
+          "Scenic river corridor and rural landscapes.",
+          "Bhurungamari–Nageshwari region"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dudhkumar+River+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Jatrapur Hat",
+          "Traditional rural market with local trading and cultural activity.",
+          "Jatrapur, Kurigram Sadar"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Jatrapur+Hat+Kurigram%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Char Rajibpur riverine area",
+          "River islands and open landscapes reflecting the district's char",
+          "geography.",
+          "Rajibpur Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Char+Rajibpur+Kurigram%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Dinajpur",
+    "slug": "dinajpur",
+    "items": [
+      {
+        "num": 1,
+        "category_type": "historical",
+        "raw_lines": [
+          "Kantajew Temple (Kantaji",
+          "Temple)",
+          "Famous 18th-century terracotta Hindu temple and major",
+          "architectural monument.",
+          "Kantanagar, Kaharole Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Kantajew+Temple+Dinajpur%2C+Bangladesh"
+      },
+      {
+        "num": 2,
+        "category_type": "historical",
+        "raw_lines": [
+          "Dinajpur Rajbari",
+          "Historic royal palace complex associated with the Dinajpur Raj",
+          "family.",
+          "Rajbari area, Dinajpur town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dinajpur+Rajbari%2C+Bangladesh"
+      },
+      {
+        "num": 3,
+        "category_type": "historical",
+        "raw_lines": [
+          "Nayabad Mosque",
+          "Historic mosque known for brick architecture near Kantaji Temple.",
+          "Nayabad, Kaharole Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Nayabad+Mosque+Dinajpur%2C+Bangladesh"
+      },
+      {
+        "num": 4,
+        "category_type": "historical",
+        "raw_lines": [
+          "Sura Mosque",
+          "Historic mosque and archaeological heritage site.",
+          "Ghoraghat Upazila, Dinajpur"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Sura+Mosque+Dinajpur%2C+Bangladesh"
+      },
+      {
+        "num": 5,
+        "category_type": "historical",
+        "raw_lines": [
+          "Chehelgazi Mosque and",
+          "Shrine",
+          "Historic religious site associated with local Islamic heritage.",
+          "Dinajpur Sadar area"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Chehelgazi+Mosque+and+Shrine+Dinajpur%2C+Bangladesh"
+      },
+      {
+        "num": 6,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Ramsagar National Park",
+          "Large historic lake surrounded by greenery and picnic grounds.",
+          "Tejpur, Dinajpur Sadar"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ramsagar+National+Park+Dinajpur%2C+Bangladesh"
+      },
+      {
+        "num": 7,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Swapnapuri Amusement Park",
+          "Recreational complex with gardens, rides and leisure facilities.",
+          "Aftabganj, Nawabganj Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Swapnapuri+Amusement+Park+Dinajpur%2C+Bangladesh"
+      },
+      {
+        "num": 8,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Singra National Park",
+          "Forest destination with greenery and nature trails.",
+          "Singra Forest, Birganj Upazila"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Singra+National+Park+Dinajpur%2C+Bangladesh"
+      },
+      {
+        "num": 9,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Dinajpur Town Park",
+          "Urban leisure and recreation area; verify exact venue name locally.",
+          "Dinajpur town"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Dinajpur+Town+Park%2C+Bangladesh"
+      },
+      {
+        "num": 10,
+        "category_type": "tourist",
+        "raw_lines": [
+          "Ghughu-Danga Zamindar Bari",
+          "Historic estate and architectural landmark; confirm condition and",
+          "access locally.",
+          "Ghughu-Danga area, Dinajpur"
+        ],
+        "link": "https://www.google.com/maps/search/?api=1&query=Ghughu+Danga+Zamindar+Bari+Dinajpur%2C+Bangladesh"
+      }
+    ]
+  }
+]

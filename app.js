@@ -773,7 +773,7 @@ function populateDistrictDetails(district) {
   const tagline = document.getElementById('detail-tagline');
 
   if (heroImg) {
-    if (district.slug === 'dhaka' && district.heroImage) {
+    if (district.heroImage) {
       heroImg.classList.remove('hidden');
       heroImg.style.display = 'block';
       heroImg.src = district.heroImage;
@@ -863,11 +863,11 @@ function populateDistrictDetails(district) {
       : (district.routeEn || district.route);
   }
 
-  // 4. SMOOTH SNAP SLIDER CAROUSEL (Visible only for Dhaka for now)
+  // 4. SMOOTH SNAP SLIDER CAROUSEL (Visible for districts with carousel images)
   const carouselSection = document.getElementById('detail-carousel-section');
   const carouselTrack = document.getElementById('detail-carousel-track');
-  const hasCarousel = district.slug === 'dhaka' && Array.isArray(district.carousel) && district.carousel.length > 0;
-
+  const hasCarousel = Array.isArray(district.carousel) && district.carousel.length > 0;
+ 
   if (carouselSection) {
     if (hasCarousel) {
       carouselSection.classList.remove('hidden');
@@ -877,7 +877,7 @@ function populateDistrictDetails(district) {
       carouselSection.style.display = 'none';
     }
   }
-
+ 
   if (carouselTrack) {
     if (hasCarousel) {
       const slides = district.carousel;
@@ -887,7 +887,7 @@ function populateDistrictDetails(district) {
         const slideNum = isBn ? toBengaliDigits(String(idx + 1).padStart(2, '0')) : String(idx + 1).padStart(2, '0');
         const totalNum = isBn ? toBengaliDigits('05') : '05';
         const slidePrefix = isBn ? 'দৃশ্য' : 'Slide';
-
+ 
         return `
           <div class="snap-center shrink-0 w-[280px] sm:w-[340px] md:w-[380px] aspect-[16/10] relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-[#173728] group">
             <img 
@@ -911,15 +911,14 @@ function populateDistrictDetails(district) {
       carouselTrack.innerHTML = '';
     }
   }
-
+ 
   // 5. EXPANDED TOP-5 HISTORICAL PLACES & HERITAGE (WITH GOOGLE MAPS REDIRECTION)
   const histContainer = document.getElementById('detail-historical-cards-container');
   if (histContainer) {
     const histList = Array.isArray(district.hist) && district.hist.length >= 5
       ? district.hist.slice(0, 5)
       : generateDefaultHistorical(district);
-
-    const isDhaka = district.slug === 'dhaka';
+ 
     histContainer.innerHTML = histList.map((item, idx) => {
       const itemName = isBn ? (item.nameBn || item.name) : (item.nameEn || item.name);
       const itemSecondary = isBn ? (item.nameEn || '') : (item.nameBn || '');
@@ -927,7 +926,7 @@ function populateDistrictDetails(district) {
       const itemDesc = isBn ? (item.descBn || item.desc) : (item.descEn || item.desc);
       const itemLoc = isBn ? (item.locationBn || item.location) : (item.locationEn || item.location);
       const googleMapLink = item.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((item.nameEn || item.name) + ' ' + district.en + ' Bangladesh')}`;
-      const hasImage = isDhaka && Boolean(item.image);
+      const hasImage = Boolean(item.image);
 
       return `
         <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
@@ -1002,7 +1001,6 @@ function populateDistrictDetails(district) {
       ? district.tour.slice(0, 5)
       : generateDefaultTourist(district);
 
-    const isDhaka = district.slug === 'dhaka';
     tourContainer.innerHTML = tourList.map((item, idx) => {
       const itemName = isBn ? (item.nameBn || item.name) : (item.nameEn || item.name);
       const itemSecondary = isBn ? (item.nameEn || '') : (item.nameBn || '');
@@ -1010,7 +1008,7 @@ function populateDistrictDetails(district) {
       const itemDesc = isBn ? (item.descBn || item.desc) : (item.descEn || item.desc);
       const itemLoc = isBn ? (item.locationBn || item.location) : (item.locationEn || item.location);
       const googleMapLink = item.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((item.nameEn || item.name) + ' ' + district.en + ' Bangladesh')}`;
-      const hasImage = isDhaka && Boolean(item.image);
+      const hasImage = Boolean(item.image);
 
       return `
         <div class="rounded-2xl bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden flex flex-col group">
