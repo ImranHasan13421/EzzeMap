@@ -1,0 +1,1442 @@
+[
+  {
+    "district": "Munshiganj",
+    "slug": "munshiganj",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Idrakpur Fort",
+        "query_full": "Idrakpur Fort, Courtgaon area, Munshiganj Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "description": "A Mughal-era river-fortification associated with the defence of the Dhaka region. It is traditionally linked with Mir Jumla’s seventeenth-century military works. Its compact brick structure and bastion-like form make it a notable example of military architecture. The fort stands within the urban area and is one of the district’s best-known heritage sites. Check local opening arrangements before visiting.",
+        "location": "Courtgaon area, Munshiganj, Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Idrakpur+Fort%2C+Courtgaon+area%2C+Munshiganj+Sadar%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Baba Adam Mosque",
+        "query_full": "Baba Adam Mosque, Kazi Kasba, Rampal Union, Munshiganj Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "description": "This historic mosque is associated with the memory of Baba Adam, a Muslim preacher linked to the region’s medieval history. The building is noted for its traditional brick construction and domed form. It is an important example of the Islamic architectural heritage of Bikrampur. The surrounding settlement gives visitors a sense of the area’s long religious history. Please be respectful of worshippers and local customs.",
+        "location": "Kazi Kasba, Rampal Union, Munshiganj Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Baba+Adam+Mosque%2C+Kazi+Kasba%2C+Rampal+Union%2C+Munshiganj+Sadar%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Sonarang Twin Temples",
+        "query_full": "Sonarang Twin Temples, Sonarang village, Tongibari Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "description": "The twin temples are among the best-known Hindu heritage structures in Munshiganj. Their tall forms and terracotta-era brickwork make them distinctive in the surrounding rural landscape. They are generally associated with the region’s historic Hindu patronage and temple-building traditions. The site is especially interesting to visitors who enjoy architecture and local history. The temples are in a village setting, so access may involve narrow local roads.",
+        "location": "Sonarang village, Tongibari, Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Sonarang+Twin+Temples%2C+Sonarang+village%2C+Tongibari+Upazila%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Bikrampur Buddhist Bihar and Museum of Antiquities",
+        "query_full": "Bikrampur Buddhist Bihar and Museum of Antiquities, Raghurampur, Rampal Union, Munshiganj Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "description": "Archaeological excavations at Raghurampur revealed remains associated with an early Buddhist settlement in historic Bikrampur. The nearby museum interprets finds and the area’s archaeological significance. It offers a useful introduction to the region’s role in the Buddhist and early medieval past of Bengal. The site is best visited as a combined archaeology-and-history stop. Confirm museum opening times before travelling.",
+        "location": "Raghurampur, Rampal Union, Munshiganj Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bikrampur+Buddhist+Bihar+and+Museum+of+Antiquities%2C+Raghurampur%2C+Rampal+Union%2C+Munshiganj+Sadar%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Shyamsiddhi Math",
+        "query_full": "Shyamsiddhi Math, Shyamsiddhi village, Sreenagar Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "description": "Shyamsiddhi Math is a prominent historic religious tower in the district. Its tall, tapering profile is a landmark within the village landscape. The structure reflects the region’s older Hindu religious and architectural traditions. It is a worthwhile stop for visitors exploring Munshiganj’s temples and zamindari-era heritage. As with many village monuments, facilities and interpretation on site may be limited.",
+        "location": "Shyamsiddhi village, Sreenagar, Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shyamsiddhi+Math%2C+Shyamsiddhi+village%2C+Sreenagar+Upazila%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Mawa Ferry Ghat and Padma Riverfront",
+        "query_full": "Mawa Ferry Ghat and Padma Riverfront, Mawa, Louhajang Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "description": "Mawa is a well-known riverfront destination on the Padma, popular for wide river views and the lively ferry-terminal atmosphere. Visitors come to watch boats, enjoy the breeze and sample local fish dishes. The river landscape changes with season, current and shifting sandbanks. It is a public transport and working river area, not a managed beach. Keep away from unsafe edges and follow ferry-terminal rules.",
+        "location": "Mawa, Louhajang Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mawa+Ferry+Ghat+and+Padma+Riverfront%2C+Mawa%2C+Louhajang+Upazila%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Padma Bridge Viewpoint, Mawa side",
+        "query_full": "Padma Bridge Viewpoint, Mawa side, Mawa approach area, Louhajang Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "description": "The Mawa side offers views of the Padma Bridge corridor and the broad river landscape. It is a convenient stop for photography and observing one of Bangladesh’s major infrastructure projects. The best viewpoints depend on access restrictions and current traffic arrangements. Do not stop on the bridge carriageway or restricted road shoulders. Use designated public areas and follow signs.",
+        "location": "Mawa approach area, Louhajang, Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Padma+Bridge+Viewpoint%2C+Mawa+side%2C+Mawa+approach+area%2C+Louhajang+Upazila%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Meghna Riverbank, Gazaria",
+        "query_full": "Meghna Riverbank, Gazaria, Gazaria riverfront, Gazaria Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "description": "The Meghna riverbank in Gazaria provides expansive views of a major river and its changing channels. The area is valued for boat traffic, river scenery and a glimpse of river-based livelihoods. Visitors may find local food stalls and informal stopping points near landing areas. Facilities vary by location and season. Ask locally about safe access because currents and banks can be hazardous.",
+        "location": "Gazaria riverfront, Gazaria, Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Meghna+Riverbank%2C+Gazaria%2C+Gazaria+riverfront%2C+Gazaria+Upazila%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Rampal Dighi",
+        "query_full": "Rampal Dighi, Rampal, Munshiganj Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "description": "Rampal Dighi is a large historic pond associated with the old Bikrampur landscape. The waterbody and its banks offer a quiet break from the busy town area. It also reflects the traditional importance of large ponds for settlement, water and community life. The surrounding area can be explored alongside nearby heritage sites. It is a local public-space visit rather than a developed resort.",
+        "location": "Rampal, Munshiganj Sadar, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Rampal+Dighi%2C+Rampal%2C+Munshiganj+Sadar%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Bhagyakul Zamindar Bari area",
+        "query_full": "Bhagyakul Zamindar Bari area, Bhagyakul, Sreenagar Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "description": "Bhagyakul is known for old zamindari residences and the cultural history of prosperous riverine families. Remaining buildings and local landmarks provide glimpses of the area’s past commercial importance. The settlement is also a way to experience rural Munshiganj beyond the main town. Some structures may be privately occupied or altered, so access is not guaranteed. Ask permission before entering any residential compound.",
+        "location": "Bhagyakul, Sreenagar Upazila, Munshiganj, Munshiganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bhagyakul+Zamindar+Bari+area%2C+Bhagyakul%2C+Sreenagar+Upazila%2C+Munshiganj%2C+Munshiganj%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Gazipur",
+    "slug": "gazipur",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Bhawal Rajbari",
+        "query_full": "Bhawal Rajbari, Joydebpur, Gazipur Sadar, Gazipur, Gazipur, Bangladesh",
+        "description": "Bhawal Rajbari is associated with the historic Bhawal Estate and its influential zamindar family. The palace complex reflects the region’s colonial-period administrative and landed heritage. Its location in Joydebpur makes it one of Gazipur’s most recognisable historical landmarks. The surviving buildings and grounds have changed over time, so not every area may be accessible. Treat occupied or official areas respectfully.",
+        "location": "Joydebpur, Gazipur Sadar, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bhawal+Rajbari%2C+Joydebpur%2C+Gazipur+Sadar%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Baliadi Zamindar Bari",
+        "query_full": "Baliadi Zamindar Bari, Baliadi, Kaliakair Upazila, Gazipur, Gazipur, Bangladesh",
+        "description": "Baliadi Zamindar Bari is a historic landed-estate residence associated with the zamindari period. Its architecture and remaining compound features recall the social and economic influence of local landlords. The site is of interest to visitors tracing rural Bengal’s estate history. Conditions and access can vary because parts may be privately used. Confirm local access before making a special trip.",
+        "location": "Baliadi, Kaliakair Upazila, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Baliadi+Zamindar+Bari%2C+Baliadi%2C+Kaliakair+Upazila%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "St. Nicholas Church",
+        "query_full": "St. Nicholas Church, Nagari, Kaliganj Upazila, Gazipur, Gazipur, Bangladesh",
+        "description": "St. Nicholas Church is a historic Christian place of worship in Nagari, a settlement with a long Catholic community history. The church and surrounding village offer insight into the region’s religious and cultural diversity. Its significance is as much communal as architectural. Visitors should dress modestly and avoid disrupting services. Check with local caretakers before photography inside.",
+        "location": "Nagari, Kaliganj Upazila, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=St.+Nicholas+Church%2C+Nagari%2C+Kaliganj+Upazila%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Bhawal Estate heritage sites",
+        "query_full": "Bhawal Estate heritage sites, Joydebpur and surrounding Bhawal estate area, Gazipur, Gazipur, Bangladesh",
+        "description": "The historic Bhawal estate shaped much of the social history of the area around Joydebpur. Surviving estate-era buildings and associated landmarks provide context for the famous Bhawal family and its legacy. This is best understood as a dispersed heritage area rather than one single monument. Some locations are now in active institutional or private use. Use local guidance to identify accessible structures.",
+        "location": "Joydebpur and surrounding, Bhawal estate area, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bhawal+Estate+heritage+sites%2C+Joydebpur+and+surrounding+Bhawal+estate+area%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Nagari historic Catholic settlement",
+        "query_full": "Nagari historic Catholic settlement, Nagari, Kaliganj Upazila, Gazipur, Gazipur, Bangladesh",
+        "description": "Nagari is one of the older Christian settlements in the Dhaka region. Its churches, community institutions and long-standing local traditions form a distinctive cultural landscape. The settlement helps tell a broader story of religious communities in Bengal. Visitors can combine a respectful walk with nearby rural scenery. Access to schools, church interiors and community property requires permission.",
+        "location": "Nagari, Kaliganj Upazila, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Nagari+historic+Catholic+settlement%2C+Nagari%2C+Kaliganj+Upazila%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Bangabandhu Sheikh Mujib Safari Park",
+        "query_full": "Bangabandhu Sheikh Mujib Safari Park, Mauna, Sreepur Upazila, Gazipur, Gazipur, Bangladesh",
+        "description": "This large safari park is a major family attraction with animal exhibits and landscaped visitor areas. It was designed to offer wildlife viewing in a managed setting rather than a traditional zoo-only experience. Visitors should follow park rules, stay within designated areas and never feed animals. Opening arrangements and ticketing can change, so check before travel. Allow several hours for a visit.",
+        "location": "Mauna, Sreepur Upazila, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bangabandhu+Sheikh+Mujib+Safari+Park%2C+Mauna%2C+Sreepur+Upazila%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Bhawal National Park",
+        "query_full": "Bhawal National Park, Near Rajendrapur, Gazipur Sadar and Sreepur area, Gazipur, Gazipur, Bangladesh",
+        "description": "Bhawal National Park protects a large tract of sal forest north of Dhaka. It is popular for day trips, nature walks, picnics and observing the forest landscape. The park is especially attractive during cooler months, although weekends can be crowded. Keep the forest clean and avoid loud activity or damaging plants. Check current entry rules and facilities with the forest authority.",
+        "location": "Near Rajendrapur, Gazipur Sadar, and Sreepur area, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bhawal+National+Park%2C+Near+Rajendrapur%2C+Gazipur+Sadar+and+Sreepur+area%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Nuhash Polli",
+        "query_full": "Nuhash Polli, Pirojoli, near Hotapara, Gazipur Sadar, Gazipur, Gazipur, Bangladesh",
+        "description": "Nuhash Polli is a retreat created by celebrated Bangladeshi writer and filmmaker Humayun Ahmed. Its gardens, ponds, sculptures and wooded setting give it a distinctive artistic atmosphere. Fans visit to remember the writer and enjoy the landscaped grounds. Public access may be limited or subject to specific opening arrangements. Verify visiting permission before travelling.",
+        "location": "Pirojoli, near Hotapara, Gazipur, Sadar, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Nuhash+Polli%2C+Pirojoli%2C+near+Hotapara%2C+Gazipur+Sadar%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Bangladesh Agricultural Research Institute gardens and",
+        "query_full": "Bangladesh Agricultural Research Institute gardens and grounds, Joydebpur, Gazipur Sadar, Gazipur, Gazipur, Bangladesh",
+        "description": "grounds The agricultural research campus is associated with Gazipur’s green institutional landscape and agricultural research heritage. Visitors should not assume the working campus is freely open as a tourist site. With permission, the area may be of interest to those curious about crop research and local horticulture. Access restrictions apply because it is an operational institution. Contact the institution in advance if planning an educational visit.",
+        "location": "Joydebpur, Gazipur Sadar, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bangladesh+Agricultural+Research+Institute+gardens+and+grounds%2C+Joydebpur%2C+Gazipur+Sadar%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Rajendrapur forest picnic area",
+        "query_full": "Rajendrapur forest picnic area, Rajendrapur, Gazipur, Gazipur, Bangladesh",
+        "description": "The Rajendrapur area is known for forest scenery and day-trip picnic destinations near the Dhaka–Mymensingh corridor. Sal trees and green spaces provide a break from the city. Some picnic facilities are privately operated and may require booking. Visitor experience depends on season, crowds and site management. Confirm the exact venue and current entry arrangements before setting out.",
+        "location": "Rajendrapur, Gazipur, Gazipur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Rajendrapur+forest+picnic+area%2C+Rajendrapur%2C+Gazipur%2C+Gazipur%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Narsingdi",
+    "slug": "narsingdi",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Wari-Bateshwar Archaeological Site",
+        "query_full": "Wari-Bateshwar Archaeological Site, Wari and Bateshwar villages, Belabo Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "description": "Wari-Bateshwar is one of Bangladesh’s most important early archaeological landscapes. Excavations have uncovered ancient settlement remains and artefacts suggesting long-distance trade connections. The site is central to discussions of early urbanisation in Bengal. Visitors should distinguish excavated areas from ordinary village land and follow local guidance. Interpretation facilities may be modest, so a guide can improve the visit.",
+        "location": "Wari and Bateshwar villages, Belabo Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Wari-Bateshwar+Archaeological+Site%2C+Wari+and+Bateshwar+villages%2C+Belabo+Upazila%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Parulia Mosque",
+        "query_full": "Parulia Mosque, Parulia, Shibpur Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "description": "Parulia Mosque is a historic religious structure recognised among the district’s heritage places. Its traditional masonry and mosque form reflect older local building practices. The mosque remains connected to the surrounding community, so it should be treated first as a place of worship. Architectural details are best appreciated with respectful, unobtrusive observation. Ask before taking photographs inside.",
+        "location": "Parulia, Shibpur Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Parulia+Mosque%2C+Parulia%2C+Shibpur+Upazila%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Lakshman Saha Zamindar Bari",
+        "query_full": "Lakshman Saha Zamindar Bari, Narsingdi town area, Narsingdi Sadar, Narsingdi, Narsingdi, Bangladesh",
+        "description": "This historic zamindari residence is associated with the district’s landed and merchant history. Surviving buildings and local accounts provide a glimpse into the social life of the town in an earlier period. The property may have been altered or repurposed over time. Access can depend on current ownership and use. Confirm the precise entrance locally before visiting.",
+        "location": "Narsingdi town area, Narsingdi, Sadar, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Lakshman+Saha+Zamindar+Bari%2C+Narsingdi+town+area%2C+Narsingdi+Sadar%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Baliakandi / historic zamindari residences of Shibpur",
+        "query_full": "Baliakandi / historic zamindari residences of Shibpur, Shibpur Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "description": "Shibpur and nearby villages contain historic residences associated with local landholding families. These are generally dispersed buildings rather than one formal heritage complex. Their value lies in documenting local architecture and the rural social order of the past. Some structures are privately occupied or in poor condition. Seek local directions and permission before entering compounds.",
+        "location": "Shibpur Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Baliakandi+%2F+historic+zamindari+residences+of+Shibpur%2C+Shibpur+Upazila%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Historic settlements of Egarasindhur trade corridor",
+        "query_full": "Historic settlements of Egarasindhur trade corridor, Belabo–Wari-Bateshwar area, Narsingdi, Narsingdi, Bangladesh",
+        "description": "The wider archaeological landscape around Wari-Bateshwar includes settlement areas that help explain historic trade and habitation. The district’s position near waterways supported movement of goods and people. This entry refers to the broader heritage landscape, not a single ticketed monument. Archaeological remains may be fragile or not visibly marked. Visit with a knowledgeable local guide where possible.",
+        "location": "Belabo–Wari-Bateshwar area, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Historic+settlements+of+Egarasindhur+trade+corridor%2C+Belabo%E2%80%93Wari-Bateshwar+area%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Dream Holiday Park",
+        "query_full": "Dream Holiday Park, Chaitaba, Madhabdi area, Narsingdi, Narsingdi, Bangladesh",
+        "description": "Dream Holiday Park is a commercial amusement and family recreation destination. It offers rides and leisure facilities suited to a day trip. The experience is recreational rather than historical, making it a clear contrast with the district’s archaeological sites. Rides and amenities may vary by operating schedule. Check ticket prices, opening days and ride availability before travelling.",
+        "location": "Chaitaba, Madhabdi area, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Dream+Holiday+Park%2C+Chaitaba%2C+Madhabdi+area%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Meghna Riverfront, Raipura",
+        "query_full": "Meghna Riverfront, Raipura, Raipura riverbank area, Narsingdi, Narsingdi, Bangladesh",
+        "description": "The Meghna riverfront offers views of boats, river traffic and broad stretches of water. The landscape is closely tied to fishing, transport and riverside settlements. It can be a scenic stop for photography and observing everyday river life. There may be no formal visitor facilities at smaller landing points. Check local advice on safe banks and boat access.",
+        "location": "Raipura riverbank area, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Meghna+Riverfront%2C+Raipura%2C+Raipura+riverbank+area%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Hatirdia and rural countryside",
+        "query_full": "Hatirdia and rural countryside, Hatirdia area, Monohardi Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "description": "The rural countryside around Hatirdia offers a look at agricultural villages, ponds and seasonal greenery. It is suited to slow travel and photography rather than a single organised attraction. Visitors can learn about local markets and village life by exploring respectfully. Transport and amenities are basic away from town centres. Ask before photographing people or private property.",
+        "location": "Hatirdia area, Monohardi Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Hatirdia+and+rural+countryside%2C+Hatirdia+area%2C+Monohardi+Upazila%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Narsingdi Railway Station and town centre",
+        "query_full": "Narsingdi Railway Station and town centre, Narsingdi town, Narsingdi Sadar, Narsingdi, Narsingdi, Bangladesh",
+        "description": "The town centre gives visitors a practical introduction to the district’s busy commercial life. The railway station area reflects the role of rail transport in connecting Narsingdi with Dhaka and other regional centres. Nearby markets are useful for local snacks and everyday shopping. This is an urban stop, not a managed sightseeing attraction. Take care around roads, platforms and traffic.",
+        "location": "Narsingdi town, Narsingdi Sadar, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Narsingdi+Railway+Station+and+town+centre%2C+Narsingdi+town%2C+Narsingdi+Sadar%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Meghna-Ghorashal riverside landscape",
+        "query_full": "Meghna-Ghorashal riverside landscape, Ghorashal, Palash Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "description": "The riverside landscape near Ghorashal is shaped by the Meghna system and nearby industrial development. Visitors may find open river views and activity around local crossings and settlements. It offers a different perspective from the district’s ancient archaeological sites. Access varies because some riverfront areas adjoin industrial or private property. Use public access points and obey safety signs.",
+        "location": "Ghorashal, Palash Upazila, Narsingdi, Narsingdi, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Meghna-Ghorashal+riverside+landscape%2C+Ghorashal%2C+Palash+Upazila%2C+Narsingdi%2C+Narsingdi%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Manikganj",
+    "slug": "manikganj",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Baliati Palace",
+        "query_full": "Baliati Palace, Baliati, Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Baliati Palace is one of the most important zamindar-era architectural complexes in Bangladesh. Its multiple buildings, courtyards and ornamental details reflect the wealth of the Baliati estate. The complex developed over generations and is a major heritage destination for architecture enthusiasts. Some areas may be under conservation or subject to visitor rules. Check opening arrangements and respect protected structures.",
+        "location": "Baliati, Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Baliati+Palace%2C+Baliati%2C+Saturia+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Teota Zamindar Bari",
+        "query_full": "Teota Zamindar Bari, Teota village, Shibalaya Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Teota Zamindar Bari is a historic estate complex associated with the Teota zamindar family. The surviving structures show the scale and style of rural elite residences in Bengal. The village is also linked in popular accounts with poet Jibanananda Das’s family history. Parts of the complex may be occupied or deteriorated. Ask locally about safe, permitted areas to visit.",
+        "location": "Teota village, Shibalaya Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Teota+Zamindar+Bari%2C+Teota+village%2C+Shibalaya+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Machain Mosque",
+        "query_full": "Machain Mosque, Machain village, Harirampur Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Machain Mosque is a historic mosque known within Manikganj’s local architectural heritage. Its traditional form and setting make it useful for understanding the spread of Islamic religious architecture in rural Bengal. It remains part of a living community, so visitors should be discreet. Architectural features may be easier to appreciate with local explanation. Confirm directions because village roads can be narrow.",
+        "location": "Machain village, Harirampur, Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Machain+Mosque%2C+Machain+village%2C+Harirampur+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Dhankora Zamindar Bari",
+        "query_full": "Dhankora Zamindar Bari, Dhankora, Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Dhankora Zamindar Bari is associated with the region’s landed-estate history. Remaining buildings and local memories illustrate the social prominence of zamindar families before the end of the zamindari system. The site is less formalised than major heritage monuments. Some parts may be private residences. Obtain permission before entering buildings or courtyards.",
+        "location": "Dhankora, Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Dhankora+Zamindar+Bari%2C+Dhankora%2C+Saturia+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Historic Teota village heritage area",
+        "query_full": "Historic Teota village heritage area, Teota, Shibalaya Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Teota’s historic village landscape includes estate-era buildings and local heritage connected with prominent families. The setting helps place the zamindar residence within the surrounding community rather than viewing it in isolation. Visitors may find old structures mixed with modern homes. The area is not a single managed museum. Explore on foot only where public access is clear.",
+        "location": "Teota, Shibalaya Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Historic+Teota+village+heritage+area%2C+Teota%2C+Shibalaya+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Aricha Ghat",
+        "query_full": "Aricha Ghat, Aricha, Shibalaya Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Aricha Ghat is a major river transport area where visitors can watch ferries, launches and working river traffic. The meeting of roads, boats and river scenery gives the place a lively atmosphere. It is especially interesting for photography and observing transport life. This is an operational terminal, not a recreational beach. Stay within public areas and follow ferry staff instructions.",
+        "location": "Aricha, Shibalaya Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Aricha+Ghat%2C+Aricha%2C+Shibalaya+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Padma Riverbank, Harirampur",
+        "query_full": "Padma Riverbank, Harirampur, Harirampur riverbank and char areas, Manikganj, Manikganj, Bangladesh",
+        "description": "The Padma riverbank offers wide views of water, sandbars and a changing river landscape. Seasonal erosion and sediment movement constantly reshape the chars. Visitors may enjoy boat views and rural scenery, but access can change quickly. Boat trips should be arranged with trusted local operators. Avoid unstable banks and heed weather and current conditions.",
+        "location": "Harirampur riverbank and char, areas, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Padma+Riverbank%2C+Harirampur%2C+Harirampur+riverbank+and+char+areas%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Kaliganga Riverfront",
+        "query_full": "Kaliganga Riverfront, Manikganj town and nearby riverbank, Manikganj Sadar, Manikganj, Bangladesh",
+        "description": "The Kaliganga riverfront is a convenient place to see the waterways that shape the district. Riverside views vary with water level and season. Nearby town facilities make it easier to combine the visit with local food or markets. It is an informal public landscape rather than a developed attraction. Choose safe access points and avoid slippery embankments.",
+        "location": "Manikganj town and nearby, riverbank, Manikganj Sadar, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Kaliganga+Riverfront%2C+Manikganj+town+and+nearby+riverbank%2C+Manikganj+Sadar%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Baliati Palace grounds and gardens",
+        "query_full": "Baliati Palace grounds and gardens, Baliati, Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Beyond its historical significance, Baliati’s courtyards and open grounds offer a scenic setting for photography and a relaxed visit. The scale of the complex makes it easy to spend time exploring exterior details. Its landscaped and architectural setting is a strong contrast to riverfront attractions. Follow conservation instructions and do not climb on old masonry. Visitor access can vary by maintenance work.",
+        "location": "Baliati, Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Baliati+Palace+grounds+and+gardens%2C+Baliati%2C+Saturia+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Saturia rural landscape",
+        "query_full": "Saturia rural landscape, Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "description": "Saturia’s villages offer ponds, fields, orchards and a slower rural atmosphere. The area is a useful complement to a visit to Baliati Palace. Seasonal crops and monsoon water create different scenery through the year. It is not a single designated tourist facility, so plan around local roads and transport. Respect private land and local residents.",
+        "location": "Saturia Upazila, Manikganj, Manikganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Saturia+rural+landscape%2C+Saturia+Upazila%2C+Manikganj%2C+Manikganj%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Shariatpur",
+    "slug": "shariatpur",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Rudrakar Math",
+        "query_full": "Rudrakar Math, Rudrakar, Shariatpur Sadar Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "description": "Rudrakar is known for a historic math or monastic-style religious structure and long-standing Hindu traditions. The site forms part of the district’s documented cultural heritage. Its importance is local and architectural as well as religious. Festivals may make the area especially active at certain times. Visit respectfully and ask before photographing worshippers.",
+        "location": "Rudrakar, Shariatpur Sadar, Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Rudrakar+Math%2C+Rudrakar%2C+Shariatpur+Sadar+Upazila%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Kedar Roy's House / moat remains",
+        "query_full": "Kedar Roy's House / moat remains, Kedarpur area, Naria Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "description": "Local historical accounts connect this area with Kedar Roy, a notable ruler of the Bhati region. Remains associated with an abandoned residence and moat are described in district heritage records. The landscape has been affected by river changes and later settlement. It is not a fully conserved palace complex, and visible remains may be limited. Seek local guidance to identify the site accurately.",
+        "location": "Kedarpur area, Naria Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Kedar+Roy%27s+House+%2F+moat+remains%2C+Kedarpur+area%2C+Naria+Upazila%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Dhanuka heritage village",
+        "query_full": "Dhanuka heritage village, Dhanuka, Shariatpur Sadar Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "description": "Dhanuka is recorded as a historic cultural settlement associated with scholars and traditional learning. The village’s heritage is tied to people, religious traditions and local institutions rather than one large monument. Visitors interested in regional history can learn from local residents. Specific buildings may be privately owned or altered. Ask permission before entering homes or religious compounds.",
+        "location": "Dhanuka, Shariatpur Sadar, Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Dhanuka+heritage+village%2C+Dhanuka%2C+Shariatpur+Sadar+Upazila%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Mahisar historic religious area",
+        "query_full": "Mahisar historic religious area, Mahisar, Bhedarganj Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "description": "Mahisar is noted in district heritage accounts for historic ponds and religious landmarks. Local tradition links the area with earlier regional rulers and waterworks. The place reflects the importance of tanks and sacred sites in older settlements. It is a dispersed village heritage area, not a formal archaeological park. Verify the exact landmark with local residents before travel.",
+        "location": "Mahisar, Bhedarganj Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mahisar+historic+religious+area%2C+Mahisar%2C+Bhedarganj+Upazila%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Koras / Kurashi temple heritage area",
+        "query_full": "Koras / Kurashi temple heritage area, Kurashi area, Shariatpur District, Shariatpur, Bangladesh",
+        "description": "Kurashi is mentioned in district heritage descriptions for old temples and Shiva-linga-related religious remains. The site represents the district’s Hindu cultural history and village worship traditions. Surviving features may be small or incorporated into active religious compounds. Visitors should be mindful of local customs. Directions and public access are best confirmed locally.",
+        "location": "Kurashi area, Shariatpur District, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Koras+%2F+Kurashi+temple+heritage+area%2C+Kurashi+area%2C+Shariatpur+District%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Padma River char landscape",
+        "query_full": "Padma River char landscape, Padma riverbank and char areas, Naria and Zajira Upazilas, Shariatpur, Shariatpur, Bangladesh",
+        "description": "The Padma creates a dramatic river landscape of broad channels and shifting sandbars. Visitors come for river views, boat scenes and rural photography. The chars and banks change with seasons and erosion, so the scenery is never quite the same. Boat travel should be arranged with local operators who understand the current. Avoid unstable banks and follow safety advice.",
+        "location": "Padma riverbank and char areas, Naria and Zajira Upazilas, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Padma+River+char+landscape%2C+Padma+riverbank+and+char+areas%2C+Naria+and+Zajira+Upazilas%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Meghna Riverbank",
+        "query_full": "Meghna Riverbank, Bhedarganj riverfront area, Shariatpur, Shariatpur, Bangladesh",
+        "description": "The Meghna riverfront offers open water views and a close look at river-based livelihoods. Fishing boats, landing points and changing light make it attractive for photography. It is an informal scenic area rather than a managed park. Facilities and access vary by village and season. Stay clear of active jetties and strong currents.",
+        "location": "Bhedarganj riverfront area, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Meghna+Riverbank%2C+Bhedarganj+riverfront+area%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Kartickpur riverside area",
+        "query_full": "Kartickpur riverside area, Kartickpur, Bhedarganj Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "description": "Kartickpur is a local riverside destination where visitors can experience the district’s riverine setting. The appeal is the landscape, boat activity and quieter village atmosphere. It can be combined with a wider exploration of Bhedarganj. It does not have the facilities of a formal resort. Ask locally about safe access and transport.",
+        "location": "Kartickpur, Bhedarganj Upazila, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Kartickpur+riverside+area%2C+Kartickpur%2C+Bhedarganj+Upazila%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Naria river erosion and riverfront viewpoints",
+        "query_full": "Naria river erosion and riverfront viewpoints, Naria Upazila riverbank, Shariatpur, Shariatpur, Bangladesh",
+        "description": "The Naria riverfront illustrates how the Padma’s erosion and shifting channels affect settlements and land. It is an important landscape for understanding the district’s relationship with the river. Visitors should observe from safe, authorised areas rather than unstable embankments. Conditions can change after heavy rain or high water. Local guidance is essential.",
+        "location": "Naria Upazila riverbank, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Naria+river+erosion+and+riverfront+viewpoints%2C+Naria+Upazila+riverbank%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Shariatpur town parks and public spaces",
+        "query_full": "Shariatpur town parks and public spaces, Shariatpur Sadar town, Shariatpur, Shariatpur, Bangladesh",
+        "description": "The district town provides small public spaces, local markets and a base for exploring surrounding heritage villages. Visitors can experience everyday local life and sample regional food. This is a practical leisure stop rather than a single landmark. Facilities and ambience vary by time of day. Combine it with nearby historical locations for a fuller itinerary.",
+        "location": "Shariatpur Sadar town, Shariatpur, Shariatpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shariatpur+town+parks+and+public+spaces%2C+Shariatpur+Sadar+town%2C+Shariatpur%2C+Shariatpur%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Madaripur",
+    "slug": "madaripur",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Rajarama Temple",
+        "query_full": "Rajarama Temple, Khalia village, Rajoir Upazila, Madaripur, Madaripur, Bangladesh",
+        "description": "Rajarama Temple is widely described as one of Madaripur’s oldest temples. It is associated with zamindar Rajaram Roy and is noted for terracotta ornament and epic-story motifs. The building offers a valuable example of regional Hindu temple architecture. The temple remains part of a living community and should be approached respectfully. Confirm local access and any renovation-related restrictions.",
+        "location": "Khalia village, Rajoir Upazila, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Rajarama+Temple%2C+Khalia+village%2C+Rajoir+Upazila%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Algi Kazi Bari Mosque",
+        "query_full": "Algi Kazi Bari Mosque, Bahadurpur Union, Madaripur Sadar, Madaripur, Madaripur, Bangladesh",
+        "description": "Algi Kazi Bari Mosque is listed among the district’s heritage and tourist places. Its significance lies in the local history of mosque building and religious life. The site is situated in a village setting, so directions may be easier with local help. It should be treated as an active religious place where applicable. Ask before photographing inside or during prayers.",
+        "location": "Bahadurpur Union, Madaripur, Sadar, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Algi+Kazi+Bari+Mosque%2C+Bahadurpur+Union%2C+Madaripur+Sadar%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Jhaudi Giri",
+        "query_full": "Jhaudi Giri, Jhaudi area, Madaripur District, Madaripur, Bangladesh",
+        "description": "Jhaudi Giri is described in local district tourism material as an old archaeological or mound-like site. Local accounts associate it with a distant past, though detailed archaeological interpretation is limited. The site is of interest to travellers exploring the district’s lesser-known heritage. Visible features may be modest and interpretation on site limited. Confirm exact access with local authorities before travelling.",
+        "location": "Jhaudi area, Madaripur District, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jhaudi+Giri%2C+Jhaudi+area%2C+Madaripur+District%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Commander’s Dighi",
+        "query_full": "Commander’s Dighi, Amratala–Khatial village area, Kalkini Upazila, Madaripur, Madaripur, Bangladesh",
+        "description": "Commander’s Dighi is a large pond linked by local tradition to Mughal-era troop movements and water needs. Its name is connected with the story of a military commander and soldiers who camped in the area. The waterbody reflects the historic role of large ponds in rural settlements. The surrounding land may be privately used. Visit from public access points and avoid disturbing local activity.",
+        "location": "Amratala–Khatial village area, Kalkini Upazila, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Commander%E2%80%99s+Dighi%2C+Amratala%E2%80%93Khatial+village+area%2C+Kalkini+Upazila%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Hazrat Shah Madar Shrine",
+        "query_full": "Hazrat Shah Madar Shrine, Madaripur town, Madaripur Sadar, Madaripur, Madaripur, Bangladesh",
+        "description": "The shrine is associated with Shah Madar, the religious figure from whom the district’s name is traditionally derived. It is an important local pilgrimage and devotional site. The complex reflects the continuing role of shrines in community life. Visitors should dress respectfully and follow the caretaker’s guidance. Crowds may increase during religious observances.",
+        "location": "Madaripur town, Madaripur Sadar, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Hazrat+Shah+Madar+Shrine%2C+Madaripur+town%2C+Madaripur+Sadar%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Shakuni Lake",
+        "query_full": "Shakuni Lake, Central Madaripur town, Madaripur Sadar, Madaripur, Madaripur, Bangladesh",
+        "description": "Shakuni Lake is a prominent waterbody in the centre of Madaripur town. Its waterside setting makes it a familiar place for local recreation and evening walks. The lake offers an accessible urban break between visits to heritage sites. Facilities and cleanliness can vary, as in many public water spaces. Avoid littering and use safe paths around the water.",
+        "location": "Central Madaripur town, Madaripur, Sadar, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shakuni+Lake%2C+Central+Madaripur+town%2C+Madaripur+Sadar%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Madaripur Eco Park",
+        "query_full": "Madaripur Eco Park, Madaripur District; confirm current entrance with local authorities, Madaripur, Bangladesh",
+        "description": "Madaripur Eco Park is listed among the district’s leisure destinations. It is intended as a green recreational area for families and day visitors. The appeal is a change of pace from town streets and a chance to spend time outdoors. Facilities and operating status may change over time. Verify the precise entrance and current availability before travelling.",
+        "location": "Madaripur District; confirm current, entrance with local authorities, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Madaripur+Eco+Park%2C+Madaripur+District%3B+confirm+current+entrance+with+local+authorities%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Arial Khan Riverbank",
+        "query_full": "Arial Khan Riverbank, Arial Khan riverfront, Madaripur Sadar and nearby areas, Madaripur, Madaripur, Bangladesh",
+        "description": "The Arial Khan River is a defining feature of the district’s riverine landscape. Its banks provide views of boats, fishing activity and rural settlements. The scenery changes substantially between dry and monsoon seasons. There may be no formal visitor facilities at informal river stops. Choose stable public access points and keep away from fast-flowing water.",
+        "location": "Arial Khan riverfront, Madaripur, Sadar and nearby areas, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Arial+Khan+Riverbank%2C+Arial+Khan+riverfront%2C+Madaripur+Sadar+and+nearby+areas%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Mountain Garden (Pahar Bagan)",
+        "query_full": "Mountain Garden (Pahar Bagan), Madafipur Union, Madaripur Sadar area, Madaripur, Madaripur, Bangladesh",
+        "description": "Mountain Garden is described in local tourism listings as a garden on the south bank of the Kumar River. It was developed as a planted landscape and picnic destination. Its appeal is greenery and a relaxed rural setting rather than a historic monument. The condition of the garden and facilities may have changed. Check locally before making a dedicated trip.",
+        "location": "Madafipur Union, Madaripur Sadar, area, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mountain+Garden+%28Pahar+Bagan%29%2C+Madafipur+Union%2C+Madaripur+Sadar+area%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Kumar Riverfront",
+        "query_full": "Kumar Riverfront, Kumar Riverbank, Madaripur town and surrounding area, Madaripur, Madaripur, Bangladesh",
+        "description": "The Kumar River offers a scenic setting for observing the district’s waterways and riverside life. Visitors may see boats, riverbank activity and seasonal changes in water level. It is a good companion stop to Shakuni Lake and the town centre. Access points are informal and may be affected by erosion or development. Ask locally for a safe public riverfront location.",
+        "location": "Kumar Riverbank, Madaripur town, and surrounding area, Madaripur, Madaripur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Kumar+Riverfront%2C+Kumar+Riverbank%2C+Madaripur+town+and+surrounding+area%2C+Madaripur%2C+Madaripur%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Tangail",
+    "slug": "tangail",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Mohera Zamindar Bari",
+        "query_full": "Mohera Zamindar Bari, Mohera, Mirzapur Upazila, Tangail, Tangail, Bangladesh",
+        "description": "Mohera Zamindar Bari is a well-known estate complex with grand buildings, lawns and ponds. The architecture reflects the wealth and tastes of a zamindar family during the colonial period. It is now commonly visited for heritage photography and educational trips. Entry rules and fees may apply, and some areas may be used by an institution. Follow site regulations and protect the historic buildings.",
+        "location": "Mohera, Mirzapur Upazila, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mohera+Zamindar+Bari%2C+Mohera%2C+Mirzapur+Upazila%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Atia Mosque",
+        "query_full": "Atia Mosque, Atia village, Delduar Upazila, Tangail, Tangail, Bangladesh",
+        "description": "Atia Mosque is a significant historic mosque known for its traditional Bengal architecture. It is often dated to the late sixteenth or early seventeenth century and is associated with the region’s sultanate-to-Mughal transition period. Its brickwork and ornamental details make it a major heritage stop. It remains a religious site, so visitors should dress appropriately. Ask before photographing worshippers or interior spaces.",
+        "location": "Atia village, Delduar Upazila, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Atia+Mosque%2C+Atia+village%2C+Delduar+Upazila%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Dhanbari Nawab Palace",
+        "query_full": "Dhanbari Nawab Palace, Dhanbari, Dhanbari Upazila, Tangail, Tangail, Bangladesh",
+        "description": "Dhanbari Nawab Palace is associated with the influential Nawab family of Dhanbari. The estate’s buildings and grounds reflect the social history of local aristocratic families. The property has also been used for hospitality and events, so access may be controlled. Visitors should verify whether public tours are available. The wider town offers additional cultural context.",
+        "location": "Dhanbari, Dhanbari Upazila, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Dhanbari+Nawab+Palace%2C+Dhanbari%2C+Dhanbari+Upazila%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Pakutia Zamindar Bari",
+        "query_full": "Pakutia Zamindar Bari, Pakutia, Ghatail Upazila, Tangail, Tangail, Bangladesh",
+        "description": "Pakutia Zamindar Bari is a notable historic estate featuring multiple buildings and a distinctive courtyard arrangement. It reflects the architectural legacy of zamindari families in rural Tangail. The complex is visually striking and often visited by heritage enthusiasts. Some buildings may be occupied or used for institutional purposes. Respect access restrictions and avoid damaging old masonry.",
+        "location": "Pakutia, Ghatail Upazila, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Pakutia+Zamindar+Bari%2C+Pakutia%2C+Ghatail+Upazila%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Santosh Zamindar Bari",
+        "query_full": "Santosh Zamindar Bari, Santosh, Tangail Sadar, Tangail, Tangail, Bangladesh",
+        "description": "Santosh is associated with a historic zamindar residence and the regional legacy of landed families. The remaining structures and locality provide a window into Tangail’s social history. The area is now part of a developed urban setting, so the heritage may be interwoven with modern buildings. Public access to individual structures can vary. Confirm the exact site locally.",
+        "location": "Santosh, Tangail Sadar, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Santosh+Zamindar+Bari%2C+Santosh%2C+Tangail+Sadar%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Madhupur National Park",
+        "query_full": "Madhupur National Park, Madhupur forest area, Madhupur Upazila, Tangail, Tangail, Bangladesh",
+        "description": "Madhupur National Park protects sal forest and associated biodiversity in central Bangladesh. Visitors come for forest scenery, nature walks and a break from urban life. The landscape is culturally connected with Indigenous communities, including the Garo. Travel respectfully and avoid disturbing wildlife or community land. Check current forest access and conservation rules.",
+        "location": "Madhupur forest area, Madhupur, Upazila, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Madhupur+National+Park%2C+Madhupur+forest+area%2C+Madhupur+Upazila%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Jamuna Bridge East Approach Viewpoints",
+        "query_full": "Jamuna Bridge East Approach Viewpoints, East approach area near Bhuapur, Tangail, Tangail, Bangladesh",
+        "description": "The Tangail side of the Jamuna Bridge corridor offers views of one of Bangladesh’s major river crossings. The broad river landscape is impressive, particularly during high-water seasons. Safe viewing must be from designated public places away from traffic. Stopping on the bridge or highway is dangerous and may be prohibited. Check access restrictions before visiting.",
+        "location": "East approach area near Bhuapur, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jamuna+Bridge+East+Approach+Viewpoints%2C+East+approach+area+near+Bhuapur%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Elenga Resort and leisure area",
+        "query_full": "Elenga Resort and leisure area, Elenga, Kalihati Upazila, Tangail, Tangail, Bangladesh",
+        "description": "Elenga is a convenient stop on the Dhaka–Tangail highway with restaurants, hotels and leisure facilities. It is useful for families and travellers seeking a break during a road journey. Specific facilities are privately operated and differ by property. This is a visitor-services area rather than a single historic attraction. Confirm bookings and amenities directly with the chosen venue.",
+        "location": "Elenga, Kalihati Upazila, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Elenga+Resort+and+leisure+area%2C+Elenga%2C+Kalihati+Upazila%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Bangabandhu Bridge riverside landscape",
+        "query_full": "Bangabandhu Bridge riverside landscape, Bhuapur riverbank area, Tangail, Tangail, Bangladesh",
+        "description": "The Jamuna river near Bhuapur creates wide views of water, sandbars and river traffic. Visitors can appreciate the scale of the river and the bridge corridor from safe public areas. The landscape changes by season and can be dramatic during monsoon. Avoid unlicensed boat trips and unstable banks. Use local advice to identify safe viewpoints.",
+        "location": "Bhuapur riverbank area, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bangabandhu+Bridge+riverside+landscape%2C+Bhuapur+riverbank+area%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Tangail town and traditional weaving markets",
+        "query_full": "Tangail town and traditional weaving markets, Tangail Sadar, Tangail, Tangail, Bangladesh",
+        "description": "Tangail is well known for its handloom and traditional sari industry. Markets and weaving-related shops offer a cultural and shopping experience that complements historical visits. Visitors may find a range of fabrics and locally made goods. Prices and product quality vary, so compare items before buying. Ask before photographing workshops or workers.",
+        "location": "Tangail Sadar, Tangail, Tangail, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Tangail+town+and+traditional+weaving+markets%2C+Tangail+Sadar%2C+Tangail%2C+Tangail%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Brahmanbaria",
+    "slug": "brahmanbaria",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Arifail Mosque",
+        "query_full": "Arifail Mosque, Arifail village, Sarail Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "Arifail Mosque is one of the best-known historic mosques in Brahmanbaria. Its traditional brick architecture and domed form reflect the region’s Islamic heritage. The mosque is associated with Sarail’s historical importance and remains a religious site. Visitors should dress modestly and avoid interrupting prayers. Local guidance can help identify architectural details.",
+        "location": "Arifail village, Sarail Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Arifail+Mosque%2C+Arifail+village%2C+Sarail+Upazila%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Haripur Zamindar Bari",
+        "query_full": "Haripur Zamindar Bari, Haripur village, Nasirnagar Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "Haripur Zamindar Bari is a historic residence associated with local landed families. Its old buildings and setting are often cited among the district’s heritage attractions. The complex reflects the social and architectural history of rural Bengal. Some parts may be deteriorated or privately occupied. Confirm access locally and do not enter unsafe structures.",
+        "location": "Haripur village, Nasirnagar, Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Haripur+Zamindar+Bari%2C+Haripur+village%2C+Nasirnagar+Upazila%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Kal Bhairab Temple",
+        "query_full": "Kal Bhairab Temple, Brahmanbaria town, Brahmanbaria Sadar, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "Kal Bhairab Temple is a prominent Hindu religious landmark in Brahmanbaria. The temple is associated with local devotional traditions and attracts worshippers throughout the year. It offers a view of the district’s living religious culture rather than only its architectural past. Visitors should follow temple customs and be especially respectful during rituals. Ask before taking photographs inside.",
+        "location": "Brahmanbaria town, Brahmanbaria, Sadar, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Kal+Bhairab+Temple%2C+Brahmanbaria+town%2C+Brahmanbaria+Sadar%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Historic Titas river settlements",
+        "query_full": "Historic Titas river settlements, Titas river corridor, Brahmanbaria Sadar and surrounding areas, Brahmanbaria, Bangladesh",
+        "description": "The Titas river has shaped the district’s settlements, livelihoods and cultural identity. Older riverside villages preserve stories of boat transport, fishing and trade. This is a broader cultural landscape rather than one monument. River channels and access points change over time. Local residents can help identify historically significant public locations.",
+        "location": "Titas river corridor, Brahmanbaria, Sadar and surrounding areas, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Historic+Titas+river+settlements%2C+Titas+river+corridor%2C+Brahmanbaria+Sadar+and+surrounding+areas%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Brahmanbaria old town heritage area",
+        "query_full": "Brahmanbaria old town heritage area, Old town area, Brahmanbaria Sadar, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "The older parts of Brahmanbaria town include religious, civic and residential landmarks connected with the district’s development. The area is best explored as a walking route rather than a single attraction. Buildings may have been modified or repurposed. Traffic and active businesses make care necessary. Use local directions to identify accessible heritage structures.",
+        "location": "Old town area, Brahmanbaria, Sadar, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Brahmanbaria+old+town+heritage+area%2C+Old+town+area%2C+Brahmanbaria+Sadar%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Titas Riverbank",
+        "query_full": "Titas Riverbank, Titas riverfront, Brahmanbaria Sadar, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "The Titas riverbank is a natural scenic feature and a familiar part of local life. Visitors can observe boats, river activity and the surrounding settlement landscape. It is particularly atmospheric in the cooler months and around sunset. There may be no formal visitor facilities at informal access points. Stay away from steep banks and active boat landings.",
+        "location": "Titas riverfront, Brahmanbaria, Sadar, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Titas+Riverbank%2C+Titas+riverfront%2C+Brahmanbaria+Sadar%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Andiura / rural haor and wetland scenery",
+        "query_full": "Andiura / rural haor and wetland scenery, Nasirnagar Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "The wetland and lowland countryside around Nasirnagar changes dramatically with the seasons. During wetter months, water and boats dominate the landscape; in drier periods, fields and villages become more accessible. It is suited to nature photography and quiet rural exploration. Transport and facilities can be limited. Ask locally about boat safety and seasonal road conditions.",
+        "location": "Nasirnagar Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Andiura+%2F+rural+haor+and+wetland+scenery%2C+Nasirnagar+Upazila%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Brahmanbaria Railway Station area",
+        "query_full": "Brahmanbaria Railway Station area, Brahmanbaria town, Brahmanbaria Sadar, Brahmanbaria, Bangladesh",
+        "description": "The railway station area is a useful urban stop for seeing the district’s transport links and commercial activity. Nearby streets offer access to local food and everyday markets. It is not a formal tourist attraction but can be a practical part of a town visit. Follow railway safety rules and do not enter restricted tracks. Keep valuables secure in crowded areas.",
+        "location": "Brahmanbaria town, Brahmanbaria, Sadar, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Brahmanbaria+Railway+Station+area%2C+Brahmanbaria+town%2C+Brahmanbaria+Sadar%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Bijoynagar countryside",
+        "query_full": "Bijoynagar countryside, Bijoynagar Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "Bijoynagar’s rural landscape includes fields, villages and waterbodies typical of the eastern Bengal plain. It provides a slower-paced alternative to town sightseeing. Seasonal greenery and local markets can be interesting for visitors. The district does not have a developed visitor facility at every scenic spot. Confirm directions and transport with local sources.",
+        "location": "Bijoynagar Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bijoynagar+countryside%2C+Bijoynagar+Upazila%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Ashuganj Meghna riverfront",
+        "query_full": "Ashuganj Meghna riverfront, Ashuganj riverbank, Ashuganj Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "description": "Ashuganj offers broad views of the Meghna and a busy river-transport landscape. The area is known for its river crossing and industrial activity, which gives it a distinctive character. Visitors can observe the river from safe public locations. Some waterfront areas may be restricted or operational. Do not enter industrial premises or stop on busy roads.",
+        "location": "Ashuganj riverbank, Ashuganj, Upazila, Brahmanbaria, Brahmanbaria, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Ashuganj+Meghna+riverfront%2C+Ashuganj+riverbank%2C+Ashuganj+Upazila%2C+Brahmanbaria%2C+Brahmanbaria%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Rajbari",
+    "slug": "rajbari",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Nalia Jor Bangla Temple",
+        "query_full": "Nalia Jor Bangla Temple, Nalia village, Baliakandi Upazila, Rajbari, Rajbari, Bangladesh",
+        "description": "Nalia Jor Bangla Temple is a noted example of Bengal’s traditional temple architecture. Its curved roof forms and brickwork distinguish it from many later buildings. The temple is an important part of Rajbari’s heritage landscape. The condition of the structure and access can vary, so visit carefully. Respect any active religious use and avoid climbing on the monument.",
+        "location": "Nalia village, Baliakandi Upazila, Rajbari, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Nalia+Jor+Bangla+Temple%2C+Nalia+village%2C+Baliakandi+Upazila%2C+Rajbari%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Shah Pahlawan's Shrine",
+        "query_full": "Shah Pahlawan's Shrine, Pangsha area, Rajbari District, Rajbari, Bangladesh",
+        "description": "The shrine is associated with Shah Pahlawan, a revered religious figure in local tradition. It is among the district’s known pilgrimage and heritage locations. The site reflects the role of Sufi figures in the religious history of the region. Visitors should observe local customs and dress respectfully. Confirm the precise entrance and local arrangements before travel.",
+        "location": "Pangsha area, Rajbari District, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shah+Pahlawan%27s+Shrine%2C+Pangsha+area%2C+Rajbari+District%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Mir Mosharraf Hossain Memorial Centre",
+        "query_full": "Mir Mosharraf Hossain Memorial Centre, Padamdi, Baliakandi Upazila, Rajbari, Rajbari, Bangladesh",
+        "description": "The memorial centre honours Mir Mosharraf Hossain, the influential Bengali writer best known for his literary work on social and religious themes. The site connects visitors with his life, writing and cultural legacy. It is especially relevant to literature students and readers of Bengali classics. Opening times and displays may vary. Check locally before travelling.",
+        "location": "Padamdi, Baliakandi Upazila, Rajbari, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mir+Mosharraf+Hossain+Memorial+Centre%2C+Padamdi%2C+Baliakandi+Upazila%2C+Rajbari%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Pachuria Zamindar Bari",
+        "query_full": "Pachuria Zamindar Bari, Pachuria, Rajbari Sadar area, Rajbari, Rajbari, Bangladesh",
+        "description": "Pachuria Zamindar Bari is listed among Rajbari’s historic estate remains. It reflects the local influence of landed families and the architectural style of older residences. The surviving structures may have been altered by later use. Access may depend on private ownership. Ask permission before entering the property.",
+        "location": "Pachuria, Rajbari Sadar area, Rajbari, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Pachuria+Zamindar+Bari%2C+Pachuria%2C+Rajbari+Sadar+area%2C+Rajbari%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Samadhinagar Math / Anadi Ashram",
+        "query_full": "Samadhinagar Math / Anadi Ashram, Samadhinagar, Rajbari District, Rajbari, Bangladesh",
+        "description": "Samadhinagar Math, also associated with Anadi Ashram, is a local religious heritage site. It forms part of the district’s collection of temples, shrines and monastic structures. Its interest lies in religious architecture and community traditions. Facilities may be limited outside festival periods. Visit respectfully and check local access.",
+        "location": "Samadhinagar, Rajbari District, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Samadhinagar+Math+%2F+Anadi+Ashram%2C+Samadhinagar%2C+Rajbari+District%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Goalanda Ferry Ghat",
+        "query_full": "Goalanda Ferry Ghat, Daulatdia–Goalanda river terminal area, Goalanda Upazila, Rajbari, Rajbari, Bangladesh",
+        "description": "Goalanda is a well-known river transport area where ferries and boats connect routes across the Padma system. The terminal is lively and offers a close view of river transport and local trade. Food stalls and nearby markets add to the experience. It is an active transport facility, not a recreational beach. Follow staff directions and remain in designated public areas.",
+        "location": "Daulatdia–Goalanda river terminal, area, Goalanda Upazila, Rajbari, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Goalanda+Ferry+Ghat%2C+Daulatdia%E2%80%93Goalanda+river+terminal+area%2C+Goalanda+Upazila%2C+Rajbari%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Padma Riverbank at Goalanda",
+        "query_full": "Padma Riverbank at Goalanda, Goalanda Upazila riverfront, Rajbari, Rajbari, Bangladesh",
+        "description": "The Padma riverbank near Goalanda offers broad water views and shifting river scenery. Visitors often stop for photographs and to watch ferries and fishing boats. The character of the river changes significantly with season and water level. River currents and unstable banks can be dangerous. Choose a safe public viewpoint and avoid entering the water.",
+        "location": "Goalanda Upazila riverfront, Rajbari, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Padma+Riverbank+at+Goalanda%2C+Goalanda+Upazila+riverfront%2C+Rajbari%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Rajbari town park and public spaces",
+        "query_full": "Rajbari town park and public spaces, Rajbari Sadar town, Rajbari, Rajbari, Bangladesh",
+        "description": "Rajbari town provides parks, markets and everyday urban life for a relaxed local visit. It is a convenient base for reaching nearby temples and heritage buildings. Local food and shopping can be combined with a short town walk. The area is more of a town experience than a single landmark. Check locally for public-space access and events.",
+        "location": "Rajbari Sadar town, Rajbari, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Rajbari+town+park+and+public+spaces%2C+Rajbari+Sadar+town%2C+Rajbari%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Chandana Riverfront",
+        "query_full": "Chandana Riverfront, Chandana riverbank, Rajbari town and surrounding area, Rajbari, Bangladesh",
+        "description": "The Chandana river is closely tied to the district’s geography and local livelihoods. Riverside areas can offer views of boats, fields and settlements. The scenery is informal and changes with water levels and development. Facilities are not guaranteed at every access point. Ask residents for safe public access and avoid eroding banks.",
+        "location": "Chandana riverbank, Rajbari town, and surrounding area, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Chandana+Riverfront%2C+Chandana+riverbank%2C+Rajbari+town+and+surrounding+area%2C+Rajbari%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Baliakandi countryside",
+        "query_full": "Baliakandi countryside, Baliakandi Upazila, Rajbari, Rajbari, Bangladesh",
+        "description": "Baliakandi’s countryside combines agricultural fields, village ponds and scattered heritage sites. It is useful for travellers wanting a rural excursion alongside the Mir Mosharraf Hossain memorial and Nalia temple. Seasonal crops and local markets create changing scenery. Transport between villages may take time. Respect private property and ask before photographing people.",
+        "location": "Baliakandi Upazila, Rajbari, Rajbari, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Baliakandi+countryside%2C+Baliakandi+Upazila%2C+Rajbari%2C+Rajbari%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Chandpur",
+    "slug": "chandpur",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Hajiganj Bara Mosque / historic mosque area",
+        "query_full": "Hajiganj Bara Mosque / historic mosque area, Hajiganj town, Hajiganj Upazila, Chandpur, Chandpur, Bangladesh",
+        "description": "Hajiganj has historic religious architecture that reflects the district’s long settlement history. The Bara Mosque area is a locally recognised heritage stop. The mosque remains a community religious space, so visitor access should be respectful. Architectural details are best observed outside prayer times. Confirm the exact local name and entrance on arrival.",
+        "location": "Hajiganj town, Hajiganj Upazila, Chandpur, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Hajiganj+Bara+Mosque+%2F+historic+mosque+area%2C+Hajiganj+town%2C+Hajiganj+Upazila%2C+Chandpur%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Sahapur Rajbari",
+        "query_full": "Sahapur Rajbari, Sahapur village, Shahrastri Upazila, Chandpur, Chandpur, Bangladesh",
+        "description": "Sahapur Rajbari is described in local government tourism material as an old palace complex linked with the Das Raj family. Accounts mention palace buildings, boundary walls, guard posts and temples. The site reflects the history of the former Meher pargana. Surviving structures and public access may vary. Ask locally before entering any occupied or unsafe buildings.",
+        "location": "Sahapur village, Shahrastri, Upazila, Chandpur, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Sahapur+Rajbari%2C+Sahapur+village%2C+Shahrastri+Upazila%2C+Chandpur%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Rupsha Zamindar Bari",
+        "query_full": "Rupsha Zamindar Bari, Rupsha area, Faridganj Upazila, Chandpur, Chandpur, Bangladesh",
+        "description": "Rupsha Zamindar Bari is associated with the district’s landed-estate history. The remains offer a glimpse into the residences and social status of local zamindar families. The complex is not necessarily managed as a formal museum. Buildings may have been altered or occupied. Verify the exact site and access locally before visiting.",
+        "location": "Rupsha area, Faridganj Upazila, Chandpur, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Rupsha+Zamindar+Bari%2C+Rupsha+area%2C+Faridganj+Upazila%2C+Chandpur%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Kal Bhairab Temple heritage area",
+        "query_full": "Kal Bhairab Temple heritage area, Chandpur town area, Chandpur Sadar, Chandpur, Chandpur, Bangladesh",
+        "description": "The district town includes historic religious landmarks that reflect the region’s diverse community traditions. The Kal Bhairab temple heritage area is of interest to visitors exploring local Hindu worship and architecture. Religious activity continues to shape the site. Visitors should follow local customs and avoid disrupting rituals. Confirm the precise landmark locally, as names may be used for nearby temple locations.",
+        "location": "Chandpur town area, Chandpur, Sadar, Chandpur, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Kal+Bhairab+Temple+heritage+area%2C+Chandpur+town+area%2C+Chandpur+Sadar%2C+Chandpur%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Historic old town and river-port area",
+        "query_full": "Historic old town and river-port area, Old Chandpur town and river-port district, Chandpur Sadar, Chandpur, Bangladesh",
+        "description": "Chandpur’s historic town developed around river transport and trade. Older streets and port-side activity help explain the district’s importance at the confluence of major waterways. This is a dispersed urban heritage area rather than one preserved monument. Modern development has changed parts of the waterfront. Explore from public roads and respect active businesses.",
+        "location": "Old Chandpur town and river-port, district, Chandpur Sadar, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Historic+old+town+and+river-port+area%2C+Old+Chandpur+town+and+river-port+district%2C+Chandpur+Sadar%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Three Rivers Confluence viewpoint",
+        "query_full": "Three Rivers Confluence viewpoint, Chandpur town riverfront, near the meeting of the Padma–Meghna system, Chandpur Sadar, Chandpur, Bangladesh",
+        "description": "Chandpur is famous for its dramatic river landscape where major waterways meet in the wider area. The broad views, boats and changing currents make it a popular scenic stop. The precise visible confluence varies with viewpoint and river conditions. Do not assume every riverbank is safe for swimming or boat access. Use established public riverfront areas.",
+        "location": "Chandpur town riverfront, near the, meeting of the Padma–Meghna, system, Chandpur Sadar, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Three+Rivers+Confluence+viewpoint%2C+Chandpur+town+riverfront%2C+near+the+meeting+of+the+Padma%E2%80%93Meghna+system%2C+Chandpur+Sadar%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Boro Station (Big Station) Riverfront",
+        "query_full": "Boro Station (Big Station) Riverfront, Chandpur town, Chandpur Sadar, Chandpur, Chandpur, Bangladesh",
+        "description": "Boro Station is a well-known public riverfront and transport area in Chandpur. Visitors come to watch boats, enjoy the river breeze and experience the city’s busy waterfront. Nearby food stalls are popular, especially for local fish dishes. The area is active and can be crowded. Keep clear of boarding points and follow safety signs.",
+        "location": "Chandpur town, Chandpur Sadar, Chandpur, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Boro+Station+%28Big+Station%29+Riverfront%2C+Chandpur+town%2C+Chandpur+Sadar%2C+Chandpur%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Meghna Riverbank",
+        "query_full": "Meghna Riverbank, Chandpur Sadar and Haimchar riverfront areas, Chandpur, Chandpur, Bangladesh",
+        "description": "The Meghna’s broad channels and riverbank settlements are among Chandpur’s strongest natural attractions. The scenery includes boats, fishing activity and sandbars that change by season. Sunset views can be especially appealing from safe public points. Currents are strong and banks may erode. Arrange any boat trip with a reliable local operator.",
+        "location": "Chandpur Sadar and Haimchar, riverfront areas, Chandpur, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Meghna+Riverbank%2C+Chandpur+Sadar+and+Haimchar+riverfront+areas%2C+Chandpur%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Haimchar river and char landscape",
+        "query_full": "Haimchar river and char landscape, Haimchar Upazila, Chandpur, Chandpur, Bangladesh",
+        "description": "Haimchar offers a rural riverine landscape shaped by the Meghna and its chars. Visitors can see fishing boats, river transport and seasonal agricultural activity. The scenery is especially dynamic during monsoon and post-monsoon periods. Facilities can be limited away from town. Check current river conditions and travel advice before going.",
+        "location": "Haimchar Upazila, Chandpur, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Haimchar+river+and+char+landscape%2C+Haimchar+Upazila%2C+Chandpur%2C+Chandpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Chandpur Fish Landing and local food area",
+        "query_full": "Chandpur Fish Landing and local food area, Chandpur town river-port area, Chandpur Sadar, Chandpur, Bangladesh",
+        "description": "Chandpur is widely associated with river fish and its bustling fish trade. The landing and market areas offer a lively view of local commerce and food culture. Visitors may find restaurants serving regional fish dishes nearby. It is a working market, so floors can be wet and crowded. Visit at a suitable time and ask before photographing vendors.",
+        "location": "Chandpur town river-port area, Chandpur Sadar, Chandpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Chandpur+Fish+Landing+and+local+food+area%2C+Chandpur+town+river-port+area%2C+Chandpur+Sadar%2C+Chandpur%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Mymensingh",
+    "slug": "mymensingh",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Shashi Lodge",
+        "query_full": "Shashi Lodge, Mymensingh town, Mymensingh Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "description": "Shashi Lodge is one of Mymensingh’s most recognisable historic buildings. It is associated with Maharaja Suryakanta Acharya Chowdhury and the town’s zamindari-era history. Its elegant architecture and grounds make it a favourite heritage stop. The building has been used for institutional purposes, so access may be controlled. Follow current site rules and protect the historic fabric.",
+        "location": "Mymensingh town, Mymensingh, Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shashi+Lodge%2C+Mymensingh+town%2C+Mymensingh+Sadar%2C+Mymensingh%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Muktagacha Rajbari",
+        "query_full": "Muktagacha Rajbari, Muktagacha town, Muktagacha Upazila, Mymensingh, Mymensingh, Bangladesh",
+        "description": "Muktagacha Rajbari is a historic palace complex associated with the Muktagacha zamindars. The buildings reflect the wealth and cultural influence of the estate family. The area is also famous for its traditional sweet-making heritage. The complex has experienced changes over time, and not all sections may be accessible. Ask locally about safe and permitted viewing areas.",
+        "location": "Muktagacha town, Muktagacha, Upazila, Mymensingh, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Muktagacha+Rajbari%2C+Muktagacha+town%2C+Muktagacha+Upazila%2C+Mymensingh%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Alexander Castle (Lohar Kutir)",
+        "query_full": "Alexander Castle (Lohar Kutir), Mymensingh town, Mymensingh Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "description": "Alexander Castle, often called Lohar Kutir, is a distinctive colonial-era structure in Mymensingh. It is associated with the town’s elite social history and unusual architectural character. Its name reflects the building’s popular local identity. The site may be part of an institutional compound, limiting access. Check current entry rules before planning an interior visit.",
+        "location": "Mymensingh town, Mymensingh, Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Alexander+Castle+%28Lohar+Kutir%29%2C+Mymensingh+town%2C+Mymensingh+Sadar%2C+Mymensingh%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Gouripur Lodge",
+        "query_full": "Gouripur Lodge, Gouripur town, Gouripur Upazila, Mymensingh, Mymensingh, Bangladesh",
+        "description": "Gouripur Lodge is a historic building associated with the region’s landed and cultural history. Its architectural features offer a glimpse of an earlier era of elite residences. The site is useful for visitors exploring beyond Mymensingh city. Current condition and access may vary. Confirm the exact building with local residents and respect private property.",
+        "location": "Gouripur town, Gouripur Upazila, Mymensingh, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Gouripur+Lodge%2C+Gouripur+town%2C+Gouripur+Upazila%2C+Mymensingh%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Bangladesh Agricultural University historic",
+        "query_full": "Bangladesh Agricultural University historic campus landmarks, BAU campus, Mymensingh Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "description": "campus landmarks The Bangladesh Agricultural University campus has a distinctive institutional history and landscaped setting. Its academic buildings and campus environment are part of modern Mymensingh’s development. This is an active university, not an unrestricted heritage museum. Visitors should follow campus security and access rules. Educational visits may require prior permission.",
+        "location": "BAU campus, Mymensingh Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bangladesh+Agricultural+University+historic+campus+landmarks%2C+BAU+campus%2C+Mymensingh+Sadar%2C+Mymensingh%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Brahmaputra Riverfront",
+        "query_full": "Brahmaputra Riverfront, Mymensingh town riverbank, Mymensingh Sadar, Mymensingh, Bangladesh",
+        "description": "The Old Brahmaputra riverfront is a signature scenic area of Mymensingh. It offers open views, walking areas and a lively public atmosphere, especially in the late afternoon. The river has shaped the town’s history, trade and identity. Water levels and bank conditions change by season. Keep the river clean and stay away from unsafe edges.",
+        "location": "Mymensingh town riverbank, Mymensingh Sadar, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Brahmaputra+Riverfront%2C+Mymensingh+town+riverbank%2C+Mymensingh+Sadar%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Birisiri and China Clay Hills",
+        "query_full": "Birisiri and China Clay Hills, Birisiri, Durgapur Upazila, Netrokona District (often visited from Mymensingh region), Mymensingh, Bangladesh",
+        "description": "Birisiri’s colourful hills, clay landscape and river scenery are popular for photography and short trips from the wider Mymensingh region. Important accuracy note: the main Birisiri attraction is in Netrokona District, not Mymensingh District. It is included here only as a nearby regional excursion, not as a district attraction. Travel time is significant and should be planned separately. Verify transport and local conditions before visiting.",
+        "location": "Birisiri, Durgapur Upazila, Netrokona District (often visited, from Mymensingh region), Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Birisiri+and+China+Clay+Hills%2C+Birisiri%2C+Durgapur+Upazila%2C+Netrokona+District+%28often+visited+from+Mymensingh+region%29%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Zainul Abedin Sangrahashala",
+        "query_full": "Zainul Abedin Sangrahashala, Mymensingh town, near the Brahmaputra riverfront, Mymensingh Sadar, Mymensingh, Bangladesh",
+        "description": "This art gallery is dedicated to celebrated Bangladeshi artist Zainul Abedin. It preserves artworks and material connected with his life and artistic legacy. The gallery is an important cultural attraction for art lovers and students. Displays and opening hours may vary. Confirm current access and photography rules before visiting.",
+        "location": "Mymensingh town, near the, Brahmaputra riverfront, Mymensingh Sadar, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Zainul+Abedin+Sangrahashala%2C+Mymensingh+town%2C+near+the+Brahmaputra+riverfront%2C+Mymensingh+Sadar%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Mymensingh Museum",
+        "query_full": "Mymensingh Museum, Mymensingh town, Mymensingh Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "description": "Mymensingh Museum presents aspects of the region’s history and cultural heritage. It can help visitors place the city’s buildings, literature and local traditions in context. Collections and opening arrangements may change. Allow time to check current access, especially on holidays. Pair it with Shashi Lodge and the riverfront for a compact town itinerary.",
+        "location": "Mymensingh town, Mymensingh, Sadar, Mymensingh, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mymensingh+Museum%2C+Mymensingh+town%2C+Mymensingh+Sadar%2C+Mymensingh%2C+Mymensingh%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Shilpacharya Zainul Abedin Park / riverfront promenade",
+        "query_full": "Shilpacharya Zainul Abedin Park / riverfront promenade, Brahmaputra riverbank, Mymensingh town, Mymensingh Sadar, Mymensingh, Bangladesh",
+        "description": "The riverfront park and promenade are popular for walking, relaxing and watching the river. They offer open public space near cultural attractions in the city. The area is especially busy in the cooler part of the day. Crowds and cleanliness vary by time. Use designated paths and dispose of waste responsibly.",
+        "location": "Brahmaputra riverbank, Mymensingh town, Mymensingh, Sadar, Mymensingh, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shilpacharya+Zainul+Abedin+Park+%2F+riverfront+promenade%2C+Brahmaputra+riverbank%2C+Mymensingh+town%2C+Mymensingh+Sadar%2C+Mymensingh%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Kishoreganj",
+    "slug": "kishoreganj",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Egarosindur historic settlement",
+        "query_full": "Egarosindur historic settlement, Egarosindur, Pakundia Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "Egarosindur is a historic settlement associated with the medieval and early modern history of the Bhati region. The area is known for archaeological and architectural remains, including mosques and old structures. Its strategic location reflects the importance of waterways and local rulers. The heritage is dispersed across the settlement rather than concentrated in one museum. A local guide can help locate individual monuments.",
+        "location": "Egarosindur, Pakundia Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Egarosindur+historic+settlement%2C+Egarosindur%2C+Pakundia+Upazila%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Shah Mahmud Mosque",
+        "query_full": "Shah Mahmud Mosque, Egarosindur, Pakundia Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "Shah Mahmud Mosque is a historic mosque in the Egarosindur heritage landscape. It is noted for its traditional architecture and connection with the region’s older Islamic history. The building is an important stop for visitors interested in medieval Bengal. It remains a religious site and should be approached respectfully. Check local access before entering the prayer area.",
+        "location": "Egarosindur, Pakundia Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shah+Mahmud+Mosque%2C+Egarosindur%2C+Pakundia+Upazila%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Sadi Mosque",
+        "query_full": "Sadi Mosque, Egarosindur area, Pakundia Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "Sadi Mosque is another heritage mosque associated with the historic Egarosindur settlement. Its traditional construction reflects the area’s long religious and architectural history. The site can be visited as part of a wider heritage circuit. Interpretive signs and facilities may be limited. Ask local residents for directions and observe mosque etiquette.",
+        "location": "Egarosindur area, Pakundia, Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Sadi+Mosque%2C+Egarosindur+area%2C+Pakundia+Upazila%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Jangalbari Fort / Isa Khan's residence remains",
+        "query_full": "Jangalbari Fort / Isa Khan's residence remains, Jangalbari, Karimganj Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "Jangalbari is traditionally associated with Isa Khan, one of the Baro-Bhuiyan leaders of Bengal. The remaining structures are linked to the region’s political and military history. The site is an important part of local historical memory. The surviving fabric may be incomplete and the area is not a fully restored fort. Confirm access and avoid entering unstable structures.",
+        "location": "Jangalbari, Karimganj Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jangalbari+Fort+%2F+Isa+Khan%27s+residence+remains%2C+Jangalbari%2C+Karimganj+Upazila%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Pagla Mosque",
+        "query_full": "Pagla Mosque, Harua area, Kishoreganj town, Kishoreganj Sadar, Kishoreganj, Bangladesh",
+        "description": "Pagla Mosque is a prominent mosque and religious landmark in Kishoreganj. It is known for its large congregation and strong local devotional importance. The mosque has become widely recognised beyond the district. Visitors should be respectful, dress modestly and avoid disrupting prayers. Crowd management may be important during busy periods.",
+        "location": "Harua area, Kishoreganj town, Kishoreganj Sadar, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Pagla+Mosque%2C+Harua+area%2C+Kishoreganj+town%2C+Kishoreganj+Sadar%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Nikli Haor",
+        "query_full": "Nikli Haor, Nikli Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "Nikli Haor is one of the region’s best-known wetland destinations. During the rainy season, wide expanses of water create a striking landscape of villages, boats and distant horizons. Boat trips are a popular way to experience the haor. Conditions differ greatly between monsoon and dry season. Use trusted boat operators, life jackets and local weather advice.",
+        "location": "Nikli Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Nikli+Haor%2C+Nikli+Upazila%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Mithamain–Austagra m road and haor views",
+        "query_full": "Mithamain–Austagram road and haor views, Mithamain and Austagram Upazilas, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "The elevated road network through the haor region offers long views across wetlands and settlements. It is especially scenic when the surrounding land is flooded during monsoon. The route is also an important local transport connection, not a dedicated promenade. Traffic, weather and water conditions can change quickly. Stop only at safe designated places and do not block the road.",
+        "location": "Mithamain and Austagram, Upazilas, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mithamain%E2%80%93Austagram+road+and+haor+views%2C+Mithamain+and+Austagram+Upazilas%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Austagram Haor landscape",
+        "query_full": "Austagram Haor landscape, Austagram Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "Austagram is known for its expansive haor environment and seasonal water scenery. Visitors can experience rural wetland life, boats and traditional settlements. The landscape is most dramatic during the wet season, while dry-season travel reveals fields and village roads. Facilities may be limited outside the main settlements. Plan transport carefully and check weather before travelling.",
+        "location": "Austagram Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Austagram+Haor+landscape%2C+Austagram+Upazila%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Bhairab Bridge and Meghna river views",
+        "query_full": "Bhairab Bridge and Meghna river views, Bhairab riverfront, Bhairab Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "The Bhairab area offers views of the Meghna and major bridge infrastructure. River traffic and the railway-road crossing make the landscape visually distinctive. It is useful as a short stop while exploring the district’s southern gateway. Use public viewpoints rather than stopping on bridges or railway property. Follow local safety instructions.",
+        "location": "Bhairab riverfront, Bhairab, Upazila, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bhairab+Bridge+and+Meghna+river+views%2C+Bhairab+riverfront%2C+Bhairab+Upazila%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Chandrabati Temple",
+        "query_full": "Chandrabati Temple, Kachharibazar area, Kishoreganj Sadar, Kishoreganj, Kishoreganj, Bangladesh",
+        "description": "Chandrabati Temple is associated with the celebrated Bengali poet Chandrabati and the region’s literary history. It is a cultural and religious landmark for visitors interested in women’s literary heritage and local traditions. The temple setting provides a quieter alternative to the busy town. Facilities may be modest. Visit respectfully and confirm local directions.",
+        "location": "Kachharibazar area, Kishoreganj, Sadar, Kishoreganj, Kishoreganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Chandrabati+Temple%2C+Kachharibazar+area%2C+Kishoreganj+Sadar%2C+Kishoreganj%2C+Kishoreganj%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Sirajganj",
+    "slug": "sirajganj",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Hatikumrul Navaratna Temple",
+        "query_full": "Hatikumrul Navaratna Temple, Hatikumrul, Ullapara Upazila, Sirajganj, Sirajganj, Bangladesh",
+        "description": "Hatikumrul Navaratna Temple is one of the district’s most important historic Hindu temples. Its multi-towered form and brick ornamentation make it a notable example of Bengal temple architecture. The temple is associated with the region’s zamindari-era religious patronage. The structure is a protected heritage asset and should not be climbed or touched unnecessarily. Check local access and conservation notices.",
+        "location": "Hatikumrul, Ullapara Upazila, Sirajganj, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Hatikumrul+Navaratna+Temple%2C+Hatikumrul%2C+Ullapara+Upazila%2C+Sirajganj%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Shahjadpur Rabindra Kachharibari",
+        "query_full": "Shahjadpur Rabindra Kachharibari, Shahjadpur town, Shahjadpur Upazila, Sirajganj, Sirajganj, Bangladesh",
+        "description": "This historic kachharibari is associated with Rabindranath Tagore’s management of family estates and his time in the region. The house is now a museum-like heritage site presenting aspects of his life and literary connection to Shahjadpur. It is a major cultural destination for literature enthusiasts. Displays and opening hours may vary. Verify current entry arrangements before visiting.",
+        "location": "Shahjadpur town, Shahjadpur, Upazila, Sirajganj, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shahjadpur+Rabindra+Kachharibari%2C+Shahjadpur+town%2C+Shahjadpur+Upazila%2C+Sirajganj%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Nolaka / local zamindar-era heritage buildings",
+        "query_full": "Nolaka / local zamindar-era heritage buildings, Nolaka and surrounding area, Sirajganj District, Sirajganj, Bangladesh",
+        "description": "The wider district contains scattered estate-era buildings and older settlements linked with local landed families. These sites are less formally presented than major monuments. Their value is in the regional architecture and social history they preserve. Some may be private or in altered condition. Ask local authorities for a confirmed public-access location before travelling.",
+        "location": "Nolaka and surrounding area, Sirajganj District, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Nolaka+%2F+local+zamindar-era+heritage+buildings%2C+Nolaka+and+surrounding+area%2C+Sirajganj+District%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Makhdum Shah's Shrine",
+        "query_full": "Makhdum Shah's Shrine, Shahjadpur area, Sirajganj District, Sirajganj, Bangladesh",
+        "description": "The shrine is associated with the religious history of the Shahjadpur region. It is a local devotional site and part of the district’s cultural landscape. Shrine traditions often preserve stories about the spread of Islam and community identity. Visitors should observe local customs and dress respectfully. Confirm the exact shrine location with local sources.",
+        "location": "Shahjadpur area, Sirajganj District, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Makhdum+Shah%27s+Shrine%2C+Shahjadpur+area%2C+Sirajganj+District%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Historic Sirajganj river-port and trading quarter",
+        "query_full": "Historic Sirajganj river-port and trading quarter, Sirajganj town riverfront, Sirajganj Sadar, Sirajganj, Bangladesh",
+        "description": "Sirajganj developed as an important river port and commercial centre on the Jamuna. The older trading quarter reflects the district’s history of river commerce, jute and transport. This is a dispersed urban heritage area, not a single preserved monument. Modern development has altered parts of the old waterfront. Explore from public streets and respect active businesses.",
+        "location": "Sirajganj town riverfront, Sirajganj, Sadar, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Historic+Sirajganj+river-port+and+trading+quarter%2C+Sirajganj+town+riverfront%2C+Sirajganj+Sadar%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Bangabandhu Jamuna Bridge viewpoint",
+        "query_full": "Bangabandhu Jamuna Bridge viewpoint, East-bank approach area near Sirajganj, Sirajganj District, Sirajganj, Bangladesh",
+        "description": "The Jamuna Bridge is one of Bangladesh’s major infrastructure landmarks and a striking feature of the river landscape. Views from safe public areas show the bridge’s scale and the broad Jamuna. It is particularly impressive in the wet season. Stopping on the bridge or highway is unsafe and may be prohibited. Use authorised viewpoints only.",
+        "location": "East-bank approach area near, Sirajganj, Sirajganj District, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Bangabandhu+Jamuna+Bridge+viewpoint%2C+East-bank+approach+area+near+Sirajganj%2C+Sirajganj+District%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Jamuna Riverbank and char landscape",
+        "query_full": "Jamuna Riverbank and char landscape, Sirajganj Sadar and nearby riverbank areas, Sirajganj, Sirajganj, Bangladesh",
+        "description": "The Jamuna riverbank offers wide views of channels, sandbars and boats. The chars change shape with current and season, making the landscape dynamic. Visitors often come for photography and to experience the riverine environment. Access may be affected by erosion and seasonal flooding. Arrange boat travel with trusted local operators and use life jackets.",
+        "location": "Sirajganj Sadar and nearby, riverbank areas, Sirajganj, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jamuna+Riverbank+and+char+landscape%2C+Sirajganj+Sadar+and+nearby+riverbank+areas%2C+Sirajganj%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Jamuna Eco Park / riverfront leisure area",
+        "query_full": "Jamuna Eco Park / riverfront leisure area, Sirajganj town riverfront area, Sirajganj Sadar, Sirajganj, Bangladesh",
+        "description": "The riverfront leisure area provides a place for visitors to enjoy open views and a break near the town. Its appeal is primarily scenic and recreational. Facilities and formal naming can vary, so confirm the specific public park or access point locally. The river can be dangerous despite its calm appearance. Stay on stable paths and follow local guidance.",
+        "location": "Sirajganj town riverfront area, Sirajganj Sadar, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jamuna+Eco+Park+%2F+riverfront+leisure+area%2C+Sirajganj+town+riverfront+area%2C+Sirajganj+Sadar%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Enayetpur riverside area",
+        "query_full": "Enayetpur riverside area, Enayetpur, Chauhali Upazila, Sirajganj, Sirajganj, Bangladesh",
+        "description": "Enayetpur’s riverine setting offers a glimpse of life along the Jamuna system. The area is known regionally for religious and community institutions as well as river scenery. Visitors can combine local cultural stops with views of the surrounding countryside. Access can be affected by river erosion and seasonal conditions. Confirm transport and safe routes before visiting.",
+        "location": "Enayetpur, Chauhali Upazila, Sirajganj, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Enayetpur+riverside+area%2C+Enayetpur%2C+Chauhali+Upazila%2C+Sirajganj%2C+Sirajganj%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Sirajganj town markets and local food streets",
+        "query_full": "Sirajganj town markets and local food streets, Sirajganj Sadar, Sirajganj, Sirajganj, Bangladesh",
+        "description": "Sirajganj town is a useful place to explore local markets, regional food and everyday commercial life. It provides a practical base for visiting the Jamuna and nearby heritage locations. Market activity is busiest at particular times and may be crowded. This is an urban cultural experience rather than a single landmark. Take care with traffic and ask before photographing vendors.",
+        "location": "Sirajganj Sadar, Sirajganj, Sirajganj, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Sirajganj+town+markets+and+local+food+streets%2C+Sirajganj+Sadar%2C+Sirajganj%2C+Sirajganj%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Faridpur",
+    "slug": "faridpur",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Mathurapur Deul",
+        "query_full": "Mathurapur Deul, Mathurapur, Madhukhali Upazila, Faridpur, Faridpur, Bangladesh",
+        "description": "Mathurapur Deul is a distinctive historic brick monument and one of Faridpur’s best-known heritage structures. Its tall, tapering form and decorative brickwork make it architecturally unusual. It is often associated with the region’s Hindu religious and zamindari-era history. The monument is fragile, so visitors should not climb or scrape the masonry. Confirm access and conservation rules locally.",
+        "location": "Mathurapur, Madhukhali Upazila, Faridpur, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Mathurapur+Deul%2C+Mathurapur%2C+Madhukhali+Upazila%2C+Faridpur%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Shatair Mosque",
+        "query_full": "Shatair Mosque, Shatair village, Faridpur District, Faridpur, Bangladesh",
+        "description": "Shatair Mosque is a historic religious building recognised in local heritage accounts. Its traditional construction reflects the long history of Islamic architecture in the district. The mosque remains part of the local community and should be visited respectfully. Detailed interpretation may be limited on site. Ask before entering during prayers or photographing worshippers.",
+        "location": "Shatair village, Faridpur District, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Shatair+Mosque%2C+Shatair+village%2C+Faridpur+District%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Faridpur Rajbari / old estate buildings",
+        "query_full": "Faridpur Rajbari / old estate buildings, Faridpur town, Faridpur Sadar, Faridpur, Faridpur, Bangladesh",
+        "description": "The town and surrounding district contain buildings associated with the former zamindari and colonial administrative periods. These structures provide context for Faridpur’s development as a regional centre. The term Rajbari may refer to different local buildings, so confirm the exact structure before setting out. Some properties are occupied or altered. Respect private ownership and local access rules.",
+        "location": "Faridpur town, Faridpur Sadar, Faridpur, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Faridpur+Rajbari+%2F+old+estate+buildings%2C+Faridpur+town%2C+Faridpur+Sadar%2C+Faridpur%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Basudev Temple heritage site",
+        "query_full": "Basudev Temple heritage site, Faridpur District; confirm the specific village locally, Faridpur, Bangladesh",
+        "description": "Basudev temple heritage is mentioned among local religious and architectural landmarks in the wider district. The exact site name can be used for more than one local temple, so a confirmed village-level address is important. Such temples reflect the district’s Hindu cultural history. Access may be tied to active worship. Verify the precise location with the district or upazila office before travelling.",
+        "location": "Faridpur District; confirm the, specific village locally, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Basudev+Temple+heritage+site%2C+Faridpur+District%3B+confirm+the+specific+village+locally%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Historic Ambikapur settlement",
+        "query_full": "Historic Ambikapur settlement, Ambikapur, Faridpur Sadar, Faridpur, Faridpur, Bangladesh",
+        "description": "Ambikapur is a historic locality within the Faridpur area with community and settlement heritage. It is best explored as a broader old-neighbourhood visit rather than a single ticketed monument. Local stories and older buildings may help explain the area’s development. Modern construction may have changed the landscape. Ask residents to identify public heritage points and avoid entering private homes.",
+        "location": "Ambikapur, Faridpur Sadar, Faridpur, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Historic+Ambikapur+settlement%2C+Ambikapur%2C+Faridpur+Sadar%2C+Faridpur%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Padma Riverbank, Char Bhadrasan",
+        "query_full": "Padma Riverbank, Char Bhadrासन, Char Bhadrasan riverbank and char areas, Faridpur, Faridpur, Bangladesh",
+        "description": "The Padma river and its chars create a wide, changing landscape around Char Bhadrasan. Visitors can enjoy views of boats, sandbars and rural river life. Seasonal water levels strongly affect the scenery and access. Some areas require boat transport and local guidance. Avoid unstable banks and follow current safety advice.",
+        "location": "Char Bhadrasan riverbank and char areas, Faridpur, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Padma+Riverbank%2C+Char+Bhadr%E0%A4%BE%E0%A4%B8%E0%A4%A8%2C+Char+Bhadrasan+riverbank+and+char+areas%2C+Faridpur%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Kanaipur rural countryside",
+        "query_full": "Kanaipur rural countryside, Kanaipur, Faridpur Sadar, Faridpur, Faridpur, Bangladesh",
+        "description": "Kanaipur and nearby villages offer a quiet rural landscape of fields, ponds and settlements. It can be paired with a visit to Faridpur town and nearby heritage sites. The area is suited to low-key exploration rather than a single formal attraction. Public transport and visitor facilities may be limited in smaller villages. Respect private land and local customs.",
+        "location": "Kanaipur, Faridpur Sadar, Faridpur, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Kanaipur+rural+countryside%2C+Kanaipur%2C+Faridpur+Sadar%2C+Faridpur%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Madhukhali countryside and river landscape",
+        "query_full": "Madhukhali countryside and river landscape, Madhukhali Upazila, Faridpur, Faridpur, Bangladesh",
+        "description": "Madhukhali’s countryside combines agricultural land, village markets and waterways. It is a practical base for visiting Mathurapur Deul and experiencing the district outside the town centre. The scenery changes with crop cycles and monsoon conditions. Travel between villages may take longer than expected. Ask locally for safe and direct routes.",
+        "location": "Madhukhali Upazila, Faridpur, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Madhukhali+countryside+and+river+landscape%2C+Madhukhali+Upazila%2C+Faridpur%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Faridpur town public spaces and markets",
+        "query_full": "Faridpur town public spaces and markets, Faridpur Sadar town, Faridpur, Faridpur, Bangladesh",
+        "description": "Faridpur town offers markets, food spots and public spaces for a relaxed urban visit. Its commercial centre is a useful base for nearby historical sites. Visitors can explore local produce and everyday life in the district. This is a general town attraction rather than a single monument. Be mindful of traffic and crowded market lanes.",
+        "location": "Faridpur Sadar town, Faridpur, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Faridpur+town+public+spaces+and+markets%2C+Faridpur+Sadar+town%2C+Faridpur%2C+Faridpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Arial Khan Riverbank",
+        "query_full": "Arial Khan Riverbank, Arial Khan riverfront, Faridpur District, Faridpur, Bangladesh",
+        "description": "The Arial Khan river system contributes to Faridpur’s distinctive riverine scenery. Riverside areas offer views of boats, fishing and settlements. Conditions change with seasonal rainfall and shifting channels. Not every riverbank is developed for visitors. Choose a public access point and seek local advice before arranging a boat trip.",
+        "location": "Arial Khan riverfront, Faridpur, District, Faridpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Arial+Khan+Riverbank%2C+Arial+Khan+riverfront%2C+Faridpur+District%2C+Faridpur%2C+Bangladesh"
+      }
+    ]
+  },
+  {
+    "district": "Jamalpur",
+    "slug": "jamalpur",
+    "items": [
+      {
+        "id": 1,
+        "category": "historical",
+        "name": "Hazrat Shah Jamal Shrine",
+        "query_full": "Hazrat Shah Jamal Shrine, Jamalpur town, Jamalpur Sadar, Jamalpur, Jamalpur, Bangladesh",
+        "description": "The shrine is associated with Hazrat Shah Jamal, a religious figure whose name is traditionally linked to the district’s name. It is one of Jamalpur town’s best-known devotional landmarks. The site reflects the role of religious teachers in regional settlement history. Visitors should dress respectfully and follow caretaker instructions. Crowds may increase during religious observances.",
+        "location": "Jamalpur town, Jamalpur Sadar, Jamalpur, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Hazrat+Shah+Jamal+Shrine%2C+Jamalpur+town%2C+Jamalpur+Sadar%2C+Jamalpur%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "historical",
+        "name": "Hazrat Shah Kamal Shrine",
+        "query_full": "Hazrat Shah Kamal Shrine, Jamalpur District; confirm exact local site with the upazila office, Jamalpur, Bangladesh",
+        "description": "Shah Kamal is another religious figure associated with regional traditions in the greater Mymensingh–Jamalpur area. Shrine names and locations can vary in local accounts, so confirming the precise site is essential. A visit can provide insight into local devotional culture. Treat the shrine as an active religious place. Verify the location before travelling rather than relying on an unconfirmed map pin.",
+        "location": "Jamalpur District; confirm exact, local site with the upazila office, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Hazrat+Shah+Kamal+Shrine%2C+Jamalpur+District%3B+confirm+exact+local+site+with+the+upazila+office%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "historical",
+        "name": "Malancha Mosque / historic mosque area",
+        "query_full": "Malancha Mosque / historic mosque area, Malancha area, Jamalpur District, Jamalpur, Bangladesh",
+        "description": "Local heritage lists refer to old mosques and religious structures in Jamalpur’s rural settlements. Malancha’s historic mosque area is of interest for traditional architecture and local religious history. The site may be modest and not developed for tourism. Because similar place names exist, confirm the exact mosque with local authorities. Observe mosque etiquette and ask before photography.",
+        "location": "Malancha area, Jamalpur District, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Malancha+Mosque+%2F+historic+mosque+area%2C+Malancha+area%2C+Jamalpur+District%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "historical",
+        "name": "Doyamoyee Temple",
+        "query_full": "Doyamoyee Temple, Jamalpur town, Jamalpur Sadar, Jamalpur, Jamalpur, Bangladesh",
+        "description": "Doyamoyee Temple is a known Hindu religious landmark in Jamalpur town. It represents the district’s continuing religious and cultural diversity. The temple is most active during festivals and regular worship times. Visitors should follow local customs and avoid disrupting ceremonies. Confirm opening and access arrangements with the caretakers.",
+        "location": "Jamalpur town, Jamalpur Sadar, Jamalpur, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Doyamoyee+Temple%2C+Jamalpur+town%2C+Jamalpur+Sadar%2C+Jamalpur%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "historical",
+        "name": "Historic Jamalpur town centre",
+        "query_full": "Historic Jamalpur town centre, Jamalpur Sadar town, Jamalpur, Jamalpur, Bangladesh",
+        "description": "The older town centre includes civic, religious and commercial landmarks that reflect Jamalpur’s growth as a regional administrative hub. It is best explored as a short walking route rather than one monument. Some older buildings may be altered or used for modern purposes. Local guidance can help identify surviving heritage features. Use public streets and respect active premises.",
+        "location": "Jamalpur Sadar town, Jamalpur, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Historic+Jamalpur+town+centre%2C+Jamalpur+Sadar+town%2C+Jamalpur%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 1,
+        "category": "tourist",
+        "name": "Jamuna Riverbank",
+        "query_full": "Jamuna Riverbank, Jamalpur District riverfront areas, including Sarishabari side, Jamalpur, Bangladesh",
+        "description": "The Jamuna river creates broad views and a distinctive riverine landscape in parts of Jamalpur. Visitors can observe boats, fishing and seasonal sandbars. The best viewpoints depend on water levels and safe access. Some riverfronts are remote and have few facilities. Arrange transport locally and avoid unstable banks or unsafe boat crossings.",
+        "location": "Jamalpur District riverfront areas, including Sarishabari side, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jamuna+Riverbank%2C+Jamalpur+District+riverfront+areas%2C+including+Sarishabari+side%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 2,
+        "category": "tourist",
+        "name": "Jamalpur town park and public spaces",
+        "query_full": "Jamalpur town park and public spaces, Jamalpur Sadar town, Jamalpur, Jamalpur, Bangladesh",
+        "description": "The town’s public spaces offer a simple place to relax and experience local daily life. They can be combined with the Shah Jamal shrine, Doyamoyee Temple and local markets. Facilities vary and may be busiest in the evening. This is an urban leisure stop rather than a major destination park. Keep public areas clean and follow local rules.",
+        "location": "Jamalpur Sadar town, Jamalpur, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jamalpur+town+park+and+public+spaces%2C+Jamalpur+Sadar+town%2C+Jamalpur%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 3,
+        "category": "tourist",
+        "name": "Sarishabari river and countryside",
+        "query_full": "Sarishabari river and countryside, Sarishabari Upazila, Jamalpur, Jamalpur, Bangladesh",
+        "description": "Sarishabari offers rural scenery shaped by waterways, agricultural land and village settlements. It is suitable for visitors interested in everyday countryside rather than a packaged attraction. Seasonal changes bring different views of fields and water. Visitor facilities can be limited outside the main town. Check local transport and weather before setting out.",
+        "location": "Sarishabari Upazila, Jamalpur, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Sarishabari+river+and+countryside%2C+Sarishabari+Upazila%2C+Jamalpur%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 4,
+        "category": "tourist",
+        "name": "Dewanganj riverine landscape",
+        "query_full": "Dewanganj riverine landscape, Dewanganj Upazila, Jamalpur, Jamalpur, Bangladesh",
+        "description": "Dewanganj’s northern riverine landscape includes channels, chars and agricultural settlements. It offers a glimpse of life shaped by river movement and seasonal flooding. Scenic access points are often informal rather than developed viewpoints. Local boat operators and residents can advise on safe places to visit. Do not travel onto isolated chars without local guidance.",
+        "location": "Dewanganj Upazila, Jamalpur, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Dewanganj+riverine+landscape%2C+Dewanganj+Upazila%2C+Jamalpur%2C+Jamalpur%2C+Bangladesh"
+      },
+      {
+        "id": 5,
+        "category": "tourist",
+        "name": "Jamalpur local handloom and craft markets",
+        "query_full": "Jamalpur local handloom and craft markets, Jamalpur town and nearby market areas, Jamalpur Sadar, Jamalpur, Bangladesh",
+        "description": "Jamalpur has a tradition of local crafts and handloom-related commerce. Market visits offer a cultural experience and an opportunity to see regional products. Shops and market days vary by location. This is a practical visitor activity rather than a single named monument. Compare quality and prices, and ask permission before photographing artisans.",
+        "location": "Jamalpur town and nearby market, areas, Jamalpur Sadar, Jamalpur, Bangladesh",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=Jamalpur+local+handloom+and+craft+markets%2C+Jamalpur+town+and+nearby+market+areas%2C+Jamalpur+Sadar%2C+Jamalpur%2C+Bangladesh"
+      }
+    ]
+  }
+]

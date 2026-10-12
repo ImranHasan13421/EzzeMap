@@ -5,7 +5,11 @@ const path = require('path');
 const TARGET_SLUGS = [
   'narayanganj', 'feni', 'cumilla', 'bhola',
   'barishal', 'chattogram', 'sylhet', 'noakhali',
-  'rajshahi', 'coxs-bazar', 'kurigram', 'dinajpur'
+  'rajshahi', 'coxs-bazar', 'kurigram', 'dinajpur',
+  'munshiganj', 'gazipur', 'narsingdi', 'manikganj',
+  'shariatpur', 'madaripur', 'tangail', 'brahmanbaria',
+  'rajbari', 'chandpur', 'mymensingh', 'kishoreganj',
+  'sirajganj', 'faridpur', 'jamalpur'
 ];
 
 let allOk = true;

@@ -2,11 +2,15 @@ const fs = require('fs');
 const path = require('path');
 const { DISTRICTS_DATA } = require('../district-data.js');
 const { DHAKA_DATA } = require('../data/main-info/dhaka.js');
-let curated12 = {};
+let curated27 = {};
 try {
-  curated12 = require('./curated_all_12.json');
+  curated27 = require('./curated_all_27.json');
 } catch (e) {
-  curated12 = {};
+  try {
+    curated27 = require('./curated_all_12.json');
+  } catch (e2) {
+    curated27 = {};
+  }
 }
 
 const DIV_MAP_BN = {
@@ -62,9 +66,9 @@ function enrichDistrict(d) {
   const popVal = d.pop || "1.8M";
   const distVal = d.dist || "150 km";
 
-  let curated = curated12[slug];
+  let curated = curated27[slug];
   if (!curated && (slug === 'coxs-bazar' || slug === 'cox-s-bazar')) {
-    curated = curated12['coxs-bazar'] || curated12['cox-s-bazar'];
+    curated = curated27['coxs-bazar'] || curated27['cox-s-bazar'];
   }
 
   if (curated) {
