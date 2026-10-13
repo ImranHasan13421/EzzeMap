@@ -3,13 +3,19 @@ const fs = require('fs');
 const path = require('path');
 
 const TARGET_SLUGS = [
+  'dhaka',
   'narayanganj', 'feni', 'cumilla', 'bhola',
   'barishal', 'chattogram', 'sylhet', 'noakhali',
   'rajshahi', 'coxs-bazar', 'kurigram', 'dinajpur',
   'munshiganj', 'gazipur', 'narsingdi', 'manikganj',
   'shariatpur', 'madaripur', 'tangail', 'brahmanbaria',
   'rajbari', 'chandpur', 'mymensingh', 'kishoreganj',
-  'sirajganj', 'faridpur', 'jamalpur'
+  'sirajganj', 'faridpur', 'jamalpur',
+  'lakshmipur', 'gopalganj', 'habiganj', 'pabna',
+  'netrokona', 'sherpur', 'jashore', 'jhalokathi',
+  'moulvibazar', 'bagerhat', 'bogura', 'natore',
+  'pirojpur', 'kushtia', 'jhenaidah', 'khulna',
+  'chuadanga', 'meherpur', 'patuakhali'
 ];
 
 let allOk = true;

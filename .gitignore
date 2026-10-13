@@ -25,3 +25,16 @@ __pycache__/
 
 # Documents and temporary uploads
 *.pdf
+
+# Agent and IDE local workflows
+.agent/
+.agents/
+.gemini/
+.gsd/
+GSD-STYLE.md
+PROJECT_RULES.md
+VERSION
+adapters/
+model_capabilities.yaml
+scripts/*.ps1
+scripts/*.sh

@@ -4,12 +4,16 @@ const { DISTRICTS_DATA } = require('../district-data.js');
 const { DHAKA_DATA } = require('../data/main-info/dhaka.js');
 let curated27 = {};
 try {
-  curated27 = require('./curated_all_27.json');
+  curated27 = require('./curated_all_47.json');
 } catch (e) {
   try {
-    curated27 = require('./curated_all_12.json');
+    curated27 = require('./curated_all_27.json');
   } catch (e2) {
-    curated27 = {};
+    try {
+      curated27 = require('./curated_all_12.json');
+    } catch (e3) {
+      curated27 = {};
+    }
   }
 }
 
