@@ -1,15 +1,15 @@
 /**
- * Local Host — 100% Self-Hosted, Local-First Application Architecture
- * Zero External Dependencies • Pure In-Memory Buffers
+ * Local Host BD — Comprehensive Bangladesh 64 Districts Explorer
+ * Complete District Information • Heritage Landmarks • Tourism Attractions • Vector Maps
  * 
  * Features:
  * - Direct execution out of `window.LOCAL_DISTRICTS` & `window.MAP_PATHS`
- * - Full Bilingual Engine (English by Default ↔ Proper Bangla with Kalpurush Font & Bengali Digits)
+ * - Full Bilingual Engine (English ↔ Proper Bangla with Kalpurush Font & Bengali Digits)
  * - Clickable Google Maps Location Links & App Redirection for all spots
  * - Full-width Cinematic District Hero Banner with dark gradient fade
  * - Pure CSS Scroll-Snapping 5-Image Carousel Track
  * - Enforced Top-5 Historical & Tourist Location Cards with image frames, map pins & Google Maps actions
- * - Generated real photorealistic spot images for Dhaka District
+ * - Real photorealistic spot images for districts
  * - Sticky desktop dual-column grid (left sidebar sticky, right map locked)
  * - Mobile Segmented View Controller ([ Interactive Map View ] vs [ 64 Districts List ])
  * - SVG vector map hover/touch inspection with strictly bounded tooltip
@@ -40,35 +40,35 @@ const I18N = {
   en: {
     brand_title: "Local Host BD",
     brand_tagline: "Find Places. Feel Bangladesh.",
-    brand_sub: "100% Self-Hosted • Offline-First Bangladesh Explorer",
-    api_ready: "Offline Memory Ready",
+    brand_sub: "Comprehensive 64 District Information & Exploration Guide",
+    api_ready: "District Directory Ready",
     districts_loaded: "64 Districts Loaded",
     theme_dark: "Dark",
     theme_light: "Light",
     lang_btn: "বাংলা",
     nav_vector_map: "Vector Map",
-    hero_about_badge: "🇧🇩 100% Self-Hosted • Offline-First BD64 Platform",
+    hero_about_badge: "🇧🇩 Comprehensive 64 District Information & Travel Guide",
     hero_about_title: "Explore Bangladesh District by District",
     hero_about_tagline: "Find Places. Feel Bangladesh.",
-    hero_about_desc: "Discover all 64 districts of Bangladesh with zero external network delays. Browse verified historical landmarks, iconic tourist attractions, transit travel guides, and interactive vector maps.",
-    hero_feature_1: "64 District Catalog",
+    hero_about_desc: "Discover all 64 districts of Bangladesh with comprehensive details. Explore verified historical landmarks, iconic tourist attractions, transit routes and distances from Dhaka, geographical statistics, and interactive vector maps.",
+    hero_feature_1: "64 District Profiles",
     hero_feature_2: "320+ Curated Sights",
-    hero_feature_3: "100% Offline Ready",
+    hero_feature_3: "Dhaka Transit Routes",
     hero_dev_label: "Developer Profile",
     hero_github_label: "GitHub",
     footer_brand_tagline: "Find Places. Feel Bangladesh.",
-    footer_about_text: "A 100% self-hosted, offline-first digital atlas for all 64 districts of Bangladesh. Explore verified historical landmarks, iconic tourism attractions, transit road guides from Dhaka, and vector cartography.",
+    footer_about_text: "A comprehensive district exploration guide for all 64 districts of Bangladesh. Explore verified historical landmarks, iconic tourism attractions, transit road guides from Dhaka, and interactive vector cartography.",
     footer_dev_heading: "Developer Information",
-    footer_dev_role: "Software Engineer / Creator",
-    footer_dev_bio: "Architected and built Local Host BD as a 100% self-hosted, offline-first portal showcasing Bangladesh's 64 districts with zero external network dependencies.",
+    footer_dev_role: "Software Engineer / Platform Creator",
+    footer_dev_bio: "Software Engineer passionate about building informative digital experiences. Designed and developed Local Host BD to provide travelers, students, and curious explorers with comprehensive, verified information and travel insights across all 64 districts of Bangladesh.",
     footer_explore_heading: "Explore & Navigate",
     footer_link_home_text: "Home Page",
     footer_link_map_text: "Interactive Vector Map",
     footer_link_top_text: "Back to Top ↑",
     footer_pill_spots: "🏛️ 320+ Sights",
     footer_pill_divs: "📍 8 Divisions",
-    footer_pill_latency: "⚡ Zero Latency",
-    footer_note: "100% Offline-First • Verified Local Catalog • Made for Bangladesh",
+    footer_pill_latency: "🗺️ Vector Cartography",
+    footer_note: "Comprehensive 64 District Guide • Verified Information • Made for Bangladesh",
     footer_copyright_text: "© 2026 Local Host BD. All rights reserved.",
     footer_crafted_by: "Crafted with pride by <strong class=\"text-slate-800 dark:text-slate-200\">MD. Imran Hasan</strong>",
     drawer_menu_heading: "Menu & Actions",
@@ -149,35 +149,35 @@ const I18N = {
   bn: {
     brand_title: "Local Host BD",
     brand_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
-    brand_sub: "১০০% সেলফ-হোস্টেড • অফলাইন-ফার্স্ট বাংলাদেশ প্ল্যাটফর্ম",
-    api_ready: "অফলাইন মেমোরি প্রস্তুত",
+    brand_sub: "বাংলাদেশের সকল ৬৪ জেলার তথ্যসমৃদ্ধ অনুসন্ধান গাইড",
+    api_ready: "জেলা নির্দেশিকা প্রস্তুত",
     districts_loaded: "৬৪টি জেলা সংরক্ষিত",
     theme_dark: "ডার্ক",
     theme_light: "লাইট",
     lang_btn: "English",
     nav_vector_map: "ভেক্টর ম্যাপ",
-    hero_about_badge: "🇧🇩 ১০০% সেলফ-হোস্টেড • অফলাইন-ফার্স্ট ৬৪ জেলা প্ল্যাটফর্ম",
+    hero_about_badge: "🇧🇩 বাংলাদেশের ৬৪ জেলার নির্ভরযোগ্য তথ্য ও পর্যটন গাইড",
     hero_about_title: "৬৪ জেলার ইতিহাস ও সৌন্দর্যে বাংলাদেশকে জানুন",
     hero_about_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
-    hero_about_desc: "কোনো বাহ্যিক ইন্টারনেট নির্ভরতা ছাড়াই বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, মনোমুগ্ধকর পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত রুট এবং ইন্টারেক্টিভ ভেক্টর মানচিত্র অন্বেষণ করুন।",
-    hero_feature_1: "৬৪ জেলা ক্যাটালগ",
-    hero_feature_2: "৩২০+ দর্শনীয় স্থান",
-    hero_feature_3: "১০০% অফলাইন প্রস্তুত",
+    hero_about_desc: "বাংলাদেশের সকল ৬৪ জেলার বিস্তারিত তথ্য জানুন। অন্বেষণ করুন যাচাইকৃত ঐতিহাসিক নিদর্শন, জনপ্রিয় পর্যটন আকর্ষণ, ঢাকা থেকে সুনির্দিষ্ট যাতায়াত রুট ও দূরত্ব, ভৌগোলিক পরিসংখ্যান এবং ইন্টারঅ্যাকটিভ মানচিত্র।",
+    hero_feature_1: "৬৪ জেলার প্রোফাইল",
+    hero_feature_2: "৩২০+ দর্শনীয় ও ঐতিহাসিক স্থান",
+    hero_feature_3: "ঢাকা থেকে যাতায়াত রুট",
     hero_dev_label: "ডেভেলপার পরিচিতি",
     hero_github_label: "গিটহাব",
     footer_brand_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
-    footer_about_text: "বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, জনপ্রিয় পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত পথনির্দেশ এবং ইন্টারঅ্যাকটিভ ভেক্টর মানচিত্র সমৃদ্ধ একটি নির্ভরযোগ্য অফলাইন-ফার্স্ট ডিজিটাল প্ল্যাটফর্ম।",
+    footer_about_text: "বাংলাদেশের সকল ৬৪ জেলার বিস্তারিত বিবরণ, ঐতিহাসিক নিদর্শন, জনপ্রিয় পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত পথনির্দেশ এবং ইন্টারঅ্যাকটিভ ভেক্টর মানচিত্র সমৃদ্ধ একটি নির্ভরযোগ্য তথ্যভিত্তিক ডিজিটাল প্ল্যাটফর্ম।",
     footer_dev_heading: "ডেভেলপার পরিচিতি",
-    footer_dev_role: "সফটওয়্যার প্রকৌশলী ও নির্মাতা",
-    footer_dev_bio: "বাংলাদেশের ৬৪টি জেলাকে কোনো প্রকার বহিরাগত নেটওয়ার্ক বা ইন্টারনেট নির্ভরতা ছাড়াই দ্রুত ও কার্যকরভাবে এক্সপ্লোর করতে লোকাল হোস্ট বিডি প্ল্যাটফর্মটি তৈরি করেছেন।",
+    footer_dev_role: "সফটওয়্যার প্রকৌশলী ও প্ল্যাটফর্ম নির্মাতা",
+    footer_dev_bio: "সফটওয়্যার ইঞ্জিনিয়ার এবং তথ্যভিত্তিক ডিজিটাল প্ল্যাটফর্ম নির্মাতা। ভ্রমণপিপাসু, শিক্ষার্থী ও আগ্রহীদের কাছে বাংলাদেশের সকল ৬৪ জেলার ইতিহাস, পর্যটন আকর্ষণ, যাতায়াত রুট ও ভৌগোলিক তথ্য সহজে তুলে ধরার জন্য লোকাল হোস্ট বিডি ডিজাইন ও ডেভেলপ করেছেন।",
     footer_explore_heading: "দ্রুত অন্বেষণ",
     footer_link_home_text: "হোম পেজ",
     footer_link_map_text: "ইন্টারেক্টিভ ভেক্টর মানচিত্র",
     footer_link_top_text: "উপরে ফিরে যান ↑",
     footer_pill_spots: "🏛️ ৩২০+ স্থান",
     footer_pill_divs: "📍 ৮টি বিভাগ",
-    footer_pill_latency: "⚡ জিরো লেটেন্সি",
-    footer_note: "১০০% অফলাইন-ফার্স্ট • যাচাইকৃত লোকাল ক্যাটালগ • বাংলাদেশের জন্য নির্মিত",
+    footer_pill_latency: "🗺️ ভেক্টর মানচিত্র",
+    footer_note: "৬৪ জেলার নির্ভরযোগ্য তথ্যভাণ্ডার • সমৃদ্ধ বাংলাদেশ প্ল্যাটফর্ম",
     footer_copyright_text: "© ২০২৬ লোকাল হোস্ট বিডি। সর্বস্বত্ব সংরক্ষিত।",
     footer_crafted_by: "গৌরবের সাথে তৈরি করেছেন <strong class=\"text-slate-800 dark:text-slate-200\">মোঃ ইমরান হাসান</strong>",
     drawer_menu_heading: "মেনু ও অপশন",

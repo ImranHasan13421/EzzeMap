@@ -1,15 +1,15 @@
-# Local Host — Explore Bangladesh District by District (Offline-First Edition) 🇧🇩
+# Local Host BD — Explore Bangladesh District by District 🇧🇩
 
-> A 100% self-hosted, local-first interactive vector map and district profile exploration platform for all 64 districts of Bangladesh. Zero external API dependencies, executing purely out of local memory buffers and optimized static assets.
+> A comprehensive interactive district exploration guide and digital portal for all 64 districts of Bangladesh. Features interactive vector maps, verified historical landmarks, top tourist attractions, travel routes and distances from Dhaka, and geographic statistics.
 
 ---
 
 ## 🌟 Key Features
 
-- **100% Self-Hosted & Offline-First**:
-  - Zero external API fetch calls (completely removed `bdapis.com` dynamic fetch loops).
-  - All district metadata, coordinates, statistics, and SVG vector paths execute directly from local memory buffers (`window.LOCAL_DISTRICTS` and `window.MAP_PATHS`).
-  - Native streaming of local `.webp` photography and local Kalpurush (`.woff2`) Bengali typography.
+- **Comprehensive 64 District Directory**:
+  - Detailed profiles for every district covering history, heritage, tourism, administrative data, and transit routes.
+  - Interactive SVG vector maps with real-time hover/touch district inspection and navigation.
+  - Curated photography and local Kalpurush (`.woff2`) Bengali typography.
 
 - **Cinematic District Hero Banner**:
   - Full-width, high-impact panoramic hero banner (`h-80 sm:h-96 lg:h-[440px]`) at the top of each district profile.
@@ -44,7 +44,7 @@
 
 ---
 
-## 📁 Rigid Offline Project Structure
+## 📁 Project Directory Structure
 
 ```text
 EzzeMap/
