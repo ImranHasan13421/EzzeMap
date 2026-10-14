@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Local Host — Explore Bangladesh District by District (Offline-First Edition)</title>
+  <title>Local Host BD — Explore Bangladesh District by District (Offline-First)</title>
   <meta name="description" content="100% self-hosted, offline-first interactive vector map and district profile exploration portal for all 64 districts of Bangladesh.">
+  
+  <!-- Preload Critical Assets for Optimal & Fast Loading -->
+  <link rel="preload" href="images/logo/interactive_bg.webp" as="image" type="image/webp">
+  <link rel="preload" href="images/logo/localhostbd_hero.png" as="image" type="image/png">
+  <link rel="preload" href="images/logo/localhostbd_logo.png" as="image" type="image/png">
   
   <!-- Kalpurush Bangla Font (@font-face) & Plus Jakarta Sans for English -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -131,45 +136,48 @@
     /* SVG Map Styling - Dark & Light Modes */
     .district-svg-path {
       cursor: pointer;
-      stroke-width: 1;
       touch-action: manipulation;
       transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s, filter 0.2s;
     }
     
-    /* Dark Mode Map Paths */
+    /* Dark Mode Map Paths: Theme Dark Green with crisp emerald stroke */
     .dark .district-svg-path {
-      fill: #142F23;
-      stroke: #071710;
+      fill: #0B291B; /* Theme dark green */
+      stroke: #1B4D36;
+      stroke-width: 1.1;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.65));
     }
     .dark .district-svg-path:hover {
-      fill: #10B981;
-      stroke: #6EE7B7;
-      stroke-width: 1.6;
-      filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.75));
+      fill: #10B981 !important;
+      stroke: #A7F3D0 !important;
+      stroke-width: 1.8 !important;
+      filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.9)) !important;
     }
     .dark .district-svg-path.active {
       fill: #F42A41 !important; /* Flag Red for active district */
       stroke: #FFFFFF !important;
       stroke-width: 2.2 !important;
-      filter: drop-shadow(0 0 12px rgba(244, 42, 65, 0.95)) !important;
+      filter: drop-shadow(0 0 14px rgba(244, 42, 65, 0.95)) !important;
     }
 
-    /* Light Mode Map Paths */
+    /* Light Mode Map Paths: Pure White with distinct slate boundary */
     html:not(.dark) .district-svg-path {
-      fill: #E2ECE6;
-      stroke: #CBD5E1;
+      fill: #FFFFFF; /* Pure White in light mode as requested */
+      stroke: #526B5D; /* High-contrast crisp border */
+      stroke-width: 1.1;
+      filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.12));
     }
     html:not(.dark) .district-svg-path:hover {
-      fill: #006A4E;
-      stroke: #047857;
-      stroke-width: 1.6;
-      filter: drop-shadow(0 0 7px rgba(0, 106, 78, 0.5));
+      fill: #006A4E !important; /* Flag Green hover */
+      stroke: #064E3B !important;
+      stroke-width: 1.8 !important;
+      filter: drop-shadow(0 0 9px rgba(0, 106, 78, 0.65)) !important;
     }
     html:not(.dark) .district-svg-path.active {
       fill: #F42A41 !important; /* Flag Red for active district */
-      stroke: #006A4E !important;
+      stroke: #FFFFFF !important;
       stroke-width: 2.2 !important;
-      filter: drop-shadow(0 0 10px rgba(244, 42, 65, 0.85)) !important;
+      filter: drop-shadow(0 0 12px rgba(244, 42, 65, 0.85)) !important;
     }
 
     /* Pulse animation for local offline beacon */
@@ -426,31 +434,20 @@
               কোনো বাহ্যিক ইন্টারনেট নির্ভরতা ছাড়াই বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, মনোমুগ্ধকর পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত রুট এবং ইন্টারেক্টিভ ভেক্টর মানচিত্র অন্বেষণ করুন।
             </p>
 
-            <!-- Developer Information Card -->
-            <div class="p-3 sm:p-3.5 rounded-2xl bg-slate-50/90 dark:bg-[#07150E]/80 border border-slate-200 dark:border-[#173728] flex flex-wrap items-center justify-between gap-3 shadow-inner">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-bdgreen-700 to-bdgreen-900 text-white flex items-center justify-center font-black shadow-md border border-emerald-500/20 shrink-0">
-                  <i data-lucide="code" class="w-5 h-5 text-emerald-300"></i>
-                </div>
-                <div>
-                  <div class="text-[10px] sm:text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider" id="hero-dev-label">Developed By</div>
-                  <div class="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
-                    <span>MD. Imran Hasan</span>
-                  </div>
-                </div>
+            <!-- Feature Highlights & Quick Links -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5 pt-1">
+              <div class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50/90 dark:bg-[#07150E]/80 border border-slate-200/80 dark:border-[#173728] text-xs font-bold text-slate-800 dark:text-slate-200 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-bdgreen-500 shrink-0"></span>
+                <span id="hero-feature-1">৬৪ জেলা ক্যাটালগ</span>
               </div>
-
-              <a 
-                href="https://github.com/ImranHasan13421" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-black dark:bg-[#122A1E] dark:hover:bg-[#1A3D2C] text-white text-xs font-bold transition shadow-sm hover:shadow-md border border-slate-700 dark:border-emerald-700/50 group active:scale-95"
-                title="Visit MD. Imran Hasan on GitHub"
-              >
-                <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                <span id="hero-github-label">GitHub</span>
-                <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-70"></i>
-              </a>
+              <div class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50/90 dark:bg-[#07150E]/80 border border-slate-200/80 dark:border-[#173728] text-xs font-bold text-slate-800 dark:text-slate-200 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-bdred-500 shrink-0"></span>
+                <span id="hero-feature-2">৩২০+ দর্শনীয় স্থান</span>
+              </div>
+              <div class="col-span-2 sm:col-span-1 flex items-center gap-2 p-2.5 rounded-xl bg-slate-50/90 dark:bg-[#07150E]/80 border border-slate-200/80 dark:border-[#173728] text-xs font-bold text-slate-800 dark:text-slate-200 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+                <span id="hero-feature-3">১০০% অফলাইন প্রস্তুত</span>
+              </div>
             </div>
 
           </div>
@@ -572,10 +569,23 @@
         </div>
 
         <!-- THE INTERACTIVE MAP SECTION BOX WITH FLOATING INSPECTOR CARD -->
-        <div id="map-section-wrapper" class="relative bg-slate-50 dark:bg-[#07150E] rounded-2xl border border-slate-200 dark:border-[#173728] p-3 sm:p-5 shadow-inner overflow-hidden">
+        <div id="map-section-wrapper" class="relative bg-slate-100/70 dark:bg-[#07150E] rounded-2xl border border-slate-200 dark:border-[#173728] p-3 sm:p-5 shadow-inner overflow-hidden">
           
+          <!-- Interactive Section Background Image Layer (Optimized WebP for Light & Dark Modes) -->
+          <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden rounded-2xl">
+            <img 
+              src="images/logo/interactive_bg.webp" 
+              alt="Interactive Map Background" 
+              class="w-full h-full object-cover object-center opacity-95 dark:opacity-20 dark:brightness-75 transition-opacity duration-300"
+              loading="eager"
+              decoding="async"
+            >
+            <!-- Vignette gradient to blend edges seamlessly -->
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-100/40 via-transparent to-slate-100/20 dark:from-[#07150E]/85 dark:via-[#07150E]/50 dark:to-[#07150E]/70 pointer-events-none"></div>
+          </div>
+
           <!-- DEDICATED IN-MAP DISTRICT DETAIL FLOAT / INSPECTOR BOX -->
-          <div id="map-inspector-hud" class="w-full mb-3 p-3 sm:p-3.5 rounded-xl bg-white/95 dark:bg-[#0B1E15]/95 border-2 border-bdgreen-600/40 dark:border-bdgreen-500/40 shadow-md backdrop-blur-md transition-all duration-200 cursor-pointer">
+          <div id="map-inspector-hud" class="relative z-10 w-full mb-3 p-3 sm:p-3.5 rounded-xl bg-white/95 dark:bg-[#0B1E15]/95 border-2 border-bdgreen-600/40 dark:border-bdgreen-500/40 shadow-md backdrop-blur-md transition-all duration-200 cursor-pointer">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               
               <!-- District Info -->
@@ -620,7 +630,7 @@
           </div>
 
           <!-- SVG Vector Map Rendering Container -->
-          <div id="empty-state-svg-map-container" class="w-full flex items-center justify-center h-[340px] sm:h-[420px] lg:h-[480px] max-h-[520px] relative overflow-hidden py-1">
+          <div id="empty-state-svg-map-container" class="relative z-10 w-full flex items-center justify-center h-[340px] sm:h-[420px] lg:h-[480px] max-h-[520px] overflow-hidden py-1">
             <!-- Inline SVG rendered via JS -->
 
             <!-- Smart Floater Tooltip Strictly Confined to Map Container -->
@@ -634,7 +644,7 @@
           </div>
 
           <!-- Bottom Legend for Green Flag (Hover) / Red Flag (Active) -->
-          <div class="pt-2.5 sm:pt-3 border-t border-slate-200 dark:border-[#173728] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1.5 text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
+          <div class="relative z-10 pt-2.5 sm:pt-3 border-t border-slate-200 dark:border-[#173728] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1.5 text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
             <div class="flex items-center gap-3">
               <span class="flex items-center gap-1.5">
                 <span class="w-2.5 h-2.5 rounded-sm bg-bdred-500 inline-block shadow-sm"></span>
@@ -948,6 +958,140 @@
 
   </main>
 
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="mt-8 border-t border-slate-200 dark:border-[#173728] bg-white/95 dark:bg-[#07150E]/95 backdrop-blur-md relative z-10 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        
+        <!-- Column 1: Brand, Basic Information & Hero Thumbnail -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-emerald-700/60 bg-white dark:bg-[#0B1E15] shrink-0">
+              <img src="images/logo/localhostbd_logo.png" alt="Local Host BD Logo" class="w-full h-full object-contain p-0.5">
+            </div>
+            <div>
+              <div class="text-base sm:text-lg font-black text-slate-900 dark:text-white leading-tight">Local Host BD</div>
+              <div id="footer-brand-tagline" class="text-xs text-bdgreen-700 dark:text-bdgreen-400 font-bold">স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।</div>
+            </div>
+          </div>
+
+          <p id="footer-about-text" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+            বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, জনপ্রিয় পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত পথনির্দেশ এবং ইন্টারঅ্যাকটিভ ভেক্টর মানচিত্র সমৃদ্ধ একটি নির্ভরযোগ্য অফলাইন-ফার্স্ট ডিজিটাল প্ল্যাটফর্ম।
+          </p>
+
+          <!-- Hero Image Preview Card in Footer -->
+          <div class="relative rounded-xl overflow-hidden border border-slate-200 dark:border-[#173728] shadow-sm max-w-sm group">
+            <img 
+              src="images/logo/localhostbd_hero.png" 
+              alt="Local Host BD Banner" 
+              class="w-full h-24 sm:h-28 object-cover group-hover:scale-105 transition-transform duration-500" 
+              loading="lazy" 
+              decoding="async"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white text-[10px] font-bold">
+              <span class="flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-bdred-500"></span>
+                <span>Local Host BD Explorer</span>
+              </span>
+              <span class="bg-bdgreen-700/90 px-2 py-0.5 rounded-full text-[9px] border border-emerald-400/30">
+                64 Districts Offline
+              </span>
+            </div>
+          </div>
+
+          <!-- Basic Statistics / Highlights -->
+          <div class="flex flex-wrap items-center gap-2 text-[11px] font-bold text-slate-600 dark:text-slate-400">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]">🏛️ ৩২০+ স্থান</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]">📍 ৮টি বিভাগ</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]">⚡ জিরো লেটেন্সি</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Developer Showcase Card (MD. Imran Hasan & GitHub) -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="text-xs font-black uppercase tracking-wider text-slate-400 dark:text-slate-500" id="footer-dev-heading">
+            ডেভেলপার পরিচিতি (Developer)
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] shadow-sm space-y-3.5">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-bdgreen-700 via-bdgreen-800 to-bdgreen-950 text-white flex items-center justify-center font-black shadow-md border border-emerald-500/30 shrink-0 text-base">
+                IH
+              </div>
+              <div>
+                <div class="text-sm sm:text-base font-black text-slate-900 dark:text-white">MD. Imran Hasan</div>
+                <div class="text-xs text-bdgreen-700 dark:text-bdgreen-400 font-bold" id="footer-dev-role">Software Engineer / Creator</div>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed" id="footer-dev-bio">
+              Architected and built Local Host BD as a 100% self-hosted, offline-first portal showcasing Bangladesh's 64 districts with zero external network dependencies.
+            </p>
+
+            <a 
+              href="https://github.com/ImranHasan13421" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center justify-center gap-2.5 w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-black dark:bg-[#122A1E] dark:hover:bg-[#1A3D2C] text-white text-xs font-bold transition shadow-sm hover:shadow-md border border-slate-700 dark:border-emerald-700/50 group active:scale-98"
+              title="Visit Imran Hasan on GitHub"
+            >
+              <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform shrink-0" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span id="footer-github-label">https://github.com/ImranHasan13421</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-70 shrink-0"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 3: Quick Navigation & Top -->
+        <div class="md:col-span-3 space-y-4">
+          <div class="text-xs font-black uppercase tracking-wider text-slate-400 dark:text-slate-500" id="footer-explore-heading">
+            দ্রুত অন্বেষণ (Explore)
+          </div>
+
+          <ul class="space-y-2 text-xs font-bold text-slate-600 dark:text-slate-300">
+            <li>
+              <a href="#/" class="hover:text-bdgreen-600 dark:hover:text-bdgreen-400 flex items-center gap-2 transition" id="footer-link-home">
+                <i data-lucide="home" class="w-3.5 h-3.5 text-bdgreen-600 dark:text-bdgreen-400"></i>
+                <span id="footer-link-home-text">হোম পেজ (Home)</span>
+              </a>
+            </li>
+            <li>
+              <button onclick="openMapModal()" class="hover:text-bdgreen-600 dark:hover:text-bdgreen-400 flex items-center gap-2 transition text-left cursor-pointer">
+                <i data-lucide="map" class="w-3.5 h-3.5 text-bdred-500"></i>
+                <span id="footer-link-map-text">ইন্টারেক্টিভ ভেক্টর মানচিত্র</span>
+              </button>
+            </li>
+            <li>
+              <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="hover:text-bdgreen-600 dark:hover:text-bdgreen-400 flex items-center gap-2 transition text-left cursor-pointer">
+                <i data-lucide="arrow-up" class="w-3.5 h-3.5 text-emerald-500"></i>
+                <span id="footer-link-top-text">উপরে ফিরে যান (Top)</span>
+              </button>
+            </li>
+          </ul>
+
+          <div class="pt-2">
+            <div class="text-[11px] text-slate-400 dark:text-slate-500 font-medium" id="footer-note">
+              100% Offline-First • Verified Local Catalog • Made for Bangladesh
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="mt-8 pt-6 border-t border-slate-200 dark:border-[#173728] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400 font-medium">
+        <div id="footer-copyright-text">
+          © 2026 Local Host BD. সর্বস্বত্ব সংরক্ষিত।
+        </div>
+        <div class="flex items-center gap-2 text-[11px]">
+          <span class="inline-block w-2 h-2 rounded-full bg-bdgreen-500"></span>
+          <span>Crafted with pride by <strong class="text-slate-800 dark:text-slate-200">MD. Imran Hasan</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- ==================== FULL VECTOR MAP MODAL ==================== -->
   <div id="vector-map-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md">
     <div class="bg-white dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728] rounded-2xl max-w-4xl w-full p-4 sm:p-6 shadow-2xl flex flex-col h-[92vh] sm:h-[88vh] animate-slide-up">
@@ -976,8 +1120,19 @@
         <span id="modal-inspector-action" class="text-bdred-600 dark:text-bdred-400 font-bold shrink-0 text-[11px] sm:text-xs">Open Profile →</span>
       </div>
 
-      <!-- Map Render Zone -->
-      <div id="modal-svg-map-container" class="flex-1 flex items-center justify-center p-2 overflow-hidden relative">
+      <!-- Map Render Zone with Optimized Background WebP -->
+      <div id="modal-svg-map-container" class="flex-1 flex items-center justify-center p-2 overflow-hidden relative rounded-xl bg-slate-100/70 dark:bg-[#07150E]/70 border border-slate-200/60 dark:border-[#173728]/60">
+        <!-- Background Layer for Modal Map -->
+        <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden rounded-xl">
+          <img 
+            src="images/logo/interactive_bg.webp" 
+            alt="" 
+            class="w-full h-full object-cover object-center opacity-90 dark:opacity-20 dark:brightness-75 transition-opacity"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-100/40 via-transparent to-slate-100/20 dark:from-[#07150E]/85 dark:via-[#07150E]/50 dark:to-[#07150E]/70 pointer-events-none"></div>
+        </div>
         <!-- SVG will be placed here -->
       </div>
 
@@ -1004,10 +1159,10 @@
   </div>
 
   <!-- ==================== LOCAL-FIRST DATA CATALOGS (ZERO EXTERNAL FETCH) ==================== -->
-  <script src="data/bangladesh-map-viewbox.js?v=2.6.0"></script>
-  <script src="data/map-paths.js?v=2.6.0"></script>
-  <script src="data/main-info/catalog.js?v=2.6.0"></script>
-  <script src="data/main-info/dhaka.js?v=2.6.0"></script>
-  <script src="app.js?v=2.6.0"></script>
+  <script src="data/bangladesh-map-viewbox.js?v=2.7.0"></script>
+  <script src="data/map-paths.js?v=2.7.0"></script>
+  <script src="data/main-info/catalog.js?v=2.7.0"></script>
+  <script src="data/main-info/dhaka.js?v=2.7.0"></script>
+  <script src="app.js?v=2.7.0"></script>
 </body>
 </html>

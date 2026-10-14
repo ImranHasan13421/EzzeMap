@@ -51,8 +51,21 @@ const I18N = {
     hero_about_title: "Explore Bangladesh District by District",
     hero_about_tagline: "Find Places. Feel Bangladesh.",
     hero_about_desc: "Discover all 64 districts of Bangladesh with zero external network delays. Browse verified historical landmarks, iconic tourist attractions, transit travel guides, and interactive vector maps.",
-    hero_dev_label: "Developed By",
+    hero_feature_1: "64 District Catalog",
+    hero_feature_2: "320+ Curated Sights",
+    hero_feature_3: "100% Offline Ready",
+    hero_dev_label: "Developer Profile",
     hero_github_label: "GitHub",
+    footer_brand_tagline: "Find Places. Feel Bangladesh.",
+    footer_about_text: "A 100% self-hosted, offline-first digital atlas for all 64 districts of Bangladesh. Explore verified historical landmarks, iconic tourism attractions, transit road guides from Dhaka, and vector cartography.",
+    footer_dev_heading: "Developer Information",
+    footer_dev_role: "Software Engineer / Creator",
+    footer_dev_bio: "Architected and built Local Host BD as a 100% self-hosted, offline-first portal showcasing Bangladesh's 64 districts with zero external network dependencies.",
+    footer_explore_heading: "Explore & Navigate",
+    footer_link_home_text: "Home Page",
+    footer_link_map_text: "Interactive Vector Map",
+    footer_link_top_text: "Back to Top ↑",
+    footer_copyright_text: "© 2026 Local Host BD. All rights reserved.",
     drawer_menu_heading: "Menu & Actions",
     drawer_theme_hint: "Switch Theme",
     drawer_lang_hint: "Switch Language",
@@ -142,8 +155,21 @@ const I18N = {
     hero_about_title: "৬৪ জেলার ইতিহাস ও সৌন্দর্যে বাংলাদেশকে জানুন",
     hero_about_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
     hero_about_desc: "কোনো বাহ্যিক ইন্টারনেট নির্ভরতা ছাড়াই বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, মনোমুগ্ধকর পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত রুট এবং ইন্টারেক্টিভ ভেক্টর মানচিত্র অন্বেষণ করুন।",
+    hero_feature_1: "৬৪ জেলা ক্যাটালগ",
+    hero_feature_2: "৩২০+ দর্শনীয় স্থান",
+    hero_feature_3: "১০০% অফলাইন প্রস্তুত",
     hero_dev_label: "ডেভেলপার পরিচিতি",
     hero_github_label: "গিটহাব",
+    footer_brand_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
+    footer_about_text: "বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, জনপ্রিয় পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত পথনির্দেশ এবং ইন্টারঅ্যাকটিভ ভেক্টর মানচিত্র সমৃদ্ধ একটি নির্ভরযোগ্য অফলাইন-ফার্স্ট ডিজিটাল প্ল্যাটফর্ম।",
+    footer_dev_heading: "ডেভেলপার পরিচিতি (Developer)",
+    footer_dev_role: "সফটওয়্যার ইঞ্জিনিয়ার ও ক্রিয়েটর",
+    footer_dev_bio: "বাংলাদেশের ৬৪টি জেলাকে কোনো প্রকার বহিরাগত নেটওয়ার্ক বা ইন্টারনেট নির্ভরতা ছাড়াই দ্রুত ও কার্যকরভাবে এক্সপ্লোর করতে লোকাল হোস্ট বিডি প্ল্যাটফর্মটি তৈরি করেছেন।",
+    footer_explore_heading: "দ্রুত অন্বেষণ (Explore)",
+    footer_link_home_text: "হোম পেজ (Home)",
+    footer_link_map_text: "ইন্টারেক্টিভ ভেক্টর মানচিত্র",
+    footer_link_top_text: "উপরে ফিরে যান (Top)",
+    footer_copyright_text: "© 2026 Local Host BD. সর্বস্বত্ব সংরক্ষিত।",
     drawer_menu_heading: "মেনু ও অপশন",
     drawer_theme_hint: "থিম পরিবর্তন",
     drawer_lang_hint: "ভাষা পরিবর্তন",
@@ -373,6 +399,15 @@ function applyTheme(theme) {
 
   AppState.currentTheme = theme;
   localStorage.setItem(THEME_KEY, theme);
+
+  // Reset any temporary hover fill styles on non-selected paths so they adapt to new theme colors
+  document.querySelectorAll('.district-svg-path').forEach(p => {
+    const pId = Number(p.getAttribute('data-id'));
+    if (pId !== AppState.selectedDistrictId) {
+      p.style.fill = '';
+    }
+  });
+
   initLucideIcons();
 }
 
@@ -507,11 +542,46 @@ function updateStaticTranslations() {
   const heroDesc = document.getElementById('hero-about-desc');
   if (heroDesc) heroDesc.textContent = t.hero_about_desc;
 
-  const heroDev = document.getElementById('hero-dev-label');
-  if (heroDev) heroDev.textContent = t.hero_dev_label;
+  // Hero Feature Highlights
+  const heroF1 = document.getElementById('hero-feature-1');
+  if (heroF1) heroF1.textContent = t.hero_feature_1;
 
-  const heroGithub = document.getElementById('hero-github-label');
-  if (heroGithub) heroGithub.textContent = t.hero_github_label;
+  const heroF2 = document.getElementById('hero-feature-2');
+  if (heroF2) heroF2.textContent = t.hero_feature_2;
+
+  const heroF3 = document.getElementById('hero-feature-3');
+  if (heroF3) heroF3.textContent = t.hero_feature_3;
+
+  // Footer Elements
+  const footerTagline = document.getElementById('footer-brand-tagline');
+  if (footerTagline) footerTagline.textContent = t.footer_brand_tagline;
+
+  const footerAbout = document.getElementById('footer-about-text');
+  if (footerAbout) footerAbout.textContent = t.footer_about_text;
+
+  const footerDevHeading = document.getElementById('footer-dev-heading');
+  if (footerDevHeading) footerDevHeading.textContent = t.footer_dev_heading;
+
+  const footerDevRole = document.getElementById('footer-dev-role');
+  if (footerDevRole) footerDevRole.textContent = t.footer_dev_role;
+
+  const footerDevBio = document.getElementById('footer-dev-bio');
+  if (footerDevBio) footerDevBio.textContent = t.footer_dev_bio;
+
+  const footerExploreHeading = document.getElementById('footer-explore-heading');
+  if (footerExploreHeading) footerExploreHeading.textContent = t.footer_explore_heading;
+
+  const footerLinkHome = document.getElementById('footer-link-home-text');
+  if (footerLinkHome) footerLinkHome.textContent = t.footer_link_home_text;
+
+  const footerLinkMap = document.getElementById('footer-link-map-text');
+  if (footerLinkMap) footerLinkMap.textContent = t.footer_link_map_text;
+
+  const footerLinkTop = document.getElementById('footer-link-top-text');
+  if (footerLinkTop) footerLinkTop.textContent = t.footer_link_top_text;
+
+  const footerCopyright = document.getElementById('footer-copyright-text');
+  if (footerCopyright) footerCopyright.textContent = t.footer_copyright_text;
 
   // Drawer Labels
   const drawerHeading = document.getElementById('drawer-menu-heading');
