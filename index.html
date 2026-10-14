@@ -263,6 +263,16 @@
           <span id="lang-toggle-label" class="font-extrabold tracking-tight">English</span>
         </button>
 
+        <!-- Amar GhoraGhuri / My Travel Spots Button -->
+        <button 
+          id="nav-travel-spots-btn" 
+          title="Amar GhoraGhuri (My Travel Spots)" 
+          class="px-3.5 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-emerald-600 to-bdgreen-700 hover:from-emerald-700 hover:to-bdgreen-800 text-white flex items-center gap-2 transition-all shadow-sm shadow-emerald-700/25 active:scale-95 cursor-pointer min-h-[40px]"
+        >
+          <i data-lucide="compass" class="w-4 h-4 text-emerald-200"></i>
+          <span id="nav-travel-spots-label">আমার ঘোরাঘুরি</span>
+        </button>
+
         <!-- View Full Map Button -->
         <button 
           id="view-map-modal-btn" 
@@ -340,6 +350,18 @@
             <span id="mobile-lang-label">English</span>
           </span>
           <span class="text-[11px] font-medium text-slate-400 dark:text-slate-500" id="mobile-lang-hint">ভাষা / Lang</span>
+        </button>
+
+        <!-- Mobile Amar GhoraGhuri / My Travel Spots Button -->
+        <button 
+          id="mobile-travel-spots-btn" 
+          class="w-full px-3.5 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-bdgreen-700 hover:from-emerald-700 hover:to-bdgreen-800 text-white text-sm font-bold flex items-center justify-between transition-all shadow-sm shadow-emerald-700/30 active:scale-98 cursor-pointer"
+        >
+          <span class="flex items-center gap-2.5">
+            <i data-lucide="compass" class="w-4 h-4 text-emerald-200"></i>
+            <span id="mobile-travel-spots-label">আমার ঘোরাঘুরি</span>
+          </span>
+          <i data-lucide="chevron-right" class="w-4 h-4 opacity-70"></i>
         </button>
 
         <!-- Mobile Vector Map Button -->
@@ -1002,6 +1024,247 @@
 
     </article>
 
+    <!-- =================================================================== -->
+    <!-- VIEW C: AMAR GHORAGHURI / MY TRAVEL SPOTS (Photo Generator & Map)   -->
+    <!-- =================================================================== -->
+    <section id="view-travel-spots" class="hidden max-w-7xl mx-auto space-y-4 sm:space-y-6 animate-slide-up">
+
+      <!-- Breadcrumbs & Navigation Header -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-white/80 dark:bg-[#0B1E15]/80 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-[#173728] shadow-sm">
+        <div class="space-y-1">
+          <div class="flex items-center gap-2 text-xs font-bold text-slate-500 dark:text-slate-400">
+            <button onclick="navigateToHome()" class="hover:text-bdgreen-600 dark:hover:text-bdgreen-400 flex items-center gap-1 cursor-pointer">
+              <i data-lucide="home" class="w-3.5 h-3.5"></i>
+              <span id="travel-breadcrumb-home">হোম</span>
+            </button>
+            <span>/</span>
+            <span id="travel-breadcrumb-current" class="text-bdgreen-700 dark:text-bdgreen-400 font-extrabold">আমার ঘোরাঘুরি</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/70 border border-emerald-300 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-[11px] font-black">
+              <i data-lucide="camera" class="w-3 h-3"></i>
+              <span id="travel-badge-label">ট্রাভেল ফটো জেনারেটর</span>
+            </span>
+          </div>
+          <h2 id="travel-page-title" class="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight">আমার ঘোরাঘুরি</h2>
+          <p id="travel-page-desc" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
+            আপনি বাংলাদেশের যেসব জেলায় ভ্রমণ করেছেন সেগুলো নির্বাচন করুন এবং নিজের ছবি ও নাম দিয়ে সুন্দর ট্রাভেল ম্যাপ তৈরি করে ডাউনলোড করুন।
+          </p>
+        </div>
+
+        <button 
+          onclick="navigateToHome()" 
+          class="px-4 py-2 text-xs font-bold rounded-xl bg-slate-100 dark:bg-[#07150E] hover:bg-slate-200 dark:hover:bg-[#122A1E] text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-[#173728] transition flex items-center gap-1.5 cursor-pointer shrink-0"
+        >
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span id="travel-back-btn-text">হোমে ফিরে যান</span>
+        </button>
+      </div>
+
+      <!-- Mobile Segmented View Switcher (Visible on < lg) -->
+      <div class="lg:hidden flex items-center p-1 bg-slate-100 dark:bg-[#07150E] rounded-xl border border-slate-200 dark:border-[#173728]">
+        <button 
+          id="travel-tab-select-btn" 
+          onclick="setTravelMobileTab('select')"
+          class="flex-1 py-2 sm:py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer"
+        >
+          <i data-lucide="check-square" class="w-3.5 h-3.5"></i>
+          <span id="travel-tab-select-label">জেলা নির্বাচন</span>
+          <span id="travel-mobile-chip-count" class="px-1.5 py-0.5 rounded-full bg-white/20 text-[10px] font-black">০/৬৪</span>
+        </button>
+        <button 
+          id="travel-tab-card-btn" 
+          onclick="setTravelMobileTab('card')"
+          class="flex-1 py-2 sm:py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer"
+        >
+          <i data-lucide="image" class="w-3.5 h-3.5"></i>
+          <span id="travel-tab-card-label">কার্ড প্রিভিউ ও ডাউনলোড</span>
+        </button>
+      </div>
+
+      <!-- Main Dual-Column Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
+        
+        <!-- ==================== LEFT COLUMN: DISTRICT SELECTION LIST ==================== -->
+        <div id="travel-pane-selection" class="lg:col-span-5 bg-white/90 dark:bg-[#0B1E15]/90 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-5 shadow-lg flex flex-col space-y-4">
+          
+          <!-- Heading & Counter Badge -->
+          <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-[#173728]">
+            <div>
+              <h3 id="travel-selection-heading" class="text-base sm:text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-bdgreen-600 dark:text-bdgreen-400"></i>
+                <span id="travel-selection-title">যেসব জেলায় গিয়েছি</span>
+              </h3>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium" id="travel-selection-sub">জেলা ক্লিক করে বাছাই বা বাতিল করুন</p>
+            </div>
+            <div class="px-3 py-1 rounded-full bg-bdgreen-100 dark:bg-bdgreen-950/80 text-bdgreen-800 dark:text-bdgreen-300 font-black text-xs sm:text-sm border border-bdgreen-300 dark:border-bdgreen-800 flex items-center gap-1">
+              <span id="travel-visited-fraction">০ / ৬৪</span>
+            </div>
+          </div>
+
+          <!-- District Live Search Input -->
+          <div class="relative">
+            <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-slate-400"></i>
+            <input 
+              id="travel-search-input" 
+              type="text" 
+              placeholder="জেলা খুঁজুন..." 
+              class="w-full pl-9 pr-9 py-2 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] text-xs sm:text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-bdgreen-500 font-medium"
+            >
+            <button id="travel-search-clear-btn" class="hidden absolute right-2.5 top-2.5 p-0.5 rounded-full text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 cursor-pointer">
+              <i data-lucide="x" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <!-- Bulk Selection Actions -->
+          <div class="flex items-center justify-between text-xs font-bold pt-1">
+            <button id="travel-select-all-btn" class="text-bdgreen-700 dark:text-bdgreen-400 hover:underline flex items-center gap-1 cursor-pointer">
+              <i data-lucide="check-check" class="w-3.5 h-3.5"></i>
+              <span id="travel-select-all-label">সব বাছাই করুন</span>
+            </button>
+            <button id="travel-clear-all-btn" class="text-red-600 dark:text-red-400 hover:underline flex items-center gap-1 cursor-pointer">
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+              <span id="travel-clear-all-label">সব মুছুন</span>
+            </button>
+          </div>
+
+          <!-- 8 Divisions Accordion Container -->
+          <div id="travel-divisions-list" class="space-y-4 max-h-[600px] overflow-y-auto pr-1">
+            <!-- Dynamic division groups rendered by app.js -->
+          </div>
+        </div>
+
+        <!-- ==================== RIGHT COLUMN: CUSTOMIZATION & 3:4 CARD PREVIEW ==================== -->
+        <div id="travel-pane-preview" class="lg:col-span-7 bg-white/90 dark:bg-[#0B1E15]/90 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-[#173728] p-4 sm:p-5 shadow-lg flex flex-col space-y-4">
+          
+          <!-- Customization Toolbar -->
+          <div class="flex flex-wrap items-center justify-between gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728]">
+            
+            <!-- Avatar Upload Control -->
+            <label for="travel-avatar-upload" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white dark:bg-[#0D2117] border border-slate-200 dark:border-[#1B3E2E] hover:bg-slate-100 dark:hover:bg-[#143124] text-slate-800 dark:text-slate-200 text-xs font-bold transition shadow-sm cursor-pointer min-h-[38px]">
+              <img id="travel-toolbar-avatar-img" src="images/logo/localhostbd_logo.png" alt="Avatar Preview" class="w-6 h-6 rounded-md object-cover border border-emerald-600">
+              <i data-lucide="upload" class="w-3.5 h-3.5 text-bdgreen-600 dark:text-bdgreen-400"></i>
+              <span id="travel-change-photo-text">ছবি বদলান</span>
+              <input type="file" id="travel-avatar-upload" accept="image/*" class="hidden">
+            </label>
+
+            <!-- Name Input Field -->
+            <div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white dark:bg-[#0D2117] border border-slate-200 dark:border-[#1B3E2E] text-xs min-h-[38px] flex-1 min-w-[180px] max-w-xs shadow-sm">
+              <span id="travel-name-input-label" class="font-extrabold text-slate-500 dark:text-slate-400 shrink-0">নাম:</span>
+              <input 
+                id="travel-name-input" 
+                type="text" 
+                value="MD. Imran Hasan" 
+                maxlength="30"
+                class="w-full bg-transparent font-black text-slate-900 dark:text-white focus:outline-none placeholder-slate-400"
+                placeholder="আপনার নাম..."
+              >
+            </div>
+
+            <!-- District Names Badge Toggle -->
+            <label class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white dark:bg-[#0D2117] border border-slate-200 dark:border-[#1B3E2E] text-xs font-bold text-slate-700 dark:text-slate-200 cursor-pointer select-none shadow-sm min-h-[38px]">
+              <input type="checkbox" id="travel-toggle-names-checkbox" checked class="w-4 h-4 rounded text-bdgreen-700 focus:ring-bdgreen-500 accent-bdgreen-700 cursor-pointer">
+              <span id="travel-toggle-names-label">জেলার নাম</span>
+            </label>
+          </div>
+
+          <!-- THE 3:4 ASPECT RATIO TRAVEL CARD PREVIEW FRAME -->
+          <div class="w-full flex justify-center py-2">
+            <div 
+              id="travel-card-element" 
+              class="w-full max-w-[460px] aspect-[3/4] rounded-3xl overflow-hidden relative shadow-2xl border-4 border-white/90 dark:border-[#173728] flex flex-col justify-between p-4 sm:p-5 select-none transition-all"
+              style="background-image: url('images/logo/interactive_bg.webp'); background-size: cover; background-position: center;"
+            >
+              <!-- Card Top Header -->
+              <div class="flex items-center justify-between gap-3 relative z-10">
+                <!-- Avatar Frame & Title -->
+                <div class="flex items-center gap-2.5 sm:gap-3">
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl overflow-hidden border-2 sm:border-3 border-[#006A4E] shadow-md bg-white shrink-0">
+                    <img id="card-avatar-preview" src="images/logo/localhostbd_logo.png" alt="Card Avatar" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                    <div id="card-subtitle-text" class="text-[10px] sm:text-xs font-semibold text-slate-600 leading-tight">বাংলাদেশ ভ্রমণ ম্যাপ</div>
+                    <div id="card-title-text" class="text-sm sm:text-base md:text-lg font-black text-slate-900 tracking-tight leading-tight mt-0.5">MD. Imran Hasan-এর বাংলাদেশ</div>
+                  </div>
+                </div>
+
+                <!-- Visited / 64 Fraction Badge -->
+                <div class="text-right shrink-0 leading-none">
+                  <span id="card-visited-number" class="text-2xl sm:text-4xl font-black text-[#006A4E]">০</span><span class="text-base sm:text-2xl font-bold text-slate-500">/<span id="card-total-number">৬৪</span></span>
+                </div>
+              </div>
+
+              <!-- Center Bangladesh SVG Vector Map with Visited Highlight & Pin Overlays -->
+              <div class="flex-1 relative my-1 sm:my-2 flex items-center justify-center overflow-hidden">
+                <svg 
+                  id="travel-card-svg" 
+                  viewBox="-40 -35 680 918" 
+                  class="w-full h-full max-h-[460px] drop-shadow-sm"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <!-- Base Map Districts Group -->
+                  <g id="travel-svg-districts-group"></g>
+                  
+                  <!-- Visited District Pins & Badges Group -->
+                  <g id="travel-svg-pins-group"></g>
+                </svg>
+              </div>
+
+              <!-- Card Bottom Progress & Branding Section -->
+              <div class="relative z-10 space-y-2 pt-2 border-t border-slate-300/60">
+                <!-- Progress Bar Track -->
+                <div class="w-full h-2 rounded-full bg-[#DDD6C9] overflow-hidden">
+                  <div id="card-progress-bar" class="h-full bg-[#006A4E] rounded-full transition-all duration-300" style="width: 0%;"></div>
+                </div>
+
+                <!-- Statistics Line -->
+                <div class="flex items-center justify-between text-[10px] sm:text-[11px] font-bold text-slate-800">
+                  <span id="card-percent-text">০% বাংলাদেশ ঘোরা হয়েছে</span>
+                  <span id="card-div-stat-text">০টি জেলা • ৮টির মধ্যে ০টি বিভাগ</span>
+                </div>
+
+                <!-- Slogan & Local Host BD Logo Row -->
+                <div class="flex items-center justify-between pt-1">
+                  <div>
+                    <div id="card-slogan-sub-text" class="text-[9px] sm:text-[10px] font-semibold text-slate-600">মানচিত্র পূরণ করতে</div>
+                    <div id="card-slogan-main-text" class="text-xs sm:text-sm font-black text-[#006A4E]">ঘুরতে থাকুন Local Host BD এর সাথে</div>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-white/70 backdrop-blur-sm px-2 py-1 rounded-xl border border-emerald-700/30 shadow-sm">
+                    <img src="images/logo/localhostbd_logo.png" alt="Local Host BD" class="w-6 h-6 object-contain">
+                    <span class="text-[9px] font-black text-slate-900">Local Host BD</span>
+                  </div>
+                </div>
+
+                <!-- Footer Watermark -->
+                <div class="text-center text-[9px] font-medium text-slate-500 pt-0.5">
+                  Local Host BD • 64 Districts Explorer • localhostbd
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bottom Action & Tip -->
+          <div class="space-y-2">
+            <p id="travel-card-tip-text" class="text-center text-xs text-slate-500 dark:text-slate-400 font-medium">
+              টিপস: ম্যাপের জেলায় সরাসরি ক্লিক করেও বাছাই করতে পারেন।
+            </p>
+
+            <button 
+              id="download-travel-card-btn" 
+              class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-emerald-600 via-bdgreen-700 to-emerald-800 hover:from-emerald-700 hover:to-bdgreen-900 text-white font-black text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-emerald-700/25 active:scale-98 transition cursor-pointer"
+            >
+              <i data-lucide="download" class="w-5 h-5"></i>
+              <span id="download-card-btn-text">↓ আপনার ম্যাপ ডাউনলোড করুন</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
   <!-- ==================== GLOBAL FOOTER ==================== -->
@@ -1100,6 +1363,12 @@
               <a href="#/" class="hover:text-bdgreen-600 dark:hover:text-bdgreen-400 flex items-center gap-2 transition" id="footer-link-home">
                 <i data-lucide="home" class="w-3.5 h-3.5 text-bdgreen-600 dark:text-bdgreen-400"></i>
                 <span id="footer-link-home-text">হোম পেজ (Home)</span>
+              </a>
+            </li>
+            <li>
+              <a href="#/amar-ghoraghuri" class="hover:text-bdgreen-600 dark:hover:text-bdgreen-400 flex items-center gap-2 transition" id="footer-link-travel-spots">
+                <i data-lucide="compass" class="w-3.5 h-3.5 text-emerald-500"></i>
+                <span id="footer-link-travel-spots-text">আমার ঘোরাঘুরি (My Travel Spots)</span>
               </a>
             </li>
             <li>
@@ -1219,10 +1488,10 @@
   </div>
 
   <!-- ==================== DISTRICT DATA CATALOGS & CORE ENGINE ==================== -->
-  <script src="data/bangladesh-map-viewbox.js?v=2.10.0"></script>
-  <script src="data/map-paths.js?v=2.10.0"></script>
-  <script src="data/main-info/catalog.js?v=2.10.0"></script>
-  <script src="data/main-info/dhaka.js?v=2.10.0"></script>
-  <script src="app.js?v=2.10.0"></script>
+  <script src="data/bangladesh-map-viewbox.js?v=2.11.0"></script>
+  <script src="data/map-paths.js?v=2.11.0"></script>
+  <script src="data/main-info/catalog.js?v=2.11.0"></script>
+  <script src="data/main-info/dhaka.js?v=2.11.0"></script>
+  <script src="app.js?v=2.11.0"></script>
 </body>
 </html>

@@ -282,7 +282,38 @@ const I18N = {
     open_maps_app: "Open in Google Maps",
     toast_theme: "Theme switched to",
     toast_lang_en: "Language set to English",
-    toast_lang_bn: "ভাষা পরিবর্তন করে বাংলা করা হয়েছে",
+    toast_lang_bn: "Language set to Bangla",
+    nav_travel_spots: "My Travel Spots",
+    travel_breadcrumb_home: "Home",
+    travel_breadcrumb_current: "My Travel Spots",
+    travel_badge_label: "Travel Photo Generator",
+    travel_page_title: "My Travel Spots",
+    travel_page_desc: "Select the districts in Bangladesh you've traveled to, personalize your photo & name, and download your travel map.",
+    travel_back_btn: "Back to Home",
+    travel_tab_select: "Select Districts",
+    travel_tab_card: "Card Preview & Download",
+    travel_selection_title: "Districts I Have Visited",
+    travel_selection_sub: "Click districts to toggle visited status",
+    travel_search_placeholder: "Search district...",
+    travel_select_all: "Select All",
+    travel_clear_all: "Clear All",
+    travel_div_select_all: "Select All",
+    travel_change_photo: "Change Photo",
+    travel_name_label: "Name:",
+    travel_toggle_names: "District Names",
+    card_subtitle: "Bangladesh Travel Map",
+    card_title_suffix: "'s Bangladesh",
+    card_percent_suffix: "% of Bangladesh Explored",
+    card_districts_suffix: " Districts",
+    card_divisions_of: "of 8",
+    card_divisions_suffix: " Divisions",
+    card_slogan_sub: "To complete your map",
+    card_slogan_main: "Keep exploring with Local Host BD",
+    card_tip: "Tip: You can also click directly on map districts to select them.",
+    download_card_btn: "↓ Download Your Travel Map",
+    download_generating: "Generating high-resolution travel card...",
+    download_success: "Travel map downloaded successfully!",
+    footer_link_travel_spots: "My Travel Spots",
   },
   bn: {
     brand_title: "Local Host BD",
@@ -395,8 +426,59 @@ const I18N = {
     toast_theme: "থিম পরিবর্তিত হয়েছে:",
     toast_lang_en: "Language set to English",
     toast_lang_bn: "ভাষা পরিবর্তন করে বাংলা করা হয়েছে",
+    nav_travel_spots: "আমার ঘোরাঘুরি",
+    travel_breadcrumb_home: "হোম",
+    travel_breadcrumb_current: "আমার ঘোরাঘুরি",
+    travel_badge_label: "ট্রাভেল ফটো জেনারেটর",
+    travel_page_title: "আমার ঘোরাঘুরি",
+    travel_page_desc: "আপনি বাংলাদেশের যেসব জেলায় ভ্রমণ করেছেন সেগুলো নির্বাচন করুন এবং নিজের ছবি ও নাম দিয়ে সুন্দর ট্রাভেল ম্যাপ তৈরি করে ডাউনলোড করুন।",
+    travel_back_btn: "হোমে ফিরে যান",
+    travel_tab_select: "জেলা নির্বাচন",
+    travel_tab_card: "কার্ড প্রিভিউ ও ডাউনলোড",
+    travel_selection_title: "যেসব জেলায় গিয়েছি",
+    travel_selection_sub: "জেলা ক্লিক করে বাছাই বা বাতিল করুন",
+    travel_search_placeholder: "জেলা খুঁজুন...",
+    travel_select_all: "সব বাছাই করুন",
+    travel_clear_all: "সব মুছুন",
+    travel_div_select_all: "সব বাছাই",
+    travel_change_photo: "ছবি বদলান",
+    travel_name_label: "নাম:",
+    travel_toggle_names: "জেলার নাম",
+    card_subtitle: "বাংলাদেশ ভ্রমণ ম্যাপ",
+    card_title_suffix: "-এর বাংলাদেশ",
+    card_percent_suffix: "% বাংলাদেশ ঘোরা হয়েছে",
+    card_districts_suffix: "টি জেলা",
+    card_divisions_of: "৮টির মধ্যে",
+    card_divisions_suffix: "টি বিভাগ",
+    card_slogan_sub: "মানচিত্র পূরণ করতে",
+    card_slogan_main: "ঘুরতে থাকুন Local Host BD এর সাথে",
+    card_tip: "টিপস: ম্যাপের জেলায় সরাসরি ক্লিক করেও বাছাই করতে পারেন।",
+    download_card_btn: "↓ আপনার ম্যাপ ডাউনলোড করুন",
+    download_generating: "হাই-রেজোলিউশন ট্রাভেল কার্ড তৈরি হচ্ছে...",
+    download_success: "ট্রাভেল ম্যাপ সফলভাবে ডাউনলোড হয়েছে!",
+    footer_link_travel_spots: "আমার ঘোরাঘুরি",
   }
 };
+
+// District Center Coordinates Lookup Map for vector map labels & pin markers
+const DISTRICT_CENTERS = {
+  1: [289, 400], 2: [235, 444], 3: [310, 356], 4: [244, 495], 5: [373, 322],
+  6: [274, 477], 7: [252, 392], 8: [312, 436], 9: [331, 409], 10: [355, 368],
+  11: [202, 406], 12: [309, 477], 13: [258, 317], 14: [560, 682], 15: [387, 375],
+  16: [357, 475], 17: [482, 590], 18: [384, 450], 19: [524, 754], 20: [437, 506],
+  21: [506, 480], 22: [363, 533], 23: [402, 569], 24: [549, 538], 25: [436, 322],
+  26: [506, 301], 27: [427, 245], 28: [521, 245], 29: [273, 625], 30: [299, 543],
+  31: [354, 601], 32: [282, 571], 33: [304, 622], 34: [259, 577], 35: [224, 601],
+  36: [105, 425], 37: [154, 498], 38: [132, 440], 39: [191, 599], 40: [131, 377],
+  41: [184, 444], 42: [91, 399], 43: [203, 491], 44: [144, 608], 45: [172, 253],
+  46: [140, 220], 47: [97, 247], 48: [139, 314], 49: [32, 273], 50: [174, 358],
+  51: [79, 311], 52: [196, 313], 53: [107, 139], 54: [188, 181], 55: [213, 116],
+  56: [158, 72], 57: [119, 86], 58: [71, 44], 59: [157, 140], 60: [46, 98],
+  61: [246, 229], 62: [313, 268], 63: [367, 245], 64: [268, 216]
+};
+
+const TRAVEL_DIVISIONS = ['Dhaka', 'Chattogram', 'Sylhet', 'Barishal', 'Khulna', 'Rajshahi', 'Rangpur', 'Mymensingh'];
+const TRAVEL_SPOTS_KEY = 'localhost_travel_spots_v2';
 
 const DIVISIONS_MAP = {
   all: { en: "All (64)", bn: "সকল (৬৪)" },
@@ -940,6 +1022,86 @@ function updateStaticTranslations() {
 
   const modHov = document.getElementById('modal-legend-hover');
   if (modHov) modHov.textContent = t.modal_legend_hover;
+
+  // Nav & Footer Travel Spots Buttons
+  const navTravelLabel = document.getElementById('nav-travel-spots-label');
+  if (navTravelLabel) navTravelLabel.textContent = t.nav_travel_spots;
+
+  const mobileTravelLabel = document.getElementById('mobile-travel-spots-label');
+  if (mobileTravelLabel) mobileTravelLabel.textContent = t.nav_travel_spots;
+
+  const footerTravelLabel = document.getElementById('footer-link-travel-spots-text');
+  if (footerTravelLabel) footerTravelLabel.textContent = isBn ? "আমার ঘোরাঘুরি (My Travel Spots)" : "My Travel Spots (আমার ঘোরাঘুরি)";
+
+  // Travel Spots Page Labels
+  const travelBreadHome = document.getElementById('travel-breadcrumb-home');
+  if (travelBreadHome) travelBreadHome.textContent = t.travel_breadcrumb_home;
+
+  const travelBreadCur = document.getElementById('travel-breadcrumb-current');
+  if (travelBreadCur) travelBreadCur.textContent = t.travel_breadcrumb_current;
+
+  const travelBadge = document.getElementById('travel-badge-label');
+  if (travelBadge) travelBadge.textContent = t.travel_badge_label;
+
+  const travelTitle = document.getElementById('travel-page-title');
+  if (travelTitle) travelTitle.textContent = t.travel_page_title;
+
+  const travelDesc = document.getElementById('travel-page-desc');
+  if (travelDesc) travelDesc.textContent = t.travel_page_desc;
+
+  const travelBack = document.getElementById('travel-back-btn-text');
+  if (travelBack) travelBack.textContent = t.travel_back_btn;
+
+  const travelTabSel = document.getElementById('travel-tab-select-label');
+  if (travelTabSel) travelTabSel.textContent = t.travel_tab_select;
+
+  const travelTabCard = document.getElementById('travel-tab-card-label');
+  if (travelTabCard) travelTabCard.textContent = t.travel_tab_card;
+
+  const travelSelTitle = document.getElementById('travel-selection-title');
+  if (travelSelTitle) travelSelTitle.textContent = t.travel_selection_title;
+
+  const travelSelSub = document.getElementById('travel-selection-sub');
+  if (travelSelSub) travelSelSub.textContent = t.travel_selection_sub;
+
+  const travelSearch = document.getElementById('travel-search-input');
+  if (travelSearch) travelSearch.setAttribute('placeholder', t.travel_search_placeholder);
+
+  const travelSelAll = document.getElementById('travel-select-all-label');
+  if (travelSelAll) travelSelAll.textContent = t.travel_select_all;
+
+  const travelClearAll = document.getElementById('travel-clear-all-label');
+  if (travelClearAll) travelClearAll.textContent = t.travel_clear_all;
+
+  const travelChangePhoto = document.getElementById('travel-change-photo-text');
+  if (travelChangePhoto) travelChangePhoto.textContent = t.travel_change_photo;
+
+  const travelNameLabel = document.getElementById('travel-name-input-label');
+  if (travelNameLabel) travelNameLabel.textContent = t.travel_name_label;
+
+  const travelTogNames = document.getElementById('travel-toggle-names-label');
+  if (travelTogNames) travelTogNames.textContent = t.travel_toggle_names;
+
+  const cardSub = document.getElementById('card-subtitle-text');
+  if (cardSub) cardSub.textContent = t.card_subtitle;
+
+  const cardSloganSub = document.getElementById('card-slogan-sub-text');
+  if (cardSloganSub) cardSloganSub.textContent = t.card_slogan_sub;
+
+  const cardSloganMain = document.getElementById('card-slogan-main-text');
+  if (cardSloganMain) cardSloganMain.textContent = t.card_slogan_main;
+
+  const cardTip = document.getElementById('travel-card-tip-text');
+  if (cardTip) cardTip.textContent = t.card_tip;
+
+  const downloadCardBtn = document.getElementById('download-card-btn-text');
+  if (downloadCardBtn) downloadCardBtn.textContent = t.download_card_btn;
+
+  // Refresh travel spots view if currently active
+  const viewTravel = document.getElementById('view-travel-spots');
+  if (viewTravel && !viewTravel.classList.contains('hidden')) {
+    updateTravelSpotsUI();
+  }
 }
 
 function renderPopularDestinations() {
@@ -1004,6 +1166,11 @@ function loadLocalMemoryData() {
 function handleRoute() {
   const hash = window.location.hash || '#/';
 
+  if (hash === '#/amar-ghoraghuri' || hash === '#/my-travel-spots' || hash.startsWith('#/travel-spots')) {
+    showTravelSpotsPage();
+    return;
+  }
+
   if (hash.startsWith('#/district/')) {
     const param = hash.replace('#/district/', '').trim().toLowerCase();
     const found = AppState.districts.find(d => 
@@ -1024,6 +1191,12 @@ function navigateToHome() {
   showHomePage();
 }
 
+function navigateToTravelSpots() {
+  const isBn = AppState.currentLang === 'bn';
+  window.location.hash = isBn ? '#/amar-ghoraghuri' : '#/my-travel-spots';
+  showTravelSpotsPage();
+}
+
 function navigateToDistrict(idOrSlug) {
   let district;
   if (typeof idOrSlug === 'number' || !isNaN(idOrSlug)) {
@@ -1041,6 +1214,7 @@ function navigateToDistrict(idOrSlug) {
 function showHomePage() {
   const viewHome = document.getElementById('view-home');
   const viewDetails = document.getElementById('view-details');
+  const viewTravel = document.getElementById('view-travel-spots');
 
   if (viewHome) {
     viewHome.classList.remove('hidden');
@@ -1050,6 +1224,9 @@ function showHomePage() {
   }
   if (viewDetails) {
     viewDetails.classList.add('hidden');
+  }
+  if (viewTravel) {
+    viewTravel.classList.add('hidden');
   }
 
   // Restore mobile segmented tab state
@@ -1066,9 +1243,13 @@ function showDistrictDetailsPage(district) {
 
   const viewHome = document.getElementById('view-home');
   const viewDetails = document.getElementById('view-details');
+  const viewTravel = document.getElementById('view-travel-spots');
 
   if (viewHome) {
     viewHome.classList.add('hidden');
+  }
+  if (viewTravel) {
+    viewTravel.classList.add('hidden');
   }
   if (viewDetails) {
     viewDetails.classList.remove('hidden');
@@ -1084,6 +1265,29 @@ function showDistrictDetailsPage(district) {
   updateVectorMapActiveState(district.id);
   updateMapInspectorHud(district, true);
 
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  initLucideIcons();
+}
+
+function showTravelSpotsPage() {
+  const viewHome = document.getElementById('view-home');
+  const viewDetails = document.getElementById('view-details');
+  const viewTravel = document.getElementById('view-travel-spots');
+
+  if (viewHome) {
+    viewHome.classList.add('hidden');
+  }
+  if (viewDetails) {
+    viewDetails.classList.add('hidden');
+  }
+  if (viewTravel) {
+    viewTravel.classList.remove('hidden');
+    viewTravel.classList.remove('animate-slide-up');
+    void viewTravel.offsetWidth;
+    viewTravel.classList.add('animate-slide-up');
+  }
+
+  initTravelSpotsView();
   window.scrollTo({ top: 0, behavior: 'smooth' });
   initLucideIcons();
 }
@@ -2138,11 +2342,116 @@ function setupEventListeners() {
       const modal = document.getElementById('vector-map-modal');
       if (modal && !modal.classList.contains('hidden')) {
         closeMapModal();
-      } else if (window.location.hash.startsWith('#/district/')) {
+      } else if (window.location.hash.startsWith('#/district/') || window.location.hash.includes('travel-spots') || window.location.hash.includes('amar-ghoraghuri')) {
         navigateToHome();
       }
     }
   });
+
+  // Amar GhoraGhuri / My Travel Spots Navigation Buttons
+  const navTravelSpotsBtn = document.getElementById('nav-travel-spots-btn');
+  if (navTravelSpotsBtn) navTravelSpotsBtn.addEventListener('click', navigateToTravelSpots);
+
+  const mobileTravelSpotsBtn = document.getElementById('mobile-travel-spots-btn');
+  if (mobileTravelSpotsBtn) {
+    mobileTravelSpotsBtn.addEventListener('click', () => {
+      toggleMobileDrawer(false);
+      navigateToTravelSpots();
+    });
+  }
+
+  const footerTravelLink = document.getElementById('footer-link-travel-spots');
+  if (footerTravelLink) {
+    footerTravelLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigateToTravelSpots();
+    });
+  }
+
+  // Travel Spots View Controls
+  const travelSearchInput = document.getElementById('travel-search-input');
+  const travelSearchClear = document.getElementById('travel-search-clear-btn');
+  if (travelSearchInput) {
+    travelSearchInput.addEventListener('input', (e) => {
+      TravelSpotsState.searchQuery = e.target.value;
+      if (travelSearchClear) {
+        if (TravelSpotsState.searchQuery.length > 0) {
+          travelSearchClear.classList.remove('hidden');
+        } else {
+          travelSearchClear.classList.add('hidden');
+        }
+      }
+      renderTravelDivisionsList();
+    });
+  }
+
+  if (travelSearchClear) {
+    travelSearchClear.addEventListener('click', () => {
+      if (travelSearchInput) {
+        travelSearchInput.value = '';
+        travelSearchInput.focus();
+      }
+      TravelSpotsState.searchQuery = '';
+      travelSearchClear.classList.add('hidden');
+      renderTravelDivisionsList();
+    });
+  }
+
+  const travelSelectAllBtn = document.getElementById('travel-select-all-btn');
+  if (travelSelectAllBtn) travelSelectAllBtn.addEventListener('click', selectAllDistricts);
+
+  const travelClearAllBtn = document.getElementById('travel-clear-all-btn');
+  if (travelClearAllBtn) travelClearAllBtn.addEventListener('click', clearAllDistricts);
+
+  const travelNameInput = document.getElementById('travel-name-input');
+  if (travelNameInput) {
+    travelNameInput.addEventListener('input', (e) => {
+      TravelSpotsState.userName = e.target.value;
+      saveTravelSpotsState();
+      const cardTitle = document.getElementById('card-title-text');
+      if (cardTitle) {
+        const t = I18N[AppState.currentLang];
+        const uName = TravelSpotsState.userName || 'Traveler';
+        cardTitle.textContent = `${uName}${t.card_title_suffix}`;
+      }
+    });
+  }
+
+  const travelToggleNames = document.getElementById('travel-toggle-names-checkbox');
+  if (travelToggleNames) {
+    travelToggleNames.addEventListener('change', (e) => {
+      TravelSpotsState.showNames = e.target.checked;
+      saveTravelSpotsState();
+      renderTravelCardMap();
+    });
+  }
+
+  const travelAvatarUpload = document.getElementById('travel-avatar-upload');
+  if (travelAvatarUpload) {
+    travelAvatarUpload.addEventListener('change', (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      if (!file.type.startsWith('image/')) {
+        showToast('Please select a valid image file');
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = (evt) => {
+        const dataUrl = evt.target.result;
+        TravelSpotsState.avatarDataUrl = dataUrl;
+        saveTravelSpotsState();
+        const toolbarAvatar = document.getElementById('travel-toolbar-avatar-img');
+        const cardAvatar = document.getElementById('card-avatar-preview');
+        if (toolbarAvatar) toolbarAvatar.src = dataUrl;
+        if (cardAvatar) cardAvatar.src = dataUrl;
+        showToast(AppState.currentLang === 'bn' ? 'ছবি সফলভাবে যুক্ত হয়েছে!' : 'Photo updated successfully!');
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  const downloadCardBtn = document.getElementById('download-travel-card-btn');
+  if (downloadCardBtn) downloadCardBtn.addEventListener('click', downloadTravelCardImage);
 }
 
 function updateDivisionPillsUI(activeDivision) {
@@ -2160,12 +2469,762 @@ function updateDivisionPillsUI(activeDivision) {
   });
 }
 
+// ==========================================
+// 13. AMAR GHORAGHURI / MY TRAVEL SPOTS ENGINE
+// ==========================================
+const TravelSpotsState = {
+  visitedIds: new Set([1, 7, 10, 18, 40, 45, 62]), // default demo spots (Dhaka, Manikganj, Narsingdi, Comilla, Kushtia, Bogra, Mymensingh)
+  userName: 'MD. Imran Hasan',
+  avatarDataUrl: null,
+  showNames: true,
+  searchQuery: '',
+  mobileTab: 'select',
+  isLoaded: false
+};
+
+function loadTravelSpotsState() {
+  if (TravelSpotsState.isLoaded) return;
+  try {
+    const raw = localStorage.getItem(TRAVEL_SPOTS_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed.visitedIds)) {
+        TravelSpotsState.visitedIds = new Set(parsed.visitedIds.map(Number));
+      }
+      if (typeof parsed.userName === 'string' && parsed.userName.trim()) {
+        TravelSpotsState.userName = parsed.userName.trim();
+      }
+      if (typeof parsed.avatarDataUrl === 'string' && parsed.avatarDataUrl.startsWith('data:image')) {
+        TravelSpotsState.avatarDataUrl = parsed.avatarDataUrl;
+      }
+      if (typeof parsed.showNames === 'boolean') {
+        TravelSpotsState.showNames = parsed.showNames;
+      }
+    }
+  } catch (err) {
+    console.warn('Failed to load travel spots from localStorage:', err);
+  }
+  TravelSpotsState.isLoaded = true;
+}
+
+function saveTravelSpotsState() {
+  try {
+    const payload = {
+      visitedIds: Array.from(TravelSpotsState.visitedIds),
+      userName: TravelSpotsState.userName,
+      avatarDataUrl: TravelSpotsState.avatarDataUrl,
+      showNames: TravelSpotsState.showNames
+    };
+    localStorage.setItem(TRAVEL_SPOTS_KEY, JSON.stringify(payload));
+  } catch (err) {
+    console.warn('Failed to save travel spots to localStorage:', err);
+  }
+}
+
+function toggleDistrictVisited(id) {
+  const numId = Number(id);
+  if (TravelSpotsState.visitedIds.has(numId)) {
+    TravelSpotsState.visitedIds.delete(numId);
+  } else {
+    TravelSpotsState.visitedIds.add(numId);
+  }
+  saveTravelSpotsState();
+  updateTravelSpotsUI();
+}
+
+function selectAllDistricts() {
+  AppState.districts.forEach(d => TravelSpotsState.visitedIds.add(d.id));
+  saveTravelSpotsState();
+  updateTravelSpotsUI();
+}
+
+function clearAllDistricts() {
+  TravelSpotsState.visitedIds.clear();
+  saveTravelSpotsState();
+  updateTravelSpotsUI();
+}
+
+function toggleDivisionSelectAll(divName) {
+  const divDistricts = AppState.districts.filter(d => (d.div || '').toLowerCase() === divName.toLowerCase());
+  if (divDistricts.length === 0) return;
+
+  const allVisited = divDistricts.every(d => TravelSpotsState.visitedIds.has(d.id));
+  if (allVisited) {
+    divDistricts.forEach(d => TravelSpotsState.visitedIds.delete(d.id));
+  } else {
+    divDistricts.forEach(d => TravelSpotsState.visitedIds.add(d.id));
+  }
+  saveTravelSpotsState();
+  updateTravelSpotsUI();
+}
+
+function setTravelMobileTab(tab) {
+  TravelSpotsState.mobileTab = tab;
+  const paneSelection = document.getElementById('travel-pane-selection');
+  const panePreview = document.getElementById('travel-pane-preview');
+  const btnSelect = document.getElementById('travel-tab-select-btn');
+  const btnCard = document.getElementById('travel-tab-card-btn');
+
+  if (tab === 'select') {
+    if (paneSelection) paneSelection.classList.remove('hidden');
+    if (panePreview) panePreview.classList.add('hidden');
+    if (btnSelect) {
+      btnSelect.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer';
+    }
+    if (btnCard) {
+      btnCard.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer';
+    }
+  } else {
+    if (paneSelection) paneSelection.classList.add('hidden');
+    if (panePreview) panePreview.classList.remove('hidden');
+    if (btnCard) {
+      btnCard.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition-all bg-bdgreen-700 text-white shadow-sm cursor-pointer';
+    }
+    if (btnSelect) {
+      btnSelect.className = 'flex-1 py-2 sm:py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer';
+    }
+  }
+}
+
+function initTravelSpotsView() {
+  loadTravelSpotsState();
+
+  // Sync inputs
+  const nameInput = document.getElementById('travel-name-input');
+  if (nameInput) nameInput.value = TravelSpotsState.userName;
+
+  const namesCheckbox = document.getElementById('travel-toggle-names-checkbox');
+  if (namesCheckbox) namesCheckbox.checked = TravelSpotsState.showNames;
+
+  // Sync avatar
+  const defaultAvatar = 'images/logo/localhostbd_logo.png';
+  const avatarSrc = TravelSpotsState.avatarDataUrl || defaultAvatar;
+  const toolbarAvatar = document.getElementById('travel-toolbar-avatar-img');
+  const cardAvatar = document.getElementById('card-avatar-preview');
+  if (toolbarAvatar) toolbarAvatar.src = avatarSrc;
+  if (cardAvatar) cardAvatar.src = avatarSrc;
+
+  // Initial mobile tab
+  if (window.innerWidth < 1024) {
+    setTravelMobileTab(TravelSpotsState.mobileTab || 'select');
+  } else {
+    const paneSelection = document.getElementById('travel-pane-selection');
+    const panePreview = document.getElementById('travel-pane-preview');
+    if (paneSelection) paneSelection.classList.remove('hidden');
+    if (panePreview) panePreview.classList.remove('hidden');
+  }
+
+  updateTravelSpotsUI();
+}
+
+function updateTravelSpotsUI() {
+  const isBn = AppState.currentLang === 'bn';
+  const t = I18N[AppState.currentLang];
+  const visitedCount = TravelSpotsState.visitedIds.size;
+  const totalDistricts = 64;
+  const pct = Math.round((visitedCount / totalDistricts) * 100);
+
+  // Count visited divisions
+  const visitedDivs = new Set();
+  AppState.districts.forEach(d => {
+    if (TravelSpotsState.visitedIds.has(d.id)) {
+      visitedDivs.add(d.div);
+    }
+  });
+  const visitedDivsCount = visitedDivs.size;
+
+  // 1. Update selection pane headers and badges
+  const visitedFraction = document.getElementById('travel-visited-fraction');
+  if (visitedFraction) {
+    visitedFraction.textContent = isBn 
+      ? `${toBengaliDigits(visitedCount)} / ${toBengaliDigits(totalDistricts)}` 
+      : `${visitedCount} / ${totalDistricts}`;
+  }
+
+  const mobileChipCount = document.getElementById('travel-mobile-chip-count');
+  if (mobileChipCount) {
+    mobileChipCount.textContent = isBn
+      ? `${toBengaliDigits(visitedCount)}/${toBengaliDigits(totalDistricts)}`
+      : `${visitedCount}/${totalDistricts}`;
+  }
+
+  // 2. Render Division district chips
+  renderTravelDivisionsList();
+
+  // 3. Update Travel Card Header
+  const cardVisitedNum = document.getElementById('card-visited-number');
+  if (cardVisitedNum) cardVisitedNum.textContent = isBn ? toBengaliDigits(visitedCount) : visitedCount;
+
+  const cardTotalNum = document.getElementById('card-total-number');
+  if (cardTotalNum) cardTotalNum.textContent = isBn ? toBengaliDigits(totalDistricts) : totalDistricts;
+
+  const cardTitle = document.getElementById('card-title-text');
+  if (cardTitle) {
+    const uName = TravelSpotsState.userName || 'Traveler';
+    cardTitle.textContent = `${uName}${t.card_title_suffix}`;
+  }
+
+  // 4. Render 3:4 Map SVG Districts & Pins
+  renderTravelCardMap();
+
+  // 5. Update Card Progress Bar & Stats
+  const progressBar = document.getElementById('card-progress-bar');
+  if (progressBar) {
+    progressBar.style.width = `${pct}%`;
+  }
+
+  const cardPercentText = document.getElementById('card-percent-text');
+  if (cardPercentText) {
+    const pctStr = isBn ? toBengaliDigits(pct) : pct;
+    cardPercentText.textContent = `${pctStr}${t.card_percent_suffix}`;
+  }
+
+  const cardDivStatText = document.getElementById('card-div-stat-text');
+  if (cardDivStatText) {
+    const dCountStr = isBn ? toBengaliDigits(visitedCount) : visitedCount;
+    const divCountStr = isBn ? toBengaliDigits(visitedDivsCount) : visitedDivsCount;
+    cardDivStatText.textContent = isBn 
+      ? `${dCountStr}টি জেলা • ৮টির মধ্যে ${divCountStr}টি বিভাগ` 
+      : `${dCountStr} Districts • ${divCountStr} of 8 Divisions`;
+  }
+
+  initLucideIcons();
+}
+
+function renderTravelDivisionsList() {
+  const container = document.getElementById('travel-divisions-list');
+  if (!container) return;
+
+  const isBn = AppState.currentLang === 'bn';
+  const t = I18N[AppState.currentLang];
+  const query = (TravelSpotsState.searchQuery || '').trim().toLowerCase();
+
+  const allDistricts = AppState.districts;
+
+  const html = TRAVEL_DIVISIONS.map(divName => {
+    let divDistricts = allDistricts.filter(d => (d.div || '').toLowerCase() === divName.toLowerCase());
+    
+    // Total and visited in division
+    const totalInDiv = divDistricts.length;
+    const visitedInDiv = divDistricts.filter(d => TravelSpotsState.visitedIds.has(d.id)).length;
+    const isAllDivVisited = totalInDiv > 0 && visitedInDiv === totalInDiv;
+
+    // Apply search filter
+    if (query) {
+      divDistricts = divDistricts.filter(d => {
+        const en = (d.en || '').toLowerCase();
+        const bn = (d.bn || '').toLowerCase();
+        return en.includes(query) || bn.includes(query);
+      });
+    }
+
+    // Hide division if no districts match search
+    if (query && divDistricts.length === 0) return '';
+
+    const divLabel = DIVISIONS_MAP[divName] 
+      ? (isBn ? DIVISIONS_MAP[divName].bn : DIVISIONS_MAP[divName].en) 
+      : divName;
+    const divHeadingText = isBn ? `${divLabel} বিভাগ` : `${divLabel} Division`;
+    const countBadgeText = isBn ? `${toBengaliDigits(visitedInDiv)}/${toBengaliDigits(totalInDiv)}` : `${visitedInDiv}/${totalInDiv}`;
+
+    const chipsHtml = divDistricts.map(d => {
+      const isVisited = TravelSpotsState.visitedIds.has(d.id);
+      const name = isBn ? d.bn : d.en;
+      const chipClass = isVisited
+        ? 'px-3 py-1.5 rounded-full text-xs font-black bg-bdgreen-800 text-white border border-bdgreen-700 shadow-sm active:scale-95 cursor-pointer flex items-center gap-1.5'
+        : 'px-3 py-1.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-[#07150E] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-[#1B3E2E] hover:border-bdgreen-500 hover:bg-slate-200 dark:hover:bg-[#122A1E] transition active:scale-95 cursor-pointer flex items-center gap-1.5';
+
+      return `
+        <button 
+          type="button"
+          onclick="toggleDistrictVisited(${d.id})"
+          class="${chipClass} ${isBn ? 'font-bengali' : ''}"
+          title="${name}"
+        >
+          ${isVisited ? '<span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>' : ''}
+          <span>${name}</span>
+        </button>
+      `;
+    }).join('');
+
+    return `
+      <div class="rounded-xl p-3 bg-slate-50/80 dark:bg-[#07150E]/80 border border-slate-200/90 dark:border-[#173728]">
+        <div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-200/80 dark:border-[#173728]">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black text-slate-800 dark:text-slate-100 ${isBn ? 'font-bengali' : ''}">${divHeadingText}</span>
+            <span class="px-2 py-0.5 rounded-full bg-slate-200/80 dark:bg-[#122A1E] text-[10px] font-black text-slate-700 dark:text-emerald-400">
+              ${countBadgeText}
+            </span>
+          </div>
+          <button 
+            type="button"
+            onclick="toggleDivisionSelectAll('${divName}')"
+            class="text-[11px] font-bold text-bdgreen-700 dark:text-bdgreen-400 hover:underline cursor-pointer"
+          >
+            ${isAllDivVisited ? (isBn ? 'সব মুছুন' : 'Clear All') : (isBn ? 'সব বাছাই' : 'Select All')}
+          </button>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          ${chipsHtml}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = html || `
+    <div class="p-6 text-center text-slate-500 text-xs font-medium">
+      ${t.no_results_title}
+    </div>
+  `;
+}
+
+function renderTravelCardMap() {
+  const districtsGroup = document.getElementById('travel-svg-districts-group');
+  const pinsGroup = document.getElementById('travel-svg-pins-group');
+  if (!districtsGroup || !pinsGroup) return;
+
+  const isBn = AppState.currentLang === 'bn';
+  const mapPaths = (typeof window !== 'undefined' && window.MAP_PATHS) ? window.MAP_PATHS : {};
+
+  // 1. Render all 64 districts
+  districtsGroup.innerHTML = AppState.districts.map(d => {
+    const isVisited = TravelSpotsState.visitedIds.has(d.id);
+    const pathD = d.svgPath || mapPaths[d.id] || mapPaths[d.slug] || '';
+    if (!pathD) return '';
+
+    const fill = isVisited ? '#006A4E' : '#E2DDD4';
+    const stroke = isVisited ? '#FFFFFF' : '#CEC7B9';
+    const strokeWidth = isVisited ? '1.25' : '0.8';
+    const filter = isVisited ? 'drop-shadow(0 1px 2px rgba(0,0,0,0.3))' : 'none';
+
+    return `
+      <path 
+        d="${pathD}"
+        data-id="${d.id}"
+        class="travel-map-path cursor-pointer"
+        fill="${fill}"
+        stroke="${stroke}"
+        stroke-width="${strokeWidth}"
+        style="filter: ${filter}; transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s;"
+        title="${isBn ? d.bn : d.en}"
+      />
+    `;
+  }).join('');
+
+  // Attach click listener on district paths
+  districtsGroup.querySelectorAll('.travel-map-path').forEach(p => {
+    p.onclick = (e) => {
+      e.stopPropagation();
+      const id = Number(p.getAttribute('data-id'));
+      if (id) toggleDistrictVisited(id);
+    };
+  });
+
+  // 2. Render Pin badges for visited districts
+  if (!TravelSpotsState.showNames) {
+    pinsGroup.innerHTML = '';
+    return;
+  }
+
+  const pinsHtml = Array.from(TravelSpotsState.visitedIds).map(id => {
+    const d = AppState.districts.find(item => item.id === id);
+    if (!d) return '';
+
+    const coords = DISTRICT_CENTERS[id] || [d.x || 300, d.y || 400];
+    const cx = coords[0];
+    const cy = coords[1];
+    const name = isBn ? d.bn : d.en;
+
+    // Approximate width based on name length
+    const textLen = (name || '').length;
+    const badgeW = Math.max(38, Math.round(textLen * (isBn ? 9.8 : 7.2) + 12));
+    const badgeH = 16;
+    const badgeX = Math.round(cx - badgeW / 2);
+    const badgeY = Math.round(cy - 20);
+
+    return `
+      <g class="travel-pin-marker pointer-events-none" data-id="${id}">
+        <!-- Pin Point Outer White Ring & Red Dot -->
+        <circle cx="${cx}" cy="${cy}" r="4" fill="#FFFFFF" opacity="0.95"/>
+        <circle cx="${cx}" cy="${cy}" r="2.8" fill="#E11D48"/>
+        
+        <!-- District Name Badge Pill -->
+        <rect 
+          x="${badgeX}" 
+          y="${badgeY}" 
+          width="${badgeW}" 
+          height="${badgeH}" 
+          rx="4" 
+          fill="#0B1E15" 
+          opacity="0.95" 
+          stroke="#34D399" 
+          stroke-width="0.8"
+        />
+        <text 
+          x="${cx}" 
+          y="${badgeY + 11.5}" 
+          fill="#FFFFFF" 
+          font-size="9.5" 
+          font-family="'Plus Jakarta Sans', 'Kalpurush', sans-serif" 
+          font-weight="bold" 
+          text-anchor="middle"
+        >${name}</text>
+      </g>
+    `;
+  }).join('');
+
+  pinsGroup.innerHTML = pinsHtml;
+}
+
+// ==========================================
+// 14. 3:4 HIGH-RESOLUTION CANVAS EXPORT (1200x1600)
+// ==========================================
+function drawRoundRect(ctx, x, y, w, h, r) {
+  if (typeof ctx.roundRect === 'function') {
+    ctx.beginPath();
+    ctx.roundRect(x, y, w, h, r);
+  } else {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+}
+
+async function downloadTravelCardImage() {
+  const t = I18N[AppState.currentLang];
+  const isBn = AppState.currentLang === 'bn';
+  const downloadBtn = document.getElementById('download-travel-card-btn');
+  const downloadLabel = document.getElementById('download-card-btn-text');
+
+  if (downloadLabel) downloadLabel.textContent = t.download_generating;
+  if (downloadBtn) downloadBtn.disabled = true;
+
+  try {
+    // 1. Create 1200 x 1600 canvas (3:4 ratio)
+    const canvas = document.createElement('canvas');
+    canvas.width = 1200;
+    canvas.height = 1600;
+    const ctx = canvas.getContext('2d');
+
+    // 2. Load background image: images/logo/interactive_bg.webp
+    const bgImg = new Image();
+    bgImg.crossOrigin = 'anonymous';
+    await new Promise((resolve) => {
+      bgImg.onload = resolve;
+      bgImg.onerror = resolve; // fallback to cream background if load error
+      bgImg.src = 'images/logo/interactive_bg.webp';
+    });
+
+    if (bgImg.complete && bgImg.naturalWidth > 0) {
+      ctx.drawImage(bgImg, 0, 0, 1200, 1600);
+    } else {
+      ctx.fillStyle = '#F5F2EB';
+      ctx.fillRect(0, 0, 1200, 1600);
+    }
+
+    // 3. Subtle outer frame padding & card border
+    ctx.strokeStyle = '#FFFFFF';
+    ctx.lineWidth = 14;
+    drawRoundRect(ctx, 30, 30, 1140, 1540, 48);
+    ctx.stroke();
+
+    // 4. Header: Avatar Profile Image
+    const avatarImg = new Image();
+    avatarImg.crossOrigin = 'anonymous';
+    const avatarSrc = TravelSpotsState.avatarDataUrl || 'images/logo/localhostbd_logo.png';
+    await new Promise((resolve) => {
+      avatarImg.onload = resolve;
+      avatarImg.onerror = resolve;
+      avatarImg.src = avatarSrc;
+    });
+
+    const avX = 90;
+    const avY = 80;
+    const avSize = 135;
+    const avRadius = 24;
+
+    ctx.save();
+    drawRoundRect(ctx, avX, avY, avSize, avSize, avRadius);
+    ctx.clip();
+    if (avatarImg.complete && avatarImg.naturalWidth > 0) {
+      ctx.drawImage(avatarImg, avX, avY, avSize, avSize);
+    } else {
+      ctx.fillStyle = '#006A4E';
+      ctx.fillRect(avX, avY, avSize, avSize);
+    }
+    ctx.restore();
+
+    // Green avatar border
+    ctx.save();
+    ctx.strokeStyle = '#006A4E';
+    ctx.lineWidth = 7;
+    drawRoundRect(ctx, avX, avY, avSize, avSize, avRadius);
+    ctx.stroke();
+    ctx.restore();
+
+    // 5. Header Typography: Subtitle & User Title
+    const titleX = 250;
+    ctx.font = '600 24px Kalpurush, "Plus Jakarta Sans", sans-serif';
+    ctx.fillStyle = '#64748B';
+    ctx.fillText(t.card_subtitle, titleX, 130);
+
+    const userName = TravelSpotsState.userName || 'MD. Imran Hasan';
+    const cardTitle = `${userName}${t.card_title_suffix}`;
+    ctx.font = '900 44px Kalpurush, "Plus Jakarta Sans", sans-serif';
+    ctx.fillStyle = '#0F172A';
+    ctx.fillText(cardTitle, titleX, 185);
+
+    // 6. Header Stat Badge (Top Right Fraction)
+    const visitedCount = TravelSpotsState.visitedIds.size;
+    const totalCount = 64;
+    const visitedStr = isBn ? toBengaliDigits(visitedCount) : String(visitedCount);
+    const totalStr = isBn ? toBengaliDigits(totalCount) : String(totalCount);
+
+    ctx.textAlign = 'right';
+    ctx.font = '900 70px "Plus Jakarta Sans", Kalpurush, sans-serif';
+    ctx.fillStyle = '#006A4E';
+    ctx.fillText(visitedStr, 1020, 175);
+
+    ctx.textAlign = 'left';
+    ctx.font = '700 40px "Plus Jakarta Sans", Kalpurush, sans-serif';
+    ctx.fillStyle = '#64748B';
+    ctx.fillText(`/${totalStr}`, 1025, 175);
+
+    // 7. Center Map: Render SVG paths
+    const mapBounds = { x: 100, y: 250, w: 1000, h: 1000 };
+    const viewBox = { x: -40, y: -35, w: 680, h: 918 };
+    const scale = Math.min(mapBounds.w / viewBox.w, mapBounds.h / viewBox.h); // ~1.089
+    const mapW = viewBox.w * scale;
+    const mapH = viewBox.h * scale;
+    const offsetX = mapBounds.x + (mapBounds.w - mapW) / 2;
+    const offsetY = mapBounds.y + (mapBounds.h - mapH) / 2;
+
+    const mapPaths = (typeof window !== 'undefined' && window.MAP_PATHS) ? window.MAP_PATHS : {};
+
+    ctx.save();
+    ctx.translate(offsetX, offsetY);
+    ctx.scale(scale, scale);
+    ctx.translate(40, 35); // offset for viewBox minX/minY
+
+    // Draw Unvisited Districts
+    ctx.fillStyle = '#E4DDD2';
+    ctx.strokeStyle = '#D4CDC1';
+    ctx.lineWidth = 0.85;
+
+    AppState.districts.forEach(d => {
+      if (!TravelSpotsState.visitedIds.has(d.id)) {
+        const pathD = d.svgPath || mapPaths[d.id] || mapPaths[d.slug] || '';
+        if (pathD) {
+          const pathObj = new Path2D(pathD);
+          ctx.fill(pathObj);
+          ctx.stroke(pathObj);
+        }
+      }
+    });
+
+    // Draw Visited Districts (Vibrant Bangladesh Green + White Boundary)
+    ctx.fillStyle = '#006A4E';
+    ctx.strokeStyle = '#FFFFFF';
+    ctx.lineWidth = 1.35;
+
+    AppState.districts.forEach(d => {
+      if (TravelSpotsState.visitedIds.has(d.id)) {
+        const pathD = d.svgPath || mapPaths[d.id] || mapPaths[d.slug] || '';
+        if (pathD) {
+          const pathObj = new Path2D(pathD);
+          ctx.fill(pathObj);
+          ctx.stroke(pathObj);
+        }
+      }
+    });
+
+    // Draw Pin Markers & Badges if showNames is active
+    if (TravelSpotsState.showNames) {
+      Array.from(TravelSpotsState.visitedIds).forEach(id => {
+        const d = AppState.districts.find(item => item.id === id);
+        if (!d) return;
+
+        const coords = DISTRICT_CENTERS[id] || [d.x || 300, d.y || 400];
+        const cx = coords[0];
+        const cy = coords[1];
+        const name = isBn ? d.bn : d.en;
+
+        // Red Pin with white border
+        ctx.beginPath();
+        ctx.arc(cx, cy, 4.2, 0, Math.PI * 2);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(cx, cy, 3, 0, Math.PI * 2);
+        ctx.fillStyle = '#E11D48';
+        ctx.fill();
+
+        // Badge
+        ctx.font = 'bold 9.5px Kalpurush, "Plus Jakarta Sans", sans-serif';
+        const textLen = (name || '').length;
+        const badgeW = Math.max(38, Math.round(textLen * (isBn ? 9.8 : 7.2) + 12));
+        const badgeH = 16;
+        const badgeX = Math.round(cx - badgeW / 2);
+        const badgeY = Math.round(cy - 20);
+
+        ctx.fillStyle = '#0B1E15';
+        drawRoundRect(ctx, badgeX, badgeY, badgeW, badgeH, 4);
+        ctx.fill();
+
+        ctx.strokeStyle = '#34D399';
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillText(name, cx, badgeY + 11.5);
+      });
+    }
+
+    ctx.restore();
+
+    // 8. Bottom Section: Progress Bar
+    const barX = 90;
+    const barY = 1300;
+    const barW = 1020;
+    const barH = 16;
+    const barRadius = 8;
+    const pct = Math.round((visitedCount / totalCount) * 100);
+    const fillW = Math.max(0, Math.min(barW, Math.round(barW * (pct / 100))));
+
+    // Bar Track
+    ctx.fillStyle = '#DDD6C9';
+    drawRoundRect(ctx, barX, barY, barW, barH, barRadius);
+    ctx.fill();
+
+    // Bar Fill
+    if (fillW > 0) {
+      ctx.fillStyle = '#006A4E';
+      drawRoundRect(ctx, barX, barY, fillW, barH, barRadius);
+      ctx.fill();
+    }
+
+    // 9. Info Text Row (Percentage & Breakdown)
+    const pctStr = isBn ? toBengaliDigits(pct) : String(pct);
+    const pctText = `${pctStr}${t.card_percent_suffix}`;
+
+    // Count visited divisions
+    const visitedDivs = new Set();
+    AppState.districts.forEach(d => {
+      if (TravelSpotsState.visitedIds.has(d.id)) visitedDivs.add(d.div);
+    });
+    const vDivCountStr = isBn ? toBengaliDigits(visitedDivs.size) : String(visitedDivs.size);
+    const breakdownText = isBn 
+      ? `${visitedStr}টি জেলা • ৮টির মধ্যে ${vDivCountStr}টি বিভাগ` 
+      : `${visitedStr} Districts • ${vDivCountStr} of 8 Divisions`;
+
+    ctx.textAlign = 'left';
+    ctx.font = 'bold 28px Kalpurush, "Plus Jakarta Sans", sans-serif';
+    ctx.fillStyle = '#0F172A';
+    ctx.fillText(pctText, barX, 1360);
+
+    ctx.textAlign = 'right';
+    ctx.font = 'bold 24px Kalpurush, "Plus Jakarta Sans", sans-serif';
+    ctx.fillStyle = '#475569';
+    ctx.fillText(breakdownText, barX + barW, 1360);
+
+    // 10. Divider Line
+    ctx.beginPath();
+    ctx.strokeStyle = 'rgba(203, 213, 225, 0.7)';
+    ctx.lineWidth = 1.5;
+    ctx.moveTo(barX, 1395);
+    ctx.lineTo(barX + barW, 1395);
+    ctx.stroke();
+
+    // 11. Slogan & Local Host BD Logo Row
+    ctx.textAlign = 'left';
+    ctx.font = '500 22px Kalpurush, "Plus Jakarta Sans", sans-serif';
+    ctx.fillStyle = '#64748B';
+    ctx.fillText(t.card_slogan_sub, barX, 1435);
+
+    ctx.font = '900 34px Kalpurush, "Plus Jakarta Sans", sans-serif';
+    ctx.fillStyle = '#006A4E';
+    ctx.fillText(t.card_slogan_main, barX, 1475);
+
+    // Logo image at bottom right
+    const logoImg = new Image();
+    logoImg.crossOrigin = 'anonymous';
+    await new Promise((resolve) => {
+      logoImg.onload = resolve;
+      logoImg.onerror = resolve;
+      logoImg.src = 'images/logo/localhostbd_logo.png';
+    });
+
+    const logoX = 990;
+    const logoY = 1415;
+    const logoSize = 65;
+    if (logoImg.complete && logoImg.naturalWidth > 0) {
+      drawRoundRect(ctx, logoX, logoY, logoSize, logoSize, 14);
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(4, 120, 87, 0.4)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.drawImage(logoImg, logoX + 5, logoY + 5, logoSize - 10, logoSize - 10);
+    }
+
+    // 12. Watermark Footer
+    ctx.textAlign = 'center';
+    ctx.font = '600 20px "Plus Jakarta Sans", Kalpurush, sans-serif';
+    ctx.fillStyle = '#64748B';
+    ctx.fillText('Local Host BD • 64 Districts Explorer • localhostbd', 600, 1540);
+
+    // 13. Trigger Download
+    const cleanUserName = (TravelSpotsState.userName || 'Traveler').trim().replace(/[/\\?%*:|"<>]/g, '');
+    const filename = `${cleanUserName} Travel Map.png`;
+
+    canvas.toBlob((blob) => {
+      if (!blob) {
+        showToast('Download failed to generate blob');
+        return;
+      }
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast(t.download_success);
+    }, 'image/png');
+
+  } catch (err) {
+    console.error('Error exporting travel card:', err);
+    showToast('Download error occurred');
+  } finally {
+    if (downloadLabel) downloadLabel.textContent = t.download_card_btn;
+    if (downloadBtn) downloadBtn.disabled = false;
+  }
+}
+
 // Global scope exports for inline HTML onclick handlers
 window.navigateToHome = navigateToHome;
 window.navigateToDistrict = navigateToDistrict;
+window.navigateToTravelSpots = navigateToTravelSpots;
 window.handleSidebarHover = handleSidebarHover;
 window.closeMapModal = closeMapModal;
 window.setMobileHomeTab = setMobileHomeTab;
+window.setTravelMobileTab = setTravelMobileTab;
+window.toggleDistrictVisited = toggleDistrictVisited;
+window.toggleDivisionSelectAll = toggleDivisionSelectAll;
+window.selectAllDistricts = selectAllDistricts;
+window.clearAllDistricts = clearAllDistricts;
+window.downloadTravelCardImage = downloadTravelCardImage;
 window.toggleLanguage = toggleLanguage;
 window.toggleTheme = toggleTheme;
 window.toggleMobileDrawer = toggleMobileDrawer;
