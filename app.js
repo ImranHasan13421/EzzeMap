@@ -65,7 +65,12 @@ const I18N = {
     footer_link_home_text: "Home Page",
     footer_link_map_text: "Interactive Vector Map",
     footer_link_top_text: "Back to Top ↑",
+    footer_pill_spots: "🏛️ 320+ Sights",
+    footer_pill_divs: "📍 8 Divisions",
+    footer_pill_latency: "⚡ Zero Latency",
+    footer_note: "100% Offline-First • Verified Local Catalog • Made for Bangladesh",
     footer_copyright_text: "© 2026 Local Host BD. All rights reserved.",
+    footer_crafted_by: "Crafted with pride by <strong class=\"text-slate-800 dark:text-slate-200\">MD. Imran Hasan</strong>",
     drawer_menu_heading: "Menu & Actions",
     drawer_theme_hint: "Switch Theme",
     drawer_lang_hint: "Switch Language",
@@ -162,14 +167,19 @@ const I18N = {
     hero_github_label: "গিটহাব",
     footer_brand_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
     footer_about_text: "বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, জনপ্রিয় পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত পথনির্দেশ এবং ইন্টারঅ্যাকটিভ ভেক্টর মানচিত্র সমৃদ্ধ একটি নির্ভরযোগ্য অফলাইন-ফার্স্ট ডিজিটাল প্ল্যাটফর্ম।",
-    footer_dev_heading: "ডেভেলপার পরিচিতি (Developer)",
-    footer_dev_role: "সফটওয়্যার ইঞ্জিনিয়ার ও ক্রিয়েটর",
+    footer_dev_heading: "ডেভেলপার পরিচিতি",
+    footer_dev_role: "সফটওয়্যার প্রকৌশলী ও নির্মাতা",
     footer_dev_bio: "বাংলাদেশের ৬৪টি জেলাকে কোনো প্রকার বহিরাগত নেটওয়ার্ক বা ইন্টারনেট নির্ভরতা ছাড়াই দ্রুত ও কার্যকরভাবে এক্সপ্লোর করতে লোকাল হোস্ট বিডি প্ল্যাটফর্মটি তৈরি করেছেন।",
-    footer_explore_heading: "দ্রুত অন্বেষণ (Explore)",
-    footer_link_home_text: "হোম পেজ (Home)",
+    footer_explore_heading: "দ্রুত অন্বেষণ",
+    footer_link_home_text: "হোম পেজ",
     footer_link_map_text: "ইন্টারেক্টিভ ভেক্টর মানচিত্র",
-    footer_link_top_text: "উপরে ফিরে যান (Top)",
-    footer_copyright_text: "© 2026 Local Host BD. সর্বস্বত্ব সংরক্ষিত।",
+    footer_link_top_text: "উপরে ফিরে যান ↑",
+    footer_pill_spots: "🏛️ ৩২০+ স্থান",
+    footer_pill_divs: "📍 ৮টি বিভাগ",
+    footer_pill_latency: "⚡ জিরো লেটেন্সি",
+    footer_note: "১০০% অফলাইন-ফার্স্ট • যাচাইকৃত লোকাল ক্যাটালগ • বাংলাদেশের জন্য নির্মিত",
+    footer_copyright_text: "© ২০২৬ লোকাল হোস্ট বিডি। সর্বস্বত্ব সংরক্ষিত।",
+    footer_crafted_by: "গৌরবের সাথে তৈরি করেছেন <strong class=\"text-slate-800 dark:text-slate-200\">মোঃ ইমরান হাসান</strong>",
     drawer_menu_heading: "মেনু ও অপশন",
     drawer_theme_hint: "থিম পরিবর্তন",
     drawer_lang_hint: "ভাষা পরিবর্তন",
@@ -582,6 +592,21 @@ function updateStaticTranslations() {
 
   const footerCopyright = document.getElementById('footer-copyright-text');
   if (footerCopyright) footerCopyright.textContent = t.footer_copyright_text;
+
+  const footerSpots = document.getElementById('footer-pill-spots');
+  if (footerSpots) footerSpots.textContent = t.footer_pill_spots;
+
+  const footerDivs = document.getElementById('footer-pill-divs');
+  if (footerDivs) footerDivs.textContent = t.footer_pill_divs;
+
+  const footerLatency = document.getElementById('footer-pill-latency');
+  if (footerLatency) footerLatency.textContent = t.footer_pill_latency;
+
+  const footerNote = document.getElementById('footer-note');
+  if (footerNote) footerNote.textContent = t.footer_note;
+
+  const footerCraftedBy = document.getElementById('footer-crafted-by');
+  if (footerCraftedBy) footerCraftedBy.innerHTML = t.footer_crafted_by;
 
   // Drawer Labels
   const drawerHeading = document.getElementById('drawer-menu-heading');
@@ -1506,8 +1531,8 @@ function renderVectorMap(containerId) {
     </svg>
   `;
 
-  // Preserve the floating tooltip inside the container
-  const existingTooltip = container.querySelector('.pointer-events-none');
+  // Preserve the floating tooltip strictly by its containerId
+  const existingTooltip = document.getElementById(`${containerId}-tooltip`);
   container.innerHTML = svgMarkup;
   if (existingTooltip) {
     container.appendChild(existingTooltip);

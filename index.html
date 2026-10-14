@@ -140,18 +140,18 @@
       transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s, filter 0.2s;
     }
     
-    /* Dark Mode Map Paths: Theme Dark Green with crisp emerald stroke */
+    /* Dark Mode Map Paths: Lighter vibrant emerald shade for sharp, clear visibility */
     .dark .district-svg-path {
-      fill: #0B291B; /* Theme dark green */
-      stroke: #1B4D36;
-      stroke-width: 1.1;
-      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.65));
+      fill: #1E6B47; /* Lighter emerald shade, easily visible against dark background */
+      stroke: #34D399; /* Crisp mint-emerald boundary */
+      stroke-width: 1.15;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 1px rgba(52, 211, 153, 0.25));
     }
     .dark .district-svg-path:hover {
       fill: #10B981 !important;
-      stroke: #A7F3D0 !important;
+      stroke: #FFFFFF !important;
       stroke-width: 1.8 !important;
-      filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.9)) !important;
+      filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.95)) !important;
     }
     .dark .district-svg-path.active {
       fill: #F42A41 !important; /* Flag Red for active district */
@@ -1002,9 +1002,9 @@
 
           <!-- Basic Statistics / Highlights -->
           <div class="flex flex-wrap items-center gap-2 text-[11px] font-bold text-slate-600 dark:text-slate-400">
-            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]">🏛️ ৩২০+ স্থান</span>
-            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]">📍 ৮টি বিভাগ</span>
-            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]">⚡ জিরো লেটেন্সি</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]" id="footer-pill-spots">🏛️ ৩২০+ স্থান</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]" id="footer-pill-divs">📍 ৮টি বিভাগ</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#0B1E15] border border-slate-200 dark:border-[#173728]" id="footer-pill-latency">⚡ জিরো লেটেন্সি</span>
           </div>
         </div>
 
@@ -1086,7 +1086,7 @@
         </div>
         <div class="flex items-center gap-2 text-[11px]">
           <span class="inline-block w-2 h-2 rounded-full bg-bdgreen-500"></span>
-          <span>Crafted with pride by <strong class="text-slate-800 dark:text-slate-200">MD. Imran Hasan</strong></span>
+          <span id="footer-crafted-by">Crafted with pride by <strong class="text-slate-800 dark:text-slate-200">MD. Imran Hasan</strong></span>
         </div>
       </div>
     </div>
@@ -1120,20 +1120,34 @@
         <span id="modal-inspector-action" class="text-bdred-600 dark:text-bdred-400 font-bold shrink-0 text-[11px] sm:text-xs">Open Profile →</span>
       </div>
 
-      <!-- Map Render Zone with Optimized Background WebP -->
-      <div id="modal-svg-map-container" class="flex-1 flex items-center justify-center p-2 overflow-hidden relative rounded-xl bg-slate-100/70 dark:bg-[#07150E]/70 border border-slate-200/60 dark:border-[#173728]/60">
-        <!-- Background Layer for Modal Map -->
+      <!-- Modal Map Zone Outer Box (identical structure to #map-section-wrapper) -->
+      <div id="modal-map-wrapper" class="flex-1 relative flex items-center justify-center rounded-xl bg-slate-100/70 dark:bg-[#07150E] border border-slate-200 dark:border-[#173728] overflow-hidden p-2 shadow-inner min-h-[350px]">
+        
+        <!-- Background Layer for Modal Map (Z-0) -->
         <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden rounded-xl">
           <img 
             src="images/logo/interactive_bg.webp" 
-            alt="" 
-            class="w-full h-full object-cover object-center opacity-90 dark:opacity-20 dark:brightness-75 transition-opacity"
+            alt="Modal Map Background" 
+            class="w-full h-full object-cover object-center opacity-95 dark:opacity-25 dark:brightness-75 transition-opacity duration-300"
             loading="lazy"
             decoding="async"
           >
           <div class="absolute inset-0 bg-gradient-to-t from-slate-100/40 via-transparent to-slate-100/20 dark:from-[#07150E]/85 dark:via-[#07150E]/50 dark:to-[#07150E]/70 pointer-events-none"></div>
         </div>
-        <!-- SVG will be placed here -->
+
+        <!-- Clean SVG Container (Z-10, solely holds the SVG and tooltip) -->
+        <div id="modal-svg-map-container" class="relative z-10 w-full h-full flex items-center justify-center overflow-hidden">
+          <!-- SVG will be placed here -->
+
+          <!-- Smart Floater Tooltip Strictly Confined to Modal Map Container -->
+          <div id="modal-svg-map-container-tooltip" class="pointer-events-none absolute z-30 hidden px-3.5 py-2 rounded-xl bg-slate-900/95 dark:bg-[#0B1E15]/95 border border-bdgreen-500 text-xs text-white shadow-2xl backdrop-blur-md transition-opacity">
+            <div class="flex items-center gap-2">
+              <span class="tooltip-en font-black text-bdred-400 text-xs sm:text-sm"></span>
+              <span class="tooltip-bn font-bengali text-white font-semibold text-xs sm:text-sm"></span>
+            </div>
+            <span class="tooltip-div text-bdgreen-300 block text-[10px] sm:text-[11px] font-semibold mt-0.5"></span>
+          </div>
+        </div>
       </div>
 
       <div class="pt-2.5 sm:pt-3 border-t border-slate-200 dark:border-[#173728] flex items-center justify-between text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-semibold">
@@ -1159,10 +1173,10 @@
   </div>
 
   <!-- ==================== LOCAL-FIRST DATA CATALOGS (ZERO EXTERNAL FETCH) ==================== -->
-  <script src="data/bangladesh-map-viewbox.js?v=2.7.0"></script>
-  <script src="data/map-paths.js?v=2.7.0"></script>
-  <script src="data/main-info/catalog.js?v=2.7.0"></script>
-  <script src="data/main-info/dhaka.js?v=2.7.0"></script>
-  <script src="app.js?v=2.7.0"></script>
+  <script src="data/bangladesh-map-viewbox.js?v=2.8.0"></script>
+  <script src="data/map-paths.js?v=2.8.0"></script>
+  <script src="data/main-info/catalog.js?v=2.8.0"></script>
+  <script src="data/main-info/dhaka.js?v=2.8.0"></script>
+  <script src="app.js?v=2.8.0"></script>
 </body>
 </html>
