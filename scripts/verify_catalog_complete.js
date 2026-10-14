@@ -15,7 +15,12 @@ const TARGET_SLUGS = [
   'netrokona', 'sherpur', 'jashore', 'jhalokathi',
   'moulvibazar', 'bagerhat', 'bogura', 'natore',
   'pirojpur', 'kushtia', 'jhenaidah', 'khulna',
-  'chuadanga', 'meherpur', 'patuakhali'
+  'chuadanga', 'meherpur', 'patuakhali',
+  'magura', 'narail', 'naogaon', 'satkhira',
+  'khagrachhari', 'joypurhat', 'sunamganj', 'gaibandha',
+  'rangpur', 'rangamati', 'chapainawabganj', 'bandarban',
+  'barguna', 'lalmonirhat', 'nilphamari', 'thakurgaon',
+  'panchagarh'
 ];
 
 let allOk = true;
