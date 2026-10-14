@@ -198,86 +198,265 @@
     }
   </style>
 </head>
-<body class="bg-[#F8FAF9] dark:bg-[#07150E] text-slate-800 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-bdgreen-600 selection:text-white transition-colors duration-300">
+<body class="bg-[#F8FAF9] dark:bg-[#07150E] text-slate-800 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-bdgreen-600 selection:text-white transition-colors duration-300 relative">
+
+  <!-- ==================== AMBIENT BANGLADESH-THEMED GLOW (GREEN & RED) ==================== -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+    <!-- Top-Left Bangladesh Emerald Green Atmospheric Glow -->
+    <div class="absolute -top-40 -left-40 w-[420px] sm:w-[650px] h-[420px] sm:h-[650px] rounded-full bg-bdgreen-600/10 dark:bg-bdgreen-500/18 blur-[90px] sm:blur-[130px] transition-all duration-700"></div>
+    <!-- Top-Right / Center Bangladesh Sun Red Fade Glow -->
+    <div class="absolute top-24 right-[-10%] sm:right-[-5%] w-[380px] sm:w-[550px] h-[380px] sm:h-[550px] rounded-full bg-bdred-500/8 dark:bg-bdred-600/12 blur-[90px] sm:blur-[120px] transition-all duration-700"></div>
+    <!-- Bottom Emerald Subtle Reflection Glow -->
+    <div class="absolute bottom-[-10%] left-[25%] w-[420px] sm:w-[600px] h-[420px] sm:h-[600px] rounded-full bg-bdgreen-500/6 dark:bg-bdgreen-400/10 blur-[100px] sm:blur-[140px] transition-all duration-700"></div>
+  </div>
 
   <!-- ==================== TOP NAVIGATION ==================== -->
-  <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#07150E]/95 backdrop-blur-md border-b border-slate-200 dark:border-[#143124] shadow-sm">
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2 sm:gap-4">
+  <header class="sticky top-0 z-40 bg-white/90 dark:bg-[#07150E]/90 backdrop-blur-md border-b border-slate-200 dark:border-[#143124] shadow-sm relative">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-18 flex items-center justify-between gap-2 sm:gap-4">
       
-      <!-- Brand Logo & Title with Bangladesh Flag Theme -->
-      <a href="#/" class="flex items-center gap-2.5 sm:gap-3 group focus:outline-none shrink-0" title="Go to Home Page">
-        <div class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-bdgreen-900 dark:bg-bdgreen-700 flex items-center justify-center shadow-md shadow-bdgreen-900/20 text-white font-black overflow-hidden group-hover:scale-105 transition-transform duration-300">
-          <!-- The Red Sun of Bangladesh -->
-          <div class="absolute w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-bdred-500 shadow-sm animate-pulse"></div>
-          <i data-lucide="map-pin" class="w-4 h-4 sm:w-5 sm:h-5 text-white relative z-10 drop-shadow"></i>
+      <!-- Brand Logo, Title & Tagline -->
+      <a href="#/" class="flex items-center gap-2.5 sm:gap-3.5 group focus:outline-none shrink-0" title="Go to Home Page">
+        <div class="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden shadow-md border border-slate-200/90 dark:border-emerald-700/60 bg-white dark:bg-[#0B1E15] shrink-0 group-hover:scale-105 transition-transform duration-300">
+          <img src="images/logo/localhostbd_logo.png" alt="Local Host BD Logo" class="w-full h-full object-contain p-0.5">
         </div>
-        <div>
-          <div class="flex items-center gap-1.5 sm:gap-2">
-            <h1 class="text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-1">
-              <span>Local Host</span>
-              <span class="text-[10px] sm:text-xs font-bold px-1.5 py-0.2 rounded-full bg-bdgreen-100 dark:bg-bdgreen-900/60 text-bdgreen-700 dark:text-bdgreen-300 border border-bdgreen-300 dark:border-bdgreen-700">BD 64</span>
-            </h1>
-          </div>
-          <p id="brand-subtitle" class="text-[11px] text-slate-500 dark:text-slate-400 hidden md:block font-medium">100% Self-Hosted • Offline-First Bangladesh Explorer</p>
+        <div class="flex flex-col justify-center">
+          <h1 class="text-base sm:text-xl font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5 leading-none">
+            <span>Local Host BD</span>
+          </h1>
+          <p id="brand-tagline" class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-semibold tracking-wide mt-1">স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।</p>
         </div>
       </a>
 
-      <!-- Quick Metrics, Interactive Theme Toggle & Full Map Button -->
-      <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+      <!-- Desktop Menu Bar (Visible on md and larger) -->
+      <nav id="nav-desktop-actions" class="hidden md:flex items-center gap-2 sm:gap-2.5 shrink-0">
         
-        <!-- Offline-First Memory Engine Indicator -->
-        <div id="api-status-badge" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-slate-50 dark:bg-[#0D2117] border border-slate-200 dark:border-[#1B3E2E] text-xs text-slate-700 dark:text-slate-200 shadow-sm">
-          <span id="api-beacon" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-bdgreen-500 beacon-pulse shrink-0"></span>
-          <span id="api-status-text" class="font-semibold hidden lg:inline">Offline Memory Ready</span>
-          <span class="text-slate-300 dark:text-slate-600 hidden lg:inline">|</span>
-          <span class="text-bdred-600 dark:text-bdred-400 font-bold" id="api-district-count">64 Districts Loaded</span>
-        </div>
-
-        <!-- Interactive Dark / Light Mode Toggle Button -->
+        <!-- Interactive Dark / Light Mode Toggle Button (Shows opposite action) -->
         <button 
           id="theme-toggle-btn" 
-          class="px-2.5 sm:px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-700 dark:text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm active:scale-95 cursor-pointer min-h-[38px]" 
-          title="Toggle Light / Dark Mode"
+          class="px-3.5 py-2 rounded-xl bg-slate-100/90 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-700 dark:text-slate-200 text-xs font-bold flex items-center gap-2 transition-all shadow-sm active:scale-95 cursor-pointer min-h-[40px]" 
+          title="Toggle Theme"
         >
           <span id="theme-icon-container" class="w-4 h-4 flex items-center justify-center text-amber-500 dark:text-bdgreen-400">
             <i data-lucide="sun" id="theme-icon-sun" class="w-4 h-4 hidden"></i>
             <i data-lucide="moon" id="theme-icon-moon" class="w-4 h-4"></i>
           </span>
-          <span id="theme-toggle-label" class="hidden md:inline">Theme</span>
+          <span id="theme-toggle-label" class="font-extrabold">🌙 ডার্ক</span>
         </button>
 
-        <!-- Dedicated Language Toggle Button (English ↔ বাংলা) -->
+        <!-- Dedicated Language Toggle Button (Shows opposite action) -->
         <button 
           id="lang-toggle-btn" 
-          class="px-2.5 sm:px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-700 dark:text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm active:scale-95 cursor-pointer min-h-[38px]" 
-          title="Switch Language / ভাষা পরিবর্তন করুন"
+          class="px-3.5 py-2 rounded-xl bg-slate-100/90 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-700 dark:text-slate-200 text-xs font-bold flex items-center gap-2 transition-all shadow-sm active:scale-95 cursor-pointer min-h-[40px]" 
+          title="Switch Language"
         >
           <span class="w-4 h-4 flex items-center justify-center text-bdgreen-600 dark:text-bdgreen-400">
             <i data-lucide="languages" class="w-4 h-4"></i>
           </span>
-          <span id="lang-toggle-label" class="font-extrabold tracking-tight">বাংলা</span>
+          <span id="lang-toggle-label" class="font-extrabold tracking-tight">English</span>
         </button>
 
         <!-- View Full Map Button -->
         <button 
           id="view-map-modal-btn" 
           title="Open Full Interactive Vector Map" 
-          class="px-2.5 sm:px-3 py-1.5 text-xs font-bold rounded-xl bg-bdgreen-700 hover:bg-bdgreen-800 text-white flex items-center gap-1.5 transition-all shadow-sm shadow-bdgreen-700/20 active:scale-95 cursor-pointer min-h-[38px]"
+          class="px-3.5 py-2 text-xs font-bold rounded-xl bg-bdgreen-700 hover:bg-bdgreen-800 text-white flex items-center gap-2 transition-all shadow-sm shadow-bdgreen-700/25 active:scale-95 cursor-pointer min-h-[40px]"
         >
           <i data-lucide="map" class="w-4 h-4"></i>
-          <span id="view-map-modal-btn-label" class="hidden sm:inline">Vector Map</span>
+          <span id="view-map-modal-btn-label">ভেক্টর ম্যাপ</span>
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger Button (Visible on < md) -->
+      <div class="md:hidden flex items-center">
+        <button 
+          id="mobile-menu-btn" 
+          type="button"
+          class="p-2.5 rounded-xl bg-slate-100 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-700 dark:text-slate-200 active:scale-95 transition-all cursor-pointer shadow-sm flex items-center justify-center"
+          aria-label="Toggle Navigation Menu"
+          title="Menu"
+        >
+          <i data-lucide="menu" id="mobile-menu-icon" class="w-5 h-5 text-bdgreen-700 dark:text-bdgreen-400"></i>
         </button>
       </div>
+
     </div>
   </header>
 
+  <!-- ==================== MOBILE SLIDE-OUT DRAWER OVERLAY ==================== -->
+  <div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+
+  <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-72 sm:w-80 max-w-[85vw] bg-white/95 dark:bg-[#07150E]/95 backdrop-blur-2xl border-l border-slate-200 dark:border-[#143124] shadow-2xl z-50 flex flex-col justify-between p-5 transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <!-- Drawer Top Bar -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-[#173728]">
+        <div class="flex items-center gap-2.5">
+          <img src="images/logo/localhostbd_logo.png" alt="Local Host BD" class="w-9 h-9 rounded-lg object-contain shadow-sm border border-slate-200 dark:border-emerald-800">
+          <div>
+            <div class="text-sm font-black text-slate-900 dark:text-white leading-tight">Local Host BD</div>
+            <div id="drawer-tagline" class="text-[10px] text-slate-500 dark:text-slate-400 font-medium">স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।</div>
+          </div>
+        </div>
+        <button id="mobile-drawer-close-btn" class="p-2 rounded-lg text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-[#122A1E] transition cursor-pointer" aria-label="Close Menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Vertical Action Buttons -->
+      <div class="py-5 space-y-3">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 px-1" id="drawer-menu-heading">Menu & Actions</div>
+
+        <!-- Mobile Theme Toggle -->
+        <button 
+          id="mobile-theme-btn" 
+          class="w-full px-3.5 py-3 rounded-xl bg-slate-100 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-800 dark:text-slate-100 text-sm font-bold flex items-center justify-between transition-all active:scale-98 cursor-pointer"
+        >
+          <span class="flex items-center gap-2.5">
+            <span id="mobile-theme-icon-container" class="w-5 h-5 flex items-center justify-center text-amber-500 dark:text-bdgreen-400">
+              <i data-lucide="sun" id="mobile-theme-icon-sun" class="w-4 h-4 hidden"></i>
+              <i data-lucide="moon" id="mobile-theme-icon-moon" class="w-4 h-4"></i>
+            </span>
+            <span id="mobile-theme-label">🌙 ডার্ক</span>
+          </span>
+          <span class="text-[11px] font-medium text-slate-400 dark:text-slate-500" id="mobile-theme-hint">Switch Theme</span>
+        </button>
+
+        <!-- Mobile Language Toggle -->
+        <button 
+          id="mobile-lang-btn" 
+          class="w-full px-3.5 py-3 rounded-xl bg-slate-100 dark:bg-[#0D2117] hover:bg-slate-200 dark:hover:bg-[#153425] border border-slate-200 dark:border-[#1B3E2E] text-slate-800 dark:text-slate-100 text-sm font-bold flex items-center justify-between transition-all active:scale-98 cursor-pointer"
+        >
+          <span class="flex items-center gap-2.5">
+            <span class="w-5 h-5 flex items-center justify-center text-bdgreen-600 dark:text-bdgreen-400">
+              <i data-lucide="languages" class="w-4 h-4"></i>
+            </span>
+            <span id="mobile-lang-label">English</span>
+          </span>
+          <span class="text-[11px] font-medium text-slate-400 dark:text-slate-500" id="mobile-lang-hint">ভাষা / Lang</span>
+        </button>
+
+        <!-- Mobile Vector Map Button -->
+        <button 
+          id="mobile-vector-map-btn" 
+          class="w-full px-3.5 py-3 rounded-xl bg-bdgreen-700 hover:bg-bdgreen-800 text-white text-sm font-bold flex items-center justify-between transition-all shadow-sm shadow-bdgreen-700/30 active:scale-98 cursor-pointer"
+        >
+          <span class="flex items-center gap-2.5">
+            <i data-lucide="map" class="w-4 h-4"></i>
+            <span id="mobile-vector-map-label">ভেক্টর ম্যাপ</span>
+          </span>
+          <i data-lucide="chevron-right" class="w-4 h-4 opacity-70"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Drawer Footer Developer Card -->
+    <div class="pt-4 border-t border-slate-200 dark:border-[#173728] space-y-2">
+      <div class="text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Developer</div>
+      <div class="flex items-center justify-between gap-2">
+        <div>
+          <div class="text-xs font-black text-slate-900 dark:text-white">MD. Imran Hasan</div>
+          <div class="text-[10px] text-bdgreen-600 dark:text-bdgreen-400 font-medium">Software Engineer</div>
+        </div>
+        <a 
+          href="https://github.com/ImranHasan13421" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="p-2 rounded-lg bg-slate-900 dark:bg-[#122A1E] text-white hover:bg-black dark:hover:bg-[#183928] transition border border-slate-700 dark:border-emerald-700/50"
+          title="GitHub Profile"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
   <!-- ==================== MAIN CONTENT ROUTING WRAPPER ==================== -->
-  <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6">
+  <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 relative z-10">
 
     <!-- =================================================================== -->
     <!-- VIEW A: HOME PAGE (Searchable Sidebar + Interactive Map Section)    -->
     <!-- =================================================================== -->
     <div id="view-home" class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start animate-slide-up">
+
+      <!-- ==================== MAIN WEBSITE HERO & ABOUT BANNER ==================== -->
+      <section id="website-hero-section" class="col-span-1 lg:col-span-12 bg-white/85 dark:bg-[#0B1E15]/85 backdrop-blur-md rounded-3xl border border-slate-200/90 dark:border-[#173728] shadow-xl overflow-hidden mb-2 sm:mb-4 animate-slide-up transition-all">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 p-4 sm:p-7 items-center">
+          
+          <!-- Visual Hero Image (Attention Grabber) -->
+          <div class="lg:col-span-5 order-1 lg:order-2">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-emerald-800/40 group aspect-[16/9]">
+              <img 
+                src="images/logo/localhostbd_hero.png" 
+                alt="Local Host BD Hero Banner" 
+                class="w-full h-full object-cover transform group-hover:scale-103 transition-transform duration-500"
+                loading="eager"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-[11px] sm:text-xs font-bold drop-shadow">
+                <span class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
+                  <span class="w-2 h-2 rounded-full bg-bdred-500 animate-pulse"></span>
+                  <span>Local Host BD</span>
+                </span>
+                <span class="bg-bdgreen-700/90 backdrop-blur-md px-2.5 py-1 rounded-full border border-emerald-400/30">
+                  64 Districts • 100% Offline
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Website About Section & Developer Card -->
+          <div class="lg:col-span-7 order-2 lg:order-1 flex flex-col justify-center space-y-3.5 sm:space-y-4">
+            
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-bdgreen-100 dark:bg-bdgreen-950/70 border border-bdgreen-300 dark:border-bdgreen-800/60 text-bdgreen-800 dark:text-bdgreen-300 text-xs font-black shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-bdgreen-500"></span>
+                <span id="hero-about-badge">🇧🇩 ১০০% সেলফ-হোস্টেড • অফলাইন-ফার্স্ট ৬৪ জেলা প্ল্যাটফর্ম</span>
+              </span>
+            </div>
+
+            <div>
+              <h2 id="hero-about-title" class="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+                Local Host BD
+              </h2>
+              <p id="hero-about-tagline" class="text-sm sm:text-base font-extrabold text-bdgreen-700 dark:text-bdgreen-400 mt-1">
+                স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।
+              </p>
+            </div>
+
+            <p id="hero-about-desc" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              কোনো বাহ্যিক ইন্টারনেট নির্ভরতা ছাড়াই বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, মনোমুগ্ধকর পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত রুট এবং ইন্টারেক্টিভ ভেক্টর মানচিত্র অন্বেষণ করুন।
+            </p>
+
+            <!-- Developer Information Card -->
+            <div class="p-3 sm:p-3.5 rounded-2xl bg-slate-50/90 dark:bg-[#07150E]/80 border border-slate-200 dark:border-[#173728] flex flex-wrap items-center justify-between gap-3 shadow-inner">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-bdgreen-700 to-bdgreen-900 text-white flex items-center justify-center font-black shadow-md border border-emerald-500/20 shrink-0">
+                  <i data-lucide="code" class="w-5 h-5 text-emerald-300"></i>
+                </div>
+                <div>
+                  <div class="text-[10px] sm:text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider" id="hero-dev-label">Developed By</div>
+                  <div class="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                    <span>MD. Imran Hasan</span>
+                  </div>
+                </div>
+              </div>
+
+              <a 
+                href="https://github.com/ImranHasan13421" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-black dark:bg-[#122A1E] dark:hover:bg-[#1A3D2C] text-white text-xs font-bold transition shadow-sm hover:shadow-md border border-slate-700 dark:border-emerald-700/50 group active:scale-95"
+                title="Visit MD. Imran Hasan on GitHub"
+              >
+                <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span id="hero-github-label">GitHub</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-70"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
 
       <!-- MOBILE SEGMENTED VIEW CONTROLLER (Visible only on < lg mobile screens) -->
       <div class="lg:hidden col-span-1 flex items-center p-1 bg-slate-100 dark:bg-[#07150E] rounded-xl border border-slate-200 dark:border-[#173728] shadow-sm mb-1">
@@ -825,10 +1004,10 @@
   </div>
 
   <!-- ==================== LOCAL-FIRST DATA CATALOGS (ZERO EXTERNAL FETCH) ==================== -->
-  <script src="data/bangladesh-map-viewbox.js?v=2.5.0"></script>
-  <script src="data/map-paths.js?v=2.5.0"></script>
-  <script src="data/main-info/catalog.js?v=2.5.0"></script>
-  <script src="data/main-info/dhaka.js?v=2.5.0"></script>
-  <script src="app.js?v=2.5.0"></script>
+  <script src="data/bangladesh-map-viewbox.js?v=2.6.0"></script>
+  <script src="data/map-paths.js?v=2.6.0"></script>
+  <script src="data/main-info/catalog.js?v=2.6.0"></script>
+  <script src="data/main-info/dhaka.js?v=2.6.0"></script>
+  <script src="app.js?v=2.6.0"></script>
 </body>
 </html>

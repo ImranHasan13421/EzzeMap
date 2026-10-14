@@ -30,14 +30,16 @@ const AppState = {
   activeDivision: 'all',     // Selected division filter
   searchQuery: '',           // Current search filter query
   sortBy: 'name-asc',        // Sort criteria: name-asc, dist-asc, area-desc, pop-desc
-  currentTheme: 'dark',      // 'dark' | 'light'
-  currentLang: 'en',         // 'en' (Initial Default) | 'bn'
+  currentTheme: 'light',     // 'light' (Initial Default) | 'dark'
+  currentLang: 'bn',         // 'bn' (Initial Default) | 'en'
   mobileHomeTab: 'map',      // 'map' | 'list' (on compact mobile screens)
 };
 
 // Comprehensive Localization Dictionary
 const I18N = {
   en: {
+    brand_title: "Local Host BD",
+    brand_tagline: "Find Places. Feel Bangladesh.",
     brand_sub: "100% Self-Hosted • Offline-First Bangladesh Explorer",
     api_ready: "Offline Memory Ready",
     districts_loaded: "64 Districts Loaded",
@@ -45,6 +47,15 @@ const I18N = {
     theme_light: "Light",
     lang_btn: "বাংলা",
     nav_vector_map: "Vector Map",
+    hero_about_badge: "🇧🇩 100% Self-Hosted • Offline-First BD64 Platform",
+    hero_about_title: "Explore Bangladesh District by District",
+    hero_about_tagline: "Find Places. Feel Bangladesh.",
+    hero_about_desc: "Discover all 64 districts of Bangladesh with zero external network delays. Browse verified historical landmarks, iconic tourist attractions, transit travel guides, and interactive vector maps.",
+    hero_dev_label: "Developed By",
+    hero_github_label: "GitHub",
+    drawer_menu_heading: "Menu & Actions",
+    drawer_theme_hint: "Switch Theme",
+    drawer_lang_hint: "Switch Language",
     tab_map_view: "Interactive Map View",
     tab_list_view: "Districts List (64)",
     filter_division: "Filter by Division",
@@ -118,13 +129,24 @@ const I18N = {
     toast_lang_bn: "ভাষা পরিবর্তন করে বাংলা করা হয়েছে",
   },
   bn: {
+    brand_title: "Local Host BD",
+    brand_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
     brand_sub: "১০০% সেলফ-হোস্টেড • অফলাইন-ফার্স্ট বাংলাদেশ প্ল্যাটফর্ম",
     api_ready: "অফলাইন মেমোরি প্রস্তুত",
     districts_loaded: "৬৪টি জেলা সংরক্ষিত",
     theme_dark: "ডার্ক",
     theme_light: "লাইট",
     lang_btn: "English",
-    nav_vector_map: "ভেক্টর মানচিত্র",
+    nav_vector_map: "ভেক্টর ম্যাপ",
+    hero_about_badge: "🇧🇩 ১০০% সেলফ-হোস্টেড • অফলাইন-ফার্স্ট ৬৪ জেলা প্ল্যাটফর্ম",
+    hero_about_title: "৬৪ জেলার ইতিহাস ও সৌন্দর্যে বাংলাদেশকে জানুন",
+    hero_about_tagline: "স্থান খুঁজুন। বাংলাদেশকে অনুভব করুন।",
+    hero_about_desc: "কোনো বাহ্যিক ইন্টারনেট নির্ভরতা ছাড়াই বাংলাদেশের সকল ৬৪ জেলার যাচাইকৃত ঐতিহাসিক নিদর্শন, মনোমুগ্ধকর পর্যটন আকর্ষণ, ঢাকা থেকে যাতায়াত রুট এবং ইন্টারেক্টিভ ভেক্টর মানচিত্র অন্বেষণ করুন।",
+    hero_dev_label: "ডেভেলপার পরিচিতি",
+    hero_github_label: "গিটহাব",
+    drawer_menu_heading: "মেনু ও অপশন",
+    drawer_theme_hint: "থিম পরিবর্তন",
+    drawer_lang_hint: "ভাষা পরিবর্তন",
     tab_map_view: "ইন্টারেক্টিভ মানচিত্র",
     tab_list_view: "৬৪ জেলার তালিকা",
     filter_division: "বিভাগ অনুযায়ী ফিল্টার",
@@ -302,27 +324,53 @@ function initLucideIcons() {
 // ==========================================
 function initTheme() {
   const savedTheme = localStorage.getItem(THEME_KEY);
-  AppState.currentTheme = savedTheme ? savedTheme : 'dark';
+  AppState.currentTheme = savedTheme ? savedTheme : 'light'; // Default to Light Mode
   applyTheme(AppState.currentTheme);
 }
 
 function applyTheme(theme) {
   const html = document.documentElement;
-  const sunIcon = document.getElementById('theme-icon-sun');
-  const moonIcon = document.getElementById('theme-icon-moon');
-  const themeLabel = document.getElementById('theme-toggle-label');
+  const isBn = AppState.currentLang === 'bn';
 
   if (theme === 'dark') {
     html.classList.add('dark');
-    if (sunIcon) sunIcon.classList.remove('hidden');
-    if (moonIcon) moonIcon.classList.add('hidden');
-    if (themeLabel) themeLabel.textContent = AppState.currentLang === 'bn' ? 'ডার্ক' : 'Dark';
   } else {
     html.classList.remove('dark');
+  }
+
+  // Display the OPPOSITE theme action name so the user knows what clicking will do:
+  // If page is currently in Light mode, button shows "🌙 Dark" (or "🌙 ডার্ক")
+  // If page is currently in Dark mode, button shows "☀️ Light" (or "☀️ লাইট")
+  const oppositeThemeLabel = theme === 'dark' 
+    ? (isBn ? '☀️ লাইট' : '☀️ Light')
+    : (isBn ? '🌙 ডার্ক' : '🌙 Dark');
+
+  // Update desktop toggle
+  const sunIcon = document.getElementById('theme-icon-sun');
+  const moonIcon = document.getElementById('theme-icon-moon');
+  const themeLabel = document.getElementById('theme-toggle-label');
+  if (theme === 'dark') {
+    if (sunIcon) sunIcon.classList.remove('hidden');
+    if (moonIcon) moonIcon.classList.add('hidden');
+  } else {
     if (sunIcon) sunIcon.classList.add('hidden');
     if (moonIcon) moonIcon.classList.remove('hidden');
-    if (themeLabel) themeLabel.textContent = AppState.currentLang === 'bn' ? 'লাইট' : 'Light';
   }
+  if (themeLabel) themeLabel.textContent = oppositeThemeLabel;
+
+  // Update mobile drawer toggle
+  const mSunIcon = document.getElementById('mobile-theme-icon-sun');
+  const mMoonIcon = document.getElementById('mobile-theme-icon-moon');
+  const mThemeLabel = document.getElementById('mobile-theme-label');
+  if (theme === 'dark') {
+    if (mSunIcon) mSunIcon.classList.remove('hidden');
+    if (mMoonIcon) mMoonIcon.classList.add('hidden');
+  } else {
+    if (mSunIcon) mSunIcon.classList.add('hidden');
+    if (mMoonIcon) mMoonIcon.classList.remove('hidden');
+  }
+  if (mThemeLabel) mThemeLabel.textContent = oppositeThemeLabel;
+
   AppState.currentTheme = theme;
   localStorage.setItem(THEME_KEY, theme);
   initLucideIcons();
@@ -335,13 +383,37 @@ function toggleTheme() {
   showToast(`${t.toast_theme} ${nextTheme === 'dark' ? t.theme_dark : t.theme_light}`);
 }
 
+// Mobile Slide-out Drawer Controller
+function toggleMobileDrawer(open) {
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('mobile-drawer-backdrop');
+  if (!drawer || !backdrop) return;
+
+  if (open) {
+    backdrop.classList.remove('hidden');
+    void backdrop.offsetWidth;
+    backdrop.classList.remove('opacity-0');
+    drawer.classList.remove('translate-x-full');
+    drawer.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden';
+  } else {
+    drawer.classList.add('translate-x-full');
+    drawer.classList.remove('translate-x-0');
+    backdrop.classList.add('opacity-0');
+    setTimeout(() => {
+      backdrop.classList.add('hidden');
+      document.body.style.overflow = '';
+    }, 300);
+  }
+}
+
 // ==========================================
 // 4. LANGUAGE CONTROLLER (ENGLISH ↔ BANGLA)
 // ==========================================
 function initLanguage() {
   const savedLang = localStorage.getItem(LANG_KEY);
-  // Default is 'en' initially as requested
-  AppState.currentLang = (savedLang === 'bn' || savedLang === 'en') ? savedLang : 'en';
+  // Default is 'bn' (Bangla) initially as requested
+  AppState.currentLang = (savedLang === 'bn' || savedLang === 'en') ? savedLang : 'bn';
   applyLanguage(AppState.currentLang, false);
 }
 
@@ -352,23 +424,21 @@ function applyLanguage(lang, showNotification = true) {
   // Set html document lang
   document.documentElement.lang = lang;
 
-  // Toggle button text in top header
+  // Display the OPPOSITE language action name so the user knows what clicking will do:
+  // If page is currently in Bangla (bn), button displays "English"
+  // If page is currently in English (en), button displays "বাংলা"
+  const oppositeLang = lang === 'en' ? 'বাংলা' : 'English';
+  
   const langLabel = document.getElementById('lang-toggle-label');
   const langBtn = document.getElementById('lang-toggle-btn');
-  if (langLabel) {
-    langLabel.textContent = lang === 'en' ? 'বাংলা' : 'English';
-  }
-  if (langBtn) {
-    langBtn.setAttribute('title', lang === 'en' ? 'Switch to Bangla' : 'Switch to English');
-  }
+  if (langLabel) langLabel.textContent = oppositeLang;
+  if (langBtn) langBtn.setAttribute('title', lang === 'en' ? 'Switch to Bangla / বাংলায় দেখুন' : 'Switch to English / ইংরেজিতে দেখুন');
 
-  // Update theme label text
-  const themeLabel = document.getElementById('theme-toggle-label');
-  if (themeLabel) {
-    themeLabel.textContent = lang === 'bn' 
-      ? (AppState.currentTheme === 'dark' ? 'ডার্ক' : 'লাইট') 
-      : (AppState.currentTheme === 'dark' ? 'Dark' : 'Light');
-  }
+  const mLangLabel = document.getElementById('mobile-lang-label');
+  if (mLangLabel) mLangLabel.textContent = oppositeLang;
+
+  // Re-apply theme labels to update opposite theme text in the new language
+  applyTheme(AppState.currentTheme);
 
   // Update all static UI elements on the page
   updateStaticTranslations();
@@ -417,22 +487,47 @@ function updateStaticTranslations() {
   const t = I18N[AppState.currentLang];
   const isBn = AppState.currentLang === 'bn';
 
-  // Header
-  const brandSub = document.getElementById('brand-subtitle');
-  if (brandSub) brandSub.textContent = t.brand_sub;
+  // Brand Tagline
+  const brandTagline = document.getElementById('brand-tagline');
+  if (brandTagline) brandTagline.textContent = t.brand_tagline;
 
-  const apiStatus = document.getElementById('api-status-text');
-  if (apiStatus) apiStatus.textContent = t.api_ready;
+  const drawerTagline = document.getElementById('drawer-tagline');
+  if (drawerTagline) drawerTagline.textContent = t.brand_tagline;
 
-  const apiCount = document.getElementById('api-district-count');
-  if (apiCount) {
-    apiCount.textContent = isBn 
-      ? `${toBengaliDigits(AppState.districts.length || 64)}টি জেলা সংরক্ষিত`
-      : `${AppState.districts.length || 64} Districts Loaded`;
-  }
+  // Website Hero & About Section
+  const heroBadge = document.getElementById('hero-about-badge');
+  if (heroBadge) heroBadge.textContent = t.hero_about_badge;
+
+  const heroTitle = document.getElementById('hero-about-title');
+  if (heroTitle) heroTitle.textContent = t.brand_title;
+
+  const heroTagline = document.getElementById('hero-about-tagline');
+  if (heroTagline) heroTagline.textContent = t.hero_about_tagline;
+
+  const heroDesc = document.getElementById('hero-about-desc');
+  if (heroDesc) heroDesc.textContent = t.hero_about_desc;
+
+  const heroDev = document.getElementById('hero-dev-label');
+  if (heroDev) heroDev.textContent = t.hero_dev_label;
+
+  const heroGithub = document.getElementById('hero-github-label');
+  if (heroGithub) heroGithub.textContent = t.hero_github_label;
+
+  // Drawer Labels
+  const drawerHeading = document.getElementById('drawer-menu-heading');
+  if (drawerHeading) drawerHeading.textContent = t.drawer_menu_heading;
+
+  const drawerThemeHint = document.getElementById('mobile-theme-hint');
+  if (drawerThemeHint) drawerThemeHint.textContent = t.drawer_theme_hint;
+
+  const drawerLangHint = document.getElementById('mobile-lang-hint');
+  if (drawerLangHint) drawerLangHint.textContent = t.drawer_lang_hint;
 
   const viewMapBtnLabel = document.getElementById('view-map-modal-btn-label');
   if (viewMapBtnLabel) viewMapBtnLabel.textContent = t.nav_vector_map;
+
+  const mobileMapBtnLabel = document.getElementById('mobile-vector-map-label');
+  if (mobileMapBtnLabel) mobileMapBtnLabel.textContent = t.nav_vector_map;
 
   // Mobile Tabs
   const tabMap = document.getElementById('mobile-tab-map-text');
@@ -1729,9 +1824,45 @@ function setupEventListeners() {
     });
   }
 
+  // Mobile Drawer Listeners
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', () => toggleMobileDrawer(true));
+
+  const mobileDrawerCloseBtn = document.getElementById('mobile-drawer-close-btn');
+  if (mobileDrawerCloseBtn) mobileDrawerCloseBtn.addEventListener('click', () => toggleMobileDrawer(false));
+
+  const mobileDrawerBackdrop = document.getElementById('mobile-drawer-backdrop');
+  if (mobileDrawerBackdrop) mobileDrawerBackdrop.addEventListener('click', () => toggleMobileDrawer(false));
+
+  const mobileThemeBtn = document.getElementById('mobile-theme-btn');
+  if (mobileThemeBtn) mobileThemeBtn.addEventListener('click', toggleTheme);
+
+  const mobileLangBtn = document.getElementById('mobile-lang-btn');
+  if (mobileLangBtn) mobileLangBtn.addEventListener('click', toggleLanguage);
+
+  const mobileVectorMapBtn = document.getElementById('mobile-vector-map-btn');
+  if (mobileVectorMapBtn) {
+    mobileVectorMapBtn.addEventListener('click', () => {
+      toggleMobileDrawer(false);
+      openMapModal();
+    });
+  }
+
+  // Auto-close mobile drawer on window resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      toggleMobileDrawer(false);
+    }
+  });
+
   // Keyboard Navigation (Escape key)
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      const drawer = document.getElementById('mobile-drawer');
+      if (drawer && !drawer.classList.contains('translate-x-full')) {
+        toggleMobileDrawer(false);
+        return;
+      }
       const modal = document.getElementById('vector-map-modal');
       if (modal && !modal.classList.contains('hidden')) {
         closeMapModal();
@@ -1764,3 +1895,5 @@ window.handleSidebarHover = handleSidebarHover;
 window.closeMapModal = closeMapModal;
 window.setMobileHomeTab = setMobileHomeTab;
 window.toggleLanguage = toggleLanguage;
+window.toggleTheme = toggleTheme;
+window.toggleMobileDrawer = toggleMobileDrawer;
