@@ -300,8 +300,10 @@ const I18N = {
     travel_div_select_all: "Select All",
     travel_change_photo: "Change Photo",
     travel_name_label: "Name:",
+    travel_name_placeholder: "Enter your name...",
     travel_toggle_names: "District Names",
     card_subtitle: "Bangladesh Travel Map",
+    card_default_title: "My Bangladesh",
     card_title_suffix: "'s Bangladesh",
     card_percent_suffix: "% of Bangladesh Explored",
     card_districts_suffix: " Districts",
@@ -443,8 +445,10 @@ const I18N = {
     travel_div_select_all: "সব বাছাই",
     travel_change_photo: "ছবি বদলান",
     travel_name_label: "নাম:",
+    travel_name_placeholder: "আপনার নাম লিখুন...",
     travel_toggle_names: "জেলার নাম",
     card_subtitle: "বাংলাদেশ ভ্রমণ ম্যাপ",
+    card_default_title: "আমার বাংলাদেশ",
     card_title_suffix: "-এর বাংলাদেশ",
     card_percent_suffix: "% বাংলাদেশ ঘোরা হয়েছে",
     card_districts_suffix: "টি জেলা",
@@ -478,7 +482,8 @@ const DISTRICT_CENTERS = {
 };
 
 const TRAVEL_DIVISIONS = ['Dhaka', 'Chattogram', 'Sylhet', 'Barishal', 'Khulna', 'Rajshahi', 'Rangpur', 'Mymensingh'];
-const TRAVEL_SPOTS_KEY = 'localhost_travel_spots_v2';
+const TRAVEL_SPOTS_KEY = 'localhost_travel_spots_v4';
+const EMPTY_AVATAR_PLACEHOLDER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F8FAFC'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%2394A3B8'/%3E%3Cpath d='M22 84 C22 66 34 58 50 58 C66 58 78 66 78 84 Z' fill='%2394A3B8'/%3E%3C/svg%3E";
 
 const DIVISIONS_MAP = {
   all: { en: "All (64)", bn: "সকল (৬৪)" },
@@ -1078,6 +1083,9 @@ function updateStaticTranslations() {
 
   const travelNameLabel = document.getElementById('travel-name-input-label');
   if (travelNameLabel) travelNameLabel.textContent = t.travel_name_label;
+
+  const travelNameInput = document.getElementById('travel-name-input');
+  if (travelNameInput) travelNameInput.setAttribute('placeholder', t.travel_name_placeholder);
 
   const travelTogNames = document.getElementById('travel-toggle-names-label');
   if (travelTogNames) travelTogNames.textContent = t.travel_toggle_names;
@@ -2411,8 +2419,8 @@ function setupEventListeners() {
       const cardTitle = document.getElementById('card-title-text');
       if (cardTitle) {
         const t = I18N[AppState.currentLang];
-        const uName = TravelSpotsState.userName || 'Traveler';
-        cardTitle.textContent = `${uName}${t.card_title_suffix}`;
+        const uName = (TravelSpotsState.userName || '').trim();
+        cardTitle.textContent = uName ? `${uName}${t.card_title_suffix}` : t.card_default_title;
       }
     });
   }
@@ -2473,8 +2481,8 @@ function updateDivisionPillsUI(activeDivision) {
 // 13. AMAR GHORAGHURI / MY TRAVEL SPOTS ENGINE
 // ==========================================
 const TravelSpotsState = {
-  visitedIds: new Set([1, 7, 10, 18, 40, 45, 62]), // default demo spots (Dhaka, Manikganj, Narsingdi, Comilla, Kushtia, Bogra, Mymensingh)
-  userName: 'MD. Imran Hasan',
+  visitedIds: new Set(),
+  userName: '',
   avatarDataUrl: null,
   showNames: true,
   searchQuery: '',
@@ -2591,13 +2599,13 @@ function initTravelSpotsView() {
 
   // Sync inputs
   const nameInput = document.getElementById('travel-name-input');
-  if (nameInput) nameInput.value = TravelSpotsState.userName;
+  if (nameInput) nameInput.value = TravelSpotsState.userName || '';
 
   const namesCheckbox = document.getElementById('travel-toggle-names-checkbox');
   if (namesCheckbox) namesCheckbox.checked = TravelSpotsState.showNames;
 
   // Sync avatar
-  const defaultAvatar = 'images/logo/localhostbd_logo.png';
+  const defaultAvatar = EMPTY_AVATAR_PLACEHOLDER;
   const avatarSrc = TravelSpotsState.avatarDataUrl || defaultAvatar;
   const toolbarAvatar = document.getElementById('travel-toolbar-avatar-img');
   const cardAvatar = document.getElementById('card-avatar-preview');
@@ -2660,8 +2668,8 @@ function updateTravelSpotsUI() {
 
   const cardTitle = document.getElementById('card-title-text');
   if (cardTitle) {
-    const uName = TravelSpotsState.userName || 'Traveler';
-    cardTitle.textContent = `${uName}${t.card_title_suffix}`;
+    const uName = (TravelSpotsState.userName || '').trim();
+    cardTitle.textContent = uName ? `${uName}${t.card_title_suffix}` : t.card_default_title;
   }
 
   // 4. Render 3:4 Map SVG Districts & Pins
@@ -2937,15 +2945,6 @@ async function downloadTravelCardImage() {
     ctx.stroke();
 
     // 4. Header: Avatar Profile Image
-    const avatarImg = new Image();
-    avatarImg.crossOrigin = 'anonymous';
-    const avatarSrc = TravelSpotsState.avatarDataUrl || 'images/logo/localhostbd_logo.png';
-    await new Promise((resolve) => {
-      avatarImg.onload = resolve;
-      avatarImg.onerror = resolve;
-      avatarImg.src = avatarSrc;
-    });
-
     const avX = 90;
     const avY = 80;
     const avSize = 135;
@@ -2954,11 +2953,33 @@ async function downloadTravelCardImage() {
     ctx.save();
     drawRoundRect(ctx, avX, avY, avSize, avSize, avRadius);
     ctx.clip();
-    if (avatarImg.complete && avatarImg.naturalWidth > 0) {
-      ctx.drawImage(avatarImg, avX, avY, avSize, avSize);
+    if (TravelSpotsState.avatarDataUrl) {
+      const avatarImg = new Image();
+      avatarImg.crossOrigin = 'anonymous';
+      await new Promise((resolve) => {
+        avatarImg.onload = resolve;
+        avatarImg.onerror = resolve;
+        avatarImg.src = TravelSpotsState.avatarDataUrl;
+      });
+      if (avatarImg.complete && avatarImg.naturalWidth > 0) {
+        ctx.drawImage(avatarImg, avX, avY, avSize, avSize);
+      } else {
+        ctx.fillStyle = '#006A4E';
+        ctx.fillRect(avX, avY, avSize, avSize);
+      }
     } else {
-      ctx.fillStyle = '#006A4E';
+      // Clean neutral avatar placeholder when user has not uploaded any picture
+      ctx.fillStyle = '#F8FAFC';
       ctx.fillRect(avX, avY, avSize, avSize);
+      ctx.fillStyle = '#94A3B8';
+      // Head
+      ctx.beginPath();
+      ctx.arc(avX + avSize / 2, avY + avSize * 0.38, avSize * 0.18, 0, Math.PI * 2);
+      ctx.fill();
+      // Shoulders
+      ctx.beginPath();
+      ctx.arc(avX + avSize / 2, avY + avSize * 0.95, avSize * 0.38, Math.PI, Math.PI * 2);
+      ctx.fill();
     }
     ctx.restore();
 
@@ -2976,8 +2997,8 @@ async function downloadTravelCardImage() {
     ctx.fillStyle = '#64748B';
     ctx.fillText(t.card_subtitle, titleX, 130);
 
-    const userName = TravelSpotsState.userName || 'MD. Imran Hasan';
-    const cardTitle = `${userName}${t.card_title_suffix}`;
+    const userName = (TravelSpotsState.userName || '').trim();
+    const cardTitle = userName ? `${userName}${t.card_title_suffix}` : t.card_default_title;
     ctx.font = '900 44px Kalpurush, "Plus Jakarta Sans", sans-serif';
     ctx.fillStyle = '#0F172A';
     ctx.fillText(cardTitle, titleX, 185);
@@ -3184,8 +3205,8 @@ async function downloadTravelCardImage() {
     ctx.fillText('Local Host BD • 64 Districts Explorer • localhostbd', 600, 1540);
 
     // 13. Trigger Download
-    const cleanUserName = (TravelSpotsState.userName || 'Traveler').trim().replace(/[/\\?%*:|"<>]/g, '');
-    const filename = `${cleanUserName} Travel Map.png`;
+    const cleanUserName = (TravelSpotsState.userName || '').trim().replace(/[/\\?%*:|"<>]/g, '');
+    const filename = cleanUserName ? `${cleanUserName} Travel Map.png` : 'My Travel Map.png';
 
     canvas.toBlob((blob) => {
       if (!blob) {
