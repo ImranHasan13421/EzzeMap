@@ -5,6 +5,7 @@
 const DHAKA_DATA = {
   "id": 1,
   "slug": "dhaka",
+  "website": "https://dhaka.gov.bd",
   "en": "Dhaka",
   "bn": "ঢাকা",
   "div": "Dhaka",

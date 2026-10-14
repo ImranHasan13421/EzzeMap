@@ -22,6 +22,141 @@
 const THEME_KEY = 'localhost_district_theme_v2';
 const LANG_KEY = 'localhost_district_lang_v2';
 
+// Official Bangladesh National Web Portal URLs for all 64 districts (.gov.bd)
+const DISTRICT_OFFICIAL_WEBSITES = {
+  1: 'https://dhaka.gov.bd',
+  2: 'https://faridpur.gov.bd',
+  3: 'https://gazipur.gov.bd',
+  4: 'https://gopalganj.gov.bd',
+  5: 'https://kishoreganj.gov.bd',
+  6: 'https://madaripur.gov.bd',
+  7: 'https://manikganj.gov.bd',
+  8: 'https://munshiganj.gov.bd',
+  9: 'https://narayanganj.gov.bd',
+  10: 'https://narsingdi.gov.bd',
+  11: 'https://rajbari.gov.bd',
+  12: 'https://shariatpur.gov.bd',
+  13: 'https://tangail.gov.bd',
+  14: 'https://bandarban.gov.bd',
+  15: 'https://brahmanbaria.gov.bd',
+  16: 'https://chandpur.gov.bd',
+  17: 'https://chittagong.gov.bd',
+  18: 'https://comilla.gov.bd',
+  19: 'https://coxsbazar.gov.bd',
+  20: 'https://feni.gov.bd',
+  21: 'https://khagrachhari.gov.bd',
+  22: 'https://lakshmipur.gov.bd',
+  23: 'https://noakhali.gov.bd',
+  24: 'https://rangamati.gov.bd',
+  25: 'https://habiganj.gov.bd',
+  26: 'https://moulvibazar.gov.bd',
+  27: 'https://sunamganj.gov.bd',
+  28: 'https://sylhet.gov.bd',
+  29: 'https://barguna.gov.bd',
+  30: 'https://barisal.gov.bd',
+  31: 'https://bhola.gov.bd',
+  32: 'https://jhalakathi.gov.bd',
+  33: 'https://patuakhali.gov.bd',
+  34: 'https://pirojpur.gov.bd',
+  35: 'https://bagerhat.gov.bd',
+  36: 'https://chuadanga.gov.bd',
+  37: 'https://jessore.gov.bd',
+  38: 'https://jhenaidah.gov.bd',
+  39: 'https://khulna.gov.bd',
+  40: 'https://kushtia.gov.bd',
+  41: 'https://magura.gov.bd',
+  42: 'https://meherpur.gov.bd',
+  43: 'https://narail.gov.bd',
+  44: 'https://satkhira.gov.bd',
+  45: 'https://bogra.gov.bd',
+  46: 'https://joypurhat.gov.bd',
+  47: 'https://naogaon.gov.bd',
+  48: 'https://natore.gov.bd',
+  49: 'https://chapainawabganj.gov.bd',
+  50: 'https://pabna.gov.bd',
+  51: 'https://rajshahi.gov.bd',
+  52: 'https://sirajganj.gov.bd',
+  53: 'https://dinajpur.gov.bd',
+  54: 'https://gaibandha.gov.bd',
+  55: 'https://kurigram.gov.bd',
+  56: 'https://lalmonirhat.gov.bd',
+  57: 'https://nilphamari.gov.bd',
+  58: 'https://panchagarh.gov.bd',
+  59: 'https://rangpur.gov.bd',
+  60: 'https://thakurgaon.gov.bd',
+  61: 'https://jamalpur.gov.bd',
+  62: 'https://mymensingh.gov.bd',
+  63: 'https://netrokona.gov.bd',
+  64: 'https://sherpur.gov.bd'
+};
+
+const DISTRICT_SLUG_WEBSITES = {
+  'dhaka': 'https://dhaka.gov.bd',
+  'faridpur': 'https://faridpur.gov.bd',
+  'gazipur': 'https://gazipur.gov.bd',
+  'gopalganj': 'https://gopalganj.gov.bd',
+  'kishoreganj': 'https://kishoreganj.gov.bd',
+  'madaripur': 'https://madaripur.gov.bd',
+  'manikganj': 'https://manikganj.gov.bd',
+  'munshiganj': 'https://munshiganj.gov.bd',
+  'narayanganj': 'https://narayanganj.gov.bd',
+  'narsingdi': 'https://narsingdi.gov.bd',
+  'rajbari': 'https://rajbari.gov.bd',
+  'shariatpur': 'https://shariatpur.gov.bd',
+  'tangail': 'https://tangail.gov.bd',
+  'bandarban': 'https://bandarban.gov.bd',
+  'brahmanbaria': 'https://brahmanbaria.gov.bd',
+  'chandpur': 'https://chandpur.gov.bd',
+  'chattogram': 'https://chittagong.gov.bd',
+  'cumilla': 'https://comilla.gov.bd',
+  'coxs-bazar': 'https://coxsbazar.gov.bd',
+  'feni': 'https://feni.gov.bd',
+  'khagrachhari': 'https://khagrachhari.gov.bd',
+  'lakshmipur': 'https://lakshmipur.gov.bd',
+  'noakhali': 'https://noakhali.gov.bd',
+  'rangamati': 'https://rangamati.gov.bd',
+  'habiganj': 'https://habiganj.gov.bd',
+  'moulvibazar': 'https://moulvibazar.gov.bd',
+  'sunamganj': 'https://sunamganj.gov.bd',
+  'sylhet': 'https://sylhet.gov.bd',
+  'barguna': 'https://barguna.gov.bd',
+  'barishal': 'https://barisal.gov.bd',
+  'bhola': 'https://bhola.gov.bd',
+  'jhalokathi': 'https://jhalakathi.gov.bd',
+  'patuakhali': 'https://patuakhali.gov.bd',
+  'pirojpur': 'https://pirojpur.gov.bd',
+  'bagerhat': 'https://bagerhat.gov.bd',
+  'chuadanga': 'https://chuadanga.gov.bd',
+  'jashore': 'https://jessore.gov.bd',
+  'jhenaidah': 'https://jhenaidah.gov.bd',
+  'khulna': 'https://khulna.gov.bd',
+  'kushtia': 'https://kushtia.gov.bd',
+  'magura': 'https://magura.gov.bd',
+  'meherpur': 'https://meherpur.gov.bd',
+  'narail': 'https://narail.gov.bd',
+  'satkhira': 'https://satkhira.gov.bd',
+  'bogura': 'https://bogra.gov.bd',
+  'joypurhat': 'https://joypurhat.gov.bd',
+  'naogaon': 'https://naogaon.gov.bd',
+  'natore': 'https://natore.gov.bd',
+  'chapainawabganj': 'https://chapainawabganj.gov.bd',
+  'pabna': 'https://pabna.gov.bd',
+  'rajshahi': 'https://rajshahi.gov.bd',
+  'sirajganj': 'https://sirajganj.gov.bd',
+  'dinajpur': 'https://dinajpur.gov.bd',
+  'gaibandha': 'https://gaibandha.gov.bd',
+  'kurigram': 'https://kurigram.gov.bd',
+  'lalmonirhat': 'https://lalmonirhat.gov.bd',
+  'nilphamari': 'https://nilphamari.gov.bd',
+  'panchagarh': 'https://panchagarh.gov.bd',
+  'rangpur': 'https://rangpur.gov.bd',
+  'thakurgaon': 'https://thakurgaon.gov.bd',
+  'jamalpur': 'https://jamalpur.gov.bd',
+  'mymensingh': 'https://mymensingh.gov.bd',
+  'netrokona': 'https://netrokona.gov.bd',
+  'sherpur': 'https://sherpur.gov.bd'
+};
+
 const AppState = {
   districts: [],             // All 64 district memory buffers
   filteredDistricts: [],     // Filtered and sorted district list
@@ -114,6 +249,9 @@ const I18N = {
     metric_pop_sub: "Census estimate",
     metric_dist: "Distance from Dhaka",
     metric_dist_sub: "Road network",
+    metric_website_label: "Official Website",
+    metric_website_sub: "National Web Portal",
+    metric_website_btn: "Visit Portal",
     route_heading: "Route & Travel Options from Dhaka",
     route_badge: "Transit",
     transit_bus: "Highway Bus",
@@ -223,6 +361,9 @@ const I18N = {
     metric_pop_sub: "জনশুমারি হিসাব",
     metric_dist: "ঢাকা থেকে দূরত্ব",
     metric_dist_sub: "সড়ক যোগাযোগ",
+    metric_website_label: "অফিসিয়াল ওয়েবসাইট",
+    metric_website_sub: "জাতীয় তথ্য বাতায়ন",
+    metric_website_btn: "পোর্টাল দেখুন",
     route_heading: "ঢাকা থেকে যাতায়াত ও ভ্রমণের মাধ্যম",
     route_badge: "যোগাযোগ",
     transit_bus: "দূরপাল্লার বাস",
@@ -733,6 +874,13 @@ function updateStaticTranslations() {
   const metricDistSub = document.getElementById('metric-dist-sub');
   if (metricDistSub) metricDistSub.textContent = t.metric_dist_sub;
 
+  const metricWebsiteLabel = document.getElementById('metric-website-label');
+  if (metricWebsiteLabel) metricWebsiteLabel.textContent = t.metric_website_label;
+  const metricWebsiteSub = document.getElementById('metric-website-sub');
+  if (metricWebsiteSub) metricWebsiteSub.textContent = t.metric_website_sub;
+  const websiteBtnText = document.getElementById('detail-website-btn-text');
+  if (websiteBtnText) websiteBtnText.textContent = t.metric_website_btn;
+
   const routeHeading = document.getElementById('route-section-heading-text');
   if (routeHeading) routeHeading.textContent = t.route_heading;
   const routeBadge = document.getElementById('route-badge-text');
@@ -826,8 +974,14 @@ function loadLocalMemoryData() {
   // Bind vector map paths if available
   const mapPaths = (typeof window !== 'undefined' && window.MAP_PATHS) ? window.MAP_PATHS : {};
   AppState.districts = localData.map(d => {
+    const websiteUrl = d.website 
+      || DISTRICT_OFFICIAL_WEBSITES[d.id] 
+      || DISTRICT_SLUG_WEBSITES[d.slug] 
+      || `https://${(d.slug || '').replace(/[^a-z0-9]/g, '')}.gov.bd`;
+
     return {
       ...d,
+      website: websiteUrl,
       svgPath: d.svgPath || mapPaths[d.id] || mapPaths[d.slug] || ''
     };
   });
@@ -1018,7 +1172,7 @@ function populateDistrictDetails(district) {
       : (district.taglineEn || district.tagline);
   }
 
-  // 2. KEY METRIC 4-GRID (English / Bengali numbers with কোটি metric)
+  // 2. KEY METRIC 5-GRID (English / Bengali numbers with কোটি metric + Official Website Button)
   const estYear = document.getElementById('detail-est-year');
   const totalArea = document.getElementById('detail-total-area');
   const totalPop = document.getElementById('detail-total-pop');
@@ -1043,6 +1197,29 @@ function populateDistrictDetails(district) {
     distance.textContent = isBn 
       ? (district.distBn || toBengaliDigits(district.dist || 'N/A'))
       : (district.dist || 'N/A');
+  }
+
+  // 2.1 OFFICIAL DISTRICT WEBSITE PORTAL BUTTON
+  const websiteBtn = document.getElementById('detail-website-btn');
+  const websiteDomain = document.getElementById('detail-website-domain');
+  const websiteDomainMobile = document.getElementById('detail-website-domain-mobile');
+
+  const officialUrl = district.website 
+    || DISTRICT_OFFICIAL_WEBSITES[district.id] 
+    || DISTRICT_SLUG_WEBSITES[district.slug] 
+    || `https://${district.slug.replace(/[^a-z0-9]/g, '')}.gov.bd`;
+
+  const displayDomain = officialUrl.replace(/^https?:\/\//i, '').replace(/^www\./i, '').replace(/\/$/, '');
+
+  if (websiteBtn) {
+    websiteBtn.href = officialUrl;
+    websiteBtn.setAttribute('title', isBn ? `${district.bn} জেলা তথ্য বাতায়ন দেখুন` : `Visit Official ${district.en} District Portal`);
+  }
+  if (websiteDomain) {
+    websiteDomain.textContent = displayDomain;
+  }
+  if (websiteDomainMobile) {
+    websiteDomainMobile.textContent = displayDomain;
   }
 
   // 3. ROUTE & TRANSIT BREAKDOWN

@@ -7,6 +7,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 1,
     "slug": "dhaka",
+    "website": "https://dhaka.gov.bd",
     "en": "Dhaka",
     "bn": "ঢাকা",
     "div": "Dhaka",
@@ -258,6 +259,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 2,
     "slug": "faridpur",
+    "website": "https://faridpur.gov.bd",
     "en": "Faridpur",
     "bn": "ফরিদপুর",
     "div": "Dhaka",
@@ -510,6 +512,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 3,
     "slug": "gazipur",
+    "website": "https://gazipur.gov.bd",
     "en": "Gazipur",
     "bn": "গাজীপুর",
     "div": "Dhaka",
@@ -762,6 +765,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 4,
     "slug": "gopalganj",
+    "website": "https://gopalganj.gov.bd",
     "en": "Gopalganj",
     "bn": "গোপালগঞ্জ",
     "div": "Dhaka",
@@ -1014,6 +1018,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 5,
     "slug": "kishoreganj",
+    "website": "https://kishoreganj.gov.bd",
     "en": "Kishoreganj",
     "bn": "কিশোরগঞ্জ",
     "div": "Dhaka",
@@ -1266,6 +1271,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 6,
     "slug": "madaripur",
+    "website": "https://madaripur.gov.bd",
     "en": "Madaripur",
     "bn": "মাদারীপুর",
     "div": "Dhaka",
@@ -1518,6 +1524,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 7,
     "slug": "manikganj",
+    "website": "https://manikganj.gov.bd",
     "en": "Manikganj",
     "bn": "মানিকগঞ্জ",
     "div": "Dhaka",
@@ -1770,6 +1777,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 8,
     "slug": "munshiganj",
+    "website": "https://munshiganj.gov.bd",
     "en": "Munshiganj",
     "bn": "মুন্সীগঞ্জ",
     "div": "Dhaka",
@@ -2022,6 +2030,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 9,
     "slug": "narayanganj",
+    "website": "https://narayanganj.gov.bd",
     "en": "Narayanganj",
     "bn": "নারায়ণগঞ্জ",
     "div": "Dhaka",
@@ -2274,6 +2283,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 10,
     "slug": "narsingdi",
+    "website": "https://narsingdi.gov.bd",
     "en": "Narsingdi",
     "bn": "নরসিংদী",
     "div": "Dhaka",
@@ -2526,6 +2536,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 11,
     "slug": "rajbari",
+    "website": "https://rajbari.gov.bd",
     "en": "Rajbari",
     "bn": "রাজবাড়ী",
     "div": "Dhaka",
@@ -2778,6 +2789,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 12,
     "slug": "shariatpur",
+    "website": "https://shariatpur.gov.bd",
     "en": "Shariatpur",
     "bn": "শরীয়তপুর",
     "div": "Dhaka",
@@ -3030,6 +3042,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 13,
     "slug": "tangail",
+    "website": "https://tangail.gov.bd",
     "en": "Tangail",
     "bn": "টাঙ্গাইল",
     "div": "Dhaka",
@@ -3282,6 +3295,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 14,
     "slug": "bandarban",
+    "website": "https://bandarban.gov.bd",
     "en": "Bandarban",
     "bn": "বান্দরবান",
     "div": "Chattogram",
@@ -3534,6 +3548,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 15,
     "slug": "brahmanbaria",
+    "website": "https://brahmanbaria.gov.bd",
     "en": "Brahmanbaria",
     "bn": "ব্রাহ্মণবাড়িয়া",
     "div": "Chattogram",
@@ -3786,6 +3801,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 16,
     "slug": "chandpur",
+    "website": "https://chandpur.gov.bd",
     "en": "Chandpur",
     "bn": "চাঁদপুর",
     "div": "Chattogram",
@@ -4038,6 +4054,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 17,
     "slug": "chattogram",
+    "website": "https://chittagong.gov.bd",
     "en": "Chattogram",
     "bn": "চট্টগ্রাম",
     "div": "Chattogram",
@@ -4290,6 +4307,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 18,
     "slug": "cumilla",
+    "website": "https://comilla.gov.bd",
     "en": "Cumilla",
     "bn": "কুমিল্লা",
     "div": "Chattogram",
@@ -4542,6 +4560,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 19,
     "slug": "coxs-bazar",
+    "website": "https://coxsbazar.gov.bd",
     "en": "Cox's Bazar",
     "bn": "কক্সবাজার",
     "div": "Chattogram",
@@ -4794,6 +4813,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 20,
     "slug": "feni",
+    "website": "https://feni.gov.bd",
     "en": "Feni",
     "bn": "ফেনী",
     "div": "Chattogram",
@@ -5046,6 +5066,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 21,
     "slug": "khagrachhari",
+    "website": "https://khagrachhari.gov.bd",
     "en": "Khagrachhari",
     "bn": "খাগড়াছড়ি",
     "div": "Chattogram",
@@ -5298,6 +5319,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 22,
     "slug": "lakshmipur",
+    "website": "https://lakshmipur.gov.bd",
     "en": "Lakshmipur",
     "bn": "লক্ষ্মীপুর",
     "div": "Chattogram",
@@ -5550,6 +5572,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 23,
     "slug": "noakhali",
+    "website": "https://noakhali.gov.bd",
     "en": "Noakhali",
     "bn": "নোয়াখালী",
     "div": "Chattogram",
@@ -5802,6 +5825,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 24,
     "slug": "rangamati",
+    "website": "https://rangamati.gov.bd",
     "en": "Rangamati",
     "bn": "রাঙ্গামাটি",
     "div": "Chattogram",
@@ -6054,6 +6078,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 25,
     "slug": "habiganj",
+    "website": "https://habiganj.gov.bd",
     "en": "Habiganj",
     "bn": "হবিগঞ্জ",
     "div": "Sylhet",
@@ -6306,6 +6331,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 26,
     "slug": "moulvibazar",
+    "website": "https://moulvibazar.gov.bd",
     "en": "Moulvibazar",
     "bn": "মৌলভীবাজার",
     "div": "Sylhet",
@@ -6558,6 +6584,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 27,
     "slug": "sunamganj",
+    "website": "https://sunamganj.gov.bd",
     "en": "Sunamganj",
     "bn": "সুনামগঞ্জ",
     "div": "Sylhet",
@@ -6810,6 +6837,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 28,
     "slug": "sylhet",
+    "website": "https://sylhet.gov.bd",
     "en": "Sylhet",
     "bn": "সিলেট",
     "div": "Sylhet",
@@ -7062,6 +7090,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 29,
     "slug": "barguna",
+    "website": "https://barguna.gov.bd",
     "en": "Barguna",
     "bn": "বরগুনা",
     "div": "Barishal",
@@ -7314,6 +7343,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 30,
     "slug": "barishal",
+    "website": "https://barisal.gov.bd",
     "en": "Barishal",
     "bn": "বরিশাল",
     "div": "Barishal",
@@ -7566,6 +7596,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 31,
     "slug": "bhola",
+    "website": "https://bhola.gov.bd",
     "en": "Bhola",
     "bn": "ভোলা",
     "div": "Barishal",
@@ -7818,6 +7849,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 32,
     "slug": "jhalokathi",
+    "website": "https://jhalakathi.gov.bd",
     "en": "Jhalokathi",
     "bn": "ঝালকাঠি",
     "div": "Barishal",
@@ -8070,6 +8102,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 33,
     "slug": "patuakhali",
+    "website": "https://patuakhali.gov.bd",
     "en": "Patuakhali",
     "bn": "পটুয়াখালী",
     "div": "Barishal",
@@ -8322,6 +8355,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 34,
     "slug": "pirojpur",
+    "website": "https://pirojpur.gov.bd",
     "en": "Pirojpur",
     "bn": "পিরোজপুর",
     "div": "Barishal",
@@ -8574,6 +8608,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 35,
     "slug": "bagerhat",
+    "website": "https://bagerhat.gov.bd",
     "en": "Bagerhat",
     "bn": "বাগেরহাট",
     "div": "Khulna",
@@ -8826,6 +8861,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 36,
     "slug": "chuadanga",
+    "website": "https://chuadanga.gov.bd",
     "en": "Chuadanga",
     "bn": "চুয়াডাঙ্গা",
     "div": "Khulna",
@@ -9078,6 +9114,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 37,
     "slug": "jashore",
+    "website": "https://jessore.gov.bd",
     "en": "Jashore",
     "bn": "যশোর",
     "div": "Khulna",
@@ -9330,6 +9367,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 38,
     "slug": "jhenaidah",
+    "website": "https://jhenaidah.gov.bd",
     "en": "Jhenaidah",
     "bn": "ঝিনাইদহ",
     "div": "Khulna",
@@ -9582,6 +9620,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 39,
     "slug": "khulna",
+    "website": "https://khulna.gov.bd",
     "en": "Khulna",
     "bn": "খুলনা",
     "div": "Khulna",
@@ -9834,6 +9873,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 40,
     "slug": "kushtia",
+    "website": "https://kushtia.gov.bd",
     "en": "Kushtia",
     "bn": "কুষ্টিয়া",
     "div": "Khulna",
@@ -10086,6 +10126,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 41,
     "slug": "magura",
+    "website": "https://magura.gov.bd",
     "en": "Magura",
     "bn": "মাগুরা",
     "div": "Khulna",
@@ -10338,6 +10379,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 42,
     "slug": "meherpur",
+    "website": "https://meherpur.gov.bd",
     "en": "Meherpur",
     "bn": "মেহেরপুর",
     "div": "Khulna",
@@ -10590,6 +10632,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 43,
     "slug": "narail",
+    "website": "https://narail.gov.bd",
     "en": "Narail",
     "bn": "নড়াইল",
     "div": "Khulna",
@@ -10842,6 +10885,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 44,
     "slug": "satkhira",
+    "website": "https://satkhira.gov.bd",
     "en": "Satkhira",
     "bn": "সাতক্ষীরা",
     "div": "Khulna",
@@ -11094,6 +11138,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 45,
     "slug": "bogura",
+    "website": "https://bogra.gov.bd",
     "en": "Bogura",
     "bn": "বগুড়া",
     "div": "Rajshahi",
@@ -11346,6 +11391,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 46,
     "slug": "joypurhat",
+    "website": "https://joypurhat.gov.bd",
     "en": "Joypurhat",
     "bn": "জয়পুরহাট",
     "div": "Rajshahi",
@@ -11598,6 +11644,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 47,
     "slug": "naogaon",
+    "website": "https://naogaon.gov.bd",
     "en": "Naogaon",
     "bn": "নওগাঁ",
     "div": "Rajshahi",
@@ -11850,6 +11897,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 48,
     "slug": "natore",
+    "website": "https://natore.gov.bd",
     "en": "Natore",
     "bn": "নাটোর",
     "div": "Rajshahi",
@@ -12102,6 +12150,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 49,
     "slug": "chapainawabganj",
+    "website": "https://chapainawabganj.gov.bd",
     "en": "Chapainawabganj",
     "bn": "চাঁপাইনবাবগঞ্জ",
     "div": "Rajshahi",
@@ -12354,6 +12403,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 50,
     "slug": "pabna",
+    "website": "https://pabna.gov.bd",
     "en": "Pabna",
     "bn": "পাবনা",
     "div": "Rajshahi",
@@ -12606,6 +12656,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 51,
     "slug": "rajshahi",
+    "website": "https://rajshahi.gov.bd",
     "en": "Rajshahi",
     "bn": "রাজশাহী",
     "div": "Rajshahi",
@@ -12858,6 +12909,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 52,
     "slug": "sirajganj",
+    "website": "https://sirajganj.gov.bd",
     "en": "Sirajganj",
     "bn": "সিরাজগঞ্জ",
     "div": "Rajshahi",
@@ -13110,6 +13162,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 53,
     "slug": "dinajpur",
+    "website": "https://dinajpur.gov.bd",
     "en": "Dinajpur",
     "bn": "দিনাজপুর",
     "div": "Rangpur",
@@ -13362,6 +13415,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 54,
     "slug": "gaibandha",
+    "website": "https://gaibandha.gov.bd",
     "en": "Gaibandha",
     "bn": "গাইবান্ধা",
     "div": "Rangpur",
@@ -13614,6 +13668,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 55,
     "slug": "kurigram",
+    "website": "https://kurigram.gov.bd",
     "en": "Kurigram",
     "bn": "কুড়িগ্রাম",
     "div": "Rangpur",
@@ -13866,6 +13921,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 56,
     "slug": "lalmonirhat",
+    "website": "https://lalmonirhat.gov.bd",
     "en": "Lalmonirhat",
     "bn": "লালমনিরহাট",
     "div": "Rangpur",
@@ -14118,6 +14174,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 57,
     "slug": "nilphamari",
+    "website": "https://nilphamari.gov.bd",
     "en": "Nilphamari",
     "bn": "নীলফামারী",
     "div": "Rangpur",
@@ -14370,6 +14427,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 58,
     "slug": "panchagarh",
+    "website": "https://panchagarh.gov.bd",
     "en": "Panchagarh",
     "bn": "পঞ্চগড়",
     "div": "Rangpur",
@@ -14622,6 +14680,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 59,
     "slug": "rangpur",
+    "website": "https://rangpur.gov.bd",
     "en": "Rangpur",
     "bn": "রংপুর",
     "div": "Rangpur",
@@ -14874,6 +14933,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 60,
     "slug": "thakurgaon",
+    "website": "https://thakurgaon.gov.bd",
     "en": "Thakurgaon",
     "bn": "ঠাকুরগাঁও",
     "div": "Rangpur",
@@ -15126,6 +15186,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 61,
     "slug": "jamalpur",
+    "website": "https://jamalpur.gov.bd",
     "en": "Jamalpur",
     "bn": "জামালপুর",
     "div": "Mymensingh",
@@ -15378,6 +15439,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 62,
     "slug": "mymensingh",
+    "website": "https://mymensingh.gov.bd",
     "en": "Mymensingh",
     "bn": "ময়মনসিংহ",
     "div": "Mymensingh",
@@ -15630,6 +15692,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 63,
     "slug": "netrokona",
+    "website": "https://netrokona.gov.bd",
     "en": "Netrokona",
     "bn": "নেত্রকোনা",
     "div": "Mymensingh",
@@ -15882,6 +15945,7 @@ const LOCAL_DISTRICTS = [
   {
     "id": 64,
     "slug": "sherpur",
+    "website": "https://sherpur.gov.bd",
     "en": "Sherpur",
     "bn": "শেরপুর",
     "div": "Mymensingh",
