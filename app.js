@@ -3182,7 +3182,7 @@ async function downloadTravelCardImage() {
     await new Promise((resolve) => {
       logoImg.onload = resolve;
       logoImg.onerror = resolve;
-      logoImg.src = 'images/logo/localhostbd_logo.png';
+      logoImg.src = 'images/logo/localhostbd_logo.webp';
     });
 
     const logoX = 990;
